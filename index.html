@@ -162,7 +162,7 @@
     </header>
     
     <main class="main" id="main">
-		<h3>Organizers</h3>
+		<h2>Organizers</h2>
 		<p><strong>Pearl Chaozon Bauer</strong> (Notre Dame de Namur University)<br/>
 		<strong>Ryan Fong</strong> (Kalamazoo College)<br/>
 		<strong>Sophia Hsu</strong> (Lehman College, CUNY)<br/>
@@ -170,7 +170,7 @@
 		<br/>
 
 
-		<h3>Mission Statement</h3>
+		<h2>Mission Statement</h2>
         <p><em>Undisciplining the Victorian Classroom</em> is a digital humanities project that reimagines how to teach Victorian Studies through a positive, race-conscious lens and advocates for engaging Black, Postcolonial, Indigenous, Asian-American, Latinx, Decolonial, Feminist, Queer, and Critical Ethnic Studies scholarship. The project seeks to:</p>
         <ol>
         	<li>foster the application of innovative, interdisciplinary teaching approaches to Victorian-era literature of all kinds, and</li>
@@ -193,8 +193,22 @@
         <hr />
 		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> | Contact: <a href="mailto:chaozonbauer@gmail.com">Pearl Chaozon Bauer</a></p>
 	</footer>
+	<script>
+		/* Service Worker */
+		/* Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker */
+		if ("serviceWorker" in navigator) {
+		navigator.serviceWorker
+			.register("sw.js")
+			.then(serviceWorker => {
+			console.log("Service Worker registered: ", serviceWorker);
+			})
+			.catch(error => {
+			console.error("Error registering the Service Worker: ", error);
+			});
+		}
+	</script>
+	<!-- <script src="scripts/scripts.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-	<script src="scripts/scripts.js"></script>
 </body>
 
 </html>
