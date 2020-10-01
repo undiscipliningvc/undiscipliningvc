@@ -1,0 +1,1158 @@
+/* CSS Main File for One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
+
+/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+
+/* 
+Table of Contents
+-----------------
+** Main Site Colors **
+
+** 1.0. Main CSS **
+1.1. Main Components 
+1.2. Mobile Fixed Nav
+1.3. Navbar
+1.4. Overlay
+1.5. Artifact Gallery
+1.6. Lines
+1.7. Formatting
+1.8. Lists
+*/
+
+/*--------------------------------------*/
+
+/** Main Site Colors **/
+/*
+site-blue #2e68ac;
+site-red #cc4943;
+whitesmoke;
+light gray #dbdbdb;
+dark gray #858585;
+dark brown #424242;
+near black #525252;
+also see 2.9 for manuscript colors
+*/
+
+/** 1.0 Main CSS **/
+
+/* 1.1. Main Components */
+
+html{
+	font: 16px "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	color: #191716;
+	padding: 0 1em;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-word-break: break-all;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	scroll-behavior: smooth;
+}
+body{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (min-width: 768px){
+    body.essay main{
+		max-width: 40em;
+		font-size: 1.1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	body.essay main{
+		max-width: 36em;
+	}
+	body.fixed-nav{
+		padding-top: 0 !important;
+	}
+}
+body.essay .main{
+	padding-bottom: 1em;
+}
+h1{
+	font-size: 2.6em;
+	font-family: 'sansita_swashedlight';
+}
+@media only screen and (min-width: 768px){
+	h1{
+		font-size: 2.8em;
+	}
+}
+@media only screen and (min-width: 992px){
+	h1{
+		font-size: 2.9em;
+	}
+}
+h2{
+	font-size: .9em;
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	display: none;
+}
+@media only screen and (min-width: 480px){
+	h2{
+		font-size: 1em;
+		display: block;
+	}
+}
+@media only screen and (min-width: 768px){
+	h2{
+		font-size: 1.1em;
+		display: block;
+	}
+}
+h3{
+	font-size: 1em;
+	font-weight: bold;
+	color: #2e68ac;
+}
+h4{
+	font-style: italic;
+	font-size: 1em;
+	font-weight: 300;
+}
+h5.books{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	margin: 0;
+}
+h5.books::before{
+	font-family: 'FontAwesome';
+	content: '\f101';
+	padding-right: .5em;
+}
+h5.books::after{
+	font-family: 'FontAwesome';
+	content: '\f100';
+	padding-left: .5em;
+}
+@media only screen and (min-width: 992px){
+	.main-divider{
+		width: 90%;
+	}
+}
+@media only screen and (min-width: 992px){
+	.main-divider{
+		width: 80%;
+	}
+}
+/* adds padding for h4 labelled subsections in essays */
+.subsection{
+	padding-top: 2em;
+}
+.return-top{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: .9em;
+}
+.title,
+body.transcription .title{
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.6em;
+	position: relative;
+}
+.title{
+	padding-bottom: 0em;
+}
+body.transcription .title{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 320px){
+	.title{
+		padding-bottom: .5em
+	}
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+@media only screen and (min-width: 480px){
+	body.transcription .title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	.title,
+	body.transcription .title{
+		padding-bottom: 1.5em;
+		display: block !important; /* Tied to overlay */
+	}
+}
+.header-title{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.header-title{
+		display: block;
+	}
+}
+img,
+.image{
+	color:#e6e6e6;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: inline-block;
+}
+.image-border{
+	border: 1px solid gray;
+}
+@media screen and (min-width:480px) {
+	.responsive-image70 {
+		width: 70%;
+	}
+	.responsive-image73 {
+		width: 73%;
+	} 
+  }
+/* The following is used to prevent content layout shifts */
+.content-holder-1,
+.content-holder-2,
+.content-holder-3,
+.content-holder-4,
+.content-holder-5{
+	background: #e6e6e6;
+}
+@media screen and (min-width:320px) {
+	.content-holder-1{
+		min-height: 66px;
+	}
+	.content-holder-2{
+		min-height: 181px;
+	}
+	.content-holder-3{
+		min-height: 206px;
+	}
+	.content-holder-4{
+		min-height: 229px;
+	}
+	.content-holder-5{
+		min-height: 357px;
+	}
+}
+@media screen and (min-width:480px) {
+	.content-holder-1{
+		min-height: 106px;
+	}
+	.content-holder-2{
+		min-height: 285px;
+	}
+	.content-holder-3{
+		min-height: 322px;
+	}
+	.content-holder-4{
+		min-height: 359px;
+	}
+	.content-holder-5{
+		min-height: 389px;
+	}
+}
+@media screen and (min-width:768px) {
+	.content-holder-1{
+		min-height: 169px;
+	}
+	.content-holder-2{
+		min-height: 447px;
+	}
+	.content-holder-3{
+		min-height: 504px;
+	}
+	.content-holder-4{
+		min-height: 563px;
+	}
+	.content-holder-5{
+		min-height: 613px;
+	}
+}
+@media screen and (min-width:992px) {
+	.content-holder-1{
+		min-height: 155px;
+	}
+	.content-holder-2{
+		min-height: 409px;
+	}
+	.content-holder-3{
+		min-height: 461px;
+	}
+	.content-holder-4{
+		min-height: 514px;
+	}
+	.content-holder-5{
+		min-height: 559px;
+	}
+}
+.title hr{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.title hr{
+		display: block;
+	}
+}
+/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
+#skiptocontent a{
+	font-size: 1.1em;
+	color: white;
+	background: #424242;
+	padding: 6px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-right-radius: 8px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	z-index: 100;
+	-webkit-transition: top 1s ease-out;
+	transition: top .4s ease-out;
+}
+#skiptocontent a:focus{
+	outline-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: top .1s ease-in;
+	transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#skiptocontent a:focus{
+		position: absolute;
+	}
+}
+.main{
+	font-size: 1.3em;
+	text-align: left;
+	line-height: 1.6em;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (min-width: 992px){
+	.main{
+		font-size: 1.2em;
+		display: block !important; /* Tied to overlay */
+	}
+}
+/* for essay title with subtitle */
+.title-with-subtitle{
+	margin-bottom: .5em;
+}
+/* for essay subtitle */
+.subtitle{
+	font-size: .9em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+.byline{
+	font-size: .9em;
+	padding: 0;
+	margin: 0;
+}
+.byline-divider{
+    width: 45%;
+    border-top: 1px dashed gray;
+	background: white;
+	display: inline-block;
+}
+/* toc and toc-title used for page menus */
+.toc{
+	font-size: .9em;
+	padding: 1em 0 0 0;
+}
+.toc-title{
+	list-style-type:none;
+	margin-left: -1.2em;
+	display:inline-block;
+}
+/* assumes this goes at end of essay */
+.footnote{
+	font-size: .9em;
+	padding-top: 1.5em;
+}
+.credits{
+	font-size: 1.2em;
+	line-height: 1.6em;
+	text-align: left;
+}
+@media only screen and (min-width: 768px){
+	.credits{
+		font-size: 1.15em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.credits{
+		font-size: 1.1em;
+		display: block !important; /* Tied to overlay */
+	}
+}
+.footer{
+	font-size: 1em;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	line-height: 1.6em;
+	padding-top: 1em;
+}
+@media only screen and (min-width: 768px){
+	.footer{
+		font-size: .95em;
+	}
+}
+*:focus{
+	outline: 0 none;
+}
+a,
+a:visited{
+	color: #2e68ac;
+	/*text-decoration:none;*/
+}
+a:hover{
+	color: #a83c37;
+	background-color: #dbdbdb;
+}
+a:focus{
+	color: #2b61a1;
+	background-color: #dbdbdb;
+}
+
+.graphic a:hover,
+.graphic a:focus{
+	background-color: white;
+}
+a img{
+	border: 3px white solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #2e68ac solid;
+}
+@font-face {
+    font-family: 'sansita_swashedlight';
+    src: url('../fonts/sansitaswashed-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/sansitaswashed-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 1.2. Mobile Fixed Nav */
+
+/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
+
+#sticky{
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+/* applied after scroll height reached */
+.fixed-nav #sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	border-bottom: 1px gray solid;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+}
+.menu,
+.fixed-nav .menu{
+	text-align: center;
+	/* max-width: 36em; */
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: block;
+}
+.menu{
+	padding: 1em 0;
+}
+.fixed-nav .menu{
+	padding: .5em 1em;
+}
+@media only screen and (min-width: 768px){
+	.menu,
+	.fixed-nav .menu{
+		max-width: 46em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.menu,
+	.fixed-nav .menu{
+		display: none;
+	}
+}
+.icon-title{
+	font-size: .95em;
+	float: left;
+	padding-top: .2em;
+}
+@media only screen and (min-width: 480px){
+	.icon-title{
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.icon-title{
+		font-size: 1.6em;
+		padding-top: .1em;
+	}
+}
+.menu a.icon{
+	font-size: 1.5em;
+	color: black;
+	border-top: none;
+}
+.menu a.icon:hover{
+	color: #a83c37;
+
+}
+.menu a.icon:hover,
+.menu a.icon:focus{
+	padding: 1px 7px;
+	margin: -1px -7px;
+}
+.nav-title{
+	font-size: 2em;
+	font-family: 'sansita_swashedlight';
+	font-weight: 600;
+}
+@media only screen and (min-width: 480px){
+	.nav-title{
+		font-size: 2.4em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.nav-title{
+		font-size: 2.7em;
+	}
+}
+[id]:target {
+    margin-top: -70px;
+    border-top: 70px solid transparent;
+    background-clip: padding-box;
+}
+@media only screen and (min-width: 992px){
+	[id]:target{
+		margin-top: -10px;
+		border-top: 10px solid transparent;
+	}
+}
+/* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
+/* alternative coding */
+/* [id]:target {
+  padding-top: 65px; 
+  margin-top: -65px;
+} */
+/* *[id]:before { 
+	display: block; 
+	content: " "; 
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden; 
+  } */
+/* [id]:target::before {
+	content: "";
+	display: block;
+	height: 80px;
+	margin: -80px 0 0;
+} */
+/* alternative coding for empty spans */
+/* .anchor{
+	display: block;
+	height: 80px;
+	margin-top: -80px;
+	visibility: hidden;
+} */
+/* doesn't work in iOS */
+/* html {
+	scroll-padding-top: 80px;
+} */
+
+
+/* 1.3. Navbar */
+
+/* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+
+/* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
+
+.topnav{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 600;
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.topnav{
+		display: block;
+	}
+}
+.topnav ul{
+	/* font-size: .95em; */
+	text-align: center;
+	list-style: none;
+	padding: 0 0 .5em 0;
+	margin: 0;
+	display: block;
+}
+.topnav ul li{
+	font-size: 1.1em;
+	display: inline-block;
+	position: relative;
+}
+.topnav ul li:hover,
+.topnav ul li:focus-within{
+	color: whitesmoke;
+	background-color: #424242;
+}
+.topnav ul li a{
+	color: black;
+	padding: 16px 12px;
+}
+.topnav ul li a:hover,
+.topnav ul li a:focus{
+	color: whitesmoke;
+	background-color: #424242;
+}
+.topnav ul li .dropdown .vh{
+	position: absolute !important; /* !important in original code */
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+.topnav ul li .dropdown label{
+	display: inline-block;
+}
+label::after,
+a::after{
+	font-family: 'FontAwesome';
+}
+label::after{
+	content: '\f0da'; /* closed folder */
+	display: inline-block;
+    width: 0.5em;
+}
+input:checked + label::after{
+	content: '\f0d7'; /* open folder */
+}
+.topnav ul li .dropdown label.dropbtn{
+	padding: 16px 12px;
+	border: none;
+	outline: none;
+}
+[type="checkbox"]:checked + label{
+	color: whitesmoke;
+	background-color: #424242; /*dark brown*/
+}
+:checked + label .expanded-text{
+	display: inline;
+}
+:checked + label .collapsed-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .expanded-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .collapsed-text{
+	display: inline;
+}
+.dropdown-content{
+	display: none;
+}
+:checked ~ .dropdown-content{
+	display: block;
+}
+.dropdown-content a{
+	white-space: nowrap;
+	display: block;
+}
+.topnav ul li .dropdown .dropdown-content ul{
+	text-align: left;
+	min-width: 140px;
+	padding: 0;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+	z-index: 1;
+	position: absolute;
+}
+.topnav ul li .dropdown .dropdown-content ul li{
+	font-size: .85em;
+	background-color: #e3e3e3; /*light gray*/
+	display: block;
+}
+.topnav ul li .dropdown .dropdown-content ul li:last-of-type{
+	padding-bottom: .5em;
+}
+.topnav ul li .dropdown .dropdown-content ul li:hover,
+.topnav ul li .dropdown .dropdown-content ul li:hover a,
+.topnav ul li .dropdown .dropdown-content ul li:focus,
+.topnav ul li .dropdown .dropdown-content ul li:focus-within a{
+	color: whitesmoke;
+	background-color: #858585; /*dark gray*/
+	outline: none;
+}
+.topnav ul li .dropdown .dropdown-content ul li a,
+.topnav ul li .dropdown .dropdown-content ul li a:visited{
+	color: black;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.topnav ul li .dropdown .dropdown-content ul li a:hover{
+	color: whitesmoke;
+}
+/* HTML hierarchy for topnav and color values */
+/*
+.topnav
+.topnav ul
+.topnav ul li 
+.topnav ul li a
+
+.topnav ul li .dropdown
+.topnav ul li .dropdown input .vh
+.topnav ul li .dropdown label.dropbtn
+.topnav ul li .dropdown .dropdown-content
+.topnav ul li .dropdown .dropdown-content ul
+.topnav ul li .dropdown .dropdown-content ul li 
+.topnav ul li .dropdown .dropdown-content ul li a
+
+color: black;
+color: whitesmoke;
+background-color: #424242; [dark brown]
+background-color: #858585; [dark gray]
+background-color: #dbdbdb; [light gray]
+*/
+
+
+/* 1.4. Overlay */
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+/* The following prevents overlay from appearing above 768px */
+@media only screen and (min-width: 992px){
+	#nav3{
+		display: none !important;
+	}
+}
+body.fixed-nav .overlay .menu .nav-title,
+body.fixed-nav .overlay .menu .close-title{
+	color: whitesmoke;
+}
+/* Height & width depends on how you want to reveal the overlay (see scripts.js) */
+.overlay{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	color: whitesmoke;
+	background-color: #424242; /* Black fallback color */
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: auto;
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	display: none;
+}
+.overlay-content{
+	font-size: 1.1em;
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 3em;
+	width: 100%;
+	top: 1em;
+	position: relative;
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.overlay-content{
+		font-size: 1.4em;
+	}
+}
+.overlay ul{
+	list-style-type: none;
+	line-height: 1.6em;
+	padding: 0;
+	margin: 0;
+}
+.overlay li{
+	padding: .8em 0;
+}
+.overlay li.section ul li{
+	padding: .3em 0;
+}
+.overlay a,
+.overlay a:visited{
+	color: whitesmoke;
+	text-decoration: underline;
+	transition: 0.3s; /* Transition effects on hover (color)*/
+}
+.overlay a:hover,
+.overlay a:focus{
+	color: black;
+	background-color: whitesmoke;
+	text-decoration: underline;
+}
+.overlay .menu{
+	padding: 1.5em 0 1em 0;
+	border-bottom: 1px whitesmoke solid;
+}
+.overlay .menu .close-title{
+	font-size: 2em;
+	vertical-align: middle;
+	line-height: 1.1em;
+	right: .6em;
+	position: absolute;
+}
+@media only screen and (min-width: 480px){
+	.overlay .menu .close-title{
+		line-height: 1.2em;
+	}
+}
+.overlay .menu .close-title a{
+	text-decoration: none;
+}
+
+/* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
+/*
+.title{
+	padding-bottom: 0em;
+}
+body.transcription .title{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 320px){
+	.title{
+		padding-bottom: .5em
+	}
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+@media only screen and (min-width: 480px){
+	body.transcription .title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	.title,
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+.header-title{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.header-title{
+		display: block;
+	}
+}
+.title hr{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.title hr{
+		display: block;
+	}
+}
+[id] {
+	scroll-margin-top: 70px;
+  }
+  @media only screen and (min-width: 992px){
+    [id] {
+        scroll-margin-top: 20px;
+      }
+    }
+.menu{
+	padding: 1em 0;
+}
+.fixed-nav .menu{
+	padding: .5em 1em;
+}
+@media only screen and (min-width: 768px){
+	.menu,
+	.fixed-nav .menu{
+		max-width: 46em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.menu,
+	.fixed-nav .menu{
+		display: none;
+	}
+}
+.topnav{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.topnav{
+		display: block;
+	}
+}
+@media only screen and (min-width: 992px){
+	#nav3{
+		display: none !important;
+	}
+}
+.overlay{
+	display: none;
+}
+.overlay-content{
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.title .back-button{
+		font-size: 1.1em;
+		padding-top: .3em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.title .back-button{
+		font-size: 1.2em;
+		padding-top: .1em;
+	}
+}
+*/
+
+
+/* 1.5 Artifact Gallery */
+
+.image-details{
+	font-size: .85em;
+	font-style: italic;
+	text-align: center;
+	color: #65615b;
+}
+.gallery{      
+	text-align: center;
+	margin-bottom: -2.5em;
+	overflow: hidden;
+}
+.gallery-item{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 2.5em 0;
+	width: 100%;
+}
+@media only screen and (min-width: 480px){
+	.gallery-item{
+		padding: 0 .5em 2.5em .5em;
+		width: calc(50% - 1.5em);
+	}
+}
+@media only screen and (min-width: 768px){
+	.gallery-item{
+		width: calc(33.3% - 1.5em);
+	}
+}
+.gallery-item:last-of-type{
+	text-align: left;
+}
+.gallery figure{
+	margin: 0;
+}
+.image-container{
+	padding: .5em;
+}
+.gallery figure img{
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit: cover;
+	border-radius:50%;
+	overflow: hidden;
+	border: 2px solid #dbdbdb;
+}
+.gallery figure a img:hover,
+.gallery figure a:focus img{
+	border: 2px #2e68ac solid;
+}
+.gallery figure figcaption{
+	font-size: .8em;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	text-align: center;       
+	line-height: 1.2em;
+}
+
+
+/* 1.6. Lines */
+
+hr{
+	background-color: gray;
+	height: 1px;
+	border: 0;
+	width: 100%;
+}
+.thick-hr{
+	overflow: visible; /* For IE */
+	border: none;
+	border-top: medium double #191716;
+	color: #191716;
+	text-align: center;
+	padding: 10px 10px 0 0;
+	width: 50%;
+}
+.title-hr{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.divider-hr{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.text-divider{
+	margin: 0 auto;
+	width: 40%;
+}
+
+
+/* 1.7. Formatting */
+
+.black{
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.half{
+	width: 50%;
+}
+.highlight{
+	color: #cc4943;
+	font-style: italic;
+	/* text-decoration:underline dotted; */
+}
+.italic{
+	font-style: italic;
+}
+.left{
+	text-align: left;
+}
+.site-blue{
+	color: #2e68ac;
+}
+.site-red{
+	color: #cc4943;
+}
+.small{
+	font-size: .9em;
+}
+.smallcaps{
+	font-variant: small-caps;
+}
+.underline{
+	text-decoration: underline;
+}
+
+
+/* 1.8. Lists */
+
+ol,
+ul{
+	padding: 0 0 0 1.4em;
+	margin:0;
+}
+ol li ol{
+	padding: 0 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	ol,
+	ul,
+	ol li ol{
+		padding-left: 1.2em;
+	}
+}
+
+/* The following items are used on the texts.html page. */
+.author-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-bottom: 1em;
+}
+.archival-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+
+}
+@media only screen and (min-width: 768px){
+	.archival-entry{
+		padding-left: 1em;
+	}
+}
+.contribution-form{
+	padding-left: 1em;
+	padding-bottom: 0em;
+	margin-bottom: 1em;
+	margin-top: 0em;
+}
+@media only screen and (min-width: 768px){
+	.contribution-form{
+		padding-left: 2.5em;
+	}
+}
+.critical-entry{
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px){
+	.critical-entry{
+		padding-left: 1em;
+	}
+}
+
+/* The following items are used on the books.html page. */
+.published-author{
+	padding: 1.5em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.works-list{
+		padding: 0 0 0 2em;
+	}
+}
+.works-list li{
+	padding: 0 0 .75em 0;
+}
+
+/* The following item is used on the site_map.html page. */
+.sitemap-list{
+	display: inline-block;
+	text-indent: 0;
+}
+.sitemap-list .sitemap-list:before{
+	content: "•";
+	margin:0 5px 0 -15px;
+}
+@media only screen and (min-width: 768px){
+	.sitemap-list{
+		margin-left: 1em;
+	}
+}
+
+/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
+ol.concept-list li,
+ul.concept-list li{
+	margin-bottom: .7em;
+}
+ol.concept-list li:last-child,
+ul.concept-list li:last-child{
+   margin-bottom: 0;
+}
+
+/* The following items are used on the bibliography.html page. */
+.primary-historical{
+	list-style: none;
+	padding: 0 0 1em 0;
+	margin: 0;	
+}
+ol.primary-historical li{
+	padding-bottom: .5em;
+}
