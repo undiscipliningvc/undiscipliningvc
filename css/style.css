@@ -98,7 +98,7 @@ h1{
 		font-size: 2.9em;
 	}
 }
-h2{
+/* h2{
 	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
@@ -115,7 +115,8 @@ h2{
 		font-size: 1.1em;
 		display: block;
 	}
-}
+} */
+h2,
 h3{
 	font-size: 1em;
 	font-weight: bold;
@@ -215,16 +216,16 @@ img,
 .image-border{
 	border: 1px solid gray;
 }
-@media screen and (min-width:480px) {
+/* @media screen and (min-width:480px) {
 	.responsive-image70 {
 		width: 70%;
 	}
 	.responsive-image73 {
 		width: 73%;
 	} 
-  }
+  } */
 /* The following is used to prevent content layout shifts */
-.content-holder-1,
+/* .content-holder-1,
 .content-holder-2,
 .content-holder-3,
 .content-holder-4,
@@ -298,7 +299,7 @@ img,
 	.content-holder-5{
 		min-height: 559px;
 	}
-}
+} */
 /* .title hr{
 	display: none;
 }
@@ -308,7 +309,7 @@ img,
 	}
 } */
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
-#skiptocontent a{
+/* #skiptocontent a{
 	font-size: 1.1em;
 	color: white;
 	background: #424242;
@@ -335,7 +336,7 @@ img,
 	#skiptocontent a:focus{
 		position: absolute;
 	}
-}
+} */
 .main{
 	font-size: 1.3em;
 	text-align: left;
@@ -457,14 +458,14 @@ a:focus img{
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
-#sticky{
+/* #sticky{
 	background-color: white;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
-}
+} */
 /* applied after scroll height reached */
-.fixed-nav #sticky{
+/* .fixed-nav #sticky{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -478,7 +479,7 @@ a:focus img{
 .menu,
 .fixed-nav .menu{
 	text-align: center;
-	/* max-width: 36em; */
+	max-width: 36em;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -558,7 +559,7 @@ a:focus img{
 		margin-top: -10px;
 		border-top: 10px solid transparent;
 	}
-}
+} */
 /* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
 /* alternative coding */
 /* [id]:target {
@@ -597,7 +598,7 @@ a:focus img{
 
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
 
-.topnav{
+/* .topnav{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
 	display: none;
@@ -608,7 +609,6 @@ a:focus img{
 	}
 }
 .topnav ul{
-	/* font-size: .95em; */
 	text-align: center;
 	list-style: none;
 	padding: 0 0 .5em 0;
@@ -635,7 +635,7 @@ a:focus img{
 	background-color: #424242;
 }
 .topnav ul li .dropdown .vh{
-	position: absolute !important; /* !important in original code */
+	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
 }
@@ -647,12 +647,12 @@ a::after{
 	font-family: 'FontAwesome';
 }
 label::after{
-	content: '\f0da'; /* closed folder */
+	content: '\f0da';
 	display: inline-block;
     width: 0.5em;
 }
 input:checked + label::after{
-	content: '\f0d7'; /* open folder */
+	content: '\f0d7';
 }
 .topnav ul li .dropdown label.dropbtn{
 	padding: 16px 12px;
@@ -661,7 +661,7 @@ input:checked + label::after{
 }
 [type="checkbox"]:checked + label{
 	color: whitesmoke;
-	background-color: #424242; /*dark brown*/
+	background-color: #424242;
 }
 :checked + label .expanded-text{
 	display: inline;
@@ -697,7 +697,7 @@ input:checked + label::after{
 }
 .topnav ul li .dropdown .dropdown-content ul li{
 	font-size: .85em;
-	background-color: #e3e3e3; /*light gray*/
+	background-color: #e3e3e3; 
 	display: block;
 }
 .topnav ul li .dropdown .dropdown-content ul li:last-of-type{
@@ -708,7 +708,7 @@ input:checked + label::after{
 .topnav ul li .dropdown .dropdown-content ul li:focus,
 .topnav ul li .dropdown .dropdown-content ul li:focus-within a{
 	color: whitesmoke;
-	background-color: #858585; /*dark gray*/
+	background-color: #858585;
 	outline: none;
 }
 .topnav ul li .dropdown .dropdown-content ul li a,
@@ -719,7 +719,7 @@ input:checked + label::after{
 }
 .topnav ul li .dropdown .dropdown-content ul li a:hover{
 	color: whitesmoke;
-}
+} */
 /* HTML hierarchy for topnav and color values */
 /*
 .topnav
@@ -748,7 +748,7 @@ background-color: #dbdbdb; [light gray]
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* The following prevents overlay from appearing above 768px */
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	#nav3{
 		display: none !important;
 	}
@@ -756,25 +756,25 @@ background-color: #dbdbdb; [light gray]
 body.fixed-nav .overlay .menu .nav-title,
 body.fixed-nav .overlay .menu .close-title{
 	color: whitesmoke;
-}
+} */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
-.overlay{
+/* .overlay{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: whitesmoke;
-	background-color: #424242; /* Black fallback color */
-	opacity: 1;
+	color: whitesmoke; */
+	/* background-color: #424242; */ /* Black fallback color */
+	/* opacity: 1;
 	height: 100%;
 	width: 100%;
 	left: 0;
-	top: 0;
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	overflow-x: hidden; /* Disable horizontal scroll */
-	overflow-y: auto;
-	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-	display: none;
-}
-.overlay-content{
+	top: 0; */
+	/*position: fixed; */ /* Stay in place */
+	/* z-index: 1; */ /* Sit on top */
+	/*overflow-x: hidden; */ /* Disable horizontal scroll */
+	/* overflow-y: auto; */
+	/*transition: 0.5s; */ /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	/* display: none;
+} */
+/* .overlay-content{
 	font-size: 1.1em;
 	text-align: center;
 	margin-top: 0;
@@ -783,8 +783,8 @@ body.fixed-nav .overlay .menu .close-title{
 	top: 1em;
 	position: relative;
 	display: block;
-}
-@media only screen and (min-width: 768px){
+} */
+/* @media only screen and (min-width: 768px){
 	.overlay-content{
 		font-size: 1.4em;
 	}
@@ -805,8 +805,8 @@ body.fixed-nav .overlay .menu .close-title{
 .overlay a:visited{
 	color: whitesmoke;
 	text-decoration: underline;
-	transition: 0.3s; /* Transition effects on hover (color)*/
-}
+	transition: 0.3s; */ /* Transition effects on hover (color)*/
+/* }
 .overlay a:hover,
 .overlay a:focus{
 	color: black;
@@ -831,7 +831,7 @@ body.fixed-nav .overlay .menu .close-title{
 }
 .overlay .menu .close-title a{
 	text-decoration: none;
-}
+} */
 
 /* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
 /*
@@ -938,7 +938,7 @@ body.transcription .title{
 
 /* 1.5 Artifact Gallery */
 
-.image-details{
+/* .image-details{
 	font-size: .85em;
 	font-style: italic;
 	text-align: center;
@@ -993,7 +993,7 @@ body.transcription .title{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-align: center;       
 	line-height: 1.2em;
-}
+} */
 
 
 /* 1.6. Lines */
@@ -1088,7 +1088,7 @@ ol li ol{
 }
 
 /* The following items are used on the texts.html page. */
-.author-entry{
+/* .author-entry{
 	margin-top: 0em;
 	margin-bottom: 0em;
 	padding-bottom: 1em;
@@ -1122,10 +1122,10 @@ ol li ol{
 	.critical-entry{
 		padding-left: 1em;
 	}
-}
+} */
 
 /* The following items are used on the books.html page. */
-.published-author{
+/* .published-author{
 	padding: 1.5em 0 0 0;
 }
 @media only screen and (min-width: 768px){
@@ -1135,10 +1135,10 @@ ol li ol{
 }
 .works-list li{
 	padding: 0 0 .75em 0;
-}
+} */
 
 /* The following item is used on the site_map.html page. */
-.sitemap-list{
+/* .sitemap-list{
 	display: inline-block;
 	text-indent: 0;
 }
@@ -1150,24 +1150,24 @@ ol li ol{
 	.sitemap-list{
 		margin-left: 1em;
 	}
-}
+} */
 
 /* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
-ol.concept-list li,
+/* ol.concept-list li,
 ul.concept-list li{
 	margin-bottom: .7em;
 }
 ol.concept-list li:last-child,
 ul.concept-list li:last-child{
    margin-bottom: 0;
-}
+} */
 
 /* The following items are used on the bibliography.html page. */
-.primary-historical{
+/* .primary-historical{
 	list-style: none;
 	padding: 0 0 1em 0;
 	margin: 0;	
 }
 ol.primary-historical li{
 	padding-bottom: .5em;
-}
+} */
