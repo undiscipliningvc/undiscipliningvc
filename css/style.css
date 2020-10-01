@@ -60,7 +60,7 @@ body{
 	margin-right: auto;
 }
 @media only screen and (min-width: 768px){
-	body{
+	body.essay .main{
 		/*font-size: .95em;
 		max-width: 46em;*/
 		font-size: 1.1em;
@@ -68,7 +68,7 @@ body{
 	}
 }
 @media only screen and (min-width: 992px){
-	body{
+	body.essay .main{
 		/*max-width: 42em;*/
 		max-width: 36em;
 	}
@@ -84,6 +84,7 @@ h1{
 	/* font-family: Georgia, 'Times New Roman', Times, serif; */
 	font-size: 2.6em;
 	font-family: 'sansita_swashedlight';
+	line-height: 1em;
 }
 @media only screen and (min-width: 768px){
 	h1{
@@ -141,7 +142,12 @@ h5.books::after{
 	padding-left: .5em;
 }
 .main-divider{
-	display: none;
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.main-divider{
+		width: 70%;
+	}
 }
 @media only screen and (min-width: 992px){
 	.main-divider{
@@ -189,14 +195,14 @@ body.transcription .title{
 		display: block !important; /* Tied to overlay */
 	}
 }
-.header-title{
+/* .header-title{
 	display: none;
 }
 @media only screen and (min-width: 992px){
 	.header-title{
 		display: block;
 	}
-}
+} */
 img,
 .image{
 	color:#e6e6e6;
@@ -293,14 +299,14 @@ img,
 		min-height: 559px;
 	}
 }
-.title hr{
+/* .title hr{
 	display: none;
 }
 @media only screen and (min-width: 992px){
 	.title hr{
 		display: block;
 	}
-}
+} */
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
 	font-size: 1.1em;
@@ -527,22 +533,19 @@ a:focus img{
 	margin: -1px -7px;
 }
 .nav-title{
-	/* font-size: 1.7em; */
-	/* font-family: Georgia, 'Times New Roman', Times, serif; */
-	font-size: 2em;
-	font-family: 'sansita_swashedlight';
+	font-size: 1.7em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
+	display: none;
 }
 @media only screen and (min-width: 480px){
 	.nav-title{
-		/* font-size: 2em; */
-		font-size: 2.4em;		
+		font-size: 2em;
 	}
 }
 @media only screen and (min-width: 768px){
 	.nav-title{
-		/* font-size: 2.5em; */
-		font-size: 2.7em;
+		font-size: 2.5em;
 	}
 }
 [id]:target {
