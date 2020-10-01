@@ -39,6 +39,7 @@ also see 2.9 for manuscript colors
 /* 1.1. Main Components */
 
 html{
+	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
 	font: 16px "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: normal;
 	color: #191716;
@@ -59,13 +60,16 @@ body{
 	margin-right: auto;
 }
 @media only screen and (min-width: 768px){
-    body.essay main{
-		max-width: 40em;
+	body{
+		/*font-size: .95em;
+		max-width: 46em;*/
 		font-size: 1.1em;
+		max-width: 40em;
 	}
 }
 @media only screen and (min-width: 992px){
-	body.essay main{
+	body{
+		/*max-width: 42em;*/
 		max-width: 36em;
 	}
 	body.fixed-nav{
@@ -76,16 +80,20 @@ body.essay .main{
 	padding-bottom: 1em;
 }
 h1{
+	/* font-size: 2em; */
+	/* font-family: Georgia, 'Times New Roman', Times, serif; */
 	font-size: 2.6em;
 	font-family: 'sansita_swashedlight';
 }
 @media only screen and (min-width: 768px){
 	h1{
+		/* font-size: 2.2em; */
 		font-size: 2.8em;
 	}
 }
 @media only screen and (min-width: 992px){
 	h1{
+		/* font-size: 2.3em; */
 		font-size: 2.9em;
 	}
 }
@@ -132,10 +140,8 @@ h5.books::after{
 	content: '\f100';
 	padding-left: .5em;
 }
-@media only screen and (min-width: 992px){
-	.main-divider{
-		width: 90%;
-	}
+.main-divider{
+	display: none;
 }
 @media only screen and (min-width: 992px){
 	.main-divider{
@@ -398,6 +404,7 @@ img,
 }
 @media only screen and (min-width: 768px){
 	.footer{
+		/* font-size: 1em; */
 		font-size: .95em;
 	}
 }
@@ -437,6 +444,7 @@ a:focus img{
     font-style: normal;
     font-display: swap;
 }
+
 
 
 /* 1.2. Mobile Fixed Nav */
@@ -519,17 +527,21 @@ a:focus img{
 	margin: -1px -7px;
 }
 .nav-title{
+	/* font-size: 1.7em; */
+	/* font-family: Georgia, 'Times New Roman', Times, serif; */
 	font-size: 2em;
 	font-family: 'sansita_swashedlight';
 	font-weight: 600;
 }
 @media only screen and (min-width: 480px){
 	.nav-title{
-		font-size: 2.4em;
+		/* font-size: 2em; */
+		font-size: 2.4em;		
 	}
 }
 @media only screen and (min-width: 768px){
 	.nav-title{
+		/* font-size: 2.5em; */
 		font-size: 2.7em;
 	}
 }
