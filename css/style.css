@@ -82,20 +82,20 @@ body.essay .main{
 h1{
 	/* font-size: 2em; */
 	/* font-family: Georgia, 'Times New Roman', Times, serif; */
-	font-size: 2.6em;
-	font-family: 'sansita_swashedlight';
+	font-size: 3.2em;
+	font-family: 'jacksilverregular';
 	line-height: 1em;
 }
 @media only screen and (min-width: 768px){
 	h1{
 		/* font-size: 2.2em; */
-		font-size: 2.8em;
+		font-size: 3.4em;
 	}
 }
 @media only screen and (min-width: 992px){
 	h1{
 		/* font-size: 2.3em; */
-		font-size: 2.9em;
+		font-size: 3.5em;
 	}
 }
 /* h2{
@@ -450,6 +450,14 @@ a:focus img{
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+@font-face {
+    font-family: 'jacksilverregular';
+    src: url('../fonts/jacksilver-webfont.woff2') format('woff2'),
+         url('../fonts/jacksilver-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 
