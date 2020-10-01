@@ -16,7 +16,8 @@ h1, h2, h3{
 	z-index: 1;
 	left: 0;
 	right: 0;
-	top: 3em;
+	bottom: calc(100vh - 50%);
+	
 }
 .lead-image{
 	opacity: .7;
