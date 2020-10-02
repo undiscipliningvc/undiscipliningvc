@@ -1,3 +1,39 @@
+img {
+	filter: grayscale(100%);
+	width: 100vw;
+	height: 100vh;
+	object-fit:cover;
+	-o-object-fit: cover;
+	/* overflow: hidden; */
+  }
+.title-divider{
+	display: block;
+}
+.title{
+	position: relative;
+	overflow-wrap: normal;
+	word-wrap: normal;
+	word-break: normal;
+	hyphens: none;
+	-ms-word-break: normal;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+}
+.header-title{
+	top: -.5em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;
+}
+h1{
+	line-height: 1.5em;
+	font-size: 3.8em;
+}
+
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
@@ -82,9 +118,10 @@ body.essay .main{
 h1{
 	/* font-size: 2em; */
 	/* font-family: Georgia, 'Times New Roman', Times, serif; */
-	font-size: 3.2em;
+	/* font-size: 3.2em; */
+	/* font-size: 2em; */
 	font-family: 'jacksilverregular';
-	line-height: 1em;
+	/* line-height: 1em; */
 }
 @media only screen and (min-width: 768px){
 	h1{
@@ -120,7 +157,7 @@ h2,
 h3{
 	font-size: 1em;
 	font-weight: bold;
-	color: #2e68ac;
+	/* color: #2e68ac; */
 }
 h4{
 	font-style: italic;
@@ -420,16 +457,22 @@ img,
 }
 a,
 a:visited{
-	color: #2e68ac;
+	/* color: #2e68ac; */
 	/*text-decoration:none;*/
 }
 a:hover{
-	color: #a83c37;
+	/* color: #a83c37; */
 	background-color: #dbdbdb;
 }
 a:focus{
-	color: #2b61a1;
+	/* color: #2b61a1; */
 	background-color: #dbdbdb;
+}
+a,
+a:visited,
+a:hover,
+a:focus{
+	color: black;
 }
 
 .graphic a:hover,
@@ -449,7 +492,7 @@ a:focus img{
          url('../fonts/sansitaswashed-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 @font-face {
     font-family: 'jacksilverregular';
@@ -457,7 +500,7 @@ a:focus img{
          url('../fonts/jacksilver-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
-	font-display: swap;
+	font-display: block;
 }
 
 
