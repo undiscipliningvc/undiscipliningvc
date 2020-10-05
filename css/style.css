@@ -1,16 +1,7 @@
 img {
 	filter: grayscale(100%);
-	width: 100vw;
-	height: 100vh;
-	object-fit:cover;
-	-o-object-fit: cover;
-	/* overflow: hidden; */
-  }
-.title-divider{
-	display: block;
 }
 .title{
-	position: relative;
 	overflow-wrap: normal;
 	word-wrap: normal;
 	word-break: normal;
@@ -20,17 +11,10 @@ img {
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 }
-.header-title{
-	top: -.5em;
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	color: white;
-}
 h1{
-	line-height: 1.5em;
-	font-size: 3.8em;
+	line-height: 1.3em;
+	font-size: 2em;
+	margin: .3em;
 }
 
 
@@ -1221,4 +1205,25 @@ ul.concept-list li:last-child{
 }
 ol.primary-historical li{
 	padding-bottom: .5em;
+} */
+
+/*************************/
+/* Image/Title tests*/
+/* img {
+	width: 100vw;
+	height: 100vh;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+}
+.title{
+	position: relative;
+}
+.header-title{
+	top: -.5em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;
 } */
