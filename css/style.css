@@ -1,6 +1,11 @@
 img {
 	filter: grayscale(100%);
 }
+@media only screen and (min-width: 768px){
+	img{
+		width: 60% !important;
+	}
+}
 .title{
 	overflow-wrap: normal;
 	word-wrap: normal;
