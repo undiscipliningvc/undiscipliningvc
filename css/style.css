@@ -243,6 +243,9 @@ body.transcription .title{
 		padding: 0;
 	}
 }
+.organizers{
+	text-align: center;
+}
 /* .header-title{
 	display: none;
 }
