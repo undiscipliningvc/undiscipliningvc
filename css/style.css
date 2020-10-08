@@ -495,7 +495,7 @@ img,
 	font-size: 1em;
 	text-align: center;
 	line-height: 1.6em;
-	padding: 1em 1em 0 1em;
+	padding: 0 1em;
 	/* font-family: Arial, Geneva, Tahoma, sans-serif; */
 }
 @media only screen and (min-width: 768px){
