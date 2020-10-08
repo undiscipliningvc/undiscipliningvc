@@ -181,9 +181,6 @@ h5.books::after{
 		width: 80%;
 	}
 }
-.announcement{
-	padding-bottom: 1em;
-}
 /* adds padding for h4 labelled subsections in essays */
 .subsection{
 	padding-top: 2em;
@@ -221,8 +218,13 @@ body.transcription .title{
 @media only screen and (min-width: 992px){
 	.title,
 	body.transcription .title{
-		padding-bottom: 1.5em;
+		padding-bottom: 1em;
 		display: block !important; /* Tied to overlay */
+	}
+}
+@media only screen and (min-width: 480px){
+	.announcement{
+		padding-bottom: .5em;
 	}
 }
 /* .header-title{
