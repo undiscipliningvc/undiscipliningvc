@@ -1,60 +1,10 @@
-.test2{
-
-}
-.test3{
-	
-}
-
-@font-face {
-    font-family: 'crimson_textregular';
-    src: url('../fonts/crimsontext-regular-webfont.woff2') format('woff2'),
-         url('../fonts/crimsontext-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'david_libreregular';
-    src: url('../fonts/davidlibre-regular-webfont.woff2') format('woff2'),
-         url('../fonts/davidlibre-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'merriweatherregular';
-    src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
-         url('../fonts/merriweather-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'noto_serifregular';
-    src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
-         url('../fonts/notoserif-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'pt_serifregular';
-    src: url('../fonts/ptserif-regular-webfont.woff2') format('woff2'),
-         url('../fonts/ptserif-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'source_serif_proregular';
-    src: url('../fonts/sourceserifpro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourceserifpro-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 img {
 	filter: grayscale(100%);
 }
 @media only screen and (min-width: 992px){
 	img{
-		width: 60% !important;
+		width: 70% !important;
 	}
 }
 .title{
@@ -135,9 +85,6 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
-.main{
-	padding: 0 .5em 1em .5em;
-}
 @media only screen and (min-width: 768px){
 	body.essay .main{
 		/*font-size: .95em;
@@ -156,7 +103,7 @@ body{
 	}
 }
 body.essay .main{
-	padding-bottom: 1em;
+	padding: 0 1em 1em 1em;
 }
 h1{
 	/* font-size: 2em; */
@@ -206,6 +153,7 @@ h2,
 h3{
 	font-size: 1em;
 	font-weight: bold;
+	font-family: 'noto_serifregular';
 	/* color: #2e68ac; */
 }
 h4{
@@ -284,7 +232,7 @@ body.transcription .title{
 }
 @media only screen and (min-width: 480px){
 	.announcement{
-		padding-bottom: .5em;
+		padding-bottom: .6em;
 	}
 }
 .header-title{
@@ -562,6 +510,15 @@ a:focus img{
     font-family: 'source_sans_proregular';
     src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
          url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+/*h2 font*/
+@font-face {
+    font-family: 'noto_serifregular';
+    src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/notoserif-regular-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
 	font-display: block;
