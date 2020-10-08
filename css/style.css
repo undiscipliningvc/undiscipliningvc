@@ -1,3 +1,48 @@
+
+@font-face {
+    font-family: 'crimson_textregular';
+    src: url('../fonts/crimsontext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/crimsontext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'david_libreregular';
+    src: url('../fonts/davidlibre-regular-webfont.woff2') format('woff2'),
+         url('../fonts/davidlibre-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'noto_serifregular';
+    src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/notoserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pt_serifregular';
+    src: url('../fonts/ptserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_serif_proregular';
+    src: url('../fonts/sourceserifpro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourceserifpro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 img {
 	filter: grayscale(100%);
 }
