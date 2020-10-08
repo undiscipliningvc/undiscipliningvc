@@ -1,4 +1,32 @@
-
+@media only screen and (min-width: 992px){
+	.fullscreen.title{
+		position: relative;
+	}
+	.fullscreen .lead-image{
+		height: 100vh;
+		width: 100vw;
+		object-fit:cover;
+		-o-object-fit: cover;
+		overflow: hidden;
+	}
+	.fullscreen img{
+		width: 100% !important;
+	}
+	.fullscreen .header-title{
+		color: white;
+		top: 2.5em;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		position: absolute;
+	} 
+	.fullscreen h1{
+		font-size: 5em;
+	}
+	.fullscreen hr{
+		display: none;
+	}
+}
 img {
 	filter: grayscale(100%);
 }
