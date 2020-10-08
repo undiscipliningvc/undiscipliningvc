@@ -1,3 +1,9 @@
+.test2{
+
+}
+.test3{
+	
+}
 
 @font-face {
     font-family: 'crimson_textregular';
@@ -46,7 +52,7 @@
 img {
 	filter: grayscale(100%);
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	img{
 		width: 60% !important;
 	}
@@ -113,7 +119,7 @@ html{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: normal;
 	color: #191716;
-	padding: 0 1em;
+	/* padding: 0 1em; */
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -128,6 +134,9 @@ body{
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.main{
+	padding: 0 .5em 1em .5em;
 }
 @media only screen and (min-width: 768px){
 	body.essay .main{
@@ -157,10 +166,16 @@ h1{
 	font-family: 'jacksilverregular';
 	/* line-height: 1em; */
 }
+@media only screen and (min-width: 480px){
+	h1{
+		/* font-size: 2.2em; */
+		font-size: 2.3em;
+	}
+}
 @media only screen and (min-width: 768px){
 	h1{
 		/* font-size: 2.2em; */
-		font-size: 3.4em;
+		font-size: 3.5em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -270,6 +285,14 @@ body.transcription .title{
 @media only screen and (min-width: 480px){
 	.announcement{
 		padding-bottom: .5em;
+	}
+}
+.header-title{
+	padding: 0 .5em;
+}
+@media only screen and (min-width: 320px){
+	.header-title {
+		padding: 0;
 	}
 }
 /* .header-title{
