@@ -149,14 +149,14 @@ h1{
 		display: block;
 	}
 } */
-h2,
-h3{
+h2{
 	font-size: 1em;
 	font-weight: bold;
 	font-family: 'noto_serifregular';
+	text-align: center;
 	/* color: #2e68ac; */
 }
-h4{
+h3{
 	font-style: italic;
 	font-size: 1em;
 	font-weight: 300;
