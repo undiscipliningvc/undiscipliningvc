@@ -4,7 +4,7 @@ img {
 }
 @media only screen and (min-width: 992px){
 	img{
-		width: 70% !important;
+		width: 75% !important;
 	}
 }
 .title{
@@ -232,7 +232,7 @@ body.transcription .title{
 }
 @media only screen and (min-width: 480px){
 	.announcement{
-		padding-bottom: .6em;
+		padding-bottom: .75em;
 	}
 }
 .header-title{
