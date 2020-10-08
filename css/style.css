@@ -181,6 +181,9 @@ h5.books::after{
 		width: 80%;
 	}
 }
+.announcement{
+	padding-bottom: 1em;
+}
 /* adds padding for h4 labelled subsections in essays */
 .subsection{
 	padding-top: 2em;
