@@ -33,37 +33,55 @@
 	<style>
 		/* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
 		/* .carousel */
-
 		.carousel .carousel-inner {
 		position: relative;
-		width: 75% !important;
 		margin: 0 auto;
+		max-width: 900px;
 		}
-
+		@media only screen and (min-width: 992px){
+			.carousel .carousel-inner{
+				width: 75% !important;
+			}
+		}
 		.carousel .carousel-item {
 		display: none;
-		max-height: 400px;
-		max-width: 900px;
+		/* max-height: 400px;
+		max-width: 900px; */
 		position: relative;
 		overflow: hidden;
 		width: 100%;
 		}
-
 		.carousel .carousel-item.active {
 		display: block;
 		}
-
 		/* More like bootstrap, less accessible */
-
 		.carousel .carousel-items {
-		border: solid 2px transparent;
+			border: solid 2px gray; /*transparent*/
 		}
-
+		@media screen and (min-width:320px) {
+			.carousel .carousel-items{
+				min-height: 183px;
+			}
+		}
+		@media screen and (min-width:480px) {
+			.carousel .carousel-items {
+				min-height: 277px;
+			}
+		}
+		@media screen and (min-width:768px) {
+			.carousel .carousel-items {
+				min-height: 446px;
+			}
+		}
+		@media screen and (min-width:992px) {
+			.carousel .carousel-items {
+				min-height: 432px;
+			}
+		}		
 		.carousel .carousel-items.focus {
 		border-color: white;
 		outline: solid 3px #005a9c;
 		}
-
 		.carousel .carousel-item .carousel-image a img {
 		height: 100%;
 		width: 100% !important;
@@ -71,11 +89,29 @@
 		-o-object-fit: cover;
 		overflow: hidden;;
 		}
-
+		@media screen and (min-width:320px) {
+			.carousel .carousel-item .carousel-image a img{
+				max-height: 183px;
+			}
+		}
+		@media screen and (min-width:480px) {
+			.carousel .carousel-item .carousel-image a img {
+				max-height: 277px;
+			}
+		}
+		@media screen and (min-width:768px) {
+			.carousel .carousel-item .carousel-image a img {
+				max-height: 446px;
+			}
+		}
+		@media screen and (min-width:992px) {
+			.carousel .carousel-item .carousel-image a img {
+				max-height: 432px;
+			}
+		}	
 		.carousel .carousel-item .carousel-caption a {
 		text-decoration: underline;
 		}
-
 		.carousel .carousel-item .carousel-caption a,
 		.carousel .carousel-item .carousel-caption span.contrast {
 		display: inline-block;
@@ -86,30 +122,25 @@
 		border: 2px solid transparent;
 		margin: 0;
 		}
-
 		.carousel .carousel-item .carousel-caption h3 a {
 		color: #fff;
 		font-weight: 600;
 		}
-
 		.carousel .carousel-item .carousel-caption a:hover,
 		.carousel .carousel-item .carousel-caption span.contrast:hover {
 		background-color: rgba(0, 0, 0, 1);
 		margin: 0;
 		}
-
 		.carousel .carousel-item .carousel-caption a:focus {
 		background-color: rgba(0, 0, 0, 1);
 		border-color: #fff;
 		margin: 0;
 		}
-
 		.carousel .carousel-item .carousel-caption p {
 		font-size: 1em;
 		line-height: 1.5;
 		margin-bottom: 0;
 		}
-
 		.carousel .carousel-item .carousel-caption {
 		position: absolute;
 		right: 15%;
@@ -120,9 +151,7 @@
 		color: #fff;
 		text-align: center;
 		}
-
 		/* Shared CSS for Pause, Next and Previous Slide Controls */
-
 		.carousel .controls button {
 		padding: 0;
 		position: absolute;
@@ -132,63 +161,50 @@
 		border: none;
 		outline: none;
 		}
-
 		.carousel .controls button svg rect.background {
 		stroke: black;
 		fill: black;
 		stroke-width: 1px;
 		opacity: 0.6;
 		}
-
 		.carousel .controls button svg rect.border {
 		fill: transparent;
 		stroke: transparent;
 		stroke-width: 2px;
 		}
-
 		/* Next and Previous Slide Controls */
-
 		.carousel .controls button svg polygon {
 		stroke: white;
 		fill: white;
 		stroke-width: 2;
 		opacity: 1;
 		}
-
 		.carousel .controls button.previous {
 		right: 50px;
 		}
-
 		.carousel .controls button.next {
 		right: 6px;
 		}
-
 		/* Pause Control */
-
 		.carousel .controls button.rotation {
 		left: 6px;
 		}
-
 		.carousel .controls button.rotation svg polygon.pause {
 		stroke-width: 4;
 		fill: transparent;
 		stroke: transparent;
 		}
-
 		.carousel .controls button.rotation svg polygon.play {
 		stroke-width: 1;
 		fill: transparent;
 		stroke: transparent;
 		}
-
 		.carousel .controls button.rotation.pause svg polygon.pause,
 		.carousel .controls button.rotation.play svg polygon.play {
 		fill: white;
 		stroke: white;
 		}
-
 		/* Common focus styling for svg buttons */
-
 		.carousel .controls button:focus rect.background,
 		.carousel .controls button:hover rect.background,
 		.carousel .controls button:focus rect.border,
@@ -197,7 +213,6 @@
 		stroke: #005a9c;
 		opacity: 1;
 		}
-
 		.carousel .controls button:focus rect.border {
 		stroke: white;
 		}
@@ -420,16 +435,16 @@
 				<div class="carousel-item active"
 					role="group"
 					aria-roledescription="slide"
-					aria-label="1 of 6">
+					aria-label="1 of 4">
 					<div class="carousel-image">
 					<a href="#">
-						<img src="images/uvc_0001-deriv.jpg" alt="Walking Tour in Amsterdam">
+						<img src="images/uvc_0001-deriv.jpg" alt="">
 					</a>
 					</div>
 					<div class="carousel-caption">
 					<h3>
 						<a href="#" id="carousel-label-1">
-						Dynamic Europe: Amsterdam, Prague, Berlin
+						Label 1
 						</a>
 					</h3>
 					<!-- <div class="hidden-xs hidden-sm">
@@ -446,16 +461,16 @@
 				<div class="carousel-item"
 					role="group"
 					aria-roledescription="slide"
-					aria-label="2 of 6">
+					aria-label="2 of 4">
 					<div class="carousel-image">
 					<a href="#">
-						<img src="images/uvc_0002-deriv.jpg" alt="Land's End in Cornwall">
+						<img src="images/uvc_0002-deriv.jpg" alt="">
 					</a>
 					</div>
 					<div class="carousel-caption">
 					<h3>
 						<a href="#" id="carousel-label-2">
-						Travel to Southwest England and Paris
+						Label 2
 						</a>
 					</h3>
 					<!-- <div>
@@ -472,16 +487,16 @@
 				<div class="carousel-item"
 					role="group"
 					aria-roledescription="slide"
-					aria-label="3 of 6">
+					aria-label="3 of 4">
 					<div class="carousel-image">
 					<a href="#">
-						<img src="images/uvc_0003-deriv.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
+						<img src="images/uvc_0003-deriv.jpg" alt="">
 					</a>
 					</div>
 					<div class="carousel-caption">
 					<h3>
 						<a href="#" id="carousel-label-3">
-						Great Children's Programming on Public TV
+						Label 3
 						</a>
 					</h3>
 					<!-- <div>
@@ -493,16 +508,16 @@
 				<div class="carousel-item"
 					role="group"
 					aria-roledescription="slide"
-					aria-label="4 of 6">
+					aria-label="4 of 4">
 					<div class="carousel-image">
 					<a href="#">
-						<img src="images/uvc_0004-deriv.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
+						<img src="images/uvc_0004-deriv.jpg" alt="">
 					</a>
 					</div>
 					<div class="carousel-caption">
 					<h3>
 						<a href="#" id="carousel-label-4">
-						Foyle’s War Revisited
+						Label 4
 						</a>
 					</h3>
 					<!-- <div>
