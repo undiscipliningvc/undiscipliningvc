@@ -29,7 +29,7 @@ var Carousel = function (domNode) {
   this.hasFocus = false;
   this.hasHover = false;
   this.isStopped = false;
-  this.timeInterval = 5000;
+  this.timeInterval = 3000;
 };
 
 Carousel.prototype.init = function () {
