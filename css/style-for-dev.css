@@ -195,9 +195,9 @@ img,
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
-	font-size: 1.1em;
+	font-size: .9em;
 	color: white;
-	background: #424242;
+	background: black; /*#424242*/
 	padding: 6px;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
