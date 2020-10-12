@@ -1,0 +1,1 @@
+var PauseButton=function(t,o){this.domNode=t,this.carousel=o};PauseButton.prototype.init=function(){this.domNode.addEventListener("click",this.handleClick.bind(this))},PauseButton.prototype.handleClick=function(){this.carousel.toggleRotation()};
