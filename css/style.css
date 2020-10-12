@@ -1684,10 +1684,18 @@ hr.section-divider{
 	font-size: .9em;
 }
 .smaller{
-	font-size: .8em;
+	font-size: .9em;
 }
 .smallest{
-	font-size: .7em;
+	font-size: .9em;
+}
+@media only screen and (min-width: 768px){
+	.smaller{
+		font-size: .8em;
+	}
+	.smallest{
+		font-size: .7em;
+	}
 }
 .smallcaps{
 	font-variant: small-caps;
