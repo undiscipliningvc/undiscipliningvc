@@ -278,11 +278,11 @@ body.transcription .title{
 	}
 }
 .header-title{
-	padding: 0 .5em;
+	padding: .2em .5em;
 }
 @media only screen and (min-width: 320px){
 	.header-title {
-		padding: 0;
+		padding: .2em 0;
 	}
 }
 .organizers{
