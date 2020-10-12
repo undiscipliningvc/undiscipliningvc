@@ -1,37 +1,4 @@
-@media only screen and (min-width: 992px){
-	.fullscreen.title{
-		position: relative;
-	}
-	.fullscreen .lead-image{
-		height: 100vh;
-		width: 100vw;
-		object-fit:cover;
-		-o-object-fit: cover;
-		overflow: hidden;
-	}
-	.fullscreen img{
-		width: 100% !important;
-	}
-	.fullscreen .header-title{
-		color: white;
-		top: 2.5em;
-		left: 0;
-		right: 0;
-		z-index: 1;
-		position: absolute;
-	} 
-	.fullscreen h1{
-		font-size: 5em;
-	}
-	.fullscreen hr{
-		display: none;
-	}
-}
-/* img {
-	filter: grayscale(100%);
-} */
-
-/* CSS Main File for One More Voice (https://onemorevoice.org/) */
+/* CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
 
@@ -58,14 +25,7 @@ Table of Contents
 
 /** Main Site Colors **/
 /*
-site-blue #2e68ac;
-site-red #cc4943;
-whitesmoke;
-light gray #dbdbdb;
-dark gray #858585;
-dark brown #424242;
-near black #525252;
-also see 2.9 for manuscript colors
+
 */
 
 /** 1.0 Main CSS **/
@@ -73,11 +33,9 @@ also see 2.9 for manuscript colors
 /* 1.1. Main Components */
 
 html{
-	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: normal;
 	color: #191716;
-	/* padding: 0 1em; */
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -114,9 +72,6 @@ body.essay .main{
 	body.essay .main{
 		font-size: 1.1em;
 		padding: 0 2.25em 1em 2.25em;
-		/*font-size: .95em;
-		max-width: 46em;*/
-		/* max-width: 40em; */
 	}
 }
 @media only screen and (min-width: 992px){
@@ -124,7 +79,6 @@ body.essay .main{
 		font-size: 1.2em;
 		max-width: 36em;
 		display: block !important; /* Tied to overlay */
-		/*max-width: 42em;*/
 	}
 	body.fixed-nav{
 		padding-top: 0 !important;
@@ -135,53 +89,26 @@ h1{
 	font-family: 'jacksilverregular';
 	line-height: 1.3em;
 	margin: .3em;
-	/* font-size: 2em; */
-	/* font-family: Georgia, 'Times New Roman', Times, serif; */
-	/* font-size: 3.2em; */
-	/* font-size: 2em; */
-	/* line-height: 1em; */
 }
 @media only screen and (min-width: 480px){
 	h1{
-		/* font-size: 2.2em; */
 		font-size: 2.3em;
 	}
 }
 @media only screen and (min-width: 768px){
 	h1{
-		/* font-size: 2.2em; */
 		font-size: 3.5em;
 	}
 }
 @media only screen and (min-width: 992px){
 	h1{
-		/* font-size: 2.3em; */
 		font-size: 3.5em;
 	}
 }
-/* h2{
-	font-size: .9em;
-	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	display: none;
-}
-@media only screen and (min-width: 480px){
-	h2{
-		font-size: 1em;
-		display: block;
-	}
-}
-@media only screen and (min-width: 768px){
-	h2{
-		font-size: 1.1em;
-		display: block;
-	}
-} */
 h2{
 	font-size: 1em;
 	font-weight: bold;
 	font-family: 'noto_serifregular';
-	/* color: #2e68ac; */
 }
 @media only screen and (min-width: 480px){
 	h2{
@@ -193,44 +120,11 @@ h3{
 	font-size: 1em;
 	font-weight: 300;
 }
-h5.books{
-	font-size: 1.1em;
-	font-variant: small-caps;
-	margin: 0;
-}
-h5.books::before{
-	font-family: 'FontAwesome';
-	content: '\f101';
-	padding-right: .5em;
-}
-h5.books::after{
-	font-family: 'FontAwesome';
-	content: '\f100';
-	padding-left: .5em;
-}
-.main-divider{
-	width: 100%;
-}
-@media only screen and (min-width: 768px){
-	.main-divider{
-		width: 70%;
-	}
-}
-@media only screen and (min-width: 992px){
-	.main-divider{
-		width: 80%;
-	}
-}
 /* adds padding for h4 labelled subsections in essays */
 .subsection{
 	padding-top: 2em;
 }
-.return-top{
-	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: .9em;
-}
-.title,
-body.transcription .title{
+.title{
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.6em;
@@ -247,25 +141,13 @@ body.transcription .title{
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 }
-body.transcription .title{
-	padding-bottom: 1em;
-}
 @media only screen and (min-width: 320px){
 	.title{
 		padding-bottom: .5em
 	}
-	body.transcription .title{
-		padding-bottom: 1.5em;
-	}
-}
-@media only screen and (min-width: 480px){
-	body.transcription .title{
-		padding-bottom: .5em
-	}
 }
 @media only screen and (min-width: 992px){
-	.title,
-	body.transcription .title{
+	.title{
 		padding: 1em 0;
 		display: block !important; /* Tied to overlay */
 	}
@@ -294,14 +176,6 @@ body.transcription .title{
 		text-align: center;
 	}
 }
-/* .header-title{
-	display: none;
-}
-@media only screen and (min-width: 992px){
-	.header-title{
-		display: block;
-	}
-} */
 img,
 .image{
 	color:#e6e6e6;
@@ -318,6 +192,599 @@ img,
 }
 .image-border{
 	border: 1px solid gray;
+}
+/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
+#skiptocontent a{
+	font-size: 1.1em;
+	color: white;
+	background: #424242;
+	padding: 6px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-right-radius: 8px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	z-index: 100;
+	-webkit-transition: top 1s ease-out;
+	transition: top .4s ease-out;
+}
+#skiptocontent a:focus{
+	outline-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: top .1s ease-in;
+	transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#skiptocontent a:focus{
+		position: absolute;
+	}
+}
+.footer{
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 0 1em;
+	/* font-family: Arial, Geneva, Tahoma, sans-serif; */
+}
+*:focus{
+	outline: 0 none;
+}
+a,
+a:visited{
+	/* color: #2e68ac; */
+	/*text-decoration:none;*/
+}
+a:hover{
+	/* color: #a83c37; */
+	background-color: #dbdbdb;
+}
+a:focus{
+	/* color: #2b61a1; */
+	background-color: #dbdbdb;
+}
+a,
+a:visited,
+a:hover,
+a:focus{
+	color: black;
+}
+a img{
+	border: 3px white solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #2e68ac solid;
+}
+/*logo*/
+@font-face {
+    font-family: 'jacksilverregular';
+    src: url('../fonts/jacksilver-webfont.woff2') format('woff2'),
+         url('../fonts/jacksilver-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+/*main text & footer*/
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+/*h2 font*/
+@font-face {
+    font-family: 'noto_serifregular';
+    src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/notoserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+
+/* 1.1.1. Carousel */
+
+/* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
+.carousel .carousel-inner{
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	}
+@media only screen and (min-width: 992px){
+	.carousel .carousel-inner{
+		width: 75% !important;
+	}
+}
+/* Carousel items */
+.carousel .carousel-item{
+	line-height: 0;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+.carousel .carousel-item.active{
+	display: block;
+}
+/* More like bootstrap, less accessible */
+.carousel .carousel-items{
+	border: solid 1px gray;
+}
+.carousel .carousel-items.focus{
+	border-color: white;
+	outline: solid 3px black; /*#005a9c*/
+}
+/* Carousel images */
+.carousel .carousel-item .carousel-image{
+	background: #e6e6e6;
+}
+@media screen and (min-width:320px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 183px;
+	}
+}
+@media screen and (min-width:480px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 277px;
+	}
+}
+@media screen and (min-width:768px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 446px;
+	}
+}
+@media screen and (min-width:992px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 432px;
+	}
+}	
+.carousel .carousel-item .carousel-image img{
+	height: 100%;
+	width: 100% !important;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+	object-position: 50% 50%;
+}
+@media screen and (min-width:320px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 183px;
+	}
+}
+@media screen and (min-width:480px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 277px;
+	}
+}
+@media screen and (min-width:768px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 446px;
+	}
+}
+@media screen and (min-width:992px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 432px;
+	}
+}
+/* Carousel caption */
+.carousel .carousel-item .carousel-caption a{
+	text-decoration: underline;
+}
+.carousel .carousel-item .carousel-caption a,
+.carousel .carousel-item .carousel-caption span.contrast{
+	background-color: rgba(0, 0, 0, 0.65);
+	border: 2px solid transparent;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0 6px;
+	display: inline-block;
+}
+.carousel .carousel-item .carousel-caption h3 a{
+	color: #fff;
+	font-size: .8em;
+	font-weight: 300;
+	font-style: normal;
+}
+@media screen and (min-width:768px){
+	.carousel .carousel-item .carousel-caption h3 a{
+		font-size: .9em;
+	}
+}
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption span.contrast:hover{
+	background-color: rgba(0, 0, 0, 1);
+	margin: 0;
+}
+.carousel .carousel-item .carousel-caption a:focus{
+	background-color: rgba(0, 0, 0, 1);
+	border-color: #fff;
+	margin: 0;
+}
+.carousel .carousel-item .carousel-caption p{
+	font-size: 1em;
+	line-height: 1.5;
+	margin-bottom: 0;
+	right: 0;
+	bottom: 2em;
+	left: 0;
+}
+.carousel .carousel-item .carousel-caption{
+	color: #fff;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 20px 0;
+	right: 6px;
+	bottom: -25px;
+	position: absolute;
+}
+/* Shared CSS for Pause, Next and Previous Slide Controls */
+.carousel .controls button{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+	z-index: 10;
+	top: 5px;
+	position: absolute;
+}
+.carousel .controls button svg rect.background{
+	fill: black;
+	stroke: black;
+	stroke-width: 1px;
+	opacity: 0.6;
+}
+.carousel .controls button svg rect.border{
+	fill: transparent;
+	stroke: transparent;
+	stroke-width: 2px;
+}
+/* Next and Previous Slide Controls */
+.carousel .controls button svg polygon{
+	fill: white;
+	stroke: white;
+	stroke-width: 2;
+	opacity: 1;
+}
+.carousel .controls button.previous{
+	top: 10px;
+	right: 50px;
+}
+.carousel .controls button.next{
+	top: 10px;
+	right: 6px;
+}
+/* Pause Control */
+.carousel .controls button.rotation{
+	top: 10px;
+	left: 6px;
+}
+.carousel .controls button.rotation svg polygon.pause{
+	fill: transparent;
+	stroke-width: 4;
+	stroke: transparent;
+}
+.carousel .controls button.rotation svg polygon.play{
+	fill: transparent;
+	stroke-width: 1;
+	stroke: transparent;
+}
+.carousel .controls button.rotation.pause svg polygon.pause,
+.carousel .controls button.rotation.play svg polygon.play{
+	fill: white;
+	stroke: white;
+}
+/* Common focus styling for svg buttons */
+.carousel .controls button:focus rect.background,
+.carousel .controls button:hover rect.background,
+.carousel .controls button:focus rect.border,
+.carousel .controls button:hover rect.border{
+	fill: black ; /*#005a9c*/
+	stroke: black; /*#005a9c*/
+	opacity: 1;
+}
+.carousel .controls button:focus rect.border{
+	stroke: white;
+}
+
+
+/* 1.6. Lines */
+
+hr{
+	background-color: gray;
+	height: 1px;
+	border: 0;
+	width: 95%;
+}
+hr.section-divider{
+	margin: 2.5em 0;
+}
+
+
+/* 1.7. Formatting */
+
+.black{
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.half{
+	width: 50%;
+}
+.highlight{
+	color: #cc4943;
+	font-style: italic;
+}
+.italic{
+	font-style: italic;
+}
+.left{
+	text-align: left;
+}
+.site-blue{
+	color: #2e68ac;
+}
+.site-red{
+	color: #cc4943;
+}
+.small{
+	font-size: .9em;
+}
+.smaller{
+	font-size: .9em;
+}
+.smallest{
+	font-size: .9em;
+}
+@media only screen and (min-width: 768px){
+	.smaller{
+		font-size: .8em;
+	}
+	.smallest{
+		font-size: .7em;
+	}
+}
+.smallcaps{
+	font-variant: small-caps;
+}
+.underline{
+	text-decoration: underline;
+}
+
+
+/* 1.8. Lists */
+
+ol,
+ul{
+	padding: 0 0 0 1.4em;
+	margin:0;
+}
+@media only screen and (min-width: 768px){
+	ol,
+	ul{
+		padding-left: 2.4em;
+	}
+}
+
+/* Unused Code */
+
+/* Image/Title tests*/
+/* img {
+	width: 100vw;
+	height: 100vh;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+}
+.title{
+	position: relative;
+}
+.header-title{
+	top: -.5em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;
+} */
+
+/* @media only screen and (min-width: 992px){
+	.fullscreen.title{
+		position: relative;
+	}
+	.fullscreen .lead-image{
+		height: 100vh;
+		width: 100vw;
+		object-fit:cover;
+		-o-object-fit: cover;
+		overflow: hidden;
+	}
+	.fullscreen img{
+		width: 100% !important;
+	}
+	.fullscreen .header-title{
+		color: white;
+		top: 2.5em;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		position: absolute;
+	} 
+	.fullscreen h1{
+		font-size: 5em;
+	}
+	.fullscreen hr{
+		display: none;
+	}
+} */
+/* img {
+	filter: grayscale(100%);
+} */
+
+/** Main Site Colors **/
+/*
+site-blue #2e68ac;
+site-red #cc4943;
+whitesmoke;
+light gray #dbdbdb;
+dark gray #858585;
+dark brown #424242;
+near black #525252;
+also see 2.9 for manuscript colors
+*/
+
+/* The following items are used on the texts.html page. */
+/* .author-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-bottom: 1em;
+}
+.archival-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+
+}
+@media only screen and (min-width: 768px){
+	.archival-entry{
+		padding-left: 1em;
+	}
+}
+.contribution-form{
+	padding-left: 1em;
+	padding-bottom: 0em;
+	margin-bottom: 1em;
+	margin-top: 0em;
+}
+@media only screen and (min-width: 768px){
+	.contribution-form{
+		padding-left: 2.5em;
+	}
+}
+.critical-entry{
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px){
+	.critical-entry{
+		padding-left: 1em;
+	}
+} */
+
+/* The following items are used on the books.html page. */
+/* .published-author{
+	padding: 1.5em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.works-list{
+		padding: 0 0 0 2em;
+	}
+}
+.works-list li{
+	padding: 0 0 .75em 0;
+} */
+
+/* The following item is used on the site_map.html page. */
+/* .sitemap-list{
+	display: inline-block;
+	text-indent: 0;
+}
+.sitemap-list .sitemap-list:before{
+	content: "•";
+	margin:0 5px 0 -15px;
+}
+@media only screen and (min-width: 768px){
+	.sitemap-list{
+		margin-left: 1em;
+	}
+} */
+
+/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
+/* ol.concept-list li,
+ul.concept-list li{
+	margin-bottom: .7em;
+}
+ol.concept-list li:last-child,
+ul.concept-list li:last-child{
+   margin-bottom: 0;
+} */
+
+/* The following items are used on the bibliography.html page. */
+/* .primary-historical{
+	list-style: none;
+	padding: 0 0 1em 0;
+	margin: 0;	
+}
+ol.primary-historical li{
+	padding-bottom: .5em;
+} */
+
+/* 1.1. Main Components */
+/* h5.books{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	margin: 0;
+}
+h5.books::before{
+	font-family: 'FontAwesome';
+	content: '\f101';
+	padding-right: .5em;
+}
+h5.books::after{
+	font-family: 'FontAwesome';
+	content: '\f100';
+	padding-left: .5em;
+}
+.return-top{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: .9em;
+}
+.main-divider{
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.main-divider{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 992px){
+	.main-divider{
+		width: 80%;
+	}
+}
+body.transcription .title{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 320px){
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+@media only screen and (min-width: 480px){
+	body.transcription .title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	body.transcription .title{
+		padding: 1em 0;
+		display: block !important;*/ /* Tied to overlay */
+	/*}
+}
+.header-title{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.header-title{
+		display: block;
+	}
 }
 .content-holder{
 	background: #e6e6e6;
@@ -341,8 +808,7 @@ img,
 	.content-holder{
 		min-height: 432px;
 	}
-}
-
+} */
 /* @media screen and (min-width:480px) {
 	.responsive-image70 {
 		width: 70%;
@@ -435,41 +901,12 @@ img,
 		display: block;
 	}
 } */
-/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
-/* #skiptocontent a{
-	font-size: 1.1em;
-	color: white;
-	background: #424242;
-	padding: 6px;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
-	border-bottom-right-radius: 8px;
-	position: absolute;
-	top: -40px;
-	left: 0px;
-	z-index: 100;
-	-webkit-transition: top 1s ease-out;
-	transition: top .4s ease-out;
-}
-#skiptocontent a:focus{
-	outline-color: transparent;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	-webkit-transition: top .1s ease-in;
-	transition: top .4s ease-in;
-}
-@media only screen and (min-width: 768px){
-	#skiptocontent a:focus{
-		position: absolute;
-	}
-} */
 /* for essay title with subtitle */
-.title-with-subtitle{
+/* .title-with-subtitle{
 	margin-bottom: .5em;
-}
+} */
 /* for essay subtitle */
-.subtitle{
+/* .subtitle{
 	font-size: .9em;
 	margin-top: .5em;
 	margin-bottom: .5em;
@@ -484,9 +921,9 @@ img,
     border-top: 1px dashed gray;
 	background: white;
 	display: inline-block;
-}
+} */
 /* toc and toc-title used for page menus */
-.toc{
+/* .toc{
 	font-size: .9em;
 	padding: 1em 0 0 0;
 }
@@ -494,13 +931,13 @@ img,
 	list-style-type:none;
 	margin-left: -1.2em;
 	display:inline-block;
-}
+} */
 /* assumes this goes at end of essay */
-.footnote{
+/* .footnote{
 	font-size: .9em;
 	padding-top: 1.5em;
-}
-.credits{
+} */
+/* .credits{
 	font-size: 1.2em;
 	line-height: 1.6em;
 	text-align: left;
@@ -514,82 +951,18 @@ img,
 	.credits{
 		font-size: 1.1em;
 		display: block !important; /* Tied to overlay */
-	}
-}
-.footer{
-	font-size: 1em;
-	text-align: center;
-	line-height: 1.6em;
-	padding: 0 1em;
-	/* font-family: Arial, Geneva, Tahoma, sans-serif; */
-}
-@media only screen and (min-width: 768px){
+	/*}
+} */
+/* @media only screen and (min-width: 768px){
 	.footer{
-		/* font-size: 1em; */
-		/* font-size: .95em; */
+		font-size: 1em; */
+		/* font-size: .95em;
 	}
-}
-*:focus{
-	outline: 0 none;
-}
-a,
-a:visited{
-	/* color: #2e68ac; */
-	/*text-decoration:none;*/
-}
-a:hover{
-	/* color: #a83c37; */
-	background-color: #dbdbdb;
-}
-a:focus{
-	/* color: #2b61a1; */
-	background-color: #dbdbdb;
-}
-a,
-a:visited,
-a:hover,
-a:focus{
-	color: black;
-}
-
-.graphic a:hover,
+} */
+/* .graphic a:hover,
 .graphic a:focus{
 	background-color: white;
-}
-a img{
-	border: 3px white solid;
-}
-a:hover img,
-a:focus img{
-	border: 3px #2e68ac solid;
-}
-/*logo*/
-@font-face {
-    font-family: 'jacksilverregular';
-    src: url('../fonts/jacksilver-webfont.woff2') format('woff2'),
-         url('../fonts/jacksilver-webfont.woff') format('woff');
-    font-weight: normal;
-	font-style: normal;
-	font-display: block;
-}
-/*main text & footer*/
-@font-face {
-    font-family: 'source_sans_proregular';
-    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
-    font-weight: normal;
-	font-style: normal;
-	font-display: block;
-}
-/*h2 font*/
-@font-face {
-    font-family: 'noto_serifregular';
-    src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
-         url('../fonts/notoserif-regular-webfont.woff') format('woff');
-    font-weight: normal;
-	font-style: normal;
-	font-display: block;
-}
+} */
 /*source sans pro - additional variants */
 /* @font-face {
     font-family: 'source_sans_problack';
@@ -866,212 +1239,6 @@ a:focus img{
     font-weight: normal;
     font-style: normal;
 } */
-
-
-/* 1.1.1. Carousel */
-
-/* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
-.carousel .carousel-inner{
-	max-width: 900px;
-	margin: 0 auto;
-	position: relative;
-	}
-@media only screen and (min-width: 992px){
-	.carousel .carousel-inner{
-		width: 75% !important;
-	}
-}
-/* Carousel items */
-.carousel .carousel-item{
-	line-height: 0;
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	display: none;
-}
-.carousel .carousel-item.active{
-	display: block;
-}
-/* More like bootstrap, less accessible */
-.carousel .carousel-items{
-	border: solid 1px gray;
-}
-.carousel .carousel-items.focus{
-	border-color: white;
-	outline: solid 3px black; /*#005a9c*/
-}
-/* Carousel images */
-.carousel .carousel-item .carousel-image{
-	background: #e6e6e6;
-}
-@media screen and (min-width:320px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 183px;
-	}
-}
-@media screen and (min-width:480px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 277px;
-	}
-}
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 446px;
-	}
-}
-@media screen and (min-width:992px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 432px;
-	}
-}	
-.carousel .carousel-item .carousel-image img{
-	height: 100%;
-	width: 100% !important;
-	object-fit:cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-	object-position: 50% 50%;
-}
-@media screen and (min-width:320px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 183px;
-	}
-}
-@media screen and (min-width:480px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 277px;
-	}
-}
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 446px;
-	}
-}
-@media screen and (min-width:992px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 432px;
-	}
-}
-/* Carousel caption */
-.carousel .carousel-item .carousel-caption a{
-	text-decoration: underline;
-}
-.carousel .carousel-item .carousel-caption a,
-.carousel .carousel-item .carousel-caption span.contrast{
-	background-color: rgba(0, 0, 0, 0.65);
-	border: 2px solid transparent;
-	border-radius: 5px;
-	margin: 0;
-	padding: 0 6px;
-	display: inline-block;
-}
-.carousel .carousel-item .carousel-caption h3 a{
-	color: #fff;
-	font-size: .8em;
-	font-weight: 300;
-	font-style: normal;
-}
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-caption h3 a{
-		font-size: .9em;
-	}
-}
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption span.contrast:hover{
-	background-color: rgba(0, 0, 0, 1);
-	margin: 0;
-}
-.carousel .carousel-item .carousel-caption a:focus{
-	background-color: rgba(0, 0, 0, 1);
-	border-color: #fff;
-	margin: 0;
-}
-.carousel .carousel-item .carousel-caption p{
-	font-size: 1em;
-	line-height: 1.5;
-	margin-bottom: 0;
-	right: 0;
-	bottom: 2em;
-	left: 0;
-}
-.carousel .carousel-item .carousel-caption{
-	color: #fff;
-	text-align: center;
-	line-height: 1.6em;
-	padding: 20px 0;
-	right: 6px;
-	bottom: -25px;
-	position: absolute;
-}
-/* Shared CSS for Pause, Next and Previous Slide Controls */
-.carousel .controls button{
-	background-color: transparent;
-	border: none;
-	outline: none;
-	padding: 0;
-	z-index: 10;
-	top: 5px;
-	position: absolute;
-}
-.carousel .controls button svg rect.background{
-	fill: black;
-	stroke: black;
-	stroke-width: 1px;
-	opacity: 0.6;
-}
-.carousel .controls button svg rect.border{
-	fill: transparent;
-	stroke: transparent;
-	stroke-width: 2px;
-}
-/* Next and Previous Slide Controls */
-.carousel .controls button svg polygon{
-	fill: white;
-	stroke: white;
-	stroke-width: 2;
-	opacity: 1;
-}
-.carousel .controls button.previous{
-	top: 10px;
-	right: 50px;
-}
-.carousel .controls button.next{
-	top: 10px;
-	right: 6px;
-}
-/* Pause Control */
-.carousel .controls button.rotation{
-	top: 10px;
-	left: 6px;
-}
-.carousel .controls button.rotation svg polygon.pause{
-	fill: transparent;
-	stroke-width: 4;
-	stroke: transparent;
-}
-.carousel .controls button.rotation svg polygon.play{
-	fill: transparent;
-	stroke-width: 1;
-	stroke: transparent;
-}
-.carousel .controls button.rotation.pause svg polygon.pause,
-.carousel .controls button.rotation.play svg polygon.play{
-	fill: white;
-	stroke: white;
-}
-/* Common focus styling for svg buttons */
-.carousel .controls button:focus rect.background,
-.carousel .controls button:hover rect.background,
-.carousel .controls button:focus rect.border,
-.carousel .controls button:hover rect.border{
-	fill: black ; /*#005a9c*/
-	stroke: black; /*#005a9c*/
-	opacity: 1;
-}
-.carousel .controls button:focus rect.border{
-	stroke: white;
-}
-
 
 /* 1.2. Mobile Fixed Nav */
 
@@ -1614,21 +1781,10 @@ body.transcription .title{
 	line-height: 1.2em;
 } */
 
-
 /* 1.6. Lines */
-
-hr{
-	background-color: gray;
-	height: 1px;
-	border: 0;
-	width: 95%;
-}
-hr.section-divider{
-	margin: 2.5em 0;
-}
-.thick-hr{
+/*.thick-hr{
 	overflow: visible; /* For IE */
-	border: none;
+	/*border: none;
 	border-top: medium double #191716;
 	color: #191716;
 	text-align: center;
@@ -1646,185 +1802,14 @@ hr.section-divider{
 .text-divider{
 	margin: 0 auto;
 	width: 40%;
-}
-
-
-/* 1.7. Formatting */
-
-.black{
-	color: black;
-}
-.bold{
-	font-weight: bold;
-}
-.center{
-	text-align: center;
-}
-.half{
-	width: 50%;
-}
-.highlight{
-	color: #cc4943;
-	font-style: italic;
-	/* text-decoration:underline dotted; */
-}
-.italic{
-	font-style: italic;
-}
-.left{
-	text-align: left;
-}
-.site-blue{
-	color: #2e68ac;
-}
-.site-red{
-	color: #cc4943;
-}
-.small{
-	font-size: .9em;
-}
-.smaller{
-	font-size: .9em;
-}
-.smallest{
-	font-size: .9em;
-}
-@media only screen and (min-width: 768px){
-	.smaller{
-		font-size: .8em;
-	}
-	.smallest{
-		font-size: .7em;
-	}
-}
-.smallcaps{
-	font-variant: small-caps;
-}
-.underline{
-	text-decoration: underline;
-}
-
+} */
 
 /* 1.8. Lists */
-
-ol,
-ul{
-	padding: 0 0 0 1.4em;
-	margin:0;
-}
-ol li ol{
+/* ol li ol{
 	padding: 0 0 0 0;
 }
 @media only screen and (min-width: 768px){
-	ol,
-	ul,
 	ol li ol{
 		padding-left: 1.2em;
 	}
-}
-
-/* The following items are used on the texts.html page. */
-/* .author-entry{
-	margin-top: 0em;
-	margin-bottom: 0em;
-	padding-bottom: 1em;
-}
-.archival-entry{
-	margin-top: 0em;
-	margin-bottom: 0em;
-
-}
-@media only screen and (min-width: 768px){
-	.archival-entry{
-		padding-left: 1em;
-	}
-}
-.contribution-form{
-	padding-left: 1em;
-	padding-bottom: 0em;
-	margin-bottom: 1em;
-	margin-top: 0em;
-}
-@media only screen and (min-width: 768px){
-	.contribution-form{
-		padding-left: 2.5em;
-	}
-}
-.critical-entry{
-	margin-top: 0em;
-	margin-bottom: 1em;
-}
-@media only screen and (min-width: 768px){
-	.critical-entry{
-		padding-left: 1em;
-	}
-} */
-
-/* The following items are used on the books.html page. */
-/* .published-author{
-	padding: 1.5em 0 0 0;
-}
-@media only screen and (min-width: 768px){
-	.works-list{
-		padding: 0 0 0 2em;
-	}
-}
-.works-list li{
-	padding: 0 0 .75em 0;
-} */
-
-/* The following item is used on the site_map.html page. */
-/* .sitemap-list{
-	display: inline-block;
-	text-indent: 0;
-}
-.sitemap-list .sitemap-list:before{
-	content: "•";
-	margin:0 5px 0 -15px;
-}
-@media only screen and (min-width: 768px){
-	.sitemap-list{
-		margin-left: 1em;
-	}
-} */
-
-/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
-/* ol.concept-list li,
-ul.concept-list li{
-	margin-bottom: .7em;
-}
-ol.concept-list li:last-child,
-ul.concept-list li:last-child{
-   margin-bottom: 0;
-} */
-
-/* The following items are used on the bibliography.html page. */
-/* .primary-historical{
-	list-style: none;
-	padding: 0 0 1em 0;
-	margin: 0;	
-}
-ol.primary-historical li{
-	padding-bottom: .5em;
-} */
-
-/*************************/
-/* Image/Title tests*/
-/* img {
-	width: 100vw;
-	height: 100vh;
-	object-fit:cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-}
-.title{
-	position: relative;
-}
-.header-title{
-	top: -.5em;
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	color: white;
 } */
