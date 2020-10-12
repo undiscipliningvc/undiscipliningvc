@@ -1417,6 +1417,9 @@ hr{
 	border: 0;
 	width: 95%;
 }
+hr.section-divider{
+	margin: 2.5em 0;
+}
 .thick-hr{
 	overflow: visible; /* For IE */
 	border: none;
