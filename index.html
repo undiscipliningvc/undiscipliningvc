@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's One More Voice website (https://onemorevoice.org/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
 <html lang="en">
 
 <head>
@@ -14,9 +14,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<!--<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
-	<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/> 
-	<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/> -->
 	<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/../fonts/jacksilver-webfont.woff2"/>
 	<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/../fonts/jacksilver-webfont.woff"/>
 	<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/../fonts/sourcesanspro-regular-webfont.woff2"/>
@@ -38,130 +35,12 @@
 
 <!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-<!-- start of nav -->
-
-	<!-- <nav id="skiptocontent" aria-labelledby="nav0">
+	<nav id="skiptocontent" aria-labelledby="nav0">
 		<a href="#main" id="nav0" tabindex="0">skip to main content</a>
-	</nav> -->
-
-    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
-    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
-    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-    	
-	<!--<nav class="topnav" aria-labelledby="nav1">
-		<ul role="menubar" id="nav1" aria-label="Site Sections">
-			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-			<li role="none">
-				<div class="dropdown" role="menuitem" data-menu-component>
-					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
-					<label class="dropbtn" for="toggle-1" data-opens-menu>
-						materials
-						<span class="vh expanded-text">expanded</span>
-						<span class="vh collapsed-text">collapsed</span>
-					</label>
-					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
-						<ul role="none">
-							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
-							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
-							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li role="none">
-				<div class="dropdown" role="menuitem" data-menu-component>
-					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
-					<label class="dropbtn" for="toggle-2" data-opens-menu>
-						concepts
-						<span class="vh expanded-text">expanded</span>
-						<span class="vh collapsed-text">collapsed</span>
-					</label>
-					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
-						<ul role="none">
-							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
-                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li role="none">
-				<div class="dropdown" role="menuitem" data-menu-component>
-					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
-					<label class="dropbtn" for="toggle-3" data-opens-menu>
-						misc
-						<span class="vh expanded-text">expanded</span>
-						<span class="vh collapsed-text">collapsed</span>
-					</label>
-					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
-						<ul role="none">
-							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
-							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</li>
-		</ul>
-    </nav>-->
-
-    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-    <!-- <nav id="sticky" aria-labelledby="nav2">
-        <div class="menu" id="nav2" title="Menu">
-            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="false" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span>
-            <span class="nav-title">Undisciplining the Victorian Classroom</span>	
-            <hr class="main-divider"/>
-        </div>
-    </nav> -->
-
-    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-    <!--<nav aria-labelledby="nav3">
-        <div class="overlay" id="nav3">
-            <div class="menu" title="Close">
-                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
-                <span class="nav-title">One More Voice</span>
-            </div>
-            <div class="overlay-content" role="menu">
-                <ul role="none">
-                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
-					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
-                        <ul role="menu" aria-label="Materials">
-							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
-							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
-							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
-                        </ul>
-                    </li>
-					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
-                        <ul role="menu" aria-label="Concepts">
-                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
-                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-                        </ul>
-                    </li>
-                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
-                        <ul role="menu" aria-label="Miscellaneous">
-                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
-                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
-                        </ul>
-                    </li>
-                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->
-
-<!-- end of nav -->
+	</nav>
 
     <header class="title" id="title-div">
 		<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-        <!--<img class="image content-holder-2" src="site-images/liv_012001_0001_deriv-1300px.jpg" srcset="site-images/liv_012001_0001_deriv-1300px.jpg 1300w, site-images/liv_012001_0001_deriv-1000px.jpg 1000w, site-images/liv_012001_0001_deriv-700px.jpg 700w, site-images/liv_012001_0001_deriv-400px.jpg 400w" alt="" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" title="" />-->
-		<!-- <img class="lead-image content-holder" src="images/uvc_000002-1300px.jpg"/> -->
-
 		<!-- Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html -->
 		<section id="myCarousel"
          class="carousel"
@@ -312,7 +191,6 @@
 
 		<h1 class="header-title">Undisciplining the Victorian Classroom</h1>
 		<hr/>
-        <!--<h2 class="italic">Lost Voices from the British Empire's Archives</h2>-->
     </header>
     
     <main class="main" id="main">
@@ -374,17 +252,7 @@
 			<p>The code for this site is adapted from the <a href="https://onemorevoice.org/">One More Voice</a> project site, is released under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International</a> (CC BY-NC 4.0) license, and may be reused for educational and other non-commerical purposes as long as proper attribution is given. The site has a small footprint to support low-bandwidth environments, is fully responsive for all kinds of mobile devices, and incorporates several features (including semantic HTML and ARIA attributes) to make it more accessible for people with disabilities.</p>
 		</section>
 
-		</main>
-
-	<!--<aside class="credits" id="credits-div">
-		<hr />
-
-        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball, Jared McDonald, and Mary Borgo Ton. Introduction. <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="index.html">https://onemorevoice.org</a>.</p>
- 
-		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
-    
-        <p><span class="bold">Header image</span>: Colorised version of R. Allen &amp; Sons, “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001">Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone</a>” (1874), in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only. Waller interviewed Chuma and Susi in 1874 about the final days of explorer David Livingstone. The interview notes (Waller, [Chuma], [Susi], 1874) – written up and mediated by Waller, but inclusive of apparently verbatim data provided by Chuma and Susi – embody a good instance of the source material complexities that the <span class="italic">One More Voice</span> project has set out to engage. Note: This image has been processed to add color using <a href="https://colourise.sg/">ColouriseSG</a>, so the colors are estimations of the real-life colors based on that site's algorithms. The practice of using such image processing techniques to illuminate imperial-era historical materials, in turn, hearkens back to the <a href="https://livingstoneonline.org/spectral-imaging/the-livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>, one of the <span class="italic">Livingstone Online</span> initiatives that has helped set the stage for <span class="italic">One More Voice</span>.</p>
-	</aside>-->
+	</main>
     
     <footer class="footer" id="footer-div">
         <hr />
@@ -408,8 +276,147 @@
 	<script src="scripts/carouselItem.js"></script>
 	<script src="scripts/carouselButtons.js"></script>
 	<script src="scripts/pauseButton.js"></script>
-	<!-- <script src="scripts/scripts.js"></script> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/> -->
 </body>
 
 </html>
+
+<!-- Unused page code -->
+<!-- head -->
+	<!--<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+	<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/> 
+	<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/> -->
+
+<!-- start of nav -->
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+    	
+	<!--<nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						materials
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-3" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+    </nav>-->
+
+    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <!-- <nav id="sticky" aria-labelledby="nav2">
+        <div class="menu" id="nav2" title="Menu">
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="false" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span>
+            <span class="nav-title">Undisciplining the Victorian Classroom</span>	
+            <hr class="main-divider"/>
+        </div>
+    </nav> -->
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <!--<nav aria-labelledby="nav3">
+        <div class="overlay" id="nav3">
+            <div class="menu" title="Close">
+                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+            <div class="overlay-content" role="menu">
+                <ul role="none">
+                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
+					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Materials">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                        </ul>
+                    </li>
+					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Concepts">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Miscellaneous">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                        </ul>
+                    </li>
+                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+
+<!-- end of nav -->
+
+<!-- header -->
+        <!--<img class="image content-holder-2" src="site-images/liv_012001_0001_deriv-1300px.jpg" srcset="site-images/liv_012001_0001_deriv-1300px.jpg 1300w, site-images/liv_012001_0001_deriv-1000px.jpg 1000w, site-images/liv_012001_0001_deriv-700px.jpg 700w, site-images/liv_012001_0001_deriv-400px.jpg 400w" alt="" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" title="" />-->
+		<!-- <img class="lead-image content-holder" src="images/uvc_000002-1300px.jpg"/> -->
+		<!--<h2 class="italic">Lost Voices from the British Empire's Archives</h2>-->
+	
+<!-- aside -->
+	<!--<aside class="credits" id="credits-div">
+		<hr />
+
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball, Jared McDonald, and Mary Borgo Ton. Introduction. <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="index.html">https://onemorevoice.org</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+    
+        <p><span class="bold">Header image</span>: Colorised version of R. Allen &amp; Sons, “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001">Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone</a>” (1874), in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only. Waller interviewed Chuma and Susi in 1874 about the final days of explorer David Livingstone. The interview notes (Waller, [Chuma], [Susi], 1874) – written up and mediated by Waller, but inclusive of apparently verbatim data provided by Chuma and Susi – embody a good instance of the source material complexities that the <span class="italic">One More Voice</span> project has set out to engage. Note: This image has been processed to add color using <a href="https://colourise.sg/">ColouriseSG</a>, so the colors are estimations of the real-life colors based on that site's algorithms. The practice of using such image processing techniques to illuminate imperial-era historical materials, in turn, hearkens back to the <a href="https://livingstoneonline.org/spectral-imaging/the-livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>, one of the <span class="italic">Livingstone Online</span> initiatives that has helped set the stage for <span class="italic">One More Voice</span>.</p>
+	</aside>-->
+
+	<!-- closing scripts -->
+		<!-- <script src="scripts/scripts.js"></script> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/> -->
