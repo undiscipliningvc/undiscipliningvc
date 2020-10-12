@@ -13,8 +13,12 @@ var version = 'v1::';
 */
 var offlineFundamentals = [
   '/',
-  '/css/style.css',
   '/sw.js',
+  '/css/style.css',
+  '/scripts/pauseButton.js',
+  '/scripts/carouselItem.js',
+  '/scripts/carouselButtons.js',
+  '/scripts/carousel.js',
   '/scripts/scripts.js'
 ];
 
