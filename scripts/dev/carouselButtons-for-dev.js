@@ -1,14 +1,7 @@
-/*
-*   File:   carouselButton.js
-*
-*   Desc:   Carousel Button widget that implements ARIA Authoring Practices
-*/
+/* Taken from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
+/* Carousel Button widget that implements ARIA Authoring Practices */
+/*  @constructor CarouselButton */
 
-/*
-*   @constructor CarouselButton
-*
-*
-*/
 var CarouselButton = function (domNode, carouselObj) {
   this.domNode = domNode;
 
@@ -47,9 +40,7 @@ CarouselButton.prototype.changeItem = function () {
   }
 };
 
-
 /* EVENT HANDLERS */
-
 
 CarouselButton.prototype.handleClick = function (event) {
   this.changeItem();

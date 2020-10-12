@@ -1,15 +1,7 @@
-/*
-*   File:   Carousel.js
-*
-*   Desc:   Carousel widget that implements ARIA Authoring Practices
-*
-*/
+/* Taken from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
+/* Carousel widget that implements ARIA Authoring Practices */
+/* @constructor CarouselTablist */
 
-/*
-*   @constructor CarouselTablist
-*
-*
-*/
 var Carousel = function (domNode) {
   this.domNode = domNode;
 
@@ -61,7 +53,7 @@ Carousel.prototype.init = function () {
 
   }
 
-  // Pause, Next Slide and Previous Slide Buttons
+  /* Pause, Next Slide and Previous Slide Buttons */
 
   elems = document.querySelectorAll('.carousel .controls button');
 
@@ -86,7 +78,8 @@ Carousel.prototype.init = function () {
   this.domNode.addEventListener('mouseover', this.handleMouseOver.bind(this));
   this.domNode.addEventListener('mouseout', this.handleMouseOut.bind(this));
 
-  // Start rotation
+  /* Start rotation */
+  
   setTimeout(this.rotateSlides.bind(this), this.timeInterval);
 };
 

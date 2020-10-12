@@ -1,14 +1,7 @@
-/*
-*   File:   CarouselItem.js
-*
-*   Desc:   Carousel Tab widget that implements ARIA Authoring Practices
-*/
+/* Taken from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
+/* Carousel Tab widget that implements ARIA Authoring Practices */
+/* @constructor CarouselItem */
 
-/*
-*   @constructor CarouselItem
-*
-*
-*/
 var CarouselItem = function (domNode, carouselObj) {
   this.domNode = domNode;
   this.carousel = carouselObj;
