@@ -160,7 +160,202 @@
     <header class="title" id="title-div">
 		<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
         <!--<img class="image content-holder-2" src="site-images/liv_012001_0001_deriv-1300px.jpg" srcset="site-images/liv_012001_0001_deriv-1300px.jpg 1300w, site-images/liv_012001_0001_deriv-1000px.jpg 1000w, site-images/liv_012001_0001_deriv-700px.jpg 700w, site-images/liv_012001_0001_deriv-400px.jpg 400w" alt="" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" title="" />-->
-		<img class="lead-image content-holder" src="images/uvc_000002-1300px.jpg"/>
+		<!-- <img class="lead-image content-holder" src="images/uvc_000002-1300px.jpg"/> -->
+
+		<!-- Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html -->
+		<section id="myCarousel"
+         class="carousel"
+         aria-roledescription="carousel"
+         aria-label="Images from the Victorian Globe">
+			<div class="carousel-inner">
+				<div class="controls">
+				<button class="rotation pause" aria-label="Stop automatic slide show">
+					<svg width="42"
+						height="34"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg">
+					<rect class="background"
+							x="2"
+							y="2"
+							rx="5"
+							ry="5"
+							width="38"
+							height="24"></rect>
+					<rect class="border"
+							x="4"
+							y="4"
+							rx="5"
+							ry="5"
+							width="34"
+							height="20"></rect>
+					<polygon class="pause" points="17 8 17 20"></polygon>
+					<polygon class="pause" points="24 8 24 20"></polygon>
+					<polygon class="play" points="15 8 15 20 27 14"></polygon>
+					</svg>
+				</button>
+				<button class="previous"
+						aria-controls="myCarousel-items"
+						aria-label="Previous Slide">
+					<svg width="42"
+						height="34"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg">
+					<rect class="background"
+							x="2"
+							y="2"
+							rx="5"
+							ry="5"
+							width="38"
+							height="24"></rect>
+					<rect class="border"
+							x="4"
+							y="4"
+							rx="5"
+							ry="5"
+							width="34"
+							height="20"></rect>
+					<polygon points="9 14 21 8 21 11 33 11 33 17 21 17 21 20"></polygon>
+					</svg>
+				</button>
+				<button class="next"
+						aria-controls="myCarousel-items"
+						aria-label="Next Slide">
+					<svg width="42"
+						height="34"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg">
+					<rect class="background"
+							x="2"
+							y="2"
+							rx="5"
+							ry="5"
+							width="38"
+							height="24"></rect>
+					<rect class="border"
+							x="4"
+							y="4"
+							rx="5"
+							ry="5"
+							width="34"
+							height="20"></rect>
+					<polygon points="9 11 21 11 21 8 33 14 21 20 21 17 9 17"></polygon>
+					</svg>
+				</button>
+				</div>
+				<div id="myCarousel-items"
+					class="carousel-items"
+					aria-live="off">
+				<div class="carousel-item active"
+					role="group"
+					aria-roledescription="slide"
+					aria-label="1 of 4">
+					<div class="carousel-image">
+						<!-- <a href="images/uvc_0004-deriv.jpg"> -->
+							<img src="images/uvc_0004-deriv.jpg" alt="">
+						<!-- </a> -->
+					</div>
+					<div class="carousel-caption">
+					<h3>
+						<a href="#mcrae" id="carousel-label-1">
+							Tommy McRae, Untitled Illustration, 1896
+						</a>
+					</h3>
+					<!-- <div class="hidden-xs hidden-sm">
+						<p>
+							<span class="contrast">
+								Tommy McRae, Untitled Illustration, 1896, public domain
+							</span>
+						</p>
+					</div> -->
+					</div>
+					<!-- .carousel-caption -->
+				</div>
+				<!-- .item -->
+				<div class="carousel-item"
+					role="group"
+					aria-roledescription="slide"
+					aria-label="2 of 4">
+					<div class="carousel-image">
+						<!-- <a href="images/uvc_0002-deriv.jpg"> -->
+							<img src="images/uvc_0002-deriv.jpg" alt="">
+						<!-- </a> -->
+					</div>
+					<div class="carousel-caption">
+					<h3>
+						<a href="#markino" id="carousel-label-2">
+							Yoshio Markino, “Earl's Court Station,” 1910
+						</a>
+					</h3>
+					<!-- <div>
+						<p>
+							<span class="contrast">
+								Yoshio Markino, “Earl's Court Station,” 1910, public domain
+							</span>
+						</p>
+					</div> -->
+					</div>
+					<!-- .carousel-caption -->
+				</div>
+				<!-- .item -->
+				<div class="carousel-item"
+					role="group"
+					aria-roledescription="slide"
+					aria-label="3 of 4">
+					<div class="carousel-image">
+						<!-- <a href="images/uvc_0001-deriv.jpg"> -->
+							<img src="images/uvc_0001-deriv.jpg" alt="">
+						<!-- </a> -->
+					</div>
+					<div class="carousel-caption">
+					<h3>
+						<a href="#fante" id="carousel-label-3">
+							Anonymous Fante Artist, Asafo Flag, 1910
+						</a>
+					</h3>
+					<!-- <div>
+						<p>
+							<span class="contrast">
+								Anonymous Fante Artist, Asafo Flag, 1910, educational fair use
+							</span>
+						</p>
+					</div> -->
+					</div>
+					<!-- .carousel-caption -->
+				</div>
+				<!-- .item -->
+				<div class="carousel-item"
+					role="group"
+					aria-roledescription="slide"
+					aria-label="4 of 4">
+					<div class="carousel-image">
+						<!-- <a href="images/uvc_0003-deriv.jpg"> -->
+							<img src="images/uvc_0003-deriv.jpg" alt="" style="object-position: 50% 0;">
+						<!-- </a> -->
+					</div>
+					<div class="carousel-caption">
+					<h3>
+						<a href="#kalighat" id="carousel-label-4">
+							Anonymous Indian Artist, “Durga Killing the Demon Mahisha,” 1800s
+						</a>
+					</h3>
+					<!-- <div>
+						<p>
+						<span class="contrast">
+							Anonymous Indian Artist, “Durga Killing the Demon Mahisha,” 1800s, CC0
+						</span>
+						</p>
+					</div> -->
+					</div>
+					<!-- .carousel-caption -->
+				</div>
+				<!-- .item -->
+				</div>
+			</div>
+			<!-- carousel-inner -->
+			</section>
+			<!-- /.carousel -->
+			<!-- <div class="col-sm-1"></div> -->
+
 		<h1 class="header-title">Undisciplining the Victorian Classroom</h1>
 		<hr/>
         <!--<h2 class="italic">Lost Voices from the British Empire's Archives</h2>-->
@@ -190,9 +385,7 @@
 			<p>In taking this approach, the project works in solidarity with the critical intervention made by “<a href="https://lareviewofbooks.org/article/undisciplining-victorian-studies/">Undisciplining Victorian Studies</a>” (Chatterjee, Christoff, Wong 2020) and Christina Sharpe’s call for scholars to “become undisciplined” as a way to undo the racist epistemologies that scholars have inherited, unknowingly or not, from their predecessors (<em>In the Wake: On Blackness and Being</em>, 2016). Ultimately, the project hopes to inspire new modes of teaching that disrupt the racist partitioning and co-opting of knowledge in Victorian Studies.</p>
 		</section>
 		
-		<br/>
-		<hr/>
-		<br/>
+		<hr class="section-divider"/>
 		
 		<section aria-labelledby="syllabi">
 			<h2 id="syllabi">Call for Syllabi (CFS)</h2>
@@ -205,6 +398,19 @@
 			<p>The deadline for submissions is November 15, 2020. Syllabi abstracts can be submitted directly through this <a href="https://forms.gle/nTUMTr7E5hH5G3ZV6">Google form</a>. Anyone with relevant professional interests is encouraged to apply, but we are especially interested in submissions from early-career scholars and those with backgrounds that are under-represented in Victorian Studies.</p>
 			
 			<p>Questions about this CFS, the “Undisciplining the Victorian Classroom” initiative, and/or requests to be put on the project mailing list can be directed to <a href="mailto:chaozonbauer@gmail.com">Pearl Chaozon Bauer</a></p>
+		</section>
+
+		<hr class="section-divider"/>
+	
+		<section aria-labelledby="images" class="smaller">
+			<h2 id="images">Slideshow images</h2>
+				<p id="mcrae"><em>Slide #1</em>: Tommy McRae. Untitled Illustration. In <a href="https://archive.org/details/cu31924029909060/page/n5/mode/2up">Australian Legendary Tales</a>, 114. Edited and translated by K. Langloh Parker. London; Melbourne: David Nutt; Melville, Mullen & Slade, 1896. Public domain image.</p>
+
+				<p id="markino"><em>Slide #2</em>: Yoshio Markino. “Earl’s Court Station.” In <a href="https://archive.org/details/japaneseartistin00markuoft/page/n7/mode/2up">A Japanese Artist in London</a>, by Yoshio Markino, 196. London: Chatto & Windus, 1910. Public domain image.</p>
+
+				<p id="fante"><em>Slide #3</em>: Anonymous Fante Artist. “<a href="https://africa.si.edu/collections/objects/8622/asafo-flag?ctx=b6e777daaaa95af79cf9d1b5e407048a470c2f95&idx=8">Asafo Flag</a>.” Cloth, dye. Ghana, c.1910. Textile and Fiber Arts, 88-9-1. Smithsonian Institution. National Museum of African Art.</p>
+
+				<p id="kalighat"><em>Slide #4</em>: Anonymous Indian Artist. “<a href="https://clevelandart.org/art/2003.103">Durga Killing the Demon Mahisha</a>.” Black ink, watercolor, and tin paint on paper. Calcutta, India, 1800s. Indian Art, Indian and Southeast Asian Art. Cleveland Museum of Art, Cleveland. CC0 “No Rights Reserved.”</p>
 		</section>
     </main>
 
