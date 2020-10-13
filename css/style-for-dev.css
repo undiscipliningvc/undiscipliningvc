@@ -1,28 +1,28 @@
 h1,
 h2,
 h3{
-	color: #446287;
+	color: #20589D;
 }
 #skiptocontent a{
 	color: white;
-	background-color: #3185EB;
+	background-color: #1157AC;
 }
 a,
 a:visited{
-	color: #3185EB;
+	color: #1157AC;
 }
 a:hover,
 a:focus{
 	color: white;
-	background-color: #3185EB; 
+	background-color: #1157AC; 
 }
 
 .carousel .controls button:focus rect.background,
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: #3185EB; ;
-	stroke: #3185EB; 
+	fill: #1157AC; ;
+	stroke: #1157AC; 
 	opacity: 1;
 }
 .carousel .carousel-item .carousel-image{
@@ -33,10 +33,10 @@ a:focus{
 }
 .carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption a:focus{
-	background-color: #3185EB;
+	background-color: #1157AC;
 }
 .carousel .carousel-item .carousel-caption a:focus{
-	border-color: #3185EB;
+	border-color: #1157AC;
 	box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
     -moz-box-shadow: inset 0px 0px 0px 2px #fff;
@@ -76,8 +76,8 @@ Table of Contents
 /*
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
-Dark Blue: #446287;
-Light Blue: #3185EB;
+Dark Blue: #20589D;
+Light Blue: #1157AC;
 Gray: #E3E3E3;
 */
 
@@ -511,8 +511,8 @@ a:focus img{
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: #3185EB; ;
-	stroke: #3185EB; 
+	fill: #1157AC; ;
+	stroke: #1157AC; 
 	opacity: 1;
 } */
 .carousel .controls button:focus rect.border{
