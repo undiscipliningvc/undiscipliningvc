@@ -10,15 +10,26 @@ a:visited{
 /* Color contrast checked via https://webaim.org/resources/contrastchecker/ */
 a:hover,
 a:focus{
-	color: #384770;
-	background-color: #E3E3E3; 
+	color: white;
+	background-color: #3185EB; 
 }
 #skiptocontent a{
 	color: white;
 	background-color: rgba(0, 0, 0, 1);
 }
+#skiptocontent a:focus{
+	background-color: #3185EB;
+}
 .carousel .carousel-item .carousel-image{
-	background: #e6e6e6;
+	background: #E3E3E3;
+}
+.carousel .controls button:focus rect.background,
+.carousel .controls button:hover rect.background,
+.carousel .controls button:focus rect.border,
+.carousel .controls button:hover rect.border{
+	fill: #3185EB; ;
+	stroke: #3185EB; 
+	opacity: 1;
 }
 .carousel .carousel-item .carousel-caption h3 a{
 	color: #fff;
@@ -26,13 +37,13 @@ a:focus{
 .carousel .carousel-item .carousel-caption a{
 	background-color: rgba(0, 0, 0, 0.65);
 }
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption a:focus{
-	background-color: rgba(0, 0, 0, 1);
-	border-color: rgba(0, 0, 0, 1);
+.carousel .carousel-item .carousel-caption a:hover{
+	background-color: #3185EB;
 }
 .carousel .carousel-item .carousel-caption a:focus{
-    box-shadow: inset 0px 0px 0px 2px #fff;
+	background-color: #3185EB;
+	border-color: #3185EB;
+	box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
     -moz-box-shadow: inset 0px 0px 0px 2px #fff;
 }
@@ -436,6 +447,8 @@ a:focus img{
 	font-size: .8em;
 	font-family: 'noto_serifregular';
 	line-height: 1.2em;
+	font-weight: 300;
+	font-style: normal;
 }
 @media only screen and (min-width: 320px){
 	.carousel .carousel-item .carousel-caption h3{
@@ -444,16 +457,8 @@ a:focus img{
 	}
 }
 .carousel .carousel-item .carousel-caption h3 a{
-	/* color: #fff; */
 	font-size: .9em;
-	font-weight: 300;
-	font-style: normal;
 }
-/* @media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-caption h3 a{
-		font-size: .9em;
-	}
-} */
 .carousel .carousel-item .carousel-caption a:hover{
 	/* background-color: rgba(0, 0, 0, 1); */
 	margin: 0;
@@ -468,8 +473,6 @@ a:focus img{
 	text-align: center;
 	line-height: 1.6em;
 	padding: 20px 0;
-	/* right: .3em;
-	left: .3em; */
 	bottom: -25px;
 	position: absolute;
 }
@@ -535,14 +538,14 @@ a:focus img{
 	stroke: white;
 }
 /* Common focus styling for svg buttons */
-.carousel .controls button:focus rect.background,
+/* .carousel .controls button:focus rect.background,
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: black ; /*#005a9c*/
-	stroke: black; /*#005a9c*/
+	fill: #3185EB; ;
+	stroke: #3185EB; 
 	opacity: 1;
-}
+} */
 .carousel .controls button:focus rect.border{
 	stroke: white;
 }
