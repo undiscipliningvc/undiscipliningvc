@@ -1,4 +1,3 @@
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 h1,
 h2,
 h3{
@@ -8,10 +7,11 @@ a,
 a:visited{
 	color: #3185EB;
 }
+/* Color contrast checked via https://webaim.org/resources/contrastchecker/ */
 a:hover,
 a:focus{
-	color: #4c1e4f;
-	background-color: #d4d8d8; 
+	color: #7C2E27;
+	background-color: #E3E3E3; 
 }
 #skiptocontent a{
 	color: white;
@@ -24,12 +24,12 @@ a:focus{
 	color: #fff;
 }
 .carousel .carousel-item .carousel-caption a{
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: black; /*rgba(0, 0, 0, 0.65)*/
 }
 .carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption a:focus{
-	background-color: rgba(0, 0, 0, 1);
-	border-color: #fff;
+	color: #7C2E27;
+	background-color: #E3E3E3; /*rgba(0, 0, 0, 1)*/
 }
 
 /* CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
@@ -58,11 +58,13 @@ Table of Contents
 /*--------------------------------------*/
 
 /** Main Site Colors **/
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
+/* Triad */
 /*
-Blue #4b6c95
-Red #bd0f12
-Orange #f58300
-Gray #d4d8d8
+Dark Blue: #495F7A;
+Light Blue: #3185EB;
+Dark Red: #7C2E27;
+Gray: #E3E3E3;
 */
 
 /** 1.0 Main CSS **/
@@ -435,7 +437,7 @@ a:focus img{
 }
 .carousel .carousel-item .carousel-caption h3 a{
 	/* color: #fff; */
-	font-size: .8em;
+	font-size: .9em;
 	font-weight: 300;
 	font-style: normal;
 }
