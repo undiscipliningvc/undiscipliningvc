@@ -1,4 +1,4 @@
-
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 h1,
 h2,
 h3{
@@ -135,18 +135,17 @@ h1{
 }
 @media only screen and (min-width: 768px){
 	h1{
-		font-size: 3.5em;
-	}
-}
-@media only screen and (min-width: 992px){
-	h1{
-		font-size: 3.5em;
+		font-size: 3.7em;
 	}
 }
 h2, h3{
+    font-family: 'noto_serifbold';
+}
+h2{
 	font-size: 1.05em;
-	font-weight: bold;
-    font-family: 'noto_serifregular';
+}
+h3{
+	font-size: 1.1em;
 }
 @media only screen and (min-width: 480px){
 	h2{
@@ -309,7 +308,7 @@ a:focus img{
 	font-style: normal;
 	font-display: block;
 }
-/*h2 font*/
+/*h2/h3 font*/
 @font-face {
     font-family: 'noto_serifregular';
     src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
@@ -317,6 +316,13 @@ a:focus img{
     font-weight: normal;
 	font-style: normal;
 	font-display: block;
+}
+@font-face {
+    font-family: 'noto_serifbold';
+    src: url('../fonts/notoserif-bold-webfont.woff2') format('woff2'),
+         url('../fonts/notoserif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -416,17 +422,20 @@ a:focus img{
 	padding: 0 6px;
 	display: inline-block;
 }
+.carousel .carousel-item .carousel-caption h3{
+	font-family: 'noto_serifregular';
+}
 .carousel .carousel-item .carousel-caption h3 a{
 	/* color: #fff; */
 	font-size: .8em;
 	font-weight: 300;
 	font-style: normal;
 }
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){
 	.carousel .carousel-item .carousel-caption h3 a{
 		font-size: .9em;
 	}
-}
+} */
 .carousel .carousel-item .carousel-caption a:hover{
 	/* background-color: rgba(0, 0, 0, 1); */
 	margin: 0;
