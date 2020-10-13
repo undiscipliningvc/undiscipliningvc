@@ -1,3 +1,50 @@
+h1,
+h2,
+h3{
+	color: #446287;
+}
+#skiptocontent a{
+	color: white;
+	background-color: #3185EB;
+}
+a,
+a:visited{
+	color: #3185EB;
+}
+a:hover,
+a:focus{
+	color: white;
+	background-color: #3185EB; 
+}
+
+.carousel .controls button:focus rect.background,
+.carousel .controls button:hover rect.background,
+.carousel .controls button:focus rect.border,
+.carousel .controls button:hover rect.border{
+	fill: #3185EB; ;
+	stroke: #3185EB; 
+	opacity: 1;
+}
+.carousel .carousel-item .carousel-image{
+	background: #E3E3E3;
+}
+.carousel .carousel-item .carousel-caption a{
+	background-color: rgba(0, 0, 0, 0.65);
+}
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption a:focus{
+	background-color: #3185EB;
+}
+.carousel .carousel-item .carousel-caption a:focus{
+	border-color: #3185EB;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.carousel .carousel-item .carousel-caption h3 a{
+	color: #fff;
+}
+
 /* CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
@@ -24,8 +71,14 @@ Table of Contents
 /*--------------------------------------*/
 
 /** Main Site Colors **/
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
+/* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-
+Black: rgba(0, 0, 0, 1);
+Black-Gray: rgba(0, 0, 0, 0.65);
+Dark Blue: #446287;
+Light Blue: #3185EB;
+Gray: #E3E3E3;
 */
 
 /** 1.0 Main CSS **/
@@ -36,6 +89,7 @@ html{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: normal;
 	color: #191716;
+	background-color: white;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -86,7 +140,7 @@ body.essay .main{
 }
 h1{
 	font-size: 2em;
-	font-family: 'jacksilverregular';
+    font-family: 'jacksilverregular';
 	line-height: 1.3em;
 	margin: .3em;
 }
@@ -97,28 +151,25 @@ h1{
 }
 @media only screen and (min-width: 768px){
 	h1{
-		font-size: 3.5em;
+		font-size: 3.7em;
 	}
 }
-@media only screen and (min-width: 992px){
-	h1{
-		font-size: 3.5em;
-	}
+h2, h3{
+    font-family: 'noto_serifbold';
 }
 h2{
-	font-size: 1em;
-	font-weight: bold;
-	font-family: 'noto_serifregular';
+	font-size: 1.05em;
+}
+h3{
+	font-size: 1.1em;
 }
 @media only screen and (min-width: 480px){
 	h2{
-		text-align: center;
-	}
-}
-h3{
-	font-style: italic;
-	font-size: 1em;
-	font-weight: 300;
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+    }
 }
 /* adds padding for h4 labelled subsections in essays */
 .subsection{
@@ -153,6 +204,7 @@ h3{
 	}
 }
 .announcement{
+	font-size: .9em;
 	padding-bottom: .25em;
 }
 @media only screen and (min-width: 480px){
@@ -178,7 +230,6 @@ h3{
 }
 img,
 .image{
-	color:#e6e6e6;
 	font-weight: 300;
 	margin-left: auto;
 	margin-right: auto;
@@ -196,8 +247,6 @@ img,
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
 	font-size: .9em;
-	color: white;
-	background: black; /*#424242*/
 	padding: 6px;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
@@ -232,25 +281,6 @@ img,
 *:focus{
 	outline: 0 none;
 }
-a,
-a:visited{
-	/* color: #2e68ac; */
-	/*text-decoration:none;*/
-}
-a:hover{
-	/* color: #a83c37; */
-	background-color: #dbdbdb;
-}
-a:focus{
-	/* color: #2b61a1; */
-	background-color: #dbdbdb;
-}
-a,
-a:visited,
-a:hover,
-a:focus{
-	color: black;
-}
 a img{
 	border: 3px white solid;
 }
@@ -276,7 +306,7 @@ a:focus img{
 	font-style: normal;
 	font-display: block;
 }
-/*h2 font*/
+/*h2 & h3 font*/
 @font-face {
     font-family: 'noto_serifregular';
     src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
@@ -284,6 +314,13 @@ a:focus img{
     font-weight: normal;
 	font-style: normal;
 	font-display: block;
+}
+@font-face {
+    font-family: 'noto_serifbold';
+    src: url('../fonts/notoserif-bold-webfont.woff2') format('woff2'),
+         url('../fonts/notoserif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -317,12 +354,9 @@ a:focus img{
 }
 .carousel .carousel-items.focus{
 	border-color: white;
-	outline: solid 3px black; /*#005a9c*/
+	outline: solid 3px black;
 }
 /* Carousel images */
-.carousel .carousel-item .carousel-image{
-	background: #e6e6e6;
-}
 @media screen and (min-width:320px){
 	.carousel .carousel-item .carousel-image{
 		min-height: 183px;
@@ -375,52 +409,47 @@ a:focus img{
 .carousel .carousel-item .carousel-caption a{
 	text-decoration: underline;
 }
-.carousel .carousel-item .carousel-caption a,
-.carousel .carousel-item .carousel-caption span.contrast{
-	background-color: rgba(0, 0, 0, 0.65);
+.carousel .carousel-item .carousel-caption a{
 	border: 2px solid transparent;
 	border-radius: 5px;
 	margin: 0;
 	padding: 0 6px;
 	display: inline-block;
 }
-.carousel .carousel-item .carousel-caption h3 a{
-	color: #fff;
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption a:focus{
+	margin: 0;
+}
+.carousel .carousel-item .carousel-caption h3{
 	font-size: .8em;
+	font-family: 'noto_serifregular';
+	line-height: 1.2em;
 	font-weight: 300;
 	font-style: normal;
 }
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-caption h3 a{
-		font-size: .9em;
+@media only screen and (min-width: 320px){
+	.carousel .carousel-item .carousel-caption h3{
+		font-size: inherit;
+		line-height: inherit;
 	}
 }
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption span.contrast:hover{
-	background-color: rgba(0, 0, 0, 1);
-	margin: 0;
-}
-.carousel .carousel-item .carousel-caption a:focus{
-	background-color: rgba(0, 0, 0, 1);
-	border-color: #fff;
-	margin: 0;
-}
-.carousel .carousel-item .carousel-caption p{
-	font-size: 1em;
-	line-height: 1.5;
-	margin-bottom: 0;
-	right: 0;
-	bottom: 2em;
-	left: 0;
+.carousel .carousel-item .carousel-caption h3 a{
+	font-size: .9em;
 }
 .carousel .carousel-item .carousel-caption{
-	color: #fff;
+	/* color: #fff; */
 	text-align: center;
-	line-height: 1.6em;
+	line-height: 1.2em;
 	padding: 20px 0;
 	right: 6px;
+	left: 6px;
 	bottom: -25px;
 	position: absolute;
+}
+@media only screen and (min-width: 480px){
+	.carousel .carousel-item .carousel-caption{
+		left: unset;
+	}
 }
 /* Shared CSS for Pause, Next and Previous Slide Controls */
 .carousel .controls button{
@@ -479,14 +508,14 @@ a:focus img{
 	stroke: white;
 }
 /* Common focus styling for svg buttons */
-.carousel .controls button:focus rect.background,
+/* .carousel .controls button:focus rect.background,
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: black ; /*#005a9c*/
-	stroke: black; /*#005a9c*/
+	fill: #3185EB; ;
+	stroke: #3185EB; 
 	opacity: 1;
-}
+} */
 .carousel .controls button:focus rect.border{
 	stroke: white;
 }
@@ -507,9 +536,6 @@ hr.section-divider{
 
 /* 1.7. Formatting */
 
-.black{
-	color: black;
-}
 .bold{
 	font-weight: bold;
 }
@@ -519,21 +545,8 @@ hr.section-divider{
 .half{
 	width: 50%;
 }
-.highlight{
-	color: #cc4943;
-	font-style: italic;
-}
 .italic{
 	font-style: italic;
-}
-.left{
-	text-align: left;
-}
-.site-blue{
-	color: #2e68ac;
-}
-.site-red{
-	color: #cc4943;
 }
 .small{
 	font-size: .9em;
