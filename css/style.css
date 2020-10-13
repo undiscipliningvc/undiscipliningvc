@@ -423,7 +423,15 @@ a:focus img{
 	display: inline-block;
 }
 .carousel .carousel-item .carousel-caption h3{
+	font-size: .8em;
 	font-family: 'noto_serifregular';
+	line-height: 1.2em;
+}
+@media only screen and (min-width: 320px){
+	.carousel .carousel-item .carousel-caption h3{
+		font-size: inherit;
+		line-height: inherit;
+	}
 }
 .carousel .carousel-item .carousel-caption h3 a{
 	/* color: #fff; */
@@ -445,22 +453,20 @@ a:focus img{
 	border-color: #fff; */
 	margin: 0;
 }
-.carousel .carousel-item .carousel-caption p{
-	font-size: 1em;
-	line-height: 1.5;
-	margin-bottom: 0;
-	right: 0;
-	bottom: 2em;
-	left: 0;
-}
 .carousel .carousel-item .carousel-caption{
 	/* color: #fff; */
 	text-align: center;
 	line-height: 1.6em;
 	padding: 20px 0;
-	right: 6px;
+	right: .3em;
+	left: .3em;
 	bottom: -25px;
 	position: absolute;
+}
+@media only screen and (min-width: 320px){
+	.carousel .carousel-item .carousel-caption{
+		right: 6px;
+		left: unset;
 }
 /* Shared CSS for Pause, Next and Previous Slide Controls */
 .carousel .controls button{
