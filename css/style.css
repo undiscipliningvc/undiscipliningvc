@@ -7,7 +7,6 @@ a,
 a:visited{
 	color: #3185EB;
 }
-/* Color contrast checked via https://webaim.org/resources/contrastchecker/ */
 a:hover,
 a:focus{
 	color: white;
@@ -15,9 +14,6 @@ a:focus{
 }
 #skiptocontent a{
 	color: white;
-	background-color: rgba(0, 0, 0, 1);
-}
-#skiptocontent a:focus{
 	background-color: #3185EB;
 }
 .carousel .carousel-item .carousel-image{
@@ -37,11 +33,11 @@ a:focus{
 .carousel .carousel-item .carousel-caption a{
 	background-color: rgba(0, 0, 0, 0.65);
 }
-.carousel .carousel-item .carousel-caption a:hover{
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption a:focus{
 	background-color: #3185EB;
 }
 .carousel .carousel-item .carousel-caption a:focus{
-	background-color: #3185EB;
 	border-color: #3185EB;
 	box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
@@ -79,10 +75,8 @@ Table of Contents
 /*
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
-Blue-Black: #384770;
-Dark Blue: #495F7A;
+Dark Blue: #446287;
 Light Blue: #3185EB;
-Dark Red: #7C2E27;
 Gray: #E3E3E3;
 */
 
@@ -473,13 +467,10 @@ a:focus img{
 	text-align: center;
 	line-height: 1.6em;
 	padding: 20px 0;
+	right: 6px;
+	left: 6px;
 	bottom: -25px;
 	position: absolute;
-}
-@media only screen and (min-width: 320px){
-	.carousel .carousel-item .carousel-caption{
-		right: 6px;
-		left: unset;
 }
 /* Shared CSS for Pause, Next and Previous Slide Controls */
 .carousel .controls button{
