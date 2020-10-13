@@ -1,30 +1,21 @@
 
-h1{
-	color: #4b6c95;
-}
-h2, 
+h1,
+h2,
 h3{
-	color: #4b6c95;
+	color: #446287;
+}
+a,
+a:visited{
+	color: #3185EB;
+}
+a:hover,
+a:focus{
+	color: #4c1e4f;
+	background-color: #d4d8d8; 
 }
 #skiptocontent a{
 	color: white;
 	background-color: rgba(0, 0, 0, 1);
-}
-/* #skiptocontent a:hover,
-#skiptocontent a:focus{
-	background-color: rgba(0, 0, 0, 0.65);
-} */
-a,
-a:visited{
-	color: #cc6d00;
-}
-a:hover{
-	color: #4c1e4f;
-	background-color: #d4d8d8; 
-}
-a:focus{
-	color: #4b6c95;
-	background-color: #d4d8d8;
 }
 .carousel .carousel-item .carousel-image{
 	background: #e6e6e6;
@@ -153,7 +144,7 @@ h1{
 	}
 }
 h2, h3{
-	font-size: 1em;
+	font-size: 1.05em;
 	font-weight: bold;
     font-family: 'noto_serifregular';
 }
@@ -198,6 +189,7 @@ h2, h3{
 	}
 }
 .announcement{
+	font-size: .9em;
 	padding-bottom: .25em;
 }
 @media only screen and (min-width: 480px){
