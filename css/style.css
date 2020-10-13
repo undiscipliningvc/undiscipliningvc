@@ -8,8 +8,12 @@ h3{
 }
 #skiptocontent a{
 	color: white;
-	background-color: black; /*#424242*/
+	background-color: rgba(0, 0, 0, 1);
 }
+/* #skiptocontent a:hover,
+#skiptocontent a:focus{
+	background-color: rgba(0, 0, 0, 0.65);
+} */
 a,
 a:visited{
 	color: #cc6d00;
@@ -25,23 +29,16 @@ a:focus{
 .carousel .carousel-item .carousel-image{
 	background: #e6e6e6;
 }
-.carousel .carousel-item .carousel-caption a,
-.carousel .carousel-item .carousel-caption span.contrast{
-	background-color: rgba(0, 0, 0, 0.65);
-}
 .carousel .carousel-item .carousel-caption h3 a{
 	color: #fff;
 }
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption span.contrast:hover{
-	background-color: rgba(0, 0, 0, 1);
+.carousel .carousel-item .carousel-caption a{
+	background-color: rgba(0, 0, 0, 0.65);
 }
+.carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption a:focus{
 	background-color: rgba(0, 0, 0, 1);
 	border-color: #fff;
-}
-.carousel .carousel-item .carousel-caption{
-	color: #fff;
 }
 
 /* CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
@@ -419,8 +416,7 @@ a:focus img{
 .carousel .carousel-item .carousel-caption a{
 	text-decoration: underline;
 }
-.carousel .carousel-item .carousel-caption a,
-.carousel .carousel-item .carousel-caption span.contrast{
+.carousel .carousel-item .carousel-caption a{
 	/* background-color: rgba(0, 0, 0, 0.65); */
 	border: 2px solid transparent;
 	border-radius: 5px;
@@ -439,8 +435,7 @@ a:focus img{
 		font-size: .9em;
 	}
 }
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption span.contrast:hover{
+.carousel .carousel-item .carousel-caption a:hover{
 	/* background-color: rgba(0, 0, 0, 1); */
 	margin: 0;
 }
@@ -551,9 +546,6 @@ hr.section-divider{
 
 /* 1.7. Formatting */
 
-.black{
-	color: black;
-}
 .bold{
 	font-weight: bold;
 }
@@ -565,9 +557,6 @@ hr.section-divider{
 }
 .italic{
 	font-style: italic;
-}
-.left{
-	text-align: left;
 }
 .small{
 	font-size: .9em;
