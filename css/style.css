@@ -472,6 +472,11 @@ a:focus img{
 	bottom: -25px;
 	position: absolute;
 }
+@media only screen and (min-width: 768px){
+	.carousel .carousel-item .carousel-caption{
+		left: unset;
+	}
+}
 /* Shared CSS for Pause, Next and Previous Slide Controls */
 .carousel .controls button{
 	background-color: transparent;
