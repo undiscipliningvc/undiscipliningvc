@@ -1,1 +1,1849 @@
-html{font:16px source_sans_proregular,Helvetica,sans-serif;font-weight:400;color:#191716;overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto;-ms-word-break:break-all;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;scroll-behavior:smooth}body{width:100%;margin-left:auto;margin-right:auto}body.essay{margin:0}body.essay .main{font-size:1em;text-align:left;line-height:1.6em;margin:0 auto;padding:0 .75em 1em .75em}@media only screen and (min-width:480px){body.essay .main{font-size:1em;padding:0 1.5em 1em 1.5em}}@media only screen and (min-width:768px){body.essay .main{font-size:1.1em;padding:0 2.25em 1em 2.25em}}@media only screen and (min-width:992px){body.essay .main{font-size:1.2em;max-width:36em;display:block!important}body.fixed-nav{padding-top:0!important}}h1{font-size:2em;font-family:jacksilverregular;line-height:1.3em;margin:.3em}@media only screen and (min-width:480px){h1{font-size:2.3em}}@media only screen and (min-width:768px){h1{font-size:3.5em}}@media only screen and (min-width:992px){h1{font-size:3.5em}}h2{font-size:1em;font-weight:700;font-family:noto_serifregular}@media only screen and (min-width:480px){h2{text-align:center}}h3{font-style:italic;font-size:1em;font-weight:300}.subsection{padding-top:2em}.title{font-weight:700;text-align:center;line-height:1.6em;position:relative}.title{padding-bottom:0;overflow-wrap:normal;word-wrap:normal;word-break:normal;hyphens:none;-ms-word-break:normal;-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none}@media only screen and (min-width:320px){.title{padding-bottom:.5em}}@media only screen and (min-width:992px){.title{padding:1em 0;display:block!important}}.announcement{padding-bottom:.25em}@media only screen and (min-width:480px){.announcement{padding-bottom:.75em}}.header-title{padding:.2em .5em}@media only screen and (min-width:320px){.header-title{padding:.2em 0}}.organizers{padding-bottom:1em}@media only screen and (min-width:480px){.organizers{text-align:center}}.image,img{color:#e6e6e6;font-weight:300;margin-left:auto;margin-right:auto;width:100%;display:inline-block}@media only screen and (min-width:992px){img{width:75%!important}}.image-border{border:1px solid gray}#skiptocontent a{font-size:.9em;color:#fff;background:#000;padding:6px;border-right:2px solid #fff;border-bottom:2px solid #fff;border-bottom-right-radius:8px;position:absolute;top:-40px;left:0;z-index:100;-webkit-transition:top 1s ease-out;transition:top .4s ease-out}#skiptocontent a:focus{outline-color:transparent;position:fixed;top:0;left:0;-webkit-transition:top .1s ease-in;transition:top .4s ease-in}@media only screen and (min-width:768px){#skiptocontent a:focus{position:absolute}}.footer{font-size:1em;text-align:center;line-height:1.6em;padding:0 1em}:focus{outline:0 none}a:hover{background-color:#dbdbdb}a:focus{background-color:#dbdbdb}a,a:focus,a:hover,a:visited{color:#000}a img{border:3px #fff solid}a:focus img,a:hover img{border:3px #2e68ac solid}@font-face{font-family:jacksilverregular;src:url(../fonts/jacksilver-webfont.woff2) format('woff2'),url(../fonts/jacksilver-webfont.woff) format('woff');font-weight:400;font-style:normal;font-display:block}@font-face{font-family:source_sans_proregular;src:url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff2'),url(../fonts/sourcesanspro-regular-webfont.woff) format('woff');font-weight:400;font-style:normal;font-display:block}@font-face{font-family:noto_serifregular;src:url(../fonts/notoserif-regular-webfont.woff2) format('woff2'),url(../fonts/notoserif-regular-webfont.woff) format('woff');font-weight:400;font-style:normal;font-display:block}.carousel .carousel-inner{max-width:900px;margin:0 auto;position:relative}@media only screen and (min-width:992px){.carousel .carousel-inner{width:75%!important}}.carousel .carousel-item{line-height:0;width:100%;overflow:hidden;position:relative;display:none}.carousel .carousel-item.active{display:block}.carousel .carousel-items{border:solid 1px gray}.carousel .carousel-items.focus{border-color:#fff;outline:solid 3px #000}.carousel .carousel-item .carousel-image{background:#e6e6e6}@media screen and (min-width:320px){.carousel .carousel-item .carousel-image{min-height:183px}}@media screen and (min-width:480px){.carousel .carousel-item .carousel-image{min-height:277px}}@media screen and (min-width:768px){.carousel .carousel-item .carousel-image{min-height:446px}}@media screen and (min-width:992px){.carousel .carousel-item .carousel-image{min-height:432px}}.carousel .carousel-item .carousel-image img{height:100%;width:100%!important;object-fit:cover;-o-object-fit:cover;overflow:hidden;object-position:50% 50%}@media screen and (min-width:320px){.carousel .carousel-item .carousel-image img{max-height:183px}}@media screen and (min-width:480px){.carousel .carousel-item .carousel-image img{max-height:277px}}@media screen and (min-width:768px){.carousel .carousel-item .carousel-image img{max-height:446px}}@media screen and (min-width:992px){.carousel .carousel-item .carousel-image img{max-height:432px}}.carousel .carousel-item .carousel-caption a{text-decoration:underline}.carousel .carousel-item .carousel-caption a,.carousel .carousel-item .carousel-caption span.contrast{background-color:rgba(0,0,0,.65);border:2px solid transparent;border-radius:5px;margin:0;padding:0 6px;display:inline-block}.carousel .carousel-item .carousel-caption h3 a{color:#fff;font-size:.8em;font-weight:300;font-style:normal}@media screen and (min-width:768px){.carousel .carousel-item .carousel-caption h3 a{font-size:.9em}}.carousel .carousel-item .carousel-caption a:hover,.carousel .carousel-item .carousel-caption span.contrast:hover{background-color:#000;margin:0}.carousel .carousel-item .carousel-caption a:focus{background-color:#000;border-color:#fff;margin:0}.carousel .carousel-item .carousel-caption p{font-size:1em;line-height:1.5;margin-bottom:0;right:0;bottom:2em;left:0}.carousel .carousel-item .carousel-caption{color:#fff;text-align:center;line-height:1.6em;padding:20px 0;right:6px;bottom:-25px;position:absolute}.carousel .controls button{background-color:transparent;border:none;outline:0;padding:0;z-index:10;top:5px;position:absolute}.carousel .controls button svg rect.background{fill:#000;stroke:#000;stroke-width:1px;opacity:.6}.carousel .controls button svg rect.border{fill:transparent;stroke:transparent;stroke-width:2px}.carousel .controls button svg polygon{fill:#fff;stroke:#fff;stroke-width:2;opacity:1}.carousel .controls button.previous{top:10px;right:50px}.carousel .controls button.next{top:10px;right:6px}.carousel .controls button.rotation{top:10px;left:6px}.carousel .controls button.rotation svg polygon.pause{fill:transparent;stroke-width:4;stroke:transparent}.carousel .controls button.rotation svg polygon.play{fill:transparent;stroke-width:1;stroke:transparent}.carousel .controls button.rotation.pause svg polygon.pause,.carousel .controls button.rotation.play svg polygon.play{fill:#fff;stroke:#fff}.carousel .controls button:focus rect.background,.carousel .controls button:focus rect.border,.carousel .controls button:hover rect.background,.carousel .controls button:hover rect.border{fill:#000;stroke:#000;opacity:1}.carousel .controls button:focus rect.border{stroke:#fff}hr{background-color:gray;height:1px;border:0;width:95%}hr.section-divider{margin:2.5em 0}.black{color:#000}.bold{font-weight:700}.center{text-align:center}.half{width:50%}.highlight{color:#cc4943;font-style:italic}.italic{font-style:italic}.left{text-align:left}.site-blue{color:#2e68ac}.site-red{color:#cc4943}.small{font-size:.9em}.smaller{font-size:.9em}.smallest{font-size:.9em}@media only screen and (min-width:768px){.smaller{font-size:.8em}.smallest{font-size:.7em}}.smallcaps{font-variant:small-caps}.underline{text-decoration:underline}ol,ul{padding:0 0 0 1.4em;margin:0}@media only screen and (min-width:768px){ol,ul{padding-left:2.4em}}
+
+h1{
+	color: #4b6c95;
+}
+h2, 
+h3{
+	color: #4b6c95;
+}
+#skiptocontent a{
+	color: white;
+	background-color: black; /*#424242*/
+}
+a,
+a:visited{
+	color: #cc6d00;
+}
+a:hover{
+	color: #4c1e4f;
+	background-color: #d4d8d8; 
+}
+a:focus{
+	color: #4b6c95;
+	background-color: #d4d8d8;
+}
+.carousel .carousel-item .carousel-image{
+	background: #e6e6e6;
+}
+.carousel .carousel-item .carousel-caption a,
+.carousel .carousel-item .carousel-caption span.contrast{
+	background-color: rgba(0, 0, 0, 0.65);
+}
+.carousel .carousel-item .carousel-caption h3 a{
+	color: #fff;
+}
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption span.contrast:hover{
+	background-color: rgba(0, 0, 0, 1);
+}
+.carousel .carousel-item .carousel-caption a:focus{
+	background-color: rgba(0, 0, 0, 1);
+	border-color: #fff;
+}
+.carousel .carousel-item .carousel-caption{
+	color: #fff;
+}
+
+/* CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
+
+/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+
+/* 
+Table of Contents
+-----------------
+** Main Site Colors **
+
+** 1.0. Main CSS **
+1.1. Main Components
+1.1.1. Carousel 
+1.2. Mobile Fixed Nav
+1.3. Navbar
+1.4. Overlay
+1.5. Artifact Gallery
+1.6. Lines
+1.7. Formatting
+1.8. Lists
+*/
+
+/*--------------------------------------*/
+
+/** Main Site Colors **/
+/*
+Blue #4b6c95
+Red #bd0f12
+Orange #f58300
+Gray #d4d8d8
+*/
+
+/** 1.0 Main CSS **/
+
+/* 1.1. Main Components */
+
+html{
+	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
+	font-weight: normal;
+	color: #191716;
+	background-color: white;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-word-break: break-all;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	scroll-behavior: smooth;
+}
+body{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+body.essay{
+	margin: 0;
+}
+body.essay .main{
+	font-size: 1em;
+	text-align: left;
+	line-height: 1.6em;
+	margin: 0 auto;
+	padding: 0 .75em 1em .75em;
+	
+}
+@media only screen and (min-width: 480px){
+	body.essay .main{
+		font-size: 1em;
+		padding: 0 1.5em 1em 1.5em;
+	}
+}
+@media only screen and (min-width: 768px){
+	body.essay .main{
+		font-size: 1.1em;
+		padding: 0 2.25em 1em 2.25em;
+	}
+}
+@media only screen and (min-width: 992px){
+	body.essay .main{
+		font-size: 1.2em;
+		max-width: 36em;
+		display: block !important; /* Tied to overlay */
+	}
+	body.fixed-nav{
+		padding-top: 0 !important;
+	}
+}
+h1{
+	font-size: 2em;
+    font-family: 'jacksilverregular';
+	line-height: 1.3em;
+	margin: .3em;
+}
+@media only screen and (min-width: 480px){
+	h1{
+		font-size: 2.3em;
+	}
+}
+@media only screen and (min-width: 768px){
+	h1{
+		font-size: 3.5em;
+	}
+}
+@media only screen and (min-width: 992px){
+	h1{
+		font-size: 3.5em;
+	}
+}
+h2, h3{
+	font-size: 1em;
+	font-weight: bold;
+    font-family: 'noto_serifregular';
+}
+@media only screen and (min-width: 480px){
+	h2{
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+    }
+}
+/* adds padding for h4 labelled subsections in essays */
+.subsection{
+	padding-top: 2em;
+}
+.title{
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.6em;
+	position: relative;
+}
+.title{
+	padding-bottom: 0em;
+	overflow-wrap: normal;
+	word-wrap: normal;
+	word-break: normal;
+	hyphens: none;
+	-ms-word-break: normal;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+}
+@media only screen and (min-width: 320px){
+	.title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	.title{
+		padding: 1em 0;
+		display: block !important; /* Tied to overlay */
+	}
+}
+.announcement{
+	padding-bottom: .25em;
+}
+@media only screen and (min-width: 480px){
+	.announcement{
+		padding-bottom: .75em;
+	}
+}
+.header-title{
+	padding: .2em .5em;
+}
+@media only screen and (min-width: 320px){
+	.header-title {
+		padding: .2em 0;
+	}
+}
+.organizers{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 480px){
+	.organizers{
+		text-align: center;
+	}
+}
+img,
+.image{
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: inline-block;
+}
+@media only screen and (min-width: 992px){
+	img{
+		width: 75% !important;
+	}
+}
+.image-border{
+	border: 1px solid gray;
+}
+/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
+#skiptocontent a{
+	font-size: .9em;
+	padding: 6px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-right-radius: 8px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	z-index: 100;
+	-webkit-transition: top 1s ease-out;
+	transition: top .4s ease-out;
+}
+#skiptocontent a:focus{
+	outline-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: top .1s ease-in;
+	transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#skiptocontent a:focus{
+		position: absolute;
+	}
+}
+.footer{
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 0 1em;
+	/* font-family: Arial, Geneva, Tahoma, sans-serif; */
+}
+*:focus{
+	outline: 0 none;
+}
+/* a,
+a:visited{
+	color: #cc6d00;
+}
+a:hover{
+	color: #4c1e4f;
+	background-color: #d4d8d8; 
+}
+a:focus{
+	color: #2b61a1;
+	background-color: #d4d8d8;
+} */
+/* a,
+a:visited,
+a:hover,
+a:focus{
+	color: black;
+} */
+a img{
+	border: 3px white solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #2e68ac solid;
+}
+/*logo*/
+@font-face {
+    font-family: 'jacksilverregular';
+    src: url('../fonts/jacksilver-webfont.woff2') format('woff2'),
+         url('../fonts/jacksilver-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+/*main text & footer*/
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+/*h2 font*/
+@font-face {
+    font-family: 'noto_serifregular';
+    src: url('../fonts/notoserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/notoserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+
+/* 1.1.1. Carousel */
+
+/* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
+.carousel .carousel-inner{
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	}
+@media only screen and (min-width: 992px){
+	.carousel .carousel-inner{
+		width: 75% !important;
+	}
+}
+/* Carousel items */
+.carousel .carousel-item{
+	line-height: 0;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+.carousel .carousel-item.active{
+	display: block;
+}
+/* More like bootstrap, less accessible */
+.carousel .carousel-items{
+	border: solid 1px gray;
+}
+.carousel .carousel-items.focus{
+	border-color: white;
+	outline: solid 3px black;
+}
+/* Carousel images */
+/* .carousel .carousel-item .carousel-image{
+	background: #e6e6e6;
+} */
+@media screen and (min-width:320px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 183px;
+	}
+}
+@media screen and (min-width:480px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 277px;
+	}
+}
+@media screen and (min-width:768px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 446px;
+	}
+}
+@media screen and (min-width:992px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 432px;
+	}
+}	
+.carousel .carousel-item .carousel-image img{
+	height: 100%;
+	width: 100% !important;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+	object-position: 50% 50%;
+}
+@media screen and (min-width:320px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 183px;
+	}
+}
+@media screen and (min-width:480px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 277px;
+	}
+}
+@media screen and (min-width:768px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 446px;
+	}
+}
+@media screen and (min-width:992px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 432px;
+	}
+}
+/* Carousel caption */
+.carousel .carousel-item .carousel-caption a{
+	text-decoration: underline;
+}
+.carousel .carousel-item .carousel-caption a,
+.carousel .carousel-item .carousel-caption span.contrast{
+	/* background-color: rgba(0, 0, 0, 0.65); */
+	border: 2px solid transparent;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0 6px;
+	display: inline-block;
+}
+.carousel .carousel-item .carousel-caption h3 a{
+	/* color: #fff; */
+	font-size: .8em;
+	font-weight: 300;
+	font-style: normal;
+}
+@media screen and (min-width:768px){
+	.carousel .carousel-item .carousel-caption h3 a{
+		font-size: .9em;
+	}
+}
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption span.contrast:hover{
+	/* background-color: rgba(0, 0, 0, 1); */
+	margin: 0;
+}
+.carousel .carousel-item .carousel-caption a:focus{
+	/* background-color: rgba(0, 0, 0, 1);
+	border-color: #fff; */
+	margin: 0;
+}
+.carousel .carousel-item .carousel-caption p{
+	font-size: 1em;
+	line-height: 1.5;
+	margin-bottom: 0;
+	right: 0;
+	bottom: 2em;
+	left: 0;
+}
+.carousel .carousel-item .carousel-caption{
+	/* color: #fff; */
+	text-align: center;
+	line-height: 1.6em;
+	padding: 20px 0;
+	right: 6px;
+	bottom: -25px;
+	position: absolute;
+}
+/* Shared CSS for Pause, Next and Previous Slide Controls */
+.carousel .controls button{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+	z-index: 10;
+	top: 5px;
+	position: absolute;
+}
+.carousel .controls button svg rect.background{
+	fill: black;
+	stroke: black;
+	stroke-width: 1px;
+	opacity: 0.6;
+}
+.carousel .controls button svg rect.border{
+	fill: transparent;
+	stroke: transparent;
+	stroke-width: 2px;
+}
+/* Next and Previous Slide Controls */
+.carousel .controls button svg polygon{
+	fill: white;
+	stroke: white;
+	stroke-width: 2;
+	opacity: 1;
+}
+.carousel .controls button.previous{
+	top: 10px;
+	right: 50px;
+}
+.carousel .controls button.next{
+	top: 10px;
+	right: 6px;
+}
+/* Pause Control */
+.carousel .controls button.rotation{
+	top: 10px;
+	left: 6px;
+}
+.carousel .controls button.rotation svg polygon.pause{
+	fill: transparent;
+	stroke-width: 4;
+	stroke: transparent;
+}
+.carousel .controls button.rotation svg polygon.play{
+	fill: transparent;
+	stroke-width: 1;
+	stroke: transparent;
+}
+.carousel .controls button.rotation.pause svg polygon.pause,
+.carousel .controls button.rotation.play svg polygon.play{
+	fill: white;
+	stroke: white;
+}
+/* Common focus styling for svg buttons */
+.carousel .controls button:focus rect.background,
+.carousel .controls button:hover rect.background,
+.carousel .controls button:focus rect.border,
+.carousel .controls button:hover rect.border{
+	fill: black ; /*#005a9c*/
+	stroke: black; /*#005a9c*/
+	opacity: 1;
+}
+.carousel .controls button:focus rect.border{
+	stroke: white;
+}
+
+
+/* 1.6. Lines */
+
+hr{
+	background-color: gray;
+	height: 1px;
+	border: 0;
+	width: 95%;
+}
+hr.section-divider{
+	margin: 2.5em 0;
+}
+
+
+/* 1.7. Formatting */
+
+.black{
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.half{
+	width: 50%;
+}
+.italic{
+	font-style: italic;
+}
+.left{
+	text-align: left;
+}
+.small{
+	font-size: .9em;
+}
+.smaller{
+	font-size: .9em;
+}
+.smallest{
+	font-size: .9em;
+}
+@media only screen and (min-width: 768px){
+	.smaller{
+		font-size: .8em;
+	}
+	.smallest{
+		font-size: .7em;
+	}
+}
+.smallcaps{
+	font-variant: small-caps;
+}
+.underline{
+	text-decoration: underline;
+}
+
+
+/* 1.8. Lists */
+
+ol,
+ul{
+	padding: 0 0 0 1.4em;
+	margin:0;
+}
+@media only screen and (min-width: 768px){
+	ol,
+	ul{
+		padding-left: 2.4em;
+	}
+}
+
+/* Unused Code */
+
+/* Image/Title tests*/
+/* img {
+	width: 100vw;
+	height: 100vh;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+}
+.title{
+	position: relative;
+}
+.header-title{
+	top: -.5em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;
+} */
+
+/* @media only screen and (min-width: 992px){
+	.fullscreen.title{
+		position: relative;
+	}
+	.fullscreen .lead-image{
+		height: 100vh;
+		width: 100vw;
+		object-fit:cover;
+		-o-object-fit: cover;
+		overflow: hidden;
+	}
+	.fullscreen img{
+		width: 100% !important;
+	}
+	.fullscreen .header-title{
+		color: white;
+		top: 2.5em;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		position: absolute;
+	} 
+	.fullscreen h1{
+		font-size: 5em;
+	}
+	.fullscreen hr{
+		display: none;
+	}
+} */
+/* img {
+	filter: grayscale(100%);
+} */
+
+/** Main Site Colors **/
+/*
+site-blue #2e68ac;
+site-red #cc4943;
+whitesmoke;
+light gray #dbdbdb;
+dark gray #858585;
+dark brown #424242;
+near black #525252;
+also see 2.9 for manuscript colors
+*/
+
+/* The following items are used on the texts.html page. */
+/* .author-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-bottom: 1em;
+}
+.archival-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+
+}
+@media only screen and (min-width: 768px){
+	.archival-entry{
+		padding-left: 1em;
+	}
+}
+.contribution-form{
+	padding-left: 1em;
+	padding-bottom: 0em;
+	margin-bottom: 1em;
+	margin-top: 0em;
+}
+@media only screen and (min-width: 768px){
+	.contribution-form{
+		padding-left: 2.5em;
+	}
+}
+.critical-entry{
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px){
+	.critical-entry{
+		padding-left: 1em;
+	}
+} */
+
+/* The following items are used on the books.html page. */
+/* .published-author{
+	padding: 1.5em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.works-list{
+		padding: 0 0 0 2em;
+	}
+}
+.works-list li{
+	padding: 0 0 .75em 0;
+} */
+
+/* The following item is used on the site_map.html page. */
+/* .sitemap-list{
+	display: inline-block;
+	text-indent: 0;
+}
+.sitemap-list .sitemap-list:before{
+	content: "•";
+	margin:0 5px 0 -15px;
+}
+@media only screen and (min-width: 768px){
+	.sitemap-list{
+		margin-left: 1em;
+	}
+} */
+
+/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
+/* ol.concept-list li,
+ul.concept-list li{
+	margin-bottom: .7em;
+}
+ol.concept-list li:last-child,
+ul.concept-list li:last-child{
+   margin-bottom: 0;
+} */
+
+/* The following items are used on the bibliography.html page. */
+/* .primary-historical{
+	list-style: none;
+	padding: 0 0 1em 0;
+	margin: 0;	
+}
+ol.primary-historical li{
+	padding-bottom: .5em;
+} */
+
+/* 1.1. Main Components */
+/* h5.books{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	margin: 0;
+}
+h5.books::before{
+	font-family: 'FontAwesome';
+	content: '\f101';
+	padding-right: .5em;
+}
+h5.books::after{
+	font-family: 'FontAwesome';
+	content: '\f100';
+	padding-left: .5em;
+}
+.return-top{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: .9em;
+}
+.main-divider{
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.main-divider{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 992px){
+	.main-divider{
+		width: 80%;
+	}
+}
+body.transcription .title{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 320px){
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+@media only screen and (min-width: 480px){
+	body.transcription .title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	body.transcription .title{
+		padding: 1em 0;
+		display: block !important;*/ /* Tied to overlay */
+	/*}
+}
+.header-title{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.header-title{
+		display: block;
+	}
+}
+.content-holder{
+	background: #e6e6e6;
+}
+@media screen and (min-width:320px) {
+	.content-holder{
+		min-height: 183px;
+	}
+}
+@media screen and (min-width:480px) {
+	.content-holder{
+		min-height: 277px;
+	}
+}
+@media screen and (min-width:768px) {
+	.content-holder{
+		min-height: 446px;
+	}
+}
+@media screen and (min-width:992px) {
+	.content-holder{
+		min-height: 432px;
+	}
+} */
+/* @media screen and (min-width:480px) {
+	.responsive-image70 {
+		width: 70%;
+	}
+	.responsive-image73 {
+		width: 73%;
+	} 
+  } */
+/* The following is used to prevent content layout shifts */
+/* .content-holder-1,
+.content-holder-2,
+.content-holder-3,
+.content-holder-4,
+.content-holder-5{
+	background: #e6e6e6;
+}
+@media screen and (min-width:320px) {
+	.content-holder-1{
+		min-height: 66px;
+	}
+	.content-holder-2{
+		min-height: 181px;
+	}
+	.content-holder-3{
+		min-height: 206px;
+	}
+	.content-holder-4{
+		min-height: 229px;
+	}
+	.content-holder-5{
+		min-height: 357px;
+	}
+}
+@media screen and (min-width:480px) {
+	.content-holder-1{
+		min-height: 106px;
+	}
+	.content-holder-2{
+		min-height: 285px;
+	}
+	.content-holder-3{
+		min-height: 322px;
+	}
+	.content-holder-4{
+		min-height: 359px;
+	}
+	.content-holder-5{
+		min-height: 389px;
+	}
+}
+@media screen and (min-width:768px) {
+	.content-holder-1{
+		min-height: 169px;
+	}
+	.content-holder-2{
+		min-height: 447px;
+	}
+	.content-holder-3{
+		min-height: 504px;
+	}
+	.content-holder-4{
+		min-height: 563px;
+	}
+	.content-holder-5{
+		min-height: 613px;
+	}
+}
+@media screen and (min-width:992px) {
+	.content-holder-1{
+		min-height: 155px;
+	}
+	.content-holder-2{
+		min-height: 409px;
+	}
+	.content-holder-3{
+		min-height: 461px;
+	}
+	.content-holder-4{
+		min-height: 514px;
+	}
+	.content-holder-5{
+		min-height: 559px;
+	}
+} */
+/* .title hr{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.title hr{
+		display: block;
+	}
+} */
+/* for essay title with subtitle */
+/* .title-with-subtitle{
+	margin-bottom: .5em;
+} */
+/* for essay subtitle */
+/* .subtitle{
+	font-size: .9em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+.byline{
+	font-size: .9em;
+	padding: 0;
+	margin: 0;
+}
+.byline-divider{
+    width: 45%;
+    border-top: 1px dashed gray;
+	background: white;
+	display: inline-block;
+} */
+/* toc and toc-title used for page menus */
+/* .toc{
+	font-size: .9em;
+	padding: 1em 0 0 0;
+}
+.toc-title{
+	list-style-type:none;
+	margin-left: -1.2em;
+	display:inline-block;
+} */
+/* assumes this goes at end of essay */
+/* .footnote{
+	font-size: .9em;
+	padding-top: 1.5em;
+} */
+/* .credits{
+	font-size: 1.2em;
+	line-height: 1.6em;
+	text-align: left;
+}
+@media only screen and (min-width: 768px){
+	.credits{
+		font-size: 1.15em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.credits{
+		font-size: 1.1em;
+		display: block !important; /* Tied to overlay */
+	/*}
+} */
+/* @media only screen and (min-width: 768px){
+	.footer{
+		font-size: 1em; */
+		/* font-size: .95em;
+	}
+} */
+/* .graphic a:hover,
+.graphic a:focus{
+	background-color: white;
+} */
+/*source sans pro - additional variants */
+/* @font-face {
+    font-family: 'source_sans_problack';
+    src: url('../fonts/sourcesanspro-black-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_problack_italic';
+    src: url('../fonts/sourcesanspro-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_probold_italic';
+    src: url('../fonts/sourcesanspro-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_proextralight';
+    src: url('../fonts/sourcesanspro-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_proXLtIt';
+    src: url('../fonts/sourcesanspro-extralightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('../fonts/sourcesanspro-italic-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_prolight_italic';
+    src: url('../fonts/sourcesanspro-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_proSBdIt';
+    src: url('../fonts/sourcesanspro-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*logo unused*/
+/* @font-face {
+    font-family: 'sansita_swashedlight';
+    src: url('../fonts/sansitaswashed-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/sansitaswashed-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+} */
+/*main text & footer unused*/
+/*sans serif - nunito sans */
+/* @font-face {
+    font-family: 'nunito_sansregular';
+    src: url('../fonts/nunitosans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nunitosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*sans serif - nunito */
+/* @font-face {
+    font-family: 'nunitoregular';
+    src: url('../fonts/nunito-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nunito-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*sans serif - karla */
+/* @font-face {
+    font-family: 'karlaregular';
+    src: url('../fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('../fonts/karla-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*sans serif - lato*/
+/* @font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato-black-webfont.woff2') format('woff2'),
+         url('../fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoblack_italic';
+    src: url('../fonts/lato-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('../fonts/lato-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoitalic';
+    src: url('../fonts/lato-italic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latolight_italic';
+    src: url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/lato-thin-webfont.woff2') format('woff2'),
+         url('../fonts/lato-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latohairline_italic';
+    src: url('../fonts/lato-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*sans serif - roboto */
+/* @font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('../fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*sans serif - rubik */
+/* @font-face {
+    font-family: 'rubiklight';
+    src: url('../fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/rubik-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* 1.2. Mobile Fixed Nav */
+
+/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
+
+/* #sticky{
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+} */
+/* applied after scroll height reached */
+/* .fixed-nav #sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	border-bottom: 1px gray solid;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+}
+.menu,
+.fixed-nav .menu{
+	text-align: center;
+	max-width: 36em;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: block;
+}
+.menu{
+	padding: 1em 0;
+}
+.fixed-nav .menu{
+	padding: .5em 1em;
+}
+@media only screen and (min-width: 768px){
+	.menu,
+	.fixed-nav .menu{
+		max-width: 46em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.menu,
+	.fixed-nav .menu{
+		display: none;
+	}
+}
+.icon-title{
+	font-size: .95em;
+	float: left;
+	padding-top: .2em;
+}
+@media only screen and (min-width: 480px){
+	.icon-title{
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.icon-title{
+		font-size: 1.6em;
+		padding-top: .1em;
+	}
+}
+.menu a.icon{
+	font-size: 1.5em;
+	color: black;
+	border-top: none;
+}
+.menu a.icon:hover{
+	color: #a83c37;
+
+}
+.menu a.icon:hover,
+.menu a.icon:focus{
+	padding: 1px 7px;
+	margin: -1px -7px;
+}
+.nav-title{
+	font-size: 1.7em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	display: none;
+}
+@media only screen and (min-width: 480px){
+	.nav-title{
+		font-size: 2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.nav-title{
+		font-size: 2.5em;
+	}
+}
+[id]:target {
+    margin-top: -70px;
+    border-top: 70px solid transparent;
+    background-clip: padding-box;
+}
+@media only screen and (min-width: 992px){
+	[id]:target{
+		margin-top: -10px;
+		border-top: 10px solid transparent;
+	}
+} */
+/* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
+/* alternative coding */
+/* [id]:target {
+  padding-top: 65px; 
+  margin-top: -65px;
+} */
+/* *[id]:before { 
+	display: block; 
+	content: " "; 
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden; 
+  } */
+/* [id]:target::before {
+	content: "";
+	display: block;
+	height: 80px;
+	margin: -80px 0 0;
+} */
+/* alternative coding for empty spans */
+/* .anchor{
+	display: block;
+	height: 80px;
+	margin-top: -80px;
+	visibility: hidden;
+} */
+/* doesn't work in iOS */
+/* html {
+	scroll-padding-top: 80px;
+} */
+
+
+/* 1.3. Navbar */
+
+/* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+
+/* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
+
+/* .topnav{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 600;
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.topnav{
+		display: block;
+	}
+}
+.topnav ul{
+	text-align: center;
+	list-style: none;
+	padding: 0 0 .5em 0;
+	margin: 0;
+	display: block;
+}
+.topnav ul li{
+	font-size: 1.1em;
+	display: inline-block;
+	position: relative;
+}
+.topnav ul li:hover,
+.topnav ul li:focus-within{
+	color: whitesmoke;
+	background-color: #424242;
+}
+.topnav ul li a{
+	color: black;
+	padding: 16px 12px;
+}
+.topnav ul li a:hover,
+.topnav ul li a:focus{
+	color: whitesmoke;
+	background-color: #424242;
+}
+.topnav ul li .dropdown .vh{
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+.topnav ul li .dropdown label{
+	display: inline-block;
+}
+label::after,
+a::after{
+	font-family: 'FontAwesome';
+}
+label::after{
+	content: '\f0da';
+	display: inline-block;
+    width: 0.5em;
+}
+input:checked + label::after{
+	content: '\f0d7';
+}
+.topnav ul li .dropdown label.dropbtn{
+	padding: 16px 12px;
+	border: none;
+	outline: none;
+}
+[type="checkbox"]:checked + label{
+	color: whitesmoke;
+	background-color: #424242;
+}
+:checked + label .expanded-text{
+	display: inline;
+}
+:checked + label .collapsed-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .expanded-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .collapsed-text{
+	display: inline;
+}
+.dropdown-content{
+	display: none;
+}
+:checked ~ .dropdown-content{
+	display: block;
+}
+.dropdown-content a{
+	white-space: nowrap;
+	display: block;
+}
+.topnav ul li .dropdown .dropdown-content ul{
+	text-align: left;
+	min-width: 140px;
+	padding: 0;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+	z-index: 1;
+	position: absolute;
+}
+.topnav ul li .dropdown .dropdown-content ul li{
+	font-size: .85em;
+	background-color: #e3e3e3; 
+	display: block;
+}
+.topnav ul li .dropdown .dropdown-content ul li:last-of-type{
+	padding-bottom: .5em;
+}
+.topnav ul li .dropdown .dropdown-content ul li:hover,
+.topnav ul li .dropdown .dropdown-content ul li:hover a,
+.topnav ul li .dropdown .dropdown-content ul li:focus,
+.topnav ul li .dropdown .dropdown-content ul li:focus-within a{
+	color: whitesmoke;
+	background-color: #858585;
+	outline: none;
+}
+.topnav ul li .dropdown .dropdown-content ul li a,
+.topnav ul li .dropdown .dropdown-content ul li a:visited{
+	color: black;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.topnav ul li .dropdown .dropdown-content ul li a:hover{
+	color: whitesmoke;
+} */
+/* HTML hierarchy for topnav and color values */
+/*
+.topnav
+.topnav ul
+.topnav ul li 
+.topnav ul li a
+
+.topnav ul li .dropdown
+.topnav ul li .dropdown input .vh
+.topnav ul li .dropdown label.dropbtn
+.topnav ul li .dropdown .dropdown-content
+.topnav ul li .dropdown .dropdown-content ul
+.topnav ul li .dropdown .dropdown-content ul li 
+.topnav ul li .dropdown .dropdown-content ul li a
+
+color: black;
+color: whitesmoke;
+background-color: #424242; [dark brown]
+background-color: #858585; [dark gray]
+background-color: #dbdbdb; [light gray]
+*/
+
+
+/* 1.4. Overlay */
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+/* The following prevents overlay from appearing above 768px */
+/* @media only screen and (min-width: 992px){
+	#nav3{
+		display: none !important;
+	}
+}
+body.fixed-nav .overlay .menu .nav-title,
+body.fixed-nav .overlay .menu .close-title{
+	color: whitesmoke;
+} */
+/* Height & width depends on how you want to reveal the overlay (see scripts.js) */
+/* .overlay{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	color: whitesmoke; */
+	/* background-color: #424242; */ /* Black fallback color */
+	/* opacity: 1;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0; */
+	/*position: fixed; */ /* Stay in place */
+	/* z-index: 1; */ /* Sit on top */
+	/*overflow-x: hidden; */ /* Disable horizontal scroll */
+	/* overflow-y: auto; */
+	/*transition: 0.5s; */ /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	/* display: none;
+} */
+/* .overlay-content{
+	font-size: 1.1em;
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 3em;
+	width: 100%;
+	top: 1em;
+	position: relative;
+	display: block;
+} */
+/* @media only screen and (min-width: 768px){
+	.overlay-content{
+		font-size: 1.4em;
+	}
+}
+.overlay ul{
+	list-style-type: none;
+	line-height: 1.6em;
+	padding: 0;
+	margin: 0;
+}
+.overlay li{
+	padding: .8em 0;
+}
+.overlay li.section ul li{
+	padding: .3em 0;
+}
+.overlay a,
+.overlay a:visited{
+	color: whitesmoke;
+	text-decoration: underline;
+	transition: 0.3s; */ /* Transition effects on hover (color)*/
+/* }
+.overlay a:hover,
+.overlay a:focus{
+	color: black;
+	background-color: whitesmoke;
+	text-decoration: underline;
+}
+.overlay .menu{
+	padding: 1.5em 0 1em 0;
+	border-bottom: 1px whitesmoke solid;
+}
+.overlay .menu .close-title{
+	font-size: 2em;
+	vertical-align: middle;
+	line-height: 1.1em;
+	right: .6em;
+	position: absolute;
+}
+@media only screen and (min-width: 480px){
+	.overlay .menu .close-title{
+		line-height: 1.2em;
+	}
+}
+.overlay .menu .close-title a{
+	text-decoration: none;
+} */
+
+/* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
+/*
+.title{
+	padding-bottom: 0em;
+}
+body.transcription .title{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 320px){
+	.title{
+		padding-bottom: .5em
+	}
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+@media only screen and (min-width: 480px){
+	body.transcription .title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	.title,
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+.header-title{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.header-title{
+		display: block;
+	}
+}
+.title hr{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.title hr{
+		display: block;
+	}
+}
+[id] {
+	scroll-margin-top: 70px;
+  }
+  @media only screen and (min-width: 992px){
+    [id] {
+        scroll-margin-top: 20px;
+      }
+    }
+.menu{
+	padding: 1em 0;
+}
+.fixed-nav .menu{
+	padding: .5em 1em;
+}
+@media only screen and (min-width: 768px){
+	.menu,
+	.fixed-nav .menu{
+		max-width: 46em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.menu,
+	.fixed-nav .menu{
+		display: none;
+	}
+}
+.topnav{
+	display: none;
+}
+@media only screen and (min-width: 992px){
+	.topnav{
+		display: block;
+	}
+}
+@media only screen and (min-width: 992px){
+	#nav3{
+		display: none !important;
+	}
+}
+.overlay{
+	display: none;
+}
+.overlay-content{
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.title .back-button{
+		font-size: 1.1em;
+		padding-top: .3em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.title .back-button{
+		font-size: 1.2em;
+		padding-top: .1em;
+	}
+}
+*/
+
+
+/* 1.5 Artifact Gallery */
+
+/* .image-details{
+	font-size: .85em;
+	font-style: italic;
+	text-align: center;
+	color: #65615b;
+}
+.gallery{      
+	text-align: center;
+	margin-bottom: -2.5em;
+	overflow: hidden;
+}
+.gallery-item{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 2.5em 0;
+	width: 100%;
+}
+@media only screen and (min-width: 480px){
+	.gallery-item{
+		padding: 0 .5em 2.5em .5em;
+		width: calc(50% - 1.5em);
+	}
+}
+@media only screen and (min-width: 768px){
+	.gallery-item{
+		width: calc(33.3% - 1.5em);
+	}
+}
+.gallery-item:last-of-type{
+	text-align: left;
+}
+.gallery figure{
+	margin: 0;
+}
+.image-container{
+	padding: .5em;
+}
+.gallery figure img{
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit: cover;
+	border-radius:50%;
+	overflow: hidden;
+	border: 2px solid #dbdbdb;
+}
+.gallery figure a img:hover,
+.gallery figure a:focus img{
+	border: 2px #2e68ac solid;
+}
+.gallery figure figcaption{
+	font-size: .8em;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	text-align: center;       
+	line-height: 1.2em;
+} */
+
+/* 1.6. Lines */
+/*.thick-hr{
+	overflow: visible; /* For IE */
+	/*border: none;
+	border-top: medium double #191716;
+	color: #191716;
+	text-align: center;
+	padding: 10px 10px 0 0;
+	width: 50%;
+}
+.title-hr{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.divider-hr{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.text-divider{
+	margin: 0 auto;
+	width: 40%;
+} */
+
+/* 1.8. Lists */
+/* ol li ol{
+	padding: 0 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	ol li ol{
+		padding-left: 1.2em;
+	}
+} */
