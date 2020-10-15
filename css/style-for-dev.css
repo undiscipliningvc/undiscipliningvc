@@ -406,6 +406,7 @@ a:focus img{
 	font-family: 'noto_serifregular';
 	font-weight: 300;
 	font-style: normal;
+	text-align: unset;
 }
 @media only screen and (min-width: 320px){
 	.carousel .carousel-item .carousel-caption h3{
@@ -429,8 +430,12 @@ a:focus img{
 }
 @media only screen and (min-width: 480px){
 	.carousel .carousel-item .carousel-caption{
-		left: unset;
 		line-height: 1.6em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.carousel .carousel-item .carousel-caption{
+		left: unset;
 	}
 }
 /* Shared CSS for Pause, Next and Previous Slide Controls */
