@@ -416,6 +416,7 @@ a:focus img{
 .carousel .carousel-item .carousel-caption h3 a{
 	font-size: .9em;
 	color: #fff; /*color*/
+	text-align: center;
 }
 .carousel .carousel-item .carousel-caption{
 	text-align: center;
