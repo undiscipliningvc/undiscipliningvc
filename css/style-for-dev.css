@@ -1,55 +1,8 @@
-h1,
-h2,
-h3{
-	color: #1C4C87;
-}
-#skiptocontent a{
-	color: white;
-	background-color: #1157AC;
-}
-a,
-a:visited{
-	color: #1157AC;
-}
-a:hover,
-a:focus{
-	color: white;
-	background-color: #1157AC; 
-}
+/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
-.carousel .controls button:focus rect.background,
-.carousel .controls button:hover rect.background,
-.carousel .controls button:focus rect.border,
-.carousel .controls button:hover rect.border{
-	fill: #1157AC; ;
-	stroke: #1157AC; 
-	opacity: 1;
-}
-.carousel .carousel-item .carousel-image{
-	background: #E3E3E3;
-}
-.carousel .carousel-item .carousel-caption a{
-	background-color: rgba(0, 0, 0, 0.65);
-}
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption a:focus{
-	background-color: #1157AC;
-}
-.carousel .carousel-item .carousel-caption a:focus{
-	border-color: #1157AC;
-	box-shadow: inset 0px 0px 0px 2px #fff;
-	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
-    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
-}
-.carousel .carousel-item .carousel-caption h3 a{
-	color: #fff;
-}
-
-/* CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
+/* This CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
-
-/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
 /* 
 Table of Contents
@@ -137,6 +90,11 @@ body.essay .main{
 	body.fixed-nav{
 		padding-top: 0 !important;
 	}
+}
+h1,
+h2,
+h3{
+	color: #1C4C87; /*color*/
 }
 h1{
 	font-size: 2em;
@@ -228,6 +186,10 @@ h3{
 		text-align: center;
 	}
 }
+.organizers p{
+	text-align: left;
+	display: inline-block;
+}
 img,
 .image{
 	font-weight: 300;
@@ -247,6 +209,8 @@ img,
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
 	font-size: .9em;
+	color: white; /*color*/
+	background-color: #1157AC; /*color*/
 	padding: 6px;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
@@ -280,6 +244,15 @@ img,
 }
 *:focus{
 	outline: 0 none;
+}
+a,
+a:visited{
+	color: #1157AC; /*color*/
+}
+a:hover,
+a:focus{
+	color: white; /*color*/
+	background-color: #1157AC; /*color*/
 }
 a img{
 	border: 3px white solid;
@@ -358,6 +331,9 @@ a:focus img{
 	outline: solid 3px black;
 }
 /* Carousel images */
+.carousel .carousel-item .carousel-image{
+	background: #E3E3E3; /*color*/
+}
 @media screen and (min-width:320px){
 	.carousel .carousel-item .carousel-image{
 		min-height: 183px;
@@ -409,6 +385,7 @@ a:focus img{
 /* Carousel caption */
 .carousel .carousel-item .carousel-caption a{
 	text-decoration: underline;
+	background-color: rgba(0, 0, 0, 0.65); /*color*/
 }
 .carousel .carousel-item .carousel-caption a{
 	border: 2px solid transparent;
@@ -419,7 +396,14 @@ a:focus img{
 }
 .carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption a:focus{
+	background-color: #1157AC; /*color*/
 	margin: 0;
+}
+.carousel .carousel-item .carousel-caption a:focus{
+	border-color: #1157AC; /*color*/
+	box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
+    -moz-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
 }
 .carousel .carousel-item .carousel-caption h3{
 	font-size: .8em;
@@ -435,6 +419,7 @@ a:focus img{
 }
 .carousel .carousel-item .carousel-caption h3 a{
 	font-size: .9em;
+	color: #fff; /*color*/
 }
 .carousel .carousel-item .carousel-caption{
 	text-align: center;
@@ -471,6 +456,14 @@ a:focus img{
 	fill: transparent;
 	stroke: transparent;
 	stroke-width: 2px;
+}
+.carousel .controls button:focus rect.background,
+.carousel .controls button:hover rect.background,
+.carousel .controls button:focus rect.border,
+.carousel .controls button:hover rect.border{
+	fill: #1157AC; ; /*color*/
+	stroke: #1157AC; /*color*/
+	opacity: 1;
 }
 /* Next and Previous Slide Controls */
 .carousel .controls button svg polygon{
