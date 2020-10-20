@@ -53,6 +53,10 @@ html{
 	-webkit-hyphens: auto;
 	scroll-behavior: smooth;
 }
+body{
+	padding: 0;
+	margin: 0;
+}
 article .main{
 	font-size: 1em;
 	text-align: left;
