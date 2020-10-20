@@ -87,9 +87,6 @@ body.essay .main{
 		max-width: 36em;
 		display: block !important; /* Tied to overlay */
 	}
-	body.fixed-nav{
-		padding-top: 0 !important;
-	}
 }
 h1,
 h2,
@@ -128,10 +125,6 @@ h3{
     h3{
         text-align: left;
     }
-}
-/* adds padding for h4 labelled subsections in essays */
-.subsection{
-	padding-top: 2em;
 }
 .title{
 	font-weight: bold;
@@ -202,9 +195,6 @@ img,
 	img{
 		width: 75% !important;
 	}
-}
-.image-border{
-	border: 1px solid gray;
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
@@ -735,6 +725,10 @@ ol.primary-historical li{
 } */
 
 /* 1.1. Main Components */
+/* adds padding for h4 labelled subsections in essays */
+/* .subsection{
+	padding-top: 2em;
+} */
 /* h5.books{
 	font-size: 1.1em;
 	font-variant: small-caps;
@@ -793,6 +787,9 @@ body.transcription .title{
 	.header-title{
 		display: block;
 	}
+}
+.image-border{
+	border: 1px solid gray;
 }
 .content-holder{
 	background: #e6e6e6;
@@ -1269,6 +1266,11 @@ body.transcription .title{
 	box-shadow: 0 4px 6px -6px #222;
 	-webkit-box-shadow: 0 4px 6px -6px #222;
 	-moz-box-shadow: 0 4px 6px -6px #222;
+}
+@media only screen and (min-width: 992px){
+	body.fixed-nav{
+		padding-top: 0 !important;
+	}
 }
 .menu,
 .fixed-nav .menu{
