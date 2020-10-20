@@ -53,15 +53,7 @@ html{
 	-webkit-hyphens: auto;
 	scroll-behavior: smooth;
 }
-body{
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-body.essay{
-	margin: 0;
-}
-body.essay .main{
+article .main{
 	font-size: 1em;
 	text-align: left;
 	line-height: 1.6em;
@@ -70,19 +62,19 @@ body.essay .main{
 	
 }
 @media only screen and (min-width: 480px){
-	body.essay .main{
+	article .main{
 		font-size: 1em;
 		padding: 0 1.5em 1em 1.5em;
 	}
 }
 @media only screen and (min-width: 768px){
-	body.essay .main{
+	article .main{
 		font-size: 1.1em;
 		padding: 0 2.25em 1em 2.25em;
 	}
 }
 @media only screen and (min-width: 992px){
-	body.essay .main{
+	article .main{
 		font-size: 1.2em;
 		max-width: 36em;
 		display: block !important; /* Tied to overlay */
@@ -130,9 +122,6 @@ h3{
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.6em;
-	position: relative;
-}
-.title{
 	padding-bottom: 0em;
 	overflow-wrap: normal;
 	word-wrap: normal;
@@ -142,6 +131,7 @@ h3{
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
+	position: relative;
 }
 @media only screen and (min-width: 320px){
 	.title{
@@ -725,6 +715,14 @@ ol.primary-historical li{
 } */
 
 /* 1.1. Main Components */
+/* body{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+body.essay{
+	margin: 0;
+} */
 /* adds padding for h4 labelled subsections in essays */
 /* .subsection{
 	padding-top: 2em;
