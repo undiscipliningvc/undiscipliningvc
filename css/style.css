@@ -565,6 +565,9 @@ ul{
     text-align: left;
     display: inline-block;
 }
+.announcement li{
+	line-height: 2.1em;
+}
 
 /* Unused Code */
 
