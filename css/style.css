@@ -115,11 +115,8 @@ h3{
 	font-size: 1.1em;
 }
 @media only screen and (min-width: 480px){
-	h2{
+	h2, h3, h4{
         text-align: center;
-    }
-    h3{
-        text-align: left;
     }
 }
 .details h4{
