@@ -115,12 +115,15 @@ h3{
 	font-size: 1.1em;
 }
 @media only screen and (min-width: 480px){
-	h2{
+	h2, h3, h4{
         text-align: center;
     }
-    h3{
-        text-align: left;
-    }
+}
+.details h4{
+    margin-top: 2.5em;
+}
+.details h4:first-of-type{
+    margin-top: 1em;
 }
 .title{
 	font-weight: bold;
@@ -150,19 +153,14 @@ h3{
 }
 .announcement{
 	font-size: .9em;
-	padding-bottom: .25em;
-}
-@media only screen and (min-width: 480px){
-	.announcement{
-		padding-bottom: .75em;
-	}
+	text-align: center;
 }
 .header-title{
 	padding: .2em .5em;
 }
 @media only screen and (min-width: 320px){
 	.header-title {
-		padding: .2em 0;
+		padding: .2em 0 0 0;
 	}
 }
 .organizers{
@@ -177,18 +175,18 @@ h3{
 	text-align: left;
 	display: inline-block;
 }
-img,
-.image{
+img{
 	font-weight: 300;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 	display: inline-block;
 }
-@media only screen and (min-width: 992px){
-	img{
-		width: 75% !important;
-	}
+#upcoming img,
+#call img{
+	width: 90%;
+	display: block;
+	margin-bottom: 2em;
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
@@ -245,6 +243,22 @@ a:hover img,
 a:focus img{
 	border: 3px #2e68ac solid;
 }
+/*colors*/
+/* .black{
+	color: rgba(0, 0, 0, 1);
+}
+.blackgray{
+	color:rgba(0, 0, 0, 0.65);
+}
+.darkblue{
+	color: #1C4C87;
+}
+.lightblue{ 
+	color: #1157AC;
+}
+.gray{
+	color: #E3E3E3;
+} */
 /*logo*/
 @font-face {
     font-family: 'jacksilverregular';
@@ -506,10 +520,9 @@ hr{
 	background-color: gray;
 	height: 1px;
 	border: 0;
-	width: 95%;
 }
 hr.section-divider{
-	margin: 2.5em 0;
+	margin: 2em 0;
 }
 
 
@@ -564,6 +577,31 @@ ul{
 	ul{
 		padding-left: 2.4em;
 	}
+}
+.announcement ol{
+	list-style: none;
+	text-align: center;
+	display: block;
+	padding: 0;
+	margin: 0 0 2em 0;
+}
+.announcement li{
+	font-size: 1.1em;
+	line-height: 2em;
+	display: inline-block;
+	margin: 0 1em;
+	font-weight: 300;
+}
+#upcoming > ul{
+	list-style: none
+}
+#upcoming > ul > li > span{
+	font-size: 1.1em;
+	font-weight: 600;
+}
+#upcoming > ul > li:nth-child(1) > ul > li,
+#upcoming > ul > li:nth-child(3) > ul > li{
+	margin-top: .75em;
 }
 
 /* Unused Code */
