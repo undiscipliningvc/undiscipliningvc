@@ -242,6 +242,22 @@ a:hover img,
 a:focus img{
 	border: 3px #2e68ac solid;
 }
+/*colors*/
+.black{
+	color: rgba(0, 0, 0, 1);
+}
+.blackgray{
+	color:rgba(0, 0, 0, 0.65);
+}
+.darkblue{
+	color: #1C4C87;
+}
+.lightblue{ 
+	color: #1157AC;
+}
+.gray{
+	color: #E3E3E3;
+}
 /*logo*/
 @font-face {
     font-family: 'jacksilverregular';
@@ -574,6 +590,17 @@ ul{
 	display: inline-block;
 	margin: 0 1em;
 	font-weight: 300;
+}
+#upcoming > ul{
+	list-style: none
+}
+#upcoming > ul > li > span{
+	font-size: 1.1em;
+	font-weight: 600;
+}
+#upcoming > ul > li:nth-child(1) > ul > li,
+#upcoming > ul > li:nth-child(3) > ul > li{
+	margin-top: .75em;
 }
 
 /* Unused Code */
