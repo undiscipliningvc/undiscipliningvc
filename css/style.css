@@ -125,7 +125,6 @@ h3{
 .details h4:first-of-type{
     margin-top: 1em;
 }
-
 .title{
 	font-weight: bold;
 	text-align: center;
@@ -245,7 +244,7 @@ a:focus img{
 	border: 3px #2e68ac solid;
 }
 /*colors*/
-.black{
+/* .black{
 	color: rgba(0, 0, 0, 1);
 }
 .blackgray{
@@ -259,7 +258,7 @@ a:focus img{
 }
 .gray{
 	color: #E3E3E3;
-}
+} */
 /*logo*/
 @font-face {
     font-family: 'jacksilverregular';
