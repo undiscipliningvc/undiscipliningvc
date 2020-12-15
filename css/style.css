@@ -609,6 +609,9 @@ ul{
 #upcoming > ul > li:nth-child(3) > ul > li{
 	margin-top: .75em;
 }
+#upcoming > ul > li:nth-child(1) > ul{
+	margin-bottom: 1.5em;
+}
 
 /* Unused Code */
 
