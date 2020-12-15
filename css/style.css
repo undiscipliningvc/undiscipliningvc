@@ -189,7 +189,10 @@ img{
 	margin-bottom: 2em;
 }
 @media only screen and (min-width: 768px){
-	width: 90%;
+	#upcoming img,
+	#call img{
+		width: 90%;
+	}
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
