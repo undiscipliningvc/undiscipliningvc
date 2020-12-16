@@ -48,6 +48,27 @@
 					width: 90%;
 				}
 			}
+			.image-caption{
+				text-align: center;
+				line-height: 1.2em;
+				right: 0;
+				left: 0;
+				bottom: .4em;
+				position: absolute;
+			}
+			@media only screen and (min-width: 480px){
+				.image-caption{
+					line-height: 1.6em;
+					bottom: .5em;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.image-caption{
+					right: .5em;
+					left: unset;
+					bottom: .5em;
+				}
+			}
 			.image-caption h3{
 				font-size: .8em;
 				font-family: 'noto_serifregular';
@@ -64,7 +85,6 @@
 			.image-caption h3 a{
 				font-size: .85em;
 				color: #fff; /*color*/
-				/* text-align: center; */
 			}
 			@media only screen and (min-width: 768px){
 				.image-caption h3 a{
@@ -90,27 +110,6 @@
 				box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
 				-webkit-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
 				-moz-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
-			}
-			.image-caption{
-				text-align: center;
-				line-height: 1.2em;
-				right: 0;
-				left: 0;
-				bottom: .4em;
-				position: absolute;
-			}
-			@media only screen and (min-width: 480px){
-				.image-caption{
-					line-height: 1.6em;
-					bottom: .5em;
-				}
-			}
-			@media only screen and (min-width: 768px){
-				.image-caption{
-					right: .5em;
-					left: unset;
-					bottom: .5em;
-				}
 			}
 		</style>
 	</head>
