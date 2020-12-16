@@ -41,17 +41,20 @@
 			/* image caption */
 			.image-wrapper{
 				position: relative;
+				margin: 0 auto 2em auto;
+			}
+			@media only screen and (min-width: 768px){
+				.image-wrapper{
+					width: 90%;
+				}
 			}
 			.image-caption a{
 				text-decoration: underline;
 				background-color: rgba(0, 0, 0, 0.65); /*color*/
-			}
-			.image-caption a{
 				border: 2px solid transparent;
 				border-radius: 5px;
 				margin: 0;
-				padding: 0 6px;
-				display: inline-block;
+				padding: 4px 6px;
 			}
 			.image-caption a:hover,
 			.image-caption a:focus{
@@ -67,9 +70,9 @@
 			.image-caption h3{
 				font-size: .8em;
 				font-family: 'noto_serifregular';
-				font-weight: 300;
-				font-style: normal;
-				text-align: unset;
+				padding: 0;
+				margin: 0;
+				display: inline-block;
 			}
 			@media only screen and (min-width: 320px){
 				.image-caption h3{
@@ -80,7 +83,7 @@
 			.image-caption h3 a{
 				font-size: .85em;
 				color: #fff; /*color*/
-				text-align: center;
+				/* text-align: center; */
 			}
 			@media only screen and (min-width: 768px){
 				.image-caption h3 a{
@@ -90,23 +93,16 @@
 			.image-caption{
 				text-align: center;
 				line-height: 1.2em;
-				padding: 20px 0;
-				bottom: -1.5em;
+				/* padding: 0; */
+				/* margin: 0 auto; */
+				right: 0;
+				left: 0;
+				bottom: 0;
 				position: absolute;
 			}
 			@media only screen and (min-width: 480px){
 				.image-caption{
 					line-height: 1.6em;
-				}
-			}
-			@media only screen and (min-width: 768px){
-				.image-caption{
-					right: 3.5em;
-				}
-			}
-			@media only screen and (min-width: 992px){
-				.image-caption{
-					right: 2.5em;
 				}
 			}
 		</style>
@@ -298,7 +294,8 @@
 
 				<section aria-labelledby="coming-soon" id="upcoming">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-						<div class="image-wrapper">
+					<div class="image-wrapper">
+						<img class="image-border" loading="lazy" src="images/uvc_0005-deriv-1640px.jpg" srcset="images/uvc_0005-deriv-1640px.jpg 1640w, images/uvc_0005-deriv-1244px.jpg 1244w, images/uvc_0005-deriv-864px.jpg 864w, images/uvc_0005-deriv-622px.jpg 622w, images/uvc_0005-deriv-592px.jpg 592w, images/uvc_0005-deriv-432px.jpg 432w, images/uvc_0005-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Wooden carving of snow-capped mountain and river with a canoe, Maori meeting house, and people." title="William Gee, “Carving Scene” (Tableaux [tōtara wood], Wellington, New Zealand, c.1905), Te Papa (GH007416), Museum of New Zealand | Te Papa Tongarewa, https://collections.tepapa.govt.nz/object/417717. Gift of Mrs G. M. Williams, 1965. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).">
 						<div class="image-caption">
 							<h3>
 								<a href="#gee">
@@ -306,7 +303,6 @@
 								</a>
 							</h3>
 						</div>
-						<img class="image-border" loading="lazy" src="images/uvc_0005-deriv-1640px.jpg" srcset="images/uvc_0005-deriv-1640px.jpg 1640w, images/uvc_0005-deriv-1244px.jpg 1244w, images/uvc_0005-deriv-864px.jpg 864w, images/uvc_0005-deriv-622px.jpg 622w, images/uvc_0005-deriv-592px.jpg 592w, images/uvc_0005-deriv-432px.jpg 432w, images/uvc_0005-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Wooden carving of snow-capped mountain and river with a canoe, Maori meeting house, and people." title="William Gee, “Carving Scene” (Tableaux [tōtara wood], Wellington, New Zealand, c.1905), Te Papa (GH007416), Museum of New Zealand | Te Papa Tongarewa, https://collections.tepapa.govt.nz/object/417717. Gift of Mrs G. M. Williams, 1965. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).">
 					</div>
 
 					<h2 id="coming-soon">Coming Soon (late January / early February)</h2>
@@ -350,6 +346,7 @@
 				
 				<section aria-labelledby="syllabi" id="call">
 					<div class="image-wrapper">
+						<img loading="lazy" src="images/uvc_0006-deriv-1640px.jpg" srcset="images/uvc_0006-deriv-1640px.jpg 1640w, images/uvc_0006-deriv-1244px.jpg 1244w, images/uvc_0006-deriv-864px.jpg 864w, images/uvc_0006-deriv-622px.jpg 622w, images/uvc_0006-deriv-592px.jpg 592w, images/uvc_0006-deriv-432px.jpg 432w, images/uvc_0006-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Work of wool and bark, green and yellow patterns surrounded by yellow and black outlines and fringe." title="Anonymous, “Dance Blanket with Diving Whale and Raven Motifs” (Wool and bark, Northwest Coast of Alaska, United States, c.1880-c.1900 1880), 1961.568., Art Institute of Chicago, Chicago, https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs. Kate S. Buckingham Endowment. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/).">
 						<div class="image-caption">
 							<h3>
 								<a href="#dance">
@@ -357,7 +354,6 @@
 								</a>
 							</h3>
 						</div>
-						<img loading="lazy" src="images/uvc_0006-deriv-1640px.jpg" srcset="images/uvc_0006-deriv-1640px.jpg 1640w, images/uvc_0006-deriv-1244px.jpg 1244w, images/uvc_0006-deriv-864px.jpg 864w, images/uvc_0006-deriv-622px.jpg 622w, images/uvc_0006-deriv-592px.jpg 592w, images/uvc_0006-deriv-432px.jpg 432w, images/uvc_0006-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Work of wool and bark, green and yellow patterns surrounded by yellow and black outlines and fringe." title="Anonymous, “Dance Blanket with Diving Whale and Raven Motifs” (Wool and bark, Northwest Coast of Alaska, United States, c.1880-c.1900 1880), 1961.568., Art Institute of Chicago, Chicago, https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs. Kate S. Buckingham Endowment. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/).">
 					</div>
 
 					<h2 id="syllabi">Call for Syllabi (CFS)</h2>
