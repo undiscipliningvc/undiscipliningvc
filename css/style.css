@@ -187,6 +187,9 @@ img{
 	width: 100%;
 	display: block;
 }
+.image-border{
+	border: 1px solid gray;
+}
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
 	font-size: .9em;
@@ -403,7 +406,7 @@ a:focus img{
 }
 .carousel .carousel-item .carousel-caption h3,
 .image-caption h3{
-	font-size: .8em;
+	font-size: 16px;
 	font-family: 'noto_serifregular';
 	font-weight: 300;
 	padding: 0;
@@ -413,24 +416,23 @@ a:focus img{
 @media only screen and (min-width: 320px){
 	.carousel .carousel-item .carousel-caption h3,
 	.image-caption h3{
-		font-size: inherit;
 		line-height: inherit;
 	}
 }
 .carousel .carousel-item .carousel-caption h3 a,
 .image-caption h3 a{
 	font-size: .75em;
-	color: #fff; /*color*/
 }
-@media only screen and (min-width: 768px){
-	.image-caption h3 a,
-	.carousel .carousel-item .carousel-caption h3 a{
-		font-size: .85em;
+@media only screen and (min-width: 768px){ 
+	.carousel .carousel-item .carousel-caption h3 a,
+	.image-caption h3 a{
+		font-size: .9em;
 	}
 }
 .carousel .carousel-item .carousel-caption a,
 .image-caption a{
 	text-decoration: underline;
+	color: #fff;
 	background-color: rgba(0, 0, 0, 0.65); /*color*/
 	border: 2px solid transparent;
 	border-radius: 5px;
@@ -451,6 +453,16 @@ a:focus img{
 	box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
     -moz-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
+}
+/* image caption */
+.image-wrapper{
+	position: relative;
+	margin: 0 auto 2em auto;
+}
+@media only screen and (min-width: 768px){
+	.image-wrapper{
+		width: 90%;
+	}
 }
 /* Shared CSS for Pause, Next and Previous Slide Controls */
 .carousel .controls button{
