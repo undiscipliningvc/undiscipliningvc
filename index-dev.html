@@ -34,6 +34,82 @@
 		
 		gtag('config', 'UA-31768072-6');
 		</script>  	
+		<style>
+			.image-border{
+				border: 1px solid gray;
+			}
+			/* image caption */
+			.image-wrapper{
+				position: relative;
+			}
+			.image-caption a{
+				text-decoration: underline;
+				background-color: rgba(0, 0, 0, 0.65); /*color*/
+			}
+			.image-caption a{
+				border: 2px solid transparent;
+				border-radius: 5px;
+				margin: 0;
+				padding: 0 6px;
+				display: inline-block;
+			}
+			.image-caption a:hover,
+			.image-caption a:focus{
+				background-color: #1157AC; /*color*/
+				margin: 0;
+			}
+			.image-caption a:focus{
+				border-color: #1157AC; /*color*/
+				box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
+				-webkit-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
+				-moz-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
+			}
+			.image-caption h3{
+				font-size: .8em;
+				font-family: 'noto_serifregular';
+				font-weight: 300;
+				font-style: normal;
+				text-align: unset;
+			}
+			@media only screen and (min-width: 320px){
+				.image-caption h3{
+					font-size: inherit;
+					line-height: inherit;
+				}
+			}
+			.image-caption h3 a{
+				font-size: .85em;
+				color: #fff; /*color*/
+				text-align: center;
+			}
+			@media only screen and (min-width: 768px){
+				.image-caption h3 a{
+					font-size: .75em;
+				}
+			}
+			.image-caption{
+				text-align: center;
+				line-height: 1.2em;
+				padding: 20px 0;
+				bottom: -1.5em;
+				position: absolute;
+			}
+			@media only screen and (min-width: 480px){
+				.image-caption{
+					line-height: 1.6em;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.image-caption{
+					right: 3.5em;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				.image-caption{
+					right: 2.5em;
+				}
+			}
+		</style>
 	</head>
 
 	<body class="essay">
@@ -222,7 +298,16 @@
 
 				<section aria-labelledby="coming-soon" id="upcoming">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-					<img loading="lazy" src="images/uvc_0005-deriv-1640px.jpg" srcset="images/uvc_0005-deriv-1640px.jpg 1640w, images/uvc_0005-deriv-1244px.jpg 1244w, images/uvc_0005-deriv-864px.jpg 864w, images/uvc_0005-deriv-622px.jpg 622w, images/uvc_0005-deriv-592px.jpg 592w, images/uvc_0005-deriv-432px.jpg 432w, images/uvc_0005-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Wooden carving of snow-capped mountain and river with a canoe, Maori meeting house, and people." title="William Gee, “Carving Scene” (Tableaux [tōtara wood], Wellington, New Zealand, c.1905), Te Papa (GH007416), Museum of New Zealand | Te Papa Tongarewa, https://collections.tepapa.govt.nz/object/417717. Gift of Mrs G. M. Williams, 1965. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).">
+						<div class="image-wrapper">
+						<div class="image-caption">
+							<h3>
+								<a href="#gee">
+									William Gee, “Carving Scene,” c.1905
+								</a>
+							</h3>
+						</div>
+						<img class="image-border" loading="lazy" src="images/uvc_0005-deriv-1640px.jpg" srcset="images/uvc_0005-deriv-1640px.jpg 1640w, images/uvc_0005-deriv-1244px.jpg 1244w, images/uvc_0005-deriv-864px.jpg 864w, images/uvc_0005-deriv-622px.jpg 622w, images/uvc_0005-deriv-592px.jpg 592w, images/uvc_0005-deriv-432px.jpg 432w, images/uvc_0005-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Wooden carving of snow-capped mountain and river with a canoe, Maori meeting house, and people." title="William Gee, “Carving Scene” (Tableaux [tōtara wood], Wellington, New Zealand, c.1905), Te Papa (GH007416), Museum of New Zealand | Te Papa Tongarewa, https://collections.tepapa.govt.nz/object/417717. Gift of Mrs G. M. Williams, 1965. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).">
+					</div>
 
 					<h2 id="coming-soon">Coming Soon (late January / early February)</h2>
 
@@ -264,7 +349,17 @@
 				<hr class="section-divider"/>
 				
 				<section aria-labelledby="syllabi" id="call">
-					<img loading="lazy" src="images/uvc_0006-deriv-1640px.jpg" srcset="images/uvc_0006-deriv-1640px.jpg 1640w, images/uvc_0006-deriv-1244px.jpg 1244w, images/uvc_0006-deriv-864px.jpg 864w, images/uvc_0006-deriv-622px.jpg 622w, images/uvc_0006-deriv-592px.jpg 592w, images/uvc_0006-deriv-432px.jpg 432w, images/uvc_0006-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Work of wool and bark, green and yellow patterns surrounded by yellow and black outlines and fringe." title="Anonymous, “Dance Blanket with Diving Whale and Raven Motifs” (Wool and bark, Northwest Coast of Alaska, United States, c. -c.1900 1880), 1961.568., Art Institute of Chicago, Chicago, https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs. Kate S. Buckingham Endowment. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/).">
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<h3>
+								<a href="#dance">
+									Anonymous Tlingit Artist, “Dance Blanket,” c.1880-c.1900
+								</a>
+							</h3>
+						</div>
+						<img loading="lazy" src="images/uvc_0006-deriv-1640px.jpg" srcset="images/uvc_0006-deriv-1640px.jpg 1640w, images/uvc_0006-deriv-1244px.jpg 1244w, images/uvc_0006-deriv-864px.jpg 864w, images/uvc_0006-deriv-622px.jpg 622w, images/uvc_0006-deriv-592px.jpg 592w, images/uvc_0006-deriv-432px.jpg 432w, images/uvc_0006-deriv-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(520vw - 1368px)" alt="Work of wool and bark, green and yellow patterns surrounded by yellow and black outlines and fringe." title="Anonymous, “Dance Blanket with Diving Whale and Raven Motifs” (Wool and bark, Northwest Coast of Alaska, United States, c.1880-c.1900 1880), 1961.568., Art Institute of Chicago, Chicago, https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs. Kate S. Buckingham Endowment. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/).">
+					</div>
+
 					<h2 id="syllabi">Call for Syllabi (CFS)</h2>
 					<p style="padding-top:.5em; text-align: center;"><strong>Deadline:</strong> Accepted on a rolling basis</p>
 					<p><a href="https://undiscipliningvc.org/">Undisciplining the Victorian Classroom</a> is a new, digital humanities project that reimagines how to teach Victorian Studies through a positive, race-conscious lens and advocates for engaging  Black, Postcolonial, Indigenous, Asian-American, Latinx, Decolonial, Feminist, Queer, and Critical Ethnic Studies scholarship. Extending the critical intervention made by the recent piece in the LA Review of Books, “<a href="https://lareviewofbooks.org/article/undisciplining-victorian-studies/">Undisciplining Victorian Studies</a>,” this project seeks to 1) foster the application of innovative, interdisciplinary teaching approaches to Victorian-era literature of all kinds and 2) introduce less-studied, global, Victorian-era authors into the classroom. The project is organized by Pearl Chaozon Bauer (Notre Dame de Namur University), Ryan Fong (Kalamazoo College), Sophia Hsu (Lehman College CUNY), and Adrian S. Wisnicki (University of Nebraska-Lincoln).</p>
@@ -293,10 +388,10 @@
 						<p id="fante"><em>Slide #4</em>: Anonymous Fante Artist. “<a href="https://africa.si.edu/collections/objects/8622/asafo-flag?ctx=b6e777daaaa95af79cf9d1b5e407048a470c2f95&idx=8">Asafo Flag</a>.” Cloth, dye. Ghana, c.1910. Textile and Fiber Arts, 88-9-1. Smithsonian Institution. National Museum of African Art. Used for educational use consistent with the principles of fair use under Section 108 of the U.S. Copyright Act.</p>
 
 						<h4>Coming Soon</h4>
-						<p>Gee, William. “<a href="https://collections.tepapa.govt.nz/object/417717">Carving Scene</a>.” Tōtara wood. Wellington, New Zealand, c.1905. Te Papa (GH007416). Museum of New Zealand | Te Papa Tongarewa. Gift of Mrs G. M. Williams, 1965. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
+						<p id="gee">Gee, William. “<a href="https://collections.tepapa.govt.nz/object/417717">Carving Scene</a>.” Tōtara wood. Wellington, New Zealand, c.1905. Te Papa (GH007416). Museum of New Zealand | Te Papa Tongarewa. Gift of Mrs G. M. Williams, 1965. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
 
 						<h4>Call for Syllabi</h4>
-						<p>Anonymous. “<a href="https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs">Dance Blanket with Diving Whale and Raven Motifs</a>.” Wool and bark. Northwest Coast of Alaska, United States, c.1880-c.1900. 1961.568. Art Institute of Chicago. Kate S. Buckingham Endowment. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p>
+						<p id="dance">Anonymous Tlingit Artist. “<a href="https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs">Dance Blanket with Diving Whale and Raven Motifs</a>.” Wool and bark. Northwest Coast of Alaska, United States, c.1880-c.1900. 1961.568. Art Institute of Chicago. Kate S. Buckingham Endowment. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p>
 				</section>
 			
 				<hr class="section-divider"/>
