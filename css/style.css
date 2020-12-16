@@ -184,15 +184,8 @@ img{
 }
 #upcoming img,
 #call img{
-	margin-bottom: 2em;
 	width: 100%;
 	display: block;
-}
-@media only screen and (min-width: 768px){
-	#upcoming img,
-	#call img{
-		width: 90%;
-	}
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
