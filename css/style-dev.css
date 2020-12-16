@@ -58,7 +58,7 @@ body{
 	margin: 0;
 }
 article .main{
-	font-size: 1em;
+	font-size: 100%;
 	text-align: left;
 	line-height: 1.6em;
 	margin: 0 auto;
