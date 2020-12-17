@@ -566,7 +566,7 @@ a:focus img{
 		right: 120px;
 	}
 }
-  #topButton:hover,
+  #topButton:active,
   #topButton:focus {
 	color: #1157AC;
 	background-color: white;
