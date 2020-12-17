@@ -535,7 +535,8 @@ a:focus img{
 
 /* Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
-#topButton {
+#topButton,
+#topButton:active {
 	cursor: pointer;
 	font-size: .75em;
 	color: white;
@@ -566,7 +567,7 @@ a:focus img{
 		right: 120px;
 	}
 }
-  #topButton:active,
+  #topButton:hover,
   #topButton:focus {
 	color: #1157AC;
 	background-color: white;
