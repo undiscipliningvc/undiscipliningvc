@@ -143,8 +143,14 @@ h2, h3, h4{
 	}
 }
 .main-menu{
-	font-size: .9em;
+	font-size: .8em;
 	text-align: center;
+}
+@media only screen and (min-width: 768px){
+	.main-menu{
+		font-size: .9em;
+		text-align: center;
+	}
 }
 .header-title{
 	padding: 0;
@@ -589,8 +595,13 @@ hr.section-divider{
 	margin: 0;
 	box-sizing: border-box;
 	display: inline-grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 }
+@media (min-width: 320px){
+	.main-menu ol {
+		grid-template-columns: auto auto;
+	}
+  }
 @media (min-width: 480px){
 	.main-menu ol {
 		grid-template-columns: auto auto auto;
