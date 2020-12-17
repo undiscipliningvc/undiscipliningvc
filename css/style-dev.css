@@ -566,8 +566,7 @@ a:focus img{
 		right: 120px;
 	}
 }
-  #topButton:hover,
-  #topButton:focus{
+  #topButton:hover{
 	color: #1157AC;
 	background-color: white;
 	font-weight: 600;
