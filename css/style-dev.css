@@ -638,6 +638,10 @@ ol.mission{
 		margin: 0 2em;
 	}
 }
+#upcoming > ul > li > span{
+	font-size: 1.2em;
+	font-variant: small-caps;
+}
 #upcoming > ul{
 	list-style: none;
 	padding: 0;
