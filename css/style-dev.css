@@ -71,7 +71,7 @@ article .main{
 @media only screen and (min-width: 768px){
 	article .main{
 		font-size: 1.05em;
-		padding: 0 2.25em 1em 2.25em;
+		padding: 1em 2.25em 1em 2.25em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -661,7 +661,7 @@ hr.section-divider{
 	margin: .5em .5em;
 }
 nav.main-menu{
-	margin: 0 auto;
+	margin: 1em auto 3em auto;
 }
 @media (min-width: 992px){
 	nav.main-menu{
