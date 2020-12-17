@@ -535,8 +535,7 @@ a:focus img{
 
 /* Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
-#topButton,
-#topButton:active {
+#topButton{
 	cursor: pointer;
 	font-size: .75em;
 	color: white;
@@ -552,28 +551,33 @@ a:focus img{
 	display: none;
   }
 @media only screen and (min-width: 480px){
-	#topButton {
+	#topButton{
 		bottom: 90px;
 	}
 }
 @media only screen and (min-width: 768px){
-	#topButton {
+	#topButton{
 		font-size: .95em;
 		bottom: 66px;
 	}
 }
 @media only screen and (min-width: 992px){
-	#topButton {
+	#topButton{
 		right: 120px;
 	}
 }
   #topButton:hover,
-  #topButton:focus {
+  #topButton:focus{
 	color: #1157AC;
 	background-color: white;
 	font-weight: 600;
 	border: 2px solid #1157AC;
-  }
+}
+#topButton:active{
+	color: white;
+	background-color: #1157AC;
+	border: 2px solid transparent;
+}
 
 
 /* 1.6. Lines */
