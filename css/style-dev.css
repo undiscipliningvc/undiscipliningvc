@@ -599,22 +599,23 @@ hr.section-divider{
 	padding: 0;
 	margin: 0;
 	display: inline-flex;
-	/* display: inline-grid;
-	grid-template-columns: repeat(1, 1fr); */
+	box-sizing: border-box;
+	display: inline-grid;
+	grid-template-columns: repeat(1, 1fr);
 }
 @media (min-width: 320px){
 	.main-menu ol {
-	  /* grid-template-columns: repeat(1, 1fr); */
+	  grid-template-columns: repeat(1, 1fr);
 	}
   }
 @media (min-width: 480px){
 	.main-menu ol {
-	  /* grid-template-columns: repeat(3, 1fr); */
+	  grid-template-columns: repeat(3, 1fr);
 	}
   }
 @media (min-width: 992px){
 	.main-menu ol {
-	  /* grid-template-columns: repeat(6, 1fr); */
+	  grid-template-columns: repeat(6, 1fr);
 	}
 }
 .main-menu li{
