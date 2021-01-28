@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /scripts/
+Disallow: /fonts/
+Disallow: /dev/
+Disallow: /css/
+
+Sitemap: https://onemorevoice.org/sitemap.xml
