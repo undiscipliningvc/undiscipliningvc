@@ -8,12 +8,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="index, follow"/>
-		<meta name="theme-color" content="#1C4C87"/>	
+		<meta name="theme-color" content="#1C4C87"/>
+		<link rel="stylesheet" type="text/css" href="css/style-dev.css?random=@Environment.TickCount"/>	
 		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="site.webmanifest"/>
-		<link rel="stylesheet" type="text/css" href="css/style-dev.css?random=@Environment.TickCount"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/jacksilver-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/jacksilver-webfont.woff"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
@@ -34,7 +34,7 @@
 	</head>
 
 	<body class="essay">
-		<article>
+		<div class="text-container">
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<nav id="skiptocontent" aria-labelledby="nav0">
@@ -330,7 +330,7 @@
 			</footer>
 
 			<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
-		</article>			
+		</div>			
 		<script>
 			/* Service Worker */
 			/* Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker */
