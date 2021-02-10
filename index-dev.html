@@ -21,16 +21,25 @@
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/notoserif-regular-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/notoserif-regular-webfont.woff"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/notoserif-bold-webfont.woff2"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/notoserif-bold-webfont.woff"/>	
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/notoserif-bold-webfont.woff"/>
+		<script>
+			(function()
+			{
+			  if( window.localStorage )
+			  {
+				if( !localStorage.getItem('firstLoad') )
+				{
+				  localStorage['firstLoad'] = true;
+				  window.location.reload();
+				}  
+				else
+				  localStorage.removeItem('firstLoad');
+			  }
+			})();
+		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-6"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		
-		gtag('config', 'UA-31768072-6');
-		</script>  	
+		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-6');</script>  	
 	</head>
 
 	<body class="essay">
