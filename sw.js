@@ -1,6 +1,6 @@
 "use strict";
 console.log("WORKER: executing.");
-var version = "v002::",
+var version = "v003::",
     offlineFundamentals = [
         '/',
         '/favicon.ico',
