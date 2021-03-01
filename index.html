@@ -231,7 +231,7 @@ Anonymous Tlingit Artist, “Dance Blanket,” c.1880-c.1900
 </footer>
 <button onclick=topFunction() ontouchend=topFunction() id=topButton aria-label="Scroll to top" title="Scroll to top" tabindex=0>Top</button>
 </div>
-<script>if("serviceWorker"in navigator){navigator.serviceWorker.register("sw.js").then(serviceWorker=>{console.log("Service Worker registered: ",serviceWorker)}).catch(error=>{console.error("Error registering the Service Worker: ",error)})}</script>
+<script>if("serviceWorker"in navigator){navigator.serviceWorker.register("/sw.js?=newVers_0001").then(serviceWorker=>{serviceWorker.update();console.log("Service Worker registered: ",serviceWorker)}).catch(error=>{console.error("Error registering the Service Worker: ",error)})}</script>
 <script>var mybutton=document.getElementById("topButton");function scrollFunction(){20<document.body.scrollTop||20<document.documentElement.scrollTop?mybutton.style.display="block":mybutton.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.onscroll=function(){scrollFunction()}</script>
 <script src=scripts/carousel.js></script>
 <script src=scripts/carouselItem.js></script>
