@@ -15,10 +15,13 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="site.webmanifest"/>
 		<link rel="preload" as="style" href="css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/jacksilver-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/jacksilver-webfont.woff"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com"> 
 		<link rel="stylesheet" type="text/css" href="css/style.css?=newVers_0001"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css?=newVers_0001"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-6"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-6');</script>  	
 	</head>
@@ -29,11 +32,36 @@
 	<body class="essay">
 		<div class="text-container">
 
+			<!-- nav1 adapted from https://webaim.org/techniques/skipnav/ -->
 			<nav id="skiptocontent" aria-labelledby="nav0">
 				<a href="#main" id="nav0" tabindex="0">skip to main content</a>
 			</nav>
 
-			<header class="title" id="title-div">
+			<nav class="navigation">
+				<div class="nav-wrapper">
+
+					<a role="menuitem" aria-haspopup="false" href="index.html"><h1>Undisciplining the Victorian Classroom</h1></a>
+
+					<ul id="nav2" role="menubar" aria-label="Site sections">
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><span>Home</span></a></li>
+
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="zoomcasts.html"><span>Zoomcasts</span></a></li>
+
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="lesson_plans.html"><span>Lesson Plans</span></a></li>
+
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="syllabi.html"><span>Syllabi</span></a></li>
+
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="faq.html"><span>FAQ</span></a></li>
+
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html"><span>About</span></a></li>
+					</ul>
+
+					<a id="nav2a" style="cursor:pointer" aria-label="Show site sections" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a>
+
+				</div>
+			</nav>
+
+			<header>
 				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 				<!-- Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html -->
 				<section id="myCarousel"
@@ -170,22 +198,20 @@
 					</div>
 				</section>
 				<!-- <div class="col-sm-1"></div> -->
-				<h1 class="header-title">Undisciplining the Victorian Classroom</h1>
+				<!-- <h1 class="header-title">Undisciplining the Victorian Classroom</h1> -->
 			</header>
 
-			<nav class="main-menu" aria-labelledby="site-sections">
-				<!-- <h2 id="site-sections">Site Sections</h2> -->
+			<!-- <nav class="main-menu" aria-labelledby="site-sections">
 				<ol id="site-sections">
 					<li><a href="#organizers">Organizers</a></li>
 					<li><a href="#mission">Mission</a></li>
-					<!-- <li><a href="#upcoming">Coming Soon</a></li> -->
 					<li><a href="#call">Call for Syllabi</a></li>
 					<li><a href="#image-details">Image Details</a></li>
 					<li><a href="#site-code">Site Code</a></li>
 				</ol>
 			</nav>
 			
-			<hr class="section-divider"/>
+			<hr class="section-divider"/> -->
 
 			<main class="main" id="main">
 				<section class="organizers" aria-labelledby="organizers">
@@ -323,6 +349,7 @@
 			<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		</div>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 		<script>
 			// Removes service worker
 			if ("serviceWorker" in navigator) {
@@ -357,6 +384,22 @@
 			document.documentElement.scrollTop = 0;
 			}
 		</script>
+		<script>
+			// Overlay
+			// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+
+			function openNav() {
+				document.getElementById("nav3").style.display = "block";
+				document.getElementById("nav3").style.visibility = "visible";
+				document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+			}
+
+			function closeNav() {
+				document.getElementById("nav3").style.display = "none";
+				document.getElementById("nav3").style.visibility = "hidden";
+				document.getElementsByTagName("html")[0].style.overflowY = "unset";
+			}
+</script>			
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
 		<script src="scripts/carouselButtons.js"></script>
