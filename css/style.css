@@ -85,7 +85,7 @@ h2,
 h3{
 	color: #1C4C87; /*color*/
 }
-h1{
+/* h1{
 	font-size: 2em;
   font-family: 'jacksilverregular';
 	line-height: 1.3em;
@@ -100,7 +100,7 @@ h1{
 	h1{
 		font-size: 3.7em;
 	}
-}
+} */
 h2, h3{
 	font-family: 'Noto Serif', serif;
 	font-weight: 700;
@@ -123,24 +123,16 @@ h2, h3, h4{
 .details h4:first-of-type{
     margin-top: 1em;
 }
-.title{
-	font-weight: bold;
-	text-align: center;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
+header{
 	position: relative;
 }
 @media only screen and (min-width: 992px){
-	.title{
-		padding: 1em 0 0 0;
+	header{
+		/* padding: 1em 0 0 0; */
 		display: block !important; /* Tied to overlay */
 	}
 }
-.main-menu{
+/* .main-menu{
 	font-size: .8em;
 	text-align: center;
 }
@@ -149,14 +141,14 @@ h2, h3, h4{
 		font-size: .9em;
 		text-align: center;
 	}
-}
-.header-title{
+} */
+/* .header-title{
 	padding: 0;
 	margin: .5em 0 .2em 0;
-}
-.organizers{
+} */
+/* .organizers{
 	padding-bottom: 1em;
-}
+} */
 @media only screen and (min-width: 480px){
 	.organizers{
 		text-align: center;
@@ -164,7 +156,7 @@ h2, h3, h4{
 }
 .organizers p{
 	text-align: left;
-	display: inline-block;
+	/* display: inline-block; */
 }
 img{
 	font-weight: 300;
@@ -186,7 +178,7 @@ img{
 	font-size: .9em;
 	color: white; /*color*/
 	background-color: #1157AC; /*color*/
-	padding: 6px;
+	padding: 8px 6px;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
 	border-bottom-right-radius: 8px;
@@ -260,6 +252,10 @@ a:focus img{
 	font-style: normal;
 	font-display: block;
 }
+
+
+/* 1.1.a. Navigation */
+
 
 
 /* 1.2. Carousel */
