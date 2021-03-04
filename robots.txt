@@ -1,7 +1,8 @@
 User-agent: *
-Disallow: /scripts/
-Disallow: /fonts/
-Disallow: /dev/
+Disallow: /0_dev/
+Disallow: /bash/
 Disallow: /css/
+Disallow: /fonts/
+Disallow: /scripts/
 
-Sitemap: https://onemorevoice.org/sitemap.xml
+Sitemap: https://undiscipliningvc.org/sitemap.xml
