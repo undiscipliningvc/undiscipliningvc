@@ -1,0 +1,200 @@
+
+header{
+  margin-top: 43px;
+}
+@media only screen and (min-width: 480px){
+	header{
+		margin-top:48px;
+	}
+}
+@media only screen and (min-width: 768px){
+	header{
+		margin-top: 53px;
+	}
+}
+h1{
+	font-size: 1.35em;
+  font-family: 'jacksilverregular';
+	margin: .2em .4em 0;
+}
+@media only screen and (min-width: 480px){
+  h1{
+    font-size: 1.6em;
+  }
+}
+.navigation a h1:hover,
+.navigation a:focus-within h1{
+  text-decoration: underline;
+}
+.navigation{
+	font: 16px 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1em;
+	color: #0b0b0b;
+  background-color: white;
+  border-bottom: 1px solid #8c8c8c;
+	height: 43px;
+	width: 100%;
+	top: 0;
+	position: fixed;
+}
+.navigation{
+	z-index: 20;
+}
+@media only screen and (min-width: 480px){
+	.navigation{
+		height: 48px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.navigation{
+		height: 53px;
+	}
+}
+.navigation a,
+.navigation a:hover,
+.navigation a:focus{
+	/* color: #0b0b0b; */
+	text-decoration: none;
+  background-color: white;
+}
+.nav-wrapper{
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+@media only screen and (min-width: 992px){
+	.nav-wrapper{
+		min-width: 992px;
+		max-width: 1200px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+#nav2{
+	white-space: nowrap;
+	line-height: 1em;
+	text-align: center;
+	list-style: none;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	left: 50%;
+	transform: translate(-50%);
+	align-items: center;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	#nav2{
+		margin: 0 auto;
+		left: unset;
+		transform: unset;
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+	}
+}
+#nav2 .current{
+	text-decoration: overline;
+	text-decoration-color: #204A79;
+	text-decoration-thickness: 4px;
+}
+#nav2 li{
+	font-size: 1.05em;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+#nav2 li a{
+	padding: 19px 13px;
+}
+/* main nav links */
+#nav2 li:hover,
+#nav2 li:focus,
+#nav2 li:focus-within,
+#nav2 li a:hover,
+#nav2 li a:focus{
+	color: #0b0b0b;
+	/* background-color: #c4d8ef; */
+}
+
+
+/* Hamburger Menu & Close X */
+#nav2a,
+#nav12{
+	right: .5em;
+	position: absolute;
+}
+@media only screen and (min-width: 768px){
+	#nav2a,
+	#nav12{
+		right: 1em;
+	}	
+}
+#nav2a .fa-bars,
+#nav12 .fa-bars{
+	font-size: 1.3em;
+	padding: .15em .2em;
+}
+@media only screen and (min-width: 480px){
+	#nav2a .fa-bars,
+	#nav12 .fa-bars{
+		font-size: 1.5em;
+	}
+}
+#nav7 .close{
+	padding: .30em .28em;
+	right: .25em;
+	position: absolute;
+}
+#nav7 .close{
+	font-size: 1.9em;
+}
+@media only screen and (min-width: 480px){
+	#nav7 .close{
+		font-size: 2.1em;
+	}
+}
+@media only screen and (min-width: 768px){
+	#nav7 .close{
+		right: .5em;
+	}
+}
+@media only screen and (min-width: 992px){
+	#nav2a,
+	#nav7 .close{
+		display: none;
+		visibility: hidden;
+	}
+	.fallback #nav12{
+		display: block;
+		visibility: visible;
+	}
+}
+#nav2a,
+#nav7 .close,
+#nav12{
+	color: #0b0b0b;
+	text-decoration: none;
+}
+#nav2a:hover,
+#nav2a:focus,
+#nav7 a.close:hover,
+#nav7 a.close:focus,
+#nav12:hover,
+#nav12:focus{
+	outline: 2px solid #204A79;
+}
+/* The following prevents the overlay from appearing above 992px */
+@media only screen and (min-width: 992px){
+	#nav7{
+		display: none !important;
+		visibility: hidden;
+	}
+}
