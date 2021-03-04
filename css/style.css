@@ -85,22 +85,22 @@ h2,
 h3{
 	color: #1C4C87; /*color*/
 }
-/* h1{
-	font-size: 2em;
+h1{
+	/* font-size: 2em; */
   font-family: 'jacksilverregular';
-	line-height: 1.3em;
-	margin: .3em;
+	margin: 0;
+	line-height: 1em;
 }
 @media only screen and (min-width: 480px){
 	h1{
-		font-size: 2.3em;
+		/* font-size: 2.3em; */
 	}
 }
 @media only screen and (min-width: 768px){
 	h1{
-		font-size: 3.7em;
+		/* font-size: 3.7em; */
 	}
-} */
+}
 h2, h3{
 	font-family: 'Noto Serif', serif;
 	font-weight: 700;
@@ -128,27 +128,10 @@ header{
 }
 @media only screen and (min-width: 992px){
 	header{
-		/* padding: 1em 0 0 0; */
+		
 		display: block !important; /* Tied to overlay */
 	}
 }
-/* .main-menu{
-	font-size: .8em;
-	text-align: center;
-}
-@media only screen and (min-width: 768px){
-	.main-menu{
-		font-size: .9em;
-		text-align: center;
-	}
-} */
-/* .header-title{
-	padding: 0;
-	margin: .5em 0 .2em 0;
-} */
-/* .organizers{
-	padding-bottom: 1em;
-} */
 @media only screen and (min-width: 480px){
 	.organizers{
 		text-align: center;
@@ -156,7 +139,6 @@ header{
 }
 .organizers p{
 	text-align: left;
-	/* display: inline-block; */
 }
 img{
 	font-weight: 300;
@@ -252,10 +234,6 @@ a:focus img{
 	font-style: normal;
 	font-display: block;
 }
-
-
-/* 1.1.a. Navigation */
-
 
 
 /* 1.2. Carousel */
