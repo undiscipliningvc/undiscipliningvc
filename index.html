@@ -36,7 +36,7 @@
 				<a href="#main" id="nav0" tabindex="0">skip to main content</a>
 			</nav>
 
-			<nav class="navigation">
+			<nav class="navigation" id="nav1">
 				<ul id="nav2" role="menubar" aria-label="Site sections">
 					<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><h1>Undisciplining the Victorian Classroom</h1></a></li>
 
@@ -366,11 +366,12 @@
 			window.onscroll = function() {scrollFunction()};
 			
 			function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			} else {
-				mybutton.style.display = "none";
-			}
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} 
+				else {
+					mybutton.style.display = "none";
+				}
 			}
 			
 			// When the user clicks on the button, scroll to the top of the document
@@ -394,7 +395,7 @@
 				document.getElementById("nav3").style.visibility = "hidden";
 				document.getElementsByTagName("html")[0].style.overflowY = "unset";
 			}
-</script???>			
+</script>			
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
 		<script src="scripts/carouselButtons.js"></script>
