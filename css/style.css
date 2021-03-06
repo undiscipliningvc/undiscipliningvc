@@ -11,12 +11,13 @@ Table of Contents
 
 ** 1.0. Main CSS **
 1.1. Main Components
-1.2. Navigation
+1.2. Headings, Images, Anchors
+1.3. Navigation
 1.3. Carousel 
 1.4. Scroll to Top Button
 1.5. Lines
 1.6. Formatting
-1.7. Lists
+1.7. Lines and Lists
 */
 
 /*--------------------------------------*/
@@ -89,38 +90,6 @@ main section ol,
 main section ul{
 	text-align: left;
 }
-h1,
-h2,
-h3{
-	color: #1C4C87;
-}
-h1{
-  font-family: 'jacksilverregular';
-	margin: 0;
-	line-height: 1em;
-}
-h2, h3{
-	font-family: 'Noto Serif', serif;
-	font-weight: 700;
-}
-h2{
-	font-size: 1.05em;
-}
-h3{
-	font-size: 1.1em;
-}
-h4{
-	font-weight: 600;
-}
-h2, h3, h4{
-	text-align: center;
-}
-.details h4{
-    margin-top: 2.5em;
-}
-.details h4:first-of-type{
-    margin-top: 1em;
-}
 header{
 	margin: 0 auto;
 	margin-top: 39px;
@@ -159,19 +128,9 @@ header{
 	margin-top: 2em;
 }
 @media only screen and (min-width: 768px){
-#call{
-	margin-top: 3em;
-}
-}
-img{
-	font-weight: 300;
-	width: 100%;
-}
-#call img{
-	width: 100%;
-}
-.image-border{
-	border: 1px solid gray;
+	#call{
+		margin-top: 3em;
+	}
 }
 footer{
 	font-size: .9em;
@@ -185,6 +144,9 @@ footer{
 		padding: 1.5em 1em 0;
 	}	
 }
+
+
+/* 1.2. Headings, Images, Anchors */
 *:focus{
 	outline: 0 none;
 }
@@ -204,6 +166,38 @@ a:hover img,
 a:focus img{
 	border: 3px #2e68ac solid;
 }
+h1,
+h2,
+h3{
+	color: #1C4C87;
+}
+h1{
+  font-family: 'jacksilverregular';
+	margin: 0;
+	line-height: 1em;
+}
+h2, h3{
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+}
+h2{
+	font-size: 1.05em;
+}
+h3{
+	font-size: 1.1em;
+}
+h4{
+	font-weight: 600;
+}
+h2, h3, h4{
+	text-align: center;
+}
+.details h4{
+    margin-top: 2.5em;
+}
+.details h4:first-of-type{
+    margin-top: 1em;
+}
 /*logo*/
 @font-face {
     font-family: 'jacksilverregular';
@@ -213,9 +207,19 @@ a:focus img{
 	font-style: normal;
 	font-display: block;
 }
+img{
+	font-weight: 300;
+	width: 100%;
+}
+#call img{
+	width: 100%;
+}
+.image-border{
+	border: 1px solid gray;
+}
 
 
-/* 1.2. Navigation */
+/* 1.3. Navigation */
 
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
@@ -349,10 +353,6 @@ nav#nav1 h1{
 	font-size: 1.3em;
 	padding: 6px 8px;
 }
-nav#nav1 li a:hover h1,
-nav#nav1 li a:focus-within h1{
-	color: rgba(0, 0, 0, 1);
-}
 @media only screen and (min-width: 480px){
 	nav#nav1 h1{
 		font-size: 1.5em;
@@ -390,7 +390,7 @@ nav#nav1 li a i{
 }
 
 
-/* 1.3. Carousel */
+/* 1.4. Carousel */
 
 /* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
 .carousel .carousel-inner{
@@ -632,7 +632,7 @@ nav#nav1 li a i{
 }
 
 
-/* 1.4. Scroll to Top Button */
+/* 1.5. Scroll to Top Button */
 
 /* Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
@@ -681,23 +681,6 @@ nav#nav1 li a i{
 }
 
 
-/* 1.5. Lines */
-
-hr{
-	background-color: gray;
-	height: 1px;
-	border: 0;
-}
-hr.section-divider{
-	margin: 1.2em 0;
-}
-@media only screen and (min-width: 768px){
-	hr.section-divider{
-		margin: 2em 0;
-	}
-}
-
-
 /* 1.6. Formatting */
 
 .bold{
@@ -737,8 +720,21 @@ hr.section-divider{
 }
 
 
-/* 1.7. Lists */
+/* 1.7. Lines and Lists */
 
+hr{
+	background-color: gray;
+	height: 1px;
+	border: 0;
+}
+hr.section-divider{
+	margin: 1.2em 0;
+}
+@media only screen and (min-width: 768px){
+	hr.section-divider{
+		margin: 2em 0;
+	}
+}
 ol.mission{
 	padding: 0;
 	margin: 0 1em;
