@@ -26,11 +26,13 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
+Black: #191716;
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
 Dark Blue: #1C4C87;
 Light Blue: #1157AC;
 Gray: #E3E3E3;
+Darker Gray: #8c8c8c;
 */
 
 /** 1.0 Main CSS **/
@@ -81,7 +83,7 @@ main{
 }
 @media only screen and (min-width: 992px){
 	main{
-		font-size: 1.10em;
+		font-size: 1.05em;
 		display: block !important; /* Tied to overlay */
 	}
 }
@@ -164,7 +166,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #2e68ac solid;
+	border: 3px #1157AC solid;
 }
 h1,
 h2,
@@ -180,17 +182,17 @@ h2, h3{
 	font-family: 'Noto Serif', serif;
 	font-weight: 700;
 }
+h2, h3, h4{
+	text-align: center;
+}
 h2{
-	font-size: 1.05em;
+	font-size: 1.1em;
 }
 h3{
 	font-size: 1.1em;
 }
 h4{
 	font-weight: 600;
-}
-h2, h3, h4{
-	text-align: center;
 }
 .details h4{
     margin-top: 2.5em;
@@ -256,6 +258,7 @@ nav#nav1{
 	font-weight: 400;
 	line-height: 1em;
   background-color: white;
+	margin: 0 auto;
 	height: 39px;
 	width: 100%;
 	top: 0;
@@ -274,19 +277,18 @@ nav#nav1{
 }
 @media only screen and (min-width: 992px){
 	nav#nav1{
-		margin: 0 auto;
 		height: 60px;
 	}
 }
 nav#nav1 a,
 nav#nav1 a:visited{
-	color: rgba(0, 0, 0, 1);
+	color: #191716;
 	text-decoration: none;
 }
 nav#nav1 a:hover,
 nav#nav1 a:focus{
 	color: white;
-	background: rgba(0, 0, 0, 1);
+	background: #191716;
 }
 nav#nav1.borderBottom{
 	border-bottom: 1px solid #8c8c8c;
@@ -320,38 +322,13 @@ nav#nav1 ul{
 nav#nav1 li{
 	display: inline-block;
 }
-nav#nav1 li span{
-	display: none;
-	visibility: hidden;
-	padding: 6px 8px;
-}
-@media only screen and (min-width: 992px){
-	nav#nav1 li span{
-		font-size: .9em;
-		font-weight: 600;
-		display: block;
-		visibility: visible;
-	}
-}
-nav#nav1 li a:hover span,
-nav#nav1 li a:focus-within span{
-	color: white;
-	background-color: #1C4C87;
-	border-radius: 5px;
-}
-@media only screen and (min-width: 768px){
-	#nav#nav2 > li:nth-child(8){
-		font-size: 1.3em;
-	}
-}
-@media only screen and (min-width: 992px){
-	#nav#nav2 > li:nth-child(1) > a{
-		color: #1C4C87;
-	}
-}
 nav#nav1 h1{
 	font-size: 1.3em;
 	padding: 6px 8px;
+}
+nav#nav1 a:hover h1,
+nav#nav1 a:focus-within h1{
+	color: #191716;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 h1{
@@ -373,12 +350,47 @@ nav#nav1 h1{
 		font-size: 2em;
 	}
 }
+nav#nav1 li span{
+	font-size: .95em;
+	font-weight: 600;
+	padding: 6px 8px;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	nav#nav1 li span{
+		display: block;
+		visibility: visible;
+	}
+}
+nav#nav1 li a:hover span,
+nav#nav1 li a:focus-within span{
+	color: white;
+	background-color: #1C4C87;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
 nav#nav1 li a i{
-	color: rgba(0, 0, 0, 1);
+	color: #191716;
+	padding: 5px 7px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+nav#nav1 li:nth-child(8) a:hover i,
+nav#nav1 li:nth-child(8) a:focus-within i{
+	color: white;
+	background-color: #1157AC;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li a i{
 		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav1 li a i{
+		font-size: 1.3em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -419,7 +431,7 @@ nav#nav1 li a i{
 }
 .carousel .carousel-items.focus{
 	border-color: white;
-	outline: solid 3px black;
+	outline: solid 3px #191716;;
 }
 /* Carousel images */
 .carousel .carousel-item .carousel-image{
@@ -488,8 +500,7 @@ nav#nav1 li a i{
 	}
 }
 @media only screen and (min-width: 768px){
-	.carousel .carousel-item .carousel-caption,
-	.image-caption{
+	.carousel .carousel-item .carousel-caption{
 		right: .5em;
 		left: unset;
 		bottom: .5em;
@@ -723,15 +734,14 @@ nav#nav1 li a i{
 /* 1.7. Lines and Lists */
 
 hr{
-	background-color: gray;
-	height: 1px;
+	font-size: .9em;
+	background: #8c8c8c;
 	border: 0;
-}
-hr.section-divider{
 	margin: 1.2em 0;
+	height: 1px;
 }
 @media only screen and (min-width: 768px){
-	hr.section-divider{
+	hr{
 		margin: 2em 0;
 	}
 }
