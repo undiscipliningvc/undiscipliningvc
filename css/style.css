@@ -1,3 +1,31 @@
+header{
+	margin: 0 auto;
+	/* max-width: 1024px; */
+}
+footer{
+	margin: 0 auto;
+}
+
+main,
+footer{
+	padding: 0 1em;
+	text-align: center;
+}
+@media only screen and (min-width: 768px){
+	main,
+	footer{
+		padding: 1.5em 1em 0;
+	}	
+}
+main section p,
+main section ol,
+main section ul{
+	text-align: left;
+}
+
+
+
+
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
 /* This CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
@@ -52,34 +80,36 @@ html{
 body{
 	padding: 0;
 	margin: 0;
+	width: 100%;
+	max-width: 100%;
 }
 .text-container{
-	margin: 0 auto;
+	width: 100%;
 }
-.text-container .main{
+main{
 	font-size: 100%;
-	text-align: left;
+	text-align: center;
 	line-height: 1.6em;
 	margin: 0 auto;
-	padding: 0 .75em 1em .75em;
-	
+	padding: 0 1em;
+	max-width: 575px;
 }
 @media only screen and (min-width: 480px){
-	.text-container .main{
+	main{
 		font-size: .95em;
-		padding: 0 1.5em 1em 1.5em;
+		/* padding: 0 1.5em 1em 1.5em; */
 	}
 }
 @media only screen and (min-width: 768px){
-	.text-container .main{
+	main{
 		font-size: 1em;
-		padding: 1em 2.25em 1em 2.25em;
+		/* padding: 1em 2.25em 1em 2.25em; */
 	}
 }
 @media only screen and (min-width: 992px){
-	.text-container .main{
+	main{
 		font-size: 1.10em;
-		max-width: 36em;
+		/* max-width: 36em; */
 		display: block !important; /* Tied to overlay */
 	}
 }
@@ -124,26 +154,32 @@ header{
 		display: block !important; /* Tied to overlay */
 	}
 }
-@media only screen and (min-width: 480px){
+.organizers{
+	margin-bottom: 1em;
+	display: inline-block;
+}
+@media only screen and (min-width: 768px){
 	.organizers{
-		text-align: center;
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 }
-.organizers p{
-	text-align: left;
+#call{
+	margin-top: 2em;
+}
+@media only screen and (min-width: 768px){
+#call{
+	margin-top: 3em;
+}
 }
 img{
 	font-weight: 300;
-	margin-left: auto;
-	margin-right: auto;
 	width: 100%;
-	display: inline-block;
+	/* display: inline-block; */
 }
 #upcoming img,
 #call img{
 	width: 100%;
-	display: block;
+	/* display: block; */
 }
 .image-border{
 	border: 1px solid gray;
@@ -178,10 +214,8 @@ img{
 	}
 }
 .footer{
-	font-size: 1em;
-	text-align: center;
+	font-size: .9em;
 	line-height: 1.6em;
-	padding: 0 1em;
 }
 *:focus{
 	outline: 0 none;
@@ -202,22 +236,6 @@ a:hover img,
 a:focus img{
 	border: 3px #2e68ac solid;
 }
-/*colors*/
-/* .black{
-	color: rgba(0, 0, 0, 1);
-}
-.blackgray{
-	color:rgba(0, 0, 0, 0.65);
-}
-.darkblue{
-	color: #1C4C87;
-}
-.lightblue{ 
-	color: #1157AC;
-}
-.gray{
-	color: #E3E3E3;
-} */
 /*logo*/
 @font-face {
     font-family: 'jacksilverregular';
@@ -231,10 +249,9 @@ a:focus img{
 
 /* 1.1.1. Navigation */
 
-.navigation{
+nav#nav1{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	text-align: center;
 	line-height: 1em;
   background-color: white;
 	height: 39px;
@@ -243,40 +260,61 @@ a:focus img{
 	position: fixed;
 	z-index: 20;
 }
-.navigation a{
+nav#nav1 a,
+nav#nav1 a:visited{
+	color: rgba(0, 0, 0, 1);
 	text-decoration: none;
 }
-.navigation ul{
+nav#nav1 a:hover,
+nav#nav1 a:focus{
+	color: white;
+	background: rgba(0, 0, 0, 1);
+}
+nav#nav1.borderBottom{
+	border-bottom: 1px solid #8c8c8c;
+}
+nav#nav1 ul{
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+	padding: 0 .75em 0 0;
+	margin: 0 auto;
 	height: 100%;
+	max-width: 898px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* position: relative; */
 }
-.navigation li{
+nav#nav1 li{
 	display: inline-block;
 }
-.navigation li span{
+nav#nav1 li span{
 	display: none;
 	visibility: hidden;
+	padding: 6px 8px;
 }
-.navigation h1{
+nav#nav1 li a:hover span,
+nav#nav1 li a:focus-within span{
+	color: white;
+	background-color: #1C4C87;
+	border-radius: 5px;
+}
+nav#nav1 h1{
 	font-size: 1.3em;
-	padding-left: .4em;
+	padding: 6px 8px;
+	/* padding-left: .4em; */
 }
-.navigation li a i{
+nav#nav1 li a:hover h1,
+nav#nav1 li a:focus-within h1{
 	color: rgba(0, 0, 0, 1);
-	padding-right: .6em;
+}
+nav#nav1 li a i{
+	color: rgba(0, 0, 0, 1);
+	/* padding-right: .6em; */
 }
 @media only screen and (min-width: 480px){
-	.navigation{
+	nav#nav1{
 		height: 44px;
 	}
-	.navigation h1{
+	nav#nav1 h1{
 		font-size: 1.5em;
 		/* white-space: nowrap;
 		position: absolute;
@@ -284,7 +322,10 @@ a:focus img{
 		left: 50%;
 		transform: translate(-50%, -50%); */
 	}
-	.navigation li a i{
+	nav#nav1 ul{
+		padding: 0 1em 0 0;
+	}
+	nav#nav1 li a i{
 		font-size: 1.2em;
 	}
 	header{
@@ -292,10 +333,13 @@ a:focus img{
 	}
 }
 @media only screen and (min-width: 768px){
-	.navigation{
+	nav#nav1{
 		height: 48px;
 	}
-	.navigation h1{
+	/* nav#nav1 ul{
+		padding: 0 1.5em;
+	} */
+	nav#nav1 h1{
 		font-size: 1.7em;
 		/* white-space: nowrap;
 		position: absolute;
@@ -303,7 +347,7 @@ a:focus img{
 		left: 50%;
 		transform: translate(-50%, -50%); */
 	}
-	.navigation li a i{
+	#nav#nav2 > li:nth-child(8){
 		font-size: 1.3em;
 	}
 	header{
@@ -311,48 +355,41 @@ a:focus img{
 	}
 }
 @media only screen and (min-width: 992px){
-	.navigation{
-		text-align: center;
+	nav#nav1{
+		/* text-align: center; */
 		margin: 0 auto;
-		height: 70px;
+		height: 60px;
 	}
-	.navigation ul{
-		justify-content: space-around;
+	nav#nav1 ul{
+		padding: 0 1em;
+		max-width: 1366px;
 	}
-	#nav2 > li:nth-child(1) > a{
+	#nav#nav2 > li:nth-child(1) > a{
 		color: #1C4C87;
 		/* text-decoration: none; */
 	}
-	.navigation a{
-		color: rgba(0, 0, 0, 1);
-		/* text-decoration: underline; */
-	}
-	.navigation h1{
+	nav#nav1 h1{
 		font-size: 2em;
-		padding: 0;
+		/* padding: 0; */
 	}
-	.navigation li span{
+	nav#nav1 li span{
 		font-size: .9em;
 		font-weight: 600;
 		display: block;
 		visibility: visible;
 	}
-	#nav2 > li:nth-child(8),
-	.navigation li a i{
+	ul#nav2 > li:nth-child(8),
+	nav#nav1 li a i{
 		display: none;
 		visibility: hidden;
 	}
 	header{
-		margin-top: 70px;
+		margin-top: 65px;
 	}
 }
 @media only screen and (min-width: 1024px){
-	.text-container{
-		max-width: 1024px;
-	}
-	.navigation ul{
+	nav#nav1 ul{
 		justify-content: space-evenly;
-		max-width: 1024px;
 	}
 }
 
@@ -514,8 +551,8 @@ a:focus img{
 }
 /* image caption */
 .image-wrapper{
+	margin: 0 auto;
 	position: relative;
-	margin: 0 auto 2em auto;
 }
 @media only screen and (min-width: 768px){
 	.image-wrapper{
@@ -612,7 +649,7 @@ a:focus img{
 	border-radius: 4px;
 	outline: none;
 	padding: 5px;
-	bottom: 118px;
+	bottom: 110px;
 	right: 20px;
 	position: fixed;
 	z-index: 99;
@@ -620,7 +657,7 @@ a:focus img{
   }
 @media only screen and (min-width: 480px){
 	#topButton{
-		bottom: 90px;
+		bottom: 84px;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -658,7 +695,11 @@ hr{
 hr.section-divider{
 	margin: 1.2em 0;
 }
-
+@media only screen and (min-width: 768px){
+	hr.section-divider{
+		margin: 2em 0;
+	}
+}
 
 /* 1.5. Formatting */
 
@@ -701,7 +742,7 @@ hr.section-divider{
 
 /* 1.6. Lists */
 
-.main-menu ol{
+/* .main-menu ol{
 	text-align: center;
 	list-style: none;
 	padding: 0;
@@ -736,7 +777,7 @@ nav.main-menu{
 	nav.main-menu{
 		max-width: 90%;
 	}
-}
+} */
 ol.mission{
 	padding: 0;
 	margin: 0 1em;
@@ -752,28 +793,28 @@ ol.mission{
 }
 #upcoming > ul{
 	list-style: none;
-	padding: 0;
-	margin: 0;
+	/* padding: 0;
+	margin: 0; */
 }
 #upcoming > ul > li:nth-child(1) > ul{
 	margin-bottom: 1em;
 }
 #upcoming > ul > li > ul{
-	padding: 0;
-	margin: 0 1.4em;
+	/* padding: 0;
+	margin: 0 1.4em; */
 }
 #upcoming > ul > li > ul > li > ol{
-	padding: 0;
-	margin: 0 2.4em;
+	/* padding: 0;
+	margin: 0 2.4em; */
 }
 @media (min-width: 768px){
 	#upcoming > ul{
-		margin: 0 2em;
+		/* margin: 0 2em; */
 	}
 	#upcoming > ul > li > ul{
-		margin: 0 3em;
+		/* margin: 0 3em; */
 	}
 	#upcoming > ul > li > ul > li > ol{
-		margin: 0 4em;
+		/* margin: 0 4em; */
 	}
 }
