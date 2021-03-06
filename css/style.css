@@ -53,6 +53,9 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.text-container{
+	margin: 0 auto;
+}
 .text-container .main{
 	font-size: 100%;
 	text-align: left;
@@ -69,13 +72,13 @@ body{
 }
 @media only screen and (min-width: 768px){
 	.text-container .main{
-		font-size: 1.05em;
+		font-size: 1em;
 		padding: 1em 2.25em 1em 2.25em;
 	}
 }
 @media only screen and (min-width: 992px){
 	.text-container .main{
-		font-size: 1.15em;
+		font-size: 1.10em;
 		max-width: 36em;
 		display: block !important; /* Tied to overlay */
 	}
@@ -124,6 +127,7 @@ header{
 @media only screen and (min-width: 480px){
 	.organizers{
 		text-align: center;
+		margin-bottom: 3em;
 	}
 }
 .organizers p{
@@ -251,6 +255,7 @@ a:focus img{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* position: relative; */
 }
 .navigation li{
 	display: inline-block;
@@ -267,6 +272,90 @@ a:focus img{
 	color: rgba(0, 0, 0, 1);
 	padding-right: .6em;
 }
+@media only screen and (min-width: 480px){
+	.navigation{
+		height: 44px;
+	}
+	.navigation h1{
+		font-size: 1.5em;
+		/* white-space: nowrap;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); */
+	}
+	.navigation li a i{
+		font-size: 1.2em;
+	}
+	header{
+		margin-top: 44px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.navigation{
+		height: 48px;
+	}
+	.navigation h1{
+		font-size: 1.7em;
+		/* white-space: nowrap;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); */
+	}
+	.navigation li a i{
+		font-size: 1.3em;
+	}
+	header{
+		margin-top: 48px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.navigation{
+		text-align: center;
+		margin: 0 auto;
+		height: 70px;
+	}
+	.navigation ul{
+		justify-content: space-around;
+	}
+	#nav2 > li:nth-child(1) > a{
+		color: #1C4C87;
+		/* text-decoration: none; */
+	}
+	.navigation a{
+		color: rgba(0, 0, 0, 1);
+		/* text-decoration: underline; */
+	}
+	.navigation h1{
+		font-size: 2em;
+		padding: 0;
+	}
+	.navigation li span{
+		font-size: .9em;
+		font-weight: 600;
+		display: block;
+		visibility: visible;
+	}
+	#nav2 > li:nth-child(8),
+	.navigation li a i{
+		display: none;
+		visibility: hidden;
+	}
+	header{
+		margin-top: 70px;
+	}
+}
+@media only screen and (min-width: 1024px){
+	.text-container{
+		max-width: 1024px;
+	}
+	.navigation ul{
+		justify-content: space-evenly;
+		max-width: 1024px;
+	}
+}
+
 
 
 /* 1.2. Carousel */
