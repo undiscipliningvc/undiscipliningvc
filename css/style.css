@@ -322,11 +322,15 @@ nav#nav1 li{
 }
 nav#nav1 h1{
 	font-size: 1.3em;
-	padding: 6px 8px;
+	padding: 10px;
 }
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1{
 	color: #191716;
+	background: #E3E3E3;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 h1{
