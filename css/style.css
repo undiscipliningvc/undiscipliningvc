@@ -21,22 +21,24 @@ nav#nav2 #sidebar-menu ul{
 	margin: 0;
 	padding: 0;
 }
-nav#nav2 #sidebar-menu li a.close{
-	padding: 2px 7px 4px;
+nav#nav2 #sidebar-menu li button.close{
+	background: none;
+	border: none;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
+	padding: 2px 7px 4px;
 	position: absolute;
   top: .45em;
   right: .85em;
 }
 @media only screen and (min-width: 480px){
-	nav#nav2 #sidebar-menu li a.close{
+	nav#nav2 #sidebar-menu li button.close{
 		font-size: 1.2em;
 	}
 }
 @media only screen and (min-width: 768px){
-	nav#nav2 #sidebar-menu li a.close{
+	nav#nav2 #sidebar-menu li button.close{
 		font-size: 1.3em;
 	}
 }
@@ -430,32 +432,30 @@ nav#nav1 li a:focus-within span{
 	-moz-border-radius: 5px;
 	transition: 0.2s;
 }
-nav#nav1 li a i{
+nav#nav1 li button{
+	background: none;
+	border: none;
+}
+nav#nav1 li button i{
 	color: #191716;
-	padding: 5px 7px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-}
-nav#nav1 li:nth-child(8) a:hover i,
-nav#nav1 li:nth-child(8) a:focus-within i{
-	color: white;
-	background-color: #1157AC;
-	transition: 0.2s;
+	padding: 5px 7px;
 }
 @media only screen and (min-width: 480px){
-	nav#nav1 li a i{
+	nav#nav1 li button i{
 		font-size: 1.2em;
 	}
 }
 @media only screen and (min-width: 768px){
-	nav#nav1 li a i{
+	nav#nav1 li button i{
 		font-size: 1.3em;
 	}
 }
 @media only screen and (min-width: 992px){
-	ul#nav2 > li:nth-child(8),
-	nav#nav1 li a i{
+	nav#nav1 > li:nth-child(8),
+	nav#nav1 li button i{
 		display: none;
 		visibility: hidden;
 	}
