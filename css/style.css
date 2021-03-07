@@ -137,11 +137,11 @@ footer{
 	text-align: center;
 	line-height: 1.6em;
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 1em 1em;
 }
 @media only screen and (min-width: 768px){
 	footer{
-		padding: 1.5em 1em 0;
+		padding: 1em;
 	}	
 }
 
