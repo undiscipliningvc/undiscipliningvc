@@ -53,8 +53,27 @@
 
 					<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html"><span>About</span></a></li>
 
-					<li role="none"><a style="cursor:pointer" aria-label="Show site sections" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></li>
+					<li role="none"><a style="cursor:pointer" aria-label="Show site sections" onclick="openSlideMenu()" tabindex="0"><i class="fa fa-bars"></i></a></li>
 				</ul>
+				
+				<nav id="nav2">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<a class="close" onclick="closeSlideMenu()"><i class="fa fa-times"></i></a>
+						
+						<a role="menuitem" aria-haspopup="false" href="index.html"><span><i class="fa fa-home"></i> Home</span></a>
+
+						<a role="menuitem" aria-haspopup="false" href="zoomcasts.html"><span>Zoomcasts</span></a>
+	
+						<a role="menuitem" aria-haspopup="false" href="lesson_plans.html"><span>Lesson Plans</span></a>
+	
+						<a role="menuitem" aria-haspopup="false" href="syllabi.html"><span>Syllabi</span></a>
+	
+						<a role="menuitem" aria-haspopup="false" href="faq.html"><span>FAQ</span></a>
+	
+						<a role="menuitem" aria-haspopup="false" href="about.html"><span>About</span></a>
+					</div>
+				</nav>
+				
 			</nav>
 
 			<!-- <nav class="overlay" id="nav3">
@@ -407,21 +426,18 @@
 		</script>
 		<script>
 			// Overlay
-			// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+			// Adapted from https://blog.avada.io/css/sidebar-menus/#animated-sidebar-menu-ephraim-sangma
+			function openSlideMenu () {
+				// document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+				document.getElementById('nav2').style.marginRight = '250px';
+				document.getElementById('sidebar-menu').style.width = '250px';
+			}
 
-			// function openNav() {
-			// 	document.getElementById("nav3").style.width = "40%";
-			// 	document.getElementById("nav3").style.display = "block";
-			// 	document.getElementById("nav3").style.visibility = "visible";
-			// 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-			// }
-
-			// function closeNav() {
-			// 	document.getElementById("nav3").style.width = "0%";
-			// 	document.getElementById("nav3").style.display = "none";
-			// 	document.getElementById("nav3").style.visibility = "hidden";
-			// 	document.getElementsByTagName("html")[0].style.overflowY = "unset";
-			// }
+			function closeSlideMenu () {
+				// document.getElementsByTagName("html")[0].style.overflowY = "unset";
+				document.getElementById('nav2').style.marginRight = '0';
+				document.getElementById('sidebar-menu').style.width = '0';
+			}			
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
