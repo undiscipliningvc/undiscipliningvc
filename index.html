@@ -53,14 +53,14 @@
 
 					<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html"><span>About</span></a></li>
 
-					<li role="none"><a style="cursor:pointer" aria-label="Show site sections" onclick="openSlideMenu()" tabindex="0"><i class="fa fa-bars"></i></a></li>
+					<li role="none"><button style="cursor:pointer" aria-label="Show site sections" onclick="openSlideMenu()" tabindex="0"><i class="fa fa-bars"></i></button></li>
 				</ul>
 			</nav>
 
 			<nav id="nav2">
 				<div id="sidebar-menu">
 						<ul>
-							<li role="none"><a class="close" onclick="closeSlideMenu()"><i class="fa fa-times"></i></a></li>
+							<li role="none"><button class="close" style="cursor:pointer" aria-label="Close site sections" onclick="closeSlideMenu()" tabindex="0">&#215;</button></li>
 
 							<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><span><i class="fa fa-home"></i> Home</span></a></li>
 
@@ -432,20 +432,20 @@
 				// document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 				document.getElementById('nav2').style.marginRight = '250px';
 				document.getElementById('sidebar-menu').style.width = '250px';
-				// document.getElementsById('nav1').style.visibility = 'hidden';
-				// document.getElementsByTagName('header').style.visibility = 'hidden';
-				// document.getElementsByTagName('main').style.visibility = 'hidden';
-				// document.getElementsByTagName('footer').style.visibility = 'hidden';
+				document.getElementById('nav1').style.visibility = 'hidden';
+				document.getElementsByTagName('header').style.visibility = 'hidden';
+				document.getElementsByTagName('main').style.visibility = 'hidden';
+				document.getElementsByTagName('footer').style.visibility = 'hidden';
 			}
 
 			function closeSlideMenu () {
 				// document.getElementsByTagName("html")[0].style.overflowY = "unset";
 				document.getElementById('nav2').style.marginRight = '0';
 				document.getElementById('sidebar-menu').style.width = '0';
-				// document.getElementsById('nav1').style.visibility = 'visible';
-				// document.getElementsByTagName('header').style.visibility = 'visible';
-				// document.getElementsByTagName('main').style.visibility = 'visible';
-				// document.getElementsByTagName('footer').style.visibility = 'visible';
+				document.getElementById('nav1').style.visibility = 'visible';
+				document.getElementsByTagName('header').style.visibility = 'visible';
+				document.getElementsByTagName('main').style.visibility = 'visible';
+				document.getElementsByTagName('footer').style.visibility = 'visible';
 			}			
 		</script>
 		<script src="scripts/carousel.js"></script>
