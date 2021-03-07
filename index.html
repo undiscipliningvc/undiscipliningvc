@@ -38,7 +38,7 @@
 			</nav>
 
 			<nav id="nav1">
-				<ul id="nav2" role="menubar" aria-label="Site sections">
+				<ul role="menubar" aria-label="Site sections">
 					<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><h1>Undisciplining the Victorian Classroom</h1></a></li>
 
 					<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><span>Home</span></a></li>
@@ -55,6 +55,14 @@
 
 					<li role="none"><a style="cursor:pointer" aria-label="Show site sections" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></li>
 				</ul>
+			</nav>
+
+			<nav class="overlay" id="nav3">
+				<ul role="menubar" aria-label="Close button">
+					<li role="none"><a class="close" aria-label="Close site sections" aria-pressed="false" onclick="closeNav()" title="Close" href="javascript:void(0)">&#215;</a></li>
+				</ul>
+				<section class="overlay-content" role="menu">
+				</section>
 			</nav>
 
 			<header>
@@ -398,20 +406,22 @@
 			}
 		</script>
 		<script>
-			// Overlay
-			// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+// Overlay
+// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
-			function openNav() {
-				document.getElementById("nav3").style.display = "block";
-				document.getElementById("nav3").style.visibility = "visible";
-				document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-			}
+function openNav() {
+	document.getElementById("nav3").style.width = "40%";
+	document.getElementById("nav3").style.display = "block";
+	document.getElementById("nav3").style.visibility = "visible";
+	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+}
 
-			function closeNav() {
-				document.getElementById("nav3").style.display = "none";
-				document.getElementById("nav3").style.visibility = "hidden";
-				document.getElementsByTagName("html")[0].style.overflowY = "unset";
-			}
+function closeNav() {
+	document.getElementById("nav3").style.width = "0%";
+	document.getElementById("nav3").style.display = "none";
+	document.getElementById("nav3").style.visibility = "hidden";
+	document.getElementsByTagName("html")[0].style.overflowY = "unset";
+}
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
