@@ -58,9 +58,9 @@
 			</nav>
 
 			<nav id="nav2">
-				<div id="sidebar-menu">
+				<div id="overlay-menu">
 						<ul>
-							<li role="none"><button class="close" style="cursor:pointer" aria-label="Close site sections" onclick="closeSlideMenu()" tabindex="0">&#215;</button></li>
+							<li role="none"><button class="close" style="cursor:pointer" aria-label="Close site sections" onclick="closeSlideMenu()" tabindex="0" id="first-overlay">&#215;</button></li>
 
 							<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><span><i class="fa fa-home"></i> Home</span></a></li>
 
@@ -72,7 +72,7 @@
 
 							<li role="none"><a role="menuitem" aria-haspopup="false" href="faq.html"><span>FAQ</span></a></li>
 
-							<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html"><span>About</span></a></li>
+							<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html" id="last-overlay"><span>About</span></a></li>
 						</ul>
 				</div>
 			</nav>
@@ -432,7 +432,7 @@
 				// document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 				document.getElementsByTagName("html")[0].style.background = "#666666";
 				document.getElementById('nav2').style.marginRight = '180px';
-				document.getElementById('sidebar-menu').style.width = '180px';
+				document.getElementById('overlay-menu').style.width = '180px';
 				const elements = ["nav0", "nav1", "header", "main", "footer"];
 				for(const element of elements){
 					if (document.getElementById(element) !== null) {
@@ -447,16 +447,48 @@
 				// document.getElementsByTagName("html")[0].style.overflowY = "unset";
 				document.getElementsByTagName("html")[0].style.background = "#fff";
 				document.getElementById('nav2').style.marginRight = '0';
-				document.getElementById('sidebar-menu').style.width = '0';
+				document.getElementById('overlay-menu').style.width = '0';
 				const elements = ["nav0", "nav1", "header", "main", "footer"];
 				for(const element of elements){
 					if (document.getElementById(element) !== null) {
 						document.getElementById(element).style.visibility = "visible";
 						document.getElementById(element).style.opacity = "1";
-						document.getElementById(element).style.transition = "visibility 0s linear 0s, opacity 1500ms";
+						document.getElementById(element).style.transition = "visibility 0s linear 0s, opacity 1000ms";
 					};
   			}
 			}
+		</script>
+		<script>
+			// Trap Focus in Overlay
+			// Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
+			// Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
+			jQuery(document).ready(function () {
+				jQuery('#last-overlay')
+						.on('keydown', function (e) {
+								var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+								if (!isTabPressed) {
+										return
+								}
+								if (e.shiftKey) {
+										return
+								} else {
+										jQuery('#first-overlay').focus();
+										e.preventDefault()
+								}
+						});
+				jQuery('#first-overlay').on('keydown', function (e) {
+						var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+						if (!isTabPressed) {
+								return
+						}
+						if (e.shiftKey) {
+								jQuery('#last-overlay').focus();
+								e.preventDefault()
+						} else {
+								return
+						}
+				})
+			});
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
