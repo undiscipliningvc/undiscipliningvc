@@ -309,6 +309,11 @@ nav#nav1 ul{
 		padding: 0 1em 0 0;
 	}
 }
+@media only screen and (min-width: 768px){
+	nav#nav1 ul{
+		padding: 0 1em 0 .5em;
+	}
+}
 @media only screen and (min-width: 992px){
 	nav#nav1 ul{
 		padding: 0 1em;
@@ -326,12 +331,13 @@ nav#nav1 li{
 nav#nav1 h1{
 	font-size: 1.4em;
 	white-space: nowrap;
-	padding: 10px;
+	border: 2px solid transparent;
+	padding: 7px 5px 0;
 }
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1{
-	color: #191716;
 	background: #E3E3E3;
+	border: 2px solid rgba(0, 0, 0, 0.65);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -360,7 +366,6 @@ nav#nav1 a:focus-within h1{
 nav#nav1 ul li:not(:first-child):not(:last-child){
 	font-size: .95em;
 	font-weight: 600;
-	padding: 6px 8px;
 	display: none;
 	visibility: hidden;
 }
@@ -370,13 +375,21 @@ nav#nav1 ul li:not(:first-child):not(:last-child){
 		visibility: visible;
 	}
 }
-nav#nav1 li a:hover span,
-nav#nav1 li a:focus span{
-	color: white;
-	background-color: #1C4C87;
+nav#nav1 li:not(:first-child):not(:last-child) a{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
+	padding: 6px 8px;
+	transition: 0.2s;
+}
+nav#nav1 li:not(:first-child):not(:last-child) a:hover,
+nav#nav1 li:not(:first-child):not(:last-child) a:focus{
+	background-color: #1C4C87;
+	transition: 0.2s;
+}
+nav#nav1 li a:hover span,
+nav#nav1 li a:focus span{
+	color: white;
 	transition: 0.2s;
 }
 nav#nav1 li button{
@@ -429,11 +442,13 @@ nav#nav2{
   transition: margin-right 0.7s;
   overflow: hidden;
 	position: relative;
+	display: none;
+	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
 	nav#nav2{
-		display: none;
-		visibility: hidden;
+		display: none !important;
+		visibility: hidden !important;
 	}
 }
 nav#nav2 #overlay-menu{
