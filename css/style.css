@@ -436,7 +436,7 @@ nav#nav2{
 		visibility: hidden;
 	}
 }
-nav#nav2 #sidebar-menu{
+nav#nav2 #overlay-menu{
 	background-color: #E3E3E3;
 	width: 0;
 	height: 100%;
@@ -447,47 +447,50 @@ nav#nav2 #sidebar-menu{
 	transition: 0.7s;
 	opacity: 1;
 	z-index: 200;
+}nav#nav2 #overlay-menu{
+	background-color: #E3E3E3;
+	transition: background-color 0.01s;
 }
-nav#nav2 #sidebar-menu a{
+nav#nav2 #overlay-menu a{
   color: #191716;
 	text-decoration: none;
 	white-space: nowrap;
   padding: 20px 40px;
 	display: block;
 }
-nav#nav2 #sidebar-menu li a:hover,
-nav#nav2 #sidebar-menu li a:focus{
+nav#nav2 #overlay-menu li a:hover,
+nav#nav2 #overlay-menu li a:focus{
   color: #fff;
 	background-color: #1C4C87;
   transition: 0.2s;
 }
-nav#nav2 #sidebar-menu ul{
+nav#nav2 #overlay-menu ul{
 	text-align: right;
 	list-style: none;
 	margin: 41px 0 0 0;
 	padding: 0;
 }
 @media only screen and (min-width: 480px){
-	nav#nav2 #sidebar-menu ul{
+	nav#nav2 #overlay-menu ul{
 		margin-top: 47px;
 	}
 }
 @media only screen and (min-width: 768px){
-	nav#nav2 #sidebar-menu ul{
+	nav#nav2 #overlay-menu ul{
 		margin-top: 51px;
 	}
 }
-nav#nav2 #sidebar-menu ul{
+nav#nav2 #overlay-menu ul{
 	background: #E3E3E3;
 }
-nav#nav2 #sidebar-menu ul li{
+nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
 }
-nav#nav2 #sidebar-menu ul li span{
+nav#nav2 #overlay-menu ul li span{
 	font-size: .85em;
 	font-family: 'Noto Serif', serif;
 }
-nav#nav2 #sidebar-menu li button.close{
+nav#nav2 #overlay-menu li button.close{
 	font-size: 1.2em;
 	color: #191716;
 	background: none;
@@ -501,21 +504,21 @@ nav#nav2 #sidebar-menu li button.close{
   right: .4em;
 }
 @media only screen and (min-width: 480px){
-	nav#nav2 #sidebar-menu li button.close{
+	nav#nav2 #overlay-menu li button.close{
 		font-size: 1.4em;
 		top: .3em;
 		right: .7em;
 	}
 }
 @media only screen and (min-width: 768px){
-	nav#nav2 #sidebar-menu li button.close{
+	nav#nav2 #overlay-menu li button.close{
 		font-size: 1.6em;
 		top: .3em;
 		right: .63em;
 	}
 }
-nav#nav2 #sidebar-menu li button.close:hover,
-nav#nav2 #sidebar-menu li button.close:focus{
+nav#nav2 #overlay-menu li button.close:hover,
+nav#nav2 #overlay-menu li button.close:focus{
 	color: #fff;
 	background-color: #1C4C87;
 	border-radius: 5px;
