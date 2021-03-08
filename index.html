@@ -85,7 +85,7 @@
 				</section>
 			</nav> -->
 
-			<header>
+			<header id="header">
 				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 				<!-- Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html -->
 				<section id="myCarousel"
@@ -365,7 +365,7 @@
 
 			</main>
 			
-			<footer id="footer-div">
+			<footer id="footer">
 				<hr />
 				<p>&#169; 2020-2021, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | Host: <a href="https://github.com/undiscipliningvc">GitHub</a> | CDN: <a href="https://www.cloudflare.com/">Cloudflare</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> | Contact: <a href="mailto:chaozonbauer@gmail.com">Pearl Chaozon Bauer</a></p>
 			</footer>
@@ -430,23 +430,33 @@
 			// Adapted from https://blog.avada.io/css/sidebar-menus/#animated-sidebar-menu-ephraim-sangma
 			function openSlideMenu () {
 				// document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+				document.getElementsByTagName("html")[0].style.background = "#666666";
 				document.getElementById('nav2').style.marginRight = '180px';
 				document.getElementById('sidebar-menu').style.width = '180px';
-				// document.getElementById('nav1').style.visibility = 'hidden';
-				// document.getElementsByTagName('header').style.visibility = 'hidden';
-				// document.getElementsByTagName('main').style.visibility = 'hidden';
-				// document.getElementsByTagName('footer').style.visibility = 'hidden';
+				const elements = ["nav0", "nav1", "header", "main", "footer"];
+				for(const element of elements){
+					if (document.getElementById(element) !== null) {
+						document.getElementById(element).style.visibility = "hidden";
+						document.getElementById(element).style.opacity = "0";
+						document.getElementById(element).style.transition = "visibility 0s linear 500ms, opacity 500ms";
+					};
+  			}
 			}
 
 			function closeSlideMenu () {
 				// document.getElementsByTagName("html")[0].style.overflowY = "unset";
+				document.getElementsByTagName("html")[0].style.background = "#fff";
 				document.getElementById('nav2').style.marginRight = '0';
 				document.getElementById('sidebar-menu').style.width = '0';
-				// document.getElementById('nav1').style.visibility = 'visible';
-				// document.getElementsByTagName('header').style.visibility = 'visible';
-				// document.getElementsByTagName('main').style.visibility = 'visible';
-				// document.getElementsByTagName('footer').style.visibility = 'visible';
-			}			
+				const elements = ["nav0", "nav1", "header", "main", "footer"];
+				for(const element of elements){
+					if (document.getElementById(element) !== null) {
+						document.getElementById(element).style.visibility = "visible";
+						document.getElementById(element).style.opacity = "1";
+						document.getElementById(element).style.transition = "visibility 0s linear 0s, opacity 750ms";
+					};
+  			}
+			}
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
