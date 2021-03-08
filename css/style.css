@@ -4,7 +4,6 @@ nav#nav2{
 	position: relative;
 }
 nav#nav2 #sidebar-menu{
-	/* background: linear-gradient(#fff, #E3E3E3, #E3E3E3); */
 	background-color: #E3E3E3;
 	width: 0;
 	height: 100%;
@@ -20,7 +19,7 @@ nav#nav2 #sidebar-menu a{
   color: #191716;
 	text-decoration: none;
 	white-space: nowrap;
-  padding: 20px 22px;
+  padding: 20px 40px;
 	display: block;
 }
 nav#nav2 #sidebar-menu li a:hover,
@@ -32,17 +31,17 @@ nav#nav2 #sidebar-menu li a:focus{
 nav#nav2 #sidebar-menu ul{
 	text-align: right;
 	list-style: none;
-	margin: 39px 0 0 0;
+	margin: 41px 0 0 0;
 	padding: 0;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #sidebar-menu ul{
-		padding: 44px;
+		margin-top: 47px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #sidebar-menu ul{
-		padding: 48px;
+		margin-top: 51px;
 	}
 }
 nav#nav2 #sidebar-menu ul{
@@ -63,19 +62,23 @@ nav#nav2 #sidebar-menu li button.close{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 3px 8px;
+	padding: 3px 8px 1px;
 	position: absolute;
   top: .35em;
-  right: .7em;
+  right: .4em;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #sidebar-menu li button.close{
-		font-size: 1.3em;
+		font-size: 1.4em;
+		top: .3em;
+		right: .7em;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #sidebar-menu li button.close{
-		font-size: 1.4em;
+		font-size: 1.6em;
+		top: .3em;
+		right: .63em;
 	}
 }
 nav#nav2 #sidebar-menu li button.close:hover,
@@ -182,17 +185,17 @@ main section ul{
 	text-align: left;
 }
 header{
-	margin: 39px auto 0;
+	margin: 41px auto 0;
 	position: relative;
 }
 @media only screen and (min-width: 480px){
 	header{
-		margin-top: 44px;
+		margin-top: 47px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		margin-top: 48px;
+		margin-top: 51px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -202,7 +205,7 @@ header{
 }
 @media only screen and (min-width: 992px){
 	header{
-		margin-top: 65px;
+		margin-top: 63px;
 	}
 }
 .organizers{
@@ -349,24 +352,24 @@ nav#nav1{
   background-color: white;
 	margin: 0 auto;
 	width: 100%;
-	height: 39px;
+	height: 41px;
 	position: fixed;
 	top: 0;
 	z-index: 20;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1{
-		height: 44px;
+		height: 47px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1{
-		height: 48px;
+		height:51px;
 	}
 }
 @media only screen and (min-width: 992px){
 	nav#nav1{
-		height: 60px;
+		height: 58px;
 	}
 }
 nav#nav1 a,
@@ -413,7 +416,7 @@ nav#nav1 li{
 	display: inline-block;
 }
 nav#nav1 h1{
-	font-size: 1.3em;
+	font-size: 1.4em;
 	white-space: nowrap;
 	padding: 10px;
 }
@@ -428,7 +431,7 @@ nav#nav1 a:focus-within h1{
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 h1{
-		font-size: 1.5em;
+		font-size: 1.6em;
 		/* white-space: nowrap;
 		position: absolute;
 		top: 50%;
@@ -438,15 +441,15 @@ nav#nav1 a:focus-within h1{
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 h1{
-		font-size: 1.7em;
+		font-size: 1.9em;
 	}
 }
 @media only screen and (min-width: 992px){
 	nav#nav1 h1{
-		font-size: 2em;
+		font-size: 2.1em;
 	}
 }
-nav#nav1 li span{
+nav#nav1 ul li:not(:first-child):not(:last-child){
 	font-size: .95em;
 	font-weight: 600;
 	padding: 6px 8px;
@@ -454,13 +457,13 @@ nav#nav1 li span{
 	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
-	nav#nav1 li span{
+	nav#nav1 ul li:not(:first-child):not(:last-child){
 		display: block;
 		visibility: visible;
 	}
 }
 nav#nav1 li a:hover span,
-nav#nav1 li a:focus-within span{
+nav#nav1 li a:focus span{
 	color: white;
 	background-color: #1C4C87;
 	border-radius: 5px;
@@ -471,34 +474,40 @@ nav#nav1 li a:focus-within span{
 nav#nav1 li button{
 	background: none;
 	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 6px 7px 4px;
+}
+nav#nav1 li button:hover,
+nav#nav1 li button:focus-within{
+	background-color: #1C4C87;
+	transition: 0.2s;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 li button{
+		padding: 5px 7px;
+	}
 }
 nav#nav1 li button i{
 	font-size: 1.1em;
 	color: #191716;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	padding: 5px 7px;
 }
 @media only screen and (min-width: 480px){
-	nav#nav1 li button i{
-		font-size: 1.2em;
-	}
-}
-@media only screen and (min-width: 768px){
 	nav#nav1 li button i{
 		font-size: 1.3em;
 	}
 }
-nav#nav1 li button i:hover,
-nav#nav1 li button i:focus{
-	color: white;
-	background-color: #1C4C87;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	transition: 0.2s;
+@media only screen and (min-width: 768px){
+	nav#nav1 li button i{
+		font-size: 1.5em;
+	}
 }
+nav#nav1 li button:hover i,
+nav#nav1 li button:focus i{
+	color: #fff;
+}
+
 @media only screen and (min-width: 992px){
 	nav#nav1 > li:nth-child(8),
 	nav#nav1 li button i{
