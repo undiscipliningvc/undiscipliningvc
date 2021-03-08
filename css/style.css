@@ -4,7 +4,8 @@ nav#nav2{
 	position: relative;
 }
 nav#nav2 #sidebar-menu{
-	background-color: #1C4C87;
+	/* background: linear-gradient(#fff, #E3E3E3, #E3E3E3); */
+	background-color: #E3E3E3;
 	width: 0;
 	height: 100%;
   position: fixed;
@@ -25,7 +26,7 @@ nav#nav2 #sidebar-menu a{
 nav#nav2 #sidebar-menu li a:hover,
 nav#nav2 #sidebar-menu li a:focus{
   color: #fff;
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: #1C4C87;
   transition: 0.2s;
 }
 nav#nav2 #sidebar-menu ul{
@@ -44,17 +45,19 @@ nav#nav2 #sidebar-menu ul{
 		padding: 48px;
 	}
 }
-nav#nav2 #sidebar-menu ul li{
+nav#nav2 #sidebar-menu ul{
 	background: #E3E3E3;
-	border-bottom: 1px solid white;
-	/* opacity: .8; */
+}
+nav#nav2 #sidebar-menu ul li{
+	border-bottom: 1px solid #fff;
 }
 nav#nav2 #sidebar-menu ul li span{
 	font-size: .85em;
+	font-family: 'Noto Serif', serif;
 }
 nav#nav2 #sidebar-menu li button.close{
 	font-size: 1.2em;
-	color: #fff;
+	color: #191716;
 	background: none;
 	border: none;
 	border-radius: 5px;
@@ -77,8 +80,8 @@ nav#nav2 #sidebar-menu li button.close{
 }
 nav#nav2 #sidebar-menu li button.close:hover,
 nav#nav2 #sidebar-menu li button.close:focus{
-	color: #191716;
-	background-color: #E3E3E3;
+	color: #fff;
+	background-color: #1C4C87;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
