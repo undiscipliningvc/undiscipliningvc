@@ -434,7 +434,7 @@
 					if (document.getElementById(element) !== null) {
 						document.getElementById(element).style.visibility = "hidden";
 						document.getElementById(element).style.opacity = "0";
-						document.getElementById(element).style.transition = "visibility 0s linear 500ms, opacity 500ms";
+						document.getElementById(element).style.transition = "visibility 0s linear 300ms, opacity 300ms";
 					};
   			}
 			}
@@ -515,6 +515,18 @@
 						document.getElementById("about").setAttribute("class","current");
 				};
 			};
+		</script>
+		<script>
+			// Increases site security
+			// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
+			AddRelNoopener();
+
+			function AddRelNoopener(){
+					var links = document.querySelectorAll("a");
+					for(var i = 0; i < links.length; i++){
+							links[i].setAttribute("rel","noopener");
+					}
+			}			
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
