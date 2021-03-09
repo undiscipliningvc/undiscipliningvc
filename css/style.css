@@ -84,7 +84,6 @@ main{
 @media only screen and (min-width: 992px){
 	main{
 		font-size: 1.05em;
-		display: block !important; /* Tied to overlay */
 	}
 }
 main section p,
@@ -104,11 +103,6 @@ header{
 @media only screen and (min-width: 768px){
 	header{
 		margin-top: 51px;
-	}
-}
-@media only screen and (min-width: 992px){
-	header{
-		display: block !important; /* Tied to overlay */
 	}
 }
 @media only screen and (min-width: 992px){
@@ -144,6 +138,18 @@ footer{
 	footer{
 		padding: 1em;
 	}	
+}
+/* The makes overlay disappear above 992 */
+@media only screen and (min-width: 992px){
+	#nav0,
+	#nav1,
+	header,
+	main,
+	footer{
+		display: block !important;
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 
@@ -279,6 +285,15 @@ nav#nav1{
 	nav#nav1{
 		height: 58px;
 	}
+}
+nav#nav1 .current{
+	text-decoration: underline;
+	text-decoration-color: #1C4C87;
+	text-decoration-thickness: 3px;
+}
+nav#nav1 a:hover .current,
+nav#nav1 a:focus .current{
+	text-decoration: none;
 }
 nav#nav1 a,
 nav#nav1 a:visited{
