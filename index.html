@@ -41,17 +41,17 @@
 				<ul role="menubar" aria-label="Site sections">
 					<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><h1>Undisciplining the Victorian Classroom</h1></a></li>
 
-					<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><span><i class="fa fa-home"></i> Home</span></a></li>
+					<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><span><i class="fa fa-home"></i></span> <span id="home">Home</span></a></li>
 
-					<li role="none"><a role="menuitem" aria-haspopup="false" href="zoomcasts.html"><span>Zoomcasts</span></a></li>
+					<li role="none"><a role="menuitem" aria-haspopup="false" href="zoomcasts.html"><span id="zoomcasts">Zoomcasts</span></a></li>
 
-					<li role="none"><a role="menuitem" aria-haspopup="false" href="lesson_plans.html"><span>Lesson Plans</span></a></li>
+					<li role="none"><a role="menuitem" aria-haspopup="false" href="lesson_plans.html"><span id="lesson_plans">Lesson Plans</span></a></li>
 
-					<li role="none"><a role="menuitem" aria-haspopup="false" href="syllabi.html"><span>Syllabi</span></a></li>
+					<li role="none"><a role="menuitem" aria-haspopup="false" href="syllabi.html"><span id="syllabi">Syllabi</span></a></li>
 
-					<li role="none"><a role="menuitem" aria-haspopup="false" href="faq.html"><span>FAQ</span></a></li>
+					<li role="none"><a role="menuitem" aria-haspopup="false" href="faq.html"><span id="faq">FAQ</span></a></li>
 
-					<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html"><span>About</span></a></li>
+					<li role="none"><a role="menuitem" aria-haspopup="false" href="about.html"><span id="about">About</span></a></li>
 
 					<li role="none"><button style="cursor:pointer" aria-label="Show site sections" onclick="openSlideMenu()" tabindex="0"><i class="fa fa-bars"></i></button></li>
 				</ul>
@@ -487,6 +487,39 @@
 						}
 				})
 			});
+		</script>
+		<script>
+// Adapted from https://stackoverflow.com/a/21718316
+// Highlights users current section in navigation
+
+checkUrl();
+			
+function checkUrl () {
+	if(location.pathname == "/" && 
+		location.hash.length <= 1 && 
+		location.search.length <= 1) {
+			document.getElementById("home").setAttribute("class","current");
+	}
+	if (window.location.href.indexOf("index") > -1) {	
+			document.getElementById("home").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("zoomcasts") > -1) {	
+			document.getElementById("zoomcasts").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("lesson_plans") > -1) {	
+			document.getElementById("lesson_plans").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("syllabi") > -1) {	
+			document.getElementById("syllabi").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("faq") > -1) {	
+			document.getElementById("faq").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("about") > -1) {	
+			document.getElementById("about").setAttribute("class","current");
+	};
+};	
+
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
