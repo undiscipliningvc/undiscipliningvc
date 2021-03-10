@@ -549,7 +549,6 @@ nav#nav2 #overlay-menu ul li span{
 	font-size: .85em;
 	font-family: 'Noto Serif', serif;
 }
-
 nav#nav2 #overlay-menu li button.close{
 	background: none;
 	border: none;
@@ -579,21 +578,21 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
-	font-size: 1.1em;
 	color: #191716;
+	font-size: 1.1em;
 }
 @media only screen and (min-width: 480px){
-	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.2em;
-	}
-}
-@media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
 		font-size: 1.3em;
 	}
 }
-nav#nav2 #overlay-menu li button.close i:hover,
-nav#nav2 #overlay-menu li button.close i:focus{
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.5em;
+	}
+}
+nav#nav2 #overlay-menu li button.close:hover i,
+nav#nav2 #overlay-menu li button.close:focus i{
 	color: #fff;
 }
 @media only screen and (min-width: 992px){
