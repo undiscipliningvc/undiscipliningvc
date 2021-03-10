@@ -374,25 +374,25 @@
 		<script>
 			// Removes service worker
 			if ("serviceWorker" in navigator) {
-			navigator.serviceWorker.getRegistrations().then(function (registrations) {
-						for (let registration of registrations) {
-							registration.unregister()
-						}
-					})
-			}
+				navigator.serviceWorker.getRegistrations().then(function (registrations) {
+					for (let registration of registrations) {
+						registration.unregister()
+					}
+				})
+			};
 		</script>
 		<script>
 			// Add border to sticky nav after scroll down
 			$(window).scroll(function () {
-					var $heightScrolled = $(window).scrollTop();
-					var $defaultHeight = 400;
-					if ($heightScrolled < $defaultHeight) {
-							$('#nav1').removeClass("borderBottom")
-							// $('#nav2').addClass("a")
-					}
-					else {
-							$('#nav1').addClass("borderBottom")
-					}
+				var $heightScrolled = $(window).scrollTop();
+				var $defaultHeight = 400;
+				if ($heightScrolled < $defaultHeight) {
+					$('#nav1').removeClass("borderBottom")
+					// $('#nav2').addClass("a")
+				}
+				else {
+					$('#nav1').addClass("borderBottom")
+				}
 			});		
 		</script>
 		<script>
@@ -414,13 +414,13 @@
 					mybutton.style.display = "none";
 					mybutton.style.visibility = "hidden";
 				}
-			}
+			};
 			
 			// When the user clicks on the button, scroll to the top of the document
 			function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
-			}
+			};
 		</script>
 		<script>
 			// Overlay
@@ -436,8 +436,8 @@
 						document.getElementById(element).style.opacity = "0";
 						document.getElementById(element).style.transition = "visibility 0s linear 300ms, opacity 300ms";
 					};
-  			}
-			}
+				}
+			};
 
 			function closeSlideMenu () {
 				document.getElementsByTagName("html")[0].style.background = "#fff";
@@ -450,38 +450,37 @@
 						document.getElementById(element).style.opacity = "1";
 						document.getElementById(element).style.transition = "visibility 0s linear 0s, opacity 1000ms";
 					};
-  			}
-			}
+				}
+			};
 		</script>
 		<script>
 			// Trap Focus in Overlay
 			// Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
 			// Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
 			jQuery(document).ready(function () {
-				jQuery('#overlay-last')
-						.on('keydown', function (e) {
-								var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-								if (!isTabPressed) {
-										return
-								}
-								if (e.shiftKey) {
-										return
-								} else {
-										jQuery('#overlay-first').focus();
-										e.preventDefault()
-								}
-						});
+				jQuery('#overlay-last').on('keydown', function (e) {
+					var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+					if (!isTabPressed) {
+						return
+					}
+					if (e.shiftKey) {
+						return
+					} else {
+						jQuery('#overlay-first').focus();
+						e.preventDefault()
+					}
+				});
 				jQuery('#overlay-first').on('keydown', function (e) {
-						var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-						if (!isTabPressed) {
-								return
-						}
-						if (e.shiftKey) {
-								jQuery('#overlay-last').focus();
-								e.preventDefault()
-						} else {
-								return
-						}
+					var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+					if (!isTabPressed) {
+						return
+					}
+					if (e.shiftKey) {
+						jQuery('#overlay-last').focus();
+						e.preventDefault()
+					} else {
+						return
+					}
 				})
 			});
 		</script>
@@ -497,36 +496,36 @@
 						document.getElementById("home").setAttribute("class","current");
 				}
 				if (window.location.href.indexOf("index") > -1) {	
-						document.getElementById("home").setAttribute("class","current");
+					document.getElementById("home").setAttribute("class","current");
 				};
 				if (window.location.href.indexOf("zoomcasts") > -1) {	
-						document.getElementById("zoomcasts").setAttribute("class","current");
+					document.getElementById("zoomcasts").setAttribute("class","current");
 				};
 				if (window.location.href.indexOf("lesson_plans") > -1) {	
-						document.getElementById("lesson_plans").setAttribute("class","current");
+					document.getElementById("lesson_plans").setAttribute("class","current");
 				};
 				if (window.location.href.indexOf("syllabi") > -1) {	
-						document.getElementById("syllabi").setAttribute("class","current");
+					document.getElementById("syllabi").setAttribute("class","current");
 				};
 				if (window.location.href.indexOf("faq") > -1) {	
-						document.getElementById("faq").setAttribute("class","current");
+					document.getElementById("faq").setAttribute("class","current");
 				};
 				if (window.location.href.indexOf("about") > -1) {	
-						document.getElementById("about").setAttribute("class","current");
+					document.getElementById("about").setAttribute("class","current");
 				};
 			};
 		</script>
 		<script>
-			// Increases site security
-			// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
-			AddRelNoopener();
+		// Increases site security
+		// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
+		AddRelNoopener();
 
-			function AddRelNoopener(){
-					var links = document.querySelectorAll("a");
-					for(var i = 0; i < links.length; i++){
-							links[i].setAttribute("rel","noopener");
-					}
-			}			
+		function AddRelNoopener(){
+			var links = document.querySelectorAll("a");
+			for(var i = 0; i < links.length; i++){
+				links[i].setAttribute("rel","noopener");
+			}
+		};
 		</script>
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/carouselItem.js"></script>
