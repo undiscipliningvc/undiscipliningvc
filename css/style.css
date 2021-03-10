@@ -431,7 +431,7 @@ nav#nav1 li button{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 6px 7px 4px;
+	padding: 7px 8px 5px;
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -439,7 +439,7 @@ nav#nav1 li button{
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button{
-		padding: 5px 7px;
+		padding: 6px 8px;
 	}
 }
 nav#nav1 li button#regular-button{
@@ -549,42 +549,62 @@ nav#nav2 #overlay-menu ul li span{
 	font-size: .85em;
 	font-family: 'Noto Serif', serif;
 }
+
 nav#nav2 #overlay-menu li button.close{
-	font-size: 1.2em;
-	color: #191716;
 	background: none;
 	border: none;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 3px 8px 1px;
+	padding: 7px 8px 5px;
 	position: absolute;
-  top: .35em;
-  right: .4em;
+	top: .5em;
+  right: .7em;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
-		font-size: 1.4em;
-		top: .3em;
-		right: .7em;
+		padding: 6px 8px;
+		top: .7em;
+		right: 1.35em;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
-		font-size: 1.6em;
-		top: .3em;
-		right: .63em;
+		top: .8em;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover,
-nav#nav2 #overlay-menu li button.close:focus{
-	color: #fff;
+nav#nav2 #overlay-menu li button.close:focus-within{
 	background-color: #1C4C87;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	transition: 0.2s;
 }
+nav#nav2 #overlay-menu li button.close i{
+	font-size: 1.1em;
+	color: #191716;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.3em;
+	}
+}
+nav#nav2 #overlay-menu li button.close i:hover,
+nav#nav2 #overlay-menu li button.close i:focus{
+	color: #fff;
+}
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu li button.close{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+
 
 
 /* 1.4. Carousel */
