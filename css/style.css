@@ -557,19 +557,24 @@ nav#nav2 #overlay-menu li button.close{
 	-moz-border-radius: 5px;
 	padding: 7px 8px 5px;
 	position: absolute;
-	top: .5em;
-  right: .7em;
+	top: 7px;
+	right: 9px;
+	/* top: .5em;
+  right: .7em; */
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
 		padding: 6px 8px;
-		top: .7em;
-		right: 1.35em;
+		top: 11px;
+		right: 17px;
+		/* top: .7em;
+		right: 1.35em; */
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
-		top: .8em;
+		top: 12px;
+		/* top: .8em; */
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover,
