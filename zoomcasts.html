@@ -39,32 +39,48 @@
 			Darker Gray: #8c8c8c; */
 			.cluster header{
 				/* background: linear-gradient(180deg, #fff, 5%, #1157AC, 90%, #fff); */
-				background: linear-gradient(#fff, 5%, #1C4C87, 90%, #fff);
+				/* background: linear-gradient(#fff, 5%, #1C4C87, 90%, #fff); */
 				/* background: linear-gradient(#A64444, #D95436, #D9B29C, #F2D16D, #A0A672); */
 				/* background: linear-gradient(#73534C, #D96248, #BF6A4B, #BFA380, #D9C091); */
 				/* background: linear-gradient(#A64833, #F2C094, #D98841, #D93B58, #D9303E); */
 				/* background: linear-gradient(#1C4C87, #fff, #D9303E); */
-				height: 120px;
+				background: #1C4C87;
+				height: 90px;
 				display: flex !important;
 				align-items: center;
 				justify-content: center;
 			}
-			/* @media only screen and (min-width: 992px){
-				.cluster header{
-					width: 75% !important;
-				}
-			} */
 			.cluster header h2{
-				font-size: 4em;
-				/* font-family: 'Source Sans Pro', sans-serif; */
+				font-size: 2em;
+				font-family: 'Source Sans Pro', sans-serif;
 				color: white;
-				/* color: #191716; */
+				font-weight: 400;
+				padding: 0 1em;
+				white-space: nowrap;
+			}
+			.cluster header:before,
+			.cluster header:after{
+				content: ""; 
+        width: 100%; 
+        height: 50px; 
+        background: linear-gradient(90deg, white 65%, transparent 65%);
+        background-size: 100px; 
+			}
+			.cluster header h2 i{
+				padding: .3em .3em .3em .5em;
+				border: 2px solid white;
+				border-radius: 50%;
 			}
 			.cluster h3{
 				text-align: left;
 			}
-			.cluster ol{
-				padding: 0 0 0 20px;
+			.cluster h3#toc{
+				text-align: center;
+			}
+			.cluster ul{
+				padding: 0;
+				list-style: none;
+				text-align: center;
 			}
 			[id]:target{
 				margin-top: -41px;
@@ -152,18 +168,18 @@
 			</nav>
 
 			<header id="header">
-				<h2>Zoomcasts</h2>
+				<h2><i class="fa fa-play" aria-hidden="true"></i> Zoomcasts</h2>
 			</header>
 
 			<main id="main">
 
 				<section aria-labelledby="toc">
 					<h3 id="toc">Menu</h3>
-					<ol>
+					<ul>
 						<li><a href="#overview">Overview</a></li>
 						<li><a href="#positionality">Positionality</a></li>
 						<li><a href="#literary">Beyond the Literary</a></li>
-					</ol>
+					</ul>
 				</section>
 
 				<hr/>
@@ -183,7 +199,7 @@
 							<ol>
 								<li>Speaker(s) 1 (Date)</li>
 								<li>Speaker(s) 2 (Date)</li>
-								<li>Speaker(sections) 3 (Date)</li>
+								<li>Speaker(s) 3 (Date)</li>
 							</ol>
 					</p>
 				</section>
@@ -198,7 +214,7 @@
 							<ol>
 								<li>Speaker(s) 1 (Date)</li>
 								<li>Speaker(s) 2 (Date)</li>
-								<li>Speaker(sections) 3 (Date)</li>
+								<li>Speaker(s) 3 (Date)</li>
 							</ol>
 					</p>
 				</section>
