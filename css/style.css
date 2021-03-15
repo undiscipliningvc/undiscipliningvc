@@ -184,7 +184,7 @@ footer{
 	text-align: center;
 	line-height: 1.6em;
 	color: #fff;
-	background: #191716;
+	background: #595959;
 	margin: .75em auto 0;
 	padding: .25em 1em 1em 1em;
 }
@@ -484,7 +484,7 @@ nav#nav1 a:focus-within h1{
 	}
 }
 nav#nav1 ul li:not(:first-child):not(:last-child){
-	font-size: .95em;
+	font-size: 1em;
 	font-weight: 600;
 	display: none;
 	visibility: hidden;
@@ -935,7 +935,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
-	font-size: .9em;
+	font-size: .95em;
 	color: #fff;
 	background-color: #1C4C87;
 	border: 2px solid #fff;
@@ -944,14 +944,14 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	padding: 5px;
 	position: fixed;
 	right: 20px;
-	bottom: 115px;
+	bottom: 160px;
 	z-index: 99;
 	display: none;
 	visibility: hidden;
   }
 @media only screen and (min-width: 480px){
 	#topButton{
-		bottom: 88px;
+		bottom: 132px;
 	}
 }
 @media only screen and (min-width: 768px){
