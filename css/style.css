@@ -798,8 +798,8 @@ nav#nav2 #overlay-menu li button.close:focus i{
 		left: unset;
 	}
 }
-.carousel .carousel-item .carousel-caption h3,
-.image-caption h3{
+.carousel .carousel-item .carousel-caption p,
+.image-caption p{
 	font: 16px 'Noto Serif', serif;
 	font-weight: 400;
 	margin: 0;
@@ -807,13 +807,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	display: inline-block;
 }
 @media only screen and (min-width: 320px){
-	.carousel .carousel-item .carousel-caption h3,
-	.image-caption h3{
+	.carousel .carousel-item .carousel-caption p,
+	.image-caption p{
 		line-height: inherit;
 	}
 }
-.carousel .carousel-item .carousel-caption h3 a,
-.image-caption h3 a{
+.carousel .carousel-item .carousel-caption p a,
+.image-caption p a{
 	font-size: .9em;
 }
 .carousel .carousel-item .carousel-caption a,
