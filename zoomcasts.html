@@ -44,35 +44,60 @@
 				/* background: linear-gradient(#73534C, #D96248, #BF6A4B, #BFA380, #D9C091); */
 				/* background: linear-gradient(#A64833, #F2C094, #D98841, #D93B58, #D9303E); */
 				/* background: linear-gradient(#1C4C87, #fff, #D9303E); */
-				background: #1C4C87;
-				height: 90px;
+				/* background: #A64833; */
+				height: 46px;
 				display: flex !important;
 				align-items: center;
 				justify-content: center;
 			}
-			.cluster header h2{
-				font-size: 2em;
-				font-family: 'Source Sans Pro', sans-serif;
-				color: white;
-				font-weight: 400;
-				padding: 0 1em;
-				white-space: nowrap;
+			@media only screen and (min-width: 480px){
+				.cluster header{
+					height: 52px;
+				}
 			}
-			.cluster header:before,
+			@media only screen and (min-width: 768px){
+				.cluster header{
+					height:56px;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				.cluster header{
+					height: 63px;
+				}
+			}
+			.cluster header h2{
+				font-size: 1.1em;
+				font-family: 'Source Sans Pro', sans-serif;
+				/* color: white; */
+				color: #191716;
+				font-weight: 700;
+				padding: 0 1em;
+				border-top: 1px solid #191716;
+				border-bottom: 1px solid #191716;
+			}
+			/* .cluster header:before,
 			.cluster header:after{
 				content: ""; 
         width: 100%; 
         height: 50px; 
         background: linear-gradient(90deg, white 65%, transparent 65%);
         background-size: 100px; 
-			}
+			} */
 			.cluster header h2 i{
-				padding: .3em .3em .3em .5em;
+				/* font-size: .9em; */
+				/* padding: .4em .3em .3em .5em;
 				border: 2px solid white;
-				border-radius: 50%;
+				border-radius: 50%; */
 			}
 			.cluster h3{
-				text-align: left;
+				font-size: 1.2em;
+				text-align: center;
+				color: #fff;
+				background: #5c7d62;
+				border-bottom: 1px solid #322d29;
+				/* background-color: #a5473d; */
+				margin-top: 0;
+				padding: .5em 0;
 			}
 			.cluster h3#toc{
 				text-align: center;
@@ -82,6 +107,55 @@
 				list-style: none;
 				text-align: center;
 			}
+			.cluster main{
+				max-width: 100%;
+				padding: 0 .5em;
+			}
+			.cluster main{
+				margin: 41px auto 0;
+			}
+			@media only screen and (min-width: 480px){
+				.cluster main{
+					margin-top: 47px;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.cluster main{
+					margin-top: 51px;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				.cluster main{
+					margin-top: 63px;
+				}
+			}
+			.cluster section{
+				border: 1px solid #322d29;
+				border-radius: 5px;
+				margin: 1em 0;
+				/* width: 100%; */
+				/* max-width: 100%; */
+				display: inline-block;
+				/* vertical-align: top; */
+			}
+			/* .cluster section:first-child{
+				margin: .75em 0 1em;
+			} */
+			.cluster section p{
+				padding: 0 1em;
+			}
+			/* .cluster footer{
+				color: #fff;
+				background: #5c7d62;
+			}
+			.cluster footer a,
+			.cluster footer a:visited{
+				color: #fff;
+			}
+			.cluster footer a:hover,
+			.cluster footer a:focus{
+				background-color: #1C4C87;
+			} */
 			[id]:target{
 				margin-top: -41px;
 				border-top: 41px solid transparent;
@@ -167,29 +241,29 @@
 				</div>
 			</nav>
 
-			<header id="header">
-				<h2><i class="fa fa-play" aria-hidden="true"></i> Zoomcasts</h2>
-			</header>
+			<!-- <header id="header">
+					<h2><i class="fa fa-play-circle" aria-hidden="true"></i> Zoomcasts</h2>
+			</header> -->
 
 			<main id="main">
 
-				<section aria-labelledby="toc">
+				<!-- <section aria-labelledby="toc">
 					<h3 id="toc">Menu</h3>
 					<ul>
 						<li><a href="#overview">Overview</a></li>
 						<li><a href="#positionality">Positionality</a></li>
 						<li><a href="#literary">Beyond the Literary</a></li>
 					</ul>
-				</section>
+				</section> -->
 
-				<hr/>
+				<!-- <hr/> -->
 
 				<section aria-labelledby="overview">
-					<h3 id="overview">Overview</h3>
+					<h3 id="overview"><i class="fa fa-play-circle" aria-hidden="true"></i> Zoomcasts</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis odio ac nisi euismod sodales. Cras malesuada magna a leo aliquet venenatis. Nulla in mi et elit vehicula fermentum eget at ligula. Integer metus nisi, dictum vulputate urna nec, pharetra finibus metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur condimentum sem sed augue vestibulum mattis. Ut vehicula, purus vitae rutrum maximus, libero nibh consectetur odio, ac volutpat libero ipsum ut sem. Phasellus blandit, quam ac efficitur elementum, enim mauris accumsan mi, at maximus erat elit in ante.</p>
 				</section>
 
-				<hr/>
+				<!-- <hr/> -->
 
 				<section aria-labelledby="positionality">
 					<h3 id="positionality">Positionality</h3>
@@ -204,7 +278,7 @@
 					</p>
 				</section>
 
-				<hr/>
+				<!-- <hr/> -->
 
 				<section aria-labelledby="literary">
 					<h3 id="literary">Beyond the Literary</h3>
@@ -222,8 +296,7 @@
 			</main>
 			
 			<footer id="footer">
-				<hr />
-				<p>&#169; 2020-2021, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | Host: <a href="https://github.com/undiscipliningvc">GitHub</a> | CDN: <a href="https://www.cloudflare.com/">Cloudflare</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> | Contact: <a href="mailto:chaozonbauer@gmail.com">Pearl Chaozon Bauer</a></p>
+				<p>&#169; 2020-2021, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> &nbsp;|&nbsp; Host: <a href="https://github.com/undiscipliningvc">GitHub</a> &nbsp;|&nbsp; CDN: <a href="https://www.cloudflare.com/">Cloudflare</a> &nbsp;|&nbsp; Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> &nbsp;|&nbsp; Contact: <a href="mailto:chaozonbauer@gmail.com">Pearl Chaozon Bauer</a></p>
 			</footer>
 
 			<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
