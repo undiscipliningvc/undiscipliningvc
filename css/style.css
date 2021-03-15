@@ -500,6 +500,8 @@ nav#nav1 li:not(:first-child):not(:last-child) a:focus{
 	background-color: #1C4C87;
 	transition: 0.2s;
 }
+nav#nav1 li a:hover,
+nav#nav1 li a:focus,
 nav#nav1 li a:hover span,
 nav#nav1 li a:focus span{
 	color: #fff;
