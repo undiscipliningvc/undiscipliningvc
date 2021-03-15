@@ -55,7 +55,7 @@ html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	color: #191716;
-	background-color: white;
+	background-color: #fff;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -142,13 +142,16 @@ header{
 footer{
 	text-align: center;
 	line-height: 1.6em;
-	margin: 0 auto;
-	padding: 0 1em 1em;
+	color: #fff;
+	background: #1C4C87;
+	margin: .75em auto 0;
+	padding: .25em 1em;
 }
 @media only screen and (min-width: 768px){
 	footer{
-		padding: 1em;
-	}	
+		margin: 1em auto 0;
+		padding: .5em 1em;
+	}
 }
 /* Makes overlay disappear above 992 */
 @media only screen and (min-width: 992px){
@@ -177,12 +180,22 @@ a:visited{
 }
 a:hover,
 a:focus{
-	color: white;
+	color: #fff;
 	background-color: #1157AC;
 	transition: 0.2s;
 }
+footer a,
+footer a:visited{
+	color: #fff;
+}
+footer a:hover,
+footer a:focus{
+	color: #1157AC;
+	background-color: #fff;
+	transition: 0.2s;
+}
 a img{
-	border: 3px white solid;
+	border: 3px #fff solid;
 }
 a:hover img,
 a:focus img{
@@ -246,10 +259,10 @@ img{
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #nav0 a{
 	font-size: .9em;
-	color: white;
+	color: #fff;
 	background-color: #1157AC;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 8px;
 	padding: 8px 6px;
 	position: absolute;
@@ -277,7 +290,7 @@ nav#nav1{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	line-height: 1em;
-  background-color: white;
+  background-color: #fff;
 	margin: 0 auto;
 	width: 100%;
 	height: 41px;
@@ -316,7 +329,7 @@ nav#nav1 a:visited{
 }
 /* nav#nav1 a:hover,
 nav#nav1 a:focus{
-	color: white;
+	color: #fff;
 	background: #191716;
 	transition: 0.2s;
 } */
@@ -421,7 +434,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a:focus{
 }
 nav#nav1 li a:hover span,
 nav#nav1 li a:focus span{
-	color: white;
+	color: #fff;
 	transition: 0.2s;
 }
 nav#nav1 li button{
@@ -496,6 +509,7 @@ nav#nav2{
 }
 nav#nav2 #overlay-menu{
 	background-color: #E3E3E3;
+	transition: background-color 0.01s;
 	width: 0;
 	height: 100%;
   position: fixed;
@@ -505,9 +519,6 @@ nav#nav2 #overlay-menu{
 	transition: 0.7s;
 	opacity: 1;
 	z-index: 200;
-}nav#nav2 #overlay-menu{
-	background-color: #E3E3E3;
-	transition: background-color 0.01s;
 }
 nav#nav2 #overlay-menu a{
   color: #191716;
@@ -638,7 +649,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	border: solid 1px gray;
 }
 .carousel .carousel-items.focus{
-	border-color: white;
+	border-color: #fff;
 	outline: solid 3px #191716;;
 }
 /* Carousel images */
@@ -804,8 +815,8 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 /* Next and Previous Slide Controls */
 .carousel .controls button svg polygon{
-	fill: white;
-	stroke: white;
+	fill: #fff;
+	stroke: #fff;
 	stroke-width: 2;
 	opacity: 1;
 }
@@ -834,8 +845,8 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 .carousel .controls button.rotation.pause svg polygon.pause,
 .carousel .controls button.rotation.play svg polygon.play{
-	fill: white;
-	stroke: white;
+	fill: #fff;
+	stroke: #fff;
 }
 /* Common focus styling for svg buttons */
 /* .carousel .controls button:focus rect.background,
@@ -847,7 +858,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	opacity: 1;
 } */
 .carousel .controls button:focus rect.border{
-	stroke: white;
+	stroke: #fff;
 }
 
 
@@ -858,9 +869,9 @@ nav#nav2 #overlay-menu li button.close:focus i{
 #topButton{
 	cursor: pointer;
 	font-size: .75em;
-	color: white;
-	background-color: #1157AC;
-	border: 2px solid transparent;
+	color: #fff;
+	background-color: #1C4C87;
+	border: 2px solid #fff;
 	border-radius: 4px;
 	outline: none;
 	padding: 5px;
@@ -890,13 +901,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
   #topButton:hover,
   #topButton:focus{
 		font-weight: 600;
-	color: #1157AC;
-	background-color: white;
-	border: 2px solid #1157AC;
+	color: #1C4C87;
+	background-color: #fff;
+	border: 2px solid #1C4C87;
 }
 #topButton:active{
-	color: white;
-	background-color: #1157AC;
+	color: #fff;
+	background-color: #1C4C87;
 	border: 2px solid transparent;
 }
 
