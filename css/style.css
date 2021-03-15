@@ -150,7 +150,7 @@ footer{
 		padding: 1em;
 	}	
 }
-/* The makes overlay disappear above 992 */
+/* Makes overlay disappear above 992 */
 @media only screen and (min-width: 992px){
 	html{
 		background: #fff !important;
