@@ -111,7 +111,7 @@ main{
 @media only screen and (min-width: 768px){
 	main{
 		font-size: 1em;
-		padding: 1.5em 1em 0;
+		padding: 1.5em 1em 1em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -121,7 +121,7 @@ main{
 }
 .cluster main{
 	position: relative;
-	margin: 41px auto 0;
+	margin: 47px auto 0;
 	padding: 0 .5em 0;
 }
 @media only screen and (min-width: 480px){
@@ -150,6 +150,11 @@ main{
 	border: 1px solid #322d29;
 	border-radius: 5px;
 	margin: 1em 0 2em;
+}
+@media only screen and (min-width: 480px){
+	.cluster main section{
+		margin: .5em 0 2em;
+	}
 }
 @media only screen and (min-width: 992px){
 	.cluster main section{
@@ -432,10 +437,6 @@ nav#nav1 ul{
 	nav#nav1 ul{
 		padding: 0 1em;
 		max-width: 1366px;
-	}
-}
-@media only screen and (min-width: 1024px){
-	nav#nav1 ul{
 		justify-content: space-evenly;
 	}
 }
