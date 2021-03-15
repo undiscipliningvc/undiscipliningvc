@@ -488,6 +488,9 @@ nav#nav1 ul li:not(:first-child):not(:last-child){
 		visibility: visible;
 	}
 }
+nav#nav1 li a{
+	white-space: nowrap;
+}
 nav#nav1 li:not(:first-child):not(:last-child) a{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
