@@ -74,6 +74,15 @@ body{
 .text-container{
 	width: 100%;
 }
+header{
+	position: relative;
+	padding: 0 .5em;
+}
+@media only screen and (min-width: 480px){
+	header{
+		padding: .5em 1em 0;
+	}
+}
 main{
 	font-size: 100%;
 	text-align: center;
@@ -98,29 +107,69 @@ main{
 		font-size: 1.05em;
 	}
 }
-main section p,
-main section ol,
-main section ul{
-	text-align: left;
+.cluster main{
+	padding: 0 .5em;
+	max-width: 100%;
+	overflow: hidden;
 }
-header{
+header,
+.cluster main{
 	margin: 41px auto 0;
-	position: relative;
 }
 @media only screen and (min-width: 480px){
-	header{
+	header,
+	.cluster main{
 		margin-top: 47px;
+	}
+	.cluster main{
+		padding: 0 1em;
 	}
 }
 @media only screen and (min-width: 768px){
-	header{
+	header,
+	.cluster main{
 		margin-top: 51px;
 	}
 }
 @media only screen and (min-width: 992px){
-	header{
+	header,
+	.cluster main{
 		margin-top: 63px;
 	}
+	.cluster main{
+		display: flex;
+	}
+}
+.cluster section{
+	border: 1px solid #322d29;
+	border-radius: 5px;
+	margin: .75em 0 1em;
+	display: inline-block;
+	vertical-align: top;
+	flex-flow: row wrap;
+	flex: 1 200px;
+	height: 100%;
+}
+@media only screen and (min-width: 768px){
+	.cluster section{
+		margin: 1.5em 0 .5em;
+		max-width: 650px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.cluster section{
+		margin: 1em;
+		width: calc(50% - 38px);
+		max-width: 442px;
+	}
+}
+.cluster section p{
+	padding: 0 1em;
+}
+main section p,
+main section ol,
+main section ul{
+	text-align: left;
 }
 .organizers{
 	margin-bottom: 1em;
@@ -140,17 +189,40 @@ header{
 	}
 }
 footer{
+	font-size: .9em;
 	text-align: center;
 	line-height: 1.6em;
 	color: #fff;
-	background: #1C4C87;
+	background: #191716;
 	margin: .75em auto 0;
-	padding: .25em 1em;
+	padding: .25em 1em 1em 1em;
 }
 @media only screen and (min-width: 768px){
 	footer{
+		font-size: 1em;
 		margin: 1em auto 0;
-		padding: .5em 1em;
+		padding: .5em 1em 1em 1em;
+	}
+}
+footer p .site-detail{
+	line-height: 1.875em;
+	padding: 0 .2em;
+}
+footer p .site-detail::after{
+	content: ' | ';
+	padding-left: .5em;
+}
+footer p .site-detail:last-child::after{
+	content: '';
+}
+@media only screen and (min-width: 480px){
+	footer p .site-detail{
+		padding: 0 .3em;
+	}
+}
+@media only screen and (min-width: 768px){
+	footer p .site-detail{
+		white-space: nowrap;
 	}
 }
 /* Makes overlay disappear above 992 */
@@ -219,12 +291,27 @@ h2, h3, h4{
 	text-align: center;
 }
 h2{
-	font-size: 1.1em;
+	font-size: 1.2em;
+}
+.cluster h2,
+.cluser h2{
+	font-weight: 700;
+	font-variant: small-caps;
+	color: #fff;
+	background: #5c7d62;
+	border-bottom: 1px solid #322d29;
+	border-radius: 4px 4px 0 0;
+	margin-top: 0;
+	padding: .5em 0;
+}
+.cluster section:first-of-type h2{
+	font-variant: normal;
 }
 h3{
 	font-size: 1.1em;
 }
 h4{
+	font-size: 1.0em;
 	font-weight: 600;
 }
 .details h4{
@@ -348,7 +435,7 @@ nav#nav1 ul{
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 ul{
-		padding: 0 1em 0 0;
+		padding: 0 1em 0 .5em;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -374,7 +461,7 @@ nav#nav1 li:nth-child(8){
 	position: relative;
 }
 nav#nav1 h1{
-	font-size: 1.4em;
+	font-size: 1.3em;
 	white-space: nowrap;
 	border: 2px solid transparent;
 	padding: 7px 5px 0;
@@ -618,12 +705,14 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 
 
-
-
-
 /* 1.4. Carousel */
 
 /* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
+@media only screen and (min-width: 992px){
+	.carousel{
+		margin-top: .5em;
+	}
+}
 .carousel .carousel-inner{
 	margin: 0 auto;
 	max-width: 900px;
@@ -877,25 +966,26 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	padding: 5px;
 	position: fixed;
 	right: 20px;
-	bottom: 110px;
+	bottom: 115px;
 	z-index: 99;
 	display: none;
 	visibility: hidden;
   }
 @media only screen and (min-width: 480px){
 	#topButton{
-		bottom: 84px;
+		bottom: 88px;
 	}
 }
 @media only screen and (min-width: 768px){
 	#topButton{
 		font-size: .95em;
-		bottom: 66px;
+		bottom: 101px;
 	}
 }
 @media only screen and (min-width: 992px){
 	#topButton{
-		right: 120px;
+		right: 110px;
+		bottom: 73px;
 	}
 }
   #topButton:hover,
