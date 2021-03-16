@@ -53,8 +53,8 @@ document.documentElement.scrollTop = 0;
 // Adapted from https://blog.avada.io/css/sidebar-menus/#animated-sidebar-menu-ephraim-sangma
 function openSlideMenu () {
   document.getElementsByTagName("html")[0].style.background = "#595959";
-  document.getElementById("nav2").setAttribute("style", "margin-right: 180px; display: block; visibility: visible;");
-  document.getElementById('overlay-menu').style.width = '180px';
+  document.getElementById("nav2").setAttribute("style", "margin-right: 200px; display: block; visibility: visible;");
+  document.getElementById('overlay-menu').style.width = '200px';
   const elements = ["nav0", "nav1", "header", "main", "footer"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {
