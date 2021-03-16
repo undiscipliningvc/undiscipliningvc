@@ -11,7 +11,7 @@ Table of Contents
 
 ** 1.0. Main CSS **
 1.1. Main Components
-1.2. Headings, Images, Anchors
+1.2. Anchors, Headings, Images
 1.3.1. Navigation: Main
 1.3.2. Overlay
 1.4. Carousel 
@@ -142,7 +142,11 @@ main{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	margin: 1em 0 2em;
+	margin: 1em auto 2em;
+}
+.cluster main section div{
+	text-align: center;
+	display: inline-block;
 }
 @media only screen and (min-width: 480px){
 	.cluster main section{
@@ -234,7 +238,7 @@ footer p .site-detail:last-child::after{
 }
 
 
-/* 1.2. Headings, Images, Anchors */
+/* 1.2. Anchors, Headings, Images */
 *:focus{
 	outline: 0 none;
 }
@@ -258,12 +262,30 @@ footer a:focus{
 	background-color: #fff;
 	transition: 0.2s;
 }
-a img{
-	border: 3px #fff solid;
+[id]:target{
+	margin-top: -41px;
+	border-top: 41px solid transparent;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
 }
-a:hover img,
-a:focus img{
-	border: 3px #1157AC solid;
+@media only screen and (min-width: 480px){
+	[id]:target{
+		margin-top: -47px;
+		border-top: 47px solid transparent;
+	}
+}
+@media only screen and (min-width: 768px){
+	[id]:target{
+		margin-top: -51px;
+		border-top: 51px solid transparent;
+	}
+}
+@media only screen and (min-width: 992px){
+	[id]:target{
+		margin-top: -58px;
+		border-top: 58px solid transparent;
+	}
 }
 h1,
 h2,
@@ -323,6 +345,13 @@ h4{
 img{
 	font-weight: 300;
 	width: 100%;
+}
+a img{
+	border: 3px #fff solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #1157AC solid;
 }
 #call img{
 	width: 100%;
@@ -1021,4 +1050,14 @@ ol.mission{
 	ol.mission{
 		margin: 0 2em;
 	}
+}
+.cluster main section div ol{
+	line-height: 1.875em;
+	padding: 0 0 1em 0;
+}
+/* .cluster main section div ol li{
+	margin-bottom: .5em;
+} */
+.cluster main section div ol li ol{
+	padding-left: 1em;
 }
