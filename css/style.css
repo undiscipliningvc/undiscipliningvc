@@ -101,7 +101,7 @@ main{
 	line-height: 1.6em;
 	margin: 0 auto;
 	padding: 0 1em 1em;
-	max-width: 575px;
+	max-width: 650px;
 }
 @media only screen and (min-width: 768px){
 	main{
@@ -423,13 +423,11 @@ nav#nav1 ul{
 @media only screen and (min-width: 480px){
 	nav#nav1 ul{
 		padding: 0 1em 0 .5em;
-		justify-content: flex-end;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 ul{
 		padding: 0 1em 0 .5em;
-		justify-content: space-between;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -441,20 +439,6 @@ nav#nav1 ul{
 }
 nav#nav1 li{
 	display: inline-block;
-}
-@media only screen and (min-width: 480px){
-	nav#nav1 li:nth-child(1){
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, 0);
-	}
-}
-@media only screen and (min-width: 768px){
-	nav#nav1 li:nth-child(1){
-		position: unset;
-		left: unset;
-		transform: translate(0, 0);
-	}
 }
 nav#nav1 li:nth-child(8){
 	position: relative;
@@ -476,21 +460,16 @@ nav#nav1 a:focus-within h1{
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 h1{
-		font-size: 1.6em;
+		font-size: 1.7em;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 h1{
-		font-size: 1.9em;
-	}
-}
-@media only screen and (min-width: 992px){
-	nav#nav1 h1{
-		font-size: 2.1em;
+		font-size: 2em;
 	}
 }
 nav#nav1 ul li:not(:first-child):not(:last-child){
-	font-size: 1em;
+	font-size: .95em;
 	font-weight: 600;
 	display: none;
 	visibility: hidden;
