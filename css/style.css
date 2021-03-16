@@ -473,7 +473,7 @@ nav#nav1 li:nth-child(8){
 	position: relative;
 }
 nav#nav1 h1{
-	font-size: 1.3em;
+	font-size: 1.275em;
 	white-space: nowrap;
 	border: 2px solid transparent;
 	padding: 7px 5px 0;
@@ -560,17 +560,17 @@ nav#nav1 li button:focus-within{
 	transition: 0.2s;
 }
 nav#nav1 li button i{
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: #191716;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i{
-		font-size: 1.3em;
+		font-size: 1.7em;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 li button i{
-		font-size: 1.5em;
+		font-size: 1.9em;
 	}
 }
 nav#nav1 li button:hover i,
@@ -662,18 +662,19 @@ nav#nav2 #overlay-menu li button.close{
 	padding: 7px 8px 5px;
 	position: absolute;
 	top: 7px;
-	right: 9px;
+	right: 10px;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
 		padding: 6px 8px;
-		top: 11px;
-		right: 17px;
+		top: 8px;
+		right: 18px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
-		top: 12px;
+		top: 9px;
+		right: 40px;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover,
@@ -683,16 +684,16 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 }
 nav#nav2 #overlay-menu li button.close i{
 	color: #191716;
-	font-size: 1.1em;
+	font-size: 1.3em;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.3em;
+		font-size: 1.7em;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.5em;
+		font-size: 1.9em;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
