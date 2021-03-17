@@ -27,12 +27,17 @@ Table of Contents
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
 Black: #191716;
+Lighter Black: #322d29;
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
 Dark Blue: #1C4C87;
 Light Blue: #1157AC;
 Gray: #E3E3E3;
+Rusty Gray: #595959;
 Darker Gray: #8c8c8c;
+Green: #5c7d62;
+Red: #944340;
+Yellow: #e8e2c9;
 */
 
 /** z-index **/
