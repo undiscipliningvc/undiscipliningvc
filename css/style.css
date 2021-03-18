@@ -34,8 +34,8 @@ Black-Gray: rgba(0, 0, 0, 0.65);
 Dark Blue: #1C4C87;
 Light Blue: #1157AC;
 Gray: #E3E3E3;
-Rusty Gray: #595959;
 Darker Gray: #8c8c8c;
+Rusty Gray: #595959;
 Green: #5c7d62;
 Red: #944340;
 Yellow: #e8e2c9;
@@ -256,21 +256,24 @@ hr{
 @media only screen and (min-width: 992px){
 	.cluster main section{
 		margin: 1em;
-		/* width: calc(50% - 2em - 2px); */
 		max-width: 500px;
 		flex: 1 0 50%;
 	}
-	.cluster main section:first-child{
+		.cluster main section:first-child{
+			max-width: 300px;
+			flex: 1 0 20%;
+			position: relative;
+	}
+		.cluster main section:nth-child(2){
+		flex: 1 0 80%;
 		max-width: 700px;
-		flex: 0 1 100%;
 	}
 }
 .cluster main section h2{
-	font-size: 1.25em;
+	font-size: 1.2em;
 	font-weight: 700;
 	font-variant: small-caps;
 	color: #fff;
-	background: #1C4C87;
 	border-bottom: 1px solid #322d29;
 	border-radius: 4px 4px 0 0;
 	-webkit-border-radius: 4px 4px 0 0;
@@ -278,23 +281,29 @@ hr{
 	margin-top: 0;
 	padding: .5em 0;
 }
-.cluster main section:first-child h2{
-	background: #5c7d62;
-	font-variant: normal;
+.cluster main section h2#level-2-title{
+	font-size: 1.8em;
+	white-space: nowrap;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	/* background: #737373; */
+	margin: 0;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .cluster main section p{
 	padding: 0 1em;
 }
-.cluster main section div p{
-	padding: 0;
+/* Cluster-specific colors */
+.zoomcasts.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #5c7d62 50%);
 }
-.cluster main section div{
-	text-align: center;
-	display: inline-block;
-}
-.cluster main section div ol{
-	line-height: 1.875em;
-	padding: 0 0 1em 1em;
+.zoomcasts.cluster main section h2{
+	color: white;
+	background: #5c7d62;
 }
 
 
