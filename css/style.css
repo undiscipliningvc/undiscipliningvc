@@ -318,26 +318,70 @@ Gray: #595959;
 .cluster main section p{
 	padding: 0 1em;
 }
+.cluster main section ul{
+	list-style: none;
+	margin: 0 1em 1em;
+	padding: 0;
+}
+.cluster main section ul li{
+	line-height: 0;
+	margin: 1em 0;
+	position: relative;
+}
+.cluster main section ul li:hover,
+.cluster main section ul li:focus-within{
+	outline: 3px solid #1C4C87;
+}
+.cluster main section ul li img{
+	background: #E3E3E3;
+	max-width: 100%;
+	min-height: 250px; /* Adjust */
+}
+.cluster main section ul li a img{
+	border: none;
+}
+.cluster main section ul li a:hover img,
+.cluster main section ul li a:focus img{
+	border: none;
+	opacity: .7;
+}
+.cluster main section ul li span{
+	color: #fff;
+	background-color: #595959;
+	line-height: 1.5em;
+	text-align: center;
+	width: 100%;
+	/* min-height: 20%; */
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: .83;
+}
+.cluster main section ul li a:hover,
+.cluster main section ul li a:focus{
+	background: none;
+}
+/*****/
 .content header{
 	font-size: 1.1em;
-	margin: calc(41px + .75em) 1em 0;
+	margin: calc(41px + .5em) 1em 0;
 	height: 20px;
 }
 @media only screen and (min-width: 480px){
 	.content header{
-		margin: calc(47px + .75em) 1em 0;
+		margin: calc(47px + .5em) 1em 0;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content header{
-		margin: calc(51px + .75em) auto 0;
-		max-width: 650px;
+		margin: calc(51px + .5em) auto 0;
+		width: 87%;
 	}
 }
 @media only screen and (min-width: 992px){
 	.content header{
-		margin: calc(63px + .75em) auto 0;
-		max-width: 900px;
+		margin: calc(63px + .5em) auto 0;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -692,6 +736,7 @@ nav#nav1 li button:focus i{
 	color: #fff;
 }
 @media only screen and (min-width: 992px){
+	nav#nav1 li:last-child,
 	nav#nav1 li button{
 		display: none;
 		visibility: hidden;
@@ -1094,9 +1139,9 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	/* box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); */
 	width: 60px;
 	height: 40px;
 	z-index: 3;
