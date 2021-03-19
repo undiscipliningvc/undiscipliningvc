@@ -210,8 +210,20 @@ hr{
 }
 
 
-/* 1.2. Cluster Pages */
+/* 1.2. Cluster and Content Pages */
 
+/* Section-specific colors */
+.zoomcasts.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #5c7d62 50%);
+}
+.zoomcasts.cluster main section h2{
+	color: white;
+	background: #5c7d62;
+}
+.zoomcasts.content header{
+	background: #5c7d62;
+}
+/* ----------------------- */
 .cluster main{
 	margin: 47px auto 0;
 	padding: 0 .5em 0;
@@ -299,14 +311,46 @@ hr{
 .cluster main section p{
 	padding: 0 1em;
 }
-/* Cluster-specific colors */
-.zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #5c7d62 50%);
+.content header{
+	font-size: 1.1em;
+	margin: calc(41px + .75em) 1em 0;
+	height: 20px;
 }
-.zoomcasts.cluster main section h2{
-	color: white;
-	background: #5c7d62;
+@media only screen and (min-width: 480px){
+	.content header{
+		margin: calc(47px + .75em) 1em 0;
+	}
 }
+@media only screen and (min-width: 768px){
+	.content header{
+		margin: calc(51px + .75em) auto 0;
+		max-width: 650px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.content header{
+		margin: calc(63px + .75em) auto 0;
+		max-width: 900px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.content header{
+		max-width: 1000px;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.content header{
+		max-width: 1050px;
+	}
+}
+.content main{
+	padding: .5em 1em 1em;
+}
+@media only screen and (min-width: 768px){
+	.content main{
+		padding: 1em 1em 1em;
+	}
+}	
 
 
 /* 1.3. Anchors, Headings, Images */
