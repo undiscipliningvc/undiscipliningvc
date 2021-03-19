@@ -11,7 +11,7 @@ if ("serviceWorker" in navigator) {
 // Adds border to sticky nav after scroll down
 $(window).scroll(function () {
   var $heightScrolled = $(window).scrollTop();
-  var $defaultHeight = 400;
+  var $defaultHeight = 300;
   if ($heightScrolled < $defaultHeight) {
     $('#nav1').removeClass("borderBottom")
     // $('#nav2').addClass("a")
