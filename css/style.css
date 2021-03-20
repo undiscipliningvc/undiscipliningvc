@@ -223,12 +223,12 @@ Gray: #595959;
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #94433f 50%);
+	background: linear-gradient(to left top, #fff 50%, #c3503b 50%);
 }
 .zoomcasts.content header,
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #94433f;
+	background: #c3503b;
 }
 /* ----------------------- */
 .cluster main{
@@ -318,34 +318,31 @@ Gray: #595959;
 .cluster main section p{
 	padding: 0 1em;
 }
-.cluster main section ul{
-	list-style: none;
-	margin: 0 1em 1em;
-	padding: 0;
-}
-.cluster main section ul li{
+.cluster main section div{
 	line-height: 0;
-	margin: 1em 0;
+	margin: 1em;
+	padding: 0;
+	overflow: hidden;
 	position: relative;
 }
-.cluster main section ul li:hover,
-.cluster main section ul li:focus-within{
+.cluster main section div:hover,
+.cluster main section div:focus-within{
 	outline: 3px solid #1C4C87;
 }
-.cluster main section ul li img{
+.cluster main section div img{
 	background: #E3E3E3;
 	max-width: 100%;
 	min-height: 250px; /* Adjust */
 }
-.cluster main section ul li a img{
+.cluster main section div a img{
 	border: none;
 }
-.cluster main section ul li a:hover img,
-.cluster main section ul li a:focus img{
+.cluster main section div a:hover img,
+.cluster main section div a:focus img{
 	border: none;
 	opacity: .7;
 }
-.cluster main section ul li span{
+.cluster main section div span{
 	color: #fff;
 	background-color: #595959;
 	line-height: 1.5em;
@@ -358,8 +355,8 @@ Gray: #595959;
 	transform: translate(-50%, 0);
 	opacity: .83;
 }
-.cluster main section ul li a:hover,
-.cluster main section ul li a:focus{
+.cluster main section div a:hover,
+.cluster main section div a:focus{
 	background: none;
 }
 /*****/
@@ -386,23 +383,23 @@ Gray: #595959;
 }
 @media only screen and (min-width: 1200px){
 	.content header{
-		max-width: 1000px;
+		max-width: 1100px;
 	}
 }
 @media only screen and (min-width: 1366px){
 	.content header{
-		max-width: 1050px;
+		max-width: 1200px;
 	}
 }
 .content main{
 	text-align: left;
 	padding: .5em 1em 1em;
 }
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
 	.content main{
 		padding: 1em 1em 1em;
 	}
-}
+} */
 .content h2{
 	font-size: 1.9em;
 	color: #191716;
@@ -905,28 +902,33 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 @media screen and (min-width:320px){
 	.carousel .carousel-item .carousel-image{
-		min-height: 183px;
+		min-height: 170px;
 	}
 }
 @media screen and (min-width:480px){
 	.carousel .carousel-item .carousel-image{
-		min-height: 277px;
+		min-height: 250px;
 	}
 }
 @media screen and (min-width:768px){
 	.carousel .carousel-item .carousel-image{
-		min-height: 446px;
+		min-height: 392px;
 	}
 }
 @media screen and (min-width:992px){
 	.carousel .carousel-item .carousel-image{
-		min-height: 432px;
+		min-height: 404px;
 	}
-}	
+}
+@media screen and (min-width:1200px){
+	.carousel .carousel-item .carousel-image{
+		min-height: 495px;
+	}
+}
 .carousel .carousel-item .carousel-image img{
 	width: 100% !important;
 	height: 100%;
-	max-height: 183px;
+	max-height: 170px;
 	object-fit:cover;
 	-o-object-fit: cover;
 	overflow: hidden;
@@ -934,17 +936,22 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 @media screen and (min-width:480px){
 	.carousel .carousel-item .carousel-image img{
-		max-height: 277px;
+		max-height: 250px;
 	}
 }
 @media screen and (min-width:768px){
 	.carousel .carousel-item .carousel-image img{
-		max-height: 446px;
+		max-height: 392px;
 	}
 }
 @media screen and (min-width:992px){
 	.carousel .carousel-item .carousel-image img{
-		max-height: 432px;
+		max-height: 404px;
+	}
+}
+@media screen and (min-width:1200px){
+	.carousel .carousel-item .carousel-image img{
+		max-height: 495px;
 	}
 }
 /* Carousel caption (also regular images) */
@@ -1135,7 +1142,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	opacity: 0.7;
 }
 .youtube .play-button{
-	background-color: #94433f;
+	background-color: #c3503b;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
