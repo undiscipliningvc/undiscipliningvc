@@ -332,7 +332,27 @@ Gray: #595959;
 .cluster main section div img{
 	background: #E3E3E3;
 	max-width: 100%;
-	min-height: 250px; /* Adjust */
+	min-height: 150px;
+}
+@media only screen and (min-width: 480px){
+	.cluster main section div img{
+		min-height: 230px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.cluster main section div img{
+		min-height: 375px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.cluster main section div img{
+		min-height: 229px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.cluster main section div img{
+		min-height: 263px;
+	}
 }
 .cluster main section div a img{
 	border: none;
