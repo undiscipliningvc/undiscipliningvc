@@ -508,8 +508,8 @@ h4{
 /*logo*/
 @font-face {
   font-family: 'jacksilverregular';
-  src: url('../fonts/jacksilver-webfont.woff2') format('woff2'),
-      url('../fonts/jacksilver-webfont.woff') format('woff');
+  src: url('/fonts/jacksilver-webfont.woff2') format('woff2'),
+      url('/fonts/jacksilver-webfont.woff') format('woff');
   font-weight: normal;
 	font-style: normal;
 	font-display: block;
