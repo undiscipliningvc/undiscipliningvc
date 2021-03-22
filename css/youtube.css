@@ -31,7 +31,9 @@
 }
 .youtube img{
 	width: 100%;
-	top: -16.82%;
+	height: 100%;
+	/* top: -16.82%; */
+	top: 0;
 	left: 0;
 }
 .youtube:hover img,
@@ -46,13 +48,14 @@
 	/* box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); */
-	width: 60px;
+	width: 53.3px;
 	height: 40px;
+	opacity: .75;
 	z-index: 3;
 }
 @media only screen and (min-width: 480px){
 	.youtube .play-button{
-		width: 90px;
+		width: 80px;
 		height: 60px;
 	}
 }
