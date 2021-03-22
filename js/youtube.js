@@ -11,7 +11,8 @@ var player; //current video player object
 
   for (var i = 0; i < youtube.length; i++) {
 
-    var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/hqdefault.jpg";
+    // var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/hqdefault.jpg";
+    var source = "/img/zoomcasts/" + youtube[i].dataset.id + "-663px.jpg"; // uses local image
     title = youtube[i].getAttribute("data-title");
     alt = youtube[i].getAttribute("data-alt");
 
