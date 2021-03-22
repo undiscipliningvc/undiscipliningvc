@@ -31,8 +31,7 @@
 }
 .youtube img{
 	width: 100%;
-	top: 0%;
-	/* top: -16.82%; */
+	top: -16.82%;
 	left: 0;
 }
 .youtube:hover img,
