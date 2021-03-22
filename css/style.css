@@ -341,7 +341,7 @@ Gray: #595959;
 }
 @media only screen and (min-width: 768px){
 	.cluster main section div img{
-		min-height: 375px;
+		min-height: 370px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -918,6 +918,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 .carousel .carousel-item .carousel-image img{
 	width: 100% !important;
+	min-height: calc(178px * .95);
 	max-height: calc(178px * .95);
 	object-fit:cover;
 	-o-object-fit: cover;
@@ -926,31 +927,37 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 @media screen and (min-width:480px){
 	.carousel .carousel-item .carousel-image img{
+		min-height: calc(263px * .95);
 		max-height: calc(263px * .95);
 	}
 }
 @media screen and (min-width:624px){
 	.carousel .carousel-item .carousel-image img{
+		min-height: calc(348px * .95);
 		max-height: calc(348px * .95);
 	}
 }
 @media screen and (min-width:768px){
 	.carousel .carousel-item .carousel-image img{
+		min-height: calc(411px * .95);
 		max-height: calc(411px * .95);
 	}
 }
 @media screen and (min-width:992px){
 	.carousel .carousel-item .carousel-image img{
+		min-height: calc(423px * .95);
 		max-height: calc(423px * .95);
 	}
 }
 @media screen and (min-width:1200px){
 	.carousel .carousel-item .carousel-image img{
+		min-height: calc(515px * .95);
 		max-height: calc(515px * .95);
 	}
 }
 @media screen and (min-width:1366px){
 	.carousel .carousel-item .carousel-image img{
+		min-height: calc(529px * .95);
 		max-height: calc(529px * .95);
 	}
 }
