@@ -1,0 +1,58 @@
+/* 1.2.2. Content Pages */
+
+/* Section-specific colors */
+/* 
+Zoomcasts (red): #94433f;
+Green: #5c7d62;
+Yellow: #f2da87;
+Blue: #1457af;
+Light Blue: #b9d6fa;
+Gray: #595959;
+*/
+/* ----------------------- */
+.zoomcasts.content header{
+	background: #c3503b;
+}
+/* ----------------------- */
+.content header{
+	font-size: 1.1em;
+	margin: calc(41px + .3em) auto 0;
+	padding: 0;
+	height: 20px;
+	max-width: calc(100% - 26px);
+}
+@media only screen and (min-width: 480px){
+	.content header{
+		margin: calc(47px + .3em) auto 0;
+		width: calc(100% - 30px);
+		max-width: 700px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.content header{
+		margin: calc(51px + .3em) auto 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.content header{
+		margin: calc(63px + .3em) auto 0;
+		width: calc(100% - 46px);
+		max-width: 1366px;
+	}
+}
+.content main{
+	text-align: left;
+	padding: .5em 1em 1em;
+}
+.content h2{
+	font-size: 1.9em;
+	color: #191716;
+	line-height: 1.3em;
+	/* margin: 0; */
+	margin: .25em 0 .5em;
+}
+@media only screen and (min-width: 768px){
+	.content h2{
+		margin: .5em 0 1em;
+	}
+}
