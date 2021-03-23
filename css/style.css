@@ -382,26 +382,26 @@ Gray: #595959;
 /*****/
 .content header{
 	font-size: 1.1em;
-	margin: calc(41px + .4em) auto 0;
+	margin: calc(41px + .3em) auto 0;
 	padding: 0;
 	height: 20px;
 	max-width: calc(100% - 26px);
 }
 @media only screen and (min-width: 480px){
 	.content header{
-		margin: calc(47px + .5em) auto 0;
+		margin: calc(47px + .3em) auto 0;
 		width: calc(100% - 30px);
 		max-width: 700px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content header{
-		margin: calc(51px + .5em) auto 0;
+		margin: calc(51px + .3em) auto 0;
 	}
 }
 @media only screen and (min-width: 992px){
 	.content header{
-		margin: calc(63px + .5em) auto 0;
+		margin: calc(63px + .3em) auto 0;
 		width: calc(100% - 46px);
 		max-width: 1366px;
 	}
