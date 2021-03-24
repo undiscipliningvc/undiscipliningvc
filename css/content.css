@@ -47,8 +47,7 @@ Gray: #595959;
 .content h2{
 	font-size: 1.9em;
 	color: #191716;
-	line-height: 1.3em;
-	/* margin: 0; */
+	line-height: 1.5em;
 	margin: .25em 0 .5em;
 }
 @media only screen and (min-width: 768px){
