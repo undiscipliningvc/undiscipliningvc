@@ -32,7 +32,7 @@ Black: #191716;
 Lighter Black: #322d29;
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
-Dark Blue: #1C4C87;
+Dark Blue: #385488;
 Light Blue: #1157AC;
 Gray: #E3E3E3;
 Darker Gray: #8c8c8c;
@@ -274,7 +274,7 @@ footer a:focus{
 h1,
 h2,
 h3{
-	color: #1C4C87;
+	color: #385488;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -392,7 +392,7 @@ nav#nav1{
 }
 nav#nav1 .current{
 	text-decoration: underline;
-	text-decoration-color: #1C4C87;
+	text-decoration-color: #385488;
 	text-decoration-thickness: 3px;
 }
 nav#nav1 a:hover .current,
@@ -488,7 +488,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #1C4C87;
+	background-color: #385488;
 	transition: 0.2s;
 }
 nav#nav1 li a:hover,
@@ -523,7 +523,7 @@ nav#nav1 li button#fallback-button{
 }
 nav#nav1 li button:hover,
 nav#nav1 li button:focus-within{
-	background-color: #1C4C87;
+	background-color: #385488;
 	transition: 0.2s;
 }
 nav#nav1 li button i{
@@ -592,7 +592,7 @@ nav#nav2 #overlay-menu a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #1C4C87;
+	background-color: #385488;
   transition: 0.2s;
 }
 nav#nav2 #overlay-menu ul{
@@ -647,7 +647,7 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #1C4C87;
+	background-color: #385488;
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
@@ -687,7 +687,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .skipcontrols a{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #1C4C87;
+	color: #385488;
 	background: #E3E3E3;
 	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
@@ -726,7 +726,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	cursor: pointer;
 	font-size: .95em;
 	color: #fff;
-	background-color: #1C4C87;
+	background-color: #385488;
 	border: 2px solid #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -759,13 +759,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
   #topButton:hover,
   #topButton:focus{
 		font-weight: 600;
-	color: #1C4C87;
+	color: #385488;
 	background-color: #fff;
-	border: 2px solid #1C4C87;
+	border: 2px solid #385488;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #1C4C87;
+	background-color: #385488;
 	border: 2px solid transparent;
 }
 
