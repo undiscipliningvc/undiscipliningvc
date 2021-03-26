@@ -112,13 +112,22 @@ main{
 }
 @media only screen and (min-width: 768px){
 	main{
-		padding: 1.5em 1em 1em;
+		padding: 1.25em 1em 1em;
 	}
 }
 main section p,
 main section ol,
 main section ul{
 	text-align: left;
+}
+.organizers{
+	margin-bottom: .5em;
+	display: inline-block;
+}
+@media only screen and (min-width: 992px){
+	.organizers{
+		margin-bottom: 1.25em;
+	}
 }
 ol.mission{
 	margin: 0 1em;
@@ -127,15 +136,6 @@ ol.mission{
 @media (min-width: 768px){
 	ol.mission{
 		margin: 0 2em;
-	}
-}
-.organizers{
-	margin-bottom: 1em;
-	display: inline-block;
-}
-@media only screen and (min-width: 768px){
-	.organizers{
-		margin-bottom: 2em;
 	}
 }
 #call{
