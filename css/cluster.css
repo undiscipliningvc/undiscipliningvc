@@ -5,17 +5,25 @@
 Zoomcasts (red): #94433f;
 Green: #5c7d62;
 Yellow: #f2da87;
-Blue: #1457af;
+Blue: #1157AC;
 Light Blue: #b9d6fa;
 Gray: #595959;
+#385488
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #c3503b 50%);
+	background: linear-gradient(to left top, #fff 50%, #d5593e 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #c3503b;
+	background: #d5593e;
+}
+.lesson-plans.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #3f90da 50%);
+}
+.lesson-plans.cluster main section h2{
+	color: white;
+	background: #3f90da;
 }
 /* ----------------------- */
 .cluster main{
@@ -48,6 +56,7 @@ Gray: #595959;
 	}
 }
 .cluster main section{
+	text-align: center;
 	border: 1px solid #322d29;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -107,6 +116,7 @@ Gray: #595959;
 }
 .cluster main section div{
 	line-height: 0;
+	background: #E3E3E3;
 	margin: 1em;
 	padding: 0;
 	overflow: hidden;
@@ -114,7 +124,7 @@ Gray: #595959;
 }
 .cluster main section div:hover,
 .cluster main section div:focus-within{
-	outline: 3px solid #1C4C87;
+	outline: 3px solid #385488;
 }
 .cluster main section div img{
 	background: #E3E3E3;
@@ -165,4 +175,9 @@ Gray: #595959;
 .cluster main section div a:hover,
 .cluster main section div a:focus{
 	background: none;
+}
+.cluster main section ol{
+	display: inline-block;
+	margin: 0 auto 1em;
+	padding: 0;
 }
