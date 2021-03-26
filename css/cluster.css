@@ -2,28 +2,22 @@
 
 /* Section-specific colors */
 /* 
-Zoomcasts (red): #94433f;
-Green: #5c7d62;
-Yellow: #f2da87;
-Blue: #1157AC;
-Light Blue: #b9d6fa;
-Gray: #595959;
-#385488
+
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #d5593e 50%);
+	background: linear-gradient(to left top, #fff 50%, #000 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #d5593e;
+	background: #000;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #3f90da 50%);
+	background: linear-gradient(to left top, #fff 50%, #000 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #3f90da;
+	background: #000;
 }
 /* ----------------------- */
 .cluster main{
@@ -161,7 +155,7 @@ Gray: #595959;
 }
 .cluster main section div span{
 	color: #fff;
-	background-color: #595959;
+	background-color: #4b4b46;
 	line-height: 1.5em;
 	text-align: center;
 	width: 100%;

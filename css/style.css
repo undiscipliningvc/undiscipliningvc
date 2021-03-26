@@ -28,18 +28,16 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-Black: #2c293d;
-Lighter Black: #322d29;
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
+Black: #2c293d;
+Lighter Black: #322d29;
 Dark Blue: #385488;
 Light Blue: #1157AC;
 Gray: #E3E3E3;
 Darker Gray: #8c8c8c;
 Rusty Gray: #4b4b46;
-Green: #5c7d62;
-Red: #944340;
-Yellow: #e8e2c9;
+White: #fff;
 */
 
 /** z-index **/
@@ -325,7 +323,7 @@ a:focus img{
 	border: 3px #1157AC solid;
 }
 .image-border{
-	border: 1px solid gray;
+	border: 1px solid #8c8c8c;
 }
 
 

@@ -2,18 +2,14 @@
 
 /* Section-specific colors */
 /* 
-Zoomcasts (red): #94433f;
-Green: #5c7d62;
-Yellow: #f2da87;
-Blue: #1457af;
-Gray: #4b4b46;
+
 */
 /* ----------------------- */
 .zoomcasts.content header{
-	background: #c3503b;
+	background: #000;
 }
 .lesson-plans.content header{
-	background: #1457af;
+	background: #000;
 }
 /* ----------------------- */
 .content header{
