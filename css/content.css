@@ -13,6 +13,9 @@ Gray: #595959;
 .zoomcasts.content header{
 	background: #c3503b;
 }
+.lesson-plans.content header{
+	background: #1457af;
+}
 /* ----------------------- */
 .content header{
 	font-size: 1.1em;
@@ -44,14 +47,28 @@ Gray: #595959;
 	text-align: left;
 	padding: .5em 1em 1em;
 }
-.content h2{
+.content main h2{
 	font-size: 1.9em;
 	color: #191716;
 	line-height: 1.5em;
 	margin: .25em 0 .5em;
 }
 @media only screen and (min-width: 768px){
-	.content h2{
+	.content main h2{
 		margin: .5em 0 1em;
 	}
+}
+.content main summary,
+.content main section{
+	margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px){
+	.content main summary,
+	.content main section{
+		margin-bottom: 3em;
+	}
+}
+.content main section:first-of-type,
+.content main section:last-of-type{
+	margin-bottom: 0;
 }
