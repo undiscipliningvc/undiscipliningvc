@@ -24,7 +24,7 @@
 	display: block;
 }
 .carousel .carousel-items{
-	border: solid 1px gray;
+	border: solid 1px #595959;
 }
 .carousel .carousel-items.focus{
 	border-color: #fff;

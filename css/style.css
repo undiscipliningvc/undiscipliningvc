@@ -36,7 +36,7 @@ Dark Blue: #385488;
 Light Blue: #1157AC;
 Gray: #E3E3E3;
 Darker Gray: #8c8c8c;
-Rusty Gray: #595959;
+Rusty Gray: #4b4b46;
 Green: #5c7d62;
 Red: #944340;
 Yellow: #e8e2c9;
@@ -151,7 +151,7 @@ footer{
 	text-align: center;
 	line-height: 1.6em;
 	color: #fff;
-	background: #595959;
+	background: #4b4b46;
 	margin: .75em auto 0;
 	padding: .25em 1em 1em 1em;
 }
@@ -705,7 +705,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	}
 }
 .skipcontrols a{
-	border: 2px solid #595959;
+	border: 2px solid #fff;
 	top: -44px;
 }
 .skipcontrols a:focus{
