@@ -6,10 +6,10 @@
 */
 /* ----------------------- */
 .zoomcasts.content header{
-	background: #000;
+	background: #ED6D5A;
 }
 .lesson-plans.content header{
-	background: #000;
+	background: #577D9E;
 }
 /* ----------------------- */
 .content header{
@@ -44,7 +44,7 @@
 }
 .content main h2{
 	font-size: 1.9em;
-	color: #2c293d;
+	color: #281519;
 	line-height: 1.5em;
 	margin: .25em 0 .5em;
 }

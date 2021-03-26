@@ -25,19 +25,24 @@ Table of Contents
 /*--------------------------------------*/
 
 /** Main Site Colors **/
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
-Black: #2c293d;
+Black: #281519;
 Lighter Black: #322d29;
-Dark Blue: #385488;
+Dark Blue: #3D5A80;
+Lighter Blue: #577D9E;
 Light Blue: #1157AC;
-Gray: #E3E3E3;
+Sky Blue: #98C1D9;
+Gray: #EFECE6;
 Darker Gray: #8c8c8c;
 Rusty Gray: #4b4b46;
 White: #fff;
+Green: #7EB77F;
+Red: #EB5D47;
+Brown: #4A3D33;
 */
 
 /** z-index **/
@@ -59,7 +64,7 @@ nav#nav2 #overlay-menu = 200
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	color: #2c293d;
+	color: #281519;
 	background-color: #fff;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -272,7 +277,7 @@ footer a:focus{
 h1,
 h2,
 h3{
-	color: #385488;
+	color: #3D5A80;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -390,7 +395,7 @@ nav#nav1{
 }
 nav#nav1 .current{
 	text-decoration: underline;
-	text-decoration-color: #385488;
+	text-decoration-color: #3D5A80;
 	text-decoration-thickness: 3px;
 }
 nav#nav1 a:hover .current,
@@ -399,7 +404,7 @@ nav#nav1 a:focus .current{
 }
 nav#nav1 a,
 nav#nav1 a:visited{
-	color: #2c293d;
+	color: #281519;
 	text-decoration: none;
 }
 nav#nav1.borderBottom{
@@ -440,7 +445,7 @@ nav#nav1 h1{
 }
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1{
-	background: #E3E3E3;
+	background: #EFECE6;
 	border: 2px solid rgba(0, 0, 0, 0.65);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -486,7 +491,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #385488;
+	background-color: #3D5A80;
 	transition: 0.2s;
 }
 nav#nav1 li a:hover,
@@ -521,12 +526,12 @@ nav#nav1 li button#fallback-button{
 }
 nav#nav1 li button:hover,
 nav#nav1 li button:focus-within{
-	background-color: #385488;
+	background-color: #3D5A80;
 	transition: 0.2s;
 }
 nav#nav1 li button i{
 	font-size: 1.3em;
-	color: #2c293d;
+	color: #281519;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i{
@@ -568,7 +573,7 @@ nav#nav2{
 	}
 }
 nav#nav2 #overlay-menu{
-	background-color: #E3E3E3;
+	background-color: #EFECE6;
 	transition: background-color 0.01s;
 	width: 0;
 	height: 100%;
@@ -581,7 +586,7 @@ nav#nav2 #overlay-menu{
 	z-index: 200;
 }
 nav#nav2 #overlay-menu a{
-  color: #2c293d;
+  color: #281519;
 	text-decoration: none;
 	white-space: nowrap;
   padding: 20px 40px;
@@ -590,7 +595,7 @@ nav#nav2 #overlay-menu a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #385488;
+	background-color: #3D5A80;
   transition: 0.2s;
 }
 nav#nav2 #overlay-menu ul{
@@ -610,7 +615,7 @@ nav#nav2 #overlay-menu ul{
 	}
 }
 nav#nav2 #overlay-menu ul{
-	background: #E3E3E3;
+	background: #EFECE6;
 }
 nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
@@ -645,11 +650,11 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #385488;
+	background-color: #3D5A80;
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
-	color: #2c293d;
+	color: #281519;
 	font-size: 1.3em;
 }
 @media only screen and (min-width: 480px){
@@ -685,8 +690,8 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .skipcontrols a{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #385488;
-	background: #E3E3E3;
+	color: #3D5A80;
+	background: #EFECE6;
 	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-right-radius: 8px;
@@ -724,7 +729,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	cursor: pointer;
 	font-size: .95em;
 	color: #fff;
-	background-color: #385488;
+	background-color: #3D5A80;
 	border: 2px solid #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -757,13 +762,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
   #topButton:hover,
   #topButton:focus{
 		font-weight: 600;
-	color: #385488;
+	color: #3D5A80;
 	background-color: #fff;
-	border: 2px solid #385488;
+	border: 2px solid #3D5A80;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #385488;
+	background-color: #3D5A80;
 	border: 2px solid transparent;
 }
 

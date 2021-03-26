@@ -5,7 +5,7 @@
 .wrapper{
 	margin: 1.5em auto;
 	padding: 0;
-	border: 1px solid #4b4b46;
+	border: 1px solid #504A3F;
 }
 @media only screen and (min-width: 480px){
 	.wrapper{
@@ -27,7 +27,7 @@
 }
 .youtube:hover,
 .youtube:focus{
-	outline: 3px #385488 solid;
+	outline: 3px #3D5A80 solid;
 }
 .youtube img{
 	width: 100%;
@@ -72,7 +72,7 @@
 }
 .youtube:hover .play-button,
 .youtube:focus .play-button{
-	background-color: #385488;
+	background-color: #3D5A80;
 }
 .youtube img,
 .youtube .play-button{

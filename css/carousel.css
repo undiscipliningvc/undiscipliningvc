@@ -24,15 +24,15 @@
 	display: block;
 }
 .carousel .carousel-items{
-	border: solid 1px #4b4b46;
+	border: solid 1px #504A3F;
 }
 .carousel .carousel-items.focus{
 	border-color: #fff;
-	outline: solid 3px #2c293d;
+	outline: solid 3px #281519;
 }
 /* Carousel images */
 .carousel .carousel-item .carousel-image{
-	background: #E3E3E3;
+	background: #EFECE6;
 }
 .carousel .carousel-item .carousel-image img{
 	width: 100% !important;
