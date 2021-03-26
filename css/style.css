@@ -28,7 +28,7 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-Black: #191716;
+Black: #2c293d;
 Lighter Black: #322d29;
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
@@ -61,7 +61,7 @@ nav#nav2 #overlay-menu = 200
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	color: #191716;
+	color: #2c293d;
 	background-color: #fff;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -401,7 +401,7 @@ nav#nav1 a:focus .current{
 }
 nav#nav1 a,
 nav#nav1 a:visited{
-	color: #191716;
+	color: #2c293d;
 	text-decoration: none;
 }
 nav#nav1.borderBottom{
@@ -528,7 +528,7 @@ nav#nav1 li button:focus-within{
 }
 nav#nav1 li button i{
 	font-size: 1.3em;
-	color: #191716;
+	color: #2c293d;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i{
@@ -583,7 +583,7 @@ nav#nav2 #overlay-menu{
 	z-index: 200;
 }
 nav#nav2 #overlay-menu a{
-  color: #191716;
+  color: #2c293d;
 	text-decoration: none;
 	white-space: nowrap;
   padding: 20px 40px;
@@ -651,7 +651,7 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
-	color: #191716;
+	color: #2c293d;
 	font-size: 1.3em;
 }
 @media only screen and (min-width: 480px){

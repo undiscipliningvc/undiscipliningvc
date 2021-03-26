@@ -28,7 +28,7 @@
 }
 .carousel .carousel-items.focus{
 	border-color: #fff;
-	outline: solid 3px #191716;;
+	outline: solid 3px #2c293d;
 }
 /* Carousel images */
 .carousel .carousel-item .carousel-image{
