@@ -8,6 +8,9 @@
 .zoomcasts.content header{
 	background: #858585;
 }
+.zoomcasts.content .youtube .play-button{
+	background-color: #858585;
+}
 .lesson-plans.content header{
 	background: #858585;
 }
