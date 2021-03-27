@@ -5,7 +5,7 @@
 .wrapper{
 	margin: 1.5em auto;
 	padding: 0;
-	border: 1px solid #504A3F;
+	border: 1px solid #261418;
 }
 @media only screen and (min-width: 480px){
 	.wrapper{
@@ -18,7 +18,7 @@
 	}
 }
 .youtube{
-	background: #E9E9E9;
+	background: #EBEBEB;
 	cursor: pointer;
 	outline: 3px transparent solid;
 	padding-top: 56.25%;
@@ -41,7 +41,6 @@
 	opacity: 0.7;
 }
 .youtube .play-button{
-	background-color: #c3503b;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
