@@ -1,3 +1,5 @@
+
+
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
 /* This CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
@@ -13,7 +15,8 @@ Table of Contents
 1.1. Main Components
 1.2.1. Cluster Pages [moved to separate file]
 1.2.2. Content Pages [moved to separate file]
-1.3. Anchors, Headings, Images
+1.3.1. Anchors, Headings, Images
+1.3.2. Image Captions
 1.4.1. Navigation: Main
 1.4.2. Overlay
 1.5. Carousel [moved to separate file]
@@ -329,6 +332,73 @@ a:focus img{
 }
 .image-border{
 	border: 1px solid #858585;
+}
+
+
+/* 1.3.2. Image Captions */
+
+/* Also see carousel captions */
+.image-caption{
+	text-align: center;
+	line-height: 1.2em;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	bottom: .4em;
+	left: 0;
+}
+@media only screen and (min-width: 480px){
+	.image-caption{
+		line-height: 1.6em;
+		bottom: .5em;
+	}
+}
+.image-caption p{
+	font: 16px 'Noto Serif', serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+@media only screen and (min-width: 320px){
+	.image-caption p{
+		line-height: inherit;
+	}
+}
+.image-caption p a{
+	font-size: .9em;
+}
+.image-caption a{
+	text-decoration: underline;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.65);
+	border: 2px solid transparent;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0;
+	padding: 1px 6px;
+	display: inline-block;
+}
+.image-caption a:hover,
+.image-caption a:focus{
+	background-color: #0645AD;
+	margin: 0;
+}
+.image-caption a:focus{
+	border-color: #0645AD;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.image-wrapper{
+	margin: 0 auto;
+	position: relative;
+}
+@media only screen and (min-width: 768px){
+	.image-wrapper{
+		width: 90%;
+	}
 }
 
 
