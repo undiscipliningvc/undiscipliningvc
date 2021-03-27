@@ -51,7 +51,7 @@
 }
 .cluster main section{
 	text-align: center;
-	border: 1px solid #322d29;
+	border: 1px solid #261418;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -86,7 +86,7 @@
 	font-weight: 700;
 	font-variant: normal;
 	color: #fff;
-	border-bottom: 1px solid #322d29;
+	border-bottom: 1px solid #261418;
 	border-radius: 4px 4px 0 0;
 	-webkit-border-radius: 4px 4px 0 0;
 	-moz-border-radius: 4px 4px 0 0;
@@ -153,6 +153,7 @@
 	border: none;
 	opacity: .7;
 }
+/* some specs below from Livingstone Online */
 .cluster main section div span{
 	color: #fff;
 	background-color: #504A3F;
