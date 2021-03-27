@@ -139,12 +139,12 @@
 .carousel .carousel-item .carousel-caption a:focus,
 .image-caption a:hover,
 .image-caption a:focus{
-	background-color: #1157AC;
+	background-color: #0645AD;
 	margin: 0;
 }
 .carousel .carousel-item .carousel-caption a:focus,
 .image-caption a:focus{
-	border-color: #1157AC;
+	border-color: #0645AD;
 	box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
     -moz-box-shadow: inset 0px 0px 0px 2px #fff;
@@ -184,8 +184,8 @@
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: #1157AC; ;
-	stroke: #1157AC;
+	fill: #0645AD; ;
+	stroke: #0645AD;
 	opacity: 1;
 }
 /* Next and Previous Slide Controls */
@@ -228,8 +228,8 @@
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: #1157AC; ;
-	stroke: #1157AC; 
+	fill: #0645AD; ;
+	stroke: #0645AD; 
 	opacity: 1;
 } */
 .carousel .controls button:focus rect.border{

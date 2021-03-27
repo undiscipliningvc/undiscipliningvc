@@ -32,9 +32,9 @@ Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
 Black: #281519;
 Lighter Black: #322d29;
-Dark Blue: #3D5A80;
+Dark Blue: #3C587C;
 Lighter Blue: #577D9E;
-Light Blue: #1157AC;
+Light Blue: #0645AD;
 Sky Blue: #98C1D9;
 Gray: #EFECE6;
 Darker Gray: #8c8c8c;
@@ -231,12 +231,12 @@ hr{
 }
 a,
 a:visited{
-	color: #1157AC;
+	color: #3C587C;
 }
 a:hover,
 a:focus{
-	color: #fff;
-	background-color: #1157AC;
+	color: #EFECE6;
+	background-color: #3C587C;
 	transition: 0.2s;
 }
 footer a,
@@ -245,8 +245,8 @@ footer a:visited{
 }
 footer a:hover,
 footer a:focus{
-	color: #1157AC;
-	background-color: #fff;
+	color: #281519;
+	background-color: #EFECE6;
 	transition: 0.2s;
 }
 [id]:target{
@@ -277,7 +277,7 @@ footer a:focus{
 h1,
 h2,
 h3{
-	color: #3D5A80;
+	color: #3C587C;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -325,7 +325,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #1157AC solid;
+	border: 3px #0645AD solid;
 }
 .image-border{
 	border: 1px solid #8c8c8c;
@@ -338,7 +338,7 @@ a:focus img{
 #nav0 a{
 	font-size: 1em;
 	color: #fff;
-	background-color: #1157AC;
+	background-color: #0645AD;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 8px;
@@ -395,7 +395,7 @@ nav#nav1{
 }
 nav#nav1 .current{
 	text-decoration: underline;
-	text-decoration-color: #3D5A80;
+	text-decoration-color: #3C587C;
 	text-decoration-thickness: 3px;
 }
 nav#nav1 a:hover .current,
@@ -491,7 +491,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #3D5A80;
+	background-color: #3C587C;
 	transition: 0.2s;
 }
 nav#nav1 li a:hover,
@@ -526,7 +526,7 @@ nav#nav1 li button#fallback-button{
 }
 nav#nav1 li button:hover,
 nav#nav1 li button:focus-within{
-	background-color: #3D5A80;
+	background-color: #3C587C;
 	transition: 0.2s;
 }
 nav#nav1 li button i{
@@ -595,7 +595,7 @@ nav#nav2 #overlay-menu a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #3D5A80;
+	background-color: #3C587C;
   transition: 0.2s;
 }
 nav#nav2 #overlay-menu ul{
@@ -650,7 +650,7 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #3D5A80;
+	background-color: #3C587C;
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
@@ -690,7 +690,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .skipcontrols a{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #3D5A80;
+	color: #3C587C;
 	background: #EFECE6;
 	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
@@ -729,7 +729,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	cursor: pointer;
 	font-size: .95em;
 	color: #fff;
-	background-color: #3D5A80;
+	background-color: #3C587C;
 	border: 2px solid #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -762,13 +762,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
   #topButton:hover,
   #topButton:focus{
 		font-weight: 600;
-	color: #3D5A80;
+	color: #3C587C;
 	background-color: #fff;
-	border: 2px solid #3D5A80;
+	border: 2px solid #3C587C;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #3D5A80;
+	background-color: #3C587C;
 	border: 2px solid transparent;
 }
 
