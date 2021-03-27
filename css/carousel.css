@@ -24,11 +24,7 @@
 	display: block;
 }
 .carousel .carousel-items{
-	border: solid 1px #504A3F;
-}
-.carousel .carousel-items.focus{
-	border-color: #fff;
-	outline: solid 3px #261418;
+	border: solid 1px #261418;
 }
 /* Carousel images */
 .carousel .carousel-item .carousel-image{
@@ -151,8 +147,8 @@
 	z-index: 10;
 }
 .carousel .controls button svg rect.background{
-	fill: black;
-	stroke: black;
+	fill: #261418;
+	stroke: #261418;
 	stroke-width: 1px;
 	opacity: 0.6;
 }
