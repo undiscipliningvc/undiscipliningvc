@@ -30,19 +30,19 @@ Table of Contents
 /*
 Black: rgba(0, 0, 0, 1);
 Black-Gray: rgba(0, 0, 0, 0.65);
-Black: #281519;
+Black: #261418;
 Lighter Black: #322d29;
-Dark Blue: #3C587C;
-Lighter Blue: #577D9E;
+Dark Blue: #395376;
+Lighter Blue: #537796;
 Light Blue: #0645AD; (carousel)
-Sky Blue: #98C1D9;
-Gray: #EFECE6;
-Darker Gray: #8c8c8c;
-Rusty Gray: #4b4b46;
+Sky Blue: #89B8D3;
+Gray: #EBEBEB;
+Darker Gray: #858585;
+Rusty Gray: #464642;
 White: #fff;
-Green: #7EB77F;
-Red: #EB5D47;
-Brown: #4A3D33;
+Green: #76B277;
+Red: #E9513A;
+Brown: #473B32;
 */
 
 /** z-index **/
@@ -64,7 +64,7 @@ nav#nav2 #overlay-menu = 200
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	color: #281519;
+	color: #261418;
 	background-color: #fff;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -154,7 +154,7 @@ footer{
 	text-align: center;
 	line-height: 1.6em;
 	color: #fff;
-	background: #4b4b46;
+	background: #464642;
 	margin: .75em auto 0;
 	padding: .25em 1em 1em 1em;
 }
@@ -187,7 +187,7 @@ footer p .site-detail:last-child::after{
 }
 hr{
 	font-size: .9em;
-	background: #8c8c8c;
+	background: #858585;
 	border: 0;
 	margin: 1.2em 0;
 	height: 1px;
@@ -231,12 +231,12 @@ hr{
 }
 a,
 a:visited{
-	color: #3C587C;
+	color: #395376;
 }
 a:hover,
 a:focus{
-	color: #EFECE6;
-	background-color: #3C587C;
+	color: #EBEBEB;
+	background-color: #395376;
 	transition: 0.2s;
 }
 footer a,
@@ -245,8 +245,8 @@ footer a:visited{
 }
 footer a:hover,
 footer a:focus{
-	color: #281519;
-	background-color: #EFECE6;
+	color: #261418;
+	background-color: #EBEBEB;
 	transition: 0.2s;
 }
 [id]:target{
@@ -277,7 +277,7 @@ footer a:focus{
 h1,
 h2,
 h3{
-	color: #3C587C;
+	color: #395376;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -328,7 +328,7 @@ a:focus img{
 	border: 3px #0645AD solid;
 }
 .image-border{
-	border: 1px solid #8c8c8c;
+	border: 1px solid #858585;
 }
 
 
@@ -395,7 +395,7 @@ nav#nav1{
 }
 nav#nav1 .current{
 	text-decoration: underline;
-	text-decoration-color: #3C587C;
+	text-decoration-color: #395376;
 	text-decoration-thickness: 3px;
 }
 nav#nav1 a:hover .current,
@@ -404,11 +404,11 @@ nav#nav1 a:focus .current{
 }
 nav#nav1 a,
 nav#nav1 a:visited{
-	color: #281519;
+	color: #261418;
 	text-decoration: none;
 }
 nav#nav1.borderBottom{
-	border-bottom: 1px solid #8c8c8c;
+	border-bottom: 1px solid #858585;
 }
 nav#nav1 ul{
 	list-style: none;
@@ -445,7 +445,7 @@ nav#nav1 h1{
 }
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1{
-	background: #EFECE6;
+	background: #EBEBEB;
 	border: 2px solid rgba(0, 0, 0, 0.65);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -491,7 +491,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #3C587C;
+	background-color: #395376;
 	transition: 0.2s;
 }
 nav#nav1 li a:hover,
@@ -526,12 +526,12 @@ nav#nav1 li button#fallback-button{
 }
 nav#nav1 li button:hover,
 nav#nav1 li button:focus-within{
-	background-color: #3C587C;
+	background-color: #395376;
 	transition: 0.2s;
 }
 nav#nav1 li button i{
 	font-size: 1.3em;
-	color: #281519;
+	color: #261418;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i{
@@ -573,7 +573,7 @@ nav#nav2{
 	}
 }
 nav#nav2 #overlay-menu{
-	background-color: #EFECE6;
+	background-color: #EBEBEB;
 	transition: background-color 0.01s;
 	width: 0;
 	height: 100%;
@@ -586,7 +586,7 @@ nav#nav2 #overlay-menu{
 	z-index: 200;
 }
 nav#nav2 #overlay-menu a{
-  color: #281519;
+  color: #261418;
 	text-decoration: none;
 	white-space: nowrap;
   padding: 20px 40px;
@@ -595,7 +595,7 @@ nav#nav2 #overlay-menu a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #3C587C;
+	background-color: #395376;
   transition: 0.2s;
 }
 nav#nav2 #overlay-menu ul{
@@ -615,7 +615,7 @@ nav#nav2 #overlay-menu ul{
 	}
 }
 nav#nav2 #overlay-menu ul{
-	background: #EFECE6;
+	background: #EBEBEB;
 }
 nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
@@ -650,11 +650,11 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #3C587C;
+	background-color: #395376;
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
-	color: #281519;
+	color: #261418;
 	font-size: 1.3em;
 }
 @media only screen and (min-width: 480px){
@@ -690,8 +690,8 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .skipcontrols a{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #3C587C;
-	background: #EFECE6;
+	color: #395376;
+	background: #EBEBEB;
 	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-right-radius: 8px;
@@ -729,7 +729,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	cursor: pointer;
 	font-size: .95em;
 	color: #fff;
-	background-color: #3C587C;
+	background-color: #395376;
 	border: 2px solid #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -762,13 +762,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
   #topButton:hover,
   #topButton:focus{
 		font-weight: 600;
-	color: #3C587C;
+	color: #395376;
 	background-color: #fff;
-	border: 2px solid #3C587C;
+	border: 2px solid #395376;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #3C587C;
+	background-color: #395376;
 	border: 2px solid transparent;
 }
 

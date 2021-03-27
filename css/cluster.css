@@ -13,11 +13,11 @@
 	background: #ED6D5A;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #577D9E 50%);
+	background: linear-gradient(to left top, #fff 50%, #537796 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #577D9E;
+	background: #537796;
 }
 /* ----------------------- */
 .cluster main{
@@ -110,7 +110,7 @@
 }
 .cluster main section div{
 	line-height: 0;
-	background: #EFECE6;
+	background: #EBEBEB;
 	margin: 1em;
 	padding: 0;
 	overflow: hidden;
@@ -118,10 +118,10 @@
 }
 .cluster main section div:hover,
 .cluster main section div:focus-within{
-	outline: 3px solid #3C587C;
+	outline: 3px solid #395376;
 }
 .cluster main section div img{
-	background: #EFECE6;
+	background: #EBEBEB;
 	max-width: 100%;
 	min-height: 150px;
 }
