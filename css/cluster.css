@@ -6,18 +6,18 @@
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #ED6D5A 50%);
+	background: linear-gradient(to left top, #fff 50%, #858585 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #ED6D5A;
+	background: #858585;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #537796 50%);
+	background: linear-gradient(to left top, #fff 50%, #858585 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #537796;
+	background: #858585;
 }
 /* ----------------------- */
 .cluster main{
