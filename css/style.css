@@ -119,7 +119,7 @@ header{
 main{
 	font-size: 1.1em;
 	text-align: center;
-	line-height: 1.6em;
+	line-height: 1.875em;
 	margin: 0 auto;
 	padding: 0 1em 1em;
 	max-width: 650px;
@@ -163,7 +163,7 @@ ol.mission{
 footer{
 	font-size: 1em;
 	text-align: center;
-	line-height: 1.6em;
+	line-height: 1.875em;
 	color: #fff;
 	background: #464642;
 	margin: .75em auto 0;
