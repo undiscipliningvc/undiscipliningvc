@@ -1,10 +1,3 @@
-/* #395376
-#536883
-#717e90
-#92969c
-#537639
-#765c39 */
-
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
 /* This CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
@@ -42,13 +35,13 @@ Black-Gray: rgba(0, 0, 0, 0.65);
 White: #fff;
 Black: #242424;
 Dark Blue: #395376;
-Dark Gray: #505050; (footer only)
+Dark Gray: #424242; (footer only)
 Mid Gray: #949494;
 Light Gray: #e6e6e6;
 
-Green: #76B277;
-Red: #E9513A;
-Brown: #473B32;
+Green: #929C6C;
+Red: #CF795C;
+Brown: #76776f;
 
 (carousel/image caption only/#nav0)
 Light Blue: #0645AD;
@@ -170,7 +163,7 @@ footer{
 	text-align: center;
 	line-height: 1.875em;
 	color: #fff;
-	background: #505050;
+	background: #424242;
 	margin: .75em auto 0;
 	padding: .25em 1em 1em 1em;
 }
