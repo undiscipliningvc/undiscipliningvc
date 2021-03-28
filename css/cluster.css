@@ -6,18 +6,18 @@
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #949494 50%);
+	background: linear-gradient(to left top, #fff 50%, #CF795C 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #949494;
+	background: #CF795C;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #949494 50%);
+	background: linear-gradient(to left top, #fff 50%, #76776f 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #949494;
+	background: #76776f;
 }
 /* ----------------------- */
 .cluster main{
@@ -156,7 +156,7 @@
 /* some specs below from Livingstone Online */
 .cluster main section div span{
 	color: #fff;
-	background-color: rgb(80,80,80);
+	background-color: rgb(66,66,66);
 	line-height: 1.875em;
 	text-align: center;
 	width: 100%;
