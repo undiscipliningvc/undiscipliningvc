@@ -35,7 +35,7 @@ Table of Contents
 Black-Gray: rgba(0, 0, 0, 0.65);
 
 White: #fff;
-Black: #261418;
+Black: #242424;
 Dark Blue: #395376;
 Dark Gray: #505050; (footer only)
 Mid Gray: #949494;
@@ -75,7 +75,7 @@ nav#nav2 #overlay-menu = 200
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	color: #261418;
+	color: #242424;
 	background-color: #fff;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -256,7 +256,7 @@ footer a:visited{
 }
 footer a:hover,
 footer a:focus{
-	color: #261418;
+	color: #242424;
 	background-color: #e6e6e6;
 	transition: 0.2s;
 }
@@ -482,7 +482,7 @@ nav#nav1 a:focus .current{
 }
 nav#nav1 a,
 nav#nav1 a:visited{
-	color: #261418;
+	color: #242424;
 	text-decoration: none;
 }
 nav#nav1.borderBottom{
@@ -609,7 +609,7 @@ nav#nav1 li button:focus-within{
 }
 nav#nav1 li button i{
 	font-size: 1.3em;
-	color: #261418;
+	color: #242424;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i{
@@ -664,7 +664,7 @@ nav#nav2 #overlay-menu{
 	z-index: 200;
 }
 nav#nav2 #overlay-menu a{
-  color: #261418;
+  color: #242424;
 	text-decoration: none;
 	white-space: nowrap;
   padding: 20px 40px;
@@ -732,7 +732,7 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
-	color: #261418;
+	color: #242424;
 	font-size: 1.3em;
 }
 @media only screen and (min-width: 480px){
