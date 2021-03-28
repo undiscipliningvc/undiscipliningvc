@@ -31,21 +31,29 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-Black: rgba(0, 0, 0, 1);
+
 Black-Gray: rgba(0, 0, 0, 0.65);
+
+White: #fff;
 Black: #261418;
-Lighter Black: #322d29;
 Dark Blue: #395376;
-Lighter Blue: #537796;
-Light Blue: #0645AD; (carousel)
-Sky Blue: #89B8D3;
 Gray: #EBEBEB;
 Darker Gray: #858585;
-Rusty Gray: #464642;
-White: #fff;
+Rusty Gray: #464642; (footer only)
+
 Green: #76B277;
 Red: #E9513A;
 Brown: #473B32;
+
+(carousel/image caption only/#nav0)
+Light Blue: #0645AD;
+
+(extra colors)
+Black: rgba(0, 0, 0, 1); (not used)
+Lighter Black: #322d29; (not used)
+Lighter Blue: #537796; (not used)
+Sky Blue: #89B8D3; (not used)
+
 */
 
 /** z-index **/
@@ -328,7 +336,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #0645AD solid;
+	border: 3px #395376 solid;
 }
 .image-border{
 	border: 1px solid #858585;
@@ -831,7 +839,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
   #topButton:hover,
   #topButton:focus{
-		font-weight: 600;
+	font-weight: 600;
 	color: #395376;
 	background-color: #fff;
 	border: 2px solid #395376;
