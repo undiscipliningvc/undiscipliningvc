@@ -38,6 +38,7 @@
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
+	opacity: .9;
 }
 @media screen and (min-width:480px){
 	.carousel .carousel-item .carousel-image img{
