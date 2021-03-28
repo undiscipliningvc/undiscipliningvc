@@ -6,18 +6,18 @@
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #858585 50%);
+	background: linear-gradient(to left top, #fff 50%, #949494 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #858585;
+	background: #949494;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #858585 50%);
+	background: linear-gradient(to left top, #fff 50%, #949494 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #858585;
+	background: #949494;
 }
 /* ----------------------- */
 .cluster main{
@@ -110,7 +110,7 @@
 }
 .cluster main section div{
 	line-height: 0;
-	background: #EBEBEB;
+	background: #e6e6e6;
 	margin: 1em;
 	padding: 0;
 	overflow: hidden;
@@ -121,7 +121,7 @@
 	outline: 3px solid #395376;
 }
 .cluster main section div img{
-	background: #EBEBEB;
+	background: #e6e6e6;
 	max-width: 100%;
 	min-height: 150px;
 }
@@ -156,7 +156,7 @@
 /* some specs below from Livingstone Online */
 .cluster main section div span{
 	color: #fff;
-	background-color: #504A3F;
+	background-color: rgb(80,80,80);
 	line-height: 1.875em;
 	text-align: center;
 	width: 100%;
@@ -165,7 +165,7 @@
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
-	opacity: .83;
+	opacity: .8;
 }
 .cluster main section div a:hover,
 .cluster main section div a:focus{
