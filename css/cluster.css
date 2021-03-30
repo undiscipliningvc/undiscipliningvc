@@ -186,14 +186,13 @@
 	background: none;
 }
 .cluster main section ol{
-	text-align: center;
-	list-style: none;
+	/* text-align: center;
+	list-style: none; */
 	margin: 0 auto 1em;
 	padding: 0;
-	display: block;
+	display: inline-block;
 }
-.cluster main section ol li{
-	/* background: #949494; */
+/* .cluster main section ol li{
 	border: 1px solid #949494;
 	border-radius: 5px;
 	margin: 1em 2.5em;
@@ -202,10 +201,8 @@
 }
 .cluster main section ol li a,
 .cluster main section ol li a:visited{
-	/* color: white; */
 	color: #242424;
 	text-decoration: none;
-	/* font-weight: 600; */
 }
 .cluster main section ol li:hover,
 .cluster main section ol li:focus-within,
@@ -213,4 +210,4 @@
 .cluster main section ol li:focus a{
 	color: white;
 	background: #324967;
-}
+} */
