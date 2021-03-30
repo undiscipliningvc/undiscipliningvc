@@ -6,18 +6,32 @@
 */
 /* ----------------------- */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #CF795C 50%);
+	background: linear-gradient(to left top, #fff 50%, #cc6b4b 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #CF795C;
+	background: #cc6b4b;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #76776f 50%);
+	background: linear-gradient(to left top, #fff 50%, #4c6f9e 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #76776f;
+	background: #4c6f9e;
+}
+.syllabi.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #728a61 50%);
+}
+.syllabi.cluster main section h2{
+	color: white;
+	background: #728a61;
+}
+.about.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #757575 50%);
+}
+.about.cluster main section h2{
+	color: white;
+	background: #757575;
 }
 /* ----------------------- */
 .cluster main{
@@ -118,7 +132,7 @@
 }
 .cluster main section div:hover,
 .cluster main section div:focus-within{
-	outline: 3px solid #395376;
+	outline: 3px solid #324967;
 }
 .cluster main section div img{
 	background: #e6e6e6;
