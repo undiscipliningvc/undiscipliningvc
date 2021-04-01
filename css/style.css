@@ -469,8 +469,23 @@ nav#nav1{
 }
 nav#nav1 .current{
 	text-decoration: underline;
-	text-decoration-color: #324967;
 	text-decoration-thickness: 3px;
+}
+/* Also see current.css and content.css  */
+nav#nav1 #home.current{
+	text-decoration-color: #324967;
+}
+nav#nav1 #zoomcasts.current{
+	text-decoration-color: #cc6b4b;
+}
+nav#nav1 #lesson_plans.current{
+	text-decoration-color: #4a6b99;
+}
+nav#nav1 #syllabi.current{
+	text-decoration-color: #778056;
+}
+nav#nav1 #about.current{
+	text-decoration-color: #757575;
 }
 nav#nav1 a:hover .current,
 nav#nav1 a:focus .current{
