@@ -42,10 +42,7 @@ Light Gray: #e6e6e6;
 Red: #cc6b4b;
 Brown: #757575;
 Green: #778056;
-Blue: #4a6b99; (sections)
-
-(carousel/image caption only/#nav0)
-Light Blue: #0645AD;
+Blue: #4a6b99; (sections/carousel/images/nav0)
 
 (extra colors)
 Black: rgba(0, 0, 0, 1); (not used)
@@ -389,11 +386,11 @@ a:focus img{
 }
 .image-caption a:hover,
 .image-caption a:focus{
-	background-color: #0645AD;
+	background-color: #4a6b99;
 	margin: 0;
 }
 .image-caption a:focus{
-	border-color: #0645AD;
+	border-color: #4a6b99;
 	box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
     -moz-box-shadow: inset 0px 0px 0px 2px #fff;
@@ -415,7 +412,7 @@ a:focus img{
 #nav0 a{
 	font-size: 1em;
 	color: #fff;
-	background-color: #0645AD;
+	background-color: #4a6b99;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 8px;
