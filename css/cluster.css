@@ -185,29 +185,54 @@
 .cluster main section div a:focus{
 	background: none;
 }
-.cluster main section ol{
-	/* text-align: center;
-	list-style: none; */
-	margin: 0 auto 1em;
+.cluster main section ol,
+.cluster main section ul{
+	/* margin: 1em; */
 	padding: 0;
-	display: inline-block;
+	/* display: inline-block; */
+	list-style: none;
+	text-align: center;
+	margin: 1em 1em 2em;
+	/* list-style: none;
+	text-align: center;
+	display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; */
 }
-/* .cluster main section ol li{
+/* .cluster main section ul li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	background-color: #e6e6e6;
+	padding: 0 .5em;
+}
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
+	color: #242424;
+	text-decoration: none;
+	font-weight: 600;
+	hyphens: none;
+} */
+.cluster main section ul li{
 	border: 1px solid #949494;
 	border-radius: 5px;
-	margin: 1em 2.5em;
-	padding: 1px 4px;
+	margin: 1em;
+	padding: 3px 4px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.cluster main section ol li a,
-.cluster main section ol li a:visited{
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
 	color: #242424;
 	text-decoration: none;
 }
-.cluster main section ol li:hover,
-.cluster main section ol li:focus-within,
-.cluster main section ol li:hover a,
-.cluster main section ol li:focus a{
+.cluster main section ul li:hover,
+.cluster main section ul li:focus-within,
+.cluster main section ul li:hover a,
+.cluster main section ul li:focus a{
 	color: white;
 	background: #324967;
-} */
+}
