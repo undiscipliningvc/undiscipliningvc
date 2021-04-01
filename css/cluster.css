@@ -5,6 +5,7 @@
 
 */
 /* ----------------------- */
+/* Also see content.css and .current on style.css */
 .zoomcasts.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #cc6b4b 50%);
 }
@@ -232,6 +233,8 @@
 		}
 }
 .cluster main section ul li:first-child{
+	font-size: .95em;
+	font-family: 'Noto Serif', serif;
 	font-weight: 600;
 	background: #e6e6e6;
 }
