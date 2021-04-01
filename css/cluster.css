@@ -127,8 +127,7 @@
 .cluster main section div{
 	line-height: 0;
 	background: #e6e6e6;
-	/* margin: 1em; */
-	margin: .5em;
+	margin: 1em;
 	padding: 0;
 	overflow: hidden;
 	position: relative;
@@ -196,9 +195,6 @@
 	list-style: none;
 	text-align: center;
 	margin: 1em 1em 2em;
-	display: flex;
-	flex-wrap: wrap;
-	box-sizing: border-box;
 	/* list-style: none;
 	text-align: center;
 	display: grid;
@@ -231,26 +227,17 @@
 	margin: 1.5em 0;
 	padding: 3px 4px;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-	flex: 1 0 calc(50% - 8px - 2px - 2em);
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 @media only screen and (min-width: 480px){
 		.cluster main section ul li{
-			margin: .5em;
+			margin: 1.5em 1em;
 		}
 }
 .cluster main section ul li:first-child{
 	font-size: .95em;
 	font-family: 'Noto Serif', serif;
 	font-weight: 600;
-	/* background: #e6e6e6; */
-	flex: 1 0 calc(100% - 8px - 2px - 1em);
-	display: block;
-}
-.cluster main section ul li:first-child img{
-	min-height: 200px;
+	background: #e6e6e6;
 }
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
