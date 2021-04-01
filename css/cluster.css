@@ -218,16 +218,28 @@
 	hyphens: none;
 } */
 .cluster main section ul li{
-	border: 1px solid #949494;
+	hyphens: none;
+	line-height: 1.5em;
+	border: 1px solid #e6e6e6;
 	border-radius: 5px;
-	margin: 1em;
+	margin: 1.5em 0;
 	padding: 3px 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+@media only screen and (min-width: 480px){
+		.cluster main section ul li{
+			margin: 1.5em 1em;
+		}
+}
+.cluster main section ul li:first-child{
+	font-weight: 600;
+	background: #e6e6e6;
 }
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
-	color: #242424;
+	font-size: .95em;
 	text-decoration: none;
+	color: #242424;
 }
 .cluster main section ul li:hover,
 .cluster main section ul li:focus-within,
@@ -235,4 +247,9 @@
 .cluster main section ul li:focus a{
 	color: white;
 	background: #324967;
+}
+.cluster main section ul img{
+	background: #fff;
+	width: 50px;
+	min-height: 50px;
 }
