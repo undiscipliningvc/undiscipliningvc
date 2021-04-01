@@ -127,7 +127,7 @@
 .cluster main section div{
 	line-height: 0;
 	background: #e6e6e6;
-	margin: 1em;
+	margin: .5em;
 	padding: 0;
 	overflow: hidden;
 	position: relative;
@@ -189,12 +189,12 @@
 }
 .cluster main section ol,
 .cluster main section ul{
-	/* margin: 1em; */
+	margin: 1em 1em 1.5em;
 	padding: 0;
 	/* display: inline-block; */
 	list-style: none;
 	text-align: center;
-	margin: 1em 1em 2em;
+	/* margin: 1em 1em 2em; */
 	/* list-style: none;
 	text-align: center;
 	display: grid;
@@ -203,6 +203,20 @@
   grid-auto-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px; */
+}
+@media only screen and (min-width: 480px){
+	.cluster main section ol,
+	.cluster main section ul{
+		/* margin: 1em 0; */
+	}
+}
+@media only screen and (min-width: 768px){
+	.cluster main section ol,
+	.cluster main section ul{
+		/* margin: 0 1em; */
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 /* .cluster main section ul li{
 	display: flex;
@@ -224,20 +238,39 @@
 	line-height: 1.5em;
 	border: 1px solid #e6e6e6;
 	border-radius: 5px;
-	margin: 1.5em 0;
-	padding: 3px 4px;
+	margin: 1em 0;
+	padding: .5em;
+	/* margin: 1.25em 0;
+	padding: 3px 4px; */
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 @media only screen and (min-width: 480px){
 		.cluster main section ul li{
-			margin: 1.5em 1em;
+			/* margin: 1.5em 1em;
+			padding: .35em; */
 		}
+}
+@media only screen and (min-width: 768px){
+	.cluster main section ul li{
+		margin: .5em;
+		flex: 1 0 calc(50% - 2px - 2em);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 .cluster main section ul li:first-child{
 	font-size: .95em;
 	font-family: 'Noto Serif', serif;
 	font-weight: 600;
-	background: #e6e6e6;
+	border-radius: 0;
+	padding: 0;
+}
+@media only screen and (min-width: 768px){
+	.cluster main section ul li:first-child{
+		display: block;
+		flex: 1 0 calc(100% - 2px - 1em);
+	}
 }
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
@@ -252,8 +285,7 @@
 	color: white;
 	background: #324967;
 }
-.cluster main section ul img{
-	background: #fff;
-	width: 50px;
-	min-height: 50px;
+.cluster main section ul li a i{
+	display: none;
+	visibility: hidden;
 }
