@@ -10,11 +10,11 @@
 	background: #cc6b4b;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #4a6b99 50%);
+	background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
 }
 .lesson-plans.cluster main section h2{
 	color: white;
-	background: #4a6b99;
+	background: #5378ac;
 }
 .syllabi.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #728a61 50%);

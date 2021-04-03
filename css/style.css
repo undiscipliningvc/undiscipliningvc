@@ -42,7 +42,7 @@ Light Gray: #e6e6e6;
 Red: #cc6b4b;
 Brown: #757575;
 Green: #778056;
-Blue: #4a6b99; (sections/carousel/images/nav0)
+Blue: #5378ac; (sections/carousel/images/nav0)
 
 (extra colors)
 Black: rgba(0, 0, 0, 1); (not used)
@@ -395,11 +395,11 @@ a:focus img{
 }
 .image-caption a:hover,
 .image-caption a:focus{
-	background-color: #4a6b99;
+	background-color: #5378ac;
 	margin: 0;
 }
 .image-caption a:focus{
-	border-color: #4a6b99;
+	border-color: #5378ac;
 	box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
     -moz-box-shadow: inset 0px 0px 0px 2px #fff;
@@ -421,7 +421,7 @@ a:focus img{
 #nav0 a{
 	font-size: 1em;
 	color: #fff;
-	background-color: #4a6b99;
+	background-color: #5378ac;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 8px;
@@ -488,7 +488,7 @@ nav#nav1 #zoomcasts.current{
 	text-decoration-color: #cc6b4b;
 }
 nav#nav1 #lesson_plans.current{
-	text-decoration-color: #4a6b99;
+	text-decoration-color: #5378ac;
 }
 nav#nav1 #syllabi.current{
 	text-decoration-color: #778056;
