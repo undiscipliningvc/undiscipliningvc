@@ -68,6 +68,11 @@ nav#nav2 #overlay-menu = 200
 
 /* 1.1. Main Components */
 
+/* *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} */
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -81,12 +86,16 @@ html{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
+	-ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	max-width: 100%;
+	/* -moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: antialiased; */
 }
 .text-container{
 	width: 100%;
@@ -348,13 +357,12 @@ a:focus img{
 	padding: 0;
 	position: absolute;
 	right: 0;
-	bottom: .4em;
+	bottom: 1em;
 	left: 0;
 }
 @media only screen and (min-width: 480px){
 	.image-caption{
 		line-height: 1.6em;
-		bottom: .5em;
 	}
 }
 .image-caption p{
@@ -374,6 +382,7 @@ a:focus img{
 }
 .image-caption a{
 	text-decoration: underline;
+	text-align: center;
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.65);
 	border: 2px solid transparent;
