@@ -135,7 +135,7 @@
 }
 .cluster main section div:hover,
 .cluster main section div:focus-within{
-	outline: 3px solid #324967;
+	outline: 3px solid #395375;
 }
 .cluster main section div img{
 	background: #e6e6e6;
@@ -254,7 +254,7 @@
 .cluster main section ul li:hover a,
 .cluster main section ul li:focus-within a{
 	color: white;
-	background: #324967;
+	background: #395375;
 }
 .cluster main section ul li a i{
 	display: none;

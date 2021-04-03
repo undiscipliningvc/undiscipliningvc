@@ -27,7 +27,7 @@
 }
 .youtube:hover,
 .youtube:focus{
-	outline: 3px #324967 solid;
+	outline: 3px #395375 solid;
 }
 .youtube img{
 	width: 100%;
@@ -71,7 +71,7 @@
 }
 .youtube:hover .play-button,
 .youtube:focus .play-button{
-	background-color: #324967;
+	background-color: #395375;
 }
 .youtube img,
 .youtube .play-button{

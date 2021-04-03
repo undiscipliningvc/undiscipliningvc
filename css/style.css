@@ -34,7 +34,7 @@ Black-Gray: rgba(0, 0, 0, 0.65);
 
 White: #fff;
 Black: #242424;
-Dark Blue: #324967;
+Dark Blue: #395375;
 Dark Gray: #2e2e2e; (footer only)
 Mid Gray: #949494;
 Light Gray: #e6e6e6;
@@ -247,12 +247,12 @@ hr{
 }
 a,
 a:visited{
-	color: #324967;
+	color: #395375;
 }
 a:hover,
 a:focus{
 	color: #e6e6e6;
-	background-color: #324967;
+	background-color: #395375;
 	transition: 0.2s;
 }
 footer a,
@@ -293,7 +293,7 @@ footer a:focus{
 h1,
 h2,
 h3{
-	color: #324967;
+	color: #395375;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -341,7 +341,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #324967 solid;
+	border: 3px #395375 solid;
 }
 .image-border{
 	border: 1px solid #858585;
@@ -482,7 +482,7 @@ nav#nav1 .current{
 }
 /* Also see current.css and content.css  */
 nav#nav1 #home.current{
-	text-decoration-color: #324967;
+	text-decoration-color: #395375;
 }
 nav#nav1 #zoomcasts.current{
 	text-decoration-color: #cc6b4b;
@@ -589,7 +589,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #324967;
+	background-color: #395375;
 	transition: 0.2s;
 }
 nav#nav1 li a:hover,
@@ -624,7 +624,7 @@ nav#nav1 li button#fallback-button{
 }
 nav#nav1 li button:hover,
 nav#nav1 li button:focus-within{
-	background-color: #324967;
+	background-color: #395375;
 	transition: 0.2s;
 }
 nav#nav1 li button i{
@@ -693,7 +693,7 @@ nav#nav2 #overlay-menu a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #324967;
+	background-color: #395375;
   transition: 0.2s;
 }
 nav#nav2 #overlay-menu ul{
@@ -748,7 +748,7 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #324967;
+	background-color: #395375;
 	transition: 0.2s;
 }
 nav#nav2 #overlay-menu li button.close i{
@@ -788,7 +788,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .skipcontrols a{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #324967;
+	color: #395375;
 	background: #e6e6e6;
 	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
@@ -827,7 +827,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	cursor: pointer;
 	font-size: .95em;
 	color: #fff;
-	background-color: #324967;
+	background-color: #395375;
 	border: 2px solid #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -860,13 +860,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
   #topButton:hover,
   #topButton:focus{
 	font-weight: 600;
-	color: #324967;
+	color: #395375;
 	background-color: #fff;
-	border: 2px solid #324967;
+	border: 2px solid #395375;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #324967;
+	background-color: #395375;
 	border: 2px solid transparent;
 }
 
