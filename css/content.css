@@ -52,6 +52,23 @@
 	text-align: left;
 	padding: .5em 1em 1em;
 }
+.content main summary,
+.content main section{
+	margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px){
+	.content main summary,
+	.content main section{
+		margin-bottom: 3em;
+	}
+}
+.content main section.pathways{
+	counter-reset: counter;
+}
+.zoomcasts .content main section:first-of-type,
+.zoomcasts .content main section:last-of-type{
+	margin-bottom: 0;
+}
 .content main h2{
 	font-size: 1.9em;
 	color: #242424;
@@ -63,17 +80,36 @@
 		margin: .5em 0 1em;
 	}
 }
-.content main summary,
-.content main section{
-	margin-bottom: 2em;
+.content main h4{
+	font-size: 1.2em;
+	font-variant: small-caps;
+	text-align: left;
+	margin: 2em 0 1em;
 }
-@media only screen and (min-width: 768px){
-	.content main summary,
-	.content main section{
-		margin-bottom: 3em;
-	}
+.content main section.pathways h4:first-of-type{
+	margin: 1.5em 0 1em;
 }
-.content main section:first-of-type,
-.content main section:last-of-type{
-	margin-bottom: 0;
+.content main section.pathways h4::before{
+  counter-increment: counter;
+  content: counter(counter) ". ";
+}
+.content main section.pathways strong{
+  font-weight: 600;
+}
+.content main section.menu-container{
+	text-align: center;
+}
+.content ol.menu{
+	font-size: .95em;
+	margin: 0 auto;
+	display: inline-block;
+}
+.content ol.menu li ol{
+	list-style: lower-alpha;
+}
+.content ul#topic-list{
+	padding: 0 0 0 1.2em;
+}
+.content i.fa-envelope{
+	padding: 0 5px;
 }
