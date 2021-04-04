@@ -201,6 +201,14 @@ footer p .site-detail:last-child::after{
 		white-space: nowrap;
 	}
 }
+.breakout-quote{
+	font-size: .9em;
+	font-family: 'Noto Serif', serif;
+	background: #e6e6e6;
+	border-left: 11px solid #5378ac;
+	margin: 1.5em 0;
+	padding: .75em 1.5em;
+}
 hr{
 	font-size: .9em;
 	background: #858585;
@@ -884,6 +892,9 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 .italic{
 	font-style: italic;
+}
+.right{
+	text-align: right;
 }
 .small{
 	font-size: .95em;
