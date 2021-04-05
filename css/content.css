@@ -52,25 +52,40 @@
 	text-align: left;
 	padding: .5em 1em 1em;
 }
+.lesson-plans.content main{
+	margin: 0 auto;
+	max-width: 700px;
+	}
+@media only screen and (min-width: 992px){
+	.lesson-plans.content main{
+		width: 75% !important;
+		max-width: 900px;
+	}
+}
 .content main summary,
 .content main section{
-	margin-bottom: 2em;
+	margin: 2em auto;
+	padding: 0 1em;
+	max-width: 650px;
 }
 @media only screen and (min-width: 768px){
 	.content main summary,
 	.content main section{
-		margin-bottom: 3em;
+		margin: 3em auto;
 	}
 }
 .content main section.pathways{
 	counter-reset: counter;
 }
-.zoomcasts .content main section:first-of-type,
-.zoomcasts .content main section:last-of-type{
+.content main section:first-of-type{
+	margin-top: 1.5em;
+}
+.content main section:last-of-type{
 	margin-bottom: 0;
 }
 .content main h2{
 	font-size: 1.9em;
+	hyphens: none;
 	color: #242424;
 	line-height: 1.5em;
 	margin: .25em 0 .5em;
@@ -99,6 +114,13 @@
 .content main section.menu-container{
 	text-align: center;
 }
+.content section.pathway-list{
+	text-align: center;
+}
+.content .pathway-list ol{
+	margin: 0 auto;
+	display: inline-block;
+}
 .content ol.menu{
 	font-size: .95em;
 	margin: 0 auto;
@@ -113,3 +135,50 @@
 .content i.fa-envelope{
 	padding: 0 5px;
 }
+
+
+/* .lesson-plans.content main img{
+	width: 100% !important;
+	min-height: calc(178px * .95);
+	max-height: calc(178px * .95);
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+	object-position: 50% 50%;
+}
+@media screen and (min-width:480px){
+	.lesson-plans.content main img{
+		min-height: calc(263px * .95);
+		max-height: calc(263px * .95);
+	}
+}
+@media screen and (min-width:624px){
+	.lesson-plans.content main img{
+		min-height: calc(348px * .95);
+		max-height: calc(348px * .95);
+	}
+}
+@media screen and (min-width:768px){
+	.lesson-plans.content main img{
+		min-height: calc(411px * .95);
+		max-height: calc(411px * .95);
+	}
+}
+@media screen and (min-width:992px){
+	.lesson-plans.content main img{
+		min-height: calc(423px * .95);
+		max-height: calc(423px * .95);
+	}
+}
+@media screen and (min-width:1200px){
+	.lesson-plans.content main img{
+		min-height: calc(515px * .95);
+		max-height: calc(515px * .95);
+	}
+}
+@media screen and (min-width:1366px){
+	.lesson-plans.content main img{
+		min-height: calc(529px * .95);
+		max-height: calc(529px * .95);
+	}
+} */
