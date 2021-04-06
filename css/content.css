@@ -66,17 +66,18 @@
 }
 .content main summary,
 .content main section{
+	text-align: left;
 	margin: 2em auto;
-	padding: 0 1em;
 	max-width: 650px;
 }
 @media only screen and (min-width: 768px){
 	.content main summary,
 	.content main section{
-		margin: 3em auto;
+		margin: 2.5em auto;
 	}
 }
-.content main section.pathways{
+.content main section.pathways,
+.content main section.materials{
 	counter-reset: pathways;
 }
 .content main section:first-of-type{
@@ -101,16 +102,14 @@
 	font-size: 1.2em;
 	font-variant: small-caps;
 	text-align: left;
-	margin: 2em 0 1em;
 }
-.content main section.pathways h4:first-of-type{
-	margin: 1.5em 0 1em;
-}
-.content main section.pathways h4::before{
+.content main section.pathways h4::before,
+.content main section.materials h4::before{
   counter-increment: pathways;
   content: counter(pathways) ". ";
 }
-.content main section.pathways strong{
+.content main section.pathways strong,
+.content main section.materials strong{
   font-weight: 600;
 }
 .content main section.menu-container{
@@ -150,10 +149,14 @@
 	counter-increment: items;
   content: counter(items) ") ";
 }
+.content .annotation{
+	font-size: .9em;
+	margin: .5em 0 0 1.5em;
+	display: block;
+}
 .content i.fa-envelope{
 	padding: 0 5px;
 }
-
 
 /* .lesson-plans.content main img{
 	width: 100% !important;
