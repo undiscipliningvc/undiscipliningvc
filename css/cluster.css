@@ -120,6 +120,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 }
 .cluster main section p{
 	font-size: .95em;
@@ -182,6 +184,8 @@
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
 	opacity: .8;
 }
 .cluster main section div a:hover,
