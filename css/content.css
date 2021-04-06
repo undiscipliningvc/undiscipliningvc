@@ -12,7 +12,8 @@
 .zoomcasts.content .youtube .play-button{
 	background-color: #cc6b4b;
 }
-.lesson-plans.content header{
+.lesson-plans.content header,
+.content main section.menu-container h3{
 	background: #5378ac;
 }
 .syllabi.content header{
@@ -116,11 +117,11 @@
 	text-align: center;
 	border: 1px solid #949494;
 	margin: 0;
-	padding: 1em 2em 1.5em;
+	padding: 1.5em 2em 2em;
 	display: inline-block;
 }
 .content main section.menu-container h3{
-	color: #242424;
+	color: #fff;
 	margin-top: 0;
 }
 .content ol.menu{
