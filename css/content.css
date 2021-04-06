@@ -75,7 +75,7 @@
 	}
 }
 .content main section.pathways{
-	counter-reset: counter;
+	counter-reset: pathways;
 }
 .content main section:first-of-type{
 	margin-top: 1.5em;
@@ -105,21 +105,14 @@
 	margin: 1.5em 0 1em;
 }
 .content main section.pathways h4::before{
-  counter-increment: counter;
-  content: counter(counter) ". ";
+  counter-increment: pathways;
+  content: counter(pathways) ". ";
 }
 .content main section.pathways strong{
   font-weight: 600;
 }
 .content main section.menu-container{
 	text-align: center;
-}
-.content section.pathway-list{
-	text-align: center;
-}
-.content .pathway-list ol{
-	margin: 0 auto;
-	display: inline-block;
 }
 .content ol.menu{
 	font-size: .95em;
@@ -131,6 +124,20 @@
 }
 .content ul#topic-list{
 	padding: 0 0 0 1.2em;
+}
+.content .cluster-details div ol{
+	margin-left: .25em;
+	padding: 0;
+	display: inline;
+	counter-reset: items;
+}
+.content .cluster-details div ol li{
+	margin-right: .25em;
+	display: inline;
+}
+.content .cluster-details div ol li::before{
+	counter-increment: items;
+  content: counter(items) ") ";
 }
 .content i.fa-envelope{
 	padding: 0 5px;
