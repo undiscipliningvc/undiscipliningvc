@@ -618,6 +618,8 @@ nav#nav1 li button{
 	top: 50%;
 	right: 0;
 	transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button{
