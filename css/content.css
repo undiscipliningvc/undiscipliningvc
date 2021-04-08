@@ -65,16 +65,21 @@
 	}
 }
 .content main summary,
-.content main section{
+.content main section,
+.content main aside{
 	text-align: left;
 	margin: 2em auto;
 	max-width: 650px;
 }
 @media only screen and (min-width: 768px){
 	.content main summary,
-	.content main section{
+	.content main section,
+	.content main aside{
 		margin: 2.5em auto;
 	}
+}
+.content main aside{
+	box-sizing: border-box;
 }
 .content main section.pathways,
 .content main section.materials{
@@ -148,6 +153,13 @@
 .content .cluster-details div ol li::before{
 	counter-increment: items;
   content: counter(items) ") ";
+}
+.content section ul li{
+	margin-bottom: .5em;
+}
+.content h3#user-guide{
+	color: #242424;
+	text-align: left;
 }
 .content .annotation{
 	font-size: .9em;
