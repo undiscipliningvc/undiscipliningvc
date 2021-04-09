@@ -85,6 +85,16 @@
 .content main section section{
 	counter-reset: none;
 }
+.content main section#biographies{
+	margin: 0 auto;
+	max-width: 700px;
+}
+@media only screen and (min-width: 992px){
+	.content main section#biographies{
+		width: 85%;
+		max-width: 900px;
+	}	
+}
 .content main h2{
 	font-size: 1.9em;
 	hyphens: none;
@@ -155,6 +165,32 @@
 }
 .content section ul#topic-list{
 	padding: 0 0 0 1.2em;
+}
+.content section p{
+	clear: both;
+}
+.content section p img{
+	margin: .5em .75em 0 0;
+	width: 100%;
+	display: inline-block;
+}
+@media only screen and (min-width: 480px){
+	.content section p img{
+		margin: .5em .75em 0 0;
+		width: 50%;
+		float: left;
+		display: inline;
+	}	
+}
+@media only screen and (min-width: 768px){
+	.content section p img{
+		width: 30%;
+	}
+}
+@media only screen and (min-width: 992px){
+	.content section p img{
+		width: 25%;
+	}
 }
 .content .annotation{
 	font-size: .9em;
