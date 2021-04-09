@@ -50,7 +50,7 @@
 	}
 }
 .content main{
-	text-align: left;
+	/* text-align: left; */
 	padding: .5em 1em 1em;
 }
 .lesson-plans.content main
@@ -69,16 +69,7 @@
 .content main summary,
 .content main section,
 .content main aside{
-	text-align: left;
-	margin: 2em auto;
 	max-width: 650px;
-}
-@media only screen and (min-width: 768px){
-	.content main summary,
-	.content main section,
-	.content main aside{
-		margin: 3em auto;
-	}
 }
 .content main aside{
 	box-sizing: border-box;
@@ -89,9 +80,6 @@
 }
 .content main section:first-of-type{
 	margin-top: 1.5em;
-}
-.content main section:last-of-type{
-	margin-bottom: 0;
 }
 .content main h2{
 	font-size: 1.9em;
@@ -105,10 +93,12 @@
 		margin: .5em 0 1em;
 	}
 }
+.content main h3{
+	font-size: 1.15em;
+}
 .content main h4{
-	font-size: 1.2em;
-	font-variant: small-caps;
 	text-align: left;
+	color: inherit;
 }
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
@@ -119,14 +109,14 @@
 .content main section.materials strong{
   font-weight: 600;
 }
-.content main section.menu-container{
+.content section.menu-container{
 	text-align: center;
 	border: 1px solid #949494;
 	margin: 0;
 	padding: 1.5em 2em 2em;
 	display: inline-block;
 }
-.content main section.menu-container h3{
+.content section.menu-container h3{
 	color: #fff;
 	margin-top: 0;
 }
