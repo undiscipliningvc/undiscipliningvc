@@ -143,7 +143,7 @@ main aside{
 	main summary,
 	main section,
 	main aside{
-		margin: 3em auto;
+		margin: 2.75em auto;
 	}
 }
 main section:last-of-type {
@@ -344,21 +344,19 @@ h3{
 	font-variant: small-caps;
 	color: inherit;
 }
-h4{
-	font-size: 1.05em;
+h4,
+section section h4:first-child{
+	font-size: 1.1em;
 	font-weight: 600;
 	font-variant: small-caps;
 }
-.details h4{
-    margin-top: 2.5em;
-}
-.details h4:first-of-type{
-    margin-top: 1em;
+section h4:first-child{
+	margin-top: 1.5em;
 }
 h5{
 	font-size: .95em;
+	font-weight: 700;
 	font-style: italic;
-	font-weight: normal;
 	text-align: left;
 }
 /*logo*/
