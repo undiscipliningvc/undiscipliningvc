@@ -50,7 +50,6 @@
 	}
 }
 .content main{
-	/* text-align: left; */
 	padding: .5em 1em 1em;
 }
 .lesson-plans.content main
@@ -69,32 +68,39 @@
 .content main summary,
 .content main section,
 .content main aside{
+	text-align: left;
 	max-width: 650px;
 }
 .content main aside{
 	box-sizing: border-box;
 }
+.content main section:first-of-type{
+	margin-top: 1.5em;
+}
+.content main section,
 .content main section.pathways,
 .content main section.materials{
 	counter-reset: pathways;
 }
-.content main section:first-of-type{
-	margin-top: 1.5em;
+.content main section section{
+	counter-reset: none;
 }
 .content main h2{
 	font-size: 1.9em;
 	hyphens: none;
 	color: #242424;
 	line-height: 1.5em;
-	margin: .25em 0 .5em;
-}
-@media only screen and (min-width: 768px){
-	.content main h2{
-		margin: .5em 0 1em;
-	}
 }
 .content main h3{
 	font-size: 1.15em;
+}
+.content section.menu-container h3{
+	color: #fff;
+	margin-top: 0;
+}
+.content h3#user-guide{
+	color: #242424;
+	text-align: left;
 }
 .content main h4{
 	text-align: left;
@@ -116,10 +122,6 @@
 	padding: 1.5em 2em 2em;
 	display: inline-block;
 }
-.content section.menu-container h3{
-	color: #fff;
-	margin-top: 0;
-}
 .content ol.menu{
 	font-size: .9em;
 	margin: 0 auto;
@@ -128,9 +130,6 @@
 }
 .content ol.menu li ol{
 	list-style: lower-alpha;
-}
-.content ul#topic-list{
-	padding: 0 0 0 1.2em;
 }
 .content .cluster-details div ol{
 	margin-left: .25em;
@@ -154,9 +153,8 @@
 	margin: 1.5em;
 	padding: 0;
 }
-.content h3#user-guide{
-	color: #242424;
-	text-align: left;
+.content section ul#topic-list{
+	padding: 0 0 0 1.2em;
 }
 .content .annotation{
 	font-size: .9em;
@@ -166,7 +164,6 @@
 .content i.fa-envelope{
 	padding: 0 5px;
 }
-
 /* .lesson-plans.content main img{
 	width: 100% !important;
 	min-height: calc(178px * .95);
