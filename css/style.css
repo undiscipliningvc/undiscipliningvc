@@ -336,6 +336,12 @@ h2, h3, h4{
 }
 h2{
 	font-size: 1.15em;
+	margin: .25em 0 .75em;
+}
+@media only screen and (min-width: 992px){
+	h2{
+		margin: .5em 0 1em;
+	}	
 }
 h3{
 	font-size: 1.1em;
