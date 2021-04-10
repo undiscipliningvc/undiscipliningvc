@@ -141,29 +141,38 @@
 }
 .cluster main section div img{
 	background: #e6e6e6;
+	height: 189px;
 	max-width: 100%;
-	/* min-height: 150px; */
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+	object-position: 50% 50%;
 }
-/* @media only screen and (min-width: 480px){
+@media only screen and (min-width: 480px){
 	.cluster main section div img{
-		min-height: 230px;
+		height: 290px;
+	}
+}
+@media only screen and (min-width: 640px){
+	.cluster main section div img{
+		height: 405px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.cluster main section div img{
-		min-height: 370px;
+		height: 473px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.cluster main section div img{
-		min-height: 229px;
+		height: 290px;
 	}
 }
 @media only screen and (min-width: 1200px){
 	.cluster main section div img{
-		min-height: 263px;
+		height: 332px;
 	}
-} */
+}
 .cluster main section div a img{
 	border: none;
 }
