@@ -78,3 +78,22 @@ mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -i
 mogrify -format jpg -resize 408x408 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/408 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/408 && find . -exec rename 's|.jpg|-408px.jpg|' {} + && cd - && 
 
 mogrify -format jpg -resize 266x266 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/266 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/266 && find . -exec rename 's|.jpg|-266px.jpg|' {} + && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/zoomcasts \;
+
+****
+BIOGRAPHIES
+
+mogrify -format jpg -resize 175x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/175 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/175 && find . -exec rename 's|.jpg|-175px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 195x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/195 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/195 && find . -exec rename 's|.jpg|-195px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 223x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/223 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/223 && find . -exec rename 's|.jpg|-223px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 285x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/285 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/285 && find . -exec rename 's|.jpg|-285px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 350x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/350 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/350 && find . -exec rename 's|.jpg|-350px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 390x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/390 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/390 && find . -exec rename 's|.jpg|-390px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 446x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/446 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/446 && find . -exec rename 's|.jpg|-446px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 570x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/570 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/570 && find . -exec rename 's|.jpg|-570px.jpg|' {} + && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about \;
