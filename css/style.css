@@ -519,7 +519,7 @@ nav#nav1{
 	}
 }
 nav#nav1 .current{
-	text-decoration: underline;
+	text-decoration: overline;
 	text-decoration-thickness: 3px;
 }
 /* Also see current.css and content.css  */
@@ -527,7 +527,7 @@ nav#nav1 #home.current{
 	text-decoration-color: #395375;
 }
 nav#nav1 #zoomcasts.current{
-	text-decoration-color: #cc6b4b;
+	text-decoration-color: #cb6948;
 }
 nav#nav1 #lesson_plans.current{
 	text-decoration-color: #5378ac;
