@@ -3,11 +3,11 @@
 /* ----------------------- */
 /* Also see content.css and .current on style.css */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #cc6b4b 50%);
+	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
 }
 .zoomcasts.cluster main section h2{
 	color: white;
-	background: #cc6b4b;
+	background: #cb6948;
 }
 .lesson-plans.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
@@ -183,6 +183,7 @@
 }
 /* some specs below from Livingstone Online */
 .cluster main section div span{
+	font-size: 1.1em;
 	color: #fff;
 	background-color: rgb(66,66,66);
 	line-height: 1.875em;
@@ -195,7 +196,7 @@
 	transform: translate(-50%, 0);
 	-moz-transform: translate(-50%, 0);
 	-webkit-transform: translate(-50%, 0);
-	opacity: .8;
+	opacity: .85;
 }
 .cluster main section div a:hover,
 .cluster main section div a:focus{
