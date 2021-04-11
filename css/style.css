@@ -626,7 +626,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 6px 8px;
+	padding: 6px 9px;
 	transition: 0.2s;
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
