@@ -224,7 +224,7 @@ footer p .site-detail:last-child::after{
 	font-family: 'Noto Serif', serif;
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
-	margin: 1.5em 0;
+	margin: 1.5em auto;
 	padding: .75em 1.5em;
 }
 hr{
