@@ -27,54 +27,28 @@
 	border: solid 1px #242424;
 }
 /* Carousel images */
+/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .carousel .carousel-item .carousel-image{
 	background: #e6e6e6;
+	position: relative;
+}
+.carousel .carousel-item .carousel-image::after{
+  content: "";
+  padding-bottom: 56.25%;
+	display: block;
 }
 .carousel .carousel-item .carousel-image img{
-	width: 100% !important;
-	min-height: calc(178px * .95);
-	max-height: calc(178px * .95);
+	width: 100%;
+  height: 100%;
 	object-fit:cover;
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
 	opacity: .9;
-}
-@media screen and (min-width:480px){
-	.carousel .carousel-item .carousel-image img{
-		min-height: calc(263px * .95);
-		max-height: calc(263px * .95);
-	}
-}
-@media screen and (min-width:624px){
-	.carousel .carousel-item .carousel-image img{
-		min-height: calc(348px * .95);
-		max-height: calc(348px * .95);
-	}
-}
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-image img{
-		min-height: calc(411px * .95);
-		max-height: calc(411px * .95);
-	}
-}
-@media screen and (min-width:992px){
-	.carousel .carousel-item .carousel-image img{
-		min-height: calc(423px * .95);
-		max-height: calc(423px * .95);
-	}
-}
-@media screen and (min-width:1200px){
-	.carousel .carousel-item .carousel-image img{
-		min-height: calc(515px * .95);
-		max-height: calc(515px * .95);
-	}
-}
-@media screen and (min-width:1366px){
-	.carousel .carousel-item .carousel-image img{
-		min-height: calc(529px * .95);
-		max-height: calc(529px * .95);
-	}
+	position: absolute;
+  left: 0;
+  top: 0;
 }
 /* Carousel caption (also see image caption) */
 .carousel .carousel-item .carousel-caption{
