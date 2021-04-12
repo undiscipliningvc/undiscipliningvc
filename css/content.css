@@ -6,20 +6,23 @@
 */
 /* ----------------------- */
 /* Also see cluster.css and .current on style.css */
-.zoomcasts.content header{
+.zoomcasts.content header,
+.zoomcasts.content main section.menu-container h3{
 	background: #cb6948;
 }
 .zoomcasts.content .youtube .play-button{
 	background-color: #cb6948;
 }
 .lesson-plans.content header,
-.content main section.menu-container h3{
+.lesson-plans.content main section.menu-container h3{
 	background: #5378ac;
 }
-.syllabi.content header{
+.syllabi.content header,
+.syllabi.content main section.menu-container h3{
 	background: #728a61;
 }
-.about.content header{
+.about.content header,
+.about.content main section.menu-container h3{
 	background: #757575;
 }
 /* ----------------------- */
@@ -52,7 +55,8 @@
 .content main{
 	padding: .5em 1em 1em;
 }
-.content.lesson-plans main
+.content.lesson-plans main,
+.content.syllabi main,
 .content.about main{
 	text-align: center;
 	margin: 0 auto;
@@ -63,6 +67,7 @@
 }
 @media only screen and (min-width: 992px){
 	.content.lesson-plans main,
+	.content.syllabi main,
 	.content.about main{
 		width: 75%;
 		max-width: 900px;
