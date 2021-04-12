@@ -141,35 +141,49 @@
 }
 .cluster main section div img{
 	background: #e6e6e6;
-	height: 189px;
 	max-width: 100%;
 	object-fit:cover;
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
 }
+.syllabi.cluster main section div img,
+.lesson_plans.cluster main section div img,
+.about.cluster main section div img{
+	height: 189px;
+}
 @media only screen and (min-width: 480px){
-	.cluster main section div img{
+	.syllabi.cluster main section div img,
+	.lesson_plans.cluster main section div img,
+	.about.cluster main section div img{
 		height: 290px;
 	}
 }
 @media only screen and (min-width: 640px){
-	.cluster main section div img{
+	.syllabi.cluster main section div img,
+	.lesson_plans.cluster main section div img,
+	.about.cluster main section div img{
 		height: 405px;
 	}
 }
 @media only screen and (min-width: 768px){
-	.cluster main section div img{
+	.syllabi.cluster main section div img,
+	.lesson_plans.cluster main section div img,
+	.about.cluster main section div img{
 		height: 473px;
 	}
 }
 @media only screen and (min-width: 992px){
-	.cluster main section div img{
+	.syllabi.cluster main section div img,
+	.lesson_plans.cluster main section div img,
+	.about.cluster main section div img{
 		height: 290px;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.cluster main section div img{
+	.syllabi.cluster main section div img,
+	.lesson_plans.cluster main section div img,
+	.about.cluster main section div img{
 		height: 332px;
 	}
 }
