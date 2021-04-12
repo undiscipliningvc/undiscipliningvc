@@ -53,14 +53,17 @@
 	}
 }
 .content main{
-	padding: .5em 1em 1em;
+	padding: 0 1em 1em;
+	width: 100vw;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 .content.lesson-plans main,
 .content.syllabi main,
 .content.about main{
 	text-align: center;
 	margin: 0 auto;
-	max-width: 700px;
+	/* max-width: 700px; */
 }
 .content.about.biographies main section{
 	max-width: 700px;
@@ -69,8 +72,8 @@
 	.content.lesson-plans main,
 	.content.syllabi main,
 	.content.about main{
-		width: 75%;
-		max-width: 900px;
+		/* width: 75%;
+		max-width: 900px; */
 	}
 	.content.about.biographies main{
 		width: 100%;
@@ -92,7 +95,7 @@
 */
 .content main .aspect-ratio-box{
 	margin: 1.25em auto;
-	max-width: 800px;
+	/* max-width: 800px; */
 	position: relative;
 }
 .content main .aspect-ratio-box::after {
@@ -131,7 +134,8 @@
 .content main h2{
 	font-size: 2.2em;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
+	font-variant: small-caps;
 	hyphens: none;
 	line-height: 1.5em;
 	color: #fff;
