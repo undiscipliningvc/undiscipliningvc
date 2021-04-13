@@ -174,8 +174,9 @@
 	opacity: .9;
 	z-index: 15;
 }
-.content.zoomcasts main h2{
-	font-size: 1.9em;
+.content.zoomcasts main h2,
+.content.about.biographies main h2{
+	font-size: 2.1em;
 	line-height: 1.2em;
 	color: #242424;
 }
@@ -185,7 +186,8 @@
 		font-size: 2.3em;
 		width: max-content;
 	}
-	.content.zoomcasts main h2{
+	.content.zoomcasts main h2,
+	.content.about.biographies main h2{
 		margin: 1em auto;
 	}
 }
