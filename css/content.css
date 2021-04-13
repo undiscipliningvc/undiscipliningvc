@@ -128,6 +128,7 @@
 	display: block;
 }
 .content main .aspect-ratio-box img {
+	background: #e6e6e6;
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -143,6 +144,7 @@
 }
 .content main section:first-of-type{
 	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 .content main section,
 .content main section.pathways,
@@ -153,7 +155,8 @@
 	counter-reset: none;
 }
 .content.lesson-plans main h2,
-.content.syllabi main h2{
+.content.syllabi main h2,
+.content.about.contributors main h2{
 	font-size: 1.5em;
 	font-weight: 400;
 	font-variant: small-caps;
@@ -166,7 +169,7 @@
 	-moz-border-radius: 5px;
 	margin: 0;
 	padding: .3em;
-	width: 90%;
+	max-width: 650px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -174,28 +177,36 @@
 	opacity: .9;
 	z-index: 15;
 }
+.content.lesson-plans main h2.top,
+.content.syllabi main h2.top,
+.content.about.contributors main h2.top{
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+}
+.content.lesson-plans main h2.bottom,
+.content.syllabi main h2.bottom,
+.content.about.contributors main h2.bottom{
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+}
 .content.zoomcasts main h2,
 .content.about.biographies main h2{
-	font-size: 2.1em;
-	line-height: 1.2em;
+	font-size: 2em;
+	line-height: 1.5em;
 	color: #242424;
 }
 @media only screen and (min-width: 768px){
 	.content.lesson-plans main h2,
-	.content.syllabi main h2{
+	.content.syllabi main h2,
+	.content.about.contributors main h2{
 		font-size: 2.3em;
-		width: max-content;
+		max-width: 850px;
 	}
 	.content.zoomcasts main h2,
 	.content.about.biographies main h2{
 		margin: 1em auto;
-	}
-}
-@media only screen and (min-width: 992px){
-	.content.lesson-plans main h2,
-	.content.syllabi main h2{
-		font-size: 2.5em;
-		width: max-content;
 	}
 }
 .content main h3{
@@ -222,12 +233,19 @@
 .content main section.materials strong{
   font-weight: 600;
 }
+.content main .specs{
+	text-align: center;
+}
+.content main .specs .specs-container{
+	display: inline-block;
+}
 .content section.menu-container{
 	text-align: center;
 	border: 1px solid #949494;
 	margin: 0;
 	padding: 1.5em 2em 2em;
 	display: inline-block;
+	box-sizing: border-box;
 }
 .content ol.menu{
 	font-size: .9em;
@@ -293,6 +311,10 @@
 	font-size: .9em;
 	margin: .5em 0 0 1.5em;
 	display: block;
+}
+.content ul.annotation,
+.content ol.annotation{
+	margin: 0 0 0 1.5em;
 }
 .content i.fa-envelope{
 	padding: 0 5px;
