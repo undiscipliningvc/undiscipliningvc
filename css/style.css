@@ -128,11 +128,16 @@ main{
 	line-height: 1.875em;
 	margin: 0 auto;
 	padding: 0 1em 1em;
-	max-width: 650px;
+	max-width: 700px;
 }
 @media only screen and (min-width: 768px){
 	main{
 		padding: 1.25em 1em 1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	main{
+		max-width: 650px;
 	}
 }
 main summary,
@@ -156,7 +161,7 @@ main section ul{
 	text-align: left;
 }
 .organizers{
-	margin: .5em 0;
+	margin: 0;
 	display: inline-block;
 }
 @media only screen and (min-width: 992px){
@@ -337,12 +342,7 @@ h2, h3, h4{
 }
 h2{
 	font-size: 1.15em;
-	margin: .25em 0 .75em;
-}
-@media only screen and (min-width: 992px){
-	h2{
-		margin: .5em 0 1em;
-	}	
+	margin: .5em 0;
 }
 h3{
 	font-size: 1.1em;
