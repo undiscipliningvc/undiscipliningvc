@@ -1,9 +1,6 @@
 /* 1.2.2. Content Pages */
 
 /* Section-specific colors */
-/* 
-
-*/
 /* ----------------------- */
 /* Also see cluster.css and .current on style.css */
 .zoomcasts.content header,
@@ -27,10 +24,9 @@
 }
 /* ----------------------- */
 .content header{
-	font-size: 1.1em;
 	margin: calc(41px + .3em) auto 0;
 	padding: 0;
-	height: 20px;
+	height: 10px;
 	max-width: calc(100% - 26px);
 }
 @media only screen and (min-width: 480px){
@@ -43,6 +39,7 @@
 @media only screen and (min-width: 768px){
 	.content header{
 		margin: calc(51px + .3em) auto 0;
+		height: 15px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -53,17 +50,25 @@
 	}
 }
 .content main{
-	padding: 0 0 1em;
-	width: 100vw;
+	padding: 0 .75em 1em;
 	max-width: 100%;
-	box-sizing: border-box;
+}
+@media only screen and (min-width: 480px){
+	.content main{
+		padding: 0 16px 1em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.content main{
+		padding: 0 0 1em;
+	}
 }
 .content.lesson-plans main,
 .content.syllabi main,
 .content.about main{
 	text-align: center;
 	margin: 0 auto;
-	/* max-width: 700px; */
+	max-width: 700px;
 }
 .content.about.biographies main section{
 	max-width: 700px;
@@ -72,8 +77,8 @@
 	.content.lesson-plans main,
 	.content.syllabi main,
 	.content.about main{
-		/* width: 75%;
-		max-width: 900px; */
+		width: 75%;
+		max-width: 900px;
 	}
 	.content.about.biographies main{
 		width: 100%;
@@ -81,44 +86,33 @@
 	}
 }
 .content main summary,
-.content main section,
+.content main section{
+	text-align: left;
+	max-width: 700px;
+}
 .content main aside{
 	text-align: left;
-	max-width: 650px;
+	max-width: 700px;
+	padding: .25em 1em;
 }
 /* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .content main .aspect-ratio-box{
-	margin: 0 auto;
+	margin: .75em auto;
 	padding: 0;
-	/* max-width: 800px; */
+	max-width: 700px;
 	position: relative;
-	height: calc(100vh - 41px - .3em - 20px);
-	max-width: calc(100% - 26px);
-}
-@media only screen and (min-width: 480px){
-	.content main .aspect-ratio-box{
-		height: calc(100vh - 47px - .3em - 20px);
-		width: calc(100% - 30px);
-		max-width: 700px;
-	}
-}
-@media only screen and (min-width: 768px){
-	.content main .aspect-ratio-box{
-		height: calc(100vh - 51px - .3em - 20px);
-	}
 }
 @media only screen and (min-width: 992px){
 	.content main .aspect-ratio-box{
-		height: calc(100vh - 63px - .3em - 20px);
-		width: calc(100% - 46px);
-		max-width: 1366px;
+		margin: 1em auto;
+		max-width: 900px;
 	}
 }
 .content main .aspect-ratio-box::after {
   content: "";
-  /* padding-bottom: 66.67%; */
+  padding-bottom: 56.25%;
 	display: block;
 }
 .content main .aspect-ratio-box img {
@@ -147,26 +141,37 @@
 	counter-reset: none;
 }
 .content main h2{
-	font-size: 3.5em;
-	/* font-family: 'Source Sans Pro', sans-serif; */
+	font-size: 1.5em;
 	font-weight: 400;
 	font-variant: small-caps;
 	hyphens: none;
-	line-height: 1.5em;
+	line-height: 1.2em;
 	color: #fff;
 	background-color: rgb(66,66,66);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	margin: 0;
-	padding: .25em;
-	width: fit-content;
+	padding: .3em;
+	width: 90%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* opacity: .85; */
+	opacity: .9;
 	z-index: 15;
+}
+@media only screen and (min-width: 768px){
+	.content main h2{
+		font-size: 2.3em;
+		width: max-content;
+	}
+}
+@media only screen and (min-width: 992px){
+	.content main h2{
+		font-size: 2.5em;
+		width: max-content;
+	}
 }
 .content main h3{
 	font-size: 1.15em;
@@ -267,48 +272,27 @@
 .content i.fa-envelope{
 	padding: 0 5px;
 }
-/* .lesson-plans.content main img{
-	width: 100% !important;
-	min-height: calc(178px * .95);
-	max-height: calc(178px * .95);
-	object-fit:cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-	object-position: 50% 50%;
+
+/* .content main .aspect-ratio-box{
+	height: calc(100vh - 41px - .3em - 20px);
+	max-width: calc(100% - 26px);
 }
-@media screen and (min-width:480px){
-	.lesson-plans.content main img{
-		min-height: calc(263px * .95);
-		max-height: calc(263px * .95);
+@media only screen and (min-width: 480px){
+	.content main .aspect-ratio-box{
+		height: calc(100vh - 47px - .3em - 20px);
+		width: calc(100% - 30px);
+		max-width: 700px;
 	}
 }
-@media screen and (min-width:624px){
-	.lesson-plans.content main img{
-		min-height: calc(348px * .95);
-		max-height: calc(348px * .95);
+@media only screen and (min-width: 768px){
+	.content main .aspect-ratio-box{
+		height: calc(100vh - 51px - .3em - 20px);
 	}
 }
-@media screen and (min-width:768px){
-	.lesson-plans.content main img{
-		min-height: calc(411px * .95);
-		max-height: calc(411px * .95);
-	}
-}
-@media screen and (min-width:992px){
-	.lesson-plans.content main img{
-		min-height: calc(423px * .95);
-		max-height: calc(423px * .95);
-	}
-}
-@media screen and (min-width:1200px){
-	.lesson-plans.content main img{
-		min-height: calc(515px * .95);
-		max-height: calc(515px * .95);
-	}
-}
-@media screen and (min-width:1366px){
-	.lesson-plans.content main img{
-		min-height: calc(529px * .95);
-		max-height: calc(529px * .95);
+@media only screen and (min-width: 992px){
+	.content main .aspect-ratio-box{
+		height: calc(100vh - 63px - .3em - 20px);
+		width: calc(100% - 46px);
+		max-width: 1366px;
 	}
 } */
