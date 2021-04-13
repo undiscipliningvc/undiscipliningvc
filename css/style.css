@@ -464,7 +464,7 @@ a:focus img{
 #nav0 a{
 	font-size: 1em;
 	color: #fff;
-	background-color: #5378ac;
+	background-color: rgb(66,66,66);
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 8px;
