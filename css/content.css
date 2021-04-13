@@ -139,6 +139,37 @@
 	overflow: hidden;
 	object-position: 50% 50%;
 }
+.content main .aspect-ratio-box .caption{
+	background-color: rgb(66,66,66);
+	border: 2px solid #fff;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: 0;
+	padding: 2px 4px;
+	position: absolute;
+	bottom: 7px;
+	right: 7px;
+	opacity: .93;
+}
+@media screen and (min-width: 480px){
+	.content main .aspect-ratio-box .caption{
+		font-size: 1.7em;
+		padding: 4px 6px;
+	}
+}
+.content main .aspect-ratio-box .caption:hover,
+.content main .aspect-ratio-box .caption:focus-within{
+	background-color: #fff;
+	border: 2px solid rgb(66,66,66);
+}
+.content main .aspect-ratio-box a{
+	color: #fff;
+}
+.content main .aspect-ratio-box a:hover,
+.content main .aspect-ratio-box a:focus{
+	color: rgb(66,66,66);
+}
 .content main aside{
 	box-sizing: border-box;
 }
@@ -174,7 +205,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	opacity: .9;
+	opacity: .93;
 	z-index: 15;
 }
 .content.lesson-plans main h2.top,
