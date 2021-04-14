@@ -39,9 +39,6 @@ Dark Gray: #2e2e2e; (footer only)
 Mid Gray: #949494;
 Light Gray: #e6e6e6;
 
-Red: #cc6b4b;
-Brown: #757575;
-Green: #778056;
 Blue: #5378ac; (sections/carousel/images/nav0)
 
 (extra colors)
@@ -171,6 +168,35 @@ main section ul{
 }
 .organizers + section{
 	margin-top: .5em;
+}
+.mailing-list{
+	text-align: center;
+	background: #e6e6e6;
+	border: 1px solid #242424;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0;
+	padding: 0 1em 1em;
+	display: inline-block;
+}
+.mailing-list a.contribute {
+	background-color: #395375;
+	border: 1px solid #395375;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 3px 5px;
+	text-decoration: none;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mailing-list a.contribute{
+color: #fff;
+}
+.mailing-list a.contribute:focus,
+.mailing-list a.contribute:hover {
+	color: #242424;
+	background: #fff;
 }
 ol.mission{
 	margin: 0 1em;
