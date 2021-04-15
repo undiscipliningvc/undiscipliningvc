@@ -1,7 +1,6 @@
 /* 1.2.2. Content Pages */
 
 /* Section-specific colors */
-/* ----------------------- */
 /* Also see cluster.css and .current on style.css */
 .zoomcasts.content header,
 .zoomcasts.content main section.menu-container h3{
@@ -70,9 +69,7 @@
 	margin: 0 auto;
 	max-width: 700px;
 }
-.content.zoomcasts main{
-	max-width: 700px;
-}
+.content.zoomcasts main,
 .content.about.biographies main section{
 	max-width: 700px;
 }
@@ -97,7 +94,7 @@
 	text-align: left;
 	max-width: 700px;
 	padding: .25em 1em;
-	
+	box-sizing: border-box;
 }
 @media only screen and (min-width: 992px){
 	.content.zoomcasts main,
@@ -106,6 +103,22 @@
 	.content main aside{
 		max-width: 650px;
 	}
+}
+.content main section,
+.content main section.pathways,
+.content main section.materials{
+	counter-reset: pathways;
+}
+.content main section section{
+	counter-reset: none;
+}
+.content main section:first-of-type{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+.content.error404 main section:first-of-type,
+.content.error404 main section:first-of-type p{
+	text-align: center;
 }
 /* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
@@ -127,6 +140,9 @@
   padding-bottom: 56.25%;
 	display: block;
 }
+.content.error404 main .aspect-ratio-box::after {
+  padding-bottom: 32.5%;
+}
 .content main .aspect-ratio-box img {
 	background: #e6e6e6;
 	width: 100%;
@@ -146,7 +162,7 @@
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	margin: 0;
-	padding: 2px 4px;
+	padding: 0px 6px;
 	position: absolute;
 	bottom: 7px;
 	right: 7px;
@@ -170,25 +186,18 @@
 .content main .aspect-ratio-box a:focus{
 	color: rgb(66,66,66);
 }
-.content main aside{
-	box-sizing: border-box;
-}
-.content main section:first-of-type{
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-}
-.content main section,
-.content main section.pathways,
-.content main section.materials{
-	counter-reset: pathways;
-}
-.content main section section{
-	counter-reset: none;
-}
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about.contributors main h2{
 	font-size: 1.5em;
+}
+.content.about.error404 main h2{
+	font-size: 1.6em;
+}
+.content.lesson-plans main h2,
+.content.syllabi main h2,
+.content.about.contributors main h2,
+.content.about.error404 main h2{
 	font-weight: 400;
 	font-variant: small-caps;
 	hyphens: none;
@@ -228,11 +237,20 @@
 	line-height: 1.5em;
 	color: #242424;
 }
+@media only screen and (min-width: 480px){
+	.content.about.error404 main h2{
+		font-size: 2.4em;
+	}
+}
 @media only screen and (min-width: 768px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
 	.content.about.contributors main h2{
 		font-size: 2.3em;
+		max-width: 850px;
+	}
+	.content.about.error404 main h2{
+		font-size: 3em;
 		max-width: 850px;
 	}
 	.content.zoomcasts main h2,
@@ -263,6 +281,28 @@
 .content main section.pathways strong,
 .content main section.materials strong{
   font-weight: 600;
+}
+.content a.link404{
+	color: #fff;
+	font-weight: 600;
+	background-color: #cb6948;
+	border: 1px solid #cb6948;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 3px 5px;
+	text-decoration: none;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.content a.link404:focus,
+.content a.link404:hover{
+	color: #242424;
+	background: #fff;
+}
+@media only screen and (min-width: 768px){
+	.content a.link404{
+		font-size: 1.2em;
+	}
 }
 .content main .specs{
 	text-align: center;
@@ -350,27 +390,3 @@
 .content i.fa-envelope{
 	padding: 0 5px;
 }
-
-/* .content main .aspect-ratio-box{
-	height: calc(100vh - 41px - .3em - 20px);
-	max-width: calc(100% - 26px);
-}
-@media only screen and (min-width: 480px){
-	.content main .aspect-ratio-box{
-		height: calc(100vh - 47px - .3em - 20px);
-		width: calc(100% - 30px);
-		max-width: 700px;
-	}
-}
-@media only screen and (min-width: 768px){
-	.content main .aspect-ratio-box{
-		height: calc(100vh - 51px - .3em - 20px);
-	}
-}
-@media only screen and (min-width: 992px){
-	.content main .aspect-ratio-box{
-		height: calc(100vh - 63px - .3em - 20px);
-		width: calc(100% - 46px);
-		max-width: 1366px;
-	}
-} */
