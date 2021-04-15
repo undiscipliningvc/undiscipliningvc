@@ -286,18 +286,16 @@
 	color: #fff;
 	font-weight: 600;
 	background-color: #cb6948;
-	border: 1px solid #cb6948;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 3px 5px;
+	padding: 4px 6px;
 	text-decoration: none;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .content a.link404:focus,
 .content a.link404:hover{
-	color: #242424;
-	background: #fff;
+	background: #242424;
 }
 @media only screen and (min-width: 768px){
 	.content a.link404{
