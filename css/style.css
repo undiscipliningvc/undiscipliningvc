@@ -180,7 +180,8 @@ main section ul{
 	padding: 0 1em 1em;
 	display: inline-block;
 }
-.mailing-list a.contribute {
+.mailing-list a.contribute{
+	color: #fff;
 	background-color: #395375;
 	border: 1px solid #395375;
 	border-radius: 5px;
@@ -190,11 +191,8 @@ main section ul{
 	text-decoration: none;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.mailing-list a.contribute{
-color: #fff;
-}
 .mailing-list a.contribute:focus,
-.mailing-list a.contribute:hover {
+.mailing-list a.contribute:hover{
 	color: #242424;
 	background: #fff;
 }
