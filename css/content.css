@@ -295,7 +295,7 @@
 }
 .content a.link404:focus,
 .content a.link404:hover{
-	background: #242424;
+	background: #2e2e2e;
 }
 @media only screen and (min-width: 768px){
 	.content a.link404{
