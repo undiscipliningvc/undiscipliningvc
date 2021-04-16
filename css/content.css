@@ -140,6 +140,9 @@
   padding-bottom: 56.25%;
 	display: block;
 }
+.content.sitemap main .aspect-ratio-box::after {
+  padding-bottom: 23.24%;
+}
 .content.error404 main .aspect-ratio-box::after {
   padding-bottom: 32.5%;
 }
@@ -188,7 +191,8 @@
 }
 .content.lesson-plans main h2,
 .content.syllabi main h2,
-.content.about.contributors main h2{
+.content.about.contributors main h2,
+.content.about.sitemap main h2{
 	font-size: 1.5em;
 }
 .content.about.error404 main h2{
@@ -197,6 +201,7 @@
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about.contributors main h2,
+.content.about.sitemap main h2,
 .content.about.error404 main h2{
 	font-weight: 400;
 	font-variant: small-caps;
@@ -245,7 +250,8 @@
 @media only screen and (min-width: 768px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
-	.content.about.contributors main h2{
+	.content.about.contributors main h2,
+	.content.about.sitemap main h2{
 		font-size: 2.3em;
 		max-width: 850px;
 	}
