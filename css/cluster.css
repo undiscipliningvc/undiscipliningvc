@@ -212,6 +212,7 @@
 	background-color: rgb(66,66,66);
 	line-height: 1.5em;
 	text-align: center;
+	padding: .5em 0;
 	width: 100%;
 	/* min-height: 20%; */
 	position: absolute;
@@ -220,7 +221,7 @@
 	transform: translate(-50%, 0);
 	-moz-transform: translate(-50%, 0);
 	-webkit-transform: translate(-50%, 0);
-	opacity: .85;
+	opacity: .9;
 }
 .cluster main section div a:hover,
 .cluster main section div a:focus{
