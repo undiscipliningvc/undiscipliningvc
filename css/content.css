@@ -264,6 +264,10 @@
 }
 .content main h3{
 	font-size: 1.15em;
+	hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
 }
 .content section.menu-container h3{
 	color: #fff;
