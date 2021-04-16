@@ -1,8 +1,9 @@
 User-agent: *
 Disallow: /0_dev/
 Disallow: /bash/
+Disallow: /common/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /scripts/
+Disallow: /js/
 
 Sitemap: https://undiscipliningvc.org/sitemap.xml

@@ -1,0 +1,282 @@
+/* 1.2.1 Cluster Pages */
+
+/* ----------------------- */
+/* Also see content.css and .current on style.css */
+.zoomcasts.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
+}
+.zoomcasts.cluster main section h2{
+	color: white;
+	background: #cb6948;
+}
+.lesson-plans.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
+}
+.lesson-plans.cluster main section h2{
+	color: white;
+	background: #5378ac;
+}
+.syllabi.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #728a61 50%);
+}
+.syllabi.cluster main section h2{
+	color: white;
+	background: #728a61;
+}
+.about.cluster main section:first-child{
+	background: linear-gradient(to left top, #fff 50%, #757575 50%);
+}
+.about.cluster main section h2{
+	color: white;
+	background: #757575;
+}
+/* ----------------------- */
+.cluster main{
+	margin: 47px auto 0;
+	padding: 0 .5em 0;
+	max-width: 100%;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	.cluster main{
+		margin-top: 47px;
+		padding: .5em 1em 0;
+	}
+}
+@media only screen and (min-width: 768px){
+	.cluster main{
+		margin-top: 51px;
+		max-width: 700px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.cluster main{
+		margin-top: 63px;
+		padding: 0 1em;
+		max-width: 1366px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+}
+.cluster main section{
+	text-align: center;
+	border: 1px solid #242424;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 1em auto;
+	display: flex;
+	flex-flow: column;
+}
+.cluster main section:first-child{
+	min-height: 150px;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	.cluster main section{
+		margin: .5em 0 1.5em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.cluster main section{
+		margin: 1em;
+		max-width: 500px;
+		flex: 1 0 calc(50% - 2em - 2px);
+	}
+		.cluster main section:first-child{
+			max-width: 300px;
+			flex: 1 0 calc(27.5% - 2em - 2px);
+	}
+		.cluster main section:nth-child(2){
+			max-width: 600px;
+			flex: 1 0 calc(72.5% - 2em - 2px);
+	}
+}
+.cluster main section h2{
+	font-size: 1.1em;
+	font-weight: 700;
+	font-variant: normal;
+	color: #fff;
+	border-bottom: 1px solid #242424;
+	border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	margin: 0;
+	padding: .5em 0;
+}
+.cluster main section h2#level-2-title{
+	font-size: 1.5em;
+	white-space: nowrap;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0;
+	padding: 10px;
+	height: 33px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.cluster main section p{
+	font-size: .95em;
+	padding: 0 1em;
+}
+/* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
+.cluster main section div{
+	background: #e6e6e6;
+	margin: 1em;
+	padding: 0;
+	position: relative;
+}
+.cluster main section div:hover,
+.cluster main section div:focus-within{
+	outline: 3px solid #395375;
+}
+.cluster main section div::after{
+	content: "";
+	padding-bottom: 56.25%;
+	display: block;
+}
+@media only screen and (min-width: 992px){
+	.cluster main section div::after{
+		padding-bottom: 66.67%;
+	}
+	.cluster.zoomcasts main section div::after{
+		padding-bottom: 56.25%;
+	}
+	.cluster.about main section div::after{
+		padding-bottom: 71.43%;
+	}
+}
+.cluster main section div img{
+	background: #e6e6e6;
+	width: 100%;
+  height: 100%;
+	position: absolute;
+  left: 0;
+  top: 0;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+	object-position: 50% 50%;
+}
+.cluster main section div a img{
+	border: none;
+}
+.cluster main section div a:hover img,
+.cluster main section div a:focus img{
+	border: none;
+	opacity: .7;
+}
+.cluster main section div span{
+	font-size: 1.1em;
+}
+.cluster.zoomcasts main section div span{
+	font-size: 1em;
+}
+/* some specs below from Livingstone Online */
+.cluster main section div span{
+	color: #fff;
+	background-color: rgb(66,66,66);
+	line-height: 1.5em;
+	text-align: center;
+	width: 100%;
+	/* min-height: 20%; */
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	opacity: .85;
+}
+.cluster main section div a:hover,
+.cluster main section div a:focus{
+	background: none;
+}
+.cluster main section ol,
+.cluster main section ul{
+	text-align: center;
+	list-style: none;
+	margin: 1em 1em 1.5em;
+	padding: 0;
+}
+@media only screen and (min-width: 768px){
+	.cluster main section ol,
+	.cluster main section ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.cluster main section ul li{
+	hyphens: none;
+	line-height: 1.5em;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 1em 0;
+	padding: .3em;
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+@media only screen and (min-width: 768px){
+	.cluster main section ul li{
+		margin: .75em .5em;
+		padding: .15em;
+		min-height: 35px;
+		flex: 1 0 calc(50% - 2px - 2em);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.cluster main section ul li:first-child{
+	font-size: .95em;
+	font-family: 'Noto Serif', serif;
+	font-weight: 600;
+	background: #e6e6e6;
+	min-height: unset;
+}
+@media only screen and (min-width: 768px){
+	.cluster main section ul li:first-child{
+		margin: .5em .5em .75em;
+		display: block;
+		flex: 1 0 calc(100% - 2px - 1em);
+	}
+}
+.cluster main section ul li:first-child:hover,
+.cluster main section ul li:first-child:focus-within{
+	color: inherit;
+	background: #e6e6e6;
+}
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
+	font-size: .95em;
+	text-decoration: none;
+	color: #242424;
+}
+.cluster main section ul li:hover,
+.cluster main section ul li:focus-within,
+.cluster main section ul li:hover a,
+.cluster main section ul li:focus-within a{
+	color: white;
+	background: #395375;
+}
+.cluster main section ul li a i{
+	display: none;
+	visibility: hidden;
+}
+.lesson-plans.cluster main section div{
+	height: 100%;
+	display: flex;
+  flex-flow: column;
+}
