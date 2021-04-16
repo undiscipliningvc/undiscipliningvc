@@ -127,65 +127,46 @@
 	font-size: .95em;
 	padding: 0 1em;
 }
+/* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .cluster main section div{
-	line-height: 0;
 	background: #e6e6e6;
 	margin: 1em;
 	padding: 0;
-	overflow: hidden;
 	position: relative;
 }
 .cluster main section div:hover,
 .cluster main section div:focus-within{
 	outline: 3px solid #395375;
 }
+.cluster main section div::after{
+	content: "";
+	padding-bottom: 56.25%;
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.cluster main section div::after{
+		padding-bottom: 66.67%;
+	}
+	.cluster.zoomcasts main section div::after{
+		padding-bottom: 56.25%;
+	}
+	.cluster.about main section div::after{
+		padding-bottom: 71.43%;
+	}
+}
 .cluster main section div img{
 	background: #e6e6e6;
-	max-width: 100%;
+	width: 100%;
+  height: 100%;
+	position: absolute;
+  left: 0;
+  top: 0;
 	object-fit:cover;
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
-}
-.syllabi.cluster main section div img,
-.lesson_plans.cluster main section div img,
-.about.cluster main section div img{
-	height: 189px;
-}
-@media only screen and (min-width: 480px){
-	.syllabi.cluster main section div img,
-	.lesson_plans.cluster main section div img,
-	.about.cluster main section div img{
-		height: 290px;
-	}
-}
-@media only screen and (min-width: 640px){
-	.syllabi.cluster main section div img,
-	.lesson_plans.cluster main section div img,
-	.about.cluster main section div img{
-		height: 405px;
-	}
-}
-@media only screen and (min-width: 768px){
-	.syllabi.cluster main section div img,
-	.lesson_plans.cluster main section div img,
-	.about.cluster main section div img{
-		height: 473px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.syllabi.cluster main section div img,
-	.lesson_plans.cluster main section div img,
-	.about.cluster main section div img{
-		height: 290px;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.syllabi.cluster main section div img,
-	.lesson_plans.cluster main section div img,
-	.about.cluster main section div img{
-		height: 332px;
-	}
 }
 .cluster main section div a img{
 	border: none;
