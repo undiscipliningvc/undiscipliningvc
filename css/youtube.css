@@ -3,16 +3,11 @@
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
 .wrapper{
-	margin: 1.5em auto;
+	margin: 1em auto 1.5em;
 	padding: 0;
 	border: 1px solid #242424;
 }
 @media only screen and (min-width: 480px){
-	.wrapper{
-		margin: 1.25em auto 1.5em;
-	}
-}
-@media only screen and (min-width: 768px){
 	.wrapper{
 		margin: 1em auto 1.5em;
 	}

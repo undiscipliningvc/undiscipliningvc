@@ -203,6 +203,11 @@
 	font-weight: 400;
 	font-variant: small-caps;
 	hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	word-break: normal;
+	-ms-word-break: normal; 
 	line-height: 1.2em;
 	color: #fff;
 	background-color: rgb(66,66,66);
@@ -237,9 +242,9 @@
 .content.about.founders main h2{
 	font-size: 2.2em;
 	font-variant: small-caps;
-	line-height: 1.5em;
+	line-height: 1.4em;
 	color: #242424;
-	margin: .5em auto;
+	margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
 	.content.about.error404 main h2{
@@ -260,10 +265,16 @@
 	.content.zoomcasts main h2,
 	.content.about.founders main h2{
 		font-size: 2.4em;
+		margin: .5em auto;
 	}
 }
 .content main h3{
 	font-size: 1.15em;
+	hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	margin: 0 auto;
 }
 .content section.menu-container h3{
 	color: #fff;
