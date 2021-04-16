@@ -157,16 +157,16 @@ main section ol,
 main section ul{
 	text-align: left;
 }
-.organizers{
+.founders{
 	margin: 0;
 	display: inline-block;
 }
 @media only screen and (min-width: 992px){
-	.organizers{
+	.founders{
 		margin-bottom: 1.25em;
 	}
 }
-.organizers + section{
+.founders + section{
 	margin-top: .5em;
 }
 .mailing-list{

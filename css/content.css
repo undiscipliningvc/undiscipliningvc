@@ -70,7 +70,7 @@
 	max-width: 700px;
 }
 .content.zoomcasts main,
-.content.about.organizers main section{
+.content.about.founders main section{
 	max-width: 700px;
 }
 @media only screen and (min-width: 992px){
@@ -80,7 +80,7 @@
 		width: 75%;
 		max-width: 900px;
 	}
-	.content.about.organizers main{
+	.content.about.founders main{
 		width: 100%;
 		max-width: 900px;
 	}
@@ -199,7 +199,7 @@
 }
 .content.lesson-plans main h2,
 .content.syllabi main h2,
-.content.about:not(.organizers) main h2{
+.content.about:not(.founders) main h2{
 	font-weight: 400;
 	font-variant: small-caps;
 	hyphens: none;
@@ -234,7 +234,7 @@
 	transform: translate(-50%, -70%);
 }
 .content.zoomcasts main h2,
-.content.about.organizers main h2{
+.content.about.founders main h2{
 	font-size: 2.2em;
 	font-variant: small-caps;
 	line-height: 1.5em;
@@ -258,7 +258,7 @@
 		max-width: 850px;
 	}
 	.content.zoomcasts main h2,
-	.content.about.organizers main h2{
+	.content.about.founders main h2{
 		font-size: 2.4em;
 	}
 }
@@ -357,13 +357,13 @@
 .content section p{
 	clear: both;
 }
-.content.about.organizers section p img{
+.content.about.founders section p img{
 	margin: .5em .75em 0 0;
 	width: 100%;
 	display: inline-block;
 }
 @media only screen and (min-width: 480px){
-	.content.about.organizers section p img{
+	.content.about.founders section p img{
 		margin: .5em .75em 0 0;
 		width: 50%;
 		float: left;
@@ -371,12 +371,12 @@
 	}	
 }
 @media only screen and (min-width: 768px){
-	.content.about.organizers section p img{
+	.content.about.founders section p img{
 		width: 30%;
 	}
 }
 @media only screen and (min-width: 992px){
-	.content.about.organizers section p img{
+	.content.about.founders section p img{
 		width: 25%;
 	}
 }
