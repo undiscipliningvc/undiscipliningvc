@@ -116,9 +116,15 @@
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 }
+.content.about.founders main section:first-of-type{
+	margin-top: 0;
+}
 .content.error404 main section:first-of-type,
 .content.error404 main section:first-of-type p{
 	text-align: center;
+}
+.content.about.founders main section hr{
+	margin: 1em 0;
 }
 /* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
@@ -244,7 +250,12 @@
 	font-variant: small-caps;
 	line-height: 1.4em;
 	color: #242424;
+}
+.content.zoomcasts main h2{
 	margin: 0 auto;
+}
+.content.about.founders main h2{
+	margin: .25em auto 0;
 }
 @media only screen and (min-width: 480px){
 	.content.about.error404 main h2{
@@ -322,6 +333,7 @@
 }
 .content main .specs .specs-container{
 	display: inline-block;
+	text-align: left;
 }
 .content section.menu-container{
 	text-align: center;
@@ -333,12 +345,18 @@
 }
 .content ol.menu{
 	font-size: .9em;
-	margin: 0 auto;
+	margin: 1em auto 0;
 	padding-left: 1.2em;
 	display: inline-block;
 }
 .content ol.menu li ol{
 	list-style: lower-alpha;
+	padding-left: 1em;
+}
+@media only screen and (min-width: 768px){
+	.content ol.menu li ol{
+		padding-left: revert;
+	}
 }
 .content .cluster-details div ol{
 	margin-left: .25em;
@@ -399,6 +417,18 @@
 .content ul.annotation,
 .content ol.annotation{
 	margin: 0 0 0 1.5em;
+}
+.content.sitemap ol li ol{
+	list-style: lower-alpha;
+	padding-left: 1em;
+}
+.content.sitemap ol li ol li ol{
+	list-style: lower-roman;
+}
+@media only screen and (min-width: 768px){
+	.content.sitemap ol li ol{
+		padding-left: revert;
+	}	
 }
 .content i.fa-envelope{
 	padding: 0 5px;
