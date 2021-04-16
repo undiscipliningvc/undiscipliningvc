@@ -143,8 +143,22 @@
 }
 .cluster main section div::after{
 	content: "";
-	padding-bottom: 56.25%;
+	/* padding-bottom: 56.25%; */
 	display: block;
+}
+.cluster main section div::after{
+	padding-bottom: 66.67%;
+}
+.cluster.zoomcasts main section div::after{
+	padding-bottom: 56.25%;
+}
+.cluster.about main section div::after{
+	padding-bottom: 71.43%;
+}
+@media only screen and (min-width: 992px){
+	.cluster main section div::after{
+		padding-bottom: 56.25%;
+	}
 }
 @media only screen and (min-width: 992px){
 	.cluster main section div::after{
