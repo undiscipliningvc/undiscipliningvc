@@ -620,7 +620,7 @@ nav#navFB li:nth-child(2){
 }
 nav#nav1 h1,
 nav#navFB h1{
-	font-size: 1.275em;
+	font-size: 1.25em;
 	white-space: nowrap;
 	border: 2px solid transparent;
 	padding: 7px 5px 0;
