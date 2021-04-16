@@ -98,6 +98,7 @@
 	font-size: 1.1em;
 	font-weight: 700;
 	font-variant: normal;
+	hyphens: none;
 	color: #fff;
 	border-bottom: 1px solid #242424;
 	border-radius: 4px 4px 0 0;
