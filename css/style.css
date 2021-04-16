@@ -639,7 +639,7 @@ nav#navFB a:focus-within h1{
 @media only screen and (min-width: 480px){
 	nav#nav1 h1,
 	nav#navFB h1{
-		font-size: 1.7em;
+		font-size: 1.6em;
 	}
 }
 @media only screen and (min-width: 768px){
