@@ -989,6 +989,15 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .italic{
 	font-style: italic;
 }
+.large{
+	font-size: 1.05em;
+}
+.larger{
+	font-size: 1.1em;
+}
+.largest{
+	font-size: 1.15em;
+}
 .right{
 	text-align: right;
 }
