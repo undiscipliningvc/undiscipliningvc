@@ -110,6 +110,16 @@ jQuery(document).ready(function () {
   })
 });
 
+// Increases site security
+// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
+AddRelNoopener();
+
+function AddRelNoopener(){
+  var links = document.querySelectorAll("a");
+  for(var i = 0; i < links.length; i++){
+    links[i].setAttribute("rel","noopener");
+  }
+};
 
 // Highlights users current section in navigation
 // Adapted from https://stackoverflow.com/a/21718316
@@ -139,16 +149,4 @@ function checkUrl () {
   if (window.location.href.indexOf("about") > -1) {	
     document.getElementById("about").setAttribute("class","current");
   };
-};
-
-
-// Increases site security
-// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
-AddRelNoopener();
-
-function AddRelNoopener(){
-  var links = document.querySelectorAll("a");
-  for(var i = 0; i < links.length; i++){
-    links[i].setAttribute("rel","noopener");
-  }
 };
