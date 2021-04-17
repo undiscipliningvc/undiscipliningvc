@@ -143,9 +143,6 @@ function checkUrl () {
   if (window.location.href.indexOf("syllabi") > -1) {	
     document.getElementById("syllabi").setAttribute("class","current");
   };
-  if (window.location.href.indexOf("faq") > -1) {	
-    document.getElementById("faq").setAttribute("class","current");
-  };
   if (window.location.href.indexOf("about") > -1) {	
     document.getElementById("about").setAttribute("class","current");
   };
