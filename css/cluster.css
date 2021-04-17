@@ -149,6 +149,7 @@
 .cluster main section div:hover,
 .cluster main section div:focus-within{
 	outline: 3px solid #395375;
+	overflow: hidden;
 }
 .cluster main section div::after{
 	content: "";
