@@ -220,6 +220,12 @@ footer{
 	font-size: 1em;
 	text-align: center;
 	line-height: 1.875em;
+	hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	word-break: normal;
+	-ms-word-break: normal;
 	color: #fff;
 	background: #2e2e2e;
 	margin: .75em auto 0;
