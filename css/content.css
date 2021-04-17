@@ -198,7 +198,7 @@
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 .content.about.error404 main h2{
 	font-size: 1.6em;
@@ -258,6 +258,11 @@
 	margin: .25em auto 0;
 }
 @media only screen and (min-width: 480px){
+	.content.lesson-plans main h2,
+	.content.syllabi main h2,
+	.content.about main h2{
+		font-size: 1.6em;
+	}
 	.content.about.error404 main h2{
 		font-size: 2.4em;
 	}
