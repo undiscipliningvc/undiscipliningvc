@@ -213,7 +213,7 @@
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal; 
+	-ms-word-break: normal;
 	line-height: 1.2em;
 	color: #fff;
 	background-color: rgb(66,66,66);
@@ -290,6 +290,8 @@
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
+	word-break: normal;
+	-ms-word-break: normal;
 	margin: 0 auto;
 }
 .content section.menu-container h3{
