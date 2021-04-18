@@ -1022,3 +1022,12 @@ nav#nav2 #overlay-menu li button.close:focus i{
 .underline{
 	text-decoration: underline;
 }
+.word{
+	white-space: nowrap;
+	hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	word-break: normal;
+	-ms-word-break: normal;
+}
