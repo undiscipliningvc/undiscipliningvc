@@ -69,8 +69,7 @@
 	margin: 0 auto;
 	max-width: 700px;
 }
-.content.zoomcasts main,
-.content.about.founders main section{
+.content.zoomcasts main{
 	max-width: 700px;
 }
 @media only screen and (min-width: 992px){
@@ -78,10 +77,6 @@
 	.content.syllabi main,
 	.content.about main{
 		width: 75%;
-		max-width: 900px;
-	}
-	.content.about.founders main{
-		width: 100%;
 		max-width: 900px;
 	}
 }
@@ -116,15 +111,9 @@
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 }
-.content.about.founders main section:first-of-type{
-	margin-top: 0;
-}
 .content.error404 main section:first-of-type,
 .content.error404 main section:first-of-type p{
 	text-align: center;
-}
-.content.about.founders main section hr{
-	margin: 1em 0;
 }
 /* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
@@ -205,7 +194,7 @@
 }
 .content.lesson-plans main h2,
 .content.syllabi main h2,
-.content.about:not(.founders) main h2{
+.content.about main h2{
 	font-weight: 400;
 	font-variant: small-caps;
 	hyphens: none;
@@ -244,8 +233,7 @@
 	left: 50%;
 	transform: translate(-50%, -70%);
 }
-.content.zoomcasts main h2,
-.content.about.founders main h2{
+.content.zoomcasts main h2{
 	font-size: 2.2em;
 	font-variant: small-caps;
 	line-height: 1.4em;
@@ -253,9 +241,6 @@
 }
 .content.zoomcasts main h2{
 	margin: 0 auto;
-}
-.content.about.founders main h2{
-	margin: .25em auto 0;
 }
 @media only screen and (min-width: 480px){
 	.content.lesson-plans main h2,
@@ -278,8 +263,7 @@
 		font-size: 3em;
 		max-width: 850px;
 	}
-	.content.zoomcasts main h2,
-	.content.about.founders main h2{
+	.content.zoomcasts main h2{
 		font-size: 2.4em;
 		margin: .5em auto;
 	}
