@@ -292,8 +292,9 @@
 }
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
-  counter-increment: pathways;
-  content: counter(pathways) ". ";
+  font-variant: normal;
+	counter-increment: pathways;
+  content: counter(pathways, lower-alpha) ". ";
 }
 .content main section.pathways strong,
 .content main section.materials strong{
@@ -363,8 +364,12 @@
 	counter-increment: items;
   content: counter(items) ") ";
 }
-.content section ul li{
+.content section ul li,
+.content section ul li a{
 	margin-bottom: .5em;
+}
+.content section ul li a{
+	display: inline-block;
 }
 .about.content section ul{
 	list-style: none;
