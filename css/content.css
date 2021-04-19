@@ -197,12 +197,12 @@
 .content.about main h2{
 	font-weight: 400;
 	font-variant: small-caps;
-	hyphens: none;
+	/* hyphens: none;
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal;
+	-ms-word-break: normal; */
 	line-height: 1.2em;
 	color: #fff;
 	background-color: rgb(66,66,66);
@@ -270,12 +270,12 @@
 }
 .content main h3{
 	font-size: 1.15em;
-	hyphens: none;
+	/* hyphens: none;
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal;
+	-ms-word-break: normal; */
 	margin: 0 auto;
 }
 .content section.menu-container h3{

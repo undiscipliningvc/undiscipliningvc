@@ -98,12 +98,12 @@
 	font-size: 1.1em;
 	font-weight: 700;
 	font-variant: normal;
-	hyphens: none;
+	/* hyphens: none;
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal;
+	-ms-word-break: normal; */
 	color: #fff;
 	border-bottom: 1px solid #242424;
 	border-radius: 4px 4px 0 0;
@@ -245,12 +245,12 @@
 	}
 }
 .cluster main section ul li{
-	hyphens: none;
+	/* hyphens: none;
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal;
+	-ms-word-break: normal; */
 	line-height: 1.5em;
 	border: 1px solid #e6e6e6;
 	border-radius: 5px;

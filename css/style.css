@@ -76,14 +76,14 @@ html{
 	font-weight: 400;
 	color: #242424;
 	background-color: #fff;
-	overflow-wrap: break-word;
+	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
 	hyphens: auto;
 	-ms-word-break: break-all;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
+	-webkit-hyphens: auto; */
 	-ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -220,12 +220,12 @@ footer{
 	font-size: 1em;
 	text-align: center;
 	line-height: 1.875em;
-	hyphens: none;
+	/* hyphens: none;
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal;
+	-ms-word-break: normal; */
 	color: #fff;
 	background: #2e2e2e;
 	margin: .75em auto 0;
@@ -329,6 +329,12 @@ footer a:focus{
 	color: #242424;
 	background-color: #e6e6e6;
 	transition: 0.2s;
+}
+a.cite-link{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
 }
 [id]:target{
 	margin-top: -41px;
@@ -1024,10 +1030,10 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 .word{
 	white-space: nowrap;
-	hyphens: none;
+	/* hyphens: none;
 	-ms-hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	word-break: normal;
-	-ms-word-break: normal;
+	-ms-word-break: normal; */
 }
