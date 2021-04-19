@@ -368,9 +368,6 @@
 .content section ul li a{
 	margin-bottom: .5em;
 }
-.content section ul li a{
-	display: inline-block;
-}
 .about.content section ul{
 	list-style: none;
 	margin: 1.5em;
