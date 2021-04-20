@@ -30,7 +30,208 @@
 			function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='nav#navFB{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
 		</script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-6"></script>
-		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-6');</script>  	
+		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-6');</script>
+		<style>
+			/* B&W tiles */
+			/* main section:first-child {
+				margin-top: 0;
+			}
+			.founders ul{
+				list-style: none;
+				margin: 1em auto 0;
+				padding: 0;
+				display: inline-block;
+			}							
+			.section-tiles{
+				text-align: center;
+				border: 1px solid #242424;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+			}
+			.section-tiles h2{
+				color: white;
+				background: #395375;
+				margin: 0 auto;
+				padding: .25em 0;
+			}
+			.section-tiles ul{
+				text-align: center;
+				list-style: none;
+				margin: .5em;
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.section-tiles li{
+				line-height: 1.5em;
+				border: 1px solid #e6e6e6;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				margin: .75em .5em;
+				padding: .15em;
+				min-height: 35px;
+				box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+				flex: 1 0 calc(25% - 2px - 2em);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.section-tiles li a,
+			.section-tiles li a:visited{
+				font-size: .95em;
+				text-decoration: none;
+				color: #242424;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.section-tiles li:hover,
+			.section-tiles li:focus-within,
+			.section-tiles li:hover a,
+			.section-tiles li:focus-within a{
+				color: white;
+				background: #395375;
+			} */
+
+			/* Colored tiles */
+			/* .section-tiles li#site-section-1{
+				background: #cb6948;
+			}
+			.section-tiles li#site-section-2{
+				background: #5378ac;
+			}
+			.section-tiles li#site-section-3{
+				background: #728a61;
+			}
+			.section-tiles li#site-section-4{
+				background: #757575;
+			}
+			.section-tiles li:hover {
+				color: #fff;
+			}
+			.section-tiles li#site-section-1:hover,
+			.section-tiles li#site-section-2:hover,
+			.section-tiles li#site-section-3:hover,
+			.section-tiles li#site-section-4:hover{
+				background: #395375;
+			} */
+			
+			/* B&W standalone tiles */
+			/* .section-tiles ul{
+				text-align: center;
+				list-style: none;
+				padding: 0;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+			.section-tiles ul li{
+				text-align: center;
+				white-space: nowrap;
+				border: 1px solid #242424;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				margin: .5em;
+				padding: .25em .5em;
+				flex: 0 1 calc(25% - 3em - 1px);
+			}
+			.section-tiles ul li a{
+				color: black;
+				text-decoration: none;
+			} */
+
+			/* Mobile & hover/focus */
+			/* Big tiles pt 1 */
+			/* .section-tiles{
+				margin-bottom: 2em;
+			}
+			.section-tiles ul{
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+			.section-tiles ul li{
+				color: #fff;
+				text-align: center;
+				border: 1px solid #242424;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				margin: .75em;
+				flex: 1 1 40%;
+				position: relative;
+				
+			}
+			.section-tiles ul li::after{
+				content: "";
+				padding-bottom: 56.25%;
+				display: block;
+			}
+			.section-tiles ul li a,
+			.section-tiles ul li a:visited{
+				color: #fff;
+				text-decoration: none;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.section-tiles ul li a span{
+				font-family: 'Noto Serif', serif;
+				font-weight: 600;
+				white-space: nowrap;
+				border: 3px solid #fff;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				margin: 0;
+				padding: 10px;
+				height: 33px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+			} */
+
+			/* Big tiles pt 2 */
+			/* #site-section-1{
+				background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
+			}
+			#site-section-1 a span{
+				background: #cb6948;
+			}
+			#site-section-2{
+				background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
+			}
+			#site-section-2 a span{
+				background: #5378ac;
+			}
+			#site-section-3{
+				background: linear-gradient(to left top, #fff 50%, #728a61 50%);
+			}
+			#site-section-3 a span{
+				background: #728a61;
+			}
+			#site-section-4{
+				background: linear-gradient(to left top, #fff 50%, #757575 50%);
+			}
+			#site-section-4 a span{
+				background: #757575;
+			} */
+		</style>
 	</head>
 
 	<!-- HTML code in this file adapted from Adrian S. Wisnicki's One More Voice website (https://onemorevoice.org/); released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
@@ -118,12 +319,37 @@
 
 			<main id="main">
 
+				<section aria-labelledby="introduction">
+					<h2 id="introduction">Introduction</h2>
+
+					<p>Welcome to <em>Undisciplining the Victorian Classroom</em>, a digital humanities project that reimagines how to teach Victorian Studies through a positive, race-conscious lens.</p>
+
+					<p>We bring together a diverse set of individuals – permanent faculty, contingent staff, independent scholars, students – through an intentional collaboration based on radical care that responds to the renewed call for racial and social justice.</p>
+
+					<p>Our project advocates for engaging scholarship from Black and African, Indigenous and Native American, Asian and Asian American, Latinx, Postcolonial, Decolonial, Feminist, Queer, Transgender, Disability, and Critical Ethnic Studies.</p>
+						
+					<p>Read our <a href="/html/about/values_practices.html">mission statement</a> to learn more about our work.</p>
+				</section>
+
+				<section class="section-tiles" aria-labelledby="main-sections">
+					<h2 id="main-sections">Main Sections</h2>
+
+					<ul>
+						<li id="site-section-1"><a href="/html/zoomcasts.html"><span><i class="fa fa-play-circle fa-fw" title="Zoomcasts"></i> Zoomcasts</span></a></li>
+						<li id="site-section-2"><a href="/html/lesson_plans.html"><span><i class="fa fa-book fa-fw" title="Lesson Plans"></i> Lesson Plans</span></a></li>
+						<li id="site-section-3"><a href="/html/syllabi.html"><span><i class="fa fa-pen fa-fw" title="Syllabi"></i> Syllabi</span></a></li>
+						<li id="site-section-4"><a href="/html/about.html"><span><i class="fa fa-info-circle fa-fw" title="About"></i> About</span></a></li>
+					</ul>
+				</section>
+
 				<section class="founders" aria-labelledby="founders">
 					<h2 id="founders">Founding Developers</h2>
-					<p><strong>Pearl Chaozon Bauer</strong> (Notre Dame de Namur University)<br/>
-					<strong>Ryan Fong</strong> (Kalamazoo College)<br/>
-					<strong>Sophia Hsu</strong> (Lehman College, CUNY)<br/>
-					<strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</p>
+					<ul>
+						<li><strong>Pearl Chaozon Bauer</strong> (Notre Dame de Namur University)</li>
+						<li><strong>Ryan Fong</strong> (Kalamazoo College)</li>
+						<li><strong>Sophia Hsu</strong> (Lehman College, CUNY)</li>
+						<li><strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</li>
+					</ul>
 				</section>
 
 				<section class="mailing-list">
@@ -131,7 +357,8 @@
 					<a class="contribute" href="https://docs.google.com/forms/d/1QLFgCD9dUenIr4VcOXE-Yg8PlM20d277wfCHojRzYuQ/edit">Get involved</a>
 				</section>
 
-				<section aria-labelledby="mission">
+
+				<!--<section aria-labelledby="mission">
 					<h2 id="mission">Mission Statement</h2>
 					<p><em>Undisciplining the Victorian Classroom</em> is a digital humanities project that reimagines how to teach Victorian Studies through a positive, race-conscious lens and advocates for engaging scholarship from Black and African, Indigenous and Native American, Asian and Asian American, Latinx, Postcolonial, Decolonial, Feminist, Queer, Transgender, Disability, and Critical Ethnic Studies. The project seeks to:</p>
 					<ol class="mission">
@@ -140,7 +367,7 @@
 					</ol>
 					<p>In taking this approach, the project works in solidarity with the critical intervention made by “<a href="https://lareviewofbooks.org/article/undisciplining-victorian-studies/">Undisciplining Victorian Studies</a>” (Chatterjee, Christoff, Wong 2020) and Christina Sharpe’s call for scholars to “become undisciplined” as a way to undo the racist epistemologies that scholars have inherited, unknowingly or not, from their predecessors (<em>In the Wake: On Blackness and Being</em>, 2016).  This commitment not only informs our content but shapes how we relate to one another in our processes of creation and collaboration.</p> 
 					<p>By elevating BIPOC, contingent, and other vulnerably-positioned scholars, we seek to build a community based on radical care, which works to remove the structural impediments that prevent scholars, students, and the humanities from receiving the kinds of support and sustenance they so desperately need.  Ultimately, the project hopes to inspire new modes of teaching and model alternative forms of scholarly engagement that disrupt white privilege, Anglocentric ways of knowing, and established lines of academic hierarchy in Victorian Studies.</p>
-				</section>
+				</section> -->
 				
 				<!-- <div class="image-wrapper">
 					<img class="image-border" loading="lazy" src="/img/home/uvc_0005-1640px.jpg" srcset="/img/home/uvc_0005-1640px.jpg 1640w, /img/home/uvc_0005-1244px.jpg 1244w, /img/home/uvc_0005-864px.jpg 864w, /img/home/uvc_0005-622px.jpg 622w, /img/home/uvc_0005-592px.jpg 592w, /img/home/uvc_0005-432px.jpg 432w, /img/home/uvc_0005-296px.jpg 296w" sizes="(min-width: 1000px) 622px, (min-width: 780px) calc(90vw - 71px), (min-width: 340px) 94.29vw, calc(100vw - 32px)" alt="Wooden carving of snow-capped mountain and river with a canoe, Maori meeting house, and people." title="William Gee. “Carving Scene” (Tableaux [tōtara wood], Wellington, New Zealand). c.1905, https://collections.tepapa.govt.nz/object/417717. Museum of New Zealand | Te Papa Tongarewa, Wellington, New Zealand, Te Papa (GH007416). Gift of Mrs G. M. Williams, 1965. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/)."/>
@@ -177,7 +404,13 @@
 					
 					<p>Questions about this CFS and the <em>Undisciplining the Victorian Classroom</em> initiative should be directed to  <a href="mailto:chaozonbauer@gmail.com">Pearl Chaozon Bauer</a>. To be placed on the project mailing list, kindly fill out this <a href="https://forms.gle/TN9M4Ugqy5cwKnoEA">Google mailing list form</a>.</p>
 				</section> -->
-			
+
+
+				<section aria-labelledby="site-code">
+					<h2 id="site-code">Site Code</h2>
+					<p>The code for this site is adapted from the <a href="https://onemorevoice.org/">One More Voice</a> project site, is released under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International</a> (CC BY-NC 4.0) license, and may be reused for educational and other non-commercial purposes as long as proper attribution is given. The site has a small footprint to support low-bandwidth environments, is fully responsive for all kinds of mobile devices, and incorporates several features (including semantic HTML and ARIA attributes) to make it more accessible for people with disabilities. The site’s minimalist aesthetic cuts down on visual clutter and supports a stress-free and navigationally-clear experience for all audiences.</p>
+				</section>
+
 				<section aria-labelledby="image-details" class="details">
 					<h2 id="image-details">Carousel Image Details</h2>
 
@@ -195,11 +428,6 @@
 
 						<!-- <h3>Call for Syllabi</h3>
 						<p id="dance">Anonymous Tlingit Artist. “<a href="https://www.artic.edu/artworks/86812/dance-blanket-with-diving-whale-and-raven-motifs">Dance Blanket with Diving Whale and Raven Motifs</a>.” Wool and bark. Northwest Coast of Alaska, United States, c.1880-c.1900. Art Institute of Chicago, 1961.568. Kate S. Buckingham Endowment. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p> -->
-				</section>
-
-				<section aria-labelledby="site-code">
-					<h2 id="site-code">Site Code</h2>
-					<p>The code for this site is adapted from the <a href="https://onemorevoice.org/">One More Voice</a> project site, is released under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International</a> (CC BY-NC 4.0) license, and may be reused for educational and other non-commercial purposes as long as proper attribution is given. The site has a small footprint to support low-bandwidth environments, is fully responsive for all kinds of mobile devices, and incorporates several features (including semantic HTML and ARIA attributes) to make it more accessible for people with disabilities. The site’s minimalist aesthetic cuts down on visual clutter and supports a stress-free and navigationally-clear experience for all audiences.</p>
 				</section>
 
 				<section aria-labelledby="citation">
