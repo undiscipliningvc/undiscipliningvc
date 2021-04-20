@@ -197,11 +197,11 @@ main section ul{
 	text-align: left;
 }
 .section-tiles{
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 .section-tiles ul{
 	list-style: none;
-	margin: 0 auto;
+	margin: .75em auto 0;
 	padding: 0;
 	display: flex;
 	justify-content: space-evenly;
@@ -216,9 +216,20 @@ main section ul{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	margin: .75em;
-	flex: 1 1 40%;
+	flex: 1 1 100%;
 	position: relative;
-	
+}
+@media only screen and (min-width: 480px){
+	.section-tiles ul li{
+		margin: .5em;
+		flex: 1 1 calc(50% - 2.25em - 1px)
+	}
+}
+@media only screen and (min-width: 992px){
+	.section-tiles ul li{
+		margin: .75em;
+		flex: 1 1 calc(50% - 2.25em - 1px)
+	}
 }
 .section-tiles ul li::after{
 	content: "";
@@ -252,7 +263,16 @@ main section ul{
 	transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
-}s
+}
+.founders{
+	margin: 0 auto 2em;	
+	display: inline-block;
+}
+.founders ul{
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+}
 .mailing-list{
 	text-align: center;
 	background: #e6e6e6;
@@ -283,6 +303,14 @@ main section ul{
 .mailing-list a.contribute:hover{
 	color: #242424;
 	background: #fff;
+}
+.mailing-list a.contribute:focus{
+	outline: 2px dashed #242424;
+}
+@media only screen and (min-width: 768px){
+	.mailing-list + section{
+		margin-top: 2em;
+	}
 }
 ol.mission{
 	margin: 0 1em;
