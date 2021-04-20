@@ -185,6 +185,9 @@ main aside{
 		margin: 2.75em auto;
 	}
 }
+main section:first-of-type{
+	margin-top: 0;
+}
 main section:last-of-type{
 	margin-bottom: 0;
 }
