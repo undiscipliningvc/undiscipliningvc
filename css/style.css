@@ -1065,7 +1065,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	padding: 5px;
 	position: fixed;
 	right: 20px;
-	bottom: 160px;
+	bottom: 186px;
 	z-index: 99;
 	display: none;
 	visibility: hidden;
@@ -1083,7 +1083,6 @@ nav#nav2 #overlay-menu li button.close:focus i{
 @media only screen and (min-width: 992px){
 	#topButton{
 		right: 110px;
-		bottom: 73px;
 	}
 }
   #topButton:hover,
