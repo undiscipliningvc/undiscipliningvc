@@ -327,6 +327,15 @@
 	display: inline-block;
 	text-align: left;
 }
+.content main .specs .specs-container a.mail,
+.content main .specs .specs-container a.mail:visited{
+	text-decoration: none;
+	padding: 0 5px;
+}
+.content main .specs .specs-container a.mail span{
+	font-size: .9em;
+	text-decoration: underline;
+}
 .content section.menu-container{
 	text-align: center;
 	border: 1px solid #949494;
@@ -422,7 +431,4 @@
 	.content.sitemap ol li ol{
 		padding-left: revert;
 	}	
-}
-.content i.fa-envelope{
-	padding: 0 5px;
 }
