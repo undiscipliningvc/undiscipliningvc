@@ -297,15 +297,23 @@ main section ul{
 .participate a,
 .participate a:visited{
 	font-size: .95em;
-	line-height: 1em;
+	line-height: 1.2em;
 	color: #fff;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	margin: 0 .5em;
-	padding: 4px 7px;
+	margin: 0 .25em;
+	padding: 4px 5px;
 	text-decoration: none;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media only screen and (min-width: 768px){
+	.participate a,
+	.participate a:visited{
+		line-height: 1em;
+		margin: 0 .5em;
+		padding: 4px 7px;
+	}
 }
 .participate a:focus{
 	outline: 1px dashed #242424;
