@@ -274,7 +274,7 @@ main section ul{
 	margin-bottom: 0;
 	padding: 0;
 }
-.mailing-list{
+.participate{
 	text-align: center;
 	background: #e6e6e6;
 	border: 1px solid #242424;
@@ -285,31 +285,51 @@ main section ul{
 	padding: 0 1em 1em;
 	display: inline-block;
 }
-.mailing-list p{
+.participate p{
 	text-align: center;
 	margin: .5em 0;
 }
-.mailing-list a.contribute{
+.participate div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.participate a,
+.participate a:visited{
+	font-size: .95em;
+	line-height: 1em;
 	color: #fff;
-	background-color: #395375;
-	border: 1px solid #395375;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 3px 5px;
+	margin: 0 .5em;
+	padding: 4px 7px;
 	text-decoration: none;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.mailing-list a.contribute:focus,
-.mailing-list a.contribute:hover{
+.participate a:focus{
+	outline: 2px dashed #242424;
+}
+.participate a.contribute{
+	background-color: #395375;
+	border: 1px solid #395375;
+}
+.participate a.contribute:focus,
+.participate a.contribute:hover{
 	color: #242424;
 	background: #fff;
 }
-.mailing-list a.contribute:focus{
-	outline: 2px dashed #242424;
+.participate a.follow{
+	background-color: #1C95E1;
+	border: 1px solid #1C95E1;
+}
+.participate a.follow:focus,
+.participate a.follow:hover{
+	color: #1C95E1;
+	background: #fff;
 }
 @media only screen and (min-width: 768px){
-	.mailing-list + section{
+	.participate + section{
 		margin-top: 2em;
 	}
 }
