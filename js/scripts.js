@@ -115,7 +115,7 @@ jQuery(document).ready(function () {
 AddRelNoopener();
 
 function AddRelNoopener(){
-  var links = document.querySelectorAll("a");
+  var links = document.querySelectorAll("a:not([class='follow'])");
   for(var i = 0; i < links.length; i++){
     links[i].setAttribute("rel","noopener");
   }
