@@ -308,7 +308,7 @@ main section ul{
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .participate a:focus{
-	outline: 2px dashed #242424;
+	outline: 1px dashed #242424;
 }
 .participate a.contribute{
 	background-color: #395375;
