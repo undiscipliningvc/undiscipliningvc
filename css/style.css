@@ -400,6 +400,14 @@ footer p .site-detail:last-child::after{
 		white-space: nowrap;
 	}
 }
+footer p .site-detail a,
+footer p .site-detail a:visited{
+	text-decoration: none;
+}
+footer p .site-detail a span,
+footer p .site-detail a:visited span{
+	text-decoration: underline;
+}
 .breakout-quote{
 	font-size: .9em;
 	font-family: 'Noto Serif', serif;
