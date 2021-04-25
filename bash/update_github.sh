@@ -17,6 +17,7 @@ git merge stage
 git push
 git checkout stage
 
+# git fetch --all
 # git checkout dev
 # git pull
 # git push
