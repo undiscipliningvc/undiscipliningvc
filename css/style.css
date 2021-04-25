@@ -2,7 +2,7 @@
 
 /* This CSS Main File adapted from One More Voice (https://onemorevoice.org/) */
 
-/* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
+/* Created and maintained by Adrian S. Wisnicki */ /* 2020-2021 */
 
 /* 
 Table of Contents
@@ -10,186 +10,656 @@ Table of Contents
 ** Main Site Colors **
 
 ** 1.0. Main CSS **
+0.0. Section Tile Colors
 1.1. Main Components
-1.2. Carousel 
-1.3. Scroll to Top Button
-1.4. Lines
-1.5. Formatting
-1.6. Lists
+1.2.1. Cluster Pages [moved to separate file]
+1.2.2. Content Pages [moved to separate file]
+1.3.1. Anchors, Headings, Images
+1.3.2. Image Captions
+1.4.1. Navigation: Main
+1.4.2. Overlay
+1.5. Carousel [moved to separate file]
+1.6. YouTube Player [most css moved to separate file]
+1.7. Scroll to Top Button
+1.8. Formatting
 */
 
 /*--------------------------------------*/
 
 /** Main Site Colors **/
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-Black: rgba(0, 0, 0, 1);
+
 Black-Gray: rgba(0, 0, 0, 0.65);
-Dark Blue: #1C4C87;
-Light Blue: #1157AC;
-Gray: #E3E3E3;
+
+White: #fff;
+Black: #242424;
+Dark Blue: #395375;
+Dark Gray: #2e2e2e; (footer only)
+Mid Gray: #949494;
+Light Gray: #e6e6e6;
+
+Blue: #5378ac; (sections/carousel/images/nav0)
+
+(extra colors)
+Black: rgba(0, 0, 0, 1); (not used)
+Lighter Black: #322d29; (not used)
+Lighter Blue: #537796; (not used)
+Sky Blue: #89B8D3; (not used)
+
 */
+
+/** z-index **/
+/*
+.carousel .controls button = 10
+.content main h2 = 15
+nav#nav1 = 20
+#regular-button = 21
+#fallback-button = 22
+#topButton = 99
+#nav0 = 100
+nav#nav2 #overlay-menu = 200
+*/
+
+/** 0.0 Section Tile Colors **/
+
+.section-tiles ul li:nth-child(1){
+	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
+}
+.section-tiles ul li:nth-child(1) a span{
+	background: #cb6948;
+}
+.section-tiles ul li:nth-child(2){
+	background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
+}
+.section-tiles ul li:nth-child(2) a span{
+	background: #5378ac;
+}
+.section-tiles ul li:nth-child(3){
+	background: linear-gradient(to left top, #fff 50%, #728a61 50%);
+}
+.section-tiles ul li:nth-child(3) a span{
+	background: #728a61;
+}
+.section-tiles ul li:nth-child(4){
+	background: linear-gradient(to left top, #fff 50%, #757575 50%);
+}
+.section-tiles ul li:nth-child(4) a span{
+	background: #757575;
+}
+.section-tiles ul li a:hover,
+.section-tiles ul li a:focus-within{
+	background: linear-gradient(to left top, #fff 50%, #2e2e2e 50%);
+}
+.section-tiles ul li:hover a span,
+.section-tiles ul li:focus-within a span{
+	background: #2e2e2e;
+}
+
 
 /** 1.0 Main CSS **/
 
 /* 1.1. Main Components */
 
+/* *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} */
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	color: #191716;
-	background-color: white;
-	overflow-wrap: break-word;
+	color: #242424;
+	background-color: #fff;
+	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
 	hyphens: auto;
 	-ms-word-break: break-all;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
+	-webkit-hyphens: auto; */
+	-ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body{
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+	/* -moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: antialiased; */
 }
-.text-container .main{
-	font-size: 100%;
-	text-align: left;
-	line-height: 1.6em;
-	margin: 0 auto;
-	padding: 0 .75em 1em .75em;
-	
+.text-container{
+	width: 100%;
+}
+header{
+	margin: 41px auto 0;
+	padding: 0 .75em;
+	position: relative;
 }
 @media only screen and (min-width: 480px){
-	.text-container .main{
-		font-size: .95em;
-		padding: 0 1.5em 1em 1.5em;
+	header{
+		margin-top: 47px;
+		padding: .5em 1em 0;
 	}
 }
 @media only screen and (min-width: 768px){
-	.text-container .main{
-		font-size: 1.05em;
-		padding: 1em 2.25em 1em 2.25em;
+	header{
+		margin-top: 51px;
 	}
 }
 @media only screen and (min-width: 992px){
-	.text-container .main{
-		font-size: 1.15em;
-		max-width: 36em;
-		display: block !important; /* Tied to overlay */
+	header{
+		margin-top: 63px;
+	}
+}
+main{
+	font-size: 1.1em;
+	text-align: center;
+	line-height: 1.875em;
+	margin: 0 auto;
+	padding: 0 1em 1em;
+	max-width: 700px;
+}
+@media only screen and (min-width: 768px){
+	main{
+		padding: 1.25em 1em 1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	main{
+		max-width: 650px;
+	}
+}
+main summary,
+main section,
+main aside{
+	margin: 2em auto;
+}
+@media only screen and (min-width: 768px){
+	main summary,
+	main section,
+	main aside{
+		margin: 2.75em auto;
+	}
+}
+main section:first-of-type{
+	margin-top: 0;
+}
+main section:last-of-type{
+	margin-bottom: 0;
+}
+main section p,
+main section ol,
+main section ul{
+	text-align: left;
+}
+.section-tiles{
+	font-size: 1.1em;
+	margin-bottom: 1em;
+}
+.section-tiles ul{
+	list-style: none;
+	margin: .75em auto 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.section-tiles ul li{
+	color: #fff;
+	text-align: center;
+	border: 1px solid #242424;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: .75em;
+	flex: 1 1 100%;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	.section-tiles ul li{
+		margin: .5em;
+		flex: 1 1 calc(50% - 2.25em - 1px)
+	}
+}
+@media only screen and (min-width: 992px){
+	.section-tiles ul li{
+		margin: .75em;
+		flex: 1 1 calc(50% - 2.25em - 1px)
+	}
+}
+.section-tiles ul li::after{
+	content: "";
+	padding-bottom: 56.25%;
+	display: block;
+}
+.section-tiles ul li a,
+.section-tiles ul li a:visited{
+	color: #fff;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.section-tiles ul li a span{
+	font-family: 'Noto Serif', serif;
+	font-weight: 600;
+	white-space: nowrap;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0;
+	padding: 10px;
+	height: 33px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.founders{
+	margin: 0 auto 2em;	
+	display: inline-block;
+}
+.founders ul{
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+.participate{
+	text-align: center;
+	background: #e6e6e6;
+	border: 1px solid #242424;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: .5em auto;
+	padding: 0 1em 1em;
+	display: inline-block;
+}
+.participate p{
+	text-align: center;
+	margin: .5em 0;
+}
+.participate div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.participate a,
+.participate a:visited{
+	font-size: .95em;
+	line-height: 1.2em;
+	color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0 .25em;
+	padding: 4px 5px;
+	text-decoration: none;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media only screen and (min-width: 768px){
+	.participate a,
+	.participate a:visited{
+		line-height: 1em;
+		margin: 0 .5em;
+		padding: 4px 7px;
+	}
+}
+.participate a:focus{
+	outline: 1px dashed #242424;
+}
+.participate a.contribute{
+	background-color: #395375;
+	border: 1px solid #395375;
+}
+.participate a.contribute:focus,
+.participate a.contribute:hover{
+	color: #242424;
+	background: #fff;
+}
+.participate a.follow{
+	background-color: #1C95E1;
+	border: 1px solid #1C95E1;
+}
+.participate a.follow:focus,
+.participate a.follow:hover{
+	color: #1C95E1;
+	background: #fff;
+}
+@media only screen and (min-width: 768px){
+	.participate + section{
+		margin-top: 2em;
+	}
+}
+ol.mission{
+	margin: 0 1em;
+	padding: 0;
+}
+@media (min-width: 768px){
+	ol.mission{
+		margin: 0 2em;
+	}
+}
+#call{
+	margin-top: 2em;
+}
+@media only screen and (min-width: 768px){
+	#call{
+		margin-top: 3em;
+	}
+}
+footer{
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.875em;
+	/* hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	word-break: normal;
+	-ms-word-break: normal; */
+	color: #fff;
+	background: #2e2e2e;
+	margin: .75em auto 0;
+	padding: .25em 1em 1em 1em;
+}
+@media only screen and (min-width: 768px){
+	footer{
+		margin: 1em auto 0;
+		padding: .5em 1em 1em 1em;
+	}
+}
+footer p .site-detail{
+	line-height: 1.875em;
+	padding: 0 .2em;
+}
+footer p .site-detail::after{
+	content: ' | ';
+	padding-left: .5em;
+}
+footer p .site-detail:last-child::after{
+	content: '';
+}
+@media only screen and (min-width: 480px){
+	footer p .site-detail{
+		padding: 0 .3em;
+	}
+}
+@media only screen and (min-width: 768px){
+	footer p .site-detail{
+		white-space: nowrap;
+	}
+}
+footer p .site-detail a,
+footer p .site-detail a:visited{
+	text-decoration: none;
+}
+footer p .site-detail a span,
+footer p .site-detail a:visited span{
+	text-decoration: underline;
+}
+.breakout-quote{
+	font-size: .9em;
+	font-family: 'Noto Serif', serif;
+	background: #e6e6e6;
+	border-left: 11px solid #5378ac;
+	margin: 1.5em auto;
+	padding: .75em 1.5em;
+}
+hr{
+	font-size: .9em;
+	background: #858585;
+	border: 0;
+	margin: 1.2em 0;
+	height: 1px;
+}
+@media only screen and (min-width: 768px){
+	hr{
+		margin: 2em 0;
+	}
+}
+/* Makes overlay disappear above 992 */
+@media only screen and (min-width: 992px){
+	html{
+		background: #fff !important;
+	}
+	#nav0,
+	#nav1,
+	header,
+	main,
+	footer{
+		display: block;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+}
+
+
+/* 1.2.1. Cluster Pages */
+
+/* Moved to separate file */
+
+
+/* 1.2.2. Content Pages */
+
+/* Moved to separate file */
+
+
+/* 1.3. Anchors, Headings, Images */
+
+*:focus{
+	outline: 0 none;
+}
+a,
+a:visited{
+	color: #395375;
+}
+a:hover,
+a:focus{
+	color: #e6e6e6;
+	background-color: #395375;
+	transition: 0.2s;
+}
+footer a,
+footer a:visited{
+	color: #fff;
+}
+footer a:hover,
+footer a:focus{
+	color: #242424;
+	background-color: #e6e6e6;
+	transition: 0.2s;
+}
+a.cite-link{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+}
+[id]:target{
+	margin-top: -41px;
+	border-top: 41px solid transparent;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+@media only screen and (min-width: 480px){
+	[id]:target{
+		margin-top: -47px;
+		border-top: 47px solid transparent;
+	}
+}
+@media only screen and (min-width: 768px){
+	[id]:target{
+		margin-top: -51px;
+		border-top: 51px solid transparent;
+	}
+}
+@media only screen and (min-width: 992px){
+	[id]:target{
+		margin-top: -58px;
+		border-top: 58px solid transparent;
 	}
 }
 h1,
 h2,
-h3{
-	color: #1C4C87; /*color*/
+h3,
+h4{
+	color: #395375;
 }
 h1{
-	font-size: 2em;
   font-family: 'jacksilverregular';
-	line-height: 1.3em;
-	margin: .3em;
+	line-height: 1em;
+	margin: 0;
 }
-@media only screen and (min-width: 480px){
-	h1{
-		font-size: 2.3em;
-	}
-}
-@media only screen and (min-width: 768px){
-	h1{
-		font-size: 3.7em;
-	}
-}
-h2, h3{
+h2, h3, h4, h5{
 	font-family: 'Noto Serif', serif;
 	font-weight: 700;
-}
-h2{
-	font-size: 1.05em;
-}
-h3{
-	font-size: 1.1em;
-}
-h4{
-	font-weight: 600;
 }
 h2, h3, h4{
 	text-align: center;
 }
-.details h4{
-    margin-top: 2.5em;
+h2{
+	font-size: 1.15em;
+	margin: 1em auto 0;
 }
-.details h4:first-of-type{
-    margin-top: 1em;
+h3{
+	font-size: 1.1em;
 }
-.title{
-	font-weight: bold;
-	text-align: center;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	position: relative;
+.details h3{
+	font-variant: small-caps;
+	color: inherit;
 }
-@media only screen and (min-width: 992px){
-	.title{
-		padding: 1em 0 0 0;
-		display: block !important; /* Tied to overlay */
-	}
+h4,
+section section h4:first-child{
+	font-size: 1.1em;
+	font-weight: 600;
+	font-variant: small-caps;
 }
-.main-menu{
-	font-size: .8em;
-	text-align: center;
+section h4:first-child{
+	margin-top: 1.5em;
 }
-@media only screen and (min-width: 768px){
-	.main-menu{
-		font-size: .9em;
-		text-align: center;
-	}
-}
-.header-title{
-	padding: 0;
-	margin: .5em 0 .2em 0;
-}
-.organizers{
-	padding-bottom: 1em;
-}
-@media only screen and (min-width: 480px){
-	.organizers{
-		text-align: center;
-	}
-}
-.organizers p{
+h5{
+	font-size: .95em;
+	font-weight: 700;
+	font-style: italic;
 	text-align: left;
-	display: inline-block;
+}
+/*logo*/
+@font-face {
+  font-family: 'jacksilverregular';
+  src: url('/fonts/jacksilver-webfont.woff2') format('woff2'),
+      url('/fonts/jacksilver-webfont.woff') format('woff');
+  font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 img{
 	font-weight: 300;
-	margin-left: auto;
-	margin-right: auto;
 	width: 100%;
-	display: inline-block;
 }
-#upcoming img,
-#call img{
-	width: 100%;
-	display: block;
+a img{
+	border: 3px #fff solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #395375 solid;
 }
 .image-border{
-	border: 1px solid gray;
+	border: 1px solid #858585;
 }
-/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
-#skiptocontent a{
+
+
+/* 1.3.2. Image Captions */
+
+/* Also see carousel captions */
+.image-caption{
+	text-align: center;
+	line-height: 1.2em;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	bottom: 1em;
+	left: 0;
+}
+@media only screen and (min-width: 480px){
+	.image-caption{
+		line-height: 1.6em;
+	}
+}
+.image-caption p{
+	font: 16px 'Noto Serif', serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+@media only screen and (min-width: 320px){
+	.image-caption p{
+		line-height: inherit;
+	}
+}
+.image-caption p a{
 	font-size: .9em;
-	color: white; /*color*/
-	background-color: #1157AC; /*color*/
-	padding: 6px;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
+}
+.image-caption a{
+	text-decoration: underline;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.65);
+	border: 2px solid transparent;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0;
+	padding: 1px 6px;
+	display: inline-block;
+}
+.image-caption a:hover,
+.image-caption a:focus{
+	background-color: #5378ac;
+	margin: 0;
+}
+.image-caption a:focus{
+	border-color: #5378ac;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.image-wrapper{
+	margin: 0 auto;
+	position: relative;
+}
+@media only screen and (min-width: 768px){
+	.image-wrapper{
+		width: 90%;
+	}
+}
+
+
+/* 1.4.1. Navigation: Main */
+
+/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
+#nav0 a{
+	font-size: 1em;
+	color: #fff;
+	background-color: rgb(66,66,66);
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 8px;
+	-webkit-border-right-radius: 8px;
+	-moz-border-right-radius: 8px;
+	padding: 8px 6px;
 	position: absolute;
 	top: -40px;
 	left: 0px;
@@ -197,7 +667,7 @@ img{
 	-webkit-transition: top 1s ease-out;
 	transition: top .4s ease-out;
 }
-#skiptocontent a:focus{
+#nav0 a:focus{
 	outline-color: transparent;
 	position: fixed;
 	top: 0px;
@@ -206,365 +676,467 @@ img{
 	transition: top .4s ease-in;
 }
 @media only screen and (min-width: 768px){
-	#skiptocontent a:focus{
+	#nav0 a:focus{
 		position: absolute;
 	}
 }
-.footer{
-	font-size: 1em;
-	text-align: center;
-	line-height: 1.6em;
-	padding: 0 1em;
-}
-*:focus{
-	outline: 0 none;
-}
-a,
-a:visited{
-	color: #1157AC; /*color*/
-}
-a:hover,
-a:focus{
-	color: white; /*color*/
-	background-color: #1157AC; /*color*/
-}
-a img{
-	border: 3px white solid;
-}
-a:hover img,
-a:focus img{
-	border: 3px #2e68ac solid;
-}
-/*colors*/
-/* .black{
-	color: rgba(0, 0, 0, 1);
-}
-.blackgray{
-	color:rgba(0, 0, 0, 0.65);
-}
-.darkblue{
-	color: #1C4C87;
-}
-.lightblue{ 
-	color: #1157AC;
-}
-.gray{
-	color: #E3E3E3;
-} */
-/*logo*/
-@font-face {
-    font-family: 'jacksilverregular';
-    src: url('../fonts/jacksilver-webfont.woff2') format('woff2'),
-         url('../fonts/jacksilver-webfont.woff') format('woff');
-    font-weight: normal;
-	font-style: normal;
-	font-display: block;
-}
-
-
-/* 1.2. Carousel */
-
-/* 	Carousel adapted from https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1.html */
-.carousel .carousel-inner{
-	max-width: 900px;
+/* Main nav & fallback */
+nav#nav1,
+nav#navFB{
+	font: 16px 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	line-height: 1em;
+	cursor: pointer;
+  background-color: #fff;
 	margin: 0 auto;
-	position: relative;
-	}
-@media only screen and (min-width: 992px){
-	.carousel .carousel-inner{
-		width: 75% !important;
-	}
-}
-/* Carousel items */
-.carousel .carousel-item{
-	line-height: 0;
 	width: 100%;
-	overflow: hidden;
-	position: relative;
-	display: none;
-}
-.carousel .carousel-item.active{
-	display: block;
-}
-.carousel .carousel-items{
-	border: solid 1px gray;
-}
-.carousel .carousel-items.focus{
-	border-color: white;
-	outline: solid 3px black;
-}
-/* Carousel images */
-.carousel .carousel-item .carousel-image{
-	background: #E3E3E3; /*color*/
-}
-@media screen and (min-width:320px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 183px;
-	}
-}
-@media screen and (min-width:480px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 277px;
-	}
-}
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 446px;
-	}
-}
-@media screen and (min-width:992px){
-	.carousel .carousel-item .carousel-image{
-		min-height: 432px;
-	}
-}	
-.carousel .carousel-item .carousel-image img{
-	height: 100%;
-	max-height: 183px;
-	width: 100% !important;
-	object-fit:cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-	object-position: 50% 50%;
-}
-@media screen and (min-width:480px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 277px;
-	}
-}
-@media screen and (min-width:768px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 446px;
-	}
-}
-@media screen and (min-width:992px){
-	.carousel .carousel-item .carousel-image img{
-		max-height: 432px;
-	}
-}
-/* Carousel caption (also regular images) */
-.carousel .carousel-item .carousel-caption,
-.image-caption{
-	text-align: center;
-	line-height: 1.2em;
-	padding: 0;
-	right: 0;
-	left: 0;
-	bottom: .4em;
-	position: absolute;
+	height: 41px;
+	position: fixed;
+	top: 0;
+	z-index: 20;
 }
 @media only screen and (min-width: 480px){
-	.carousel .carousel-item .carousel-caption,
-	.image-caption{
-		line-height: 1.6em;
-		bottom: .5em;
+	nav#nav1,
+	nav#navFB{
+		height: 47px;
 	}
 }
 @media only screen and (min-width: 768px){
-	.carousel .carousel-item .carousel-caption,
-	.image-caption{
-		right: .5em;
-		left: unset;
-		bottom: .5em;
+	nav#nav1,
+	nav#navFB{
+		height:51px;
 	}
 }
-.carousel .carousel-item .carousel-caption h3,
-.image-caption h3{
-	font: 16px 'Noto Serif', serif;
-	font-weight: 400;
-	padding: 0;
-	margin: 0;
+@media only screen and (min-width: 992px){
+	nav#nav1,
+	nav#navFB{
+		height: 63px;
+	}
+}
+nav#nav1 .current{
+	text-decoration: overline;
+	text-decoration-thickness: 3px;
+}
+/* Also see current.css and content.css  */
+nav#nav1 #home.current{
+	text-decoration-color: #395375;
+}
+nav#nav1 #zoomcasts.current{
+	text-decoration-color: #cb6948;
+}
+nav#nav1 #lesson_plans.current{
+	text-decoration-color: #5378ac;
+}
+nav#nav1 #syllabi.current{
+	text-decoration-color: #778056;
+}
+nav#nav1 #about.current{
+	text-decoration-color: #757575;
+}
+nav#nav1 a:hover .current,
+nav#nav1 a:focus .current{
+	text-decoration: none;
+}
+nav#nav1 a,
+nav#nav1 a:visited,
+nav#navFB a,
+nav#navFB a:visited{
+	color: #242424;
+	text-decoration: none;
+}
+nav#nav1.borderBottom,
+nav#navFB.borderBottom{
+	border-bottom: 1px solid #858585;
+}
+nav#nav1 ul,
+nav#navFB ul{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 8px;
+	height: 100%;
+	max-width: 700px;
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 ul,
+	nav#navFB ul{
+		padding: 0 1em 0 .5em;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav#nav1 ul,
+	nav#navFB ul{
+		padding: 0 16px;
+		max-width: 1366px;
+	}
+}
+nav#nav1 li,
+nav#navFB li{
 	display: inline-block;
 }
-@media only screen and (min-width: 320px){
-	.carousel .carousel-item .carousel-caption h3,
-	.image-caption h3{
-		line-height: inherit;
+nav#nav1 li:nth-child(8),
+nav#navFB li:nth-child(2){
+	position: relative;
+}
+nav#nav1 h1,
+nav#navFB h1{
+	font-size: 1.15em;
+	white-space: nowrap;
+	border: 2px solid transparent;
+	padding: 7px 5px 0;
+}
+nav#nav1 a:hover h1,
+nav#nav1 a:focus-within h1,
+nav#navFB a:hover h1,
+nav#navFB a:focus-within h1{
+	background: #e6e6e6;
+	border: 2px solid rgba(0, 0, 0, 0.65);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	transition: 0.2s;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 h1,
+	nav#navFB h1{
+		font-size: 1.6em;
 	}
 }
-.carousel .carousel-item .carousel-caption h3 a,
-.image-caption h3 a{
-	font-size: .75em;
+@media only screen and (min-width: 768px){
+	nav#nav1 h1,
+	nav#navFB h1{
+		font-size: 2em;
+	}
 }
-@media only screen and (min-width: 768px){ 
-	.carousel .carousel-item .carousel-caption h3 a,
-	.image-caption h3 a{
+nav#nav1 ul li:not(:first-child):not(:last-child){
+	font-size: .95em;
+	font-weight: 600;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	nav#nav1 ul li:not(:first-child):not(:last-child){
+		display: block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 1200px){
+	nav#nav1 ul li:not(:first-child):not(:last-child){
+		font-size: 1em;
+	}
+}
+nav#nav1 li a,
+nav#navFB li a{
+	white-space: nowrap;
+}
+nav#nav1 li:not(:first-child):not(:last-child) a{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 6px 9px;
+	transition: 0.2s;
+}
+nav#nav1 li:not(:first-child):not(:last-child) a:hover,
+nav#nav1 li:not(:first-child):not(:last-child) a:focus{
+	background-color: #395375;
+	transition: 0.2s;
+}
+nav#nav1 li a:hover,
+nav#nav1 li a:focus,
+nav#nav1 li a:hover span,
+nav#nav1 li a:focus span,
+nav#navFB li a:hover,
+nav#navFB li a:focus,
+nav#navFB li a:hover span,
+nav#navFB li a:focus span{
+	color: #fff;
+	transition: 0.2s;
+}
+nav#nav1 li button,
+nav#navFB li button{
+	background: none;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 7px 8px 5px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 li button,
+	nav#navFB li button{
+		padding: 6px 8px;
+	}
+}
+nav#nav1 li button{
+	z-index: 21;
+}
+nav#navFB li button{
+	z-index: 22;
+}
+nav#nav1 li button:hover,
+nav#nav1 li button:focus-within,
+nav#navFB li button:hover,
+nav#navFB li button:focus-within{
+	background-color: #395375;
+	transition: 0.2s;
+}
+nav#nav1 li button i,
+nav#navFB li button i{
+	font-size: 1.3em;
+	color: #242424;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 li button i,
+	nav#navFB li button i{
+		font-size: 1.7em;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav1 li button i,
+	nav#navFB li button i{
+		font-size: 1.9em;
+	}
+}
+nav#nav1 li button:hover i,
+nav#nav1 li button:focus i,
+nav#navFB li button:hover i,
+nav#navFB li button:focus i{
+	color: #fff;
+}
+@media only screen and (min-width: 992px){
+	nav#nav1 li:last-child,
+	nav#nav1 li button{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+/* 1.4.2. Overlay */
+
+nav#nav2{
+  transition: margin-right 0.7s;
+  overflow: hidden;
+	position: relative;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	nav#nav2{
+		margin-right: 0 !important;
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+nav#nav2 #overlay-menu{
+	background-color: #e6e6e6;
+	transition: background-color 0.01s;
+	width: 0;
+	height: 100%;
+  position: fixed;
+	top: 0;
+  right: 0;
+  overflow-x: hidden;
+	transition: 0.7s;
+	opacity: 1;
+	z-index: 200;
+}
+nav#nav2 #overlay-menu a{
+  color: #242424;
+	text-decoration: none;
+	white-space: nowrap;
+  padding: 20px 40px;
+	display: block;
+}
+nav#nav2 #overlay-menu li a:hover,
+nav#nav2 #overlay-menu li a:focus{
+  color: #fff;
+	background-color: #395375;
+  transition: 0.2s;
+}
+nav#nav2 #overlay-menu ul{
+	text-align: right;
+	list-style: none;
+	margin: 41px 0 0 0;
+	padding: 0;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu ul{
+		margin-top: 47px;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu ul{
+		margin-top: 51px;
+	}
+}
+nav#nav2 #overlay-menu ul{
+	background: #e6e6e6;
+}
+nav#nav2 #overlay-menu ul li{
+	border-bottom: 1px solid #fff;
+}
+nav#nav2 #overlay-menu ul li span{
+	font-size: .95em;
+	font-family: 'Noto Serif', serif;
+}
+nav#nav2 #overlay-menu li button.close{
+	background: none;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 7px 8px 5px;
+	position: absolute;
+	top: 7px;
+	right: 10px;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu li button.close{
+		padding: 6px 8px;
+		top: 8px;
+		right: 18px;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu li button.close{
+		top: 9px;
+		right: 40px;
+	}
+}
+nav#nav2 #overlay-menu li button.close:hover,
+nav#nav2 #overlay-menu li button.close:focus-within{
+	background-color: #395375;
+	transition: 0.2s;
+}
+nav#nav2 #overlay-menu li button.close i{
+	color: #242424;
+	font-size: 1.3em;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.7em;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.9em;
+	}
+}
+nav#nav2 #overlay-menu li button.close:hover i,
+nav#nav2 #overlay-menu li button.close:focus i{
+	color: #fff;
+}
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu li button.close{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+/* 1.5. Carousel */
+
+/* Moved to separate file */
+
+
+/* 1.6. YouTube Player */
+
+/* Most CSS moved to separate file */
+
+.skipcontrols a{
+	font-size: .8em;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	color: #395375;
+	background: #e6e6e6;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	padding: 4px 6px;
+	position: absolute;
+	left: 0px;
+	z-index: 10;
+	transition: top 1s ease-out;
+	-webkit-transition: top 1s ease-out;
+}
+@media only screen and (min-width: 768px){
+	.skipcontrols a{
 		font-size: .9em;
 	}
 }
-.carousel .carousel-item .carousel-caption a,
-.image-caption a{
-	text-decoration: underline;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.65); /*color*/
-	border: 2px solid transparent;
-	border-radius: 5px;
-	margin: 0;
-	padding: 1px 6px;
-	display: inline-block;
+.skipcontrols a{
+	border: 2px solid #fff;
+	top: -45px;
 }
-.carousel .carousel-item .carousel-caption a:hover,
-.carousel .carousel-item .carousel-caption a:focus,
-.image-caption a:hover,
-.image-caption a:focus{
-	background-color: #1157AC; /*color*/
-	margin: 0;
-}
-.carousel .carousel-item .carousel-caption a:focus,
-.image-caption a:focus{
-	border-color: #1157AC; /*color*/
-	box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
-	-webkit-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
-    -moz-box-shadow: inset 0px 0px 0px 2px #fff; /*color*/
-}
-/* image caption */
-.image-wrapper{
-	position: relative;
-	margin: 0 auto 2em auto;
-}
-@media only screen and (min-width: 768px){
-	.image-wrapper{
-		width: 90%;
-	}
-}
-/* Shared CSS for Pause, Next and Previous Slide Controls */
-.carousel .controls button{
-	background-color: transparent;
-	border: none;
-	outline: none;
-	padding: 0;
-	z-index: 10;
-	top: 5px;
+.skipcontrols a:focus{
+	outline-color: transparent;
+	top: 0px;
+	left: 0px;
 	position: absolute;
-}
-.carousel .controls button svg rect.background{
-	fill: black;
-	stroke: black;
-	stroke-width: 1px;
-	opacity: 0.6;
-}
-.carousel .controls button svg rect.border{
-	fill: transparent;
-	stroke: transparent;
-	stroke-width: 2px;
-}
-.carousel .controls button:focus rect.background,
-.carousel .controls button:hover rect.background,
-.carousel .controls button:focus rect.border,
-.carousel .controls button:hover rect.border{
-	fill: #1157AC; ; /*color*/
-	stroke: #1157AC; /*color*/
-	opacity: 1;
-}
-/* Next and Previous Slide Controls */
-.carousel .controls button svg polygon{
-	fill: white;
-	stroke: white;
-	stroke-width: 2;
-	opacity: 1;
-}
-.carousel .controls button.previous{
-	top: 10px;
-	right: 50px;
-}
-.carousel .controls button.next{
-	top: 10px;
-	right: 6px;
-}
-/* Pause Control */
-.carousel .controls button.rotation{
-	top: 10px;
-	left: 6px;
-}
-.carousel .controls button.rotation svg polygon.pause{
-	fill: transparent;
-	stroke-width: 4;
-	stroke: transparent;
-}
-.carousel .controls button.rotation svg polygon.play{
-	fill: transparent;
-	stroke-width: 1;
-	stroke: transparent;
-}
-.carousel .controls button.rotation.pause svg polygon.pause,
-.carousel .controls button.rotation.play svg polygon.play{
-	fill: white;
-	stroke: white;
-}
-/* Common focus styling for svg buttons */
-/* .carousel .controls button:focus rect.background,
-.carousel .controls button:hover rect.background,
-.carousel .controls button:focus rect.border,
-.carousel .controls button:hover rect.border{
-	fill: #1157AC; ;
-	stroke: #1157AC; 
-	opacity: 1;
-} */
-.carousel .controls button:focus rect.border{
-	stroke: white;
+	transition: top .4s ease-in;
+	-webkit-transition: top .4s ease-in;
 }
 
-/* 1.3. Scroll to Top Button */
+
+/* 1.7. Scroll to Top Button */
 
 /* Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
-	font-size: .75em;
-	color: white;
-	background-color: #1157AC;
-	border: 2px solid transparent;
+	font-size: .95em;
+	color: #fff;
+	background-color: #395375;
+	border: 2px solid #fff;
 	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 	outline: none;
 	padding: 5px;
-	bottom: 118px;
-	right: 20px;
 	position: fixed;
+	right: 20px;
+	bottom: 186px;
 	z-index: 99;
 	display: none;
+	visibility: hidden;
   }
 @media only screen and (min-width: 480px){
 	#topButton{
-		bottom: 90px;
+		bottom: 132px;
 	}
 }
 @media only screen and (min-width: 768px){
 	#topButton{
-		font-size: .95em;
-		bottom: 66px;
+		bottom: 101px;
 	}
 }
 @media only screen and (min-width: 992px){
 	#topButton{
-		right: 120px;
+		right: 110px;
 	}
 }
   #topButton:hover,
   #topButton:focus{
-	color: #1157AC;
-	background-color: white;
 	font-weight: 600;
-	border: 2px solid #1157AC;
+	color: #395375;
+	background-color: #fff;
+	border: 2px solid #395375;
 }
 #topButton:active{
-	color: white;
-	background-color: #1157AC;
+	color: #fff;
+	background-color: #395375;
 	border: 2px solid transparent;
 }
 
 
-/* 1.4. Lines */
-
-hr{
-	background-color: gray;
-	height: 1px;
-	border: 0;
-}
-hr.section-divider{
-	margin: 1.2em 0;
-}
-
-
-/* 1.5. Formatting */
+/* 1.8. Formatting */
 
 .bold{
 	font-weight: bold;
@@ -578,22 +1150,26 @@ hr.section-divider{
 .italic{
 	font-style: italic;
 }
+.large{
+	font-size: 1.05em;
+}
+.larger{
+	font-size: 1.1em;
+}
+.largest{
+	font-size: 1.15em;
+}
+.right{
+	text-align: right;
+}
 .small{
-	font-size: .9em;
+	font-size: .95em;
 }
 .smaller{
 	font-size: .9em;
 }
 .smallest{
-	font-size: .9em;
-}
-@media only screen and (min-width: 768px){
-	.smaller{
-		font-size: .8em;
-	}
-	.smallest{
-		font-size: .7em;
-	}
+	font-size: .85em;
 }
 .smallcaps{
 	font-variant: small-caps;
@@ -601,83 +1177,12 @@ hr.section-divider{
 .underline{
 	text-decoration: underline;
 }
-
-
-/* 1.6. Lists */
-
-.main-menu ol{
-	text-align: center;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	display: inline-grid;
-	grid-template-columns: auto;
-}
-@media (min-width: 320px){
-	.main-menu ol {
-		grid-template-columns: auto auto;
-	}
-  }
-@media (min-width: 480px){
-	.main-menu ol {
-		grid-template-columns: auto auto auto;
-	}
-  }
-@media (min-width: 768px){
-	.main-menu ol {
-		grid-template-columns: auto auto auto auto auto auto;
-	}
-}
-.main-menu li{
-	font-size: 1.1em;
-	margin: .5em .5em;
-}
-nav.main-menu{
-	margin: 1em auto 3em auto;
-}
-@media (min-width: 992px){
-	nav.main-menu{
-		max-width: 90%;
-	}
-}
-ol.mission{
-	padding: 0;
-	margin: 0 1em;
-}
-@media (min-width: 768px){
-	ol.mission{
-		margin: 0 2em;
-	}
-}
-#upcoming > ul > li > span{
-	font-size: 1.2em;
-	font-variant: small-caps;
-}
-#upcoming > ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-#upcoming > ul > li:nth-child(1) > ul{
-	margin-bottom: 1em;
-}
-#upcoming > ul > li > ul{
-	padding: 0;
-	margin: 0 1.4em;
-}
-#upcoming > ul > li > ul > li > ol{
-	padding: 0;
-	margin: 0 2.4em;
-}
-@media (min-width: 768px){
-	#upcoming > ul{
-		margin: 0 2em;
-	}
-	#upcoming > ul > li > ul{
-		margin: 0 3em;
-	}
-	#upcoming > ul > li > ul > li > ol{
-		margin: 0 4em;
-	}
+.word{
+	white-space: nowrap;
+	/* hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	word-break: normal;
+	-ms-word-break: normal; */
 }
