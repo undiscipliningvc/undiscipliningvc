@@ -391,6 +391,8 @@
 .content.about.founders section p img{
 	margin: .5em .75em 0 0;
 	width: 100%;
+	height: auto;
+	box-sizing: border-box;
 	display: inline-block;
 }
 @media only screen and (min-width: 480px){
