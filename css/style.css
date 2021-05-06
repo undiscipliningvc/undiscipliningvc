@@ -265,11 +265,11 @@ main section ul{
 	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 }
-.founders{
+.founding-dev{
 	margin: 0 auto 2em;	
 	display: inline-block;
 }
-.founders ul{
+.founding-dev ul{
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;
