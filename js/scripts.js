@@ -131,19 +131,19 @@ function checkUrl () {
     location.search.length <= 1) {
       document.getElementById("home").setAttribute("class","current");
   }
-  if (window.location.href.indexOf("index") > -1) {	
+  if (window.location.href.indexOf("index") > 0) {	
     document.getElementById("home").setAttribute("class","current");
   };
-  if (window.location.href.indexOf("zoomcasts") > -1) {	
+  if (window.location.href.indexOf("zoomcasts") > 0) {	
     document.getElementById("zoomcasts").setAttribute("class","current");
   };
-  if (window.location.href.indexOf("lesson_plans") > -1) {	
+  if (window.location.href.indexOf("lesson_plans") > 0) {	
     document.getElementById("lesson_plans").setAttribute("class","current");
   };
-  if (window.location.href.indexOf("syllabi") > -1) {	
+  if (window.location.href.indexOf("syllabi") > 0) {	
     document.getElementById("syllabi").setAttribute("class","current");
   };
-  if (window.location.href.indexOf("about") > -1) {	
+  if (window.location.href.indexOf("about") > 0) {	
     document.getElementById("about").setAttribute("class","current");
   };
 };
