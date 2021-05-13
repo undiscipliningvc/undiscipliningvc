@@ -115,8 +115,8 @@ html{
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
-	hyphens: auto;
 	-ms-word-break: break-all;
+	hyphens: auto;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto; */
@@ -713,25 +713,21 @@ nav#navFB{
 		height: 63px;
 	}
 }
-nav#nav1 .current{
-	text-decoration: overline;
-	text-decoration-thickness: 3px;
-}
-/* Also see current.css and content.css  */
+/* Also see cluster.css and content.css  */
 nav#nav1 #home.current{
-	text-decoration-color: #395375;
+	border-bottom: 3px solid #395375;
 }
 nav#nav1 #zoomcasts.current{
-	text-decoration-color: #cb6948;
+	border-bottom: 3px solid #cb6948;
 }
 nav#nav1 #lesson_plans.current{
-	text-decoration-color: #5378ac;
+	border-bottom: 3px solid #5378ac;
 }
 nav#nav1 #syllabi.current{
-	text-decoration-color: #778056;
+	border-bottom: 3px solid #778056;
 }
 nav#nav1 #about.current{
-	text-decoration-color: #757575;
+	border-bottom: 3px solid #757575;
 }
 nav#nav1 a:hover .current,
 nav#nav1 a:focus .current{
