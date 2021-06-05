@@ -714,24 +714,25 @@ nav#navFB{
 	}
 }
 /* Also see cluster.css and content.css  */
-nav#nav1 #home.current{
+nav#nav1 a #home.current{
 	border-bottom: 3px solid #395375;
 }
-nav#nav1 #zoomcasts.current{
+nav#nav1 a #zoomcasts.current{
 	border-bottom: 3px solid #cb6948;
 }
-nav#nav1 #lesson_plans.current{
+nav#nav1 a #lesson_plans.current{
 	border-bottom: 3px solid #5378ac;
 }
-nav#nav1 #syllabi.current{
+nav#nav1 a #syllabi.current{
 	border-bottom: 3px solid #778056;
 }
-nav#nav1 #about.current{
+nav#nav1 a #about.current{
 	border-bottom: 3px solid #757575;
 }
 nav#nav1 a:hover .current,
 nav#nav1 a:focus .current{
 	text-decoration: none;
+	border-bottom: none !important;
 }
 nav#nav1 a,
 nav#nav1 a:visited,
