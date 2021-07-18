@@ -216,6 +216,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	opacity: .93;
 	z-index: 15;
 }
@@ -225,6 +227,8 @@
 	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -30%);
+	-moz-transform: translate(-50%, -30%);
+	-webkit-transform: translate(-50%, -30%);
 }
 .content.lesson-plans main h2.bottom,
 .content.syllabi main h2.bottom,
@@ -232,6 +236,8 @@
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -70%);
+	-moz-transform: translate(-50%, -70%);
+	-webkit-transform: translate(-50%, -70%);
 }
 .content.zoomcasts main h2{
 	font-size: 2.2em;
