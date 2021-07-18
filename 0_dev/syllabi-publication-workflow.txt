@@ -16,10 +16,11 @@ Syllabus Page
 4) Replace generic image name (000X) with name of actual image for page. Remove code for all images that don't meet specs.
 5) Find all instances of commented out "Change" and fill fields with info provided by cluster developer.
 6) For "alt" for image, copy relevant field from Zotero. For files with two images, preface each alt text with either "Left:" or "Right:"
-7) Use Zotero, Chicago (full note) to generate image bibliographical info for image "title." Also be sure to copy over rights info separately. For files with two images, preface each title text with either "(Left)" or "(Right)".
+7) Use Zotero, MLA to generate image bibliographical info for image "title." Also be sure to copy over rights info separately. For files with two images, preface each title text with either "(Left)" or "(Right)".
 8) h2 class (for image title) options are "bottom" or "top"; "center" is default, so if center, remove class. Custom placement using inliness CSS can also be done.
 9) File names for syllabus download will be the same as file name for webpage, but preceded by author surname.
 10) For "Header Image Caption" use same text as for main image "title" (see #7, above).
+11) Use Zotero, MLA to generate works cited. Also copy works cited to main UVC bibliography page in About section.
 
 Syllabus
 1) Cut and paste UVC peer review stamp from an existing site peer-reviewed syllabus.
