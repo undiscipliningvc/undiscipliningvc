@@ -96,7 +96,7 @@ mogrify -format jpg -resize 390x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 mogrify -format jpg -resize 446x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/446 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/446 && find . -exec rename 's|.jpg|-446px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 570x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/570 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/570 && find . -exec rename 's|.jpg|-570px.jpg|' {} + && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about \;
+mogrify -format jpg -resize 570x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/570 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/570 && find . -exec rename 's|.jpg|-570px.jpg|' {} + && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about/founders \;
 
 ****
 LESSON PLAN TILES

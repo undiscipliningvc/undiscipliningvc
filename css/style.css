@@ -107,6 +107,17 @@ nav#nav2 #overlay-menu = 200
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 } */
+/* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+::selection {
+	color: #fff;
+  background: #395375;
+  text-shadow: none;
+}
+::-moz-selection {
+  color: #fff;
+	background: #395375;
+  text-shadow: none;
+}
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -115,8 +126,8 @@ html{
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
-	hyphens: auto;
 	-ms-word-break: break-all;
+	hyphens: auto;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto; */
@@ -162,6 +173,7 @@ main{
 	margin: 0 auto;
 	padding: 0 1em 1em;
 	max-width: 700px;
+	display: block;
 }
 @media only screen and (min-width: 768px){
 	main{
@@ -265,11 +277,11 @@ main section ul{
 	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 }
-.founders{
+.founding-dev{
 	margin: 0 auto 2em;	
 	display: inline-block;
 }
-.founders ul{
+.founding-dev ul{
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;
@@ -463,6 +475,7 @@ hr{
 a,
 a:visited{
 	color: #395375;
+	background-color: transparent;
 }
 a:hover,
 a:focus{
@@ -566,6 +579,7 @@ h5{
 }
 img{
 	font-weight: 300;
+	border-style: none;
 	width: 100%;
 }
 a img{
@@ -713,29 +727,26 @@ nav#navFB{
 		height: 63px;
 	}
 }
-nav#nav1 .current{
-	text-decoration: overline;
-	text-decoration-thickness: 3px;
+/* Also see cluster.css and content.css  */
+nav#nav1 a #home.current{
+	border-bottom: 3px solid #395375;
 }
-/* Also see current.css and content.css  */
-nav#nav1 #home.current{
-	text-decoration-color: #395375;
+nav#nav1 a #zoomcasts.current{
+	border-bottom: 3px solid #cb6948;
 }
-nav#nav1 #zoomcasts.current{
-	text-decoration-color: #cb6948;
+nav#nav1 a #lesson_plans.current{
+	border-bottom: 3px solid #5378ac;
 }
-nav#nav1 #lesson_plans.current{
-	text-decoration-color: #5378ac;
+nav#nav1 a #syllabi.current{
+	border-bottom: 3px solid #778056;
 }
-nav#nav1 #syllabi.current{
-	text-decoration-color: #778056;
-}
-nav#nav1 #about.current{
-	text-decoration-color: #757575;
+nav#nav1 a #about.current{
+	border-bottom: 3px solid #757575;
 }
 nav#nav1 a:hover .current,
 nav#nav1 a:focus .current{
 	text-decoration: none;
+	border-bottom: none !important;
 }
 nav#nav1 a,
 nav#nav1 a:visited,
@@ -1099,7 +1110,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	outline: none;
-	padding: 5px;
+	padding: 7px;
 	position: fixed;
 	right: 20px;
 	bottom: 186px;
@@ -1173,6 +1184,9 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 .smallcaps{
 	font-variant: small-caps;
+}
+strong{
+	font-weight: bolder;
 }
 .underline{
 	text-decoration: underline;
