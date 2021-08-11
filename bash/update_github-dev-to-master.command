@@ -5,4 +5,4 @@ readonly PROGDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 readonly ARGS="$@"
 
 cd -- "$(dirname "$BASH_SOURCE")"
-${PROGDIR}/update_github-dev-to-stage.sh
+${PROGDIR}/update_github-dev-to-master.sh
