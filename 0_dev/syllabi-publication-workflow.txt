@@ -21,6 +21,8 @@ Syllabus Page
 9) File names for syllabus download will be the same as file name for webpage, but preceded by author surname.
 10) For "Header Image Caption" use same text as for main image "title" (see #7, above).
 11) Use Zotero, MLA to generate works cited. Also copy works cited to main UVC bibliography page and add creators to the project contributors page, both in the in About section.
+12) Proof syllabus essay according to house style guide.
+13) Update syllabi.html page for new syllabi tiles.
 
 Syllabus
 1) Cut and paste UVC peer review stamp from an existing site peer-reviewed syllabus.
