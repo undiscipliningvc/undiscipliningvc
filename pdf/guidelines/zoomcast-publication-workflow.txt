@@ -32,6 +32,7 @@ delete to remove extraneous bits
 4) Open title PowerPoint and export slide using the following specs: 2500 x 1406 JPEG
 5) Insert title slide at beginning (4 seconds) and end (5 seconds) of Zoomcast; separate out with "Cross Blur" transition.
 6) Close project and same Zoomcast using the following specs: HD 720
+7) Upload video to UNL Vidgrid and request professional captions.
 
 YouTube
 1) Go to UVC channel; select "Manage Videos."
