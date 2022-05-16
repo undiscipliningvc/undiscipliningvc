@@ -383,10 +383,15 @@
 .content section ul li a{
 	margin-bottom: .5em;
 }
-.about.content section ul{
+.content.about section ul{
 	list-style: none;
 	margin: 1.5em;
 	padding: 0;
+}
+.content.about.values section ul{
+	list-style: inherit;
+	/* margin: 1.5em;
+	padding: 0; */
 }
 .content section ul#topic-list{
 	padding: 0 0 0 1.2em;
