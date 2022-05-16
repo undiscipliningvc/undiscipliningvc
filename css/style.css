@@ -827,15 +827,11 @@ nav#nav1 ul li:not(:first-child):not(:last-child){
 	display: none;
 	visibility: hidden;
 }
-@media only screen and (min-width: 992px){
-	nav#nav1 ul li:not(:first-child):not(:last-child){
-		display: block;
-		visibility: visible;
-	}
-}
 @media only screen and (min-width: 1200px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
 		font-size: 1em;
+		display: block;
+		visibility: visible;
 	}
 }
 nav#nav1 li a,
@@ -922,7 +918,7 @@ nav#navFB li button:hover i,
 nav#navFB li button:focus i{
 	color: #fff;
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1200px){
 	nav#nav1 li:last-child,
 	nav#nav1 li button{
 		display: none;
