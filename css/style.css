@@ -1131,6 +1131,12 @@ nav#nav2 #overlay-menu li button.close:focus i{
 		right: 110px;
 	}
 }
+@media only screen and (min-width: 1600px){
+	#topButton{
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
   #topButton:hover,
   #topButton:focus{
 	font-weight: 600;
