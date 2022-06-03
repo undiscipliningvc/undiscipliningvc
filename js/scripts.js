@@ -28,11 +28,11 @@ $(window).scroll(function () {
 //Get the button
 var mybutton = document.getElementById("topButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 40px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     mybutton.style.display = "block";
     mybutton.style.visibility = "visible";
   } 
