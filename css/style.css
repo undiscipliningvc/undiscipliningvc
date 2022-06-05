@@ -362,6 +362,17 @@ ol.mission{
 		margin: 0 2em;
 	}
 }
+ol.endnotes{
+	padding: 0 0 0 1em;
+}
+/* Heading adapted from https://stackoverflow.com/a/20478913 */
+ol.endnotes:before{
+	content:attr(aria-label);
+	font-size: .9em;
+	font-style: italic;
+	margin: 0 0 .5rem -1rem;
+	display: inline-block;
+}
 #call{
 	margin-top: 2em;
 }
@@ -1178,7 +1189,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	text-align: right;
 }
 .small{
-	font-size: .95em;
+	font-size: .9em;
 }
 .smaller{
 	font-size: .9em;
