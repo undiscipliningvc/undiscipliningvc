@@ -36,6 +36,11 @@
 	padding: 0 .5em 0;
 	max-width: 100%;
 	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1rem;
 }
 @media only screen and (min-width: 480px){
 	.cluster main{
@@ -49,10 +54,10 @@
 		max-width: 700px;
 	}
 	.cluster.zoomcasts main{
-		display: flex;
+		/* display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: stretch;
+		align-items: stretch; */
 	}
 }
 @media only screen and (min-width: 992px){
@@ -60,10 +65,10 @@
 		margin-top: 63px;
 		padding: 0 1em;
 		max-width: calc(1000px + 4em);
-		display: flex;
+		/* display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: stretch;
+		align-items: stretch; */
 	}
 }
 .cluster main section{
@@ -72,7 +77,9 @@
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	margin: 1em auto;
+	margin: 0 auto;
+	width: 100%;
+	display: -webkit-flex;
 	display: flex;
 	flex-flow: column;
 }
@@ -80,18 +87,20 @@
 	min-height: 150px;
 	position: relative;
 }
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px){
 	.cluster main section{
 		margin: .5em 0 1.5em;
 	}
-}
+} */
 @media only screen and (min-width: 768px){
 	.cluster.zoomcasts main{
-		gap: 1em;
+		/* gap: 0; */
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	.cluster.zoomcasts main section{
 		margin-bottom: 0;
-		flex: 0 0 calc(50% - .5em - 2px);
+		flex: 0 0 calc(50%  - .5em - 2px);
 	}
 	.cluster.zoomcasts main section:first-child{
 		flex: 1 0 calc(100% - 2px);
@@ -103,14 +112,14 @@
 @media only screen and (min-width: 992px){
 	.cluster.zoomcasts main{
 		padding: 0 1.5em;
-		gap: inherit;
+		/* gap: inherit; */
 	}
-	.cluster main section{
+	/* .cluster main section{
 		margin: 1em;
 	}
 	.cluster.zoomcasts main section{
 		margin: 1em .5em;
-	}
+	} */
 	.cluster main section{
 		max-width: 500px;
 		flex: 1 0 calc(50% - 2em - 2px);
@@ -275,6 +284,7 @@
 @media only screen and (min-width: 768px){
 	.cluster main section ol,
 	.cluster main section ul{
+		display: -webkit-flex;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -330,6 +340,7 @@
 	color: #242424;
 	width: 100%;
 	height: 100%;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -347,6 +358,7 @@
 }
 .lesson-plans.cluster main section div{
 	height: 100%;
+	display: -webkit-flex;
 	display: flex;
   flex-flow: column;
 }
