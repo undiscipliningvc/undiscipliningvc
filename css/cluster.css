@@ -31,6 +31,7 @@
 	background: #757575;
 }
 /* ----------------------- */
+
 .cluster main{
 	margin: 47px auto 0;
 	padding: 0 .5em 0;
@@ -40,6 +41,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	justify-content: center;
 	gap: 1rem;
 }
 @media only screen and (min-width: 480px){
@@ -54,30 +56,29 @@
 		max-width: 700px;
 	}
 	.cluster.zoomcasts main{
-		/* display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: stretch; */
+		gap: 1rem
 	}
 }
 @media only screen and (min-width: 992px){
 	.cluster main{
 		margin-top: 63px;
-		padding: 0 1em;
 		max-width: calc(1000px + 4em);
-		/* display: flex;
+		align-items: stretch;
+		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: stretch; */
+		gap: 1.5rem;
 	}
 }
+/* ----------------------- */
 .cluster main section{
 	text-align: center;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border: 1px solid #242424;
 	border-radius: 5px;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
@@ -87,64 +88,38 @@
 	min-height: 150px;
 	position: relative;
 }
-/* @media only screen and (min-width: 480px){
-	.cluster main section{
-		margin: .5em 0 1.5em;
-	}
-} */
 @media only screen and (min-width: 768px){
-	.cluster.zoomcasts main{
-		/* gap: 0; */
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
 	.cluster.zoomcasts main section{
-		/* margin-bottom: 0; */
-		flex: 0 0 calc(50%  - .5em - 2px);
+		flex: 0 0 calc(50%  - .5rem - 2px);
 	}
 	.cluster.zoomcasts main section:first-child{
 		flex: 1 0 calc(100% - 2px);
-}
+	}
 	.cluster.zoomcasts main section:nth-child(2){
 		flex: 1 0 calc(100% - 2px);
-}
+	}
 }
 @media only screen and (min-width: 992px){
-	.cluster.zoomcasts main{
-		/* padding: 0 1.5em; */
-		/* gap: inherit; */
-	}
-	/* .cluster main section{
-		margin: 1em;
-	}
-	.cluster.zoomcasts main section{
-		margin: 1em .5em;
-	} */
 	.cluster main section{
 		max-width: 500px;
-		flex: 1 0 calc(50% - 2em - 2px);
+		flex: 1 0 calc(50% - 1rem - 2px);
 	}
 	.cluster.zoomcasts main section{
 		max-width: 333.3px;
-		flex: 1 0 calc(33.3% - 1em - 2px);
+		flex: 1 0 calc(33.3% - 1.5rem - 2px);
 	}
 		.cluster main section:first-child,
 		.cluster.zoomcasts main section:first-child{
 			max-width: 300px;
-			flex: 1 0 calc(27.5% - 2em - 2px);
+			flex: 1 0 calc(27.5% - 1rem - 2px);
 	}
-	/* .cluster.zoomcasts main section:first-child{
-		margin: 1em;
-	} */
 	.cluster main section:nth-child(2),
 	.cluster.zoomcasts main section:nth-child(2){
 		max-width: 600px;
-		flex: 1 0 calc(72.5% - 2em - 2px);
+		flex: 1 0 calc(72.5% - 1rem - 2px);
 	}
-	/* .cluster.zoomcasts main section:nth-child(2){
-		margin: 1em
-	} */
 }
+/* ----------------------- */
 .cluster main section h2{
 	font-size: 1.1em;
 	font-weight: 700;
