@@ -36,9 +36,9 @@
 	opacity: 0.7;
 }
 .youtube .play-button{
-	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
+	border-radius: 6px;	
 	/* box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); */
@@ -82,9 +82,9 @@
 .youtube .play-button:before{
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 .youtube iframe{
 	height: 100%;
