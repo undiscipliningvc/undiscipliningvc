@@ -1124,25 +1124,28 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	outline: none;
 	padding: 7px;
 	position: fixed;
-	right: 20px;
-	bottom: 186px;
+	top: calc(47px + .25rem);
+	right: .75rem;
 	z-index: 99;
 	display: none;
 	visibility: hidden;
   }
 @media only screen and (min-width: 480px){
 	#topButton{
-		bottom: 132px;
+		top: calc(53px + .25rem);
+		right: 1.25rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	#topButton{
-		bottom: 101px;
+		top: calc(57px + .25rem);
+		right: 2.75rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	#topButton{
-		right: 110px;
+		top: calc(69px + .25rem);
+		right: 1.25rem;
 	}
 }
 @media only screen and (min-width: 1600px){
