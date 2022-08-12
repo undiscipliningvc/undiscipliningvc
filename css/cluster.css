@@ -340,3 +340,37 @@
 	display: flex;
   flex-flow: column;
 }
+
+/* Safari Support: Mobile and Safari below 14.1 */
+/* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
+/* Further developed from the original code creeated by One More Voice (https://github.com/livingstoneonline/onemorevoice/blob/master/css/style.css) */
+@supports (-webkit-touch-callout: none) and (not (translate: none)){
+	.cluster main,
+	.cluster.zoomcasts main{
+		text-align: center;
+		margin: calc(47px - .5rem) auto -.5rem;
+	}
+	.cluster main section,
+	.cluster.zoomcasts main section{
+		margin: .5rem 0;
+	}
+	@media only screen and (min-width: 768px){
+		.cluster main,
+		.cluster.zoomcasts main{
+			margin: calc(51px - .5rem) auto -.5rem;
+		}
+		.cluster.zoomcasts main section{
+			margin: .5rem .25rem;
+		}
+	}
+	@media only screen and (min-width: 992px){
+		.cluster main,
+		.cluster.zoomcasts main{
+			margin: calc(63px - .5rem) auto -.5rem;
+		}
+		.cluster main section{
+			margin: .5rem .25rem;
+		}
+	}
+}
