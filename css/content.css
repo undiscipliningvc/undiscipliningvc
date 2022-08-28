@@ -431,8 +431,7 @@
 .content h5 + ul{
 	padding: 0 0 0 1rem;
 }
-.content h5 + ol li,
-.content h5 + ul li{
+.content h5 + ol li{
 	margin: 0 0 1rem 0;
 }
 .content .annotation{
