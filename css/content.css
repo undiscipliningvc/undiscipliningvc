@@ -399,6 +399,9 @@
 .content section p{
 	clear: both;
 }
+.content section p + section:first-of-type{
+	margin-top: 2.75em;
+}
 .content.about.founders section p img{
 	margin: .5em .75em 0 0;
 	width: 100%;
@@ -423,6 +426,14 @@
 	.content.about.founders section p img{
 		width: 25%;
 	}
+}
+.content h5 + ol,
+.content h5 + ul{
+	padding: 0 0 0 1rem;
+}
+.content h5 + ol li,
+.content h5 + ul li{
+	margin: 0 0 1rem 0;
 }
 .content .annotation{
 	font-size: .9em;
