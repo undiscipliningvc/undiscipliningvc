@@ -194,7 +194,7 @@ main aside{
 	main summary,
 	main section,
 	main aside{
-		margin: 2.75em auto;
+		margin: 3em auto;
 	}
 }
 main section:first-of-type{
