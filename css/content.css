@@ -440,6 +440,9 @@
 	margin: .25em 0 0 1.5em;
 	display: block;
 }
+.content .annotation::before{
+	content: '⇨ ';
+}
 .content ul.annotation,
 .content ol.annotation{
 	margin: 0 0 0 1.5em;
