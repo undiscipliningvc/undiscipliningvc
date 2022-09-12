@@ -188,15 +188,15 @@ main{
 main summary,
 main section,
 main aside{
-	margin: 2em auto;
+	margin: 2.5rem auto;
 }
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
 	main summary,
 	main section,
 	main aside{
-		margin: 2.25em auto;
+		margin: 3rem auto;
 	}
-}
+} */
 main section:first-of-type{
 	margin-top: 0;
 }
