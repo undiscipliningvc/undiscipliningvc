@@ -194,7 +194,7 @@ main aside{
 	main summary,
 	main section,
 	main aside{
-		margin: 3em auto;
+		margin: 2.25em auto;
 	}
 }
 main section:first-of-type{
@@ -568,9 +568,9 @@ h3{
 }
 h4,
 section section h4:first-child{
-	font-size: 1em;
+	font-size: .95em;
 	font-weight: 600;
-	font-variant: small-caps;
+	text-transform: uppercase;
 }
 section h4:first-child{
 	margin-top: 1.5em;
@@ -580,6 +580,17 @@ h5{
 	font-weight: 700;
 	font-style: italic;
 	text-align: left;
+}
+h5.alternate{
+	font-weight: 400;
+}
+h6{
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin: 2em 0 1em;
+}
+h7{
+	font-style: italic;
 }
 /*logo*/
 @font-face {
