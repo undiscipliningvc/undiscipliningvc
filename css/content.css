@@ -103,12 +103,17 @@
 .content main section.pathways,
 .content main section.materials{
 	counter-reset: pathways;
+	counter-reset: elements;
 }
 .content main section section{
 	counter-reset: none;
 }
 .content main section:first-of-type{
 	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+.content main section:first-of-type + section{
+	margin-top: 3em;
 	margin-bottom: 1.5em;
 }
 .content.error404 main section:first-of-type,
@@ -301,7 +306,12 @@
 .content main section.materials h4::before{
   font-variant: normal;
 	counter-increment: pathways;
-  content: counter(pathways, lower-alpha) ". ";
+  content: counter(pathways, lower-alpha) ") ";
+}
+.content main h6::before{
+  font-variant: normal;
+	counter-increment: elements;
+  content: counter(elements) ") ";
 }
 .content main section.pathways strong,
 .content main section.materials strong{
