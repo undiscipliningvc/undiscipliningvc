@@ -584,6 +584,9 @@ h5{
 h5.alternate{
 	font-weight: 400;
 }
+h5.alternate em{
+	font-style: normal;
+}
 h6{
 	font-size: 1.1rem;
 	font-weight: 400;
