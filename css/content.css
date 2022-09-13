@@ -101,14 +101,16 @@
 }
 .content main section,
 .content main section.pathways,
-.content main section.materials{
+.content main section.materials,
+.content main section hr + section{
 	counter-reset: pathways;
 	counter-reset: elements;
 }
 .content main section section{
 	counter-reset: none;
 }
-.content main section:first-of-type{
+.content main section:first-of-type,
+.content main hr + section{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 }
