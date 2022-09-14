@@ -105,7 +105,8 @@ british-japanese used on east asia japanese aesthetics only */
 .content main section,
 .content main section.pathways,
 .content main section.materials,
-.content main section.british-japanese{
+.content main section.british-japanese > section:first-of-type,
+.content main section.british-japanese > section:last-of-type{
 	counter-reset: pathways;
 }
 .content main section section{
