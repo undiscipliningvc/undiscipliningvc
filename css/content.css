@@ -306,11 +306,12 @@ british-japanese used on east asia japanese aesthetics only */
 .content main section.materials h4::before,
 .content main section.british-japanese h5.alternate::before{
   font-variant: normal;
+	font-weight: normal;
 	counter-increment: pathways;
 }
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
-	content: counter(pathways, lower-alpha) ") ";
+	content: counter(pathways, lower-alpha) ". ";
 }
 .content main section.british-japanese h5.alternate::before{
   content: counter(pathways) ") ";
