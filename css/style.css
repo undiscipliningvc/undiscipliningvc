@@ -190,13 +190,13 @@ main section,
 main aside{
 	margin: 2.5rem auto;
 }
-/* @media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 	main summary,
 	main section,
 	main aside{
 		margin: 3rem auto;
 	}
-} */
+}
 main section:first-of-type{
 	margin-top: 0;
 }
@@ -570,7 +570,7 @@ h4,
 section section h4:first-child{
 	font-size: .95em;
 	font-weight: 600;
-	text-transform: uppercase;
+	font-style: italic;
 }
 section h4:first-child{
 	margin-top: 1.5em;
