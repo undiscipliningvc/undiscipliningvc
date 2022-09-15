@@ -104,10 +104,16 @@ materials used on african lesson plans
 british-japanese used on east asia japanese aesthetics only */
 .content main section,
 .content main section.pathways,
-.content main section.materials,
+.content main section.materials{
+	counter-reset: pathways;
+}
+.content main section.british-japanese,
+.content main section.british-japanese{
+	counter-reset: british-japanese-1;
+}
 .content main section.british-japanese > section:first-of-type,
 .content main section.british-japanese > section:last-of-type{
-	counter-reset: pathways;
+	counter-reset: british-japanese-2;
 }
 .content main section section{
 	counter-reset: none;
@@ -305,17 +311,23 @@ british-japanese used on east asia japanese aesthetics only */
 }
 .content main section.pathways h4::before,
 .content main section.materials h4::before,
+.content main section.british-japanese h4::before,
 .content main section.british-japanese h5.alternate::before{
   font-variant: normal;
 	font-weight: normal;
-	counter-increment: pathways;
 }
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
+	counter-increment: pathways;
 	content: counter(pathways, lower-alpha) ". ";
 }
+.content main section.british-japanese h4::before{
+	counter-increment: british-japanese-1;
+  content: counter(british-japanese-1, upper-alpha) ") ";
+}
 .content main section.british-japanese h5.alternate::before{
-  content: counter(pathways) ") ";
+	counter-increment: british-japanese-2;
+  content: counter(british-japanese-2) ") ";
 }
 .content main section.pathways strong,
 .content main section.materials strong{
