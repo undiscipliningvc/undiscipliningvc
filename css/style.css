@@ -568,7 +568,7 @@ h3{
 }
 h4,
 section section h4:first-child{
-	font-size: .9em;
+	font-size: .95em;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -582,12 +582,13 @@ h5{
 	text-align: left;
 }
 h5.alternate{
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 }
 h6{
 	font-size: 1.1rem;
 	font-weight: 600;
+	font-style: italic;
 	margin: 2em 0 1em;
 }
 h7{
