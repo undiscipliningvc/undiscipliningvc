@@ -580,6 +580,7 @@ h5{
 	font-weight: 700;
 	font-style: italic;
 	text-align: left;
+	margin-bottom: 1rem;
 }
 h5.alternate{
 	font-weight: 600;
