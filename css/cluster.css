@@ -287,9 +287,9 @@
 @media only screen and (min-width: 768px){
 	.cluster main section ul li{
 		margin: .75em .5em;
-		padding: .15em;
+		padding: .15em .25em;
 		min-height: 35px;
-		flex: 1 0 calc(50% - 2px - 2em);
+		flex: 0 0 calc(50% - 2px - 1.5em);
 	}
 }
 .cluster main section ul li:first-child{
