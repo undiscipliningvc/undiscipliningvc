@@ -52,33 +52,33 @@
 			<main id="main" aria-labelledby="lesson-plan">
 					<div class="aspect-ratio-box">
 						<h2 id="lesson-plan">Transimperial Networks and East Asia: Timeline</h2>
-						<img src="/img/lesson_plans/uvc_0052-1800px.jpg" srcset="/img/lesson_plans/uvc_0052-1800px.jpg 1800w, /img/lesson_plans/uvc_0052-1650px.jpg 1650w, /img/lesson_plans/uvc_0052-1500px.jpg 1500w, /img/lesson_plans/uvc_0052-1350px.jpg 1350w, /img/lesson_plans/uvc_0052-1200px.jpg 1200w, /img/lesson_plans/uvc_0052-1050px.jpg 1050w, /img/lesson_plans/uvc_0052-900px.jpg 900w, /img/lesson_plans/uvc_0052-750px.jpg 750w, /img/lesson_plans/uvc_0052-600px.jpg 600w, /img/lesson_plans/uvc_0052-450px.jpg 450w, /img/lesson_plans/uvc_0052-300px.jpg 300w" sizes="(min-width: 1300px) 900px, (min-width: 1000px) calc(53.57vw + 214px), (min-width: 780px) 700px, 92.61vw" alt="" title="Kim Sahyung, et al. Kangnido. 1402, https://commons.wikimedia.org/wiki/File:GeneralMapOfDistancesAndHistoricCapitals.jpg. Wikimedia Commons, Dschingis Khan und seine Erben (exhibition catalogue), München 2005, p. 336–37. Public domain."/>
+						<img src="/img/lesson_plans/uvc_0052-1800px.jpg" srcset="/img/lesson_plans/uvc_0052-1800px.jpg 1800w, /img/lesson_plans/uvc_0052-1650px.jpg 1650w, /img/lesson_plans/uvc_0052-1500px.jpg 1500w, /img/lesson_plans/uvc_0052-1350px.jpg 1350w, /img/lesson_plans/uvc_0052-1200px.jpg 1200w, /img/lesson_plans/uvc_0052-1050px.jpg 1050w, /img/lesson_plans/uvc_0052-900px.jpg 900w, /img/lesson_plans/uvc_0052-750px.jpg 750w, /img/lesson_plans/uvc_0052-600px.jpg 600w, /img/lesson_plans/uvc_0052-450px.jpg 450w, /img/lesson_plans/uvc_0052-300px.jpg 300w" sizes="(min-width: 1300px) 900px, (min-width: 1000px) calc(53.57vw + 214px), (min-width: 780px) 700px, 92.61vw" alt="World map centered on China and Korea showing rivers in blue and settlements with red markers." title="Kim Sahyung, et al. Kangnido. 1402, https://commons.wikimedia.org/wiki/File:GeneralMapOfDistancesAndHistoricCapitals.jpg. Wikimedia Commons, Dschingis Khan und seine Erben (exhibition catalogue), München 2005, p. 336–37. Public domain."/>
 						<a id="information" class="caption" href="#caption" aria-label="Go to image caption"><i class="fa fa-info-circle" title="Image information"></i></a>
 					</div>
 
           <style>
 
 /* box sizing */
-.timeline-container * {
+.timeline-container *{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
 }
 /* main container */
-.timeline-container {
+.timeline-container{
   margin: 2rem auto;
   padding: 3rem 0;
   position: relative;
   overflow: hidden;
 }
 @media only screen and (min-width: 768px){
-  .timeline-container {
+  .timeline-container{
     margin: 3rem auto;
   }
 }
 /* vertical line for timeline */
-.timeline-container:before {
+.timeline-container:before{
   content: '';
   background: #CCD1D9;
   margin-left: -1px;
@@ -90,13 +90,13 @@
   z-index: 1;
 }
 @media only screen and (min-width: 768px){
-  .timeline-container:before {
+  .timeline-container:before{
     width: 2px;
     left: 50%;
   }
 }
 /* individual timeline item */
-.timeline-block {
+.timeline-block{
   margin: 2rem 0;
   width: 100%;
   display: -webkit-box;
@@ -111,7 +111,7 @@
   clear: both;
 }
 @media only screen and (min-width: 768px){
-  .timeline-block {
+  .timeline-block{
     margin: 1rem 0;
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
@@ -119,47 +119,47 @@
   }
 }
 /* reduces margin at top of timeline */
-.timeline-block:first-of-type {
+section section .timeline-block:first-of-type{
   margin-top: -2rem;
 }
 @media only screen and (min-width: 768px){
-  .timeline-block:first-of-type {
+  section section .timeline-block:first-of-type{
     margin-top: -1rem;
   }
 }
 /* reduces margin at bottom of timeline */
-.timeline-block:last-of-type {
+section section .timeline-block:last-of-type{
   margin-bottom: -2rem;
 }
 @media only screen and (min-width: 768px){
-  .timeline-block:last-of-type {
+  section section .timeline-block:last-of-type{
     margin-bottom: -1rem;
   }
 }
 /* all timeline items on right side */
-.timeline-block-right {
+section section .timeline-block-right{
   float: none;
 }
 @media only screen and (min-width: 768px){
-  .timeline-block-right {
+  section section .timeline-block-right{
       float: right;
   }
 }
 /* all timeline items on left side */
-.timeline-block-left {
+section section .timeline-block-left{
       direction: ltr;
       text-align: left;
       float: none;
 }
 @media only screen and (min-width: 768px){
-  .timeline-block-left {
+  section section .timeline-block-left{
     direction: rtl;
     text-align: right;
     float: left;
   }
 }
 /* dot on timeline */
-.marker {
+.marker{
   -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
   border-radius: 50%;
@@ -168,50 +168,56 @@
   height: 16px;
   z-index: 19;
 }
-.timeline-block-right .marker {
+.timeline-block-right .marker{
   background: #404A54;
 }
-.timeline-block-left .marker {
+.timeline-block-left .marker{
   background: #8C2518;
 }
 /* container for timeline item date and text */
-.timeline-content {
+.timeline-content{
   background: #e6e6e6;
-  margin-left: .75rem;
+  margin: 0 .75rem;
   padding: .5rem 1rem 1rem;
-  width: 95%;
-  /* display: inline-block; */
+  width: calc(100% - 15.9667px - 1.5rem);
 }
-.timeline-block-right .timeline-content {
+@media only screen and (min-width: 768px){
+  .timeline-content{
+    max-width: max-content;
+  }
+}
+.timeline-block-right .timeline-content{
   -webkit-border-radius: .5rem 0 .5rem 0;
 	-moz-border-radius: .5rem 0 .5rem 0;
   border-radius: .5rem 0 .5rem 0;
 }
-.timeline-block-left .timeline-content {
+.timeline-block-left .timeline-content{
   -webkit-border-radius: 0 .5rem 0 .5rem;
 	-moz-border-radius: 0 .5rem 0 .5rem;
   border-radius: 0 .5rem 0 .5rem;
 }
 @media only screen and (min-width: 768px){
-  .timeline-block-left .timeline-content {
+  .timeline-block-left .timeline-content{
     margin-right: .75rem;
   }
 }
 /* date on timeline */
-.timeline-content h3 {
-  font-size: 25px;
+section section .timeline-content h4{
+  font-size: 1.3rem;
   font-weight: 500;
   text-align: inherit;
+  text-transform: none;
   direction: ltr;
+  margin: 0;
 }
-.timeline-block-right h3 {
+section section .timeline-block-right h4{
   color: #404A54;
 }
-.timeline-block-left h3 {
+section section .timeline-block-left h4{
   color: #8C2518;
 }
 /* text on timeline */
-.timeline-content p {
+.timeline-content p{
   font-size: .9rem;
   word-spacing: 1px;
   text-align: inherit;
@@ -227,406 +233,406 @@
 
             <!-- Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ -->
             <!-- Also see https://onaircode.com/html-css-vertical-timeline-examples/ -->
-            <div class="timeline-container">
+            <section class="timeline-container">
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1402</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1402">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1402">1402</h4>
                   <p>The Korean world map, the <em>Kangnido</em>, is completed</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1594</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1594">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1594">1594</h4>
                   <p>First appearance of Korea in a Western world map</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1600</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1600">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1600">1600</h4>
                   <p>East India Company (EIC) incorporated</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1664</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1664">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1664">1664</h4>
                   <p>EIC starts to import tea from China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1773</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1773">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1773">1773</h4>
                     <p>EIC begins its involvement in the opium trade</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1773</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1773-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1773-2">1773</h4>
                     <p>Boston Tea Party</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1783</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1783">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1783">1783</h4>
                     <p>American Independence</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1792–94</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1792">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1792">1792–94</h4>
                     <p>George Macartney’s mission to China</p>
                     <p>Failed attempt by the British to extend trade in and diplomatic relations with China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>4 September 1839–29 August 1842</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1839">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1839">4 September 1839–29 August 1842</h4>
                     <p>First Opium War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>29 August 1842</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1842">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1842">29 August 1842</h4>
                   <p>Britain and China sign the Treaty of Nanking</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>26 June 1843</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1843">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1843">26 June 1843</h4>
                     <p>China cedes Hong Kong Island to Britain</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>17 November 1843</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1843-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1843-2">17 November 1843</h4>
                   <p>Opening of Shanghai and other treaty ports in China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1850–64</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1850">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1850">1850–64</h4>
                     <p>Taiping Rebellion in China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1853</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1853">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1853">1853</h4>
                   <p>Commodore Perry arrives in Japan</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1854</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1854">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1854">1854</h4>
                   <p>Japan and the US sign the Treaty of Kanagawa</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1856–60</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1856">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1856">1856–60</h4>
                   <p>Second Opium War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>29 July 1858</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1858">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1858">29 July 1858</h4>
                     <p>Japan and the US sign the Harris Treaty</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>26 August 1858</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1858-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1858-2">26 August 1858</h4>
                   <p>Japan and Britain sign the Elgin Treaty</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1859</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1859">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1859">1859</h4>
                     <p>Opening of Yokohama and other treaty ports in Japan</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1868</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1868">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1868">1868</h4>
                   <p>Meiji Restoration in Japan</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>26 February 1876</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1876">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1876">26 February 1876</h4>
                     <p>Korea and Japan sign the Treaty of Kanghwa</p>
                     <p>Opening of Busan, Incheon, and Wonsan in Korea</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>6 May 1882–1943</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1882">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1882">6 May 1882–1943</h4>
                   <p>US Chinese Exclusion Act</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1894</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1894">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1894">1894</h4>
                     <p>Britain and Japan revise unequal treaties</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>25 July 1894–17 April 1895</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1894-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1894-2">25 July 1894–17 April 1895</h4>
                   <p>First Sino-Japanese War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>17 April 1895</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1895">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1895">17 April 1895</h4>
                     <p>China cedes Taiwan to Japan</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>8 October 1895</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1895-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1895-2">8 October 1895</h4>
                   <p>Assassination of Korean Queen Min</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1898</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1898">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1898">1898</h4>
                     <p>100 Days' Reform in China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1899</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1899">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1899">1899</h4>
                   <p>End of the treaty port system in Japan</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1900</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1900">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1900">1900</h4>
                     <p>Boxer Uprising in China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>8 February 1904–5 September 1905</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1904">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1904">8 February 1904–5 September 1905</h4>
                   <p>Russo-Japanese War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>17 November 1905</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1905">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1905">17 November 1905</h4>
                     <p>Korea becomes a protectorate of Japan</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1910</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1910">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1910">1910</h4>
                   <p>Japanese annexation of Korea</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>10 October 1911–12 February 1912</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1911">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1911">10 October 1911–12 February 1912</h4>
                     <p>Chinese Revolution</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1 January 1912</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1912">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1912">1 January 1912</h4>
                   <p>Establishment of the Republic of China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1914–18</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1914">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1914">1914–18</h4>
                     <p>First World War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1916</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1916">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1916">1916</h4>
                   <p>Warlord Era begins in China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1 March 1919</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1919">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1919">1 March 1919</h4>
                     <p>March First Movement in Korea</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>4 May 1919</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1919-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1919-2">4 May 1919</h4>
                   <p>May Fourth Movement in China</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1927</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1927">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1927">1927</h4>
                     <p>Chinese Civil War begins</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1929–33</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1929">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1929">1929–33</h4>
                   <p>Great Depression</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>18 September 1931</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1931">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1931">18 September 1931</h4>
                     <p>Manchurian Incident</p>
                     <p>Japanese occupation of Manchuria</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1932</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1932">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1932">1932</h4>
                   <p>Formation of Manchukuo</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>7 July 1937</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1937">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1937">7 July 1937</h4>
                     <p>Marco Polo Bridge Incident</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>7 July 1937–2 September 1945</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1937-2">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1937-2">7 July 1937–2 September 1945</h4>
                   <p>Second Sino-Japanese War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1939–45</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1939">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1939">1939–45</h4>
                     <p>Second World War</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>1941</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1941">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1941">1941</h4>
                   <p>Japan attacks Pearl Harbor and invades Southeast Asia</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>15 February 1942</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1942">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1942">15 February 1942</h4>
                     <p>British forces surrender to Japan in Singapore</p>
                     <p>Beginning of the Japanese Occupation in Southeast Asia</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>2 September 1945</h3>
+              <section class="timeline-block timeline-block-left" aria-labelledby="1945">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                  <h4 id="1945">2 September 1945</h4>
                   <p>Surrender of Japan and the end of the Japanese Empire</p>
-                </div>
-              </div>
+                </span>
+              </section>
 
-              <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>1949</h3>
+              <section class="timeline-block timeline-block-right" aria-labelledby="1949">
+                <span class="marker"></span>
+                <span class="timeline-content">
+                    <h4 id="1949">1949</h4>
                     <p>Chinese Communist Party establishes the People's Republic of China</p>
-                </div>
-              </div>
-            </div> 
+                </span>
+              </section>
+            </section> 
 
-            <p>Users interested in seeing an animated, horizontally-oriented version of our timeline may wish to consult the <a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1EQbjfG1oay5hhNDpo34g43IzneoeEoPQKClOn_yGkxU&font=Default&lang=en&initial_zoom=2&height=650">version</a> we created through Knightlab's <em>TimelineJS</em>. However, users should also note that the Knightlab timeline is on an external site and is not coded for visual accessibility.</p>
+            <p><em>Note:</em> Users interested in seeing an animated, horizontally-oriented version of our timeline may wish to consult the <a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1EQbjfG1oay5hhNDpo34g43IzneoeEoPQKClOn_yGkxU&font=Default&lang=en&initial_zoom=2&height=650">version</a> we created through Knightlab's <em>TimelineJS</em>. However, users should also note that the Knightlab timeline is on an external site and is not coded for visual accessibility.</p>
           </section>
 
 					<section aria-labelledby="caption">
