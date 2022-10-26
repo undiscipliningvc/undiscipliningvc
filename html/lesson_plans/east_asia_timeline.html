@@ -121,9 +121,17 @@
               -webkit-box-pack: justify;
               -webkit-justify-content: space-between;
               -moz-box-pack: justify;
-              justify-content: space-between;
+              justify-content: flex-start;
               align-items: center;
               clear: both;
+            }
+
+            .timeline-block:first-of-type{
+              margin-top: -1rem;
+            }
+
+            .timeline-block:last-of-type{
+              margin-bottom: -1rem;
             }
 
             .timeline-block-right {
@@ -147,19 +155,29 @@
             }
 
             .timeline-block-right .marker{
-              background: #47535f;
+              background: #404A54;
             }
 
             .timeline-block-left .marker{
-              background: #A62C1C;
+              background: #8C2518;
             }
 
             .timeline-content {
-              /* width: 95%; */
-              padding: .5rem 1rem;
+              /* width: 100%; */
+              padding: .5rem 1rem 1rem;
               /* color: #666; */
               background: #e6e6e6;
               margin: 0 1rem;
+            }
+
+            .timeline-block-right .timeline-content{
+              border-radius: .5rem 0 .5rem 0;
+              padding-left: 1.5rem;
+            }
+            
+            .timeline-block-left .timeline-content{
+              border-radius: 0 .5rem 0 .5rem;
+              padding-right: 1.5rem;
             }
 
             .timeline-content h3 {
@@ -170,11 +188,11 @@
             }
 
             .timeline-block-right h3{
-              color: #47535f;
+              color: #404A54;
             }
 
             .timeline-block-left h3{
-              color: #A62C1C;
+              color: #8C2518;
             }
 
             .timeline-content span {
