@@ -107,15 +107,15 @@
                 float: right;
             }
             .timeline-block-left{
-                float: left;
-                direction: rtl;
-                text-align: right;
+              direction: rtl;
+              text-align: right;  
+              float: left;
             }
             .marker{
-                width: 16px !important;
-                height: 16px;
-                border-radius: 50%;
+              border-radius: 50%;
                 border: 2px solid #F5F7FA;
+                width: 16px;
+                height: 16px;
                 z-index: 19;
             }
             .timeline-block-right .marker{
@@ -125,9 +125,9 @@
                 background: #8C2518;
             }
             .timeline-content{
-                padding: 0.5rem 1rem 1rem;
-                background: #e6e6e6;
-                margin: 0 1rem;
+              background: #e6e6e6;
+              padding: 0.5rem 1rem 1rem;
+              width: 95%;
             }
             .timeline-block-right .timeline-content{
                 border-radius: 0.5rem 0 0.5rem 0;
@@ -157,23 +157,29 @@
             }
             .timeline-content p{
                 font-size: 0.9rem;
-                line-height: 1.5em;
                 word-spacing: 1px;
                 text-align: inherit;
+                line-height: 1.5em;
                 margin: 0.5rem 0 0;
             }
             @media screen and (max-width: 768px){
                 .timeline-container:before{
-                    left: 8px;
-                    width: 2px;
+                  width: 2px;  
+                  left: 8px;
                 }
+              }
+              @media screen and (max-width: 768px){
                 .timeline-block{
+                  margin-bottom: 30px;
                     width: 100%;
-                    margin-bottom: 30px;
                 }
+              }
+              @media screen and (max-width: 768px){
                 .timeline-block-right{
                     float: none;
                 }
+              }
+              @media screen and (max-width: 768px){
                 .timeline-block-left{
                     float: none;
                     direction: ltr;
