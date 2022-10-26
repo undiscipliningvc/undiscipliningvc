@@ -67,10 +67,15 @@
 }
 /* main container */
 .timeline-container {
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 3rem 0;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px){
+  .timeline-container {
+    margin: 3rem auto;
+  }
 }
 /* vertical line for timeline */
 .timeline-container:before {
@@ -92,7 +97,7 @@
 }
 /* individual timeline item */
 .timeline-block {
-  margin: 1rem 0;
+  margin: 2rem 0;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -107,6 +112,7 @@
 }
 @media only screen and (min-width: 768px){
   .timeline-block {
+    margin: 1rem 0;
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
     width: calc(50% + 8px);
@@ -114,11 +120,21 @@
 }
 /* reduces margin at top of timeline */
 .timeline-block:first-of-type {
-  margin-top: -1rem;
+  margin-top: -2rem;
+}
+@media only screen and (min-width: 768px){
+  .timeline-block:first-of-type {
+    margin-top: -1rem;
+  }
 }
 /* reduces margin at bottom of timeline */
 .timeline-block:last-of-type {
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
+}
+@media only screen and (min-width: 768px){
+  .timeline-block:last-of-type {
+    margin-bottom: -1rem;
+  }
 }
 /* all timeline items on right side */
 .timeline-block-right {
@@ -144,6 +160,8 @@
 }
 /* dot on timeline */
 .marker {
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
   border-radius: 50%;
   border: 2px solid #F5F7FA;
   width: 16px;
@@ -159,16 +177,27 @@
 /* container for timeline item date and text */
 .timeline-content {
   background: #e6e6e6;
-  padding: 0.5rem 1rem 1rem;
+  padding: .5rem 1rem 1rem;
   width: 95%;
 }
 .timeline-block-right .timeline-content {
-  border-radius: 0.5rem 0 0.5rem 0;
+  -webkit-border-radius: .5rem 0 .5rem 0;
+	-moz-border-radius: .5rem 0 .5rem 0;
+  border-radius: .5rem 0 .5rem 0;
+  margin-left: .75rem;
   padding-left: 1.5rem;
 }
 .timeline-block-left .timeline-content {
-  border-radius: 0 0.5rem 0 0.5rem;
+  -webkit-border-radius: 0 .5rem 0 .5rem;
+	-moz-border-radius: 0 .5rem 0 .5rem;
+  border-radius: 0 .5rem 0 .5rem;
+  margin-left: .75rem;
   padding-right: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+  .timeline-block-left .timeline-content {
+    margin-right: .75rem;
+  }
 }
 /* date on timeline */
 .timeline-content h3 {
@@ -185,11 +214,11 @@
 }
 /* text on timeline */
 .timeline-content p {
-  font-size: 0.9rem;
+  font-size: .9rem;
   word-spacing: 1px;
   text-align: inherit;
   line-height: 1.5em;
-  margin: 0.5rem 0 0;
+  margin: .5rem 0 0;
 }
           </style>
 
