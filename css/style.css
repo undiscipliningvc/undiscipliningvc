@@ -20,8 +20,9 @@ Table of Contents
 1.4.2. Overlay
 1.5. Carousel [moved to separate file]
 1.6. YouTube Player [most css moved to separate file]
-1.7. Scroll to Top Button
-1.8. Formatting
+1.7. Timeline [moved to separate file]
+1.8. Scroll to Top Button
+1.9. Formatting
 */
 
 /*--------------------------------------*/
@@ -1123,7 +1124,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 
 
-/* 1.7. Scroll to Top Button */
+/* 1.8. Scroll to Top Button */
 
 /* Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
@@ -1183,7 +1184,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 
 
-/* 1.8. Formatting */
+/* 1.9. Formatting */
 
 .bold{
 	font-weight: bold;
