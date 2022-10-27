@@ -394,7 +394,6 @@ british-japanese used on east asia japanese aesthetics only */
 	}
 }
 .content .cluster-details div ol{
-	margin-left: .25em;
 	padding: 0;
 	display: inline;
 	counter-reset: items;
