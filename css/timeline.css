@@ -1,0 +1,176 @@
+/* 1.7. Timeline */
+
+/* Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ */
+/* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
+
+/* hyperlinks for centuries */
+.timeline-dates{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+}
+/* box sizing */
+.timeline-container *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+/* main container */
+.timeline-container{
+  margin: 2rem auto;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 624px){
+  .timeline-container{
+    margin: 3rem auto;
+  }
+}
+/* vertical line for timeline */
+.timeline-container:before{
+  content: '';
+  background: #CCD1D9;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 8px;  
+  position: absolute;
+  z-index: 1;
+}
+@media only screen and (min-width: 624px){
+  .timeline-container:before{
+    width: 2px;
+    left: 50%;
+  }
+}
+/* individual timeline item */
+.timeline-block{
+  margin: 2rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: justify;
+  justify-content: flex-start;
+  align-items: center;
+  clear: both;
+}
+@media only screen and (min-width: 624px){
+  .timeline-block{
+    margin: 1rem 0;
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+  }
+}
+/* reduces margin at top of timeline */
+section section .timeline-block:first-of-type{
+  margin-top: -2rem;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block:first-of-type{
+    margin-top: -1rem;
+  }
+}
+/* reduces margin at bottom of timeline */
+section section .timeline-block:last-of-type{
+  margin-bottom: -2rem;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block:last-of-type{
+    margin-bottom: -1rem;
+  }
+}
+/* all timeline items on right side */
+section section .timeline-block-right{
+  float: none;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block-right{
+      float: right;
+  }
+}
+/* all timeline items on left side */
+section section .timeline-block-left{
+      direction: ltr;
+      text-align: left;
+      float: none;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block-left{
+    direction: rtl;
+    text-align: right;
+    float: left;
+  }
+}
+/* dot on timeline */
+.marker{
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  width: 16px;
+  height: 16px;
+  z-index: 19;
+}
+.timeline-block-right .marker{
+  background: #404A54;
+}
+.timeline-block-left .marker{
+  background: #8C2518;
+}
+/* container for timeline item date and text */
+.timeline-content{
+  background: #e6e6e6;
+  margin: 0 .75rem;
+  padding: .5rem 1rem 1rem;
+  width: calc(100% - 15.9667px - 1.5rem);
+}
+@media only screen and (min-width: 624px){
+  .timeline-content{
+    max-width: max-content;
+  }
+}
+.timeline-content{
+  -webkit-border-radius: .5rem 0 .5rem 0;
+	-moz-border-radius: .5rem 0 .5rem 0;
+  border-radius: .5rem 0 .5rem 0;
+}
+@media only screen and (min-width: 624px){
+  .timeline-block-left .timeline-content{
+    -webkit-border-radius: 0 .5rem 0 .5rem;
+    -moz-border-radius: 0 .5rem 0 .5rem;
+    border-radius: 0 .5rem 0 .5rem;
+    margin-right: .75rem;
+  }
+}
+/* date on timeline */
+section section .timeline-content h4{
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: inherit;
+  text-transform: none;
+  direction: ltr;
+  margin: 0;
+}
+section section .timeline-block-right h4{
+  color: #404A54;
+}
+section section .timeline-block-left h4{
+  color: #8C2518;
+}
+/* text on timeline */
+.timeline-content p{
+  font-size: .95rem;
+  word-spacing: 1px;
+  text-align: inherit;
+  line-height: 1.5em;
+  margin: .5rem 0 0;
+}
