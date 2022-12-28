@@ -23,6 +23,7 @@ Table of Contents
 1.7. Timeline [moved to separate file]
 1.8. Scroll to Top Button
 1.9. Formatting
+1.10. External Links
 */
 
 /*--------------------------------------*/
@@ -1184,7 +1185,30 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 
 
-/* 1.9. Formatting */
+/* 1.9. External Links */
+a[aria-label="External Link"],
+a[aria-label="External Client"]{
+	margin-right: .15rem;
+}
+a[aria-label="External Link"]:after{
+	content: "\f08e";
+}
+a[aria-label="External Client"]:after{
+	content: "\f003";
+}
+a[aria-label="External Link"]:after,
+a[aria-label="External Client"]:after{
+	font: normal normal normal 14px/1 ForkAwesome;
+	-moz-osx-font-smoothing: grayscale;
+	padding-left: .15rem;
+}
+footer a[aria-label="External Link"]:after,
+footer a[aria-label="External Client"]:after{
+	padding-left: .2rem;
+}
+
+
+/* 1.10. Formatting */
 
 .bold{
 	font-weight: bold;
