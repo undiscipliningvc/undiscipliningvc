@@ -231,10 +231,6 @@
 			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
 		</script>
 		<script>
-			// Removes service worker
-			if("serviceWorker"in navigator){navigator.serviceWorker.getRegistrations().then(function(registrations){for(let registration of registrations){registration.unregister()}})};
-		</script>
-		<script>
 			// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 			// Loads JS file only after rest of page has loaded.
 			$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0002";document.body.appendChild(element);var element=document.createElement("script");element.src="/js/youtube.js?=newVers_0001";document.body.appendChild(element)});			
