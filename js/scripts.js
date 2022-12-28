@@ -1,10 +1,10 @@
-// Removes service worker
+// Unregisters all service workers
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.getRegistrations().then(function (registrations) {
-    for (let registration of registrations) {
-      registration.unregister()
-    }
-  })
+	navigator.serviceWorker.getRegistrations().then(function (registrations) {
+				for (let registration of registrations) {
+					registration.unregister()
+				}
+	})
 };
 
 
@@ -108,6 +108,34 @@ jQuery(document).ready(function () {
       return
     }
   })
+});
+
+
+// Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end.
+// Note: Add random string bit currently disabled.
+RandomiseHref();
+
+function RandomiseHref(){
+		var links = document.querySelectorAll("a:not([href^='http']):not([href*='#']):not([href^='mailto']):not([onclick]):not([class='trans-return']):not([class='art-return'])");
+		for(var i = 0; i < links.length; i++){
+			// var randomString = Math.floor(Math.random()*1000000);
+			// links[i].href = links[i].href + "?=" + randomString;
+			links[i].href = links[i].href;
+		}
+};
+
+
+// Prevents the title attribute from appearing in a tooltip on mouseover on images
+// Adapted from https://spigotdesign.com/hide-title-attribute-hover-dont-remove/
+$("img").hover(function(){
+	var title = $(this).attr("title");
+	$(this).attr("tmp_title", title);
+	$(this).attr("title","");	
+});
+
+$("img").click(function(){
+	var title = $(this).attr("tmp_title");
+	$(this).attr("title", title);
 });
 
 
