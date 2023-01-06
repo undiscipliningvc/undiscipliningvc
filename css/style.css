@@ -149,24 +149,24 @@ body{
 	width: 100%;
 }
 header{
-	margin: 41px auto 0;
+	margin: 43px auto 0;
 	padding: 0 .75em;
 	position: relative;
 }
 @media only screen and (min-width: 480px){
 	header{
-		margin-top: 47px;
-		padding: .5em 1em 0;
+		margin-top: 49px;
+		padding: 0 1em;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		margin-top: 51px;
+		margin-top: 57px;
 	}
 }
 @media only screen and (min-width: 992px){
 	header{
-		margin-top: 63px;
+		margin-top: 65px;
 	}
 }
 main{
@@ -516,28 +516,28 @@ a.cite-link{
 	-ms-word-break: break-all;
 }
 [id]:target{
-	margin-top: -41px;
-	border-top: 41px solid transparent;
+	margin-top: -43px;
+	border-top: 43px solid transparent;
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding;
 	background-clip: padding-box;
 }
 @media only screen and (min-width: 480px){
 	[id]:target{
-		margin-top: -47px;
-		border-top: 47px solid transparent;
+		margin-top: -49px;
+		border-top: 49px solid transparent;
 	}
 }
 @media only screen and (min-width: 768px){
 	[id]:target{
-		margin-top: -51px;
-		border-top: 51px solid transparent;
+		margin-top: -57px;
+		border-top: 57px solid transparent;
 	}
 }
 @media only screen and (min-width: 992px){
 	[id]:target{
-		margin-top: -58px;
-		border-top: 58px solid transparent;
+		margin-top: -65px;
+		border-top: 65px solid transparent;
 	}
 }
 h1,
@@ -734,29 +734,29 @@ nav#navFB{
   background-color: #fff;
 	margin: 0 auto;
 	width: 100%;
-	height: 41px;
+	height: 43px;
 	position: fixed;
 	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
+	/* left: 50%;
+	transform: translate(-50%, 0); */
 	z-index: 20;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1,
 	nav#navFB{
-		height: 47px;
+		height: 49px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1,
 	nav#navFB{
-		height:51px;
+		height:57px;
 	}
 }
 @media only screen and (min-width: 992px){
 	nav#nav1,
 	nav#navFB{
-		height: 63px;
+		height: 65px;
 	}
 }
 /* Also see cluster.css and content.css  */
@@ -826,10 +826,11 @@ nav#navFB li:nth-child(2){
 }
 nav#nav1 h1,
 nav#navFB h1{
-	font-size: 1.15em;
+	font-size: 1.2rem;
 	white-space: nowrap;
 	border: 2px solid transparent;
-	padding: 7px 5px 0;
+	/* padding: 7px 5px 0; */
+	padding: 0 5px;
 }
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1,
@@ -930,19 +931,19 @@ nav#navFB li button:focus-within{
 }
 nav#nav1 li button i,
 nav#navFB li button i{
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	color: #242424;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i,
 	nav#navFB li button i{
-		font-size: 1.7em;
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 li button i,
 	nav#navFB li button i{
-		font-size: 1.9em;
+		font-size: 1.8rem;
 	}
 }
 nav#nav1 li button:hover i,
@@ -1005,17 +1006,22 @@ nav#nav2 #overlay-menu li a:focus{
 nav#nav2 #overlay-menu ul{
 	text-align: right;
 	list-style: none;
-	margin: 41px 0 0 0;
+	margin: 43px 0 0 0;
 	padding: 0;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu ul{
-		margin-top: 47px;
+		margin-top: 49px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu ul{
-		margin-top: 51px;
+		margin-top: 57px;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu ul{
+		margin-top: 65px;
 	}
 }
 nav#nav2 #overlay-menu ul{
@@ -1036,20 +1042,25 @@ nav#nav2 #overlay-menu li button.close{
 	border-radius: 5px;
 	padding: 7px 8px 5px;
 	position: absolute;
-	top: 7px;
+	top: 5px;
 	right: 10px;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
 		padding: 6px 8px;
-		top: 8px;
 		right: 18px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
-		top: 9px;
+		top: 8px;
 		right: 40px;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu li button.close{
+		top: 11px;
+		right: 16px;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover,
@@ -1059,16 +1070,16 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 }
 nav#nav2 #overlay-menu li button.close i{
 	color: #242424;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.7em;
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.9em;
+		font-size: 1.8rem;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
@@ -1155,7 +1166,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 @media only screen and (min-width: 768px){
 	#topButton{
-		top: calc(57px + .25rem);
+		top: calc(61px + .25rem);
 		right: 2.75rem;
 	}
 }
