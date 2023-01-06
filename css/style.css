@@ -829,8 +829,7 @@ nav#navFB h1{
 	font-size: 1.2rem;
 	white-space: nowrap;
 	border: 2px solid transparent;
-	/* padding: 7px 5px 0; */
-	padding: 0 5px;
+	padding: 2px 5px 0;
 }
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1,
