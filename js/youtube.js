@@ -1,8 +1,7 @@
-
-// YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos- -cms-26743 [remove space between two dashes]
+// YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 [to access link, remove space between two dashes]
 // Add a custom start time to HTML:
 // 	<div class="youtube" data-embed="AqcjdkPMPJA" data-starttime="25">
-// and change the following line of javascript:
+// and change [uncomment?] the following line of javascript:
 // 	iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&playsinline=1&start="+ this.dataset.starttime +"");
 var player; //current video player object
 (function () {
