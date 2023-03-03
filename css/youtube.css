@@ -2,6 +2,9 @@
 
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
+/* Note: The YouTube CSS is only used on pages that link to YouTube videos, such as all the pages in the /html/zoomcasts directory */
+
+/* main container for embedded YouTube video */
 .wrapper{
 	margin: 1em auto 1.5em;
 	padding: 0;
@@ -12,6 +15,7 @@
 		margin: 1em auto 1.5em;
 	}
 }
+/* secondary container for embedded YouTube video */
 .youtube{
 	background: #e6e6e6;
 	cursor: pointer;
@@ -24,6 +28,7 @@
 .youtube:focus{
 	outline: 3px #395375 solid;
 }
+/* placeholder image for YouTube video */
 .youtube img{
 	width: 100%;
 	height: 100%;
@@ -35,6 +40,7 @@
 .youtube:focus img{
 	opacity: 0.7;
 }
+/* play button for YouTube video */
 .youtube .play-button{
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -53,6 +59,11 @@
 		height: 60px;
 	}
 }
+.youtube:hover .play-button,
+.youtube:focus .play-button{
+	background-color: #395375 !important;
+}
+/* triangle in YouTube play button */
 .youtube .play-button:before{
 	content: "";
 	border-style: solid;
@@ -64,14 +75,12 @@
 		border-width: 15px 0 15px 26px;
 	}
 }
-.youtube:hover .play-button,
-.youtube:focus .play-button{
-	background-color: #395375;
-}
+/* changes cursor to pointer when user scrolls over YouTube image or play button */
 .youtube img,
 .youtube .play-button{
 	cursor: pointer;
 }
+/* positions YouTube image, video frame, play button, and play button triangle */
 .youtube img,
 .youtube iframe,
 .youtube .play-button,
@@ -86,6 +95,7 @@
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+/* YouTube video frame; used only when user clicks to view video */
 .youtube iframe{
 	height: 100%;
 	width: 100%;
@@ -93,4 +103,5 @@
 	left: 0;
 	z-index: 3; /* Hides play button when iframe loads */
 }
-/* See main css for skipcontrols */
+
+/* See /css/style.css for skipcontrols used for accessbile YouTube video navigation */
