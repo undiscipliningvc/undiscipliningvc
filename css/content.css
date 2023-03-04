@@ -1,8 +1,8 @@
 /* 1.2.2. Content Pages */
-/* Content pages constitute the third level of the Undisciplining Victorian Studies site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the site map, and the 404 page. The files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
+/* Content pages constitute the third level of the Undisciplining Victorian Studies site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the sitemap, and the 404 page. Except for the last two named files, he files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
 
-/* section-specific colors, in particular for the header line and menu title background */
-/* for further section-specific color specifications, see /css/cluster.css and .current on /css/style.css */
+/* section-specific colors, in particular for the colored divider line at the top of content pages and menu heading background */
+/* for further section-specific color specs, see /css/cluster.css and the .current class on /css/style.css */
 .zoomcasts.content header,
 .zoomcasts.content main section.menu-container h3{
 	background: #cb6948;
@@ -83,7 +83,7 @@
 		max-width: 900px;
 	}
 }
-/* the subsection containers in the main container for content pages */
+/* the subsection containers in the main container */
 /* note: the summary element is used for the "Overview" section; the section element is used for all other subsections */
 .content main summary,
 .content main section{
@@ -105,10 +105,10 @@
 		max-width: 650px;
 	}
 }
-/* incremental subsection numbering resets for content pages with sequential subsections */
-/* note: .pathways is used only for the files in /html/lesson_pages with a "seacole" prefix. 
-.materials is used only for the files in /html/lesson_pages with an "africa" prefix
-.british-japanese is used only for the following files: /html/lesson_plans/east_asia_chinese_migration.html, /html/lesson_plans/east_asia_japanese_aesthetics.html, /html/lesson_plans/east_asia_visualizing_korea.html */
+/* incremental numbering resets for sequential subsections */
+/* note: the .pathways class is used only for lesson plans with a "seacole" prefix. 
+the .materials class is used only for the files with an "africa" prefix
+the .british-japanese class is used only for the following files: /html/lesson_plans/east_asia_chinese_migration.html, /html/lesson_plans/east_asia_japanese_aesthetics.html, /html/lesson_plans/east_asia_visualizing_korea.html */
 .content main section,
 .content main section.pathways,
 .content main section.materials{
@@ -125,7 +125,7 @@
 .content main section section{
 	counter-reset: none;
 }
-/* spacing for initial section on page plus sections separated by lines (horizontal rules) or after paragraphs*/
+/* spacing for initial content page section plus sections separated by lines (horizontal rules) or after paragraphs*/
 .content main section:first-of-type,
 .content main hr + section{
 	margin-top: 1.5em;
@@ -139,7 +139,7 @@
 .content.error404 main section:first-of-type p{
 	text-align: center;
 }
-/* ratio box used for header images on content pages; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* ratio box used for header images; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .content main .aspect-ratio-box{
 	margin: .75em auto 1.75em;
 	padding: 0;
@@ -160,7 +160,7 @@
   padding-bottom: 56.25%;
 	display: block;
 }
-/* adds unique ratio for site map image */
+/* adds unique ratio for sitemap image */
 .content.sitemap main .aspect-ratio-box::after {
   padding-bottom: 23.24%;
 }
@@ -168,7 +168,7 @@
 .content.error404 main .aspect-ratio-box::after {
   padding-bottom: 32.5%;
 }
-/* header image for ratio box */
+/* header images for ratio box */
 .content main .aspect-ratio-box img {
 	background: #e6e6e6;
 	width: 100%;
@@ -181,7 +181,7 @@
 	overflow: hidden;
 	object-position: 50% 50%;
 }
-/* information icon located in lower right-hand corner of header image */
+/* information icon located in lower right-hand corner of header images */
 .content main .aspect-ratio-box .caption{
 	background-color: rgb(66,66,66);
 	border: 2px solid #fff;
@@ -214,8 +214,8 @@
 .content main .aspect-ratio-box a:focus{
 	color: rgb(66,66,66);
 }
-/* page title of content pages; everything but zoomcasts */
-/* note: default positioning for page title is over the center of header image */
+/* page title of all content pages but zoomcasts */
+/* note: default positioning for page titles is over the center of header image */
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
@@ -290,7 +290,7 @@
 	-moz-transform: translate(-50%, -70%);
 	transform: translate(-50%, -70%);
 }
-/* page title of content pages for zoomcasts */
+/* page title of zoomcasts content pages */
 .content.zoomcasts main h2{
 	font-size: 2.2em;
 	font-variant: small-caps;
@@ -304,7 +304,7 @@
 		margin: .5em auto;
 	}
 }
-/* subsection title on content pages */
+/* subsection title */
 .content main h3{
 	font-size: 1.15em;
 	margin: 0 auto;
@@ -313,20 +313,20 @@
 	color: #fff;
 	margin-top: 0;
 }
-/* user guide section title; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
+/* user guide section headings; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
 	color: #242424;
 	text-align: left;
 }
-/* sub-subsections title on content pages */
+/* sub-subsections headings */
 .content main h4{
 	text-align: left;
 	color: inherit;
 }
-/* removes styling on sub-sections title (as needed) on content pages */
-/* .pathways is sub-subsections used on the lesson plans with a "seacole" prefix
-.materials is sub-subsections used on the lesson plans with a "africa" prefix and some with an "east_asia" prefix
-.british-japanese is sub-subsections used on the lesson plans with an "east_asia" prefix that do not use .materials */
+/* removes styling on sub-section headings (as needed) */
+/* .pathways class is for sub-subsections used on lesson plans with a "seacole" prefix
+.materials class is for sub-subsections used on lesson plans with a "africa" prefix and some with an "east_asia" prefix
+.british-japanese class is for sub-subsections used on lesson plans with an "east_asia" prefix that do not use the .materials class */
 .content main section.pathways h4::before,
 .content main section.materials h4::before,
 .content main section.british-japanese h4::before,
@@ -334,8 +334,8 @@
   font-variant: normal;
 	font-weight: normal;
 }
-/* incremental numbering for sub-subsection titles */
-/* see above for sub-section resets */
+/* incremental numbering for sub-subsection headings */
+/* see above for subsection resets */
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
 	counter-increment: pathways;
@@ -349,12 +349,12 @@
 	counter-increment: british-japanese-2;
   content: counter(british-japanese-2) ") ";
 }
-/* bold for titles (as needed) of sub-subsections that use the .pathways or .materials classes */
+/* bold for sub-subsection headings (as needed) that use the .pathways or .materials classes */
 .content main section.pathways strong,
 .content main section.materials strong{
   font-weight: 600;
 }
-/* site map hyperlink on 404 page */
+/* sitemap hyperlink on 404 page */
 .content a.link404{
 	color: #fff;
 	font-weight: 600;
@@ -375,7 +375,7 @@
 		font-size: 1.2em;
 	}
 }
-/* container for "Production Details" section on content pages */
+/* container for "Production Details" sections */
 .content main .specs{
 	text-align: center;
 }
@@ -385,7 +385,7 @@
 	text-align: left;
 	display: inline-block;
 }
-/* hyperlink for email in "Production Details" section */
+/* email hyperlink in "Production Details" section */
 .content main .specs .specs-container a.mail,
 .content main .specs .specs-container a.mail:visited{
 	text-decoration: none;
@@ -397,7 +397,7 @@
 	text-decoration: underline;
 }
 /* lists, items, and incremental numbering for "Lesson Plan Cluster Production Details" sections (variant of "Production Details" section) */
-/* found only on introductory pages for lesson plan clusters, such as /html/lesson_plans/africa_diaspora_empire_introduction.html, /html/lesson_plans/east_asia_transimperial_introduction.html, and /html/lesson_plans/seacole_caribbean_introduction.html */
+/* found only on lesson plan clusters introductions, such as /html/lesson_plans/africa_diaspora_empire_introduction.html */
 .content .cluster-details div ol{
 	padding: 0;
 	display: inline;
@@ -420,14 +420,14 @@
 	display: inline-block;
 	box-sizing: border-box;
 }
-/* ordered list of subsections in menu for content pages */
+/* ordered list of subsections in content page menu */
 .content ol.menu{
 	font-size: .9em;
 	margin: 1em auto 0;
 	padding-left: 1.2em;
 	display: inline-block;
 }
-/* ordered list of sub-subsections in menu for content pages */
+/* ordered list of sub-subsections in content page menus */
 .content ol.menu li ol{
 	list-style: lower-alpha;
 	padding-left: 1em;
@@ -437,7 +437,7 @@
 		padding-left: revert;
 	}
 }
-/* various kinds of lists on content pages */
+/* various kinds of lists */
 .content section ul#topic-list{
 	padding: 0 0 0 1.2em;
 }
@@ -449,12 +449,12 @@
 .content.about.values section ul{
 	list-style: inherit;
 }
-/* list items and hyperlinked items on content pages */
+/* list items and list item hyperlinks */
 .content section ul li,
 .content section ul li a{
 	margin-bottom: .5em;
 }
-/* paragraphs on content pages */
+/* paragraphs */
 .content section p{
 	clear: both;
 }
@@ -485,7 +485,7 @@
 		width: 25%;
 	}
 }
-/* spacing for lists and list items that follow sub-subsection titles */
+/* spacing for lists and list items that follow sub-subsection headings */
 .content h5 + ol,
 .content h5 + ul{
 	padding: 0 0 0 1.4rem;
@@ -493,7 +493,7 @@
 .content h5 + ol li{
 	margin: 0 0 1rem 0;
 }
-/* annotations for list items found on lesson plan pages in the "africa" and "east_asia" clusters */
+/* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
 .content .annotation{
 	font-size: .9em;
 	margin: .25em 0 0 1.5em;
@@ -503,7 +503,7 @@
 .content ol.annotation{
 	margin: 0 0 0 1.5em;
 }
-/* sub-lists and sub-sub-lists on site map page */
+/* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
 	list-style: lower-alpha;
 	padding-left: 1.4em;
