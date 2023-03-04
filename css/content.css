@@ -323,19 +323,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	text-align: left;
 	color: inherit;
 }
-/* removes styling on sub-section headings (as needed) */
+/* incremental numbering for sub-subsection headings */
+/* see above for subsection resets */
 /* .pathways class is for sub-subsections used on lesson plans with a "seacole" prefix
 .materials class is for sub-subsections used on lesson plans with a "africa" prefix and some with an "east_asia" prefix
 .british-japanese class is for sub-subsections used on lesson plans with an "east_asia" prefix that do not use the .materials class */
-.content main section.pathways h4::before,
-.content main section.materials h4::before,
-.content main section.british-japanese h4::before,
-.content main section.british-japanese h5.alternate::before{
-  font-variant: normal;
-	font-weight: normal;
-}
-/* incremental numbering for sub-subsection headings */
-/* see above for subsection resets */
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
 	counter-increment: pathways;
