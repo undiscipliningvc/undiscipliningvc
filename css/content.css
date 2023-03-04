@@ -1,5 +1,5 @@
 /* 1.2.2. Content Pages */
-/* Content pages constitute the third level of the Undisciplining Victorian Studies site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, and various parts of the "About" section. The files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
+/* Content pages constitute the third level of the Undisciplining Victorian Studies site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the site map, and the 404 page. The files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
 
 /* section-specific colors, in particular for the header line and menu title background */
 /* for further section-specific color specifications, see /css/cluster.css and .current on /css/style.css */
@@ -125,19 +125,18 @@
 .content main section section{
 	counter-reset: none;
 }
-/* ==> */
+/* spacing for initial section on page plus sections separated by lines (horizontal rules) */
 .content main section:first-of-type,
 .content main hr + section{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 }
+/* alignment for 404 page */
 .content.error404 main section:first-of-type,
 .content.error404 main section:first-of-type p{
 	text-align: center;
 }
-/* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
+/* ratio box used for header images on content pages; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .content main .aspect-ratio-box{
 	margin: .75em auto 1.75em;
 	padding: 0;
@@ -150,17 +149,23 @@
 		max-width: 900px;
 	}
 }
+/* adds specific ratio to ratio box */
+/* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
+/* for founding devs and associate/assistant eds images, use 285/356 as ratio (= 80.01) */
 .content main .aspect-ratio-box::after {
   content: "";
   padding-bottom: 56.25%;
 	display: block;
 }
+/* adds unique ratio for site map image */
 .content.sitemap main .aspect-ratio-box::after {
   padding-bottom: 23.24%;
 }
+/* adds unique ratio for 404 page image */
 .content.error404 main .aspect-ratio-box::after {
   padding-bottom: 32.5%;
 }
+/* header image for ratio box */
 .content main .aspect-ratio-box img {
 	background: #e6e6e6;
 	width: 100%;
@@ -173,6 +178,7 @@
 	overflow: hidden;
 	object-position: 50% 50%;
 }
+/* information icon located in lower right-hand corner of header image */
 .content main .aspect-ratio-box .caption{
 	background-color: rgb(66,66,66);
 	border: 2px solid #fff;
@@ -197,6 +203,7 @@
 	background-color: #fff;
 	border: 2px solid rgb(66,66,66);
 }
+/* hyperlink for information icon located in lower right-hand corner of header image */
 .content main .aspect-ratio-box a{
 	color: #fff;
 }
@@ -204,6 +211,8 @@
 .content main .aspect-ratio-box a:focus{
 	color: rgb(66,66,66);
 }
+/* page title of content pages; everything but zoomcasts */
+/* note: default positioning for page title is over the center of header image */
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
@@ -217,12 +226,6 @@
 .content.about main h2{
 	font-weight: 400;
 	font-variant: small-caps;
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
 	line-height: 1.2em;
 	color: #fff;
 	background-color: rgb(66,66,66);
@@ -241,33 +244,6 @@
 	transform: translate(-50%, -50%);
 	opacity: .93;
 	z-index: 15;
-}
-.content.lesson-plans main h2.top,
-.content.syllabi main h2.top,
-.content.about main h2.top{
-	top: 30%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -30%);
-	-moz-transform: translate(-50%, -30%);
-	transform: translate(-50%, -30%);
-}
-.content.lesson-plans main h2.bottom,
-.content.syllabi main h2.bottom,
-.content.about main h2.bottom{
-	top: 70%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -70%);
-	-moz-transform: translate(-50%, -70%);
-	transform: translate(-50%, -70%);
-}
-.content.zoomcasts main h2{
-	font-size: 2.2em;
-	font-variant: small-caps;
-	line-height: 1.4em;
-	color: #242424;
-}
-.content.zoomcasts main h2{
-	margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
 	.content.lesson-plans main h2,
@@ -290,25 +266,51 @@
 		font-size: 3em;
 		max-width: 850px;
 	}
+}
+/* custom positioning for page title over top of header image */
+.content.lesson-plans main h2.top,
+.content.syllabi main h2.top,
+.content.about main h2.top{
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -30%);
+	-moz-transform: translate(-50%, -30%);
+	transform: translate(-50%, -30%);
+}
+/* custom positioning for page title over bottom of header image */
+.content.lesson-plans main h2.bottom,
+.content.syllabi main h2.bottom,
+.content.about main h2.bottom{
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -70%);
+	-moz-transform: translate(-50%, -70%);
+	transform: translate(-50%, -70%);
+}
+/* page title of content pages for zoomcasts */
+.content.zoomcasts main h2{
+	font-size: 2.2em;
+	font-variant: small-caps;
+	line-height: 1.4em;
+	color: #242424;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 768px){
 	.content.zoomcasts main h2{
 		font-size: 2.4em;
 		margin: .5em auto;
 	}
 }
+/* subsection titles on content pages */
 .content main h3{
 	font-size: 1.15em;
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
 	margin: 0 auto;
 }
 .content section.menu-container h3{
 	color: #fff;
 	margin-top: 0;
 }
+/* title for user guide sections found on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
 	color: #242424;
 	text-align: left;
