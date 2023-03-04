@@ -1,8 +1,8 @@
 /* 1.2.2. Content Pages */
-/* Content pages constitute the third level of the Undisciplining Victorian Studies site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments and various parts of the "About" section. The files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
+/* Content pages constitute the third level of the Undisciplining Victorian Studies site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, and various parts of the "About" section. The files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
 
-/* Section-specific colors */
-/* Also see cluster.css and .current on style.css */
+/* section-specific colors, in particular for the header line and menu title background */
+/* for further section-specific color specifications, see /css/cluster.css and .current on /css/style.css */
 .zoomcasts.content header,
 .zoomcasts.content main section.menu-container h3{
 	background: #cb6948;
@@ -22,7 +22,7 @@
 .about.content main section.menu-container h3{
 	background: #757575;
 }
-/* ----------------------- */
+/* the colored divider line at the top of content pages */
 .content header{
 	margin: calc(41px + .3em) auto 0;
 	padding: 0;
@@ -49,6 +49,7 @@
 		max-width: 1366px;
 	}
 }
+/* the main container for content pages */
 .content main{
 	padding: 0 .75em 1em;
 	max-width: 100%;
@@ -63,6 +64,7 @@
 		padding: 0 0 1em;
 	}
 }
+/* the main container for specific types of content pages */
 .content.lesson-plans main,
 .content.syllabi main,
 .content.about main{
@@ -81,11 +83,14 @@
 		max-width: 900px;
 	}
 }
+/* the subsection containers in the main container for content pages */
+/* note: the summary element is used for the "Overview" section; the section element is used for all other subsections */
 .content main summary,
 .content main section{
 	text-align: left;
 	max-width: 700px;
 }
+/* container for breakout-quotes and other such content */
 .content main aside{
 	text-align: left;
 	max-width: 700px;
@@ -100,9 +105,10 @@
 		max-width: 650px;
 	}
 }
-/* pathways used on seacole lesson plans
-materials used on african lesson plans
-british-japanese used on east asia japanese aesthetics only */
+/* subsection numbering for content pages with sequential subsections */
+/* note: .pathways is used only for the files in /html/lesson_pages with a "seacole" prefix. 
+.materials is used only for the files in /html/lesson_pages with an "africa" prefix
+.british-japanese is used only for the following files: /html/lesson_plans/east_asia_chinese_migration.html, /html/lesson_plans/east_asia_japanese_aesthetics.html, /html/lesson_plans/east_asia_visualizing_korea.html */
 .content main section,
 .content main section.pathways,
 .content main section.materials{
@@ -119,6 +125,7 @@ british-japanese used on east asia japanese aesthetics only */
 .content main section section{
 	counter-reset: none;
 }
+/* ==> */
 .content main section:first-of-type,
 .content main hr + section{
 	margin-top: 1.5em;
