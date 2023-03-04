@@ -105,7 +105,7 @@
 		max-width: 650px;
 	}
 }
-/* subsection numbering for content pages with sequential subsections */
+/* incremental subsection numbering resets for content pages with sequential subsections */
 /* note: .pathways is used only for the files in /html/lesson_pages with a "seacole" prefix. 
 .materials is used only for the files in /html/lesson_pages with an "africa" prefix
 .british-japanese is used only for the following files: /html/lesson_plans/east_asia_chinese_migration.html, /html/lesson_plans/east_asia_japanese_aesthetics.html, /html/lesson_plans/east_asia_visualizing_korea.html */
@@ -301,7 +301,7 @@
 		margin: .5em auto;
 	}
 }
-/* subsection titles on content pages */
+/* subsection title on content pages */
 .content main h3{
 	font-size: 1.15em;
 	margin: 0 auto;
@@ -310,15 +310,20 @@
 	color: #fff;
 	margin-top: 0;
 }
-/* title for user guide sections found on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
+/* user guide section title; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
 	color: #242424;
 	text-align: left;
 }
+/* sub-subsections title on content pages */
 .content main h4{
 	text-align: left;
 	color: inherit;
 }
+/* removes styling on sub-sections title (as needed) on content pages */
+/* .pathways is sub-subsections used on the lesson plans with a "seacole" prefix
+.materials is sub-subsections used on the lesson plans with a "africa" prefix and some with an "east_asia" prefix
+.british-japanese is sub-subsections used on the lesson plans with an "east_asia" prefix that do not use .materials */
 .content main section.pathways h4::before,
 .content main section.materials h4::before,
 .content main section.british-japanese h4::before,
@@ -326,6 +331,8 @@
   font-variant: normal;
 	font-weight: normal;
 }
+/* incremental numbering for sub-subsection titles */
+/* see above for sub-section resets */
 .content main section.pathways h4::before,
 .content main section.materials h4::before{
 	counter-increment: pathways;
@@ -339,10 +346,12 @@
 	counter-increment: british-japanese-2;
   content: counter(british-japanese-2) ") ";
 }
+/* bold for titles (as needed) of sub-subsections that use the .pathways or .materials classes */
 .content main section.pathways strong,
 .content main section.materials strong{
   font-weight: 600;
 }
+/* site map hyperlink on 404 page */
 .content a.link404{
 	color: #fff;
 	font-weight: 600;
@@ -363,46 +372,29 @@
 		font-size: 1.2em;
 	}
 }
+/* container for "Production Details" section on content pages */
 .content main .specs{
 	text-align: center;
 }
+/* sub-container for actual "Production Details" text */
 .content main .specs .specs-container{
 	margin-top: 1rem;
 	text-align: left;
 	display: inline-block;
 }
+/* hyperlink for email in "Production Details" section */
 .content main .specs .specs-container a.mail,
 .content main .specs .specs-container a.mail:visited{
 	text-decoration: none;
 	padding: 0 5px;
 }
+/* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
 	font-size: .9em;
 	text-decoration: underline;
 }
-.content section.menu-container{
-	text-align: center;
-	border: 1px solid #949494;
-	margin: 0;
-	padding: 1.5em 2em 2em;
-	display: inline-block;
-	box-sizing: border-box;
-}
-.content ol.menu{
-	font-size: .9em;
-	margin: 1em auto 0;
-	padding-left: 1.2em;
-	display: inline-block;
-}
-.content ol.menu li ol{
-	list-style: lower-alpha;
-	padding-left: 1em;
-}
-@media only screen and (min-width: 768px){
-	.content ol.menu li ol{
-		padding-left: revert;
-	}
-}
+/* lists, items, and incremental numbering for "Lesson Plan Cluster Production Details" sections (variant of "Production Details" section) */
+/* found only on introductory pages for lesson plan clusters, such as /html/lesson_plans/africa_diaspora_empire_introduction.html, /html/lesson_plans/east_asia_transimperial_introduction.html, and /html/lesson_plans/seacole_caribbean_introduction.html */
 .content .cluster-details div ol{
 	padding: 0;
 	display: inline;
@@ -416,9 +408,35 @@
 	counter-increment: items;
   content: counter(items) ") ";
 }
-.content section ul li,
-.content section ul li a{
-	margin-bottom: .5em;
+/* main container for content page menu */
+.content section.menu-container{
+	text-align: center;
+	border: 1px solid #949494;
+	margin: 0;
+	padding: 1.5em 2em 2em;
+	display: inline-block;
+	box-sizing: border-box;
+}
+/* ordered list of subsections in menu for content pages */
+.content ol.menu{
+	font-size: .9em;
+	margin: 1em auto 0;
+	padding-left: 1.2em;
+	display: inline-block;
+}
+/* ordered list of sub-subsections in menu for content pages */
+.content ol.menu li ol{
+	list-style: lower-alpha;
+	padding-left: 1em;
+}
+@media only screen and (min-width: 768px){
+	.content ol.menu li ol{
+		padding-left: revert;
+	}
+}
+/* various kinds of lists, items, and hyperlinked items on content pages */
+.content section ul#topic-list{
+	padding: 0 0 0 1.2em;
 }
 .content.about section ul{
 	list-style: none;
@@ -427,11 +445,10 @@
 }
 .content.about.values section ul{
 	list-style: inherit;
-	/* margin: 1.5em;
-	padding: 0; */
 }
-.content section ul#topic-list{
-	padding: 0 0 0 1.2em;
+.content section ul li,
+.content section ul li a{
+	margin-bottom: .5em;
 }
 .content section p{
 	clear: both;
