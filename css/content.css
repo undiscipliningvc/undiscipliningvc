@@ -125,11 +125,14 @@
 .content main section section{
 	counter-reset: none;
 }
-/* spacing for initial section on page plus sections separated by lines (horizontal rules) */
+/* spacing for initial section on page plus sections separated by lines (horizontal rules) or after paragraphs*/
 .content main section:first-of-type,
 .content main hr + section{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+}
+.content main section p + .content main section:first-of-type{
+	margin-top: 2.5em;
 }
 /* alignment for 404 page */
 .content.error404 main section:first-of-type,
@@ -151,7 +154,7 @@
 }
 /* adds specific ratio to ratio box */
 /* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-/* for founding devs and associate/assistant eds images, use 285/356 as ratio (= 80.01) */
+/* for founding devs. and associate/assistant eds. images, use 285/356 as ratio (= 80.01) */
 .content main .aspect-ratio-box::after {
   content: "";
   padding-bottom: 56.25%;
@@ -434,7 +437,7 @@
 		padding-left: revert;
 	}
 }
-/* various kinds of lists, items, and hyperlinked items on content pages */
+/* various kinds of lists on content pages */
 .content section ul#topic-list{
 	padding: 0 0 0 1.2em;
 }
@@ -446,16 +449,17 @@
 .content.about.values section ul{
 	list-style: inherit;
 }
+/* list items and hyperlinked items on content pages */
 .content section ul li,
 .content section ul li a{
 	margin-bottom: .5em;
 }
+/* paragraphs on content pages */
 .content section p{
 	clear: both;
 }
-.content section p + section:first-of-type{
-	margin-top: 2.5em;
-}
+/* founding devs. and associate/assistant eds. images */
+/* note: for these images use 285/356 as cropping ratio (= 80.01) */
 .content.about.founders section p img{
 	margin: .5em .75em 0 0;
 	width: 100%;
@@ -481,6 +485,7 @@
 		width: 25%;
 	}
 }
+/* spacing for lists and list items that follow sub-subsection titles */
 .content h5 + ol,
 .content h5 + ul{
 	padding: 0 0 0 1.4rem;
@@ -488,6 +493,7 @@
 .content h5 + ol li{
 	margin: 0 0 1rem 0;
 }
+/* annotations for list items found on lesson plan pages in the "africa" and "east_asia" clusters */
 .content .annotation{
 	font-size: .9em;
 	margin: .25em 0 0 1.5em;
@@ -497,6 +503,7 @@
 .content ol.annotation{
 	margin: 0 0 0 1.5em;
 }
+/* sub-lists and sub-sub-lists on site map page */
 .content.sitemap ol li ol{
 	list-style: lower-alpha;
 	padding-left: 1.4em;
