@@ -89,7 +89,7 @@
 	display: flex;
 	flex-flow: column;
 }
-/* the subsection container for the cluster page's title slide */
+/* the subsection container for cluster page title slides */
 .cluster main section:first-child{
 	min-height: 150px;
 	position: relative;
@@ -122,7 +122,7 @@
 			max-width: 300px;
 			flex: 1 0 calc(27.5% - 1rem - 2px);
 	}
-	/* the subsection container for the given cluster page's description slide;
+	/* the subsection container for cluster page description slides;
 	the subsection container for the zoomcast cluster page's description slide */
 	.cluster main section:nth-child(2),
 	.cluster.zoomcasts main section:nth-child(2){
@@ -135,12 +135,6 @@
 	font-size: 1.1em;
 	font-weight: 700;
 	font-variant: normal;
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
 	color: #fff;
 	border-bottom: 1px solid #242424;
 	-webkit-border-radius: 4px 4px 0 0;
@@ -167,8 +161,11 @@
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+/* the descriptive text on the zoomcasts cluster page title slide */
+.cluster.zoomcasts main section:nth-child(2) p{
+	margin: 1em;
+}
 /* ratio box used for header images; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .cluster main section div{
 	background: #e6e6e6;
 	margin: 1em;
@@ -181,7 +178,7 @@
 	overflow: hidden;
 }
 /* adds specific ratio to ratio box */
-/* note that the .zoomcast and .about classes are used to set specific ratios for those cluster pages that differ from all other cluster pages */
+/* note that the .zoomcast and .about classes are used to set specific ratios for those cluster pages; these ratios differ from all other cluster page ratios */
 /* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 /* for founding devs. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
 .cluster main section div::after{
@@ -263,10 +260,6 @@
 .cluster.zoomcasts main section p{
 	margin: 0 1em 1em;
 }
-/* the descriptive text on the zoomcasts cluster page title slide */
-.cluster.zoomcasts main section:nth-child(2) p{
-	margin: 1em;
-}
 /* the list of lesson plan buttons that appears on collective lesson plan slides */
 /* note: although this coding is set up for general use, at present it is only used on /html/lesson_plans.html */
 .cluster main section ol,
@@ -303,7 +296,7 @@
 		flex: 0 0 calc(50% - 2px - 1.5em);
 	}
 }
-/* the first item in the list of lesson plan buttons that appears on collective lesson plan slides; the serves as the title for the lesson plan buttons */
+/* the first item in the list of lesson plan buttons that appears on collective lesson plan slides; this item serves as the title for the collective lesson plan slides */
 /* note: the coding on this should be changed to support accessibility */
 .cluster main section ul li:first-child{
 	font-size: .95em;
@@ -342,7 +335,7 @@
 
 
 /* Safari Support: Mobile and Safari below 14.1 */
-/* Used to compensate for the lack of support for "gap" in those environment. */
+/* Used to compensate for the lack of support for "gap" in those environments. */
 /* See above for annotations of the relevant code below. */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
