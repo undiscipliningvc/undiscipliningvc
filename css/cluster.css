@@ -1,7 +1,8 @@
 /* 1.2.1 Cluster Pages */
+/* Cluster pages constitute the second level of the Undisciplining Victorian Studies site and consist of the gateway pages that provide access to individual Zoomcasts, lesson plans, syllabi, assessments, and various parts of the "About" section. At present, there are five such files: /html/about.html, /html/assessments.html, /html/lesson_plans.html, /html/syllabi.html, and /html/zoomcasts.html */
 
-/* ----------------------- */
-/* Also see content.css and .current on style.css */
+/* section-specific colors, in particular for the title card and card headings on cluster pages */
+/* for further section-specific color specs, see /css/content.css and the .current class on /css/style.css */
 .zoomcasts.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
 }
@@ -30,8 +31,7 @@
 	color: white;
 	background: #757575;
 }
-/* ----------------------- */
-
+/* the main container for cluster pages */
 .cluster main{
 	margin: 47px auto 0;
 	padding: 0 .5em 0;
@@ -55,6 +55,7 @@
 		margin-top: 51px;
 		max-width: 700px;
 	}
+	/* specs for the main container for the zoomcasts cluster page */
 	.cluster.zoomcasts main{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -70,11 +71,12 @@
 		flex-wrap: wrap;
 		gap: 1.5rem;
 	}
+	/* specs for the main container for the zoomcasts cluster page */
 	.cluster.zoomcasts main{
 		gap: 1.5rem;
 	}
 }
-/* ----------------------- */
+/* the subsection containers in the main container; each such subcontainer, with the exception of the first two (which are the cluster page's title slide and description slide, respectively), links to a specific content page */
 .cluster main section{
 	text-align: center;
 	-webkit-border-radius: 5px;
@@ -87,17 +89,21 @@
 	display: flex;
 	flex-flow: column;
 }
+/* the subsection container for the cluster page's title slide */
 .cluster main section:first-child{
 	min-height: 150px;
 	position: relative;
 }
+/* the subsection containers in the main zoomcats container */
 @media only screen and (min-width: 768px){
 	.cluster.zoomcasts main section{
 		flex: 0 0 calc(50%  - .5rem - 2px);
 	}
+	/* the subsection container for the zoomcast cluster page's title slide */
 	.cluster.zoomcasts main section:first-child{
 		flex: 1 0 calc(100% - 2px);
 	}
+	/* the subsection container for the zoomcast cluster page's description slide */
 	.cluster.zoomcasts main section:nth-child(2){
 		flex: 1 0 calc(100% - 2px);
 	}
@@ -116,13 +122,15 @@
 			max-width: 300px;
 			flex: 1 0 calc(27.5% - 1rem - 2px);
 	}
+	/* the subsection container for the given cluster page's description slide;
+	the subsection container for the zoomcast cluster page's description slide */
 	.cluster main section:nth-child(2),
 	.cluster.zoomcasts main section:nth-child(2){
 		max-width: 600px;
 		flex: 1 0 calc(72.5% - 1rem - 2px);
 	}
 }
-/* ----------------------- */
+/* the main subsection heading; this indicates the cluster series to which a content page belongs */
 .cluster main section h2{
 	font-size: 1.1em;
 	font-weight: 700;
@@ -141,6 +149,7 @@
 	margin: 0;
 	padding: .5em;
 }
+/* the heading on the cluster page title slide */
 .cluster main section h2#level-2-title{
 	font-size: 1.5em;
 	white-space: nowrap;
@@ -158,17 +167,7 @@
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-.cluster main section p{
-	font-size: .95em;
-	padding: 0 1em;
-}
-.cluster.zoomcasts main section p{
-	margin: 0 1em 1em;
-}
-.cluster.zoomcasts main section:nth-child(2) p{
-	margin: 1em;
-}
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* ratio box used for header images; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .cluster main section div{
 	background: #e6e6e6;
@@ -181,11 +180,13 @@
 	outline: 3px solid #395375;
 	overflow: hidden;
 }
+/* adds specific ratio to ratio box */
+/* note that the .zoomcast and .about classes are used to set specific ratios for those cluster pages that differ from all other cluster pages */
+/* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
+/* for founding devs. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
 .cluster main section div::after{
 	content: "";
 	display: block;
-}
-.cluster main section div::after{
 	padding-bottom: 66.67%;
 }
 .cluster.zoomcasts main section div::after{
@@ -205,6 +206,12 @@
 		padding-bottom: 71.43%;
 	}
 }
+/* the hyperlink used on cluster page slides */
+.cluster main section div a:hover,
+.cluster main section div a:focus{
+	background: none;
+}
+/* the image for each cluster page slide */
 .cluster main section div img{
 	background: #e6e6e6;
 	width: 100%;
@@ -225,14 +232,10 @@
 	border: none;
 	opacity: .7;
 }
+/* the label that appears over each cluster page slide image */
+/* some specs below derive from Livingstone Online level two slides; see, e.g., https://livingstoneonline.org/spectral-imaging */
 .cluster main section div span{
 	font-size: 1.1em;
-}
-.cluster.zoomcasts main section div span{
-	font-size: 1em;
-}
-/* some specs below from Livingstone Online */
-.cluster main section div span{
 	color: #fff;
 	background-color: rgb(66,66,66);
 	line-height: 1.5em;
@@ -248,10 +251,23 @@
 	transform: translate(-50%, 0);
 	opacity: .9;
 }
-.cluster main section div a:hover,
-.cluster main section div a:focus{
-	background: none;
+.cluster.zoomcasts main section div span{
+	font-size: 1em;
 }
+/* The descriptive text below each cluster page slide image */
+.cluster main section p{
+	font-size: .95em;
+	padding: 0 1em;
+}
+/* The descriptive text below each zoomcasts cluster page slide image */
+.cluster.zoomcasts main section p{
+	margin: 0 1em 1em;
+}
+/* The descriptive text on the zoomcasts cluster page title slide */
+.cluster.zoomcasts main section:nth-child(2) p{
+	margin: 1em;
+}
+
 .cluster main section ol,
 .cluster main section ul{
 	text-align: center;
@@ -340,6 +356,7 @@
 	display: flex;
   flex-flow: column;
 }
+
 
 /* Safari Support: Mobile and Safari below 14.1 */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
