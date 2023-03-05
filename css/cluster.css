@@ -254,20 +254,21 @@
 .cluster.zoomcasts main section div span{
 	font-size: 1em;
 }
-/* The descriptive text below each cluster page slide image */
+/* the descriptive text below each cluster page slide image */
 .cluster main section p{
 	font-size: .95em;
 	padding: 0 1em;
 }
-/* The descriptive text below each zoomcasts cluster page slide image */
+/* the descriptive text below each zoomcasts cluster page slide image */
 .cluster.zoomcasts main section p{
 	margin: 0 1em 1em;
 }
-/* The descriptive text on the zoomcasts cluster page title slide */
+/* the descriptive text on the zoomcasts cluster page title slide */
 .cluster.zoomcasts main section:nth-child(2) p{
 	margin: 1em;
 }
-
+/* the list of lesson plan buttons that appears on collective lesson plan slides */
+/* note: although this coding is set up for general use, at present it is only used on /html/lesson_plans.html */
 .cluster main section ol,
 .cluster main section ul{
 	text-align: center;
@@ -283,13 +284,8 @@
 		flex-wrap: wrap;
 	}
 }
+/* an item in the list of lesson plan buttons that appears on collective lesson plan slides */
 .cluster main section ul li{
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
 	line-height: 1.5em;
 	border: 1px solid #e6e6e6;
 	-webkit-border-radius: 5px;
@@ -297,7 +293,6 @@
 	border-radius: 5px;
 	margin: 1em 0;
 	padding: .3em;
-	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 @media only screen and (min-width: 768px){
@@ -308,6 +303,8 @@
 		flex: 0 0 calc(50% - 2px - 1.5em);
 	}
 }
+/* the first item in the list of lesson plan buttons that appears on collective lesson plan slides; the serves as the title for the lesson plan buttons */
+/* note: the coding on this should be changed to support accessibility */
 .cluster main section ul li:first-child{
 	font-size: .95em;
 	font-family: 'Noto Serif', serif;
@@ -322,11 +319,7 @@
 		flex: 1 0 calc(100% - 2px - 1em);
 	}
 }
-.cluster main section ul li:first-child:hover,
-.cluster main section ul li:first-child:focus-within{
-	color: inherit;
-	background: #e6e6e6;
-}
+/* hyperlink on items in the list of lesson plan buttons that appears on collective lesson plan slides */
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
 	font-size: .95em;
@@ -339,26 +332,18 @@
 	align-items: center;
 	justify-content: center;
 }
-.cluster main section ul li:hover,
-.cluster main section ul li:focus-within,
-.cluster main section ul li:hover a,
-.cluster main section ul li:focus-within a{
+.cluster main section ul li:not(:first-child):hover,
+.cluster main section ul li:not(:first-child):focus-within,
+.cluster main section ul li:not(:first-child):hover a,
+.cluster main section ul li:not(:first-child):focus-within a{
 	color: white;
 	background: #395375;
-}
-.cluster main section ul li a i{
-	display: none;
-	visibility: hidden;
-}
-.lesson-plans.cluster main section div{
-	height: 100%;
-	display: -webkit-flex;
-	display: flex;
-  flex-flow: column;
 }
 
 
 /* Safari Support: Mobile and Safari below 14.1 */
+/* Used to compensate for the lack of support for "gap" in those environment. */
+/* See above for annotations of the relevant code below. */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 /* Further developed from the original code creeated by One More Voice (https://github.com/livingstoneonline/onemorevoice/blob/master/css/style.css) */
