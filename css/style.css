@@ -64,6 +64,8 @@ nav#nav2 #overlay-menu = 200
 
 /** 0.0 Section Tile Colors **/
 
+/* section-specific colors, used for cluster page tiles on /index.html */
+/* for further section-specific color specs, see below, /css/cluster.css and /css/content.css */
 .section-tiles ul li:nth-child(1){
 	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
 }
@@ -107,7 +109,8 @@ nav#nav2 #overlay-menu = 200
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 } */
-/* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* color applied when user highlights text on a page */
+/* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
 	color: #fff;
   background: #395375;
@@ -118,22 +121,16 @@ nav#nav2 #overlay-menu = 200
 	background: #395375;
   text-shadow: none;
 }
+/* main containter for html pages */
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	color: #212119;
 	background-color: #fff;
-	/* overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	-ms-word-break: break-all;
-	hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto; */
 	-ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+/* main container for body of html pages */
 body{
 	margin: 0 auto;
 	padding: 0;
@@ -143,9 +140,12 @@ body{
 	/* -moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: antialiased; */
 }
+/* main sub-container for body of html pages */
 .text-container{
 	width: 100%;
 }
+/* used to create the header which, at present, is only a spaceholder on the page */
+/* note: the coding on this should be changed to support accessibility */
 header{
 	margin: 43px auto 0;
 	padding: 0 .75em;
@@ -167,6 +167,7 @@ header{
 		margin-top: 65px;
 	}
 }
+/* container for the main part of the page (i.e., everything but the header and footer) */
 main{
 	font-size: 1.1em;
 	text-align: center;
@@ -186,6 +187,8 @@ main{
 		max-width: 650px;
 	}
 }
+/* the summary, section, and aside elements */
+/* note: the summary element is used for the "Overview" section; the section element is used for all other subsections; the aside element is used for interjected elements (such as break-quotes) that are not part of the main text */
 main summary,
 main section,
 main aside{
@@ -198,21 +201,25 @@ main aside{
 		margin: 3rem auto;
 	}
 }
+/* padding used to set distance on the first and last sections from, respectively, the page's lead image and the footer */
 main section:first-of-type{
 	margin-top: 0;
 }
 main section:last-of-type{
 	margin-bottom: 0;
 }
+/* paragraphs and lists */
 main section p,
 main section ol,
 main section ul{
 	text-align: left;
 }
+/* the container for cluster page tiles on /index.html */
 .section-tiles{
 	font-size: 1.1em;
 	margin-bottom: 1em;
 }
+/* the list of cluster page tiles on /index.html */
 .section-tiles ul{
 	list-style: none;
 	margin: .75em auto 0;
@@ -223,6 +230,7 @@ main section ul{
 	align-items: center;
 	flex-wrap: wrap;
 }
+/* an item in the list of cluster page tiles on /index.html */
 .section-tiles ul li{
 	color: #fff;
 	text-align: center;
@@ -246,11 +254,13 @@ main section ul{
 		flex: 1 1 calc(50% - 2.25em - 1px)
 	}
 }
+/* ratio box used to set up cluster page tiles on /index.html; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .section-tiles ul li::after{
 	content: "";
 	padding-bottom: 56.25%;
 	display: block;
 }
+/* hyperlink for cluster page tiles on /index.html */
 .section-tiles ul li a,
 .section-tiles ul li a:visited{
 	color: #fff;
@@ -261,6 +271,7 @@ main section ul{
 	top: 0;
 	left: 0;
 }
+/* text for for cluster page tiles on /index.html */
 .section-tiles ul li a span{
 	font-family: 'Noto Serif', serif;
 	font-weight: 600;
@@ -279,15 +290,18 @@ main section ul{
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+/* container for "Founding Developers" section on /index.html */
 .founding-dev{
 	margin: 0 auto 2em;	
 	display: inline-block;
 }
+/* list for people for "Founding Developers" section on /index.html */
 .founding-dev ul{
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;
 }
+/* container for social media links section on /index.html */
 .participate{
 	text-align: center;
 	background: #e6e6e6;
@@ -299,16 +313,19 @@ main section ul{
 	padding: 0 1em 1em;
 	display: inline-block;
 }
+/* paragraph for text within social media links section on /index.html */
 .participate p{
 	text-align: center;
 	margin: .5em 0;
 }
+/* container for social media links within social media links section on /indext.html */
 .participate div{
 	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+/* hyperlink for social media links */
 .participate a,
 .participate a:visited{
 	font-size: .95em;
@@ -333,15 +350,7 @@ main section ul{
 .participate a:focus{
 	outline: 1px dashed #242424;
 }
-.participate a.contribute{
-	background-color: #395375;
-	border: 1px solid #395375;
-}
-.participate a.contribute:focus,
-.participate a.contribute:hover{
-	color: #242424;
-	background: #fff;
-}
+/* Twitter link within social media links within social media links section on /index.html */
 .participate a.follow{
 	background-color: #1C95E1;
 	border: 1px solid #1C95E1;
@@ -351,11 +360,23 @@ main section ul{
 	color: #1C95E1;
 	background: #fff;
 }
+/* "Mailing List/Get Involved" link within social media links within social media links section on /index.html */
+.participate a.contribute{
+	background-color: #395375;
+	border: 1px solid #395375;
+}
+.participate a.contribute:focus,
+.participate a.contribute:hover{
+	color: #242424;
+	background: #fff;
+}
+/* spacing for section following ocial media links section on /index.html */
 @media only screen and (min-width: 768px){
 	.participate + section{
 		margin-top: 2em;
 	}
 }
+/*****/
 ol.mission{
 	margin: 0 1em;
 	padding: 0;
@@ -388,12 +409,6 @@ footer{
 	font-size: 1em;
 	text-align: center;
 	line-height: 1.875em;
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
 	color: #fff;
 	background: #2e2e2e;
 	margin: .75em auto 0;
