@@ -1,5 +1,6 @@
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023) and is adapted from the CSS files for One More Voice (https://onemorevoice.org/) and Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
+/* This is the main CSS file for Undisciplining the Victorian Classroom (UVC) site (https://undiscipliningvc.org/). It encompasses styling the is common across all pages of the site. It also includes coding for files that constitute the first level of the UVC site; these files appear in the root directory and include /404.html, /index.html, and /sitemap.html */
 
 /* 
 Table of Contents
@@ -29,33 +30,33 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-
-Black-Gray: rgba(0, 0, 0, 0.65);
-
 White: #fff;
 Black: #242424;
-Dark Blue: #395375;
+Black-Gray: rgba(0, 0, 0, 0.65);
 Dark Gray: #2e2e2e; (footer only)
 Mid Gray: #949494;
 Light Gray: #e6e6e6;
-
+Dark Blue: #395375;
 Blue: #5378ac; (sections/carousel/images/nav0)
-
-(extra colors)
-Black: rgba(0, 0, 0, 1); (not used)
-Lighter Black: #322d29; (not used)
-Lighter Blue: #537796; (not used)
-Sky Blue: #89B8D3; (not used)
-
 */
 
 /** z-index **/
 /*
-.carousel .controls button = 10
-.content main h2 = 15
-nav#nav1 = 20
-#regular-button = 21
-#fallback-button = 22
+.timeline-container:before = 1
+.youtube .play-button, 
+.youtube iframe = 3
+.carousel .controls button, 
+.skipcontrols a = 10
+.content main h2,
+.content.lesson-plans main h2,
+.content.syllabi main h2,
+.content.about main h2 = 15
+.marker = 19
+nav#nav1, nav#navFB = 20
+#regular-button, 
+nav#nav1 li button = 21
+#fallback-button, 
+nav#navFB li button = 22
 #topButton = 99
 #nav0 = 100
 nav#nav2 #overlay-menu = 200
