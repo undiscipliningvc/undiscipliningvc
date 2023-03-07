@@ -370,26 +370,17 @@ main section ul{
 	color: #242424;
 	background: #fff;
 }
-/* spacing for section following ocial media links section on /index.html */
+/* spacing for section following social media links section on /index.html */
 @media only screen and (min-width: 768px){
 	.participate + section{
 		margin-top: 2em;
 	}
 }
-/*****/
-ol.mission{
-	margin: 0 1em;
-	padding: 0;
-}
-@media (min-width: 768px){
-	ol.mission{
-		margin: 0 2em;
-	}
-}
+/* endnote lists; currently only used on /html/syllabi/capital-l_literature.html */
 ol.endnotes{
 	padding: 0 0 0 1em;
 }
-/* Heading adapted from https://stackoverflow.com/a/20478913 */
+/* title for endnote lists; adapted from https://stackoverflow.com/a/20478913 */
 ol.endnotes:before{
 	content:attr(aria-label);
 	font-size: .9em;
@@ -397,14 +388,7 @@ ol.endnotes:before{
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
 }
-#call{
-	margin-top: 2em;
-}
-@media only screen and (min-width: 768px){
-	#call{
-		margin-top: 3em;
-	}
-}
+/* *** */
 footer{
 	font-size: 1em;
 	text-align: center;
