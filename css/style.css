@@ -93,11 +93,11 @@ nav#nav1 a:focus .current{
 /* 1.1. Main Components */
 
 /* applies border-box to entire site */
-*, *:before, *:after {
+/* *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
+} */
 /* color applied when user highlights text on a page */ 
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
