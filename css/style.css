@@ -482,7 +482,7 @@ hr{
 		margin: 2em 0;
 	}
 }
-/* the following coding, which is tied to elements above in this subsection of the CSS, makes the overlay disappear above 1200 */
+/* the following coding, which is tied to elements above in this subsection of the CSS, makes the overlay disappear above 1200px */
 /* for full overlay coding, see subsection below */
 @media only screen and (min-width: 1200px){
 	html{
@@ -863,17 +863,17 @@ nav#fallback-nav li button{
 	-moz-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
-@media only screen and (min-width: 480px){
-	nav#nav1 li button,
-	nav#fallback-nav li button{
-		padding: 6px 8px;
-	}
-}
 nav#nav1 li button{
 	z-index: 21;
 }
 nav#fallback-nav li button{
 	z-index: 22;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 li button,
+	nav#fallback-nav li button{
+		padding: 6px 8px;
+	}
 }
 nav#nav1 li button:hover,
 nav#nav1 li button:focus-within,
@@ -918,6 +918,7 @@ nav#fallback-nav li button:focus i{
 
 /* 1.4.2. Overlay */
 
+/* main container for overlay */
 nav#nav2{
   transition: margin-right 0.7s;
   overflow: hidden;
@@ -925,6 +926,7 @@ nav#nav2{
 	display: none;
 	visibility: hidden;
 }
+/* hide overlay about 1200px */
 @media only screen and (min-width: 1200px){
 	nav#nav2{
 		margin-right: 0 !important;
@@ -932,6 +934,7 @@ nav#nav2{
 		visibility: hidden !important;
 	}
 }
+/* main sub-container for overlay */
 nav#nav2 #overlay-menu{
 	background-color: #e6e6e6;
 	transition: background-color 0.01s;
@@ -945,19 +948,7 @@ nav#nav2 #overlay-menu{
 	opacity: 1;
 	z-index: 200;
 }
-nav#nav2 #overlay-menu a{
-  color: #242424;
-	text-decoration: none;
-	white-space: nowrap;
-  padding: 20px 40px;
-	display: block;
-}
-nav#nav2 #overlay-menu li a:hover,
-nav#nav2 #overlay-menu li a:focus{
-  color: #fff;
-	background-color: #395375;
-  transition: 0.2s;
-}
+/* list of items in overlay */
 nav#nav2 #overlay-menu ul{
 	text-align: right;
 	list-style: none;
@@ -979,16 +970,30 @@ nav#nav2 #overlay-menu ul{
 		margin-top: 65px;
 	}
 }
-nav#nav2 #overlay-menu ul{
-	background: #e6e6e6;
-}
+/* single item in overlay */
 nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
 }
-nav#nav2 #overlay-menu ul li span{
+/* hyperlink within item in overlay */
+nav#nav2 #overlay-menu li a{
+  color: #242424;
+	text-decoration: none;
+	white-space: nowrap;
+  padding: 20px 40px;
+	display: block;
+}
+nav#nav2 #overlay-menu li a:hover,
+nav#nav2 #overlay-menu li a:focus{
+  color: #fff;
+	background-color: #395375;
+  transition: 0.2s;
+}
+/* text container within item in overlay */
+nav#nav2 #overlay-menu ul li a span{
 	font-size: .95em;
 	font-family: 'Noto Serif', serif;
 }
+/* button to close overlay */
 nav#nav2 #overlay-menu li button.close{
 	background: none;
 	border: none;
@@ -1018,11 +1023,19 @@ nav#nav2 #overlay-menu li button.close{
 		right: 16px;
 	}
 }
+/* hide overlay close button above 120px */
+@media only screen and (min-width: 1200px){
+	nav#nav2 #overlay-menu li button.close{
+		display: none;
+		visibility: hidden;
+	}
+}
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
 	background-color: #395375;
 	transition: 0.2s;
 }
+/* close icon (actual icon provided by FontAwesome) */
 nav#nav2 #overlay-menu li button.close i{
 	color: #242424;
 	font-size: 1.3rem;
@@ -1041,12 +1054,7 @@ nav#nav2 #overlay-menu li button.close:hover i,
 nav#nav2 #overlay-menu li button.close:focus i{
 	color: #fff;
 }
-@media only screen and (min-width: 1200px){
-	nav#nav2 #overlay-menu li button.close{
-		display: none;
-		visibility: hidden;
-	}
-}
+
 
 /* 1.5. Carousel */
 
@@ -1055,40 +1063,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 /* 1.6. YouTube Player */
 
-/* Most CSS moved to separate file */
-
-.skipcontrols a{
-	font-size: .8em;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #395375;
-	background: #e6e6e6;
-	-webkit-border-bottom-right-radius: 8px;
-	-moz-border-bottom-right-radius: 8px;
-	border-bottom-right-radius: 8px;
-	padding: 4px 6px;
-	position: absolute;
-	left: 0px;
-	z-index: 10;
-	-webkit-transition: top 1s ease-out;
-	transition: top 1s ease-out;
-}
-@media only screen and (min-width: 768px){
-	.skipcontrols a{
-		font-size: .9em;
-	}
-}
-.skipcontrols a{
-	border: 2px solid #fff;
-	top: -45px;
-}
-.skipcontrols a:focus{
-	outline-color: transparent;
-	top: 0px;
-	left: 0px;
-	position: absolute;
-	-webkit-transition: top .4s ease-in;
-	transition: top .4s ease-in;
-}
+/* Moved to separate file */
 
 
 /* 1.8. Scroll to Top Button */
