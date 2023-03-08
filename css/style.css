@@ -126,11 +126,11 @@ nav#nav1 a:focus .current{
 
 /* 1.1. Main Components */
 
-/* *, *:before, *:after {
+*, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-} */
+}
 /* color applied when user highlights text on a page */ 
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
@@ -209,8 +209,9 @@ main{
 		max-width: 650px;
 	}
 }
-/* the summary, section, and aside elements */
-/* note: the summary element is used for the "Overview" section; the section element is used for all other subsections; the aside element is used for interjected elements (such as break-quotes) that are not part of the main text */
+/* the summary element is used for the "Overview" section */
+/* the section element is used for all other subsections  */
+/* the aside element is used for interjected elements (such as break-quotes) that are not part of the main text */
 main summary,
 main section,
 main aside{
@@ -305,7 +306,7 @@ main section ul{
 	border-radius: 5px;
 	margin: 0;
 	padding: 10px;
-	height: 33px;
+	height: auto;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -336,12 +337,12 @@ main section ul{
 	padding: 0 1em 1em;
 	display: inline-block;
 }
-/* paragraph for text within social media links section on /index.html */
+/* paragraph for text in social media links section on /index.html */
 .participate p{
 	text-align: center;
 	margin: .5em 0;
 }
-/* container for social media links within social media links section on /indext.html */
+/* container for social media links in social media links section on /indext.html */
 .participate div{
 	display: -webkit-flex;
 	display: flex;
@@ -373,7 +374,7 @@ main section ul{
 .participate a:focus{
 	outline: 1px dashed #242424;
 }
-/* Twitter link within social media links within social media links section on /index.html */
+/* Twitter link in social media links section on /index.html */
 .participate a.follow{
 	background-color: #1C95E1;
 	border: 1px solid #1C95E1;
@@ -383,7 +384,7 @@ main section ul{
 	color: #1C95E1;
 	background: #fff;
 }
-/* "Mailing List/Get Involved" link within social media links within social media links section on /index.html */
+/* "Mailing List/Get Involved" link in social media links section on /index.html */
 .participate a.contribute{
 	background-color: #395375;
 	border: 1px solid #395375;
@@ -484,8 +485,9 @@ hr{
 		margin: 2em 0;
 	}
 }
-/* the following coding, which is tied to elements above in this subsection of the CSS, makes the overlay disappear above 1200px */
-/* for full overlay coding, see subsection below */
+/* help make the overlay disappear above 1200px */
+/* tied to elements above in this subsection of the CSS */
+/* for additional overlay coding, see below */
 @media only screen and (min-width: 1200px){
 	html{
 		background: #fff !important;
@@ -649,7 +651,7 @@ a:focus img{
 
 /* 1.4.1. Navigation: Main */
 
-/* "Skip to main content" tab */ 
+/* "skip to main content" tab */ 
 /* adapted from https://webaim.org/techniques/skipnav/ */
 #nav0 a{
 	font-size: 1em;
@@ -681,7 +683,7 @@ a:focus img{
 		position: absolute;
 	}
 }
-/* main container for nav & fallback nav */
+/* main container for nav and fallback nav */
 nav#nav1,
 nav#fallback-nav{
 	font: 16px 'Source Sans Pro', sans-serif;
@@ -758,7 +760,7 @@ nav#nav1 li,
 nav#fallback-nav li{
 	display: inline-block;
 }
-/* last item list of items in nav and fallback nav */
+/* last item in list of items in nav and fallback nav */
 nav#nav1 li:nth-child(8),
 nav#fallback-nav li:nth-child(2){
 	position: relative;
@@ -804,7 +806,7 @@ nav#fallback-nav a:focus-within h1{
 	border-radius: 5px;
 	transition: 0.2s;
 }
-/* items in nav excepting logo and hamburger menu */
+/* items in nav excepting site logo and hamburger menu */
 nav#nav1 ul li:not(:first-child):not(:last-child){
 	font-size: .95em;
 	font-weight: 600;
@@ -823,7 +825,7 @@ nav#nav1 li a,
 nav#fallback-nav li a{
 	white-space: nowrap;
 }
-/* hyperlinks for items in nav excepting logo and hamburger menu */
+/* hyperlinks for items in nav excepting site logo and hamburger menu */
 nav#nav1 li:not(:first-child):not(:last-child) a{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -907,7 +909,7 @@ nav#fallback-nav li button:hover i,
 nav#fallback-nav li button:focus i{
 	color: #fff;
 }
-/* hide hamurger menu on nav (not fallback-nav, which remains onscreen) above 1200 */
+/* hide hamurger menu on nav (not fallback-nav, which remains onscreen) above 1200px */
 @media only screen and (min-width: 1200px){
 	nav#nav1 li:last-child,
 	nav#nav1 li button{
@@ -927,7 +929,7 @@ nav#nav2{
 	display: none;
 	visibility: hidden;
 }
-/* hide overlay about 1200px */
+/* hide overlay above 1200px */
 @media only screen and (min-width: 1200px){
 	nav#nav2{
 		margin-right: 0 !important;
@@ -994,7 +996,7 @@ nav#nav2 #overlay-menu ul li a span{
 	font-size: .95em;
 	font-family: 'Noto Serif', serif;
 }
-/* button to close overlay */
+/* close overlay button */
 nav#nav2 #overlay-menu li button.close{
 	background: none;
 	border: none;
@@ -1024,7 +1026,7 @@ nav#nav2 #overlay-menu li button.close{
 		right: 16px;
 	}
 }
-/* hide overlay close button above 120px */
+/* hide close overlay button above 1200px */
 @media only screen and (min-width: 1200px){
 	nav#nav2 #overlay-menu li button.close{
 		display: none;
@@ -1036,7 +1038,7 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 	background-color: #395375;
 	transition: 0.2s;
 }
-/* close icon; actual icon provided by FontAwesome */
+/* close icon ("X"); actual icon provided by FontAwesome */
 nav#nav2 #overlay-menu li button.close i{
 	color: #242424;
 	font-size: 1.3rem;
@@ -1071,7 +1073,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 /* 1.8. Scroll to Top Button */
 
-/* the top bottom, which appears in the upper right-hand corner of the page after the user scrolls down, takes the user back to the top of the page */ 
+/* "Top" button; appears in the upper right-hand corner of the page after the user scrolls down and takes the user back to the top of the page */ 
 /* adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
@@ -1130,7 +1132,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 
 /* 1.9. External Links */
-/* styling, as appropriate, for external link and email icons; actual icons provided by ForkAwesome */
+/* external link and email icons; actual icons provided by ForkAwesome */
 a[aria-label="External Link"],
 a[aria-label="External Client"]{
 	margin-right: .15rem;
