@@ -4,7 +4,7 @@
 /* Cluster pages constitute the second level of the UVC site and consist of the gateway pages that provide access to individual Zoomcasts, lesson plans, syllabi, assessments, and various parts of the "About" section. At present, there are five such files: /html/about.html, /html/assessments.html, /html/lesson_plans.html, /html/syllabi.html, and /html/zoomcasts.html */
 
 /* section-specific colors, in particular for the title card and card headings on cluster pages */
-/* for further section-specific color specs, see /css/content.css and  /css/style.css */
+/* for further section-specific color specs, see /css/content.css, /css/index.css, and /css/style.css */
 .zoomcasts.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
 }

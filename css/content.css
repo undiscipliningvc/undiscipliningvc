@@ -4,7 +4,7 @@
 /* Content pages constitute the third level of the UVC site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the sitemap, and the 404 page. Except for the last two named files, the files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
 
 /* section-specific colors, in particular for the colored divider line at the top of content pages and menu heading background */
-/* for further section-specific color specs, see /css/cluster.css and /css/style.css */
+/* for further section-specific color specs, see /css/cluster.css, /css/index.css, and /css/style.css */
 .zoomcasts.content header,
 .zoomcasts.content main section.menu-container h3{
 	background: #cb6948;
