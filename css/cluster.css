@@ -312,7 +312,7 @@
 	.cluster main section ul li:first-child{
 		margin: .5em .5em .75em;
 		display: block;
-		flex: 1 0 calc(100% - 2px - 1em);
+		flex: 1 0 calc(100% - 2px - 1.5em);
 	}
 }
 /* hyperlink on items in the list of lesson plan buttons that appears on collective lesson plan slides */
