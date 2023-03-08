@@ -30,7 +30,8 @@
 	border: solid 1px #242424;
 }
 /* Carousel images */
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* ratio box for carousel images */ 
+/* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .carousel .carousel-item .carousel-image{
 	background: #e6e6e6;

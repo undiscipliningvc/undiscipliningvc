@@ -167,7 +167,8 @@
 .cluster.zoomcasts main section:nth-child(2) p{
 	margin: 1em;
 }
-/* ratio box used for header images; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* ratio box used for header images */ 
+/* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .cluster main section div{
 	background: #e6e6e6;
 	margin: 1em;
