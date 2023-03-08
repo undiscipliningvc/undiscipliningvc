@@ -1,0 +1,11 @@
+Transcript editing workflow
+
+1. Download both the .txt and .vtt files to your computer.
+2. Open the .txt file, select all the text, copy it, and paste it into a new Word file. Turn track changes on and save the Word file with the same name as the .txt file, but make sure the Word file is saved .docx so that it doesn't overwrite the .txt file.
+3. Read through the Word file and fix obvious errors, especially people's names. If unclear about something, check the original video. However, our practice has been not to check the full transcript against the full video as it's too much work. Also the professional captioning we currently get has been quite good. Save.
+4. Once you're done, open the .vtt file and carry over the tracked changes to this file from the .docx file. This file will most likely open up in your plain text editor. It is recommended, however, that you use a plain text editor like the free mode of BBedit for OS (https://www.barebones.com/products/bbedit/) or the freeware version of Notetab Light for Windows (https://www.notetab.com/download-now). As you carry over edits, be very careful not to change the formatting of the .vtt file, as this file will add captions to YouTube and needs to be set up correctly. Save. Note: you will not use track changes when editing the .vtt file.
+5. Back in the Word file, double check your corrections, then accepted them all. Save. 
+6. Copy the corrected text from the Word file and paste it into the .txt file, thereby overwriting what was there before. Make sure all looks OK. Save.
+7. In Google docs, remove the upload versions of the .txt and .vtt files. Upload the new vesions of the .txt, .vtt, and .docx files.
+
+
