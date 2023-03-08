@@ -847,6 +847,7 @@ nav#fallback-nav li a:focus span{
 	color: #fff;
 	transition: 0.2s;
 }
+/* hamburger menu container */
 nav#nav1 li button,
 nav#fallback-nav li button{
 	background: none;
@@ -881,6 +882,7 @@ nav#fallback-nav li button:focus-within{
 	background-color: #395375;
 	transition: 0.2s;
 }
+/* hamburger menu icon (actual icon provided by FontAwesome) */
 nav#nav1 li button i,
 nav#fallback-nav li button i{
 	font-size: 1.3rem;
@@ -904,6 +906,7 @@ nav#fallback-nav li button:hover i,
 nav#fallback-nav li button:focus i{
 	color: #fff;
 }
+/* hide hamurger menu on nav (not fallback-nav, which remains onscreen) above 1200 */
 @media only screen and (min-width: 1200px){
 	nav#nav1 li:last-child,
 	nav#nav1 li button{
