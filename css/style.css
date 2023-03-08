@@ -131,7 +131,7 @@ nav#nav1 a:focus .current{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 } */
-/* color applied when user highlights text on a page */
+/* color applied when user highlights text on a page */ 
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
 	color: #fff;
@@ -276,7 +276,8 @@ main section ul{
 		flex: 1 1 calc(50% - 2.25em - 1px)
 	}
 }
-/* ratio box used to set up cluster page tiles on /index.html; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* ratio box used to set up cluster page tiles on /index.html */ 
+/* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .section-tiles ul li::after{
 	content: "";
 	padding-bottom: 56.25%;
@@ -402,7 +403,8 @@ main section ul{
 ol.endnotes{
 	padding: 0 0 0 1em;
 }
-/* title for endnote lists; adapted from https://stackoverflow.com/a/20478913 */
+/* title for endnote lists */ 
+/* adapted from https://stackoverflow.com/a/20478913 */
 ol.endnotes:before{
 	content:attr(aria-label);
 	font-size: .9em;
@@ -501,12 +503,10 @@ hr{
 
 
 /* 1.2.1. Cluster Pages */
-
 /* Moved to separate file */
 
 
 /* 1.2.2. Content Pages */
-
 /* Moved to separate file */
 
 
@@ -649,7 +649,8 @@ a:focus img{
 
 /* 1.4.1. Navigation: Main */
 
-/* "Skip to main content" tab; adapted from https://webaim.org/techniques/skipnav/ */
+/* "Skip to main content" tab */ 
+/* adapted from https://webaim.org/techniques/skipnav/ */
 #nav0 a{
 	font-size: 1em;
 	color: #fff;
@@ -1057,19 +1058,21 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 
 /* 1.5. Carousel */
-
 /* Moved to separate file */
 
 
 /* 1.6. YouTube Player */
+/* Moved to separate file */
 
+
+/* 1.7. Timeline */
 /* Moved to separate file */
 
 
 /* 1.8. Scroll to Top Button */
 
-/* Scroll to top button */
-/* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/* the top bottom, which appears in the upper right-hand corner of the page after the user scrolls down, takes the user back to the top of the page */ 
+/* adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
 	font-size: .95em;
