@@ -5,27 +5,30 @@
 /* 
 Table of Contents
 -----------------
-** Main Site Colors **
-
-** 1.0. Main CSS **
-0.0. Section Tile Colors
+* Main Site Colors *
+* z-index *
+0.0. Section-Specific Colors
 1.1. Main Components
-1.2.1. Cluster Pages [moved to separate file]
-1.2.2. Content Pages [moved to separate file]
-1.3.1. Anchors, Headings, Images
-1.4.1. Navigation: Main
-1.4.2. Overlay
-1.5. Carousel [moved to separate file]
-1.6. YouTube Player [most css moved to separate file]
-1.7. Timeline [moved to separate file]
-1.8. Scroll to Top Button
+1.2.1. Home Page [moved to separate file]
+1.2.1.1. Carousel [moved to separate file]
+1.2.2. Cluster Pages [moved to separate file]
+1.2.3. Content Pages [moved to separate file]
+1.2.3.1. YouTube Player [moved to separate file]
+1.2.3.2. Timeline [moved to separate file]
+1.3.1. Navigation: Main
+1.3.2. Overlay
+1.4. Anchors
+1.4.1. External Links
+1.5. Headings
+1.6. Images
+1.7. Scroll to Top Button
+1.8. Other Components
 1.9. Formatting
-1.10. External Links
+
 */
 
-/*--------------------------------------*/
-
 /** Main Site Colors **/
+
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
@@ -61,10 +64,9 @@ nav#fallback-nav li button = 22
 nav#nav2 #overlay-menu = 200
 */
 
-/** 0.0 Section Tile Colors **/
-
-/* section-specific colors */
+/** 0.0 Section-Specific Colors */
 /* for further section-specific color specs, see /css/cluster.css and /css/content.css, /css/index.css */
+
 /* used for underlining current section in nav with section-specific color */
 nav#nav1 a #home.current{
 	border-bottom: 3px solid #395375;
@@ -88,11 +90,9 @@ nav#nav1 a:focus .current{
 }
 
 
-
-/** 1.0 Main CSS **/
-
 /* 1.1. Main Components */
 
+/* applies border-box to entire site */
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -204,20 +204,6 @@ main section ol,
 main section ul{
 	text-align: left;
 }
-
-/* endnote lists; currently only used on /html/syllabi/capital-l_literature.html */
-ol.endnotes{
-	padding: 0 0 0 1em;
-}
-/* title for endnote lists */ 
-/* adapted from https://stackoverflow.com/a/20478913 */
-ol.endnotes:before{
-	content:attr(aria-label);
-	font-size: .9em;
-	font-style: italic;
-	margin: 0 0 .5rem -1rem;
-	display: inline-block;
-}
 /* main container for the footer */
 footer{
 	font-size: 1em;
@@ -268,23 +254,6 @@ footer p .site-detail a span,
 footer p .site-detail a:visited span{
 	text-decoration: underline;
 }
-/* interjected sections of text that are not part of the main page content */
-.breakout-quote{
-	font-size: .9em;
-	font-family: 'Noto Serif', serif;
-	background: #e6e6e6;
-	border-left: 11px solid #5378ac;
-	margin: 1.5em auto;
-	padding: .75em 1.5em;
-}
-/* divider lines */
-hr{
-	font-size: .9em;
-	background: #858585;
-	border: 0;
-	margin: 1.2em 0;
-	height: 1px;
-}
 @media only screen and (min-width: 768px){
 	hr{
 		margin: 2em 0;
@@ -309,152 +278,16 @@ hr{
 }
 
 
-/* 1.2.1. Cluster Pages */
-/* Moved to separate file */
+/* 1.2.1. Home Page */
+/* 1.2.1.1. Carousel */
+/* 1.2.2. Cluster Pages */
+/* 1.2.3. Content Pages */
+/* 1.2.3.1. YouTube Player */
+/* 1.2.3.2. Timeline */
+/* All moved to separate file */
 
 
-/* 1.2.2. Content Pages */
-/* Moved to separate file */
-
-
-/* 1.3. Anchors, Headings, Images */
-
-/* removes the default focus on individual items */
-*:focus{
-	outline: 0 none;
-}
-/* links */
-a,
-a:visited{
-	color: #395375;
-	background-color: transparent;
-}
-a:hover,
-a:focus{
-	color: #e6e6e6;
-	background-color: #395375;
-	transition: 0.2s;
-}
-/* links in the footer */
-footer a,
-footer a:visited{
-	color: #fff;
-}
-footer a:hover,
-footer a:focus{
-	color: #242424;
-	background-color: #e6e6e6;
-	transition: 0.2s;
-}
-/* links used in the "Page Citation" section */
-a.cite-link{
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	-ms-word-break: break-all;
-}
-/* sets the position of same-page links */
-[id]:target{
-	margin-top: -43px;
-	border-top: 43px solid transparent;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	background-clip: padding-box;
-}
-@media only screen and (min-width: 480px){
-	[id]:target{
-		margin-top: -49px;
-		border-top: 49px solid transparent;
-	}
-}
-@media only screen and (min-width: 768px){
-	[id]:target{
-		margin-top: -57px;
-		border-top: 57px solid transparent;
-	}
-}
-@media only screen and (min-width: 992px){
-	[id]:target{
-		margin-top: -65px;
-		border-top: 65px solid transparent;
-	}
-}
-/* headings */
-h1,
-h2,
-h3,
-h4{
-	color: #395375;
-}
-h1{
-  font-family: 'jacksilverregular';
-	line-height: 1em;
-	margin: 0;
-}
-h2, h3, h4, h5{
-	font-family: 'Noto Serif', serif;
-	font-weight: 700;
-}
-h2, h3, h4{
-	text-align: center;
-}
-h2{
-	font-size: 1.15em;
-	margin: 1em auto 0;
-}
-h3{
-	font-size: 1.1em;
-}
-h4,
-section section h4:first-child{
-	font-size: .95em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-section h4:first-child{
-	margin-top: 1.5em;
-}
-h5{
-	font-size: .95em;
-	font-weight: 700;
-	font-style: italic;
-	text-align: left;
-	margin-bottom: 1rem;
-}
-h5.alternate{
-	font-weight: 600;
-	font-style: normal;
-}
-h6{
-	font-size: 1.1rem;
-	font-weight: 600;
-	font-style: italic;
-	margin: 2em 0 1em;
-}
-h7{
-	font-style: italic;
-}
-/* images */
-img{
-	font-weight: 300;
-	border-style: none;
-	width: 100%;
-}
-/* hyperlinked images */
-a img{
-	border: 3px #fff solid;
-}
-a:hover img,
-a:focus img{
-	border: 3px #395375 solid;
-}
-/* creates a solid border for images when added */
-.image-border{
-	border: 1px solid #858585;
-}
-
-
-/* 1.4.1. Navigation: Main */
+/* 1.3.1. Navigation: Main */
 
 /* "skip to main content" tab */ 
 /* adapted from https://webaim.org/techniques/skipnav/ */
@@ -724,7 +557,7 @@ nav#fallback-nav li button:focus i{
 }
 
 
-/* 1.4.2. Overlay */
+/* 1.3.2. Overlay */
 
 /* main container for overlay */
 nav#nav2{
@@ -864,19 +697,173 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 
 
-/* 1.5. Carousel */
-/* Moved to separate file */
+/* 1.4. Anchors */
+
+/* removes the default focus on individual items */
+*:focus{
+	outline: 0 none;
+}
+/* links */
+a,
+a:visited{
+	color: #395375;
+	background-color: transparent;
+}
+a:hover,
+a:focus{
+	color: #e6e6e6;
+	background-color: #395375;
+	transition: 0.2s;
+}
+/* links in the footer */
+footer a,
+footer a:visited{
+	color: #fff;
+}
+footer a:hover,
+footer a:focus{
+	color: #242424;
+	background-color: #e6e6e6;
+	transition: 0.2s;
+}
+/* links used in the "Page Citation" section */
+a.cite-link{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+}
+/* sets the position of same-page links */
+[id]:target{
+	margin-top: -43px;
+	border-top: 43px solid transparent;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+@media only screen and (min-width: 480px){
+	[id]:target{
+		margin-top: -49px;
+		border-top: 49px solid transparent;
+	}
+}
+@media only screen and (min-width: 768px){
+	[id]:target{
+		margin-top: -57px;
+		border-top: 57px solid transparent;
+	}
+}
+@media only screen and (min-width: 992px){
+	[id]:target{
+		margin-top: -65px;
+		border-top: 65px solid transparent;
+	}
+}
 
 
-/* 1.6. YouTube Player */
-/* Moved to separate file */
+/* 1.4.1. External Links */
+
+/* external link and email icons; actual icons provided by ForkAwesome */
+a[aria-label="External Link"],
+a[aria-label="External Client"]{
+	margin-right: .15rem;
+}
+a[aria-label="External Link"]:after{
+	content: "\f08e";
+}
+a[aria-label="External Client"]:after{
+	content: "\f003";
+}
+a[aria-label="External Link"]:after,
+a[aria-label="External Client"]:after{
+	font: normal normal normal 14px/1 ForkAwesome;
+	-moz-osx-font-smoothing: grayscale;
+	padding-left: .15rem;
+}
+footer a[aria-label="External Link"]:after,
+footer a[aria-label="External Client"]:after{
+	padding-left: .2rem;
+}
 
 
-/* 1.7. Timeline */
-/* Moved to separate file */
+/* 1.5. Headings */
+h1,
+h2,
+h3,
+h4{
+	color: #395375;
+}
+h1{
+  font-family: 'jacksilverregular';
+	line-height: 1em;
+	margin: 0;
+}
+h2, h3, h4, h5{
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+}
+h2, h3, h4{
+	text-align: center;
+}
+h2{
+	font-size: 1.15em;
+	margin: 1em auto 0;
+}
+h3{
+	font-size: 1.1em;
+}
+h4,
+section section h4:first-child{
+	font-size: .95em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+section h4:first-child{
+	margin-top: 1.5em;
+}
+h5{
+	font-size: .95em;
+	font-weight: 700;
+	font-style: italic;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+h5.alternate{
+	font-weight: 600;
+	font-style: normal;
+}
+h6{
+	font-size: 1.1rem;
+	font-weight: 600;
+	font-style: italic;
+	margin: 2em 0 1em;
+}
+h7{
+	font-style: italic;
+}
 
 
-/* 1.8. Scroll to Top Button */
+/* 1.6. Images */
+img{
+	font-weight: 300;
+	border-style: none;
+	width: 100%;
+}
+/* hyperlinked images */
+a img{
+	border: 3px #fff solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #395375 solid;
+}
+/* creates a solid border for images when added */
+.image-border{
+	border: 1px solid #858585;
+}
+
+
+/* 1.7. Scroll to Top Button */
 
 /* "Top" button; appears in the upper right-hand corner of the page after the user scrolls down and takes the user back to the top of the page */ 
 /* adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
@@ -897,7 +884,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 	z-index: 99;
 	display: none;
 	visibility: hidden;
-  }
+}
 @media only screen and (min-width: 480px){
 	#topButton{
 		top: calc(53px + .25rem);
@@ -936,31 +923,41 @@ nav#nav2 #overlay-menu li button.close:focus i{
 }
 
 
-/* 1.9. External Links */
-/* external link and email icons; actual icons provided by ForkAwesome */
-a[aria-label="External Link"],
-a[aria-label="External Client"]{
-	margin-right: .15rem;
+/* 1.8. Other Components */
+
+/* divider lines */
+hr{
+	font-size: .9em;
+	background: #858585;
+	border: 0;
+	margin: 1.2em 0;
+	height: 1px;
 }
-a[aria-label="External Link"]:after{
-	content: "\f08e";
+/* interjected sections of text that are not part of the main page content */
+.breakout-quote{
+	font-size: .9em;
+	font-family: 'Noto Serif', serif;
+	background: #e6e6e6;
+	border-left: 11px solid #5378ac;
+	margin: 1.5em auto;
+	padding: .75em 1.5em;
 }
-a[aria-label="External Client"]:after{
-	content: "\f003";
+/* endnote lists; currently only used on /html/syllabi/capital-l_literature.html */
+.endnotes{
+	padding: 0 0 0 1em;
 }
-a[aria-label="External Link"]:after,
-a[aria-label="External Client"]:after{
-	font: normal normal normal 14px/1 ForkAwesome;
-	-moz-osx-font-smoothing: grayscale;
-	padding-left: .15rem;
-}
-footer a[aria-label="External Link"]:after,
-footer a[aria-label="External Client"]:after{
-	padding-left: .2rem;
+/* title for endnote lists */ 
+/* adapted from https://stackoverflow.com/a/20478913 */
+.endnotes:before{
+	content:attr(aria-label);
+	font-size: .9em;
+	font-style: italic;
+	margin: 0 0 .5rem -1rem;
+	display: inline-block;
 }
 
 
-/* 1.10. Formatting */
+/* 1.9. Formatting */
 
 /* random elements of formatting; annotated only as needed */
 .center{
