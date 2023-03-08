@@ -883,7 +883,7 @@ nav#fallback-nav li button:focus-within{
 	background-color: #395375;
 	transition: 0.2s;
 }
-/* hamburger menu icon (actual icon provided by FontAwesome) */
+/* hamburger menu icon; actual icon provided by FontAwesome */
 nav#nav1 li button i,
 nav#fallback-nav li button i{
 	font-size: 1.3rem;
@@ -1036,7 +1036,7 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 	background-color: #395375;
 	transition: 0.2s;
 }
-/* close icon (actual icon provided by FontAwesome) */
+/* close icon; actual icon provided by FontAwesome */
 nav#nav2 #overlay-menu li button.close i{
 	color: #242424;
 	font-size: 1.3rem;
@@ -1130,6 +1130,7 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 
 /* 1.9. External Links */
+/* styling, as appropriate, for external link and email icons; actual icons provided by ForkAwesome */
 a[aria-label="External Link"],
 a[aria-label="External Client"]{
 	margin-right: .15rem;
@@ -1154,17 +1155,9 @@ footer a[aria-label="External Client"]:after{
 
 /* 1.10. Formatting */
 
-.bold{
-	font-weight: bold;
-}
+/* random elements of formatting; annotated only as needed */
 .center{
 	text-align: center;
-}
-.half{
-	width: 50%;
-}
-.italic{
-	font-style: italic;
 }
 .large{
 	font-size: 1.05em;
@@ -1174,6 +1167,9 @@ footer a[aria-label="External Client"]:after{
 }
 .largest{
 	font-size: 1.15em;
+}
+.left{
+	text-align: left;
 }
 .right{
 	text-align: right;
@@ -1196,12 +1192,7 @@ strong{
 .underline{
 	text-decoration: underline;
 }
+/* used to prevent a segment of text from breaking over two or more lines */
 .word{
 	white-space: nowrap;
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
 }
