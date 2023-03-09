@@ -591,6 +591,7 @@ nav#nav2 #overlay-menu ul li{
 /* first item in overlay (item for close overlay button) */
 nav#nav2 #overlay-menu ul li:first-child{
 	height: 43px;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
