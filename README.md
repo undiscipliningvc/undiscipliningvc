@@ -2,10 +2,6 @@
 
 This is the main repository for the [Undisciplining the Victorian Classroom](https://undiscipliningvc.org/) (UVC) site, structured as follows:
 
-<br>
-<br>
-
-
 ## Levels
 * **1:** Standalone site pages, including /404.html, /index.html, and /sitemap.html
 
@@ -14,9 +10,6 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 * **3:** Content pages, i.e., pages that present the content of the site, in particular all files in the following subdirectories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, /html/zoomcasts
 
 * **4:** Downloadable files, i.e., all the files that appear in /pdf
-
-<br>
-<br>
 
 ## Subdirectories in the Root Directory
 * **0_dev:** Files needed for developing the site. These include icons, page templates, a sample annotated HTML file, image conversion code, and the UVC peer review stamp.
@@ -35,10 +28,6 @@ fonts:** At present just the font to create the main UVC logo.
 * **js:** All the site's JS files. Each file is annotated for function and to indicate, as relevant, sources of code.
 
 * **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files.
-
-<br>
-<br>
-
 
 ## Loose Files in the Root Directory
 * **404.html:** Users are directed to this page when they try to access a page of the UVC site that doesn't exist.
