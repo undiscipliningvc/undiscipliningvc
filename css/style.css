@@ -93,11 +93,15 @@ nav#nav1 a:focus .current{
 /* 1.1. Main Components */
 
 /* applies border-box to entire site */
-/* *, *:before, *:after {
+*, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-} */
+}
+/* removes the default focus on individual items */
+*:focus{
+	outline: 0 none;
+}
 /* color applied when user highlights text on a page */ 
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
@@ -110,17 +114,22 @@ nav#nav1 a:focus .current{
 	background: #395375;
   text-shadow: none;
 }
+/* styles for entire site */
+:root{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+	line-height: 2rem;
+	color: #212119;
+}
 /* main containter for html pages */
 html{
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	color: #212119;
-	background-color: #fff;
 	-ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+	background-color: #fff;
 }
 /* main container for body of html pages */
 body{
+	font-size: 1.1rem;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
@@ -137,13 +146,13 @@ body{
 /* note: the coding on this should be changed to support accessibility */
 header{
 	margin: 43px auto 0;
-	padding: 0 .75em;
+	padding: 0 .75rem;
 	position: relative;
 }
 @media only screen and (min-width: 480px){
 	header{
 		margin-top: 49px;
-		padding: 0 1em;
+		padding: 0 1rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -158,22 +167,20 @@ header{
 }
 /* container for the main part of the page (i.e., everything but the header and footer) */
 main{
-	font-size: 1.1em;
 	text-align: center;
-	line-height: 1.875em;
 	margin: 0 auto;
-	padding: 0 1em 1em;
+	padding: 0 1rem 1rem;
 	max-width: 700px;
 	display: block;
 }
 @media only screen and (min-width: 768px){
 	main{
-		padding: 1.25em 1em 1em;
+		padding: 1rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	main{
-		max-width: 650px;
+		max-width: 685px;
 	}
 }
 /* the summary element is used for the "Overview" section */
@@ -204,39 +211,40 @@ main section ol,
 main section ul{
 	text-align: left;
 }
+/* rem */
 /* main container for the footer */
 footer{
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: center;
-	line-height: 1.875em;
+	/* line-height: 1.875rem; */
 	color: #fff;
 	background: #2e2e2e;
-	margin: .75em auto 0;
-	padding: .25em 1em 1em 1em;
+	margin: .75rem auto 0;
+	padding: .25rem 1rem 1rem;
 }
 @media only screen and (min-width: 768px){
 	footer{
-		margin: 1em auto 0;
-		padding: .5em 1em 1em 1em;
+		margin: 1rem auto 0;
+		padding: .5rem 1rem 1rem;
 	}
 }
 /* main container for individual items in the footer */
 /* note: the coding on this could be changed to an unordered list to support accessibility */
 footer p .site-detail{
-	line-height: 1.875em;
-	padding: 0 .2em;
+	/* line-height: 1.875rem; */
+	padding: 0 .2rem;
 }
 /* separator for individual items in the footer */
 footer p .site-detail::after{
 	content: ' | ';
-	padding-left: .5em;
+	padding-left: .5rem;
 }
 footer p .site-detail:last-child::after{
 	content: '';
 }
 @media only screen and (min-width: 480px){
 	footer p .site-detail{
-		padding: 0 .3em;
+		padding: 0 .3rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -256,7 +264,7 @@ footer p .site-detail a:visited span{
 }
 @media only screen and (min-width: 768px){
 	hr{
-		margin: 2em 0;
+		margin: 2rem 0;
 	}
 }
 /* help make the overlay disappear above 1200px */
@@ -292,7 +300,7 @@ footer p .site-detail a:visited span{
 /* "skip to main content" tab */ 
 /* adapted from https://webaim.org/techniques/skipnav/ */
 #nav0 a{
-	font-size: 1em;
+	font-size: 1rem;
 	color: #fff;
 	background-color: rgb(66,66,66);
 	border-right: 2px solid #fff;
@@ -302,7 +310,7 @@ footer p .site-detail a:visited span{
 	border-bottom-right-radius: 8px;
 	padding: 8px 6px;
 	position: absolute;
-	top: -40px;
+	top: -48px;
 	left: 0px;
 	z-index: 100;
 	-webkit-transition: top 1s ease-out;
@@ -326,7 +334,7 @@ nav#nav1,
 nav#fallback-nav{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	line-height: 1em;
+	/* line-height: 1rem; */
 	cursor: pointer;
   background-color: #fff;
 	margin: 0 auto;
@@ -383,7 +391,7 @@ nav#fallback-nav ul{
 @media only screen and (min-width: 480px){
 	nav#nav1 ul,
 	nav#fallback-nav ul{
-		padding: 0 1em 0 .5em;
+		padding: 0 1rem 0 .5rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -424,13 +432,13 @@ nav#fallback-nav h1{
 @media only screen and (min-width: 480px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
-		font-size: 1.6em;
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
-		font-size: 2em;
+		font-size: 2rem;
 	}
 }
 nav#nav1 a:hover h1,
@@ -446,14 +454,14 @@ nav#fallback-nav a:focus-within h1{
 }
 /* items in nav excepting site logo and hamburger menu */
 nav#nav1 ul li:not(:first-child):not(:last-child){
-	font-size: .95em;
+	font-size: .95rem;
 	font-weight: 600;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 1200px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
-		font-size: 1em;
+		font-size: 1rem;
 		display: block;
 		visibility: visible;
 	}
@@ -631,7 +639,7 @@ nav#nav2 #overlay-menu li a:focus{
 }
 /* text container within item in overlay */
 nav#nav2 #overlay-menu ul li a span{
-	font-size: .95em;
+	font-size: .95rem;
 	font-family: 'Noto Serif', serif;
 }
 /* close overlay button */
@@ -699,10 +707,6 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 /* 1.4. Anchors */
 
-/* removes the default focus on individual items */
-*:focus{
-	outline: 0 none;
-}
 /* links */
 a,
 a:visited{
@@ -795,7 +799,7 @@ h4{
 }
 h1{
   font-family: 'jacksilverregular';
-	line-height: 1em;
+	/* line-height: 1rem; */
 	margin: 0;
 }
 h2, h3, h4, h5{
@@ -806,23 +810,23 @@ h2, h3, h4{
 	text-align: center;
 }
 h2{
-	font-size: 1.15em;
-	margin: 1em auto 0;
+	font-size: 1.25rem;
+	margin: 1rem auto 0;
 }
 h3{
-	font-size: 1.1em;
+	font-size: 1.15rem;
 }
 h4,
 section section h4:first-child{
-	font-size: .95em;
+	font-size: 1.05rem;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 section h4:first-child{
-	margin-top: 1.5em;
+	margin-top: 1.5rem;
 }
 h5{
-	font-size: .95em;
+	font-size: 1rem;
 	font-weight: 700;
 	font-style: italic;
 	text-align: left;
@@ -833,10 +837,10 @@ h5.alternate{
 	font-style: normal;
 }
 h6{
-	font-size: 1.1rem;
+	font-size: 1.15rem;
 	font-weight: 600;
 	font-style: italic;
-	margin: 2em 0 1em;
+	margin: 2rem 0 1rem;
 }
 h7{
 	font-style: italic;
@@ -869,7 +873,7 @@ a:focus img{
 /* adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
-	font-size: .95em;
+	font-size: .95rem;
 	color: #fff;
 	background-color: #395375;
 	border: 2px solid #fff;
@@ -927,30 +931,30 @@ a:focus img{
 
 /* divider lines */
 hr{
-	font-size: .9em;
+	font-size: .9rem;
 	background: #858585;
 	border: 0;
-	margin: 1.2em 0;
+	margin: 1.2rem 0;
 	height: 1px;
 }
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
-	font-size: .9em;
+	font-size: .9rem;
 	font-family: 'Noto Serif', serif;
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
-	margin: 1.5em auto;
-	padding: .75em 1.5em;
+	margin: 1.5rem auto;
+	padding: .75rem 1.5rem;
 }
 /* endnote lists; currently only used on /html/syllabi/capital-l_literature.html */
 .endnotes{
-	padding: 0 0 0 1em;
+	padding: 0 0 1rem;
 }
 /* title for endnote lists */ 
 /* adapted from https://stackoverflow.com/a/20478913 */
 .endnotes:before{
 	content:attr(aria-label);
-	font-size: .9em;
+	font-size: .9rem;
 	font-style: italic;
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
@@ -964,13 +968,13 @@ hr{
 	text-align: center;
 }
 .large{
-	font-size: 1.05em;
+	font-size: 1.2rem;
 }
 .larger{
-	font-size: 1.1em;
+	font-size: 1.25rem;
 }
 .largest{
-	font-size: 1.15em;
+	font-size: 1.3rem;
 }
 .left{
 	text-align: left;
@@ -979,13 +983,13 @@ hr{
 	text-align: right;
 }
 .small{
-	font-size: .95em;
+	font-size: 1rem;
 }
 .smaller{
-	font-size: .9em;
+	font-size: .95rem;
 }
 .smallest{
-	font-size: .85em;
+	font-size: .9rem;
 }
 .smallcaps{
 	font-variant: small-caps;
