@@ -9,7 +9,8 @@
 
 /* hyperlinks for centuries */
 .timeline-dates{
-  display: flex;
+  display: -webkit-flex;
+	display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: .75rem;
