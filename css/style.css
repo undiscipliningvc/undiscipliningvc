@@ -211,12 +211,10 @@ main section ol,
 main section ul{
 	text-align: left;
 }
-/* rem */
 /* main container for the footer */
 footer{
 	font-size: 1rem;
 	text-align: center;
-	/* line-height: 1.875rem; */
 	color: #fff;
 	background: #2e2e2e;
 	margin: .75rem auto 0;
@@ -231,21 +229,15 @@ footer{
 /* main container for individual items in the footer */
 /* note: the coding on this could be changed to an unordered list to support accessibility */
 footer p .site-detail{
-	/* line-height: 1.875rem; */
-	padding: 0 .2rem;
+	padding: 0 .1rem;
 }
 /* separator for individual items in the footer */
 footer p .site-detail::after{
 	content: ' | ';
-	padding-left: .5rem;
+	padding-left: .2rem;
 }
 footer p .site-detail:last-child::after{
 	content: '';
-}
-@media only screen and (min-width: 480px){
-	footer p .site-detail{
-		padding: 0 .3rem;
-	}
 }
 @media only screen and (min-width: 768px){
 	footer p .site-detail{
@@ -308,7 +300,7 @@ footer p .site-detail a:visited span{
 	-webkit-border-right-radius: 8px;
 	-moz-border-right-radius: 8px;
 	border-bottom-right-radius: 8px;
-	padding: 8px 6px;
+	padding: 8px 10px;
 	position: absolute;
 	top: -48px;
 	left: 0px;
@@ -332,10 +324,6 @@ footer p .site-detail a:visited span{
 /* main container for nav and fallback nav */
 nav#nav1,
 nav#fallback-nav{
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	/* line-height: 1rem; */
-	cursor: pointer;
   background-color: #fff;
 	margin: 0 auto;
 	width: 100%;
@@ -380,24 +368,31 @@ nav#nav1 ul,
 nav#fallback-nav ul{
 	list-style: none;
 	margin: 0 auto;
-	padding: 0 8px;
+	padding: 0 .5rem;
 	height: 100%;
-	max-width: 700px;
+	/* max-width: 700px; */
 	display: -webkit-flex !important;
 	display: flex !important;
 	justify-content: space-between;
 	align-items: center;
 }
+/* rem */
 @media only screen and (min-width: 480px){
 	nav#nav1 ul,
 	nav#fallback-nav ul{
-		padding: 0 1rem 0 .5rem;
+		/* padding: 0 1.25rem 0 .5rem; */
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav1 ul,
+	nav#fallback-nav ul{
+		/* padding: 0 1.5rem 0 .75rem; */
 	}
 }
 @media only screen and (min-width: 992px){
 	nav#nav1 ul,
 	nav#fallback-nav ul{
-		padding: 0 16px;
+		/* padding: 0 1.75rem 0  1rem; */
 		max-width: 1366px;
 	}
 }
@@ -452,16 +447,15 @@ nav#fallback-nav a:focus-within h1{
 	border-radius: 5px;
 	transition: 0.2s;
 }
-/* items in nav excepting site logo and hamburger menu */
+/* hide items in nav excepting site logo and hamburger menu below 1200px */
 nav#nav1 ul li:not(:first-child):not(:last-child){
-	font-size: .95rem;
-	font-weight: 600;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 1200px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
 		font-size: 1rem;
+		font-weight: 600;
 		display: block;
 		visibility: visible;
 	}
@@ -601,8 +595,10 @@ nav#nav2 #overlay-menu{
 nav#nav2 #overlay-menu ul{
 	text-align: right;
 	list-style: none;
-	margin: 43px 0 0 0;
-	padding: 0;
+	/* margin: 43px 0 0 0; */
+	/* padding: 0; */
+	margin: 0;
+	padding: 0 .5rem;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu ul{
@@ -622,6 +618,13 @@ nav#nav2 #overlay-menu ul{
 /* single item in overlay */
 nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
+}
+
+nav#nav2 #overlay-menu ul li:first-child{
+	height: 43px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 /* hyperlink within item in overlay */
 nav#nav2 #overlay-menu li a{
@@ -649,27 +652,32 @@ nav#nav2 #overlay-menu li button.close{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	padding: 7px 8px 5px;
-	position: absolute;
-	top: 5px;
-	right: 10px;
+	width: 34.2px;
+	height: 33.15px;
+	/* padding: 7px 8px 5px;
+	width: 34.2px; */
+	/* position: absolute; */
+	/* top: 5px;
+	right: .5rem */
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
-		padding: 6px 8px;
-		right: 18px;
+		/* padding: 6px 8px;
+		width: 38.2px;
+		right: 1.25rem */
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
+		/* width: 41.2px;
 		top: 8px;
-		right: 40px;
+		right: 1.5rem; */
 	}
 }
 @media only screen and (min-width: 992px){
 	nav#nav2 #overlay-menu li button.close{
-		top: 11px;
-		right: 16px;
+		/* top: 11px;
+		right: 16px; */
 	}
 }
 /* hide close overlay button above 1200px */
@@ -696,7 +704,7 @@ nav#nav2 #overlay-menu li button.close i{
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
