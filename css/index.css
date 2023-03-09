@@ -70,7 +70,7 @@
 @media only screen and (min-width: 480px){
 	.section-tiles ul li{
 		margin: .5rem;
-		flex: 1 1 calc(50% - 2rem - 1px)
+		flex: 1 1 calc(50% - 2rem)
 	}
 }
 @media only screen and (min-width: 992px){
