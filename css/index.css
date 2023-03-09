@@ -41,13 +41,13 @@
 }
 /* the container for cluster page tiles */
 .section-tiles{
-	font-size: 1.1em;
-	margin-bottom: 1em;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
 }
 /* the list of cluster page tiles */
 .section-tiles ul{
 	list-style: none;
-	margin: .75em auto 0;
+	margin: .75rem auto 0;
 	padding: 0;
 	display: -webkit-flex;
 	display: flex;
@@ -63,20 +63,20 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin: .75em;
+	margin: .75rem;
 	flex: 1 1 100%;
 	position: relative;
 }
 @media only screen and (min-width: 480px){
 	.section-tiles ul li{
-		margin: .5em;
-		flex: 1 1 calc(50% - 2.25em - 1px)
+		margin: .5rem;
+		flex: 1 1 calc(50% - 2.25rem - 1px)
 	}
 }
 @media only screen and (min-width: 992px){
 	.section-tiles ul li{
-		margin: .75em;
-		flex: 1 1 calc(50% - 2.25em - 1px)
+		margin: .75rem;
+		flex: 1 1 calc(50% - 2.25rem - 1px)
 	}
 }
 /* ratio box used to set up cluster page tiles */ 
@@ -118,7 +118,7 @@
 }
 /* container for "Founding Developers" section */
 .founding-dev{
-	margin: 0 auto 2em;	
+	margin: 0 auto 2rem;	
 	display: inline-block;
 }
 /* list of people for "Founding Developers" section */
@@ -135,14 +135,14 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin: .5em auto;
-	padding: 0 1em 1em;
+	margin: .5rem auto;
+	padding: 0 1rem 1rem;
 	display: inline-block;
 }
 /* paragraph for text in social media links section */
 .participate p{
 	text-align: center;
-	margin: .5em 0;
+	margin: .5rem 0;
 }
 /* container for social media links in social media links section */
 .participate div{
@@ -154,13 +154,13 @@
 /* hyperlink for social media links */
 .participate a,
 .participate a:visited{
-	font-size: .95em;
-	line-height: 1.2em;
+	font-size: .95rem;
+	/* line-height: 1.2rem; */
 	color: #fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin: 0 .25em;
+	margin: 0 .25rem;
 	padding: 4px 5px;
 	text-decoration: none;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -168,8 +168,8 @@
 @media only screen and (min-width: 768px){
 	.participate a,
 	.participate a:visited{
-		line-height: 1em;
-		margin: 0 .5em;
+		/* line-height: 1rem; */
+		margin: 0 .5rem;
 		padding: 4px 7px;
 	}
 }
@@ -199,6 +199,6 @@
 /* spacing for section following social media links section */
 @media only screen and (min-width: 768px){
 	.participate + section{
-		margin-top: 2em;
+		margin-top: 2rem;
 	}
 }
