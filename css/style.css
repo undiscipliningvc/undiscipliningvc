@@ -367,32 +367,18 @@ nav#fallback-nav.borderBottom{
 nav#nav1 ul,
 nav#fallback-nav ul{
 	list-style: none;
-	margin: 0 auto;
-	padding: 0 .5rem;
+	margin: 0;
+	padding: 0 1rem 0 .5rem;
 	height: 100%;
-	/* max-width: 700px; */
 	display: -webkit-flex !important;
 	display: flex !important;
 	justify-content: space-between;
 	align-items: center;
 }
-/* rem */
-@media only screen and (min-width: 480px){
-	nav#nav1 ul,
-	nav#fallback-nav ul{
-		/* padding: 0 1.25rem 0 .5rem; */
-	}
-}
-@media only screen and (min-width: 768px){
-	nav#nav1 ul,
-	nav#fallback-nav ul{
-		/* padding: 0 1.5rem 0 .75rem; */
-	}
-}
 @media only screen and (min-width: 992px){
 	nav#nav1 ul,
 	nav#fallback-nav ul{
-		/* padding: 0 1.75rem 0  1rem; */
+		width: 100%;
 		max-width: 1366px;
 	}
 }
@@ -595,43 +581,41 @@ nav#nav2 #overlay-menu{
 nav#nav2 #overlay-menu ul{
 	text-align: right;
 	list-style: none;
-	/* margin: 43px 0 0 0; */
-	/* padding: 0; */
 	margin: 0;
-	padding: 0 .5rem;
-}
-@media only screen and (min-width: 480px){
-	nav#nav2 #overlay-menu ul{
-		margin-top: 49px;
-	}
-}
-@media only screen and (min-width: 768px){
-	nav#nav2 #overlay-menu ul{
-		margin-top: 57px;
-	}
-}
-@media only screen and (min-width: 992px){
-	nav#nav2 #overlay-menu ul{
-		margin-top: 65px;
-	}
+	padding: 0 1rem 0 .5rem;
 }
 /* single item in overlay */
 nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
 }
-
+/* first item in overlay (item for close overlay button) */
 nav#nav2 #overlay-menu ul li:first-child{
 	height: 43px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 }
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu ul li:first-child{
+		height: 49px;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu ul li:first-child{
+		height: 57px;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu ul li:first-child{
+		height: 65px;
+	}
+}
 /* hyperlink within item in overlay */
 nav#nav2 #overlay-menu li a{
   color: #242424;
 	text-decoration: none;
 	white-space: nowrap;
-  padding: 20px 40px;
+  padding: 20px 30px;
 	display: block;
 }
 nav#nav2 #overlay-menu li a:hover,
@@ -654,30 +638,17 @@ nav#nav2 #overlay-menu li button.close{
 	border-radius: 5px;
 	width: 34.2px;
 	height: 33.15px;
-	/* padding: 7px 8px 5px;
-	width: 34.2px; */
-	/* position: absolute; */
-	/* top: 5px;
-	right: .5rem */
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
-		/* padding: 6px 8px;
-		width: 38.2px;
-		right: 1.25rem */
+		width: 38.4px;
+		height: 37.6px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
-		/* width: 41.2px;
-		top: 8px;
-		right: 1.5rem; */
-	}
-}
-@media only screen and (min-width: 992px){
-	nav#nav2 #overlay-menu li button.close{
-		/* top: 11px;
-		right: 16px; */
+		width: 41.2px;
+		height: 40.8px;
 	}
 }
 /* hide close overlay button above 1200px */
@@ -704,7 +675,7 @@ nav#nav2 #overlay-menu li button.close i{
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
@@ -794,7 +765,7 @@ a[aria-label="External Client"]:after{
 }
 footer a[aria-label="External Link"]:after,
 footer a[aria-label="External Client"]:after{
-	padding-left: .2rem;
+	padding-left: .25rem;
 }
 
 
@@ -807,7 +778,6 @@ h4{
 }
 h1{
   font-family: 'jacksilverregular';
-	/* line-height: 1rem; */
 	margin: 0;
 }
 h2, h3, h4, h5{
@@ -819,7 +789,7 @@ h2, h3, h4{
 }
 h2{
 	font-size: 1.25rem;
-	margin: 1rem auto 0;
+	margin: 1.25rem auto 0;
 }
 h3{
 	font-size: 1.15rem;
@@ -834,7 +804,7 @@ section h4:first-child{
 	margin-top: 1.5rem;
 }
 h5{
-	font-size: 1rem;
+	font-size: 1.05rem;
 	font-weight: 700;
 	font-style: italic;
 	text-align: left;
@@ -845,7 +815,7 @@ h5.alternate{
 	font-style: normal;
 }
 h6{
-	font-size: 1.15rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	font-style: italic;
 	margin: 2rem 0 1rem;
@@ -906,13 +876,11 @@ a:focus img{
 @media only screen and (min-width: 768px){
 	#topButton{
 		top: calc(61px + .25rem);
-		right: 2.75rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	#topButton{
 		top: calc(69px + .25rem);
-		right: 1.25rem;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -939,30 +907,28 @@ a:focus img{
 
 /* divider lines */
 hr{
-	font-size: .9rem;
 	background: #858585;
 	border: 0;
-	margin: 1.2rem 0;
+	margin: 1.25rem 0;
 	height: 1px;
 }
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
-	font-size: .9rem;
+	font-size: .95rem;
 	font-family: 'Noto Serif', serif;
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
 	margin: 1.5rem auto;
-	padding: .75rem 1.5rem;
 }
 /* endnote lists; currently only used on /html/syllabi/capital-l_literature.html */
 .endnotes{
-	padding: 0 0 1rem;
+	padding: 0 0 0 1rem;
 }
 /* title for endnote lists */ 
 /* adapted from https://stackoverflow.com/a/20478913 */
 .endnotes:before{
 	content:attr(aria-label);
-	font-size: .9rem;
+	font-size: 1rem;
 	font-style: italic;
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
