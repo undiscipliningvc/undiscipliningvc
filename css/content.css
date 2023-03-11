@@ -127,43 +127,30 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	margin-top: 2.5rem;
 	margin-bottom: 2rem;
 }
-.content main section:first-of-type,
-.content main hr+section {
- margin-top: 1.5em;
+/* spacing for various kinds of sections */
+.content main section:first-of-type{
+ margin-top: 0;
  margin-bottom: 1.5em
+}
+.content main hr+section {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em
+}
+@media only screen and (min-width: 992px){
+	.content main section:first-of-type{
+	margin-top: 1.5em;
+	}
 }
 .content main section > section{
 	margin-top: 2em;
 	margin-bottom: 2em
 }
-.content main section section section:first-of-type{
-	margin-top: 1.5rem;
-}
 .content main section p+.content main section:first-of-type {
  margin-top: 2.5em
 }
-
-/* .content main section:first-of-type,
-.content main hr + section{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+.content main section section section:first-of-type{
+	margin-top: 1.5rem;
 }
-.content main section section{
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-} */
-/* .content main section{
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-}
-.content main section section section{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-} */
-/* .content main section section section:first-of-type{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-} */
 /* alignment for 404 page */
 .content.error404 main section:first-of-type,
 .content.error404 main section:first-of-type p{
@@ -172,14 +159,14 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* ratio box used for header images */ 
 /* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .content main .aspect-ratio-box{
-	margin: .75rem auto 1.75rem;
+	margin: 1rem auto 1.5rem;
 	padding: 0;
 	max-width: 700px;
 	position: relative;
 }
 @media only screen and (min-width: 992px){
 	.content main .aspect-ratio-box{
-		margin: 1.25rem auto 2rem;
+		margin: 1.5rem auto 2rem;
 		max-width: 900px;
 	}
 }
@@ -214,6 +201,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* information icon located in lower right-hand corner of header images */
 .content main .aspect-ratio-box .caption{
+	font-size: 1.7rem;
 	background-color: rgb(66,66,66);
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
@@ -228,7 +216,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media screen and (min-width: 480px){
 	.content main .aspect-ratio-box .caption{
-		font-size: 1.7rem;
 		padding: 4px 6px;
 	}
 }
@@ -250,26 +237,16 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
-	font-size: 1.4rem;
-}
-.content.about.error404 main h2{
-	font-size: 1.6rem;
-}
-.content.lesson-plans main h2,
-.content.syllabi main h2,
-.content.about main h2{
 	font-weight: 400;
 	font-variant: small-caps;
-	/* line-height: 1.2rem; */
+	line-height: 1.75rem;
 	color: #fff;
 	background-color: rgb(66,66,66);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 0;
-	padding: .3rem;
-	min-width: 60%;
-	max-width: 650px;
+	padding: .5rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -279,26 +256,45 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	opacity: .93;
 	z-index: 15;
 }
+.content.zoomcasts main h2{
+	font-variant: small-caps;
+	line-height: 1.75rem;
+	color: #242424;
+	margin: .5rem auto 0;
+}
+.content.about.error404 main h2{
+	font-size: 2rem;
+	white-space: nowrap;
+}
 @media only screen and (min-width: 480px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
-	.content.about main h2{
-		font-size: 1.6rem;
-	}
+	.content.about main h2,
+	.content.zoomcasts main h2{
+		font-size: 1.8rem;
+		line-height: 2.25rem;
+	}	
 	.content.about.error404 main h2{
-		font-size: 2.4rem;
+		font-size: 2.75rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
 	.content.about main h2{
-		font-size: 2.3rem;
-		max-width: 850px;
+		font-size: 2.6rem;
+		line-height: 3rem;
+		width: 60vw;
+		max-width: 700px;
+	}
+	.content.zoomcasts main h2{
+		font-size: 2.6rem;
+		line-height: 3rem;
+		margin: .5rem auto;
 	}
 	.content.about.error404 main h2{
 		font-size: 3rem;
-		max-width: 850px;
+		width: fit-content;
 	}
 }
 /* custom positioning for page title over top of header image */
@@ -321,23 +317,10 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	-moz-transform: translate(-50%, -70%);
 	transform: translate(-50%, -70%);
 }
-/* page title of zoomcasts content pages */
-.content.zoomcasts main h2{
-	font-size: 2.2rem;
-	font-variant: small-caps;
-	/* line-height: 1.4rem; */
-	color: #242424;
-	margin: 0 auto;
-}
-@media only screen and (min-width: 768px){
-	.content.zoomcasts main h2{
-		font-size: 2.4rem;
-		margin: .5rem auto;
-	}
-}
+/* rem */
 /* subsection title */
 .content main h3{
-	font-size: 1.35rem;
+	font-size: 1.3rem;
 	margin: 0 auto;
 }
 .content section.menu-container h3{
@@ -405,7 +388,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* sub-container for actual "Production Details" text */
 .content main .specs .specs-container{
-	margin-top: 1rem;
 	text-align: left;
 	display: inline-block;
 }
