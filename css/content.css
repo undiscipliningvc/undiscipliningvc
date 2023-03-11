@@ -26,40 +26,35 @@
 }
 /* the colored divider line at the top of content pages */
 .content header{
-	margin: calc(41px + .3rem) auto 0;
+	margin: 43px auto 0;
 	padding: 0;
 	height: 10px;
 	max-width: calc(100% - 26px);
 }
 @media only screen and (min-width: 480px){
 	.content header{
-		margin: calc(47px + .3rem) auto 0;
+		margin: 49px auto 0;
 		width: calc(100% - 30px);
 		max-width: 700px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content header{
-		margin: calc(51px + .3rem) auto 0;
+		margin: 57px auto 0;
 		height: 15px;
 		max-width: 1366px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.content header{
-		margin: calc(63px + .3rem) auto 0;
+		margin: 65px auto 0;
 		width: calc(100% - 46px);
 	}
 }
 /* the main container for content pages */
 .content main{
-	padding: 0 .75rem 1rem;
+	padding: 0 1rem 1rem;
 	max-width: 100%;
-}
-@media only screen and (min-width: 480px){
-	.content main{
-		padding: 0 16px 1rem;
-	}
 }
 @media only screen and (min-width: 768px){
 	.content main{
@@ -96,7 +91,7 @@
 .content main aside{
 	text-align: left;
 	max-width: 700px;
-	padding: .25rem 2rem;
+	padding: 1.25rem 2rem;
 	box-sizing: border-box;
 }
 @media only screen and (min-width: 992px){
@@ -127,15 +122,37 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main section section{
 	counter-reset: none;
 }
-/* spacing for initial content page section plus sections separated by lines (horizontal rules) or after paragraphs*/
-.content main section:first-of-type,
-.content main hr + section{
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+/* production details section */
+.content main .specs{
+	margin-top: 2.5rem;
+	margin-bottom: 2rem;
 }
-.content main section p + .content main section:first-of-type{
+/* overview section */
+.content main summary{
 	margin-top: 2.5rem;
 }
+
+/* .content main section:first-of-type,
+.content main hr + section{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.content main section section{
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+} */
+/* .content main section{
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+.content main section section section{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+} */
+/* .content main section section section:first-of-type{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+} */
 /* alignment for 404 page */
 .content.error404 main section:first-of-type,
 .content.error404 main section:first-of-type p{
@@ -309,7 +326,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* subsection title */
 .content main h3{
-	font-size: 1.15rem;
+	font-size: 1.35rem;
 	margin: 0 auto;
 }
 .content section.menu-container h3{
@@ -318,6 +335,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* user guide section headings; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
+	font-size: 1.2rem;
 	color: #242424;
 	text-align: left;
 }
