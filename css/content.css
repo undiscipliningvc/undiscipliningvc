@@ -26,44 +26,44 @@
 }
 /* the colored divider line at the top of content pages */
 .content header{
-	margin: calc(41px + .3em) auto 0;
+	margin: calc(41px + .3rem) auto 0;
 	padding: 0;
 	height: 10px;
 	max-width: calc(100% - 26px);
 }
 @media only screen and (min-width: 480px){
 	.content header{
-		margin: calc(47px + .3em) auto 0;
+		margin: calc(47px + .3rem) auto 0;
 		width: calc(100% - 30px);
 		max-width: 700px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content header{
-		margin: calc(51px + .3em) auto 0;
+		margin: calc(51px + .3rem) auto 0;
 		height: 15px;
+		max-width: 1366px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.content header{
-		margin: calc(63px + .3em) auto 0;
+		margin: calc(63px + .3rem) auto 0;
 		width: calc(100% - 46px);
-		max-width: 1366px;
 	}
 }
 /* the main container for content pages */
 .content main{
-	padding: 0 .75em 1em;
+	padding: 0 .75rem 1rem;
 	max-width: 100%;
 }
 @media only screen and (min-width: 480px){
 	.content main{
-		padding: 0 16px 1em;
+		padding: 0 16px 1rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content main{
-		padding: 0 0 1em;
+		padding: 0 0 1rem;
 	}
 }
 /* the main container for specific types of content pages */
@@ -96,7 +96,7 @@
 .content main aside{
 	text-align: left;
 	max-width: 700px;
-	padding: .25em 1em;
+	padding: .25rem 2rem;
 	box-sizing: border-box;
 }
 @media only screen and (min-width: 992px){
@@ -130,11 +130,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* spacing for initial content page section plus sections separated by lines (horizontal rules) or after paragraphs*/
 .content main section:first-of-type,
 .content main hr + section{
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 .content main section p + .content main section:first-of-type{
-	margin-top: 2.5em;
+	margin-top: 2.5rem;
 }
 /* alignment for 404 page */
 .content.error404 main section:first-of-type,
@@ -144,14 +144,14 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* ratio box used for header images */ 
 /* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .content main .aspect-ratio-box{
-	margin: .75em auto 1.75em;
+	margin: .75rem auto 1.75rem;
 	padding: 0;
 	max-width: 700px;
 	position: relative;
 }
 @media only screen and (min-width: 992px){
 	.content main .aspect-ratio-box{
-		margin: 1.25em auto 2em;
+		margin: 1.25rem auto 2rem;
 		max-width: 900px;
 	}
 }
@@ -200,7 +200,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media screen and (min-width: 480px){
 	.content main .aspect-ratio-box .caption{
-		font-size: 1.7em;
+		font-size: 1.7rem;
 		padding: 4px 6px;
 	}
 }
@@ -222,24 +222,24 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
-	font-size: 1.4em;
+	font-size: 1.4rem;
 }
 .content.about.error404 main h2{
-	font-size: 1.6em;
+	font-size: 1.6rem;
 }
 .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
 	font-weight: 400;
 	font-variant: small-caps;
-	line-height: 1.2em;
+	/* line-height: 1.2rem; */
 	color: #fff;
 	background-color: rgb(66,66,66);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 0;
-	padding: .3em;
+	padding: .3rem;
 	min-width: 60%;
 	max-width: 650px;
 	position: absolute;
@@ -255,21 +255,21 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
 	.content.about main h2{
-		font-size: 1.6em;
+		font-size: 1.6rem;
 	}
 	.content.about.error404 main h2{
-		font-size: 2.4em;
+		font-size: 2.4rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
 	.content.about main h2{
-		font-size: 2.3em;
+		font-size: 2.3rem;
 		max-width: 850px;
 	}
 	.content.about.error404 main h2{
-		font-size: 3em;
+		font-size: 3rem;
 		max-width: 850px;
 	}
 }
@@ -295,21 +295,21 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* page title of zoomcasts content pages */
 .content.zoomcasts main h2{
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	font-variant: small-caps;
-	line-height: 1.4em;
+	/* line-height: 1.4rem; */
 	color: #242424;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 768px){
 	.content.zoomcasts main h2{
-		font-size: 2.4em;
-		margin: .5em auto;
+		font-size: 2.4rem;
+		margin: .5rem auto;
 	}
 }
 /* subsection title */
 .content main h3{
-	font-size: 1.15em;
+	font-size: 1.15rem;
 	margin: 0 auto;
 }
 .content section.menu-container h3{
@@ -367,7 +367,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 768px){
 	.content a.link404{
-		font-size: 1.2em;
+		font-size: 1.2rem;
 	}
 }
 /* container for "Production Details" sections */
@@ -388,7 +388,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
-	font-size: .9em;
+	font-size: .9rem;
 	text-decoration: underline;
 }
 /* lists, items, and incremental numbering for "Lesson Plan Cluster Production Details" sections (variant of "Production Details" section) */
@@ -399,7 +399,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	counter-reset: items;
 }
 .content .cluster-details div ol li{
-	margin-right: .25em;
+	margin-right: .25rem;
 	display: inline;
 }
 .content .cluster-details div ol li::before{
@@ -411,21 +411,21 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	text-align: center;
 	border: 1px solid #949494;
 	margin: 0;
-	padding: 1.5em 2em 2em;
+	padding: 1.5rem 2rem 2rem;
 	display: inline-block;
 	box-sizing: border-box;
 }
 /* ordered list of subsections in content page menu */
 .content ol.menu{
-	font-size: .9em;
-	margin: 1em auto 0;
-	padding-left: 1.2em;
+	font-size: .9rem;
+	margin: 1rem auto 0;
+	padding-left: 1.2rem;
 	display: inline-block;
 }
 /* ordered list of sub-subsections in content page menus */
 .content ol.menu li ol{
 	list-style: lower-alpha;
-	padding-left: 1em;
+	padding-left: 1rem;
 }
 @media only screen and (min-width: 768px){
 	.content ol.menu li ol{
@@ -434,11 +434,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* various kinds of lists */
 .content section ul#topic-list{
-	padding: 0 0 0 1.2em;
+	padding: 0 0 1.2rem;
 }
 .content.about section ul{
 	list-style: none;
-	margin: 1.5em;
+	margin: 1.5rem;
 	padding: 0;
 }
 .content.about.values section ul{
@@ -447,7 +447,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* list items and list item hyperlinks */
 .content section ul li,
 .content section ul li a{
-	margin-bottom: .5em;
+	margin-bottom: .5rem;
 }
 /* paragraphs */
 .content section p{
@@ -456,7 +456,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* founding devs. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
 .content.about.founders section p img{
-	margin: .5em .75em 0 0;
+	margin: .5rem .75rem 0 0;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -464,7 +464,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 480px){
 	.content.about.founders section p img{
-		margin: .5em .75em 0 0;
+		margin: .5rem .75rem 0 0;
 		width: 50%;
 		float: left;
 		display: inline;
@@ -490,18 +490,18 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
 .content .annotation{
-	font-size: .9em;
-	margin: .25em 0 0 1.5em;
+	font-size: .9rem;
+	margin: .25rem 0 0 1.5rem;
 	display: block;
 }
 .content ul.annotation,
 .content ol.annotation{
-	margin: 0 0 0 1.5em;
+	margin: 0 0 0 1.5rem;
 }
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
 	list-style: lower-alpha;
-	padding-left: 1.4em;
+	padding-left: 1.4rem;
 }
 .content.sitemap ol li ol li ol{
 	list-style: lower-roman;
