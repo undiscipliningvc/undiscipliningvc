@@ -8,7 +8,7 @@
 
 /* main container for embedded YouTube video */
 .wrapper{
-	margin: 1rem auto 1.5rem;
+	margin: 1rem auto;
 	padding: 0;
 	border: 1px solid #242424;
 }
