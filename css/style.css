@@ -809,7 +809,7 @@ h5{
 	font-weight: 700;
 	font-style: italic;
 	text-align: left;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
 }
 h5.alternate{
 	font-weight: 600;
@@ -819,7 +819,7 @@ h6{
 	font-size: 1.1rem;
 	font-weight: 600;
 	font-style: italic;
-	margin: 2rem 0 1rem;
+	margin: 0;
 }
 h7{
 	font-style: italic;
