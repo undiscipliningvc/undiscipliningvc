@@ -127,9 +127,20 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	margin-top: 2.5rem;
 	margin-bottom: 2rem;
 }
-/* overview section */
-.content main summary{
-	margin-top: 2.5rem;
+.content main section:first-of-type,
+.content main hr+section {
+ margin-top: 1.5em;
+ margin-bottom: 1.5em
+}
+.content main section > section{
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+.content main section section section:first-of-type{
+	margin-top: 1rem;
+}
+.content main section p+.content main section:first-of-type {
+ margin-top: 2.5em
 }
 
 /* .content main section:first-of-type,
