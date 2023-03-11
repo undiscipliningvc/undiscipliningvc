@@ -235,10 +235,13 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* page title of all content pages */
 .content main h2{
 	font-size: 1.8rem;
-	font-variant: small-caps;
+	text-transform: uppercase;
 	line-height: 2rem;
 	color: #242424;
-	margin: 1rem auto;
+	border-bottom: 1px solid #242424;
+	margin: 1rem auto 2.5rem;
+	width: max-content;
+	padding-bottom: .5rem;
 }
 @media only screen and (min-width: 480px){
 	.content main h2{
@@ -254,7 +257,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* rem */
 /* subsection title */
 .content main h3{
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	margin: 0 auto;
 }
 .content section.menu-container h3{
