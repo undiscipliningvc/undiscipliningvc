@@ -1,8 +1,8 @@
 ﻿placeholder,text
 title,Hinduism and Imperial Interventions in Victorian Literature
 description,Provides students with a historicist reading of long-nineteenth-century literature in relation to Hinduism in the British Empire
-image-no,
-alt,
+image-no,0055
+alt,Map showing British empire in 1909 with color coding for regions with different religious groups.
 image-title,
 developer,Sanjana Chowdhury
 dev-email,s.chowdhury7@tcu.edu
@@ -38,7 +38,11 @@ syllabus-overview,"<p>Religion was vital to colonial and anti-colonial discourse
 <p>From the reading selection to the assignment design, I have constructed this course to align with the anti-colonial sentiments of the writers in my final unit. While the specific aim of the course is to encourage students to critically examine religion&rsquo;s place in British colonialism, this aim is part of the broader movement in Victorian Studies to problematize the adjectives &lsquo;British&rsquo; and &lsquo;Victorian.&rsquo; Despite the recent developments in the field, there is an unfortunately enduring belief, among undergraduate students in particular, that &ldquo;British&rdquo; literature only means literature from the United Kingdom. By exploring the context of the British Empire and reading literature from colonial India, this course ultimately poses the question: What is &ldquo;British&rdquo; literature? There is no simple answer to the question, but this course encourages students to explore it further.</p>
 
 <p>This course also demonstrates that &ldquo;Victorian&rdquo; is a plural term, and the Victorian world encompassed a large portion of the globe and a great variety of races, languages, and beliefs. As Sukanya Banerjee, Ryan D. Fong, and Helena Michie have argued, &ldquo;the appellation &lsquo;Victorian&rsquo; marks less a certain period of monarchical reign than it does a political, aesthetic, and sociocultural assemblage&rdquo; (2). This syllabus thus follows in these and other scholars&rsquo; footsteps who have &ldquo;widened&rdquo; the terms &ldquo;British&rdquo; and &ldquo;Victorian&rdquo; by providing a range of perspectives in a non-hierarchical manner to explore Hinduism in the colonial era and its representation in Victorian literature. Hopefully, this syllabus will serve to &ldquo;widen&rdquo; Victorian Studies even more and encourage students to be excited about Victorian literature.</p>"
-works-cited,
+works-cited,"<p>Banerjee, Sukanya, et al. &ldquo;Introduction: Widening the Nineteenth Century.&rdquo; <em>Victorian Literature and Culture</em>, vol. 49, no. 1, 2021, pp. 1&ndash;26.</p>
+<p>Freire, Paulo. <em>Pedagogy of the Oppressed</em>. Translated by Myra Bergman Ramos, 30th Anniversary Edition, Continuum, 2000.</p>
+<p>Pennington, Brian K. <em>Was Hinduism Invented? Britons, Indians, and the Colonial Construction of Religion</em>. Oxford University Press, 2005.</p>
+<p>Spivak, Gayatri Chakravorty. &ldquo;Can the Subaltern Speak?&rdquo; <em>Colonial Discourse and Post-Colonial Theory: A Reader</em>, edited by Patrick Williams and Laura Chrisman, Columbia University Press, 1994, pp. 66&ndash;110.</p>"
 cluster-description,"While religion remains a central topic in the field of Victorian Studies, scholars continue to prioritize Christian perspectives. This cluster of syllabi provides resources that expand engagement beyond Christianity, highlighting texts by and about those considered religious “others” in the nineteenth century. Through frameworks from Postcolonial and Religious Studies, the cluster decenters white Christian metropolitan Britishness by amplifying the voices of those who have been often overlooked due to racial and religious biases. At their best, religions cultivate attitudes of care, and in teasing out the multifaceted Victorian religious perspectives with which students may not be familiar, these syllabi seek to broaden religious tolerance, awareness, and appreciation."
 biography,"Sanjana Chowdhury is a Ph.D. candidate in the Department of English at Texas Christian University, where she is working on her dissertation on British Empire foodways. She has published an entry on Hinduism in the <em>Palgrave Encyclopedia of Victorian Women&rsquo;s Writing</em> (2022). Her research interests include Victorian literature, long-nineteenth-century foodways, political economy, and British Empire history."
-syllabus-file-name,hinduism_imperial_interventions
+header-image-caption,
+syllabus-file-name,hinduism_imperial
