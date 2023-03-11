@@ -232,9 +232,27 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main .aspect-ratio-box a:focus{
 	color: rgb(66,66,66);
 }
-/* page title of all content pages but zoomcasts */
-/* note: default positioning for page titles is over the center of header image */
-.content.lesson-plans main h2,
+/* page title of all content pages */
+.content main h2{
+	font-variant: small-caps;
+	line-height: 1.75rem;
+	color: #242424;
+	margin: .5rem auto 0;
+}
+@media only screen and (min-width: 480px){
+	.content main h2{
+		font-size: 1.8rem;
+		line-height: 2.25rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.content main h2{
+		font-size: 2.6rem;
+		line-height: 3rem;
+		margin: .5rem auto;
+	}
+}
+/* .content.lesson-plans main h2,
 .content.syllabi main h2,
 .content.about main h2{
 	font-weight: 400;
@@ -255,18 +273,18 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	transform: translate(-50%, -50%);
 	opacity: .93;
 	z-index: 15;
-}
-.content.zoomcasts main h2{
+} */
+/* .content.zoomcasts main h2{
 	font-variant: small-caps;
 	line-height: 1.75rem;
 	color: #242424;
 	margin: .5rem auto 0;
-}
-.content.about.error404 main h2{
+} */
+/* .content.about.error404 main h2{
 	font-size: 2rem;
 	white-space: nowrap;
-}
-@media only screen and (min-width: 480px){
+} */
+/* @media only screen and (min-width: 480px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
 	.content.about main h2,
@@ -277,8 +295,8 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	.content.about.error404 main h2{
 		font-size: 2.75rem;
 	}
-}
-@media only screen and (min-width: 768px){
+} */
+/* @media only screen and (min-width: 768px){
 	.content.lesson-plans main h2,
 	.content.syllabi main h2,
 	.content.about main h2{
@@ -296,7 +314,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		font-size: 3rem;
 		width: fit-content;
 	}
-}
+} */
 /* custom positioning for page title over top of header image */
 .content.lesson-plans main h2.top,
 .content.syllabi main h2.top,
