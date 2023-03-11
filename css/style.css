@@ -800,6 +800,7 @@ section section h4:first-child{
 	font-size: 1.05rem;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin: 1rem 0;
 }
 section h4:first-child{
 	margin-top: 1.5rem;
