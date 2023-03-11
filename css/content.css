@@ -235,7 +235,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* page title of all content pages */
 .content main h2{
 	font-size: 1.8rem;
-	line-height: 2rem;
+	line-height: 2.2rem;
 	color: #242424;
 	margin: 1rem auto;
 }
