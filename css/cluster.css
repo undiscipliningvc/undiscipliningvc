@@ -159,7 +159,7 @@
 /* the main subsection heading; this indicates the cluster series to which a content page belongs */
 .cluster main section h3{
 	/* font-size: 1.2rem; */
-	font-weight: 700;
+	font-weight: 600;
 	font-variant: normal;
 	color: #fff;
 	border-bottom: 1px solid #242424;
