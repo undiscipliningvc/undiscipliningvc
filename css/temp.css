@@ -1,16 +1,16 @@
-.carousel .carousel-item .carousel-caption a{
+/* .carousel .carousel-item .carousel-caption a{
 	font-size: 1rem;
-}
+} */
 
-.cluster main section h2#level-2-title{
+/* .cluster main section h2#level-2-title{.cluster main section div span{
 	font-size: 1.5rem;
-}
-.cluster main section h3{
+} */
+/* .cluster main section h3{
 	font-size: 1.2rem;
-}
-.cluster main section div span{
+} */
+/* .cluster main section div span{
 	font-size: 1.15rem;
-}
+} */
 .cluster.zoomcasts main section div span{
 	font-size: 1.05rem;
 }
@@ -201,14 +201,13 @@ section section .timeline-content h4{
 .carousel .carousel-item{
 	line-height: 0;
 }
-.carousel .carousel-item .carousel-caption{
-	text-align: center;
+/* .carousel .carousel-item .carousel-caption{
 	line-height: 1.5rem;
-}
+} */
 
-.cluster main section div span{
+/* .cluster main section div span{
 	line-height: 1.5rem;
-}
+} */
 .cluster.zoomcasts main section p{
 	line-height: 1.875rem;
 }
@@ -233,10 +232,10 @@ section section .timeline-content h4{
 .founding-dev ul{
 	line-height: 2.25rem;
 }
-.participate a,
+/* .participate a,
 .participate a:visited{
 	line-height: 1rem;
-}
+} */
 
 /* :root{
 	line-height: 2rem;
