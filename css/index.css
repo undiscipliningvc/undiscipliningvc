@@ -122,7 +122,7 @@
 }
 /* list of people for "Founding Developers" section */
 .founding-dev ul{
-	line-height: 2.25rem;
+	/* line-height: 2.25rem; */
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;
@@ -162,7 +162,7 @@
 .participate a,
 .participate a:visited{
 	/* font-size: 1rem; */
-	line-height: 1rem;
+	/* line-height: 1rem; */
 	color: #fff;
 	text-decoration: none;
 	-webkit-border-radius: 5px;

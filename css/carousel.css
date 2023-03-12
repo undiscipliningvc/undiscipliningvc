@@ -17,7 +17,7 @@
 }
 /* Carousel items */
 .carousel .carousel-item{
-	line-height: 0;
+	/* line-height: 0; */
 	width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -57,7 +57,7 @@
 /* Carousel caption (also see image caption) */
 .carousel .carousel-item .carousel-caption{
 	text-align: center;
-	line-height: 1.5rem;
+	/* line-height: 1.5rem; */
 	margin: 0 .5rem;
 	padding: 0;
 	position: absolute;

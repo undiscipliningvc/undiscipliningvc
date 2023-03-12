@@ -173,9 +173,9 @@ section section .timeline-block-left h4{
 }
 /* text on timeline */
 .timeline-content p{
-  font-size: .95rem;
+  /* font-size: .95rem; */
   word-spacing: 1px;
   text-align: inherit;
-  line-height: 1.7rem;
+  /* line-height: 1.7rem; */
   margin: .5rem 0 0;
 }
