@@ -628,7 +628,8 @@ nav#nav2 #overlay-menu li a:focus{
 /* text container within item in overlay */
 nav#nav2 #overlay-menu ul li a span{
 	font-size: .95rem;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
 }
 /* close overlay button */
 nav#nav2 #overlay-menu li button.close{
@@ -782,8 +783,8 @@ h1{
 	margin: 0;
 }
 h2, h3, h4, h5{
-	font-family: 'Noto Serif', serif;
-	font-weight: 700;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 600;
 }
 h2, h3, h4{
 	text-align: center;
@@ -917,7 +918,8 @@ hr{
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
 	font-size: .95rem;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
 	margin: 1.5rem auto;

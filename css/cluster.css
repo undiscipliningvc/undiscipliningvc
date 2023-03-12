@@ -309,7 +309,7 @@
 /* note: the coding on this should be changed to support accessibility */
 .cluster main section ul li:first-child{
 	font-size: 1rem;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Source Serif Pro', serif;
 	font-weight: 600;
 	background: #e6e6e6;
 	min-height: unset;
