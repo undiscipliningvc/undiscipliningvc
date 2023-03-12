@@ -23,212 +23,212 @@ https://medium.com/hceverything/applying-srcset-choosing-the-right-sizes-for-res
 
 CAROUSEL
 
-mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/home \;
+mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/home \;
 
 ****
 REGULAR IMAGES
 
-mogrify -format jpg -resize 1170x1170 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1170 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1170 && find . -exec rename 's|.jpg|-1170px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1170x1170 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1170 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1170 && find . -exec rename 's|.jpg|-1170px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 888x888 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/888 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/888 && find . -exec rename 's|.jpg|-888px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 888x888 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/888 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/888 && find . -exec rename 's|.jpg|-888px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 585x585 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/585 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/585 && find . -exec rename 's|.jpg|-585px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 585x585 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/585 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/585 && find . -exec rename 's|.jpg|-585px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 444x444 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/444 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/444 && find . -exec rename 's|.jpg|-444px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 444x444 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/444 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/444 && find . -exec rename 's|.jpg|-444px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 284x284 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/284 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/284 && find . -exec rename 's|.jpg|-284px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/home \;
+mogrify -format jpg -resize 284x284 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/284 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/284 && find . -exec rename 's|.jpg|-284px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/home \;
 
 ****
 ZOOMCAST TILES AND PAGES
 
-mogrify -format jpg -resize 1275x1275 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1275 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1275 && find . -exec rename 's|.jpg|-1275px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1275x1275 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1275 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1275 && find . -exec rename 's|.jpg|-1275px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 816x816 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/816 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/816 && find . -exec rename 's|.jpg|-816px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 816x816 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/816 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/816 && find . -exec rename 's|.jpg|-816px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 663x663 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/663 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/663 && find . -exec rename 's|.jpg|-663px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 663x663 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/663 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/663 && find . -exec rename 's|.jpg|-663px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 532x532 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/532 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/532 && find . -exec rename 's|.jpg|-532px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 532x532 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/532 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/532 && find . -exec rename 's|.jpg|-532px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 408x408 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/408 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/408 && find . -exec rename 's|.jpg|-408px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 408x408 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/408 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/408 && find . -exec rename 's|.jpg|-408px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 266x266 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/266 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/266 && find . -exec rename 's|.jpg|-266px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/zoomcasts \;
+mogrify -format jpg -resize 266x266 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/266 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/266 && find . -exec rename 's|.jpg|-266px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/zoomcasts \;
 
 ****
 LESSON PLAN TILES
 
-mogrify -format jpg -resize 1324x1324 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1324 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1324 && find . -exec rename 's|.jpg|-1324px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 1136x1136 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1136 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1136 && find . -exec rename 's|.jpg|-1136px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 814x814 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/814 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/814 && find . -exec rename 's|.jpg|-814px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 662x662 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/662 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/662 && find . -exec rename 's|.jpg|-662px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 530x530 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/530 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/530 && find . -exec rename 's|.jpg|-530px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/407 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/265 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/lesson_plans/tiles \;
+mogrify -format jpg -resize 1324x1324 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1324 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1324 && find . -exec rename 's|.jpg|-1324px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1136x1136 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1136 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1136 && find . -exec rename 's|.jpg|-1136px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 814x814 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/814 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/814 && find . -exec rename 's|.jpg|-814px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 662x662 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/662 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/662 && find . -exec rename 's|.jpg|-662px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 530x530 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/530 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/530 && find . -exec rename 's|.jpg|-530px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/407 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/265 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/lesson_plans/tiles \;
 
 ****
 SYLLABI TILES
 
-mogrify -format jpg -resize 1324x1324 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1324 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1324 && find . -exec rename 's|.jpg|-1324px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 1136x1136 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1136 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1136 && find . -exec rename 's|.jpg|-1136px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 814x814 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/814 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/814 && find . -exec rename 's|.jpg|-814px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 662x662 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/662 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/662 && find . -exec rename 's|.jpg|-662px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 530x530 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/530 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/530 && find . -exec rename 's|.jpg|-530px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/407 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/265 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/syllabi/tiles \;
+mogrify -format jpg -resize 1324x1324 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1324 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1324 && find . -exec rename 's|.jpg|-1324px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1136x1136 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1136 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1136 && find . -exec rename 's|.jpg|-1136px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 814x814 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/814 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/814 && find . -exec rename 's|.jpg|-814px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 662x662 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/662 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/662 && find . -exec rename 's|.jpg|-662px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 530x530 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/530 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/530 && find . -exec rename 's|.jpg|-530px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/407 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/265 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/syllabi/tiles \;
 
 sizes=(1324 1136 930 814 662 568 530 465 407 265)
 for size in ${sizes[@]}; do
-    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/${size} *.tif
-    cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
-    mv ~/GitHub/undiscipliningvc/0_dev/empty-dirs/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/tiles/
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif
+    cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/tiles/
 done
 
 ****
 ABOUT TILES
 
-mogrify -format jpg -resize 1324x1324 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1324 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1324 && find . -exec rename 's|.jpg|-1324px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 1136x1136 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1136 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1136 && find . -exec rename 's|.jpg|-1136px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 814x814 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/814 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/814 && find . -exec rename 's|.jpg|-814px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 662x662 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/662 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/662 && find . -exec rename 's|.jpg|-662px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 530x530 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/530 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/530 && find . -exec rename 's|.jpg|-530px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/407 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
-mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/265 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about/tiles \;
+mogrify -format jpg -resize 1324x1324 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1324 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1324 && find . -exec rename 's|.jpg|-1324px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1136x1136 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1136 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1136 && find . -exec rename 's|.jpg|-1136px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 930x930 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/930 && find . -exec rename 's|.jpg|-930px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 814x814 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/814 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/814 && find . -exec rename 's|.jpg|-814px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 662x662 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/662 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/662 && find . -exec rename 's|.jpg|-662px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 568x568 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/568 && find . -exec rename 's|.jpg|-568px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 530x530 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/530 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/530 && find . -exec rename 's|.jpg|-530px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/465 && find . -exec rename 's|.jpg|-465px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/407 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/265 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about/tiles \;
 
 ****
 LESSON PLAN PAGES
 
-mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/lesson_plans \;
+mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/lesson_plans \;
 
 ***
 
 SYLLABI PAGES
 
-mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/syllabi \;
+mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/syllabi \;
 
 sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300)
 for size in ${sizes[@]}; do
-    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/${size} *.tif &&
-    cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/${size} &&
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif &&
+    cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} &&
     find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
-    mv ~/GitHub/undiscipliningvc/0_dev/empty-dirs/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/
+    mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/
 done
 
 ***
 
 ABOUT PAGES
 
-mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1800x1800 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1650x1650 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1650 && find . -exec rename 's|.jpg|-1650px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1500 && find . -exec rename 's|.jpg|-1500px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1350x1350 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1350 && find . -exec rename 's|.jpg|-1350px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1050x1050 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/1050 && find . -exec rename 's|.jpg|-1050px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 900x900 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/900 && find . -exec rename 's|.jpg|-900px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 750x750 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/750 && find . -exec rename 's|.jpg|-750px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 600x600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/600 && find . -exec rename 's|.jpg|-600px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 450x450 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/450 && find . -exec rename 's|.jpg|-450px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about \;
+mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about \;
 
 *****
 
 BIOGRAPHIES
 
-mogrify -format jpg -resize 175x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/175 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/175 && find . -exec rename 's|.jpg|-175px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 175x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/175 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/175 && find . -exec rename 's|.jpg|-175px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 195x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/195 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/195 && find . -exec rename 's|.jpg|-195px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 195x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/195 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/195 && find . -exec rename 's|.jpg|-195px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 223x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/223 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/223 && find . -exec rename 's|.jpg|-223px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 223x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/223 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/223 && find . -exec rename 's|.jpg|-223px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 285x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/285 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/285 && find . -exec rename 's|.jpg|-285px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 285x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/285 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/285 && find . -exec rename 's|.jpg|-285px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 350x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/350 && find . -exec rename 's|.jpg|-350px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 350x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/350 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/350 && find . -exec rename 's|.jpg|-350px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 390x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/390 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/390 && find . -exec rename 's|.jpg|-390px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 390x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/390 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/390 && find . -exec rename 's|.jpg|-390px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 446x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/446 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/446 && find . -exec rename 's|.jpg|-446px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 446x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/446 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/446 && find . -exec rename 's|.jpg|-446px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 570x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-dirs/570 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs/570 && find . -exec rename 's|.jpg|-570px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-dirs && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about/founders \;
+mogrify -format jpg -resize 570x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/570 *.tif  && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/570 && find . -exec rename 's|.jpg|-570px.jpg|' {} + && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/about/founders \;
