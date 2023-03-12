@@ -3,7 +3,7 @@ Images
 2) Add image to Zotero in both local and remote folders.
 3) Copy raw JPEG image to relevant relevant folder; keep original file name.
 3) Convert JPEG image to TIFF and copy to relevant archival folder; keep original file name.
-4) Crop TIFF image and copy to relevant archival folder; rename.
+4) Crop TIFF image and copy to relevant archival folder; rename. Note: Crop only needed for extraneous matter. Do not crop for ratio.
 5) Merge cropped TIFF images (if needed), but also keep cropped originals.
 6) Generate syllabi and syallbi tiles derivative images using prefab ImageMagick code. 
 7) Check for sizes and remove any derivaties that don't meet specs.
