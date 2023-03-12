@@ -1,0 +1,204 @@
+.carousel .carousel-item .carousel-caption a{
+	font-size: 1rem;
+}
+
+.cluster main section h2#level-2-title{
+	font-size: 1.5rem;
+}
+.cluster main section h3{
+	font-size: 1.2rem;
+}
+.cluster main section div span{
+	font-size: 1.15rem;
+}
+.cluster.zoomcasts main section div span{
+	font-size: 1.05rem;
+}
+.cluster main section p{
+	font-size: 1.05rem;
+}
+.cluster main section ul li:first-child{
+	font-size: 1rem;
+}
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
+	font-size: 1rem;
+}
+.content main .aspect-ratio-box .caption{
+	font-size: 1.7rem;
+}
+.content main h2{
+	font-size: 1.8rem;
+}
+.content main h2#error404{
+	font-size: 2.5rem;
+}
+@media only screen and (min-width: 768px){
+	.content main h2{
+		font-size: 2.75rem;
+	}
+	.content main h2#error404{
+		font-size: 3rem;
+	}
+}
+.content main h3{
+	font-size: 1.4rem;
+}
+.content h3#user-guide{
+	font-size: 1.2rem;
+}
+@media only screen and (min-width: 768px){
+	.content a.link404{
+		font-size: 1.2rem;
+	}
+}
+.content main .specs .specs-container a.mail span{
+	font-size: 1rem;
+}
+.content ol.menu{
+	font-size: 1rem;
+}
+.content .annotation{
+	font-size: 1rem;
+}
+.section-tiles{
+	font-size: 1.1rem;
+}
+.participate a,
+.participate a:visited{
+	font-size: 1rem;
+}
+
+body{
+	font-size: 1.1rem;
+}
+footer{
+	font-size: 1rem;
+}
+#nav0 a{
+	font-size: 1rem;
+}
+nav#nav1 h1,
+nav#fallback-nav h1{
+	font-size: 1.2rem;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 2rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	nav#nav1 ul li:not(:first-child):not(:last-child){
+		font-size: 1rem;
+  }
+}
+nav#nav1 li button i,
+nav#fallback-nav li button i{
+	font-size: 1.3rem;
+}
+nav#nav1 li button i,
+nav#fallback-nav li button i{
+	font-size: 1.3rem;
+}
+@media only screen and (min-width: 480px){
+	nav#nav1 li button i,
+	nav#fallback-nav li button i{
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav1 li button i,
+	nav#fallback-nav li button i{
+		font-size: 1.8rem;
+	}
+}
+nav#nav2 #overlay-menu ul li a span{
+	font-size: .95rem;
+}
+nav#nav2 #overlay-menu li button.close i{
+	color: #242424;
+	font-size: 1.3rem;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.8rem;
+	}
+}
+h2{
+	font-size: 1.35rem;
+}
+h3{
+	font-size: 1.15rem;
+}
+h4,
+section section h4:first-child{
+	font-size: 1.05rem;
+}
+h5{
+	font-size: 1.05rem;
+}
+h5.alternate{
+
+}
+h6{
+	font-size: 1.1rem;
+}
+h7{
+
+}
+#topButton{
+	cursor: pointer;
+	font-size: .95rem;
+}
+.breakout-quote{
+	font-size: .95rem;
+}
+.endnotes:before{
+	font-size: 1rem;
+}
+.large{
+	font-size: 1.2rem;
+}
+.larger{
+	font-size: 1.25rem;
+}
+.largest{
+	font-size: 1.3rem;
+}
+.small{
+	font-size: 1rem;
+}
+.smaller{
+	font-size: .95rem;
+}
+.smallest{
+	font-size: .9rem;
+}
+
+section section .timeline-content h4{
+  font-size: 1.3rem;
+}
+.timeline-content p{
+  /* font-size: .95rem; */
+}
+
+.skipcontrols a{
+	font-size: .9rem;
+}
+@media only screen and (min-width: 768px){
+	.skipcontrols a{
+		font-size: 1rem;
+	}
+}

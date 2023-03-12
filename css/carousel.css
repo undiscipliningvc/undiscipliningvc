@@ -79,7 +79,7 @@
 	display: inline-block;
 }
 .carousel .carousel-item .carousel-caption a{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	text-decoration: underline;
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.65);

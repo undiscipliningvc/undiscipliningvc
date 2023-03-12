@@ -41,7 +41,7 @@
 }
 /* the container for cluster page tiles */
 .section-tiles{
-	font-size: 1.1rem;
+	/* font-size: 1.1rem; */
 	margin-bottom: 1rem;
 }
 /* the list of cluster page tiles */
@@ -161,7 +161,7 @@
 /* hyperlink for social media links */
 .participate a,
 .participate a:visited{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	line-height: 1rem;
 	color: #fff;
 	text-decoration: none;

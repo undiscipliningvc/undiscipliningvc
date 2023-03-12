@@ -140,7 +140,7 @@
 }
 /* the heading on the cluster page title slide */
 .cluster main section h2#level-2-title{
-	font-size: 1.5rem;
+	/* font-size: 1.5rem; */
 	white-space: nowrap;
 	border: 3px solid #fff;
 	-webkit-border-radius: 5px;
@@ -158,7 +158,7 @@
 }
 /* the main subsection heading; this indicates the cluster series to which a content page belongs */
 .cluster main section h3{
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
 	font-weight: 700;
 	font-variant: normal;
 	color: #fff;
@@ -241,7 +241,7 @@
 /* the label that appears over each cluster page slide image */
 /* some specs below derive from Livingstone Online level two slides; see, e.g., https://livingstoneonline.org/spectral-imaging */
 .cluster main section div span{
-	font-size: 1.15rem;
+	/* font-size: 1.15rem; */
 	line-height: 1.5rem;
 	color: #fff;
 	background-color: rgb(66,66,66);
@@ -258,11 +258,11 @@
 	opacity: .9;
 }
 .cluster.zoomcasts main section div span{
-	font-size: 1.05rem;
+	/* font-size: 1.05rem; */
 }
 /* the descriptive text below each cluster page slide image */
 .cluster main section p{
-	font-size: 1.05rem;
+	/* font-size: 1.05rem; */
 	padding: 0 1rem;
 }
 /* the descriptive text below each zoomcasts cluster page slide image */
@@ -308,7 +308,7 @@
 /* the first item in the list of lesson plan buttons that appears on collective lesson plan slides; this item serves as the title for the collective lesson plan slides */
 /* note: the coding on this should be changed to support accessibility */
 .cluster main section ul li:first-child{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 600;
 	background: #e6e6e6;
@@ -324,7 +324,7 @@
 /* hyperlink on items in the list of lesson plan buttons that appears on collective lesson plan slides */
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	text-decoration: none;
 	line-height: 1.75rem;
 	color: #242424;

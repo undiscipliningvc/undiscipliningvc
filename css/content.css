@@ -201,7 +201,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* information icon located in lower right-hand corner of header images */
 .content main .aspect-ratio-box .caption{
-	font-size: 1.7rem;
+	/* font-size: 1.7rem; */
 	background-color: rgb(66,66,66);
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
@@ -234,13 +234,13 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* page title of all content pages */
 .content main h2{
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 	line-height: 2.2rem;
 	color: #242424;
 	margin: 1rem auto;
 }
 .content main h2#error404{
-	font-size: 2.5rem;
+	/* font-size: 2.5rem; */
 }
 @media only screen and (min-width: 480px){
 	.content main h2{
@@ -249,16 +249,16 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 768px){
 	.content main h2{
-		font-size: 2.75rem;
+		/* font-size: 2.75rem; */
 		line-height: 3.5rem;
 	}
 	.content main h2#error404{
-		font-size: 3rem;
+		/* font-size: 3rem; */
 	}
 }
 /* subsection title */
 .content main h3{
-	font-size: 1.4rem;
+	/* font-size: 1.4rem; */
 	margin: 0 auto;
 }
 .content section.menu-container h3{
@@ -267,7 +267,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* user guide section headings; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
 	color: #242424;
 	text-align: left;
 }
@@ -317,7 +317,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 768px){
 	.content a.link404{
-		font-size: 1.2rem;
+		/* font-size: 1.2rem; */
 	}
 }
 /* container for "Production Details" sections */
@@ -337,7 +337,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	text-decoration: underline;
 }
 /* lists, items, and incremental numbering for "Lesson Plan Cluster Production Details" sections (variant of "Production Details" section) */
@@ -367,7 +367,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* ordered list of subsections in content page menu */
 .content ol.menu{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	margin: 1rem auto 0;
 	padding-left: 1.2rem;
 	display: inline-block;
@@ -439,7 +439,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
 .content .annotation{
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	margin: .25rem 0 0 1.5rem;
 	display: block;
 }
