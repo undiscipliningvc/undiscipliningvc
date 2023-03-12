@@ -98,8 +98,9 @@
 }
 /* text for for cluster page tiles */
 .section-tiles ul li a span{
-	font-family: 'Source Serif Pro', serif;
+	font-size: 1.25rem;
 	font-weight: 600;
+	font-family: 'Source Serif Pro', serif;
 	white-space: nowrap;
 	border: 3px solid #fff;
 	-webkit-border-radius: 5px;
@@ -149,6 +150,7 @@
 }
 /* paragraph for text in social media links section */
 .participate p{
+	line-height: 1.75rem;
 	margin-top: 0;
 }
 /* container for social media links in social media links section */
@@ -161,8 +163,7 @@
 /* hyperlink for social media links */
 .participate a,
 .participate a:visited{
-	/* font-size: 1rem; */
-	/* line-height: 1rem; */
+	line-height: 1.6rem;
 	color: #fff;
 	text-decoration: none;
 	-webkit-border-radius: 5px;
@@ -173,7 +174,7 @@
 	padding: 6px 8px;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 @media only screen and (min-width: 480px){
 	.participate a,

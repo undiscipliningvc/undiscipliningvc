@@ -118,7 +118,7 @@ nav#nav1 a:focus .current{
 :root{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	/* line-height: 2rem; */
+	line-height: 1.875rem;
 	color: #212119;
 }
 /* main containter for html pages */
@@ -404,7 +404,7 @@ nav#fallback-nav li:nth-child(2){
 /* site logo */
 nav#nav1 h1,
 nav#fallback-nav h1{
-	/* font-size: 1.2rem; */
+	font-size: 1.2rem;
 	white-space: nowrap;
 	border: 2px solid transparent;
 	margin-top: 2px;
@@ -514,7 +514,7 @@ nav#fallback-nav li button:focus-within{
 /* hamburger menu icon; actual icon provided by FontAwesome */
 nav#nav1 li button i,
 nav#fallback-nav li button i{
-	/* font-size: 1.3rem; */
+	font-size: 1.25rem;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i,
@@ -612,6 +612,7 @@ nav#nav2 #overlay-menu ul li:first-child{
 }
 /* hyperlink within item in overlay */
 nav#nav2 #overlay-menu li a{
+	font-size: 1.1rem;
   color: #242424;
 	text-decoration: none;
 	white-space: nowrap;
@@ -666,8 +667,8 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 }
 /* close icon ("X"); actual icon provided by FontAwesome */
 nav#nav2 #overlay-menu li button.close i{
+	font-size: 1.25rem;
 	color: #242424;
-	/* font-size: 1.3rem; */
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
@@ -852,7 +853,7 @@ a:focus img{
 /* "Top" button; appears in the upper right-hand corner of the page after the user scrolls down and takes the user back to the top of the page */ 
 /* adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
-	/* font-size: .95rem; */
+	font-size: .9rem;
 	color: #fff;
 	background-color: #395375;
 	cursor: pointer;

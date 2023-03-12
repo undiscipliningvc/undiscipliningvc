@@ -140,7 +140,6 @@
 }
 /* the heading on the cluster page title slide */
 .cluster main section h2#level-2-title{
-	/* font-size: 1.5rem; */
 	white-space: nowrap;
 	border: 3px solid #fff;
 	-webkit-border-radius: 5px;
@@ -158,7 +157,7 @@
 }
 /* the main subsection heading; this indicates the cluster series to which a content page belongs */
 .cluster main section h3{
-	/* font-size: 1.2rem; */
+	font-size: 1.3rem;
 	font-weight: 600;
 	font-variant: normal;
 	color: #fff;
@@ -241,8 +240,8 @@
 /* the label that appears over each cluster page slide image */
 /* some specs below derive from Livingstone Online level two slides; see, e.g., https://livingstoneonline.org/spectral-imaging */
 .cluster main section div span{
-	/* font-size: 1.15rem; */
-	/* line-height: 1.5rem; */
+	font-size: 1.05rem;
+	line-height: 1.5rem;
 	color: #fff;
 	background-color: rgb(66,66,66);
 	text-align: center;
