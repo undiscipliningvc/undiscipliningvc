@@ -17,9 +17,9 @@
 .cluster main section p{
 	font-size: 1.05rem;
 }
-.cluster main section ul li:first-child{
+/* .cluster main section ul li:first-child{
 	font-size: 1rem;
-}
+} */
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
 	font-size: 1rem;
@@ -243,4 +243,15 @@ section section .timeline-content h4{
 
 .timeline-content p{
   line-height: 1.7rem;
+}
+
+
+.cluster main section ul li {
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 1rem 0 1.25rem;
+	padding: .3rem;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
