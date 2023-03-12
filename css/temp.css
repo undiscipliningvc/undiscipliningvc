@@ -78,10 +78,10 @@ footer{
 #nav0 a{
 	font-size: 1rem;
 }
-nav#nav1 h1,
+/* nav#nav1 h1,
 nav#fallback-nav h1{
 	font-size: 1.2rem;
-}
+} */
 @media only screen and (min-width: 480px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
@@ -99,14 +99,10 @@ nav#fallback-nav h1{
 		font-size: 1rem;
   }
 }
-nav#nav1 li button i,
+/* nav#nav1 li button i,
 nav#fallback-nav li button i{
 	font-size: 1.3rem;
-}
-nav#nav1 li button i,
-nav#fallback-nav li button i{
-	font-size: 1.3rem;
-}
+} */
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
@@ -122,10 +118,9 @@ nav#fallback-nav li button i{
 nav#nav2 #overlay-menu ul li a span{
 	font-size: .95rem;
 }
-nav#nav2 #overlay-menu li button.close i{
-	color: #242424;
+/* nav#nav2 #overlay-menu li button.close i{
 	font-size: 1.3rem;
-}
+} */
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
 		font-size: 1.6rem;
@@ -158,10 +153,9 @@ h6{
 h7{
 
 }
-#topButton{
-	cursor: pointer;
+/* #topButton{
 	font-size: .95rem;
-}
+} */
 .breakout-quote{
 	font-size: .95rem;
 }
@@ -191,7 +185,7 @@ section section .timeline-content h4{
   font-size: 1.3rem;
 }
 .timeline-content p{
-  /* font-size: .95rem; */
+  font-size: .95rem;
 }
 
 .skipcontrols a{
@@ -201,4 +195,53 @@ section section .timeline-content h4{
 	.skipcontrols a{
 		font-size: 1rem;
 	}
+}
+
+/* ********** */
+.carousel .carousel-item{
+	line-height: 0;
+}
+.carousel .carousel-item .carousel-caption{
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.cluster main section div span{
+	line-height: 1.5rem;
+}
+.cluster.zoomcasts main section p{
+	line-height: 1.875rem;
+}
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
+	line-height: 1.75rem;
+}
+.content main h2{
+	line-height: 2.2rem;
+}
+@media only screen and (min-width: 480px){
+	.content main h2{
+		line-height: 2.25rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.content main h2{
+		line-height: 3.5rem;
+	}
+}
+
+.founding-dev ul{
+	line-height: 2.25rem;
+}
+.participate a,
+.participate a:visited{
+	line-height: 1rem;
+}
+
+/* :root{
+	line-height: 2rem;
+} */
+
+.timeline-content p{
+  line-height: 1.7rem;
 }
