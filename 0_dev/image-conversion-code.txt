@@ -113,6 +113,9 @@ do
     cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/$i && find . -exec rename 's|.jpg|-'$i'px.jpg|' {} + && cd -
 done
 
+mv /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/*/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/tiles/
+
+
 
 ****
 ABOUT TILES
@@ -186,6 +189,9 @@ for size in ${sizes[@]}; do
     find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + &&
     cd -
 done
+
+mv /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/*/ ~/GitHub/undiscipliningvc/img/syllabi/
+
 
 ***
 
