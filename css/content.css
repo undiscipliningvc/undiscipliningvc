@@ -201,7 +201,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* information icon located in lower right-hand corner of header images */
 .content main .aspect-ratio-box .caption{
-	/* font-size: 1.7rem; */
+	font-size: 1.4rem;
 	background-color: rgb(66,66,66);
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
@@ -234,7 +234,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* page title of all content pages */
 .content main h2{
-	/* font-size: 1.8rem; */
+	font-size: 1.55rem;
 	/* line-height: 2.2rem; */
 	color: #242424;
 	margin: 1rem auto;
@@ -258,10 +258,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* subsection title */
 .content main h3{
-	/* font-size: 1.4rem; */
+	font-size: 1.35rem;
 	margin: 0 auto;
 }
 .content section.menu-container h3{
+	font-size: 1.25rem;
 	color: #fff;
 	margin-top: 0;
 }
@@ -388,7 +389,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 .content.about section ul{
 	list-style: none;
-	margin: 2rem;
+	margin: 1rem 0 1rem 1.2rem;
 	padding: 0;
 }
 .content.about.values section ul{
@@ -402,6 +403,10 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* paragraphs */
 .content section p{
 	clear: both;
+}
+/* paragraph preceded by a heading */
+.content section h3 + p{
+	margin-top: .5rem;
 }
 /* founding devs. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
