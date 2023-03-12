@@ -107,15 +107,12 @@ mogrify -format jpg -resize 465x465 -sampling-factor 4:2:0 -strip -quality 85 -i
 mogrify -format jpg -resize 407x407 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/407 *.tif  && cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/407 && find . -exec rename 's|.jpg|-407px.jpg|' {} + && cd - && 
 mogrify -format jpg -resize 265x265 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/265 *.tif  && cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/265 && find . -exec rename 's|.jpg|-265px.jpg|' {} + && cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new && find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/img/syllabi/tiles \;
 
-for i in 1324 1136 930 814 662 568 530 465 407 265
-do
-    mogrify -format jpg -resize ${i}x${i} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/$i *.tif
-    cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/$i && find . -exec rename 's|.jpg|-'$i'px.jpg|' {} + && cd -
+sizes=(1324 1136 930 814 662 568 530 465 407 265)
+for size in ${sizes[@]}; do
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/${size} *.tif
+    cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/tiles/
 done
-
-mv /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/*/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/tiles/
-
-
 
 ****
 ABOUT TILES
@@ -186,12 +183,9 @@ sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300)
 for size in ${sizes[@]}; do
     mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/${size} *.tif &&
     cd /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/${size} &&
-    find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + &&
-    cd -
+    find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/
 done
-
-mv /Users/awisnicki2/Dropbox/AW/UVC-images+code/new/*/ ~/GitHub/undiscipliningvc/img/syllabi/
-
 
 ***
 
