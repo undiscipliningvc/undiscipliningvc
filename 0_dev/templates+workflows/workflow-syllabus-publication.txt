@@ -24,6 +24,7 @@ Syllabus Page
 12) Proof syllabus essay according to house style guide.
 13) Update syllabi.html page for new syllabi tiles.
 14) Add new syllabi to Site Map.
+15) Add new contributors to Contributors.
 
 Syllabus
 1) Cut and paste UVC peer review stamp from an existing site peer-reviewed syllabus.
