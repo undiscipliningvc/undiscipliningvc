@@ -385,6 +385,7 @@ nav#fallback-nav ul{
 /* single item in list of items in nav and fallback nav */
 nav#nav1 li,
 nav#fallback-nav li{
+	margin: 0;
 	display: inline-block;
 }
 /* last item in list of items in nav and fallback nav */
@@ -633,7 +634,7 @@ nav#nav2 #overlay-menu ul li a span{
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu ul li a span{
-		font-size: 1.1rem;
+		font-size: 1.05rem;
 	}
 }
 /* close overlay button */
@@ -808,6 +809,12 @@ section section h4:first-child{
 	text-transform: uppercase;
 	margin: 1rem 0;
 }
+@media only screen and (min-width: 480px){
+	h4,
+	section section h4:first-child{
+		font-size: 1.05rem;
+	}
+}
 section h4:first-child{
 	margin-top: 1.5rem;
 }
@@ -818,8 +825,12 @@ h5{
 	text-align: left;
 	margin: 1rem 0;
 }
+@media only screen and (min-width: 480px){
+	h5{
+		font-size: 1.05rem;
+	}
+}
 h5.alternate{
-	font-weight: 600;
 	font-style: normal;
 }
 h6{
@@ -829,6 +840,7 @@ h6{
 	margin: 0;
 }
 h7{
+	font-size: 1rem;
 	font-style: italic;
 }
 
@@ -932,6 +944,11 @@ hr{
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
 	margin: 1.5rem auto;
+}
+@media only screen and (min-width: 480px){
+	.breakout-quote{
+		font-size: 1rem;
+	}
 }
 
 
