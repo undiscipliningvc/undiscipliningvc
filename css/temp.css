@@ -30,9 +30,9 @@
 /* .content main h2{
 	font-size: 1.8rem;
 } */
-.content main h2#error404{
+/* .content main h2#error404{
 	font-size: 2.5rem;
-}
+} */
 @media only screen and (min-width: 768px){
 	.content main h2{
 		font-size: 2.75rem;
@@ -141,15 +141,15 @@ h4,
 section section h4:first-child{
 	font-size: 1.05rem;
 }
-h5{
+/* h5{
 	font-size: 1.05rem;
-}
+} */
 h5.alternate{
 
 }
-h6{
+/* h6{
 	font-size: 1.1rem;
-}
+} */
 h7{
 
 }
@@ -162,7 +162,7 @@ h7{
 .endnotes:before{
 	font-size: 1rem;
 }
-.large{
+/* .large{
 	font-size: 1.2rem;
 }
 .larger{
@@ -170,7 +170,7 @@ h7{
 }
 .largest{
 	font-size: 1.3rem;
-}
+} */
 .small{
 	font-size: 1rem;
 }
@@ -181,9 +181,9 @@ h7{
 	font-size: .9rem;
 }
 
-section section .timeline-content h4{
+/* section section .timeline-content h4{
   font-size: 1.3rem;
-}
+} */
 .timeline-content p{
   font-size: .95rem;
 }
