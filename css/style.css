@@ -318,6 +318,11 @@ footer p .site-detail a:visited span{
 	-webkit-transition: top 1s ease-out;
 	transition: top .4s ease-out;
 }
+@media only screen and (min-width: 992px){
+	#nav0 a{
+		font-size: 1rem;
+	}
+}
 #nav0 a:focus{
 	outline-color: transparent;
 	position: fixed;
@@ -669,11 +674,6 @@ nav#nav2 #overlay-menu ul li a span{
 		font-size: 1.1rem;
 	}
 }
-@media only screen and (min-width: 992px){
-	nav#nav2 #overlay-menu ul li a span{
-		font-size: 1.15rem;
-	}
-}
 /* close overlay button */
 nav#nav2 #overlay-menu li button.close{
 	background: none;
@@ -862,6 +862,12 @@ section section h4:first-child{
 		font-size: 1.05rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	h4,
+	section section h4:first-child{
+		font-size: 1.1rem;
+	}
+}
 section h4:first-child{
 	margin-top: 1.5rem;
 }
@@ -877,6 +883,11 @@ h5{
 		font-size: 1.05rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	h5{
+		font-size: 1.1rem;
+	}
+}
 h5.alternate{
 	font-style: normal;
 }
@@ -886,9 +897,19 @@ h6{
 	font-style: italic;
 	margin: 0;
 }
+@media only screen and (min-width: 992px){
+	h6{
+		font-size: 1.05rem;
+	}
+}
 h7{
 	font-size: 1rem;
 	font-style: italic;
+}
+@media only screen and (min-width: 992px){
+	h7{
+		font-size: 1.05rem;
+	}
 }
 
 
@@ -948,6 +969,7 @@ a:focus img{
 }
 @media only screen and (min-width: 992px){
 	#topButton{
+		font-size: 1rem;
 		top: calc(69px + .25rem);
 	}
 }
