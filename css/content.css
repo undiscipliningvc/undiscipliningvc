@@ -273,11 +273,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 768px){
 	.content main h2{
-		/* font-size: 2.75rem; */
+		font-size: 2.75rem;
 		/* line-height: 3.5rem; */
 	}
 	.content main h2#error404{
-		/* font-size: 3rem; */
+		/* font-size: 2.8rem; */
 	}
 }
 /* subsection title */
@@ -485,9 +485,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	}	
 }
 /* margin for all list items */
-.content li,
 .content li{
 	margin-bottom: .5rem;
+}
+.content li:last-of-type{
+	margin-bottom: 0;
 }
 /* list of texts */
 ol.text-list,
