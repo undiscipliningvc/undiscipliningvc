@@ -169,6 +169,11 @@
 	margin: 0;
 	padding: .5rem;
 }
+@media only screen and (min-width: 480px){
+	.cluster main section h3{
+		font-size: 1.4rem;
+	}
+}
 /* the descriptive text on the zoomcasts cluster page title slide */
 .cluster.zoomcasts main section:nth-child(2) p{
 	margin: 1rem;
@@ -257,8 +262,10 @@
 	transform: translate(-50%, 0);
 	opacity: .9;
 }
-.cluster.zoomcasts main section div span{
-	/* font-size: 1.05rem; */
+@media only screen and (min-width: 480px){
+	.cluster main section div span{
+		font-size: 1.2rem;
+	}
 }
 /* the descriptive text below each cluster page slide image */
 .cluster main section p{
