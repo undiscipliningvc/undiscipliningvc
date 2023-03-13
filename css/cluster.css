@@ -39,7 +39,7 @@
 }
 /* the main container for cluster pages */
 .cluster main{
-	margin: 47px auto 0;
+	margin: 47px auto 1rem;
 	padding: 0 .75rem;
 	max-width: 100%;
 	position: relative;
