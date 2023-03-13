@@ -95,8 +95,8 @@ nav#nav1 a:focus .current{
 /* applies border-box to entire site */
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* removes the default focus on individual items */
 *:focus{
@@ -253,11 +253,6 @@ footer p .site-detail a:visited{
 footer p .site-detail a span,
 footer p .site-detail a:visited span{
 	text-decoration: underline;
-}
-@media only screen and (min-width: 768px){
-	hr{
-		margin: 2rem 0;
-	}
 }
 /* help make the overlay disappear above 1200px */
 /* tied to elements above in this subsection of the CSS */
@@ -807,7 +802,7 @@ section h4:first-child{
 	margin-top: 1.5rem;
 }
 h5{
-	/* font-size: 1.05rem; */
+	font-size: 1rem;
 	font-weight: 600;
 	font-style: italic;
 	text-align: left;
@@ -818,7 +813,7 @@ h5.alternate{
 	font-style: normal;
 }
 h6{
-	/* font-size: 1.1rem; */
+	font-size: 1rem;
 	font-weight: 600;
 	font-style: italic;
 	margin: 0;
@@ -912,8 +907,11 @@ a:focus img{
 hr{
 	background: #858585;
 	border: 0;
-	margin: 1.25rem 0;
+	margin: -.5rem 0;
 	height: 1px;
+}
+.hr404{
+	margin: 1rem 0;
 }
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
@@ -946,13 +944,13 @@ hr{
 	text-align: center;
 }
 .large{
-	/* font-size: 1.2rem; */
+	font-size: 1.2rem;
 }
 .larger{
-	/* font-size: 1.25rem; */
+	font-size: 1.25rem;
 }
 .largest{
-	/* font-size: 1.3rem; */
+	font-size: 1.3rem;
 }
 .left{
 	text-align: left;
