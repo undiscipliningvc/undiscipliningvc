@@ -177,12 +177,6 @@
 	display: flex;
 	align-items: baseline;
 }
-@media only screen and (min-width: 480px){
-	.participate a,
-	.participate a:visited{
-		padding: 8px 10px;
-	}
-}
 .participate a:focus{
 	outline: 1px dashed #242424;
 }
