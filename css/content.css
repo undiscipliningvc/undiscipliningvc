@@ -127,12 +127,17 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	margin-top: 2.5rem;
 	margin-bottom: 2rem;
 }
-/* spacing for various kinds of sections */
+/* section of page before menu (first section of page) */
 .content main section:first-of-type{
  margin-top: 0;
  margin-bottom: 1.5em
 }
-.content main hr+section {
+/* section of page after menu */
+.content main .menu-container + section{
+	margin-top: 1.5rem;
+}
+/* spacing for various kinds of sections */
+.content main hr + section{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em
 }
@@ -145,11 +150,17 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	margin-top: 2em;
 	margin-bottom: 2em
 }
-.content main section p+.content main section:first-of-type {
+.content main section p + section:first-of-type {
  margin-top: 2.5em
 }
 .content main section section section:first-of-type{
 	margin-top: 1.5rem;
+}
+.content main section h4 + section:first-of-type,
+.content main section h5 + section:first-of-type,
+.content main section h5 + section:first-of-type h6
+.content main section h6 + section:first-of-type{
+	margin-top: 1rem;
 }
 /* alignment for 404 page */
 .content.error404 main section:first-of-type,
@@ -240,7 +251,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	margin: 1rem auto;
 }
 .content main h2#error404{
-	/* font-size: 2.5rem; */
+	font-size: 2.5rem;
 }
 @media only screen and (min-width: 480px){
 	.content main h2{
@@ -302,6 +313,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* sitemap hyperlink on 404 page */
 .content a.link404{
+	font-size: 1.1rem;
 	color: #fff;
 	font-weight: 600;
 	background-color: #cb6948;
@@ -395,11 +407,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content.about.values section ul{
 	list-style: inherit;
 }
-/* list items and list item hyperlinks */
-.content section ul li,
-.content section ul li a{
-	margin-bottom: .5rem;
-}
 /* paragraphs */
 .content section p{
 	clear: both;
@@ -442,10 +449,10 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* spacing for lists and list items that follow sub-subsection headings */
 .content h5 + ol,
 .content h5 + ul{
-	padding: 0 0 0 1.4rem;
+	padding: 0 0 0 1rem;
 }
 .content h5 + ol li{
-	margin: 0 0 1rem 0;
+	margin: 0 0 .5rem 0;
 }
 /* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
 .content .annotation{
@@ -455,7 +462,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 .content ul.annotation,
 .content ol.annotation{
-	margin: 0 0 0 1.5rem;
+	margin: -1rem 0 0 1.5rem;
 }
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
