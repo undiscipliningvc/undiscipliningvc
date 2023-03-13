@@ -82,12 +82,12 @@ footer{
 nav#fallback-nav h1{
 	font-size: 1.2rem;
 } */
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
 		font-size: 1.6rem;
 	}
-}
+} */
 @media only screen and (min-width: 768px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
@@ -103,12 +103,12 @@ nav#fallback-nav h1{
 nav#fallback-nav li button i{
 	font-size: 1.3rem;
 } */
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
 		font-size: 1.6rem;
 	}
-}
+} */
 @media only screen and (min-width: 768px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
@@ -121,11 +121,11 @@ nav#nav2 #overlay-menu ul li a span{
 /* nav#nav2 #overlay-menu li button.close i{
 	font-size: 1.3rem;
 } */
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
 		font-size: 1.6rem;
 	}
-}
+} */
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
 		font-size: 1.8rem;
@@ -215,14 +215,14 @@ h7{
 .cluster main section ul li a:visited{
 	line-height: 1.75rem;
 }
-.content main h2{
+/* .content main h2{
 	line-height: 2.2rem;
 }
 @media only screen and (min-width: 480px){
 	.content main h2{
 		line-height: 2.25rem;
 	}
-}
+} */
 @media only screen and (min-width: 768px){
 	.content main h2{
 		line-height: 3.5rem;
@@ -255,5 +255,3 @@ h7{
 	padding: .3rem;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-
-
