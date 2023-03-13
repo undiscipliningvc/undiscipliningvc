@@ -143,6 +143,11 @@ body{
 		font-size: 1.05rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	body{
+		font-size: 1.1rem;
+	}
+}
 /* main sub-container for body of html pages */
 .text-container{
 	width: 100%;
@@ -434,6 +439,12 @@ nav#fallback-nav h1{
 		font-size: 1.9rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 2.15rem;
+	}
+}
 nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1,
 nav#fallback-nav a:hover h1,
@@ -658,6 +669,11 @@ nav#nav2 #overlay-menu ul li a span{
 		font-size: 1.1rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu ul li a span{
+		font-size: 1.15rem;
+	}
+}
 /* close overlay button */
 nav#nav2 #overlay-menu li button.close{
 	background: none;
@@ -824,6 +840,11 @@ h2, h3, h4{
 h2{
 	/* font-size: 1.35rem; */
 	margin: 1.25rem auto 0;
+}
+@media only screen and (min-width: 992px){
+	h2{
+		font-size: 1.6rem;
+	}	
 }
 h3{
 	/* font-size: 1.15rem; */
