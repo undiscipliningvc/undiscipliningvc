@@ -138,6 +138,11 @@ body{
 	/* -moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: antialiased; */
 }
+@media only screen and (min-width: 480px){
+	body{
+		font-size: 1.05rem;
+	}
+}
 /* main sub-container for body of html pages */
 .text-container{
 	width: 100%;
@@ -408,7 +413,7 @@ nav#fallback-nav h1{
 @media only screen and (min-width: 480px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
-		/* font-size: 1.6rem; */
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -514,7 +519,7 @@ nav#fallback-nav li button i{
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
-		/* font-size: 1.6rem; */
+		font-size: 1.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -626,6 +631,11 @@ nav#nav2 #overlay-menu ul li a span{
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 400;
 }
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu ul li a span{
+		font-size: 1.1rem;
+	}
+}
 /* close overlay button */
 nav#nav2 #overlay-menu li button.close{
 	background: none;
@@ -667,7 +677,7 @@ nav#nav2 #overlay-menu li button.close i{
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
-		/* font-size: 1.6rem; */
+		font-size: 1.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -867,6 +877,7 @@ a:focus img{
 }
 @media only screen and (min-width: 480px){
 	#topButton{
+		font-size: .95rem;
 		top: calc(53px + .25rem);
 		right: 1.25rem;
 	}
@@ -921,19 +932,6 @@ hr{
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
 	margin: 1.5rem auto;
-}
-/* endnote lists */
-.endnotes{
-	padding: 0 0 0 1rem;
-}
-/* title for endnote lists */ 
-/* adapted from https://stackoverflow.com/a/20478913 */
-.endnotes:before{
-	content:attr(aria-label);
-	/* font-size: 1rem; */
-	font-style: italic;
-	margin: 0 0 .5rem -1rem;
-	display: inline-block;
 }
 
 
