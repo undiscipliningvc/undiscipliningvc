@@ -136,6 +136,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main .menu-container + section{
 	margin-top: 1.5rem;
 }
+@media only screen and (min-width: 480px){
+	.content main .menu-container + section{
+		margin-top: 2.5rem;
+	}	
+}
 /* spacing for various kinds of sections */
 .content main hr + section{
 	margin-top: 1.5em;
@@ -227,6 +232,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media screen and (min-width: 480px){
 	.content main .aspect-ratio-box .caption{
+		font-size: 1.6rem;
 		padding: 4px 6px;
 	}
 }
@@ -255,7 +261,8 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 480px){
 	.content main h2{
-		/* line-height: 2.25rem; */
+		font-size: 1.8rem;
+		line-height: 2.3rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -271,6 +278,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main h3{
 	font-size: 1.35rem;
 	margin: 0 auto;
+}
+@media only screen and (min-width: 480px){
+	.content main h3{
+		font-size: 1.5rem;
+	}
 }
 .content section.menu-container h3{
 	font-size: 1.25rem;
@@ -328,9 +340,9 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content a.link404:hover{
 	background: #2e2e2e;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
 	.content a.link404{
-		/* font-size: 1.2rem; */
+		font-size: 1.2rem;
 	}
 }
 /* container for "Production Details" sections */
@@ -413,7 +425,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* paragraph preceded by a heading */
 .content section h3 + p{
-	margin-top: .5rem;
+	margin: .5rem 0 0;
 }
 /* founding devs. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
@@ -445,6 +457,26 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content ol,
 .content ul {
   padding-left: 1.2rem;
+}
+@media only screen and (min-width: 480px){
+	.content ol,
+	.content ul {
+		padding-left: 1.4rem;
+	}	
+}
+/* endnote lists */
+.content ol.endnotes,
+.content ul.endnotes{
+	padding: 0 0 0 1.2rem;
+}
+/* title for endnote lists */ 
+/* adapted from https://stackoverflow.com/a/20478913 */
+.endnotes:before{
+	content:attr(aria-label);
+	/* font-size: 1rem; */
+	font-style: italic;
+	margin: 0 0 .5rem -1rem;
+	display: inline-block;
 }
 /* spacing for lists and list items that follow sub-subsection headings */
 .content h5 + ol,
