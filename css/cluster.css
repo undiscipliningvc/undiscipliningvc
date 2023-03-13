@@ -156,6 +156,11 @@
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+@media only screen and (min-width: 768px){
+	.cluster main section h2#level-2-title{
+		font-size: 1.9rem;
+	}
+}
 /* the main subsection heading; this indicates the cluster series to which a content page belongs */
 .cluster main section h3{
 	font-size: 1.35rem;
@@ -172,6 +177,11 @@
 @media only screen and (min-width: 480px){
 	.cluster main section h3{
 		font-size: 1.4rem;
+	}
+}
+@media only screen and (min-width: 480px){
+	.cluster main section h3{
+		font-size: 1.45rem;
 	}
 }
 /* the descriptive text on the zoomcasts cluster page title slide */
@@ -267,6 +277,12 @@
 		font-size: 1.2rem;
 	}
 }
+@media only screen and (min-width: 768px){
+	.cluster main section div span{
+		font-size: 1.25rem;
+		padding: .5rem .25rem;
+	}
+}
 /* the descriptive text below each cluster page slide image */
 .cluster main section p{
 	/* font-size: 1.05rem; */
@@ -323,6 +339,7 @@
 }
 @media only screen and (min-width: 768px){
 	.cluster main section ul li:first-child{
+		font-size: 1.2rem;
 		margin: .5rem .5rem .75rem;
 		display: block;
 		flex: 1 0 calc(100% - 1rem);
