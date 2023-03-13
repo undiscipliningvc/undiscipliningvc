@@ -241,6 +241,11 @@ footer{
 		padding: .5rem 1rem 1rem;
 	}
 }
+@media only screen and (min-width: 1200px){
+	footer{
+		font-size: 1.05rem;
+	}
+}
 /* main container for individual items in the footer */
 /* note: the coding on this could be changed to an unordered list to support accessibility */
 footer p .site-detail{
@@ -468,7 +473,7 @@ nav#nav1 ul li:not(:first-child):not(:last-child){
 }
 @media only screen and (min-width: 1200px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
-		/* font-size: 1rem; */
+		font-size: 1.05rem;
 		font-weight: 600;
 		display: block;
 		visibility: visible;
@@ -1028,13 +1033,13 @@ hr{
 	text-align: center;
 }
 .large{
-	font-size: 1.2rem;
+	font-size: 1.1em;
 }
 .larger{
-	font-size: 1.25rem;
+	font-size: 1.15em;
 }
 .largest{
-	font-size: 1.3rem;
+	font-size: 1.2em;
 }
 .left{
 	text-align: left;
@@ -1043,13 +1048,13 @@ hr{
 	text-align: right;
 }
 .small{
-	/* font-size: 1rem; */
+	font-size: .95em;
 }
 .smaller{
-	/* font-size: .95rem; */
+	font-size: .90em;
 }
 .smallest{
-	/* font-size: .9rem; */
+	font-size: .85em;
 }
 .smallcaps{
 	font-variant: small-caps;
