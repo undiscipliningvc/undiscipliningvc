@@ -26,6 +26,7 @@
 @media only screen and (min-width: 624px){
   #timeline-container{
     margin: 3rem auto;
+    padding: 1rem 0;
   }
 }
 /* vertical line for timeline */
@@ -47,7 +48,7 @@
   }
 }
 /* individual timeline item */
-.timeline-block{
+#timeline-container .timeline-block{
   margin: 2rem 0;
   width: 100%;
   display: -webkit-box;
@@ -62,7 +63,7 @@
   clear: both;
 }
 @media only screen and (min-width: 624px){
-  .timeline-block{
+  #timeline-container .timeline-block{
     margin: 1rem 0;
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
