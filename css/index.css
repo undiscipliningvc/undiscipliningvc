@@ -32,11 +32,12 @@
 	background: #757575;
 }
 .section-tiles ul li a:hover,
-.section-tiles ul li a:focus-within{
+.section-tiles ul li a:focus{
 	background: linear-gradient(to left top, #fff 50%, #2e2e2e 50%);
+	outline: 2px dotted;
 }
 .section-tiles ul li:hover a span,
-.section-tiles ul li:focus-within a span{
+.section-tiles ul li a:focus span{
 	background: #2e2e2e;
 }
 /* the container for cluster page tiles */
