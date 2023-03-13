@@ -236,6 +236,11 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		padding: 4px 6px;
 	}
 }
+@media screen and (min-width: 992px){
+	.content main .aspect-ratio-box .caption{
+		font-size: 1.9rem;
+	}
+}
 .content main .aspect-ratio-box .caption:hover,
 .content main .aspect-ratio-box .caption:focus-within{
 	background-color: #fff;
@@ -277,7 +282,17 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		line-height: 3.3rem;
 	}
 	.content main h2#error404{
-		/* font-size: 2.8rem; */
+		font-size: 3rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.content main h2{
+		font-size: 3rem;
+		/* line-height: 3.3rem; */
+	}
+	.content main h2#error404{
+		font-size: 3.4rem;
+		margin-top: 1.5rem;
 	}
 }
 /* subsection title */
@@ -453,9 +468,14 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content section p{
 	clear: both;
 }
-/* paragraph preceded by a heading */
-.content section h3 + p{
+/* paragraph in citation section */
+.content section h3#citation + p{
 	margin: 1rem 0 0;
+}
+@media only screen and (min-width: 992px){
+	.content section h3#citation + p{
+		margin: 1rem 0;
+	}
 }
 /* founding devs. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
