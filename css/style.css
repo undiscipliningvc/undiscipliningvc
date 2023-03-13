@@ -431,7 +431,7 @@ nav#fallback-nav h1{
 @media only screen and (min-width: 768px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
-		/* font-size: 2rem; */
+		font-size: 1.9rem;
 	}
 }
 nav#nav1 a:hover h1,
@@ -542,7 +542,7 @@ nav#fallback-nav li button i{
 @media only screen and (min-width: 768px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
-		/* font-size: 1.8rem; */
+		font-size: 1.75rem;
 	}
 }
 nav#nav1 li button:hover i,
@@ -653,6 +653,11 @@ nav#nav2 #overlay-menu ul li a span{
 		font-size: 1.05rem;
 	}
 }
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu ul li a span{
+		font-size: 1.1rem;
+	}
+}
 /* close overlay button */
 nav#nav2 #overlay-menu li button.close{
 	background: none;
@@ -704,7 +709,7 @@ nav#nav2 #overlay-menu li button.close i{
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
-		/* font-size: 1.8rem; */
+		font-size: 1.75rem;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
