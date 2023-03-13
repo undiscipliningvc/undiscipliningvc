@@ -265,6 +265,12 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		line-height: 2.3rem;
 	}
 }
+@media only screen and (min-width: 624px){
+	.content main h2{
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+}
 @media only screen and (min-width: 768px){
 	.content main h2{
 		/* font-size: 2.75rem; */
@@ -520,7 +526,7 @@ ul.text-list{
 }
 .content ul.annotation,
 .content ol.annotation{
-	margin: -1rem 0 0 1.5rem;
+	margin: -.5rem 0 0 1.5rem;
 }
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
