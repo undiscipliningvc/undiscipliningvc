@@ -178,11 +178,16 @@ main{
 	max-width: 700px;
 	display: block;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 624px){
 	main{
 		padding: 1rem;
 	}
 }
+/* @media only screen and (min-width: 768px){
+	main{
+		padding: 1rem;
+	}
+} */
 @media only screen and (min-width: 992px){
 	main{
 		max-width: 685px;
@@ -417,6 +422,12 @@ nav#fallback-nav h1{
 		font-size: 1.6rem;
 	}
 }
+@media only screen and (min-width: 624px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 1.7rem;
+	}
+}
 @media only screen and (min-width: 768px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
@@ -522,6 +533,11 @@ nav#fallback-nav li button i{
 	nav#fallback-nav li button i{
 		font-size: 1.5rem;
 	}
+}
+@media only screen and (min-width: 624px) {
+  nav#nav1 li button i, nav#fallback-nav li button i {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 li button i,
@@ -680,6 +696,11 @@ nav#nav2 #overlay-menu li button.close i{
 	nav#nav2 #overlay-menu li button.close i{
 		font-size: 1.5rem;
 	}
+}
+@media only screen and (min-width: 624px) {
+  nav#nav2 #overlay-menu li button.close i {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
