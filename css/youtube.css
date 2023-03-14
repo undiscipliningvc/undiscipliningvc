@@ -1,10 +1,11 @@
-/* 1.2.3.1. YouTube Player */
-
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
 /* Note: The YouTube CSS is only used on pages that link to YouTube videos, such as all the pages in the /html/zoomcasts directory */
-/* For further information about the Undisciplining the Victorian Classroom CSS files, see /css/style.css */
 /* This CSS file is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
+/* For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+
+/* 1.2.3.1. YouTube Player */
 
 /* main container for embedded YouTube video */
 .wrapper{

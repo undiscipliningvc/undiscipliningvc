@@ -1,8 +1,10 @@
-/* 1.2.1. Home Page */
-
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023). For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
-/* This file provides CSS for the home page of the site: /index.html */
+/* This file provides CSS for the first level of the site, the home page: /index.html */
+/* For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+
+/* 1.2.1. Home Page */
 
 /* section-specific colors */
 /* for further section-specific color specs, see /css/cluster.css, /css/content.css, and /css/style.css */

@@ -1,7 +1,10 @@
-/* 1.2.2 Cluster Pages */
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023). For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
 /* Cluster pages constitute the second level of the UVC site and consist of the gateway pages that provide access to individual Zoomcasts, lesson plans, syllabi, assessments, and various parts of the "About" section. At present, there are five such files: /html/about.html, /html/assessments.html, /html/lesson_plans.html, /html/syllabi.html, and /html/zoomcasts.html */
+/* For further information about the UVC CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+
+/* 1.2.2 Cluster Pages */
 
 /* section-specific colors, in particular for the title card and card headings on cluster pages */
 /* for further section-specific color specs, see /css/content.css, /css/index.css, and /css/style.css */

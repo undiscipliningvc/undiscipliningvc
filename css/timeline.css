@@ -1,11 +1,12 @@
-/* 1.2.3.2. Timeline */
-
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023) */
 /* Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ */
 /* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
-/* For further information about the Undisciplining the Victorian Classroom CSS files, see /css/style.css */
 /* This CSS file is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
 /* Note: The timeline CSS is only used on pages that have a timeline, such as /html/lesson_plans/east_asia_timeline.html */
+/* For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+
+/* 1.2.3.2. Timeline */
 
 /* hyperlinks for centuries */
 .timeline-dates{
@@ -167,7 +168,7 @@ section section .timeline-content h4{
 }
 @media only screen and (min-width: 992px){
   section section .timeline-content h4{
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 }
 section section .timeline-block-right h4{
