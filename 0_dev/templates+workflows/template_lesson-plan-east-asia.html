@@ -142,7 +142,7 @@
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
 			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0004';$(this).load(file)})});
 			// Loads JS file only after rest of page has loaded; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(document).ready(function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0004";document.body.appendChild(element)});
+			$(document).ready(function(){loadScript("/js/scripts.js?=newVers_0004")});function loadScript(src){var script=document.createElement("script");script.src=src;document.body.appendChild(script)}
 		</script>		
 	</body>
 </html>
