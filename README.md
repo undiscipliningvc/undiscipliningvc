@@ -12,7 +12,7 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 * **Level 4:** Downloadable files, i.e., all the files that appear in /pdf
 
 ## Subdirectories in the Root Directory
-* **0_dev:** Files needed for developing the site. These include icons, page templates, a sample annotated HTML file, image conversion code, and the UVC peer review stamp.
+* **0_dev:** Files needed for developing the site. These include a set of empty directories (used to generate derivative images) icons, page templates and workflows, a sample annotated HTML file, image conversion code, and the UVC peer review stamp.
 
 * **bash:** Scripts to develop the site. These include scripts to run a local server in Python and to push changes from the dev to production branches.
 
