@@ -1,0 +1,14 @@
+Create template/spreadsheet
+	lesson plan (africa/caribbean/seacole)
+	zoomcast
+
+Update checklists/create Google form
+	assessment
+	lesson plan
+	syllabus
+	zoomcast
+
+Update workflows
+	assessment-syllabus
+	lesson plan
+	zoomcast	
