@@ -306,7 +306,7 @@
 }
 @media only screen and (min-width: 992px){
 	.cluster main section div span{
-		line-height: 1.55;
+		line-height: 1.4;
 	}
 }
 /* the descriptive text below each cluster page slide image */
@@ -389,6 +389,7 @@
 @media only screen and (min-width: 992px){
 	.cluster main section ul li a,
 	.cluster main section ul li a:visited{
+		font-size: 1rem;
 		line-height: 1.7rem;
 	}
 }

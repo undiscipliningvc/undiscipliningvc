@@ -333,6 +333,12 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		font-size: 1.3rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	.content h3#caption,
+	.content h3#citation{
+		font-size: 1.5rem;
+	}
+}
 /* sub-subsections headings */
 .content main h4{
 	text-align: left;
@@ -436,7 +442,12 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* item in ordered list of subsections in page menu */
 .content ol.menu li{
-	margin-bottom: .3rem;
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 768px){
+	.content ol.menu li{
+		margin-bottom: .3rem;
+	}
 }
 /* ordered list of sub-subsections in page menu */
 .content ol.menu li ol{

@@ -194,11 +194,6 @@ main{
 		padding: 1rem;
 	}
 }
-/* @media only screen and (min-width: 768px){
-	main{
-		padding: 1rem;
-	}
-} */
 @media only screen and (min-width: 992px){
 	main{
 		max-width: 685px;
@@ -246,7 +241,7 @@ footer{
 		padding: .5rem 1rem 1rem;
 	}
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px){
 	footer{
 		font-size: 1.05rem;
 	}
@@ -1030,14 +1025,16 @@ hr{
 .center{
 	text-align: center;
 }
-.large{
-	font-size: 1.1em;
-}
-.larger{
-	font-size: 1.15em;
-}
-.largest{
-	font-size: 1.2em;
+@media only screen and (min-width: 768px){
+	.large{
+		font-size: 1.1em;
+	}
+	.larger{
+		font-size: 1.15em;
+	}
+	.largest{
+		font-size: 1.2em;
+	}
 }
 .left{
 	text-align: left;
@@ -1045,15 +1042,16 @@ hr{
 .right{
 	text-align: right;
 }
-.small,
-.small{
-	font-size: .95em;
-}
-.smaller{
-	font-size: .90em;
-}
-.smallest{
-	font-size: .85em;
+@media only screen and (min-width: 768px){
+	.small{
+		font-size: .95em;
+	}
+	.smaller{
+		font-size: .90em;
+	}
+	.smallest{
+		font-size: .85em;
+	}
 }
 .smallcaps{
 	font-variant: small-caps;
