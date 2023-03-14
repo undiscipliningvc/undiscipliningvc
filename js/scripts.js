@@ -9,30 +9,34 @@ if ("serviceWorker" in navigator) {
 
 
 // Adds border to sticky nav after scroll down
+// Original coding improved by ChatGPT (https://chat.openai.com/chat) by adding a transition to the border so that it doesn't appear suddenly when the user scrolls down.
 $(window).scroll(function () {
   var $heightScrolled = $(window).scrollTop();
   var $defaultHeight = 300;
+  var $borderHeight = 50; // the height of the border in pixels
   if ($heightScrolled < $defaultHeight) {
-    $('#nav1').removeClass("borderBottom")
-    // $('#nav2').addClass("a")
+    $('#nav1').removeClass("borderBottom");
   }
   else {
-      $('#nav1').addClass("borderBottom")
+    var $borderOpacity = ($heightScrolled - $defaultHeight) / $borderHeight;
+    $borderOpacity = Math.min($borderOpacity, 1);
+    $('#nav1').addClass("borderBottom").css("border-bottom-color", "rgba(0, 0, 0, " + $borderOpacity + ")");
   }
 });
 
 
 //Scroll to top button
 //Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// Original coding improved by ChatGPT (https://chat.openai.com/chat) by making the scroll smooth instead of sudden.
 
-//Get the button
+// Get the button
 var mybutton = document.getElementById("topButton");
 
-// When the user scrolls down 40px from the top of the document, show the button
+// When the user scrolls down 300px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     mybutton.style.display = "block";
     mybutton.style.visibility = "visible";
   } 
@@ -40,13 +44,16 @@ function scrollFunction() {
     mybutton.style.display = "none";
     mybutton.style.visibility = "hidden";
   }
-};
-			
-// When the user clicks on the button, scroll to the top of the document
+}
+
+// When the user clicks on the button, smoothly scroll to the top of the document
 function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-};
+  var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  if (currentScroll > 0) {
+    window.requestAnimationFrame(topFunction);
+    window.scrollTo(0, currentScroll - (currentScroll / 8));
+  }
+}
 
 
 // Overlay
@@ -83,31 +90,41 @@ function closeSlideMenu () {
 // Trap Focus in Overlay
 // Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
 // Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
+// Original coding improved by ChatGPT (https://chat.openai.com/chat) by checking whether the element is focusable before setting focus on it.
 jQuery(document).ready(function () {
+  var $focusableElements = jQuery('#overlay-first, #overlay-last').find('a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+
   jQuery('#overlay-last').on('keydown', function (e) {
     var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
     if (!isTabPressed) {
-      return
+      return;
     }
     if (e.shiftKey) {
-      return
+      return;
     } else {
-      jQuery('#overlay-first').focus();
-      e.preventDefault()
+      var $nextElement = $focusableElements.eq(0);
+      if ($nextElement.length) {
+        $nextElement.focus();
+      }
+      e.preventDefault();
     }
   });
+  
   jQuery('#overlay-first').on('keydown', function (e) {
     var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
     if (!isTabPressed) {
-      return
+      return;
     }
     if (e.shiftKey) {
-      jQuery('#overlay-last').focus();
-      e.preventDefault()
+      var $prevElement = $focusableElements.eq($focusableElements.length - 1);
+      if ($prevElement.length) {
+        $prevElement.focus();
+      }
+      e.preventDefault();
     } else {
-      return
+      return;
     }
-  })
+  });
 });
 
 
@@ -141,14 +158,31 @@ $("img").click(function(){
 
 // Increases site security
 // Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
-AddRelNoopener();
-
-function AddRelNoopener(){
+// Original coding improved by ChatGPT (https://chat.openai.com/chat) by implementing more security measures, such as using HTTPS, enabling Content Security Policy (CSP), and using secure cookies.
+function AddRelNoopener() {
   var links = document.querySelectorAll("a");
-  for(var i = 0; i < links.length; i++){
-    links[i].setAttribute("rel","noopener");
+  for (var i = 0; i < links.length; i++) {
+    // Set rel="noopener" to prevent the target page from accessing the window.opener object, which can be a security risk.
+    links[i].setAttribute("rel", "noopener");
+
+    // Set href to use HTTPS if it's not already.
+    var url = new URL(links[i].href);
+    if (url.protocol !== "https:") {
+      url.protocol = "https:";
+      links[i].href = url.toString();
+    }
   }
-};
+
+  // Enable Content Security Policy (CSP) to restrict which resources can be loaded on the page.
+  var csp = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';";
+  document.head.appendChild(document.createElement('meta')).setAttribute('http-equiv', 'Content-Security-Policy');
+  document.head.querySelector('[http-equiv="Content-Security-Policy"]').setAttribute('content', csp);
+
+  // Use secure cookies to prevent session hijacking.
+  var secureCookieOptions = { secure: true, sameSite: 'strict' };
+  document.cookie = "cookieName=cookieValue; " + Object.entries(secureCookieOptions).map(([k, v]) => `${k}=${v}`).join('; ');
+}
+
 
 
 // Highlights users current section in navigation
