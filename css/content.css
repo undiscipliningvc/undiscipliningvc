@@ -266,7 +266,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* page title of all content pages */
 .content main h2{
 	font-size: 1.55rem;
-	/* line-height: 2.2rem; */
 	color: #242424;
 	margin: 1rem auto;
 }
@@ -326,7 +325,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* user guide section headings; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
-	/* font-size: 1.2rem; */
 	color: #242424;
 	text-align: left;
 }
@@ -403,7 +401,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
-	/* font-size: 1rem; */
 	text-decoration: underline;
 }
 /* lists, items, and incremental numbering for "Lesson Plan Cluster Production Details" sections (variant of "Production Details" section) */
@@ -433,7 +430,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* ordered list of subsections in page menu */
 .content ol.menu{
-	/* font-size: 1rem; */
 	margin: 1rem auto 0;
 	padding-left: 1.2rem;
 	display: inline-block;
@@ -448,11 +444,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	margin-top: .25rem;
 	padding-left: 1rem;
 }
-/* @media only screen and (min-width: 768px){
-	.content ol.menu li ol{
-		padding-left: revert;
-	}
-} */
 /* various kinds of lists */
 .content section ul#topic-list{
 	padding: 0 0 0 1.2rem;
@@ -541,7 +532,6 @@ ul.text-list{
 /* adapted from https://stackoverflow.com/a/20478913 */
 .endnotes:before{
 	content:attr(aria-label);
-	/* font-size: 1rem; */
 	font-style: italic;
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
@@ -556,7 +546,6 @@ ul.text-list{
 }
 /* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
 .content .annotation{
-	/* font-size: 1rem; */
 	margin: .25rem 0 0 1.5rem;
 	display: block;
 }

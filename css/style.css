@@ -136,14 +136,13 @@ html{
 }
 /* main container for body of html pages */
 body{
-	/* font-size: 1.1rem; */
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 	max-width: 1366px;
 	overflow-x: hidden;
-	/* -moz-osx-font-smoothing: auto;
-	-webkit-font-smoothing: antialiased; */
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: antialiased;
 }
 @media only screen and (min-width: 480px){
 	body{
@@ -235,7 +234,6 @@ main section ul{
 }
 /* main container for the footer */
 footer{
-	/* font-size: 1rem; */
 	text-align: center;
 	color: #fff;
 	background: #2e2e2e;
@@ -314,7 +312,6 @@ footer p .site-detail a:visited span{
 /* "skip to main content" tab */ 
 /* adapted from https://webaim.org/techniques/skipnav/ */
 #nav0 a{
-	/* font-size: 1rem; */
 	color: #fff;
 	background-color: rgb(66,66,66);
 	border-right: 2px solid #fff;
@@ -672,7 +669,6 @@ nav#nav2 #overlay-menu li a:focus{
 }
 /* text container within item in overlay */
 nav#nav2 #overlay-menu ul li a span{
-	/* font-size: .95rem; */
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 400;
 }
@@ -850,7 +846,6 @@ h2, h3, h4{
 	text-align: center;
 }
 h2{
-	/* font-size: 1.35rem; */
 	margin: 1.25rem auto 0;
 }
 @media only screen and (min-width: 992px){
@@ -858,12 +853,8 @@ h2{
 		font-size: 1.6rem;
 	}	
 }
-h3{
-	/* font-size: 1.15rem; */
-}
 h4,
 section section h4:first-child{
-	/* font-size: 1.05rem; */
 	font-weight: 600;
 	text-transform: uppercase;
 	margin: 1rem 0;
@@ -926,6 +917,7 @@ h7{
 
 
 /* 1.6. Images */
+/* regular images */
 img{
 	font-weight: 300;
 	border-style: none;
@@ -1019,7 +1011,6 @@ hr{
 }
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
-	/* font-size: .95rem; */
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 400;
 	background: #e6e6e6;
@@ -1054,6 +1045,7 @@ hr{
 .right{
 	text-align: right;
 }
+.small,
 .small{
 	font-size: .95em;
 }

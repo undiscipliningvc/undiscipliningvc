@@ -108,7 +108,6 @@
 }
 /* dropdown button for tab navigation to skip controls for YouTube video after starting play */
 .skipcontrols a{
-	/* font-size: .9rem; */
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #395375;
 	background: #e6e6e6;
