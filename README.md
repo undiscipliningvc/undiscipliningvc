@@ -3,11 +3,11 @@
 This is the main repository for the [Undisciplining the Victorian Classroom](https://undiscipliningvc.org/) (UVC) site, structured as follows:
 
 ## Levels
-* **Level 1:** Standalone site pages, including /404.html, /index.html, and /sitemap.html
+* **Level 1:** The home page of UVC (/index.html)
 
 * **Level 2:** Cluster pages, i.e., pages for the main sections of the site, including /html/about.html, /html/assessments.html, /html/lesson_plans.html, /html/syllabi.html, /html/zoomcasts.html
 
-* **Level 3:** Content pages, i.e., pages that present the content of the site, in particular all files in the following subdirectories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, /html/zoomcasts
+* **Level 3:** Content pages, i.e., pages that present the content of the site, in particular all files in the following subdirectories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, /html/zoomcasts; also includes two standalone files in the root directory: /404.html and /sitemap.html
 
 * **Level 4:** Downloadable files, i.e., all the files that appear in /pdf
 
@@ -29,6 +29,8 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 * **js:** All the site's JS files. Each file is annotated for function and to indicate, as relevant, sources of code.
 
 * **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files.
+
+* **pdf:** Python scripts and corresponding CSV files. Used to gather information for and generate content pages. Under development (spring 2023).
 
 ## Loose Files in the Root Directory
 * **404.html:** Users are directed to this page when they try to access a page of the UVC site that doesn't exist.
