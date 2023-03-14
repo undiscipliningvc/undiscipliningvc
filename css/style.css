@@ -55,6 +55,7 @@ Blue: #5378ac; (sections/carousel/images/nav0)
 .content main h2,
 .content.lesson-plans main h2,
 .content.syllabi main h2,
+.content.assessments main h2,
 .content.about main h2 = 15
 .marker = 19
 nav#nav1, nav#fallback-nav = 20
@@ -83,6 +84,9 @@ nav#nav1 a #lesson_plans.current{
 nav#nav1 a #syllabi.current{
 	border-bottom: 3px solid #778056;
 }
+/* nav#nav1 a #assessments.current{
+	border-bottom: 3px solid #778056;
+} */
 nav#nav1 a #about.current{
 	border-bottom: 3px solid #757575;
 }

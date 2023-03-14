@@ -23,6 +23,10 @@
 .syllabi.content main section.menu-container h3{
 	background: #728a61;
 }
+/* .assessments.content header,
+.assessments.content main section.menu-container h3{
+	background: #728a61;
+} */
 .about.content header,
 .about.content main section.menu-container h3{
 	background: #757575;
@@ -67,6 +71,7 @@
 /* the main container for specific types of content pages */
 .content.lesson-plans main,
 .content.syllabi main,
+.content.assessments main,
 .content.about main{
 	text-align: center;
 	margin: 0 auto;
@@ -78,6 +83,7 @@
 @media only screen and (min-width: 992px){
 	.content.lesson-plans main,
 	.content.syllabi main,
+	.content.assessments main,
 	.content.about main{
 		width: 75%;
 		max-width: 900px;
