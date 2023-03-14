@@ -205,3 +205,11 @@
 	color: #242424;
 	background: #fff;
 }
+/* reduces heading size for final sections on page */
+@media only screen and (min-width: 992px){
+	h2#site-code,
+	h2#image-details,
+	h2#citation{
+		font-size: 1.55rem;	
+	}
+}
