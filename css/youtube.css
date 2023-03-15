@@ -1,20 +1,21 @@
-/* 1.2.3.1. YouTube Player */
-
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
 /* Note: The YouTube CSS is only used on pages that link to YouTube videos, such as all the pages in the /html/zoomcasts directory */
-/* For further information about the Undisciplining the Victorian Classroom CSS files, see /css/style.css */
 /* This CSS file is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
+/* For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+
+/* 1.2.3.1. YouTube Player */
 
 /* main container for embedded YouTube video */
 .wrapper{
-	margin: 1em auto 1.5em;
+	margin: 1rem auto;
 	padding: 0;
 	border: 1px solid #242424;
 }
 @media only screen and (min-width: 480px){
 	.wrapper{
-		margin: 1em auto 1.5em;
+		margin: 1rem auto 2rem;
 	}
 }
 /* secondary container for embedded YouTube video */
@@ -107,7 +108,6 @@
 }
 /* dropdown button for tab navigation to skip controls for YouTube video after starting play */
 .skipcontrols a{
-	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #395375;
 	background: #e6e6e6;
@@ -123,7 +123,7 @@
 }
 @media only screen and (min-width: 768px){
 	.skipcontrols a{
-		font-size: .9em;
+		font-size: 1rem;
 	}
 }
 .skipcontrols a{

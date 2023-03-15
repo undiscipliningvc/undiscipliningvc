@@ -1,0 +1,257 @@
+/* .carousel .carousel-item .carousel-caption a{
+	font-size: 1rem;
+} */
+
+/* .cluster main section h2#level-2-title{.cluster main section div span{
+	font-size: 1.5rem;
+} */
+/* .cluster main section h3{
+	font-size: 1.2rem;
+} */
+/* .cluster main section div span{
+	font-size: 1.15rem;
+} */
+.cluster.zoomcasts main section div span{
+	font-size: 1.05rem;
+}
+.cluster main section p{
+	font-size: 1.05rem;
+}
+/* .cluster main section ul li:first-child{
+	font-size: 1rem;
+} */
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
+	font-size: 1rem;
+}
+.content main .aspect-ratio-box .caption{
+	font-size: 1.7rem;
+}
+/* .content main h2{
+	font-size: 1.8rem;
+} */
+/* .content main h2#error404{
+	font-size: 2.5rem;
+} */
+@media only screen and (min-width: 768px){
+	.content main h2{
+		font-size: 2.75rem;
+	}
+	.content main h2#error404{
+		font-size: 3rem;
+	}
+}
+/* .content main h3{
+	font-size: 1.4rem;
+} */
+.content h3#user-guide{
+	font-size: 1.2rem;
+}
+@media only screen and (min-width: 768px){
+	.content a.link404{
+		font-size: 1.2rem;
+	}
+}
+.content main .specs .specs-container a.mail span{
+	font-size: 1rem;
+}
+.content ol.menu{
+	font-size: 1rem;
+}
+.content .annotation{
+	font-size: 1rem;
+}
+.section-tiles{
+	font-size: 1.1rem;
+}
+.participate a,
+.participate a:visited{
+	font-size: 1rem;
+}
+
+body{
+	font-size: 1.1rem;
+}
+footer{
+	font-size: 1rem;
+}
+#nav0 a{
+	font-size: 1rem;
+}
+/* nav#nav1 h1,
+nav#fallback-nav h1{
+	font-size: 1.2rem;
+} */
+/* @media only screen and (min-width: 480px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 1.6rem;
+	}
+} */
+@media only screen and (min-width: 768px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 2rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	nav#nav1 ul li:not(:first-child):not(:last-child){
+		font-size: 1rem;
+  }
+}
+/* nav#nav1 li button i,
+nav#fallback-nav li button i{
+	font-size: 1.3rem;
+} */
+/* @media only screen and (min-width: 480px){
+	nav#nav1 li button i,
+	nav#fallback-nav li button i{
+		font-size: 1.6rem;
+	}
+} */
+@media only screen and (min-width: 768px){
+	nav#nav1 li button i,
+	nav#fallback-nav li button i{
+		font-size: 1.8rem;
+	}
+}
+nav#nav2 #overlay-menu ul li a span{
+	font-size: .95rem;
+}
+/* nav#nav2 #overlay-menu li button.close i{
+	font-size: 1.3rem;
+} */
+/* @media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.6rem;
+	}
+} */
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu li button.close i{
+		font-size: 1.8rem;
+	}
+}
+h2{
+	font-size: 1.35rem;
+}
+h3{
+	font-size: 1.15rem;
+}
+h4,
+section section h4:first-child{
+	font-size: 1.05rem;
+}
+/* h5{
+	font-size: 1.05rem;
+} */
+h5.alternate{
+
+}
+/* h6{
+	font-size: 1.1rem;
+} */
+h7{
+
+}
+/* #topButton{
+	font-size: .95rem;
+} */
+.breakout-quote{
+	font-size: .95rem;
+}
+.endnotes:before{
+	font-size: 1rem;
+}
+/* .large{
+	font-size: 1.2rem;
+}
+.larger{
+	font-size: 1.25rem;
+}
+.largest{
+	font-size: 1.3rem;
+} */
+.small{
+	font-size: 1rem;
+}
+.smaller{
+	font-size: .95rem;
+}
+.smallest{
+	font-size: .9rem;
+}
+
+/* section section .timeline-content h4{
+  font-size: 1.3rem;
+} */
+.timeline-content p{
+  font-size: .95rem;
+}
+
+.skipcontrols a{
+	font-size: .9rem;
+}
+@media only screen and (min-width: 768px){
+	.skipcontrols a{
+		font-size: 1rem;
+	}
+}
+
+/* ********** */
+.carousel .carousel-item{
+	line-height: 0;
+}
+/* .carousel .carousel-item .carousel-caption{
+	line-height: 1.5rem;
+} */
+
+/* .cluster main section div span{
+	line-height: 1.5rem;
+} */
+.cluster.zoomcasts main section p{
+	line-height: 1.875rem;
+}
+.cluster main section ul li a,
+.cluster main section ul li a:visited{
+	line-height: 1.75rem;
+}
+/* .content main h2{
+	line-height: 2.2rem;
+}
+@media only screen and (min-width: 480px){
+	.content main h2{
+		line-height: 2.25rem;
+	}
+} */
+@media only screen and (min-width: 768px){
+	.content main h2{
+		line-height: 3.5rem;
+	}
+}
+
+.founding-dev ul{
+	line-height: 2.25rem;
+}
+/* .participate a,
+.participate a:visited{
+	line-height: 1rem;
+} */
+
+/* :root{
+	line-height: 2rem;
+} */
+
+.timeline-content p{
+  line-height: 1.7rem;
+}
+
+
+.cluster main section ul li {
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 1rem 0 1.25rem;
+	padding: .3rem;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}

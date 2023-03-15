@@ -1,7 +1,10 @@
-/* 1.2.3. Content Pages */
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023). For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
-/* Content pages constitute the third level of the UVC site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the sitemap, and the 404 page. Except for the last two named files, the files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
+/* Content pages constitute the third level of the UVC site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the sitemap, and the 404 page. Except for the last two named files (which are located in the root directory), the files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
+/* For further information about the UVC CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+
+/* 1.2.3. Content Pages */
 
 /* section-specific colors, in particular for the colored divider line at the top of content pages and menu heading background */
 /* for further section-specific color specs, see /css/cluster.css, /css/index.css, and /css/style.css */
@@ -20,55 +23,55 @@
 .syllabi.content main section.menu-container h3{
 	background: #728a61;
 }
+/* .assessments.content header,
+.assessments.content main section.menu-container h3{
+	background: #728a61;
+} */
 .about.content header,
 .about.content main section.menu-container h3{
 	background: #757575;
 }
 /* the colored divider line at the top of content pages */
 .content header{
-	margin: calc(41px + .3em) auto 0;
+	margin: 43px auto 0;
 	padding: 0;
 	height: 10px;
 	max-width: calc(100% - 26px);
 }
 @media only screen and (min-width: 480px){
 	.content header{
-		margin: calc(47px + .3em) auto 0;
+		margin: 49px auto 0;
 		width: calc(100% - 30px);
 		max-width: 700px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.content header{
-		margin: calc(51px + .3em) auto 0;
+		margin: 57px auto 0;
 		height: 15px;
+		max-width: 1366px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.content header{
-		margin: calc(63px + .3em) auto 0;
+		margin: 65px auto 0;
 		width: calc(100% - 46px);
-		max-width: 1366px;
 	}
 }
 /* the main container for content pages */
 .content main{
-	padding: 0 .75em 1em;
+	padding: 0 1rem 1rem;
 	max-width: 100%;
-}
-@media only screen and (min-width: 480px){
-	.content main{
-		padding: 0 16px 1em;
-	}
 }
 @media only screen and (min-width: 768px){
 	.content main{
-		padding: 0 0 1em;
+		padding: 0 0 1rem;
 	}
 }
 /* the main container for specific types of content pages */
 .content.lesson-plans main,
 .content.syllabi main,
+.content.assessments main,
 .content.about main{
 	text-align: center;
 	margin: 0 auto;
@@ -80,6 +83,7 @@
 @media only screen and (min-width: 992px){
 	.content.lesson-plans main,
 	.content.syllabi main,
+	.content.assessments main,
 	.content.about main{
 		width: 75%;
 		max-width: 900px;
@@ -96,7 +100,7 @@
 .content main aside{
 	text-align: left;
 	max-width: 700px;
-	padding: .25em 1em;
+	padding: 1rem 2rem;
 	box-sizing: border-box;
 }
 @media only screen and (min-width: 992px){
@@ -127,14 +131,50 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main section section{
 	counter-reset: none;
 }
-/* spacing for initial content page section plus sections separated by lines (horizontal rules) or after paragraphs*/
-.content main section:first-of-type,
+/* production details section */
+.content main .specs{
+	margin-top: 2.5rem;
+	margin-bottom: 2rem;
+}
+/* section of page before menu (first section of page) */
+.content main section:first-of-type{
+ margin-top: 0;
+ margin-bottom: 1.5em
+}
+/* section of page after menu */
+.content main .menu-container + section{
+	margin-top: 1.5rem;
+}
+@media only screen and (min-width: 480px){
+	.content main .menu-container + section{
+		margin-top: 2.5rem;
+	}	
+}
+/* spacing for various kinds of sections */
 .content main hr + section{
 	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5em
 }
-.content main section p + .content main section:first-of-type{
-	margin-top: 2.5em;
+@media only screen and (min-width: 992px){
+	.content main section:first-of-type{
+	margin-top: 1.5em;
+	}
+}
+.content main section > section{
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+.content main section p + section:first-of-type {
+ margin-top: 2.5em
+}
+.content main section section section:first-of-type{
+	margin-top: 1.5rem;
+}
+.content main section h4 + section:first-of-type,
+.content main section h5 + section:first-of-type,
+.content main section h5 + section:first-of-type h6
+.content main section h6 + section:first-of-type{
+	margin-top: 1rem;
 }
 /* alignment for 404 page */
 .content.error404 main section:first-of-type,
@@ -144,14 +184,14 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* ratio box used for header images */ 
 /* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .content main .aspect-ratio-box{
-	margin: .75em auto 1.75em;
+	margin: 1rem auto 1.5rem;
 	padding: 0;
 	max-width: 700px;
 	position: relative;
 }
 @media only screen and (min-width: 992px){
 	.content main .aspect-ratio-box{
-		margin: 1.25em auto 2em;
+		margin: 1.5rem auto 2rem;
 		max-width: 900px;
 	}
 }
@@ -186,6 +226,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* information icon located in lower right-hand corner of header images */
 .content main .aspect-ratio-box .caption{
+	font-size: 1.4rem;
 	background-color: rgb(66,66,66);
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
@@ -200,8 +241,13 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media screen and (min-width: 480px){
 	.content main .aspect-ratio-box .caption{
-		font-size: 1.7em;
+		font-size: 1.6rem;
 		padding: 4px 6px;
+	}
+}
+@media screen and (min-width: 992px){
+	.content main .aspect-ratio-box .caption{
+		font-size: 1.9rem;
 	}
 }
 .content main .aspect-ratio-box .caption:hover,
@@ -217,102 +263,63 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main .aspect-ratio-box a:focus{
 	color: rgb(66,66,66);
 }
-/* page title of all content pages but zoomcasts */
-/* note: default positioning for page titles is over the center of header image */
-.content.lesson-plans main h2,
-.content.syllabi main h2,
-.content.about main h2{
-	font-size: 1.4em;
+/* page title of all content pages */
+.content main h2{
+	font-size: 1.55rem;
+	color: #242424;
+	margin: 1rem auto;
 }
-.content.about.error404 main h2{
-	font-size: 1.6em;
-}
-.content.lesson-plans main h2,
-.content.syllabi main h2,
-.content.about main h2{
-	font-weight: 400;
-	font-variant: small-caps;
-	line-height: 1.2em;
-	color: #fff;
-	background-color: rgb(66,66,66);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	margin: 0;
-	padding: .3em;
-	min-width: 60%;
-	max-width: 650px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	opacity: .93;
-	z-index: 15;
+.content main h2#error404{
+	font-size: 2.5rem;
 }
 @media only screen and (min-width: 480px){
-	.content.lesson-plans main h2,
-	.content.syllabi main h2,
-	.content.about main h2{
-		font-size: 1.6em;
+	.content main h2{
+		font-size: 1.8rem;
+		line-height: 2.3rem;
 	}
-	.content.about.error404 main h2{
-		font-size: 2.4em;
+}
+@media only screen and (min-width: 624px){
+	.content main h2{
+		font-size: 2rem;
+		line-height: 2.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.content.lesson-plans main h2,
-	.content.syllabi main h2,
-	.content.about main h2{
-		font-size: 2.3em;
-		max-width: 850px;
+	.content main h2{
+		font-size: 2.75rem;
+		line-height: 3.3rem;
 	}
-	.content.about.error404 main h2{
-		font-size: 3em;
-		max-width: 850px;
+	.content main h2#error404{
+		font-size: 3rem;
 	}
 }
-/* custom positioning for page title over top of header image */
-.content.lesson-plans main h2.top,
-.content.syllabi main h2.top,
-.content.about main h2.top{
-	top: 30%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -30%);
-	-moz-transform: translate(-50%, -30%);
-	transform: translate(-50%, -30%);
-}
-/* custom positioning for page title over bottom of header image */
-.content.lesson-plans main h2.bottom,
-.content.syllabi main h2.bottom,
-.content.about main h2.bottom{
-	top: 70%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -70%);
-	-moz-transform: translate(-50%, -70%);
-	transform: translate(-50%, -70%);
-}
-/* page title of zoomcasts content pages */
-.content.zoomcasts main h2{
-	font-size: 2.2em;
-	font-variant: small-caps;
-	line-height: 1.4em;
-	color: #242424;
-	margin: 0 auto;
-}
-@media only screen and (min-width: 768px){
-	.content.zoomcasts main h2{
-		font-size: 2.4em;
-		margin: .5em auto;
+@media only screen and (min-width: 992px){
+	.content main h2{
+		font-size: 3rem;
+		line-height: 3.75rem;
+	}
+	.content main h2#error404{
+		font-size: 3.4rem;
+		margin-top: 1.5rem;
 	}
 }
 /* subsection title */
 .content main h3{
-	font-size: 1.15em;
+	font-size: 1.35rem;
 	margin: 0 auto;
 }
+@media only screen and (min-width: 480px){
+	.content main h3{
+		font-size: 1.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.content main h3{
+		font-size: 1.6rem;
+	}
+}
 .content section.menu-container h3{
+	font-size: 1.25rem;
 	color: #fff;
 	margin-top: 0;
 }
@@ -320,6 +327,17 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content h3#user-guide{
 	color: #242424;
 	text-align: left;
+}
+@media only screen and (min-width: 480px){
+	.content h3#user-guide{
+		font-size: 1.3rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.content h3#caption,
+	.content h3#citation{
+		font-size: 1.5rem;
+	}
 }
 /* sub-subsections headings */
 .content main h4{
@@ -351,6 +369,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* sitemap hyperlink on 404 page */
 .content a.link404{
+	font-size: 1.1rem;
 	color: #fff;
 	font-weight: 600;
 	background-color: #cb6948;
@@ -365,9 +384,9 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content a.link404:hover{
 	background: #2e2e2e;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
 	.content a.link404{
-		font-size: 1.2em;
+		font-size: 1.2rem;
 	}
 }
 /* container for "Production Details" sections */
@@ -376,19 +395,18 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* sub-container for actual "Production Details" text */
 .content main .specs .specs-container{
-	margin-top: 1rem;
 	text-align: left;
 	display: inline-block;
 }
 /* email hyperlink in "Production Details" section */
 .content main .specs .specs-container a.mail,
 .content main .specs .specs-container a.mail:visited{
+	font-size: 1rem;
 	text-decoration: none;
 	padding: 0 5px;
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
-	font-size: .9em;
 	text-decoration: underline;
 }
 /* lists, items, and incremental numbering for "Lesson Plan Cluster Production Details" sections (variant of "Production Details" section) */
@@ -398,65 +416,77 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	display: inline;
 	counter-reset: items;
 }
+/* adds space in items in list, e.g., lesson plan pages */
 .content .cluster-details div ol li{
-	margin-right: .25em;
+	margin-right: .25rem;
 	display: inline;
 }
 .content .cluster-details div ol li::before{
 	counter-increment: items;
   content: counter(items) ") ";
 }
-/* main container for content page menu */
+/* main container for page menu */
 .content section.menu-container{
 	text-align: center;
 	border: 1px solid #949494;
 	margin: 0;
-	padding: 1.5em 2em 2em;
+	padding: 2rem;
 	display: inline-block;
 	box-sizing: border-box;
 }
-/* ordered list of subsections in content page menu */
+/* ordered list of subsections in page menu */
 .content ol.menu{
-	font-size: .9em;
-	margin: 1em auto 0;
-	padding-left: 1.2em;
+	margin: 1rem auto 0;
+	padding-left: 1.2rem;
 	display: inline-block;
 }
-/* ordered list of sub-subsections in content page menus */
-.content ol.menu li ol{
-	list-style: lower-alpha;
-	padding-left: 1em;
+/* item in ordered list of subsections in page menu */
+.content ol.menu li{
+	margin-bottom: 0;
 }
 @media only screen and (min-width: 768px){
-	.content ol.menu li ol{
-		padding-left: revert;
+	.content ol.menu li{
+		margin-bottom: .3rem;
 	}
+}
+/* ordered list of sub-subsections in page menu */
+.content ol.menu li ol{
+	list-style: lower-alpha;
+	margin-top: .25rem;
+	padding-left: 1rem;
 }
 /* various kinds of lists */
 .content section ul#topic-list{
-	padding: 0 0 0 1.2em;
+	padding: 0 0 0 1.2rem;
+}
+.content section ul#topic-list li{
+	margin-bottom: .25rem;
 }
 .content.about section ul{
 	list-style: none;
-	margin: 1.5em;
+	margin: 1rem 0 1rem 1.2rem;
 	padding: 0;
 }
 .content.about.values section ul{
 	list-style: inherit;
 }
-/* list items and list item hyperlinks */
-.content section ul li,
-.content section ul li a{
-	margin-bottom: .5em;
-}
 /* paragraphs */
 .content section p{
 	clear: both;
 }
+/* paragraph in citation section */
+.content section h3#citation + p{
+	margin: 1rem 0 0;
+}
+@media only screen and (min-width: 992px){
+	.content section h3#citation + p{
+		margin: 1rem 0;
+	}
+}
 /* founding devs. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
 .content.about.founders section p img{
-	margin: .5em .75em 0 0;
+	margin: .5rem .75rem 0 0;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -464,7 +494,6 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 @media only screen and (min-width: 480px){
 	.content.about.founders section p img{
-		margin: .5em .75em 0 0;
 		width: 50%;
 		float: left;
 		display: inline;
@@ -480,31 +509,69 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		width: 25%;
 	}
 }
+/* padding for all lists */
+.content ol,
+.content ul {
+  padding-left: 1.2rem;
+}
+@media only screen and (min-width: 480px){
+	.content ol,
+	.content ul {
+		padding-left: 1.4rem;
+	}	
+}
+/* margin for all list items */
+.content li{
+	margin-bottom: .5rem;
+}
+.content li:last-of-type{
+	margin-bottom: 0;
+}
+/* list of texts */
+ol.text-list,
+ul.text-list{
+	list-style: none; 
+	margin-bottom: 0; 
+	padding-left: 0
+}
+/* endnote lists */
+.content ol.endnotes,
+.content ul.endnotes{
+	padding: 0 0 0 1.2rem;
+}
+/* title for endnote lists */ 
+/* adapted from https://stackoverflow.com/a/20478913 */
+.endnotes:before{
+	content:attr(aria-label);
+	font-style: italic;
+	margin: 0 0 .5rem -1rem;
+	display: inline-block;
+}
 /* spacing for lists and list items that follow sub-subsection headings */
 .content h5 + ol,
 .content h5 + ul{
-	padding: 0 0 0 1.4rem;
+	padding: 0 0 0 1rem;
 }
 .content h5 + ol li{
-	margin: 0 0 1rem 0;
+	margin: 0 0 .5rem 0;
 }
 /* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
 .content .annotation{
-	font-size: .9em;
-	margin: .25em 0 0 1.5em;
+	margin: .25rem 0 0 1.5rem;
 	display: block;
 }
 .content ul.annotation,
 .content ol.annotation{
-	margin: 0 0 0 1.5em;
+	margin: -.5rem 0 0 1.5rem;
 }
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
 	list-style: lower-alpha;
-	padding-left: 1.4em;
+	padding-left: 1rem;
 }
 .content.sitemap ol li ol li ol{
 	list-style: lower-roman;
+	padding-left: 1.2rem;
 }
 @media only screen and (min-width: 768px){
 	.content.sitemap ol li ol{

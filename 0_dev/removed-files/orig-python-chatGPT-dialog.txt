@@ -1,0 +1,145 @@
+Sure, here's how you can do that:
+
+1. Modify the CSV file to have two columns and call it "stranded".
+2. Open the CSV file and find the data in the second column, second row. Let's say the value is "123".
+3. Open the HTML file called "tron" and find the text "xxx" in the file. Replace it with "123".
+4. Next, find the data in the third row, second column of the CSV file. Let's say the value is "456".
+5. Open the HTML file again and find the text "yyy". Replace it with "456".
+
+Here's an example Python code that can do this for you:
+
+```python
+import csv
+
+# Open the CSV file and find the data
+with open('stranded.csv', 'r') as csvfile:
+    reader = csv.reader(csvfile)
+    data = list(reader)
+    second_row_second_col = data[1][1]
+    third_row_second_col = data[2][1]
+
+# Open the HTML file and replace the text
+with open('tron.html', 'r') as f:
+    html = f.read()
+    html = html.replace('xxx', second_row_second_col)
+    html = html.replace('yyy', third_row_second_col)
+
+# Save the modified HTML file
+with open('tron.html', 'w') as f:
+    f.write(html)
+```
+
+Hope this helps!
+
+Yes, you can automate this process for multiple HTML files by wrapping the code I provided earlier in a loop that iterates over a list of HTML files. Here's an example code that shows how to do this:
+
+```python
+import csv
+import os
+
+# Define the name of the CSV file and its columns
+csv_filename = 'stranded.csv'
+csv_columns = ['column1', 'column2']
+
+# Define a list of HTML files to update
+html_files = ['tron.html', 'neon.html', 'cyber.html']
+
+# Open the CSV file and read the data
+with open(csv_filename, 'r') as csvfile:
+    reader = csv.DictReader(csvfile, fieldnames=csv_columns)
+    data = list(reader)
+
+    # Remove the header row
+    data.pop(0)
+
+    # Loop over the HTML files and update them
+    for html_filename in html_files:
+        # Read the contents of the HTML file
+        with open(html_filename, 'r') as f:
+            html = f.read()
+
+        # Replace the placeholders in the HTML file with the data from the CSV file
+        for row in data:
+            html = html.replace(f'{{{row["column1"]}}}', row["column2"])
+
+        # Save the updated HTML file
+        with open(os.path.splitext(html_filename)[0] + '_updated.html', 'w') as f:
+            f.write(html)
+```
+
+In this code, the `csv_filename` variable contains the name of the CSV file, and `csv_columns` contains the names of its columns. The `html_files` list contains the names of the HTML files to be updated.
+
+The code then opens the CSV file and reads its data using the `csv.DictReader` class. It removes the header row, and then loops over the HTML files using a `for` loop.
+
+Inside the loop, the code reads the contents of the HTML file, replaces the placeholders in the file with the data from the CSV file using a nested `for` loop, and then saves the updated HTML file with a `_updated` suffix added to its filename.
+
+Note that this code assumes that the placeholders in the HTML file are enclosed in curly braces and match the values in the `column1` column of the CSV file. For example, if the placeholder in the HTML file is `{xyz}`, then the value in the `column1` column of the CSV file should be `xyz`.
+
+To run the script, follow these steps:
+
+1. Open a text editor such as Notepad or Sublime Text.
+2. Copy and paste the code I provided earlier into the text editor.
+3. Save the file with a `.py` extension, for example, `update_html.py`.
+4. Open a command prompt or terminal window.
+5. Navigate to the directory where you saved the `update_html.py` file.
+6. Run the script by typing `python update_html.py` and pressing Enter.
+
+The script will then read the data from the `stranded.csv` file and update the HTML files specified in the `html_files` list. The updated HTML files will be saved in the same directory with a `_updated` suffix added to their filenames.
+
+Make sure that you have Python installed on your computer before running the script. You can check if you have Python installed by typing `python --version` in the command prompt or terminal window. If you don't have Python installed, you can download it from the official Python website (https://www.python.org/downloads/).
+
+Sure, here's the modified code that reads from the three CSV files (`red.csv`, `white.csv`, and `blue.csv`) and updates the corresponding three HTML files (`green.html`, `yellow.html`, and `orange.html`):
+
+```python
+import csv
+import os
+
+# Define the names of the CSV files and their columns
+csv_filenames = {
+    'red': 'red.csv',
+    'white': 'white.csv',
+    'blue': 'blue.csv',
+}
+csv_columns = ['column1', 'column2']
+
+# Define the names of the HTML files to update
+html_filenames = {
+    'green': 'green.html',
+    'yellow': 'yellow.html',
+    'orange': 'orange.html',
+}
+
+# Loop over the CSV files and update their corresponding HTML files
+for color, csv_filename in csv_filenames.items():
+    # Open the CSV file and read the data
+    with open(csv_filename, 'r') as csvfile:
+        reader = csv.DictReader(csvfile, fieldnames=csv_columns, delimiter='\t')
+        data = list(reader)
+
+        # Remove the header row
+        data.pop(0)
+
+        # Read the contents of the corresponding HTML file
+        html_filename = html_filenames[color]
+        with open(html_filename, 'r') as f:
+            html = f.read()
+
+        # Replace the placeholders in the HTML file with the data from the CSV file
+        for row in data:
+            html = html.replace(f'{{{row["column1"]}}}', row["column2"])
+
+        # Save the updated HTML file
+        updated_html_filename = os.path.splitext(html_filename)[0] + '_updated.html'
+        with open(updated_html_filename, 'w') as f:
+            f.write(html)
+```
+
+In this code, the `csv_filenames` dictionary maps each color to its CSV filename, and the `html_filenames` dictionary maps each color to its HTML filename.
+
+The code then loops over the `csv_filenames` dictionary using the `items()` method, and for each color, it opens the corresponding CSV file and reads its data, removes the header row, and reads the contents of the corresponding HTML file.
+
+It then replaces the placeholders in the HTML file with the data from the CSV file using a nested `for` loop, and saves the updated HTML file with a `_updated` suffix added to its filename.
+
+Note that this code assumes that the placeholders in the HTML files are enclosed in curly braces and match the values in the `column1` column of the CSV files. For example, if the placeholder in the HTML file is `{xyz}`, then the value in the `column1` column of the CSV file should be `xyz`.
+
+

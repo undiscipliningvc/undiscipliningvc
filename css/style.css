@@ -1,6 +1,9 @@
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023) and is adapted from the CSS files for One More Voice (https://onemorevoice.org/) and Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
-/* This is the main CSS file for Undisciplining the Victorian Classroom (UVC) site (https://undiscipliningvc.org/). It encompasses styling that is common across all pages of the site, including coding for files that constitute the first level of the UVC site: /404.html, /index.html, and /sitemap.html */
+/* This is the main CSS file for Undisciplining the Victorian Classroom (UVC) site (https://undiscipliningvc.org/). It encompasses styling that is common across all pages of the site */
+/* For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
+
+/* Main CSS File */
 
 /* 
 Table of Contents
@@ -52,6 +55,7 @@ Blue: #5378ac; (sections/carousel/images/nav0)
 .content main h2,
 .content.lesson-plans main h2,
 .content.syllabi main h2,
+.content.assessments main h2,
 .content.about main h2 = 15
 .marker = 19
 nav#nav1, nav#fallback-nav = 20
@@ -80,6 +84,9 @@ nav#nav1 a #lesson_plans.current{
 nav#nav1 a #syllabi.current{
 	border-bottom: 3px solid #778056;
 }
+/* nav#nav1 a #assessments.current{
+	border-bottom: 3px solid #778056;
+} */
 nav#nav1 a #about.current{
 	border-bottom: 3px solid #757575;
 }
@@ -93,11 +100,15 @@ nav#nav1 a:focus .current{
 /* 1.1. Main Components */
 
 /* applies border-box to entire site */
-/* *, *:before, *:after {
+*, *:before, *:after {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-} */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* removes the default focus on individual items */
+*:focus{
+	outline: 0 none;
+}
 /* color applied when user highlights text on a page */ 
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
@@ -110,14 +121,18 @@ nav#nav1 a:focus .current{
 	background: #395375;
   text-shadow: none;
 }
+/* styles for entire site */
+:root{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	line-height: 1.875rem;
+	color: #212119;
+}
 /* main containter for html pages */
 html{
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	color: #212119;
-	background-color: #fff;
 	-ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+	background-color: #fff;
 }
 /* main container for body of html pages */
 body{
@@ -126,8 +141,18 @@ body{
 	width: 100%;
 	max-width: 1366px;
 	overflow-x: hidden;
-	/* -moz-osx-font-smoothing: auto;
-	-webkit-font-smoothing: antialiased; */
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: antialiased;
+}
+@media only screen and (min-width: 480px){
+	body{
+		font-size: 1.05rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	body{
+		font-size: 1.1rem;
+	}
 }
 /* main sub-container for body of html pages */
 .text-container{
@@ -137,13 +162,13 @@ body{
 /* note: the coding on this should be changed to support accessibility */
 header{
 	margin: 43px auto 0;
-	padding: 0 .75em;
+	padding: 0 .75rem;
 	position: relative;
 }
 @media only screen and (min-width: 480px){
 	header{
 		margin-top: 49px;
-		padding: 0 1em;
+		padding: 0 1rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -158,22 +183,20 @@ header{
 }
 /* container for the main part of the page (i.e., everything but the header and footer) */
 main{
-	font-size: 1.1em;
 	text-align: center;
-	line-height: 1.875em;
 	margin: 0 auto;
-	padding: 0 1em 1em;
+	padding: 0 1rem 1rem;
 	max-width: 700px;
 	display: block;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 624px){
 	main{
-		padding: 1.25em 1em 1em;
+		padding: 1rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	main{
-		max-width: 650px;
+		max-width: 685px;
 	}
 }
 /* the summary element is used for the "Overview" section */
@@ -206,38 +229,35 @@ main section ul{
 }
 /* main container for the footer */
 footer{
-	font-size: 1em;
 	text-align: center;
-	line-height: 1.875em;
 	color: #fff;
 	background: #2e2e2e;
-	margin: .75em auto 0;
-	padding: .25em 1em 1em 1em;
+	margin: .75rem auto 0;
+	padding: .25rem 1rem 1rem;
 }
 @media only screen and (min-width: 768px){
 	footer{
-		margin: 1em auto 0;
-		padding: .5em 1em 1em 1em;
+		margin: 1rem auto 0;
+		padding: .5rem 1rem 1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	footer{
+		font-size: 1.05rem;
 	}
 }
 /* main container for individual items in the footer */
 /* note: the coding on this could be changed to an unordered list to support accessibility */
 footer p .site-detail{
-	line-height: 1.875em;
-	padding: 0 .2em;
+	padding: 0 .1rem;
 }
 /* separator for individual items in the footer */
 footer p .site-detail::after{
 	content: ' | ';
-	padding-left: .5em;
+	padding-left: .2rem;
 }
 footer p .site-detail:last-child::after{
 	content: '';
-}
-@media only screen and (min-width: 480px){
-	footer p .site-detail{
-		padding: 0 .3em;
-	}
 }
 @media only screen and (min-width: 768px){
 	footer p .site-detail{
@@ -253,11 +273,6 @@ footer p .site-detail a:visited{
 footer p .site-detail a span,
 footer p .site-detail a:visited span{
 	text-decoration: underline;
-}
-@media only screen and (min-width: 768px){
-	hr{
-		margin: 2em 0;
-	}
 }
 /* help make the overlay disappear above 1200px */
 /* tied to elements above in this subsection of the CSS */
@@ -292,7 +307,6 @@ footer p .site-detail a:visited span{
 /* "skip to main content" tab */ 
 /* adapted from https://webaim.org/techniques/skipnav/ */
 #nav0 a{
-	font-size: 1em;
 	color: #fff;
 	background-color: rgb(66,66,66);
 	border-right: 2px solid #fff;
@@ -300,13 +314,18 @@ footer p .site-detail a:visited span{
 	-webkit-border-right-radius: 8px;
 	-moz-border-right-radius: 8px;
 	border-bottom-right-radius: 8px;
-	padding: 8px 6px;
+	padding: 8px 10px;
 	position: absolute;
-	top: -40px;
+	top: -48px;
 	left: 0px;
 	z-index: 100;
 	-webkit-transition: top 1s ease-out;
 	transition: top .4s ease-out;
+}
+@media only screen and (min-width: 992px){
+	#nav0 a{
+		font-size: 1rem;
+	}
 }
 #nav0 a:focus{
 	outline-color: transparent;
@@ -324,10 +343,6 @@ footer p .site-detail a:visited span{
 /* main container for nav and fallback nav */
 nav#nav1,
 nav#fallback-nav{
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	line-height: 1em;
-	cursor: pointer;
   background-color: #fff;
 	margin: 0 auto;
 	width: 100%;
@@ -371,31 +386,25 @@ nav#fallback-nav.borderBottom{
 nav#nav1 ul,
 nav#fallback-nav ul{
 	list-style: none;
-	margin: 0 auto;
-	padding: 0 8px;
+	margin: 0;
+	padding: 0 1rem 0 .5rem;
 	height: 100%;
-	max-width: 700px;
 	display: -webkit-flex !important;
 	display: flex !important;
 	justify-content: space-between;
 	align-items: center;
 }
-@media only screen and (min-width: 480px){
-	nav#nav1 ul,
-	nav#fallback-nav ul{
-		padding: 0 1em 0 .5em;
-	}
-}
 @media only screen and (min-width: 992px){
 	nav#nav1 ul,
 	nav#fallback-nav ul{
-		padding: 0 16px;
+		width: 100%;
 		max-width: 1366px;
 	}
 }
 /* single item in list of items in nav and fallback nav */
 nav#nav1 li,
 nav#fallback-nav li{
+	margin: 0;
 	display: inline-block;
 }
 /* last item in list of items in nav and fallback nav */
@@ -424,13 +433,25 @@ nav#fallback-nav h1{
 @media only screen and (min-width: 480px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
-		font-size: 1.6em;
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (min-width: 624px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 1.7rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 h1,
 	nav#fallback-nav h1{
-		font-size: 2em;
+		font-size: 1.9rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav#nav1 h1,
+	nav#fallback-nav h1{
+		font-size: 2.15rem;
 	}
 }
 nav#nav1 a:hover h1,
@@ -444,16 +465,15 @@ nav#fallback-nav a:focus-within h1{
 	border-radius: 5px;
 	transition: 0.2s;
 }
-/* items in nav excepting site logo and hamburger menu */
+/* hide items in nav excepting site logo and hamburger menu below 1200px */
 nav#nav1 ul li:not(:first-child):not(:last-child){
-	font-size: .95em;
-	font-weight: 600;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 1200px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
-		font-size: 1em;
+		font-size: 1.05rem;
+		font-weight: 600;
 		display: block;
 		visibility: visible;
 	}
@@ -526,19 +546,23 @@ nav#fallback-nav li button:focus-within{
 /* hamburger menu icon; actual icon provided by FontAwesome */
 nav#nav1 li button i,
 nav#fallback-nav li button i{
-	font-size: 1.3rem;
-	color: #242424;
+	font-size: 1.25rem;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
+}
+@media only screen and (min-width: 624px) {
+  nav#nav1 li button i, nav#fallback-nav li button i {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (min-width: 768px){
 	nav#nav1 li button i,
 	nav#fallback-nav li button i{
-		font-size: 1.8rem;
+		font-size: 1.75rem;
 	}
 }
 nav#nav1 li button:hover i,
@@ -593,34 +617,43 @@ nav#nav2 #overlay-menu{
 nav#nav2 #overlay-menu ul{
 	text-align: right;
 	list-style: none;
-	margin: 43px 0 0 0;
-	padding: 0;
-}
-@media only screen and (min-width: 480px){
-	nav#nav2 #overlay-menu ul{
-		margin-top: 49px;
-	}
-}
-@media only screen and (min-width: 768px){
-	nav#nav2 #overlay-menu ul{
-		margin-top: 57px;
-	}
-}
-@media only screen and (min-width: 992px){
-	nav#nav2 #overlay-menu ul{
-		margin-top: 65px;
-	}
+	margin: 0;
+	padding: 0 1rem 0 .5rem;
 }
 /* single item in overlay */
 nav#nav2 #overlay-menu ul li{
 	border-bottom: 1px solid #fff;
 }
+/* first item in overlay (item for close overlay button) */
+nav#nav2 #overlay-menu ul li:first-child{
+	height: 43px;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu ul li:first-child{
+		height: 49px;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu ul li:first-child{
+		height: 57px;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav#nav2 #overlay-menu ul li:first-child{
+		height: 65px;
+	}
+}
 /* hyperlink within item in overlay */
 nav#nav2 #overlay-menu li a{
+	font-size: 1.1rem;
   color: #242424;
 	text-decoration: none;
 	white-space: nowrap;
-  padding: 20px 40px;
+  padding: 20px 30px;
 	display: block;
 }
 nav#nav2 #overlay-menu li a:hover,
@@ -631,8 +664,18 @@ nav#nav2 #overlay-menu li a:focus{
 }
 /* text container within item in overlay */
 nav#nav2 #overlay-menu ul li a span{
-	font-size: .95em;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
+}
+@media only screen and (min-width: 480px){
+	nav#nav2 #overlay-menu ul li a span{
+		font-size: 1.05rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav2 #overlay-menu ul li a span{
+		font-size: 1.1rem;
+	}
 }
 /* close overlay button */
 nav#nav2 #overlay-menu li button.close{
@@ -641,27 +684,19 @@ nav#nav2 #overlay-menu li button.close{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	padding: 7px 8px 5px;
-	position: absolute;
-	top: 5px;
-	right: 10px;
+	width: 34.2px;
+	height: 33.15px;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close{
-		padding: 6px 8px;
-		right: 18px;
+		width: 38.4px;
+		height: 37.6px;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
-		top: 8px;
-		right: 40px;
-	}
-}
-@media only screen and (min-width: 992px){
-	nav#nav2 #overlay-menu li button.close{
-		top: 11px;
-		right: 16px;
+		width: 41.2px;
+		height: 40.8px;
 	}
 }
 /* hide close overlay button above 1200px */
@@ -678,17 +713,22 @@ nav#nav2 #overlay-menu li button.close:focus-within{
 }
 /* close icon ("X"); actual icon provided by FontAwesome */
 nav#nav2 #overlay-menu li button.close i{
+	font-size: 1.25rem;
 	color: #242424;
-	font-size: 1.3rem;
 }
 @media only screen and (min-width: 480px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
+}
+@media only screen and (min-width: 624px) {
+  nav#nav2 #overlay-menu li button.close i {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.8rem;
+		font-size: 1.75rem;
 	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
@@ -699,10 +739,6 @@ nav#nav2 #overlay-menu li button.close:focus i{
 
 /* 1.4. Anchors */
 
-/* removes the default focus on individual items */
-*:focus{
-	outline: 0 none;
-}
 /* links */
 a,
 a:visited{
@@ -782,7 +818,7 @@ a[aria-label="External Client"]:after{
 }
 footer a[aria-label="External Link"]:after,
 footer a[aria-label="External Client"]:after{
-	padding-left: .2rem;
+	padding-left: .25rem;
 }
 
 
@@ -795,55 +831,88 @@ h4{
 }
 h1{
   font-family: 'jacksilverregular';
-	line-height: 1em;
 	margin: 0;
 }
 h2, h3, h4, h5{
-	font-family: 'Noto Serif', serif;
-	font-weight: 700;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 600;
 }
 h2, h3, h4{
 	text-align: center;
 }
 h2{
-	font-size: 1.15em;
-	margin: 1em auto 0;
+	margin: 1.25rem auto 0;
 }
-h3{
-	font-size: 1.1em;
+@media only screen and (min-width: 992px){
+	h2{
+		font-size: 1.6rem;
+	}	
 }
 h4,
 section section h4:first-child{
-	font-size: .95em;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin: 1rem 0;
+}
+@media only screen and (min-width: 480px){
+	h4,
+	section section h4:first-child{
+		font-size: 1.05rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	h4,
+	section section h4:first-child{
+		font-size: 1.1rem;
+	}
 }
 section h4:first-child{
-	margin-top: 1.5em;
+	margin-top: 1.5rem;
 }
 h5{
-	font-size: .95em;
-	font-weight: 700;
+	font-size: 1rem;
+	font-weight: 600;
 	font-style: italic;
 	text-align: left;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
+}
+@media only screen and (min-width: 480px){
+	h5{
+		font-size: 1.05rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	h5{
+		font-size: 1.1rem;
+	}
 }
 h5.alternate{
-	font-weight: 600;
 	font-style: normal;
 }
 h6{
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 600;
 	font-style: italic;
-	margin: 2em 0 1em;
+	margin: 0;
+}
+@media only screen and (min-width: 992px){
+	h6{
+		font-size: 1.05rem;
+	}
 }
 h7{
+	font-size: 1rem;
 	font-style: italic;
+}
+@media only screen and (min-width: 992px){
+	h7{
+		font-size: 1.05rem;
+	}
 }
 
 
 /* 1.6. Images */
+/* regular images */
 img{
 	font-weight: 300;
 	border-style: none;
@@ -868,10 +937,10 @@ a:focus img{
 /* "Top" button; appears in the upper right-hand corner of the page after the user scrolls down and takes the user back to the top of the page */ 
 /* adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
-	cursor: pointer;
-	font-size: .95em;
+	font-size: .9rem;
 	color: #fff;
 	background-color: #395375;
+	cursor: pointer;
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -887,6 +956,7 @@ a:focus img{
 }
 @media only screen and (min-width: 480px){
 	#topButton{
+		font-size: .95rem;
 		top: calc(53px + .25rem);
 		right: 1.25rem;
 	}
@@ -894,13 +964,12 @@ a:focus img{
 @media only screen and (min-width: 768px){
 	#topButton{
 		top: calc(61px + .25rem);
-		right: 2.75rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	#topButton{
+		font-size: 1rem;
 		top: calc(69px + .25rem);
-		right: 1.25rem;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -927,33 +996,26 @@ a:focus img{
 
 /* divider lines */
 hr{
-	font-size: .9em;
 	background: #858585;
 	border: 0;
-	margin: 1.2em 0;
+	margin: -.5rem 0;
 	height: 1px;
+}
+.hr404{
+	margin: 1rem 0;
 }
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
-	font-size: .9em;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
 	background: #e6e6e6;
 	border-left: 11px solid #5378ac;
-	margin: 1.5em auto;
-	padding: .75em 1.5em;
+	margin: 1.5rem auto;
 }
-/* endnote lists; currently only used on /html/syllabi/capital-l_literature.html */
-.endnotes{
-	padding: 0 0 0 1em;
-}
-/* title for endnote lists */ 
-/* adapted from https://stackoverflow.com/a/20478913 */
-.endnotes:before{
-	content:attr(aria-label);
-	font-size: .9em;
-	font-style: italic;
-	margin: 0 0 .5rem -1rem;
-	display: inline-block;
+@media only screen and (min-width: 480px){
+	.breakout-quote{
+		font-size: 1rem;
+	}
 }
 
 
@@ -963,14 +1025,16 @@ hr{
 .center{
 	text-align: center;
 }
-.large{
-	font-size: 1.05em;
-}
-.larger{
-	font-size: 1.1em;
-}
-.largest{
-	font-size: 1.15em;
+@media only screen and (min-width: 768px){
+	.large{
+		font-size: 1.1em;
+	}
+	.larger{
+		font-size: 1.15em;
+	}
+	.largest{
+		font-size: 1.2em;
+	}
 }
 .left{
 	text-align: left;
@@ -978,14 +1042,16 @@ hr{
 .right{
 	text-align: right;
 }
-.small{
-	font-size: .95em;
-}
-.smaller{
-	font-size: .9em;
-}
-.smallest{
-	font-size: .85em;
+@media only screen and (min-width: 768px){
+	.small{
+		font-size: .95em;
+	}
+	.smaller{
+		font-size: .90em;
+	}
+	.smallest{
+		font-size: .85em;
+	}
 }
 .smallcaps{
 	font-variant: small-caps;
