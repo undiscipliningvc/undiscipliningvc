@@ -162,3 +162,16 @@ section section .timeline-block-left h4{
   text-align: inherit;
   margin: .5rem 0 0;
 }
+
+
+/* Safari Support: Mobile and Safari below 14.1 */
+/* Used to compensate for the lack of support for "gap" in those environments. */
+/* See above for annotations of the relevant code below. */
+/* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
+/* Further developed from the original code creeated by One More Voice (https://github.com/livingstoneonline/onemorevoice/blob/master/css/style.css) */
+@supports (-webkit-touch-callout: none) and (not (translate: none)){
+  .timeline-dates a{
+    margin: 0 .25rem;
+  }
+}
