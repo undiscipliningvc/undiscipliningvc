@@ -30,7 +30,7 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 
 * **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files.
 
-* **pdf:** Python scripts and corresponding CSV files. Used to gather information for and generate content pages. Under development (spring 2023).
+* **py:** Python scripts and corresponding CSV files. Used to gather information for and generate content pages. Under development (spring 2023).
 
 ## Loose Files in the Root Directory
 * **404.html:** Users are directed to this page when they try to access a page of the UVC site that doesn't exist.
