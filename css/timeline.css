@@ -169,7 +169,7 @@ section section .timeline-block-left h4{
 /* See above for annotations of the relevant code below. */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
-/* Further developed from the original code creeated by One More Voice (https://github.com/livingstoneonline/onemorevoice/blob/master/css/style.css) */
+/* Further developed from the original code created by One More Voice (https://github.com/livingstoneonline/onemorevoice/blob/master/css/style.css) */
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
   .timeline-dates a{
     margin: 0 .25rem;
