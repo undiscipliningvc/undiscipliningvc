@@ -1,0 +1,62 @@
+Generate images sizes for all files in directory (useful for checking if any high-res derivatives need to be removed)
+identify -format "%f: %wx%h\n" *.tif *.jpg *.png > ~/Desktop/image-sizes.txt
+
+*****
+CAROUSEL
+
+sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300)
+for size in ${sizes[@]}; do
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif
+    cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/home/
+done
+
+*****
+REGULAR IMAGES (Note: Can be used on any page; currently set to be placed in "home" directory, but could be "about", "syllabi", etc.)
+
+sizes=(1170 888 585 568 444 284)
+for size in ${sizes[@]}; do
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif
+    cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/home/
+done
+
+*****
+ZOOMCAST TILES AND PAGES (Note: There is no separate Zoomcast tiles directory)
+
+sizes=(1275 930 816 663 532 465 408 266)
+for size in ${sizes[@]}; do
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif
+    cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/zoomcasts/
+done
+
+*****
+LESSON PLAN TILES AND PAGES
+
+sizes=(1324 1136 930 814 662 568 530 465 407 265); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/lesson_plans/tiles/; done && sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/lesson_plans/; done
+
+*****
+SYLLABUS TILES AND PAGES
+
+sizes=(1324 1136 930 814 662 568 530 465 407 265); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/tiles/; done && sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/syllabi/; done
+
+*****
+ASSSEMEMT TILES AND PAGES
+
+sizes=(1324 1136 930 814 662 568 530 465 407 265); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/assessments/tiles/; done && sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/assessments/; done
+
+*****
+ABOUT TILES AND PAGES
+
+sizes=(1324 1136 930 814 662 568 530 465 407 265); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/about/tiles/; done && sizes=(1800 1650 1500 1350 1200 1050 900 750 600 450 300); for size in ${sizes[@]}; do mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif && cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd - && mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/about/; done
+
+*****
+BIOGRAPHIES
+
+sizes=(570 446 390 350 285 223 195 175)
+for size in ${sizes[@]}; do
+    mogrify -format jpg -resize ${size}x${size} -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} *.tif &&
+    cd ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size} && find . -exec rename 's|.jpg|-'${size}'px.jpg|' {} + && cd -
+    mv ~/GitHub/undiscipliningvc/0_dev/empty-directories/${size}/*.jpg ~/GitHub/undiscipliningvc/img/about/founders/
+done
