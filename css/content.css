@@ -485,7 +485,8 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* founding devs. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
-.content.about.founders section p img{
+.content.about.founders section p img,
+.content.about.editors section p img{
 	margin: .5rem .75rem 0 0;
 	width: 100%;
 	height: auto;
@@ -493,19 +494,22 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	display: inline-block;
 }
 @media only screen and (min-width: 480px){
-	.content.about.founders section p img{
+	.content.about.founders section p img,
+	.content.about.editors section p img{
 		width: 50%;
 		float: left;
 		display: inline;
 	}	
 }
 @media only screen and (min-width: 768px){
-	.content.about.founders section p img{
+	.content.about.founders section p img,
+	.content.about.editors section p img{
 		width: 30%;
 	}
 }
 @media only screen and (min-width: 992px){
-	.content.about.founders section p img{
+	.content.about.founders section p img,
+	.content.about.editors section p img{
 		width: 25%;
 	}
 }
