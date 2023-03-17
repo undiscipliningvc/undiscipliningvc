@@ -205,6 +205,14 @@
 	color: #242424;
 	background: #fff;
 }
+/* carousel images section heading */
+h3.carousel-image{
+	font-size: 1.2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: italic;
+	text-align: left;
+	color: #242424;
+}
 /* reduces heading size for final sections on page */
 @media only screen and (min-width: 992px){
 	h2#site-code,
