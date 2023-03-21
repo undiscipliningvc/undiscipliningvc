@@ -27,6 +27,12 @@
 .section-tiles ul li:nth-child(3) a span{
 	background: #728a61;
 }
+/* .section-tiles ul li:nth-child(4){
+	background: linear-gradient(to left top, #fff 50%, #8338EC 50%);
+}
+.section-tiles ul li:nth-child(4) a span{
+	background: #8338EC;
+} */
 .section-tiles ul li:nth-child(4){
 	background: linear-gradient(to left top, #fff 50%, #757575 50%);
 }
