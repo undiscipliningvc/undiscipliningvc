@@ -32,8 +32,8 @@ Table of Contents
 
 /** Main Site Colors **/
 
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */
-/* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility and the color blindness tool on https://coolors.co/154060-5a5849-405943-637474-6d3222*/
+/* Color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
 White: #fff;
 Black: #242424;
@@ -42,7 +42,6 @@ Dark Gray: #2e2e2e; (footer only)
 Mid Gray: #949494;
 Light Gray: #e6e6e6;
 Dark Blue: #395375;
-Blue: #5378ac; (sections/carousel/images/nav0)
 */
 
 /* community edition colors
@@ -50,7 +49,7 @@ Home/Links: #395375
 Zoomcasts: #cb6948
 Lesson Plans: #5378ac
 Syllabi: #728a61
-Assessments: 
+Assessments: #8338EC
 About: #757575
 
 first edition colors
@@ -58,7 +57,6 @@ Home/Links: #3|95375
 Zoomcasts: #c|b6948
 Lesson Plans: #5|378ac
 Syllabi: #7|28a61
-Assessments
 About: #7|57575 */
 
 /** z-index **/
@@ -98,10 +96,10 @@ nav#nav1 a #lesson_plans.current{
 	border-bottom: 3px solid #5378ac;
 }
 nav#nav1 a #syllabi.current{
-	border-bottom: 3px solid #778056;
+	border-bottom: 3px solid #728a61;
 }
 /* nav#nav1 a #assessments.current{
-	border-bottom: 3px solid #778056;
+	border-bottom: 3px solid #8338EC;
 } */
 nav#nav1 a #about.current{
 	border-bottom: 3px solid #757575;
