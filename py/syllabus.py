@@ -40,7 +40,7 @@ for syllabus, csv_filename in csv_filenames.items():
             html = f.read()
 
         # Find the row with "syllabus-file-name" in column 1 and get the corresponding value in column 2
-        syllabus_file_name_row = next((row for row in data if row['placeholder'] == 'syllabus-file-name'), None)
+        syllabus_file_name_row = next((row for row in data if row['placeholder'] == 'syllabus-webpage-name'), None)
         if syllabus_file_name_row:
             new_html_filename = os.path.splitext(syllabus_file_name_row['text'])[0] + '.html'
 
