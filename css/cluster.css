@@ -9,44 +9,44 @@
 /* section-specific colors, in particular for the title card and card headings on cluster pages */
 /* for further section-specific color specs, see /css/content.css, /css/index.css, and /css/style.css */
 .zoomcasts.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
+	background: linear-gradient(to left top, #fff 50%, #6D3222 50%);
 }
 .zoomcasts.cluster main section h2,
 .zoomcasts.cluster main section h3{
 	color: white;
-	background: #cb6948;
+	background: #6D3222;
 }
 .lesson-plans.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
+	background: linear-gradient(to left top, #fff 50%, #154060 50%);
 }
 .lesson-plans.cluster main section h2,
 .lesson-plans.cluster main section h3{
 	color: white;
-	background: #5378ac;
+	background: #154060;
 }
 .syllabi.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #728a61 50%);
+	background: linear-gradient(to left top, #fff 50%, #405943 50%);
 }
 .syllabi.cluster main section h2,
 .syllabi.cluster main section h3{
 	color: white;
-	background: #728a61;
+	background: #405943;
 }
 /* .assessments.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #8338EC 50%);
+	background: linear-gradient(to left top, #fff 50%, #5A5849 50%);
 }
 .assessments.cluster main section h2,
 .assessments.cluster main section h3{
 	color: white;
-	background: #8338EC;
+	background: #5A5849;
 } */
 .about.cluster main section:first-child{
-	background: linear-gradient(to left top, #fff 50%, #757575 50%);
+	background: linear-gradient(to left top, #fff 50%, #637474 50%);
 }
 .about.cluster main section h2,
 .about.cluster main section h3{
 	color: white;
-	background: #757575;
+	background: #637474;
 }
 /* the main container for cluster pages */
 .cluster main{
@@ -100,7 +100,7 @@
 	text-align: center;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border: 1px solid #242424;
+	border: 1px solid #171C1C;
 	border-radius: 5px;
 	margin: 0;
 	width: 100%;
@@ -183,7 +183,7 @@
 	font-weight: 600;
 	font-variant: normal;
 	color: #fff;
-	border-bottom: 1px solid #242424;
+	border-bottom: 1px solid #171C1C;
 	-webkit-border-radius: 4px 4px 0 0;
 	-moz-border-radius: 4px 4px 0 0;
 	border-radius: 4px 4px 0 0;
@@ -212,14 +212,14 @@
 /* ratio box used for content page images */ 
 /* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .cluster main section div{
-	background: #e6e6e6;
+	background: #E3E8E8;
 	margin: 1rem;
 	padding: 0;
 	position: relative;
 }
 .cluster main section div:hover,
 .cluster main section div:focus-within{
-	outline: 3px solid #395375;
+	outline: 3px solid #1F5B89;
 	overflow: hidden;
 }
 /* adds specific ratio to ratio box */
@@ -255,7 +255,7 @@
 }
 /* the image for each cluster page slide */
 .cluster main section div img{
-	background: #e6e6e6;
+	background: #E3E8E8;
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -341,7 +341,7 @@
 }
 /* an item in the list of lesson plan buttons that appears on collective lesson plan slides */
 .cluster main section ul li{
-	border: 1px solid #e6e6e6;
+	border: 1px solid #E3E8E8;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -363,7 +363,7 @@
 	font-size: 1.1rem;
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 600;
-	background: #e6e6e6;
+	background: #E3E8E8;
 	min-height: unset;
 }
 @media only screen and (min-width: 768px){
@@ -378,7 +378,7 @@
 .cluster main section ul li a,
 .cluster main section ul li a:visited{
 	text-decoration: none;
-	color: #242424;
+	color: #171C1C;
 	width: 100%;
 	height: 100%;
 	display: -webkit-flex;
@@ -398,7 +398,7 @@
 .cluster main section ul li:not(:first-child):hover a,
 .cluster main section ul li:not(:first-child):focus-within a{
 	color: white;
-	background: #395375;
+	background: #1F5B89;
 }
 
 

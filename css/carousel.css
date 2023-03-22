@@ -27,14 +27,14 @@
 	display: block;
 }
 .carousel .carousel-items{
-	border: solid 1px #242424;
+	border: solid 1px #171C1C;
 }
 /* Carousel images */
 /* ratio box for carousel images */ 
 /* adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .carousel .carousel-item .carousel-image{
-	background: #e6e6e6;
+	background: #E3E8E8;
 	position: relative;
 }
 .carousel .carousel-item .carousel-image::after{
@@ -98,11 +98,11 @@
 }
 .carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption a:focus{
-	background-color: #5378ac;
+	background-color: #154060;
 	margin: 0;
 }
 .carousel .carousel-item .carousel-caption a:focus{
-	border-color: #5378ac;
+	border-color: #154060;
 	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
     -moz-box-shadow: inset 0px 0px 0px 2px #fff;
 	box-shadow: inset 0px 0px 0px 2px #fff;
@@ -118,8 +118,8 @@
 	z-index: 10;
 }
 .carousel .controls button svg rect.background{
-	fill: #242424;
-	stroke: #242424;
+	fill: #171C1C;
+	stroke: #171C1C;
 	stroke-width: 1px;
 	opacity: 0.6;
 }
@@ -132,8 +132,8 @@
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: #5378ac; ;
-	stroke: #5378ac;
+	fill: #154060; ;
+	stroke: #154060;
 	opacity: 1;
 }
 /* Next and Previous Slide Controls */
@@ -176,8 +176,8 @@
 .carousel .controls button:hover rect.background,
 .carousel .controls button:focus rect.border,
 .carousel .controls button:hover rect.border{
-	fill: #5378ac; ;
-	stroke: #5378ac; 
+	fill: #154060; ;
+	stroke: #154060; 
 	opacity: 1;
 } */
 .carousel .controls button:focus rect.border{

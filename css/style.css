@@ -35,22 +35,21 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility and the color blindness tool on https://coolors.co/154060-5a5849-405943-637474-6d3222*/
 /* Color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-White: #fff;
-Black: #242424;
-Black-Gray: rgba(0, 0, 0, 0.65);
-Dark Gray: #2e2e2e; (footer only)
-Mid Gray: #949494;
-Light Gray: #e6e6e6;
-Dark Blue: #395375;
+White: #fff
+Black: #171C1C
+Dark Gray: #2A3232(footer only)
+Mid Gray: #B6C3C3
+Light Gray: #E3E8E8
+Dark Blue: #1F5B89 (links)
 */
 
 /* community edition colors
-Home/Links: #395375
-Zoomcasts: #cb6948
-Lesson Plans: #5378ac
-Syllabi: #728a61
-Assessments: #8338EC
-About: #757575
+Home/Links: #1F5B89
+Zoomcasts: #6D3222
+Lesson Plans: #154060 (also: carousel; breakout quotes)
+Syllabi: #405943
+Assessments: #5A5849
+About: #637474
 
 first edition colors
 Home/Links: #3|95375
@@ -87,22 +86,22 @@ nav#nav2 #overlay-menu = 200
 
 /* used for underlining current section in nav with section-specific color */
 nav#nav1 a #home.current{
-	border-bottom: 3px solid #395375;
+	border-bottom: 3px solid #1F5B89;
 }
 nav#nav1 a #zoomcasts.current{
-	border-bottom: 3px solid #cb6948;
+	border-bottom: 3px solid #6D3222;
 }
 nav#nav1 a #lesson_plans.current{
-	border-bottom: 3px solid #5378ac;
+	border-bottom: 3px solid #154060;
 }
 nav#nav1 a #syllabi.current{
-	border-bottom: 3px solid #728a61;
+	border-bottom: 3px solid #405943;
 }
 /* nav#nav1 a #assessments.current{
-	border-bottom: 3px solid #8338EC;
+	border-bottom: 3px solid #5A5849;
 } */
 nav#nav1 a #about.current{
-	border-bottom: 3px solid #757575;
+	border-bottom: 3px solid #637474;
 }
 nav#nav1 a:hover .current,
 nav#nav1 a:focus .current{
@@ -127,12 +126,12 @@ nav#nav1 a:focus .current{
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
 	color: #fff;
-  background: #395375;
+  background: #1F5B89;
   text-shadow: none;
 }
 ::-moz-selection {
   color: #fff;
-	background: #395375;
+	background: #1F5B89;
   text-shadow: none;
 }
 /* styles for entire site */
@@ -245,7 +244,7 @@ main section ul{
 footer{
 	text-align: center;
 	color: #fff;
-	background: #2e2e2e;
+	background: #2A3232;
 	margin: .75rem auto 0;
 	padding: .25rem 1rem 1rem;
 }
@@ -472,8 +471,8 @@ nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1,
 nav#fallback-nav a:hover h1,
 nav#fallback-nav a:focus-within h1{
-	background: #e6e6e6;
-	border: 2px solid rgba(0, 0, 0, 0.65);
+	background: #E3E8E8;
+	border: 2px solid #2A3232;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -507,7 +506,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #395375;
+	background-color: #1F5B89;
 	transition: 0.2s;
 }
 /* note: span element is the container for text in items in nav */
@@ -554,7 +553,7 @@ nav#nav1 li button:hover,
 nav#nav1 li button:focus-within,
 nav#fallback-nav li button:hover,
 nav#fallback-nav li button:focus-within{
-	background-color: #395375;
+	background-color: #1F5B89;
 	transition: 0.2s;
 }
 /* hamburger menu icon; actual icon provided by FontAwesome */
@@ -616,7 +615,7 @@ nav#nav2{
 }
 /* main sub-container for overlay */
 nav#nav2 #overlay-menu{
-	background-color: #e6e6e6;
+	background-color: #E3E8E8;
 	transition: background-color 0.01s;
 	width: 0;
 	height: 100%;
@@ -674,7 +673,7 @@ nav#nav2 #overlay-menu li a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #395375;
+	background-color: #1F5B89;
   transition: 0.2s;
 }
 /* text container within item in overlay */
@@ -723,7 +722,7 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #395375;
+	background-color: #1F5B89;
 	transition: 0.2s;
 }
 /* close icon ("X"); actual icon provided by FontAwesome */
@@ -757,13 +756,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
 /* links */
 a,
 a:visited{
-	color: #395375;
+	color: #1F5B89;
 	background-color: transparent;
 }
 a:hover,
 a:focus{
-	color: #e6e6e6;
-	background-color: #395375;
+	color: #E3E8E8;
+	background-color: #1F5B89;
 	transition: 0.2s;
 }
 /* links in the footer */
@@ -774,7 +773,7 @@ footer a:visited{
 footer a:hover,
 footer a:focus{
 	color: #212119;
-	background-color: #e6e6e6;
+	background-color: #E3E8E8;
 	transition: 0.2s;
 }
 /* links used in the "Page Citation" section */
@@ -842,7 +841,7 @@ h1,
 h2,
 h3,
 h4{
-	color: #395375;
+	color: #1F5B89;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -939,7 +938,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #395375 solid;
+	border: 3px #1F5B89 solid;
 }
 /* creates a solid border for images when added */
 .image-border{
@@ -954,7 +953,7 @@ a:focus img{
 #topButton{
 	font-size: .9rem;
 	color: #fff;
-	background-color: #395375;
+	background-color: #1F5B89;
 	cursor: pointer;
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
@@ -996,13 +995,13 @@ a:focus img{
   #topButton:hover,
   #topButton:focus{
 	font-weight: 600;
-	color: #395375;
+	color: #1F5B89;
 	background-color: #fff;
-	border: 2px solid #395375;
+	border: 2px solid #1F5B89;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #395375;
+	background-color: #1F5B89;
 	border: 2px solid transparent;
 }
 
@@ -1023,8 +1022,8 @@ hr{
 .breakout-quote{
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 400;
-	background: #e6e6e6;
-	border-left: 11px solid #5378ac;
+	background: #E3E8E8;
+	border-left: 11px solid #154060;
 	margin: 1.5rem auto;
 }
 @media only screen and (min-width: 480px){

@@ -10,26 +10,26 @@
 /* for further section-specific color specs, see /css/cluster.css, /css/index.css, and /css/style.css */
 .zoomcasts.content header,
 .zoomcasts.content main section.menu-container h3{
-	background: #cb6948;
+	background: #6D3222;
 }
 .zoomcasts.content .youtube .play-button{
-	background-color: #cb6948;
+	background-color: #6D3222;
 }
 .lesson-plans.content header,
 .lesson-plans.content main section.menu-container h3{
-	background: #5378ac;
+	background: #154060;
 }
 .syllabi.content header,
 .syllabi.content main section.menu-container h3{
-	background: #728a61;
+	background: #405943;
 }
 /* .assessments.content header,
 .assessments.content main section.menu-container h3{
-	background: #8338EC;
+	background: #5A5849;
 } */
 .about.content header,
 .about.content main section.menu-container h3{
-	background: #757575;
+	background: #637474;
 }
 /* the colored divider line at the top of content pages */
 .content header{
@@ -213,7 +213,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* header images for ratio box */
 .content main .aspect-ratio-box img {
-	background: #e6e6e6;
+	background: #E3E8E8;
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -266,7 +266,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* page title of all content pages */
 .content main h2{
 	font-size: 1.55rem;
-	color: #242424;
+	color: #171C1C;
 	margin: 1rem auto;
 }
 .content main h2#error404{
@@ -325,7 +325,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* user guide section headings; used on lesson plan introductions such as /html/lesson_plans/searcole_caribbean_introduction.html */
 .content h3#user-guide{
-	color: #242424;
+	color: #171C1C;
 	text-align: left;
 }
 @media only screen and (min-width: 480px){
@@ -372,7 +372,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	font-size: 1.1rem;
 	color: #fff;
 	font-weight: 600;
-	background-color: #cb6948;
+	background-color: #6D3222;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -382,7 +382,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 .content a.link404:focus,
 .content a.link404:hover{
-	background: #2e2e2e;
+	background: #2A3232;
 }
 @media only screen and (min-width: 480px){
 	.content a.link404{
@@ -428,7 +428,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* main container for page menu */
 .content section.menu-container{
 	text-align: center;
-	border: 1px solid #949494;
+	border: 1px solid #B6C3C3;
 	margin: 0;
 	padding: 2rem;
 	display: inline-block;

@@ -108,7 +108,7 @@ section section .timeline-block-left{
 }
 /* container for timeline item date and text */
 .timeline-content{
-  background: #e6e6e6;
+  background: #E3E8E8;
   margin: 0 .75rem;
   padding: .5rem 1rem 1rem;
   width: calc(100% - 15.9667px - 1.5rem);

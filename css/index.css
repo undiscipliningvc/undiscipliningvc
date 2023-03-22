@@ -10,43 +10,43 @@
 /* for further section-specific color specs, see /css/cluster.css, /css/content.css, and /css/style.css */
 /* used for cluster page tiles */
 .section-tiles ul li:nth-child(1){
-	background: linear-gradient(to left top, #fff 50%, #cb6948 50%);
+	background: linear-gradient(to left top, #fff 50%, #6D3222 50%);
 }
 .section-tiles ul li:nth-child(1) a span{
-	background: #cb6948;
+	background: #6D3222;
 }
 .section-tiles ul li:nth-child(2){
-	background: linear-gradient(to left top, #fff 50%, #5378ac 50%);
+	background: linear-gradient(to left top, #fff 50%, #154060 50%);
 }
 .section-tiles ul li:nth-child(2) a span{
-	background: #5378ac;
+	background: #154060;
 }
 .section-tiles ul li:nth-child(3){
-	background: linear-gradient(to left top, #fff 50%, #728a61 50%);
+	background: linear-gradient(to left top, #fff 50%, #405943 50%);
 }
 .section-tiles ul li:nth-child(3) a span{
-	background: #728a61;
+	background: #405943;
 }
 /* .section-tiles ul li:nth-child(4){
-	background: linear-gradient(to left top, #fff 50%, #8338EC 50%);
+	background: linear-gradient(to left top, #fff 50%, #5A5849 50%);
 }
 .section-tiles ul li:nth-child(4) a span{
-	background: #8338EC;
+	background: #5A5849;
 } */
 .section-tiles ul li:nth-child(4){
-	background: linear-gradient(to left top, #fff 50%, #757575 50%);
+	background: linear-gradient(to left top, #fff 50%, #637474 50%);
 }
 .section-tiles ul li:nth-child(4) a span{
-	background: #757575;
+	background: #637474;
 }
 .section-tiles ul li a:hover,
 .section-tiles ul li a:focus{
-	background: linear-gradient(to left top, #fff 50%, #2e2e2e 50%);
+	background: linear-gradient(to left top, #fff 50%, #2A3232 50%);
 	outline: 2px dotted;
 }
 .section-tiles ul li:hover a span,
 .section-tiles ul li a:focus span{
-	background: #2e2e2e;
+	background: #2A3232;
 }
 /* the container for cluster page tiles */
 .section-tiles{
@@ -67,7 +67,7 @@
 .section-tiles ul li{
 	color: #fff;
 	text-align: center;
-	border: 1px solid #242424;
+	border: 1px solid #171C1C;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -143,8 +143,8 @@
 /* container for social media links section */
 .participate{
 	text-align: center;
-	background: #e6e6e6;
-	border: 1px solid #242424;
+	background: #E3E8E8;
+	border: 1px solid #171C1C;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -189,7 +189,7 @@
 	align-items: baseline;
 }
 .participate a:focus{
-	outline: 1px dashed #242424;
+	outline: 1px dashed #171C1C;
 }
 /* Twitter link in social media links section */
 .participate a.follow{
@@ -203,12 +203,12 @@
 }
 /* "Mailing List/Get Involved" link in social media links section */
 .participate a.contribute{
-	background-color: #395375;
-	border: 1px solid #395375;
+	background-color: #1F5B89;
+	border: 1px solid #1F5B89;
 }
 .participate a.contribute:focus,
 .participate a.contribute:hover{
-	color: #242424;
+	color: #171C1C;
 	background: #fff;
 }
 /* carousel images section heading */
@@ -217,7 +217,7 @@ h3.carousel-image{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: italic;
 	text-align: left;
-	color: #242424;
+	color: #171C1C;
 }
 /* reduces heading size for final sections on page */
 @media only screen and (min-width: 992px){
