@@ -28,10 +28,10 @@
 	background: #3C5D40;
 }
 .section-tiles ul li:nth-child(4){
-	background: linear-gradient(to left top, #fff 50%, #5E5936 50%);
+	background: linear-gradient(to left top, #fff 50%, #5D5841 50%);
 }
 .section-tiles ul li:nth-child(4) a span{
-	background: #5E5936;
+	background: #5D5841;
 }
 .section-tiles ul li:nth-child(5){
 	background: linear-gradient(to left top, #fff 50%, #637474 50%);

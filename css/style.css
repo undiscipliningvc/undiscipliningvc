@@ -47,7 +47,7 @@ Home/Links: #143D5D
 Zoomcasts: #6D3222
 Lesson Plans: #20518D
 Syllabi: #3C5D40
-Assessments: #5E5936
+Assessments: #5D5841
 About: #637474
 
 first edition colors
@@ -97,7 +97,7 @@ nav#nav1 a #syllabi.current{
 	border-bottom: 3px solid #3C5D40;
 }
 /* nav#nav1 a #assessments.current{
-	border-bottom: 3px solid #5E5936;
+	border-bottom: 3px solid #5D5841;
 } */
 nav#nav1 a #about.current{
 	border-bottom: 3px solid #637474;
