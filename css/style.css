@@ -96,9 +96,9 @@ nav#nav1 a #lesson_plans.current{
 nav#nav1 a #syllabi.current{
 	border-bottom: 3px solid #3C5D40;
 }
-/* nav#nav1 a #assessments.current{
+nav#nav1 a #assessments.current{
 	border-bottom: 3px solid #60582F;
-} */
+}
 nav#nav1 a #about.current{
 	border-bottom: 3px solid #637474;
 }

@@ -32,14 +32,14 @@
 	color: white;
 	background: #3C5D40;
 }
-/* .assessments.cluster main section:first-child{
+.assessments.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #60582F 50%);
 }
 .assessments.cluster main section h2,
 .assessments.cluster main section h3{
 	color: white;
 	background: #60582F;
-} */
+}
 .about.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #637474 50%);
 }
