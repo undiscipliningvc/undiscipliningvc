@@ -1,0 +1,43 @@
+Word to HTML
+
+Preparation
+
+Open a Word file, save it with any name you like, then copy the following elements into it in sequence, with a few spaces in between each:
+
+Description of the cluster (if provided)
+Biographical statement for creator
+Methodological essay (only essay; no title or byline needed)
+Works cited (if provided; formatted by Zotero first)
+Header image caption (formatted by Zotero first)
+
+
+Workflow
+
+Here's a script that you can use:
+
+1. Install pandoc, a command-line tool that can convert between various document formats, including DOCX to HTML. You can install it using Homebrew by running this command in Terminal:
+
+	brew install pandoc
+
+2. Open Terminal and navigate to the directory containing the DOCX files you want to convert. You can use the cd command to change the directory.
+
+3. Run the following command to convert all the DOCX files in the directory to semantically encoded HTML files:
+
+	for file in *.docx; do pandoc -s "$file" -o "${file%.docx}.html" --metadata title="${file%.docx}"; done
+
+4. After running the command, you should see new HTML files with semantically encoded structure in your directory.
+
+5. Review the file; remove and/or replace any instances of <u> and other non-UVC formatting (including curly quote and n-dash code); add aria-label="External Link" to external links; fix instances of multiple cluster developers/guides, etc.;
+
+6. Once the HTML is ready, open the relevant CSV file and paste each segment of text (description, bio, etc) into the relevant place in the CSV file.
+
+
+Explanation
+
+This command uses a loop to iterate over all the DOCX files in the directory and convert them to HTML files. 
+
+The pandoc command takes the input file ($file), converts it to HTML (-s), and saves the output to a file with the same name as the input file but with the .html extension ("${file%.docx}.html"). 
+
+The --metadata title="${file%.docx}" option sets the title of the HTML file to the name of the input file without the .docx extension.
+
+
