@@ -65,6 +65,7 @@ function openSlideMenu () {
   const elements = ["nav0", "nav1", "header", "main", "footer"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {
+      document.getElementById(element).style.display = "none";
       document.getElementById(element).style.visibility = "hidden";
       document.getElementById(element).style.opacity = "0";
       document.getElementById(element).style.transition = "visibility 0s linear 300ms, opacity 300ms";
@@ -79,6 +80,7 @@ function closeSlideMenu () {
   const elements = ["nav0", "nav1", "header", "main", "footer"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {
+      document.getElementById(element).style.display = "inherit";
       document.getElementById(element).style.visibility = "visible";
       document.getElementById(element).style.opacity = "1";
       document.getElementById(element).style.transition = "visibility 0s linear 0s, opacity 1000ms";
