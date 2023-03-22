@@ -11,7 +11,7 @@
 .wrapper{
 	margin: 1rem auto;
 	padding: 0;
-	border: 1px solid #242424;
+	border: 1px solid #222A2A;
 }
 @media only screen and (min-width: 480px){
 	.wrapper{
@@ -20,7 +20,7 @@
 }
 /* secondary container for embedded YouTube video */
 .youtube{
-	background: #e6e6e6;
+	background: #E6EAEA;
 	cursor: pointer;
 	outline: 3px transparent solid;
 	padding-top: 56.25%;
@@ -29,7 +29,7 @@
 }
 .youtube:hover,
 .youtube:focus{
-	outline: 3px #395375 solid;
+	outline: 3px #143D5D solid;
 }
 /* placeholder image for YouTube video */
 .youtube img{
@@ -64,7 +64,7 @@
 }
 .youtube:hover .play-button,
 .youtube:focus .play-button{
-	background-color: #395375 !important;
+	background-color: #143D5D !important;
 }
 /* triangle in YouTube play button */
 .youtube .play-button:before{
@@ -109,8 +109,8 @@
 /* dropdown button for tab navigation to skip controls for YouTube video after starting play */
 .skipcontrols a{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #395375;
-	background: #e6e6e6;
+	color: #143D5D;
+	background: #E6EAEA;
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-right-radius: 8px;
 	border-bottom-right-radius: 8px;
