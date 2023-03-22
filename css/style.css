@@ -36,18 +36,17 @@ Table of Contents
 /* Color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
 White: #fff
-Black: #171C1C
+Black: #222A2A
 Dark Gray: #2A3232(footer only)
 Mid Gray: #B6C3C3
-Light Gray: #E3E8E8
-Dark Blue: #1F5B89 (links)
+Light Gray: #E6EAEA
 */
 
 /* community edition colors
-Home/Links: #1F5B89
+Home/Links: #143D5D
 Zoomcasts: #6D3222
-Lesson Plans: #154060 (also: carousel; breakout quotes)
-Syllabi: #405943
+Lesson Plans: #20518D
+Syllabi: #3C5D40
 Assessments: #5A5849
 About: #637474
 
@@ -86,16 +85,16 @@ nav#nav2 #overlay-menu = 200
 
 /* used for underlining current section in nav with section-specific color */
 nav#nav1 a #home.current{
-	border-bottom: 3px solid #1F5B89;
+	border-bottom: 3px solid #143D5D;
 }
 nav#nav1 a #zoomcasts.current{
 	border-bottom: 3px solid #6D3222;
 }
 nav#nav1 a #lesson_plans.current{
-	border-bottom: 3px solid #154060;
+	border-bottom: 3px solid #20518D;
 }
 nav#nav1 a #syllabi.current{
-	border-bottom: 3px solid #405943;
+	border-bottom: 3px solid #3C5D40;
 }
 /* nav#nav1 a #assessments.current{
 	border-bottom: 3px solid #5A5849;
@@ -126,12 +125,12 @@ nav#nav1 a:focus .current{
 /* adapted from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection {
 	color: #fff;
-  background: #1F5B89;
+  background: #143D5D;
   text-shadow: none;
 }
 ::-moz-selection {
   color: #fff;
-	background: #1F5B89;
+	background: #143D5D;
   text-shadow: none;
 }
 /* styles for entire site */
@@ -471,7 +470,7 @@ nav#nav1 a:hover h1,
 nav#nav1 a:focus-within h1,
 nav#fallback-nav a:hover h1,
 nav#fallback-nav a:focus-within h1{
-	background: #E3E8E8;
+	background: #E6EAEA;
 	border: 2px solid #2A3232;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -506,7 +505,7 @@ nav#nav1 li:not(:first-child):not(:last-child) a{
 }
 nav#nav1 li:not(:first-child):not(:last-child) a:hover,
 nav#nav1 li:not(:first-child):not(:last-child) a:focus{
-	background-color: #1F5B89;
+	background-color: #143D5D;
 	transition: 0.2s;
 }
 /* note: span element is the container for text in items in nav */
@@ -553,7 +552,7 @@ nav#nav1 li button:hover,
 nav#nav1 li button:focus-within,
 nav#fallback-nav li button:hover,
 nav#fallback-nav li button:focus-within{
-	background-color: #1F5B89;
+	background-color: #143D5D;
 	transition: 0.2s;
 }
 /* hamburger menu icon; actual icon provided by FontAwesome */
@@ -615,7 +614,7 @@ nav#nav2{
 }
 /* main sub-container for overlay */
 nav#nav2 #overlay-menu{
-	background-color: #E3E8E8;
+	background-color: #E6EAEA;
 	transition: background-color 0.01s;
 	width: 0;
 	height: 100%;
@@ -673,7 +672,7 @@ nav#nav2 #overlay-menu li a{
 nav#nav2 #overlay-menu li a:hover,
 nav#nav2 #overlay-menu li a:focus{
   color: #fff;
-	background-color: #1F5B89;
+	background-color: #143D5D;
   transition: 0.2s;
 }
 /* text container within item in overlay */
@@ -722,7 +721,7 @@ nav#nav2 #overlay-menu li button.close{
 }
 nav#nav2 #overlay-menu li button.close:hover,
 nav#nav2 #overlay-menu li button.close:focus-within{
-	background-color: #1F5B89;
+	background-color: #143D5D;
 	transition: 0.2s;
 }
 /* close icon ("X"); actual icon provided by FontAwesome */
@@ -756,13 +755,13 @@ nav#nav2 #overlay-menu li button.close:focus i{
 /* links */
 a,
 a:visited{
-	color: #1F5B89;
+	color: #143D5D;
 	background-color: transparent;
 }
 a:hover,
 a:focus{
-	color: #E3E8E8;
-	background-color: #1F5B89;
+	color: #E6EAEA;
+	background-color: #143D5D;
 	transition: 0.2s;
 }
 /* links in the footer */
@@ -773,7 +772,7 @@ footer a:visited{
 footer a:hover,
 footer a:focus{
 	color: #212119;
-	background-color: #E3E8E8;
+	background-color: #E6EAEA;
 	transition: 0.2s;
 }
 /* links used in the "Page Citation" section */
@@ -841,7 +840,7 @@ h1,
 h2,
 h3,
 h4{
-	color: #1F5B89;
+	color: #143D5D;
 }
 h1{
   font-family: 'jacksilverregular';
@@ -938,7 +937,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #1F5B89 solid;
+	border: 3px #143D5D solid;
 }
 /* creates a solid border for images when added */
 .image-border{
@@ -953,7 +952,7 @@ a:focus img{
 #topButton{
 	font-size: .9rem;
 	color: #fff;
-	background-color: #1F5B89;
+	background-color: #143D5D;
 	cursor: pointer;
 	border: 2px solid #fff;
 	-webkit-border-radius: 4px;
@@ -995,13 +994,13 @@ a:focus img{
   #topButton:hover,
   #topButton:focus{
 	font-weight: 600;
-	color: #1F5B89;
+	color: #143D5D;
 	background-color: #fff;
-	border: 2px solid #1F5B89;
+	border: 2px solid #143D5D;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #1F5B89;
+	background-color: #143D5D;
 	border: 2px solid transparent;
 }
 
@@ -1022,8 +1021,8 @@ hr{
 .breakout-quote{
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 400;
-	background: #E3E8E8;
-	border-left: 11px solid #154060;
+	background: #E6EAEA;
+	border-left: 11px solid #20518D;
 	margin: 1.5rem auto;
 }
 @media only screen and (min-width: 480px){

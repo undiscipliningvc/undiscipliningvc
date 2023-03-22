@@ -16,16 +16,16 @@
 	background: #6D3222;
 }
 .section-tiles ul li:nth-child(2){
-	background: linear-gradient(to left top, #fff 50%, #154060 50%);
+	background: linear-gradient(to left top, #fff 50%, #20518D 50%);
 }
 .section-tiles ul li:nth-child(2) a span{
-	background: #154060;
+	background: #20518D;
 }
 .section-tiles ul li:nth-child(3){
-	background: linear-gradient(to left top, #fff 50%, #405943 50%);
+	background: linear-gradient(to left top, #fff 50%, #3C5D40 50%);
 }
 .section-tiles ul li:nth-child(3) a span{
-	background: #405943;
+	background: #3C5D40;
 }
 /* .section-tiles ul li:nth-child(4){
 	background: linear-gradient(to left top, #fff 50%, #5A5849 50%);
@@ -67,7 +67,7 @@
 .section-tiles ul li{
 	color: #fff;
 	text-align: center;
-	border: 1px solid #171C1C;
+	border: 1px solid #222A2A;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -143,8 +143,8 @@
 /* container for social media links section */
 .participate{
 	text-align: center;
-	background: #E3E8E8;
-	border: 1px solid #171C1C;
+	background: #E6EAEA;
+	border: 1px solid #222A2A;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -189,7 +189,7 @@
 	align-items: baseline;
 }
 .participate a:focus{
-	outline: 1px dashed #171C1C;
+	outline: 1px dashed #222A2A;
 }
 /* Twitter link in social media links section */
 .participate a.follow{
@@ -203,12 +203,12 @@
 }
 /* "Mailing List/Get Involved" link in social media links section */
 .participate a.contribute{
-	background-color: #1F5B89;
-	border: 1px solid #1F5B89;
+	background-color: #143D5D;
+	border: 1px solid #143D5D;
 }
 .participate a.contribute:focus,
 .participate a.contribute:hover{
-	color: #171C1C;
+	color: #222A2A;
 	background: #fff;
 }
 /* carousel images section heading */
@@ -217,7 +217,7 @@ h3.carousel-image{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: italic;
 	text-align: left;
-	color: #171C1C;
+	color: #222A2A;
 }
 /* reduces heading size for final sections on page */
 @media only screen and (min-width: 992px){
