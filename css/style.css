@@ -572,12 +572,6 @@ nav#fallback-nav li button i{
     font-size: 1.6rem;
   }
 }
-@media only screen and (min-width: 768px){
-	nav#nav1 li button i,
-	nav#fallback-nav li button i{
-		font-size: 1.75rem;
-	}
-}
 nav#nav1 li button:hover i,
 nav#nav1 li button:focus i,
 nav#fallback-nav li button:hover i,
@@ -738,11 +732,6 @@ nav#nav2 #overlay-menu li button.close i{
   nav#nav2 #overlay-menu li button.close i {
     font-size: 1.6rem;
   }
-}
-@media only screen and (min-width: 768px){
-	nav#nav2 #overlay-menu li button.close i{
-		font-size: 1.75rem;
-	}
 }
 nav#nav2 #overlay-menu li button.close:hover i,
 nav#nav2 #overlay-menu li button.close:focus i{
