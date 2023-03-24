@@ -2,10 +2,8 @@ Create template/spreadsheet
 	lesson plan (africa/caribbean/seacole)
 	zoomcast
 
-Update checklists/create Google form
-	assessment
+Update checklists
 	lesson plan
-	syllabus
 	zoomcast
 
 Update workflows
