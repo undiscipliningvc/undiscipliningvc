@@ -1,6 +1,5 @@
 Create template/spreadsheet
 	lesson plan (africa/caribbean/seacole)
-	zoomcast
 
 Update checklists
 	lesson plan
