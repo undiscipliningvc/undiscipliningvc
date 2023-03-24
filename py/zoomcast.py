@@ -40,7 +40,7 @@ for zoomcast, csv_filename in csv_filenames.items():
             html = f.read()
 
         # Find the row with "zoomcast-file-name" in column 1 and get the corresponding value in column 2
-        zoomcast_file_name_row = next((row for row in data if row['placeholder'] == 'zoomcast-file-name'), None)
+        zoomcast_file_name_row = next((row for row in data if row['placeholder'] == 'guest-surname-lower-case'), None)
         if zoomcast_file_name_row:
             new_html_filename = os.path.splitext(zoomcast_file_name_row['text'])[0] + '.html'
 
