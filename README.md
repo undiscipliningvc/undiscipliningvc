@@ -28,7 +28,7 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 
 * **js:** All the site's JS files. Each file is annotated for function and to indicate, as relevant, sources of code.
 
-* **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files.
+* **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files. A subdirectory called "guidelines" includes checklists for preparing assessments, lesson plans, syllabi, and zoomcasts for publication plus the UVC house style guidelines.
 
 * **py:** Python scripts and corresponding CSV files. Used to gather information for and generate content pages. Under development (spring 2023).
 
