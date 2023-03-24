@@ -286,10 +286,10 @@ footer p .site-detail a span,
 footer p .site-detail a:visited span{
 	text-decoration: underline;
 }
-/* help make the overlay disappear above 1200px */
+/* help make the overlay disappear above 1366px */
 /* tied to elements above in this subsection of the CSS */
 /* for additional overlay coding, see below */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1366px){
 	html{
 		background: #fff !important;
 	}
@@ -477,12 +477,12 @@ nav#fallback-nav a:focus-within h1{
 	border-radius: 5px;
 	transition: 0.2s;
 }
-/* hide items in nav excepting site logo and hamburger menu below 1200px */
+/* hide items in nav excepting site logo and hamburger menu below 1366px */
 nav#nav1 ul li:not(:first-child):not(:last-child){
 	display: none;
 	visibility: hidden;
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1366px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
 		font-size: 1.05rem;
 		font-weight: 600;
@@ -578,8 +578,8 @@ nav#fallback-nav li button:hover i,
 nav#fallback-nav li button:focus i{
 	color: #fff;
 }
-/* hide hamurger menu on nav (not fallback-nav, which remains onscreen) above 1200px */
-@media only screen and (min-width: 1200px){
+/* hide hamurger menu on nav (not fallback-nav, which remains onscreen) above 1366px */
+@media only screen and (min-width: 1366px){
 	nav#nav1 li:last-child,
 	nav#nav1 li button{
 		display: none;
@@ -598,8 +598,8 @@ nav#nav2{
 	display: none;
 	visibility: hidden;
 }
-/* hide overlay above 1200px */
-@media only screen and (min-width: 1200px){
+/* hide overlay above 1366px */
+@media only screen and (min-width: 1366px){
 	nav#nav2{
 		margin-right: 0 !important;
 		display: none !important;
@@ -706,8 +706,8 @@ nav#nav2 #overlay-menu li button.close{
 		height: 40.8px;
 	}
 }
-/* hide close overlay button above 1200px */
-@media only screen and (min-width: 1200px){
+/* hide close overlay button above 1366px */
+@media only screen and (min-width: 1366px){
 	nav#nav2 #overlay-menu li button.close{
 		display: none;
 		visibility: hidden;
