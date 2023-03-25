@@ -5,7 +5,6 @@ Update checklists
 	lesson plan
 
 Update workflows
-	assessment
-	syllabus
+	syllabus-assessment
 	lesson plan
 	zoomcast	
