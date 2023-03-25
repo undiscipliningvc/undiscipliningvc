@@ -10,17 +10,17 @@ import os
 
 # Define the names of the CSV files and their columns
 csv_filenames = {
-    'zoomcast-1': 'zoomcast-spreadsheet-1.csv',
-    # 'zoomcast-2': 'zoomcast-spreadsheet-2.csv',
-    # 'zoomcast-3': 'zoomcast-spreadsheet-3.csv',    
+    'zoomcast-1': 'spreadsheet-zoomcast-1.csv',
+    # 'zoomcast-2': 'spreadsheet-zoomcast-2.csv',
+    # 'zoomcast-3': 'spreadsheet-zoomcast-3.csv',    
 }
 csv_columns = ['placeholder', 'text']
 
 # Define the names of the HTML files to update
 html_filenames = {
-    'zoomcast-1': 'zoomcast-template-1.html',
-    # 'zoomcast-2': 'zoomcast-template-2.html',
-    # 'zoomcast-3': 'zoomcast-template-3.html',    
+    'zoomcast-1': 'template-zoomcast-1.html',
+    # 'zoomcast-2': 'template-zoomcast-2.html',
+    # 'zoomcast-3': 'template-zoomcast-3.html',    
 }
 
 # Loop over the CSV files and update their corresponding HTML files
@@ -40,7 +40,7 @@ for zoomcast, csv_filename in csv_filenames.items():
             html = f.read()
 
         # Find the row with "zoomcast-file-name" in column 1 and get the corresponding value in column 2
-        zoomcast_file_name_row = next((row for row in data if row['placeholder'] == 'zoomcast-file-name'), None)
+        zoomcast_file_name_row = next((row for row in data if row['placeholder'] == 'guest-surname-lower-case'), None)
         if zoomcast_file_name_row:
             new_html_filename = os.path.splitext(zoomcast_file_name_row['text'])[0] + '.html'
 

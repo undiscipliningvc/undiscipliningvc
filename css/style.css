@@ -484,10 +484,15 @@ nav#nav1 ul li:not(:first-child):not(:last-child){
 }
 @media only screen and (min-width: 1200px){
 	nav#nav1 ul li:not(:first-child):not(:last-child){
-		font-size: 1.05rem;
+		font-size: .95rem;
 		font-weight: 600;
 		display: block;
 		visibility: visible;
+	}
+}
+@media only screen and (min-width: 1366px){
+	nav#nav1 ul li:not(:first-child):not(:last-child){
+		font-size: 1.05rem;
 	}
 }
 /* hyperlinks for all items in nav */

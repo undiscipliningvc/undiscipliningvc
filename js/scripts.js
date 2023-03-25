@@ -195,9 +195,9 @@ function checkUrl () {
   if (window.location.href.indexOf("html/syllabi") > -1) {	
     document.getElementById("syllabi").setAttribute("class","current");
   };
-  // if (window.location.href.indexOf("html/assessments") > -1) {	
-  //   document.getElementById("syllabi").setAttribute("class","current");
-  // };
+  if (window.location.href.indexOf("html/assessments") > -1) {	
+    document.getElementById("assessments").setAttribute("class","current");
+  };
   if (window.location.href.indexOf("html/about") > -1) {	
     document.getElementById("about").setAttribute("class","current");
   };
