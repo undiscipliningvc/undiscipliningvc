@@ -10,17 +10,17 @@ import os
 
 # Define the names of the CSV files and their columns
 csv_filenames = {
-    'assessment-1': 'assessment-spreadsheet-1.csv',
-    # 'assessment-2': 'assessment-spreadsheet-2.csv',
-    # 'assessment-3': 'assessment-spreadsheet-3.csv',    
+    'assessment-1': 'spreadsheet-assessment-1.csv',
+    # 'assessment-2': 'spreadsheet-assessment-2.csv',
+    # 'assessment-3': 'spreadsheet-assessment-3.csv',    
 }
 csv_columns = ['placeholder', 'text']
 
 # Define the names of the HTML files to update
 html_filenames = {
-    'assessment-1': 'assessment-template-1.html',
-    # 'assessment-2': 'assessment-template-2.html',
-    # 'assessment-3': 'assessment-template-3.html',    
+    'assessment-1': 'template-assessment-1.html',
+    # 'assessment-2': 'template-assessment-2.html',
+    # 'assessment-3': 'template-assessment-3.html',    
 }
 
 # Loop over the CSV files and update their corresponding HTML files
