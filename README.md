@@ -12,17 +12,17 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 * **Level 4:** Downloadable files, i.e., all the files that appear in /pdf
 
 ## Subdirectories in the Root Directory
-* **0_dev:** Files needed for developing the site. These include a set of empty directories (used to generate derivative images) icons, page templates and workflows, a sample annotated HTML file, image conversion code, and the UVC peer review stamp.
+* **0_dev:** Files needed for developing the site. These include a set of empty directories (used to generate derivative images), icons, page templates and workflows, a sample annotated HTML file, a set of image conversion codes, and the UVC peer review stamp.
 
 * **bash:** Scripts to develop the site. These include scripts to run a local server in Python and to push changes from the dev to production branches.
 
-* **common:** HTML fragment files that are interjected via jQuery into all HTML files of the site. These include files for site navigation and the footer.
+* **common:** HTML fragment files that are injected via jQuery into all the HTML files of the site. These include files for site navigation and the footer.
 
 * **css:** All the site's CSS files. Each file is annotated for function and to indicate, as relevant, sources of code.
 
 * **fonts:** At present just the font to create the main UVC logo.
 
-* **html:** All the site's HTML files, except for those in "common" and in the root directory. See levels 2 and 3, above.
+* **html:** All the site's HTML files, except for those in the "common" and root directories. See levels 2 and 3, above.
 
 * **img:** All the site's images. These include the site's social media image and images divided into subdirectories that correspond to the parts of the site where the images are used.
 
@@ -43,7 +43,7 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 
 * **README.md:** The current page.
 
-* **robots.txt:** Tell search engine crawlers which site page should be indexed and followed.
+* **robots.txt:** Tells search engine crawlers which site page should be indexed and followed.
 
 * **site.webmanifest:** A metadata file that includes items such as the site's name, description, icons, and background/theme colors
 
