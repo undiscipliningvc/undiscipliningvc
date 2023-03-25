@@ -3,9 +3,9 @@ Create template/spreadsheet
 
 Update checklists
 	lesson plan
-	zoomcast
 
 Update workflows
-	assessment-syllabus
+	assessment
+	syllabus
 	lesson plan
 	zoomcast	
