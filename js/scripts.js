@@ -25,8 +25,8 @@ $(window).scroll(function () {
 });
 
 
-//Scroll to top button
-//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// Scroll to top button
+// Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // Original coding improved by ChatGPT (https://chat.openai.com/chat) by making the scroll smooth instead of sudden.
 
 // Get the button
