@@ -24,6 +24,7 @@ Syllabus/Assessment Page
 12) Proof syllabus/assessment essay according to house style guide.
 13) Update syllabi.html or asssessments.html pages for new syllabi/assessment tiles.
 14) Add new syllabi/assessments to Site Map.
+15) Update sitemap.xml after the page is published on the site.
 
 Syllabus/Assessment
 1) Cut and paste UVC peer review stamp from an existing site peer-reviewed syllabus or assessment.
