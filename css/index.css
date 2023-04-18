@@ -193,22 +193,22 @@
 }
 /* Twitter link in social media links section */
 .participate a.follow{
-	background-color: #1C95E1;
-	border: 1px solid #1C95E1;
+	background-color: #115D8D;
+	border: 1px solid #115D8D;
 }
 .participate a.follow:focus,
 .participate a.follow:hover{
-	color: #1C95E1;
+	color: #115D8D;
 	background: #fff;
 }
 /* "Mailing List/Get Involved" link in social media links section */
 .participate a.contribute{
-	background-color: #143D5D;
-	border: 1px solid #143D5D;
+	background-color: #2A3232;
+	border: 1px solid #2A3232;
 }
 .participate a.contribute:focus,
 .participate a.contribute:hover{
-	color: #222A2A;
+	color: #2A3232;
 	background: #fff;
 }
 /* carousel images section heading */
