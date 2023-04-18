@@ -533,6 +533,7 @@ nav#fallback-nav li button{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	margin-right: 1rem;
 	padding: 7px 8px 5px;
 	position: absolute;
 	top: 50%;
@@ -859,6 +860,7 @@ h4,
 section section h4:first-child{
 	font-weight: 600;
 	text-transform: uppercase;
+	letter-spacing: .02rem;
 	margin: 1rem 0;
 }
 @media only screen and (min-width: 480px){
