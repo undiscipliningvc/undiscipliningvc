@@ -23,7 +23,7 @@ Here's a script that you can use:
 
 3. Run the following command to convert all the DOCX files in the directory to semantically encoded HTML files:
 
-	for file in *.docx; do pandoc -s "$file" -o "${file%.docx}.html" --metadata title="${file%.docx}"; done
+	for file in *.docx; do pandoc -s "$file" -o "${file%.docx}.html" --metadata title="${file%.docx}" --wrap=none; done
 
 4. After running the command, you should see new HTML files with semantically encoded structure in your directory.
 
