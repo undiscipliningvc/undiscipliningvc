@@ -1,472 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://undiscipliningvc.org/</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/index.html</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/sitemap.html</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/values_practices.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/chaozon-bauer.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/kim-cobblah.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/servitje.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/braham-ohri-simpson.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/walters.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/brice-hayward-reeder.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/aslami.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/lootens.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/zoomcasts/rudy.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_transimperial_introduction.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_psychoactive_revolution.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_japanese_aesthetics.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_visualizing_korea.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_chinese_migration.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_victorian_realism.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/seacole_caribbean_introduction.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/seacole_decentering_britishness.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/seacole_undisciplining_autobiography.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/seacole_recentering_nursing.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/seacole_decolonizing_heathcare.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_diaspora_empire_introduction.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_dramatic_monologue.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_colonial_landscapes.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_southern_africa.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_ethiopianism.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_archival_erasure.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/africa_slavery_theories.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/uvc_india_jude.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/capital-l_literature.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/canon_fodder.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/race_slavery_empire.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/black_(im)mobilities.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/victorian_human.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/victorian_women_world.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/women_write_empire.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/reintroducing_victorians.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/syllabi/unsettling_victorian.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/founding_developers.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/project_contributors.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/bibliography.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/call_for_syllabi_and_syllabus_clusters.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/call_for_assistant_editors_2022.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/about/call_for_assessments_2022.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_timeline.html</loc>
-  <lastmod>2023-01-09T22:29:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2022-02-24-Chaozon-Bauer-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2022-02-24-Chaozon-Bauer-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-09-29-Kim-Cobblah-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-09-29-Kim-Cobblah-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-08-10-Servitje-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-08-10-Servitje-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-05-12-Braham-et-al-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-05-12-Braham-et-al-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-05-Kaufman-statement.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-05-Kaufman-statement.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-04-02-Walters-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-04-02-Walters-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-02-25-Brice-et-al-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-02-25-Brice-et-al-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-03-17-Aslami-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-03-17-Aslami-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-01-29-Lootens-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-01-29-Lootens-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-02-04-Rudy-transcript.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/zoomcasts/2021-02-04-Rudy-transcript.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/majee_uvc_india_jude.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/majee_uvc_india_jude.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/chappell_capital-l_literature.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/chappell_capital-l_literature.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/romanow_canon_fodder.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/romanow_canon_fodder.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/feuerstein_race_slavery_empire.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/feuerstein_race_slavery_empire.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/dobbins_black_(im)mobilities.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/dobbins_black_(im)mobilities.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/bindas_victorian_human.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/bindas_victorian_human.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/cordes_selbin_victorian_women_world.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/cordes_selbin_victorian_women_world.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/huseby_women_write_empire.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/huseby_women_write_empire.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/jacob_reintroducing_victorians.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/jacob_reintroducing_victorians.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/linley_unsettling_victorian.pdf</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://undiscipliningvc.org/pdf/syllabi/linley_unsettling_victorian.docx</loc>
-  <lastmod>2023-01-09T22:29:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- Generated by Web-Site-Map.com -->
+<url><loc>https://undiscipliningvc.org/</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
+<url><loc>https://undiscipliningvc.org/index.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/sitemap.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/values_practices.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/assessments.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/chaozon-bauer.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/kim-cobblah.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/servitje.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/braham-ohri-simpson.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/walters.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/brice-hayward-reeder.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/aslami.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/lootens.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/zoomcasts/rudy.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_transimperial_introduction.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_psychoactive_revolution.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_japanese_aesthetics.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_visualizing_korea.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_chinese_migration.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_victorian_realism.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/seacole_caribbean_introduction.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/seacole_decentering_britishness.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/seacole_undisciplining_autobiography.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/seacole_recentering_nursing.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/seacole_decolonizing_heathcare.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_diaspora_empire_introduction.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_dramatic_monologue.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_colonial_landscapes.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_southern_africa.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_ethiopianism.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_archival_erasure.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/africa_slavery_theories.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/multiethnic_literature.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/representative_survey.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/muslim_other.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/jewish_british.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/hinduism_imperial.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/uvc_india_jude.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/capital-l_literature.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/canon_fodder.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/race_slavery_empire.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/black_(im)mobilities.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/victorian_human.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/victorian_women_world.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/women_write_empire.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/reintroducing_victorians.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/syllabi/unsettling_victorian.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/assessments/(post-)colonial_biography.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/assessments/recovering_reevaluating.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/founding_developers.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/associate_editors.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/assistant_editors.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/project_contributors.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/bibliography.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/call_for_syllabi_and_syllabus_clusters.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/lesson_plans/east_asia_timeline.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/call_for_assessments_2022.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>https://undiscipliningvc.org/html/about/call_for_assistant_editors_2022.html</loc><lastmod>2023-04-27T18:45:33+00:00</lastmod><changefreq>daily</changefreq><priority>0.56</priority></url>
 </urlset>
+ 
