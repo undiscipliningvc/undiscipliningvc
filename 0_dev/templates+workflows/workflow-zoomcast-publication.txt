@@ -1,26 +1,3 @@
-Zoomcast Page
-1) Make a copy of zoomcast template webpage for each new zoomcast.
-2) Rename zoomcast template with the interviewee surname(s), separated by dash as needed.
-3) Open newly named file in editor.
-5) Find all instances of commented out "Change" and fill fields with info provided by cluster developer. You will need:
-  a) 160 chararcter Google description; 
-  b) Zoomcast length; date; series
-  c) [Remove "Further Reading" in TOC & page if not needed];
-  d) Overview; series description; biography
-  e) YouTube code (e.g., 4_bqN5G6wcA)
-6) Commit page to GitHub.
-
-Images
-1) Play Zoom video and pause at key moment.
-2) Take screenshot.
-3) Add PNG screenshot, with name changed to interviewee name, to local raw UVC folder.
-4) Convert PNG screenshot to TIFF.
-5) Crop TIFF so that interviewee is off-center to left or right ideally and add to local TIFF UVC folder. (Ideal dimensions are 1280 x 718.)
-6) Generate Zoomcast images using prefab ImageMagick code in GitHub dev folder. 
-7) Remove any images that exceed dimensions of original
-8) Note: No separate tile image for this section is needed; tile and main images are the same.
-9) Commit images to GitHub.
-
 Zoomcast
 1) Open Zoomcast in iMovie.
 2) Check beginning and end and crop as needed using the following:
@@ -33,6 +10,34 @@ delete to remove extraneous bits
 5) Insert title slide at beginning (4 seconds) and end (5 seconds) of Zoomcast; separate out with "Cross Blur" transition.
 6) Close project and save Zoomcast using the following specs: HD 720
 7) Upload video to UNL Vidgrid and request professional captions.
+
+Images
+1) Play Zoom video and pause at key moment.
+2) Take screenshot.
+3) Add PNG screenshot, with name changed to interviewee name, to local raw UVC folder.
+4) Convert PNG screenshot to TIFF.
+5) Crop TIFF so that interviewee is off-center to left or right ideally and add to local TIFF UVC folder. (Ideal dimensions are 1280 x 718.)
+6) Generate Zoomcast images using prefab ImageMagick code in GitHub dev folder. 
+7) Remove any images that exceed dimensions of original
+8) Note: No separate tile image for this section is needed; tile and main images are the same.
+9) Commit images to GitHub.
+
+Zoomcast Page
+1) Make a copy of zoomcast template webpage for each new zoomcast.
+2) Rename zoomcast template with the interviewee surname(s), separated by dash as needed.
+3) Open newly named file in editor.
+5) Find all instances of commented out "Change" and fill fields with info provided by cluster developer. You will need:
+  a) 160 chararcter Google description; 
+  b) Zoomcast length; date; series
+  c) [Remove "Further Reading" in TOC & page if not needed];
+  d) Overview; series description; biography
+  e) YouTube code (e.g., 4_bqN5G6wcA)
+6) Commit page to GitHub.
+
+Closeout
+1) Update zoomcasts.html page for new zoomcast tile(s)
+2) Add new contributorts to contributors.html
+3) Add new zoomcasts to sitemap.html and sitemap.xml
 
 YouTube
 1) Go to UVC channel; select "Manage Videos."
@@ -47,7 +52,3 @@ Generic UVC Description for YouTube
 Undisciplining the Victorian Classroom (https://undiscipliningvc.org/) is a digital humanities project that reimagines how to teach Victorian Studies through a positive, race-conscious lens.
 
 The project advocates for engaging scholarship from Black and African, Indigenous and Native American, Asian and Asian American, Latinx, Postcolonial, Decolonial, Feminist, Queer, Transgender, Disability, and Critical Ethnic Studies.
-
-Closeout
-1) Update zoomcasts.html page for new zoomcast tile(s).
-2) Add new zoomcasts to sitemap.html and sitemap.xml
