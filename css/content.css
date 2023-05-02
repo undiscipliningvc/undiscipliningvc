@@ -538,6 +538,12 @@ ul.text-list{
 	margin-bottom: 0; 
 	padding-left: 0
 }
+/* endnote numbers in main text */
+.endnote-ref{
+	vertical-align: super;
+  font-size: .9rem;
+  margin: 0 2px;
+}
 /* endnote lists */
 .content ol.endnotes,
 .content ul.endnotes{
@@ -550,6 +556,12 @@ ul.text-list{
 	font-style: italic;
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
+}
+@media only screen and (min-width: 768px){
+	.content ol.endnotes li,
+	.content ul.endnotes li{
+		font-size: .95em;
+	}
 }
 /* spacing for lists and list items that follow sub-subsection headings */
 .content h5 + ol,
