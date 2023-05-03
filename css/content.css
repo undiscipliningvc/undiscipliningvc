@@ -219,7 +219,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	position: absolute;
   left: 0;
   top: 0;
-	object-fit:cover;
+	object-fit: cover;
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
