@@ -533,7 +533,6 @@ nav#fallback-nav li button{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin-right: 1rem;
 	padding: 7px 8px 5px;
 	position: absolute;
 	top: 50%;
@@ -543,15 +542,25 @@ nav#fallback-nav li button{
 	transform: translate(0, -50%);
 }
 nav#nav1 li button{
+	margin-right: .5rem;
 	z-index: 21;
 }
 nav#fallback-nav li button{
+	margin-right: -.5rem;
 	z-index: 22;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1 li button,
 	nav#fallback-nav li button{
 		padding: 6px 8px;
+	}
+}
+@media only screen and (min-width: 768px){
+	nav#nav1 li button{
+		margin-right: 2rem;
+	}
+	nav#fallback-nav li button{
+		margin-right: 1rem;
 	}
 }
 nav#nav1 li button:hover,
@@ -697,6 +706,7 @@ nav#nav2 #overlay-menu li button.close{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	margin-right: -.5rem;
 	width: 34.2px;
 	height: 33.15px;
 }
@@ -708,6 +718,7 @@ nav#nav2 #overlay-menu li button.close{
 }
 @media only screen and (min-width: 768px){
 	nav#nav2 #overlay-menu li button.close{
+		margin-right: 1rem;
 		width: 41.2px;
 		height: 40.8px;
 	}
@@ -758,6 +769,31 @@ a:focus{
 	color: #E6EAEA;
 	background-color: #143D5D;
 	transition: 0.2s;
+}
+/* action button links for social media links, calls, etc. */
+.action-button-container{
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a.action-button,
+a.action-button:visited{
+	line-height: 1.4rem;
+	color: #fff;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin: 0 .5rem;
+	padding: 6px 8px;
+	display: -webkit-flex;
+	display: flex;
+	align-items: baseline;
+}
+a.action-button:focus{
+	outline: 1px dashed #222A2A;
 }
 /* links in the footer */
 footer a,
@@ -1012,6 +1048,19 @@ hr{
 }
 .hr404{
 	margin: 1rem 0;
+}
+.hrcalls{
+	margin: 2rem auto;
+}
+@media only screen and (min-width: 768px){
+	.hrcalls{
+		margin: 2.5rem auto;
+	}	
+}
+@media only screen and (min-width: 992px){
+	.hrcalls{
+		max-width: 650px;
+	}
 }
 /* interjected sections of text that are not part of the main page content */
 .breakout-quote{
