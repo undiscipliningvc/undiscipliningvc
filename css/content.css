@@ -367,6 +367,22 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main section.materials strong{
   font-weight: 600;
 }
+/* call to action button for calls */
+.content a.calls{
+	background-color: #2A3232;
+	border: 1px solid #2A3232;
+	margin-top: .5rem;
+}
+@media only screen and (min-width: 768px){
+	.content a.calls{
+		margin-top: 1rem;
+	}
+}
+.content a.calls:focus,
+.content a.calls:hover{
+	color: #2A3232;
+	background: #fff;
+}			
 /* sitemap hyperlink on 404 page */
 .content a.link404{
 	font-size: 1.1rem;
