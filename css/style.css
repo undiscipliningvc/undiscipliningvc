@@ -644,6 +644,7 @@ nav#nav2 #overlay-menu ul{
 }
 /* single item in overlay */
 nav#nav2 #overlay-menu ul li{
+	line-height: 1.6rem;
 	border-bottom: 1px solid #fff;
 }
 /* first item in overlay (item for close overlay button) */
@@ -671,7 +672,7 @@ nav#nav2 #overlay-menu ul li:first-child{
 }
 /* hyperlink within item in overlay */
 nav#nav2 #overlay-menu li a{
-	font-size: 1.1rem;
+	font-size: 1.05rem;
   color: #212119;
 	text-decoration: none;
 	white-space: nowrap;
@@ -782,6 +783,7 @@ a.action-button:visited{
 	line-height: 1.4rem;
 	color: #fff;
 	text-decoration: none;
+	text-align: center;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
