@@ -165,33 +165,7 @@
 	line-height: 1.75rem;
 	margin-top: 0;
 }
-/* container for social media links in social media links section */
-.participate div{
-	display: -webkit-flex;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-/* hyperlink for social media links */
-.participate a,
-.participate a:visited{
-	line-height: 1.4rem;
-	color: #fff;
-	text-decoration: none;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	margin: 0 .5rem;
-	padding: 6px 8px;
-	display: -webkit-flex;
-	display: flex;
-	align-items: baseline;
-}
-.participate a:focus{
-	outline: 1px dashed #222A2A;
-}
-/* Twitter link in social media links section */
+/* adds color for Twitter link in social media links section */
 .participate a.follow{
 	background-color: #115D8D;
 	border: 1px solid #115D8D;
@@ -201,7 +175,7 @@
 	color: #115D8D;
 	background: #fff;
 }
-/* "Mailing List/Get Involved" link in social media links section */
+/* adds color for "Mailing List/Get Involved" link in social media links section */
 .participate a.contribute{
 	background-color: #2A3232;
 	border: 1px solid #2A3232;

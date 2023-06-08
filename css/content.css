@@ -23,9 +23,17 @@
 .syllabi.content main section.menu-container h3{
 	background: #3C5D40;
 }
+.content a.calls.syllabi-calls{
+	background-color: #3C5D40;
+	border: 1px solid #3C5D40;
+}
 .assessments.content header,
 .assessments.content main section.menu-container h3{
 	background: #60582F;
+}
+.content a.calls.assessments-calls{
+	background-color: #60582F;
+	border: 1px solid #60582F;
 }
 .about.content header,
 .about.content main section.menu-container h3{
@@ -366,6 +374,23 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main section.pathways strong,
 .content main section.materials strong{
   font-weight: 600;
+}
+/* call to action button for calls */
+.content a.calls{
+	background-color: #2A3232;
+	border: 1px solid #2A3232;
+	margin-top: .5rem;
+}
+@media only screen and (min-width: 768px){
+	.content a.calls{
+		margin-top: 1rem;
+	}
+}
+.content a.calls:focus,
+.content a.calls:hover{
+	color: #2A3232;
+	background: #fff;
+	border: 1px solid #212119;
 }
 /* sitemap hyperlink on 404 page */
 .content a.link404{
