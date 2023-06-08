@@ -14,13 +14,23 @@ delete to remove extraneous bits
 Images
 1) Play Zoom video and pause at key moment.
 2) Take screenshot.
-3) Add PNG screenshot, with name changed to interviewee name, to local raw UVC folder.
+3) Add PNG screenshot, with name changed to interviewee name(s), to local and Google Drive UVC folders.
 4) Convert PNG screenshot to TIFF.
-5) Crop TIFF so that interviewee is off-center to left or right ideally and add to local TIFF UVC folder. (Ideal dimensions are 1280 x 718.)
+5) Crop TIFF so that interviewee is off-center to left or right ideally and add to local and Google Drive UVC folders. (Ideal dimensions are 1280 x 718.)
 6) Generate Zoomcast images using prefab ImageMagick code in GitHub dev folder. 
 7) Remove any images that exceed dimensions of original
 8) Note: No separate tile image for this section is needed; tile and main images are the same.
 9) Commit images to GitHub.
+
+Zoomcast Transcript
+1) Convert TXT file to Word. Save in the following format if one or two names: "2021-03-17-Aslami-transcript.docx". Save in the following format if more than two names: "2021-05-12-Braham-et-al-transcript.docx".
+2) Open Word file, go to File > Properties, then click on the Summary tab. Fill out the title [Zoomcast with (names of guests)], author [name of Zoomcast host], and company [Undisciplining the Victorian Classroom] fields. Click OK.
+3) Convert file to Times New Roman, 12pt, and add pages numbers. 
+4) Open an existing Zoomcast transcript (see "pdf" directory, "zoomcasts" subdirectory), copy the heading info from the existing file, paste into the new Zoomcast file, and change the relevant information.
+5) Run an accessibility check, fix any errors, save.
+6) Save as PDF, run another accessibility check, fix any errors, save.
+7) Add files to "pdf" directory, "zoomcasts" subdirectory. 
+8) Commit images to GitHub.
 
 Zoomcast Page
 1) Make a copy of zoomcast template webpage for each new zoomcast.

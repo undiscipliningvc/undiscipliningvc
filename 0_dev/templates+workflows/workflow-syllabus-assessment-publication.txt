@@ -1,9 +1,9 @@
 Images
 1) Download best version of image.
 2) Add image to Zotero in both local and remote folders.
-3) Copy raw JPEG image to relevant relevant folder; keep original file name.
-3) Convert JPEG image to TIFF and copy to relevant archival folder; keep original file name.
-4) Crop TIFF image and copy to relevant archival folder; rename. Note: Crop only needed for extraneous matter. Do not crop for ratio.
+3) Copy raw JPEG image to local and Google Drive UVC folders; keep original file name.
+3) Convert JPEG image to TIFF and copy to local and Google Drive UVC folders; keep original file name.
+4) Crop TIFF image, rename, and copy to local and Google Drive UVC folders. Note: Crop only needed for extraneous matter. Do not crop for ratio.
 5) Merge cropped TIFF images (if needed), but also keep cropped originals.
 6) Generate syllabi/assessment images and syallbi/assessment tiles derivative images using prefab ImageMagick code. 
 7) Check for sizes and remove any derivaties that don't meet specs.
