@@ -1,9 +1,3 @@
-Create template/spreadsheet
-	lesson plan (africa/caribbean/seacole)
-
-Update checklists
-	lesson plan
-
 Update workflows
 	syllabus-assessment
 	lesson plan
