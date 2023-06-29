@@ -10,17 +10,17 @@ import os
 
 # Define the names of the CSV files and their columns
 csv_filenames = {
-    'lesson_plan-1': 'spreadsheet-lesson_plan-1.csv',
-    # 'lesson_plan-2': 'spreadsheet-lesson_plan-2.csv',
-    # 'lesson_plan-3': 'spreadsheet-lesson_plan-3.csv',    
+    'lesson-plan-1': 'spreadsheet-lesson-plan-1.csv',
+    # 'lesson-plan-2': 'spreadsheet-lesson-plan-2.csv',
+    # 'lesson-plan-3': 'spreadsheet-lesson-plan-3.csv',    
 }
 csv_columns = ['placeholder', 'text']
 
 # Define the names of the HTML files to update
 html_filenames = {
-    'lesson_plan-1': 'template-lesson_plan-1.html',
-    # 'lesson_plan-2': 'template-lesson_plan-2.html',
-    # 'lesson_plan-3': 'template-lesson_plan-3.html',    
+    'lesson-plan-1': 'template-lesson-plan-1.html',
+    # 'lesson-plan-2': 'template-lesson-plan-2.html',
+    # 'lesson-plan-3': 'template-lesson-plan-3.html',    
 }
 
 # Loop over the CSV files and update their corresponding HTML files
@@ -40,7 +40,7 @@ for lesson_plan, csv_filename in csv_filenames.items():
             html = f.read()
 
         # Find the row with "lesson_plan-file-name" in column 1 and get the corresponding value in column 2
-        lesson_plan_file_name_row = next((row for row in data if row['placeholder'] == 'lesson_plan-file-name'), None)
+        lesson_plan_file_name_row = next((row for row in data if row['placeholder'] == 'lesson-plan-webpage-name'), None)
         if lesson_plan_file_name_row:
             new_html_filename = os.path.splitext(lesson_plan_file_name_row['text'])[0] + '.html'
 
