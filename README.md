@@ -12,7 +12,7 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 * **Level 4:** Downloadable files, i.e., all the files that appear in /pdf
 
 ## Subdirectories in the Root Directory
-* **0_dev:** Files needed for developing the site. These include a set of empty directories (used to generate derivative images), icons, a sample annotated HTML file, a set of image conversion codes, and the UVC peer review stamp.
+* **0_dev:** Files needed for developing the site. These include a set of empty directories (used to generate derivative images), icons, a sample annotated HTML file, and the UVC peer review stamp. Also includes workflows, Python scripts, corresponding CSV and HTML, and misc other files used to  generate content pages.
 
 * **bash:** Scripts to develop the site. These include scripts to run a local server in Python and to push changes from the dev to production branches.
 
@@ -29,8 +29,6 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 * **js:** All the site's JS files. Each file is annotated for function and to indicate, as relevant, sources of code.
 
 * **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files. A subdirectory called "guidelines" includes checklists for preparing assessments, lesson plans, syllabi, and zoomcasts for publication plus the UVC house style guidelines.
-
-* **py:** Workflows, Python scripts, and corresponding CSV and HTML files. Used to  generate content pages. Under development (summer 2023).
 
 ## Loose Files in the Root Directory
 * **404.html:** Users are directed to this page when they try to access a page of the UVC site that doesn't exist.
