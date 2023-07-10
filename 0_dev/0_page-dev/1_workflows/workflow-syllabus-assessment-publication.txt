@@ -1,36 +1,39 @@
 Images
-1) Download best version of image.
-2) Add image to Zotero in both local and remote folders.
+1) Open syllabus/assessment checklist, find URL for page image, download best version of image available from site.
+2) Add image to Zotero, first in own library, then in UVC group library.
 3) Copy raw JPEG image to local and Google Drive UVC folders; keep original file name.
-3) Convert JPEG image to TIFF and copy to local and Google Drive UVC folders; keep original file name.
-4) Crop TIFF image, rename, and copy to local and Google Drive UVC folders. Note: Crop only needed for extraneous matter. Do not crop for ratio.
-5) Merge cropped TIFF images (if needed), but also keep cropped originals.
-6) Generate syllabi/assessment images and syallbi/assessment tiles derivative images using prefab ImageMagick code. 
-7) Check for sizes and remove any derivaties that don't meet specs.
-8) Commit images to GitHub.
+4) Convert JPEG image to TIFF using ImageMagick and copy to local and Google Drive UVC folders; keep original file name.
+5) Crop TIFF image, rename, and copy to local and Google Drive UVC folders. Note: Crop only needed for extraneous matter (e.g., borders beyond image, etc.). Do not crop for ratio.
+6) If two vertical images, merge cropped TIFF images into single TIFF file, but also keep cropped originals.
+7) Generate syllabi/assessment images and syallbi/assessment tiles derivative images using prefab ImageMagick code in "image-conversion-code-new2.txt" file in "0_dev" folder in GitHub.
+8) Remove any generated images that exceed dimensions of original TIFF.
+9) Commit generated images to GitHub.
 
-Syllabus/Assessment Page
-1) Make a copy of syllabus/assessment template webpage for each new syllabus/assessment.
-2) Rename syllabus/assessment template with two- to three-word version of syllabus/assessment title.
-3) Open newly named file in editor.
-4) Replace generic image name (000X) with name of actual image for page. Remove code for all images that don't meet specs.
-5) Find all instances of commented out "Change" and fill fields with info provided by syllabus cluster developer/assessment guide.
-6) For "alt" for image, copy relevant field from Zotero. For files with two images, preface each alt text with either "Left:" or "Right:"
-7) Use Zotero, MLA to generate image bibliographical info for image "title." Also be sure to copy over rights info separately. For files with two images, preface each title text with either "(Left)" or "(Right)".
-8) h2 class (for image title) options are "bottom" or "top"; "center" is default, so if center, remove class. Custom placement using inliness CSS can also be done.
-9) File names for syllabus/assessment download will be the same as file name for webpage, but preceded by author surname.
-10) For "Header Image Caption" use same text as for main image "title" (see #7, above).
-11) Use Zotero, MLA to generate works cited. Also copy works cited to main UVC bibliography page and add creators to the project contributors page, both in the in About section.
-12) Proof syllabus/assessment essay according to house style guide.
-13) Update syllabi.html or asssessments.html pages for new syllabi/assessment tiles.
-14) Add new syllabi/assessments to Site Map.
-15) Update sitemap.xml after the page is published on the site.
+Syllabus/Assessment Webpage
+1) Open "0_dev" directory in GitHub, then "0_page-dev", then "2_python-files" and find "spreadsheet-syllabus-0.csv" or "spreadsheet-assessment-0.csv", make a copy and rename it as "spreadsheet-syllabus-1.csv" or "spreadsheet-assessment-1.csv".
+2) Open syllabus or assessment checklist in Word, open "spreadsheet-syllabus-1.csv" or "spreadsheet-assessment-1.csv" in Visual Studio Code and complete all fields using the checklist except: a) syllabus-overview/assessment-overview, cluster-description, and biography, all of which will be provided in a separate Word file and need to be converted into HTML first (see next step) or b) works-cited and header-image-caption, which you will generate (see below). Also note that if the image alt text containts commas, you will need to either put it in straight quotation marks or add it manually to the webpage once it's generated. For files with two images, preface each alt text with either "Left:" or "Right:", and preface the image caption text with either "(Left)" or "(Right)" in order to be consistent with existing site practices.
+3) Open syllabus or assessment Word file which contains the syllabus-overview/assessment-overview, cluster-description, and biography. 
+4) If the syllabus or assessment Word file also includes a works cited section, open Zotero, generate a new version of the works cited section, compare it against the existing section, make any necessary to the new version, then delete the existing version and close the file.
+5) Generate an image caption for the main page image and add it to the Word file in a separate section. Also be sure to copy over rights info, as it will not be automatically added by GitHub.
+6) Open the "workflow-docx-to-html" file found in the "01_workflows" subdirectory, in the "0_dev" directory in GitHub, find the relevant terminal code, then use that to convert the syllabus or assessment Word file to HTML.
+7) Review the HTML file, remove and/or replace any instances of <u> and other non-UVC formatting (including curly quote and n-dash code), add aria-label="External Link" to external links, fix anything else that needs it.
+8) Open "spreadsheet-syllabus-1.csv" or "spreadsheet-assessment-1.csv" in Excel. One by one, copy and paste the sections for syllabus-overview/assessment-overview, works-cited, cluster-description, biography, and image caption from the generated syllabus or assessment HTML file into the "spreadsheet-syllabus-1.csv" or "spreadsheet-assessment-1.csv", save, close.
+9) Open terminal, navigate to the "0-dev" directory in GitHub, then "0_page-dev", then "2_python-files" in GitHub, run "python syllabus.py"/"python assessment.py" or "python3 syllabus.py"/"python3 assessment.py" as relevant. This will generate a new syllabus or assessment HTML file in the "2_python-files" subdirectory with the short version of the title. Review the HTML file and make any changes necessary, then move the file into "syllabi" or assessments subdirectory of the "html" directory in GitHub. Also in "2_python-files" subdirectory, rename "spreadsheet-syllabus-1.csv" or "spreadsheet-assessment-1.csv" to include name author at end of file name, then move file into "0_done" subdirectory of "2_python-files" subdirectory.
+10) Commit all files to GitHub.
 
 Syllabus/Assessment
-1) Cut and paste UVC peer review stamp from an existing site peer-reviewed syllabus or assessment.
-2) Format text as needed.
-3) Add alt text to all images.
-4) Open File > Properties, then in "Summary" field at title, author, and company (UVC = company).
-5) Go to "Review" ribbon and run accessibility check; fix all issues using guidance provided.
-6) Convert Word file to PDF. 
-7) Open PDF and run "Accessiblity Check"; fix all issues.
+1) Rename the new syllabus/assessment Word file with the same as file name for webpage, but preceded by author surname. See existing files for examples.
+2) Open an existing syllabus/assessment Word file (see "pdf" directory in GitHub, then "syllabi" or "assessments" subdirectory), copy the UVC peer review stamp from the existing file, paste it into the new syllabus/assessment Word file, and change the relevant information.
+3) Go to File > Properties, then click on the Summary tab. Fill out the title, author, and company [Undisciplining the Victorian Classroom] fields. Click OK.
+4) Format the text of the syllabus/assessment as needed for accessibility and other formatting, including the addition of page numbers.
+5) Add alt text to any images in file.
+6) Go to "Review" ribbon and run accessibility check; fix all issues using guidance provided.
+7) Save as PDF, run another accessibility check, fix any errors, save.
+8) Add files to "pdf" directory, "syllabi" or "assessmemnts" subdirectory. 
+9) Commit filest to GitHub.
+
+Closeout
+1) Update "syllabi.html" or "assessments.html" page for new syllabi or assessments
+2) Add new contributors to "contributors.html"
+3) Add new syllabi or assessments to "sitemap.html" 
+4) Regenerate "sitemap.xml" after new syllabi or assessments pages appear online, add file to GitHub, commit.
