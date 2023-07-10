@@ -1,3 +1,2 @@
 Update workflows
-	syllabus-assessment
 	lesson plan
