@@ -27,7 +27,7 @@ Zoomcast Transcript
 2) Open Word file, go to File > Properties, then click on the Summary tab. Fill out the title [Zoomcast with (names of guests)], author [name of Zoomcast host], and company [Undisciplining the Victorian Classroom] fields. Click OK.
 3) Convert file to Times New Roman, 12pt, and add pages numbers. 
 4) Open an existing Zoomcast transcript (see "pdf" directory in GitHub, "zoomcasts" subdirectory), copy the heading info from the existing file, paste into the new Zoomcast file, and change the relevant information.
-5) Run an accessibility check, fix any errors, save.
+5) Go to "Review" ribbon and run accessibility check; fix all issues using guidance provided.
 6) Save as PDF, run another accessibility check, fix any errors, save.
 7) Add files to "pdf" directory, "zoomcasts" subdirectory. 
 8) Commit transcript to GitHub.
@@ -48,17 +48,18 @@ The project advocates for engaging scholarship from Black and African, Indigenou
 
 Zoomcast Page
 1) Open "0_dev" directory in GitHub, then "0_page-dev", then "2_python-files" and find "spreadsheet-zoomcast-0.csv", make a copy and rename it as "spreadsheet-zoomcast-1.csv".
-2) Open Zoomcast checklist in Word, open ""spreadsheet-zoomcast-1.csv" in Visual Stuido Code and complete all fields using the checklist except: a) youtube-code is the numerical code at end of YouTube URL, b) zoomcast-date be sure to put in straight quotation marks as it will include a comma, and c) do not add zoomcast-overview, further-reading, zoomcast-series-description, and biography, all of which will be provided in a separate word file and need to be converted into HTML first (see next step).
-3) Open Zoomcast word file which contains the Zoomcast overview, description, and biography. If there is also a works cited section, open Zotero, generate a new version of the works cited section, compare it against the existing section, make any necessary to the new version, then delete the existing version and close the file.
-4) Open the "workflow-docx-to-html" file found in the "01_workflows" subdirectory, in the "0_dev" directory in GitHub, find the relevant terminal code, then use that to convert the Zoomcast word file to HTML.
-5) Review the HTML file, remove and/or replace any instances of <u> and other non-UVC formatting (including curly quote and n-dash code), add aria-label="External Link" to external links, fix anything else that needs it.
-6) Open "spreadsheet-zoomcast-0.csv" in Excel. One by one, copy and paste the sections for zoomcast-overview, further-reading, zoomcast-series-description, and biography from the generated Zoomcast HTML file into the "spreadsheet-zoomcast-0.csv" file, save, close.
-7) Open terminal, navigate to the "0-dev" directory in GitHub, then "0_page-dev", then "2_python-files" in GitHub, run "python zoomcast.py" or "python3 zoomcast.py" as relevant. This will generate a new Zoomcast HTML file in the "2_python-files" subdirectory named after the Zoomcast guest(s). Review the HTML file and make any changes necessary, then move the file into "zoomcasts" subdirectory of the "html" directory in GitHub. Also in "2_python-files" subdirectory, rename "spreadsheet-zoomcast-1.csv" to include name(s) of Zoomcast guests(s) at end of file name, then move file into "0_done" subdirectory of "2_python-files" subdirectory.
-8) Commit all files to GitHub.
+2) Open Zoomcast checklist in Word, open "spreadsheet-zoomcast-1.csv" in Visual Studio Code and complete all fields using the checklist except: a) youtube-code is the numerical code at end of YouTube URL, b) zoomcast-date be sure to put in straight quotation marks as it will include a comma, and c) do not add zoomcast-overview, further-reading, zoomcast-series-description, and biography, all of which will be provided in a separate Word file and need to be converted into HTML first (see next step).
+3) Open Zoomcast Word file which contains the Zoomcast overview, description, and biography. 
+4) If the Zoomcast Word file also includes a works cited section, open Zotero, generate a new version of the works cited section, compare it against the existing section, make any necessary to the new version, then delete the existing version and close the file.
+5) Open the "workflow-docx-to-html" file found in the "01_workflows" subdirectory, in the "0_dev" directory in GitHub, find the relevant terminal code, then use that to convert the Zoomcast Word file to HTML.
+6) Review the HTML file, remove and/or replace any instances of <u> and other non-UVC formatting (including curly quote and n-dash code), add aria-label="External Link" to external links, fix anything else that needs it.
+7) Open "spreadsheet-zoomcast-0.csv" in Excel. One by one, copy and paste the sections for zoomcast-overview, further-reading, zoomcast-series-description, and biography from the generated Zoomcast HTML file into the "spreadsheet-zoomcast-0.csv" file, save, close.
+8) Open terminal, navigate to the "0-dev" directory in GitHub, then "0_page-dev", then "2_python-files" in GitHub, run "python zoomcast.py" or "python3 zoomcast.py" as relevant. This will generate a new Zoomcast HTML file in the "2_python-files" subdirectory named after the Zoomcast guest(s). Review the HTML file and make any changes necessary, then move the file into "zoomcasts" subdirectory of the "html" directory in GitHub. Also in "2_python-files" subdirectory, rename "spreadsheet-zoomcast-1.csv" to include name(s) of Zoomcast guests(s) at end of file name, then move file into "0_done" subdirectory of "2_python-files" subdirectory.
+9) Commit all files to GitHub.
 
 Closeout
 1) Update "zoomcasts.html" page for new zoomcast tile(s)
-2) Add new contributorts to "contributors.html"
+2) Add new contributors to "contributors.html"
 3) Add new zoomcasts to "sitemap.html" 
-4) Regenerate "sitemap.xml" after new Zoomcast pages appear online, add file, commit.
+4) Regenerate "sitemap.xml" after new Zoomcast pages appear online, add file to GitHub, commit.
 
