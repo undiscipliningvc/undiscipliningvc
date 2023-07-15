@@ -23,7 +23,7 @@ Images
 9) Commit generated images to GitHub.
 
 Zoomcast Transcript
-1) After UNL provides the Zoomcast captions in VTT and TXT formats, convert the TXT file to Word. Save in the following format if one or two names: "2021-03-17-Aslami-transcript.docx". Save in the following format if more than two names: "2021-05-12-Braham-et-al-transcript.docx".
+1) After UNL provides the Zoomcast captions in VTT and TXT formats and they have been proofread per the guidlines in /0_dev/1_workflows-others/workflow-zoomcast-editing-transcripts.txt, convert the TXT file to Word. Save in the following format if one or two names: "2021-03-17-Aslami-transcript.docx". Save in the following format if more than two names: "2021-05-12-Braham-et-al-transcript.docx".
 2) Open Word file, go to File > Properties, then click on the Summary tab. Fill out the title [Zoomcast with (names of guests)], author [name of Zoomcast host], and company [Undisciplining the Victorian Classroom] fields. Click OK.
 3) Convert file to Times New Roman, 12pt, and add pages numbers. 
 4) Open an existing Zoomcast transcript (see the "/pdf/zoomcasts" subdirectory in GitHub), copy the heading info from the existing file, paste into the new Zoomcast file, and change the relevant information.
