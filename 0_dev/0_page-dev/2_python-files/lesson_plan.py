@@ -26,7 +26,7 @@ html_filenames = {
 # Loop over the CSV files and update their corresponding HTML files
 for lesson_plan, csv_filename in csv_filenames.items():
     # Open the CSV file and read the data
-    with open(csv_filename,'r') as csvfile:
+    with open(csv_filename, 'r') as csvfile:
         # reader = csv.DictReader(csvfile, fieldnames=csv_columns, delimiter='\t')
         reader = csv.DictReader(csvfile, fieldnames=csv_columns)
         data = list(reader)
