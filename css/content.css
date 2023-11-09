@@ -314,6 +314,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* subsection title */
 .content main h3{
 	font-size: 1.35rem;
+	line-height: 1.4em;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
