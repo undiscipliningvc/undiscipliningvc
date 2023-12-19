@@ -597,7 +597,7 @@ ul.text-list{
 .content h5 + ol li{
 	margin: 0 0 .5rem 0;
 }
-/* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
+/* annotations for list items with short annotations */
 .content .annotation{
 	margin: .25rem 0 0 1.5rem;
 	display: block;
@@ -605,6 +605,10 @@ ul.text-list{
 .content ul.annotation,
 .content ol.annotation{
 	margin: -.5rem 0 0 1.5rem;
+}
+/* paragraph spacing for annotations for items with longer annotations */
+.content dd p:first-child{
+	margin-top: 0;
 }
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
