@@ -429,6 +429,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main .specs .specs-container a.mail:visited{
 	font-size: 1rem;
 	text-decoration: none;
+	white-space: nowrap;
 	padding: 0 0 0 3px;
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
