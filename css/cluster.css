@@ -309,6 +309,24 @@
 		line-height: 1.4;
 	}
 }
+/* the "new" flag temporarily placed on newly published items */
+.cluster main section a p.new{
+	font-size: 1.1rem;
+	font-style: italic;
+	font-weight: 600;
+	color: #fff;
+	background-color: rgb(66,66,66);
+	border: 2px solid #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0;
+	padding: 0px 6px;
+	position: absolute;
+	top: .75rem;
+	right: .75rem;
+	opacity: .93;
+}
 /* the descriptive text below each cluster page slide image */
 .cluster main section p{
 	padding: 0 1rem;

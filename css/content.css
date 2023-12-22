@@ -314,6 +314,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* subsection title */
 .content main h3{
 	font-size: 1.35rem;
+	line-height: 1.4em;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
@@ -428,7 +429,8 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main .specs .specs-container a.mail:visited{
 	font-size: 1rem;
 	text-decoration: none;
-	padding: 0 3px;
+	white-space: nowrap;
+	padding: 0 0 0 3px;
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
@@ -596,7 +598,7 @@ ul.text-list{
 .content h5 + ol li{
 	margin: 0 0 .5rem 0;
 }
-/* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
+/* annotations for list items with short annotations */
 .content .annotation{
 	margin: .25rem 0 0 1.5rem;
 	display: block;
@@ -604,6 +606,10 @@ ul.text-list{
 .content ul.annotation,
 .content ol.annotation{
 	margin: -.5rem 0 0 1.5rem;
+}
+/* paragraph spacing for annotations for items with longer annotations */
+.content dd p:first-child{
+	margin-top: 0;
 }
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{

@@ -6,4 +6,7 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /js/
 
+User-agent: GPTBot
+Disallow: /
+
 Sitemap: https://undiscipliningvc.org/sitemap.xml
