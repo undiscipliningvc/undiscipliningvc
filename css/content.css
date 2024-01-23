@@ -612,6 +612,7 @@ ul.text-list{
 	margin: -.5rem 0 0 1.5rem;
 }
 /* paragraph spacing for annotations for items with longer annotations */
+/* also involves <dl> and <dt>; search for examples in files */
 .content dd p:first-child{
 	margin-top: 0;
 }
