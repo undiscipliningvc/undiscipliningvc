@@ -551,12 +551,16 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		padding-left: 1.4rem;
 	}	
 }
-/* margin for all list items */
+/* margin for all regular list items */
 .content li{
 	margin-bottom: .5rem;
 }
 .content li:last-of-type{
 	margin-bottom: 0;
+}
+/* margin for triple-nested list items */
+.content li li li{
+	margin-bottom: 1rem;
 }
 /* list of texts */
 ol.text-list,
