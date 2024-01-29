@@ -623,10 +623,15 @@ ul.text-list{
 }
 .content.sitemap ol li ol li ol{
 	list-style: lower-roman;
+	margin: .5rem 0 1rem;
 	padding-left: 1.2rem;
+}
+.content.sitemap ol li ol li:last-of-type ol{
+	margin: 1rem 0 .5rem;
 }
 @media only screen and (min-width: 768px){
 	.content.sitemap ol li ol{
+		margin: .5rem 0 0;
 		padding-left: revert;
 	}	
 }
