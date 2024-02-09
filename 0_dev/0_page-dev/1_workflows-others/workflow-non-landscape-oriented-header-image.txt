@@ -13,7 +13,7 @@
 - Note: For steps #2 and #3 below, you can also use the workflow-non-landscape-orientated-header-image.xlsx file, which will automatically calculate the new width and height once you enter the current dimesions of the image.
 
 1. Identify the image size in pixels. In Mac, this can be done by selecting the image, then pressing cmd + I
-2. Get 1/10 of the image height; mutiply it by 2; add that amount to height. The new number will be the height of the Photoshop canvas.
+2. Get 1/15 of the image height; mutiply it by 2; add that amount to height. The new number will be the height of the Photoshop canvas.
 3. Take that new height and multiply it by 16/9 (1.77778). The new number will be the width of the Photoshop canvas.
 4. Open the image in Photoshop. 
 5. Select Image > Canvas Size. 
