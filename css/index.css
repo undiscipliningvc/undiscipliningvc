@@ -129,13 +129,13 @@
 		font-size: 1.45rem;
 	}
 }
-/* container for "Founding Developers" section */
-.founding-dev{
+/* container for "Directors and Advisors" section */
+.directors{
 	margin: 0 auto;	
 	display: inline-block;
 }
-/* list of people for "Founding Developers" section */
-.founding-dev ul{
+/* list of people for "Directors and Advisors" section */
+.directors ul{
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;

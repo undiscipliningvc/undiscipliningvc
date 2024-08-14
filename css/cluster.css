@@ -225,7 +225,7 @@
 /* adds specific ratio to ratio box */
 /* note that the .zoomcast and .about classes are used to set specific ratios for those cluster pages; these ratios differ from all other cluster page ratios */
 /* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-/* for founding devs. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
+/* for directors/advisors. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
 .cluster main section div::after{
 	content: "";
 	display: block;

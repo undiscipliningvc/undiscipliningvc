@@ -205,7 +205,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* adds specific ratio to ratio box */
 /* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-/* for founding devs. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
+/* for directors/advisors. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
 .content main .aspect-ratio-box::after {
   content: "";
   padding-bottom: 56.25%;
@@ -510,9 +510,9 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		margin: 1rem 0;
 	}
 }
-/* founding devs. and associate/assistant eds. images */
+/* directors/advisors. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
-.content.about.founders section p img,
+.content.about.directors section p img,
 .content.about.editors section p img{
 	margin: .5rem .75rem 0 0;
 	width: 100%;
@@ -521,7 +521,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	display: inline-block;
 }
 @media only screen and (min-width: 480px){
-	.content.about.founders section p img,
+	.content.about.directors section p img,
 	.content.about.editors section p img{
 		width: 50%;
 		float: left;
@@ -529,13 +529,13 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	}	
 }
 @media only screen and (min-width: 768px){
-	.content.about.founders section p img,
+	.content.about.directors section p img,
 	.content.about.editors section p img{
 		width: 30%;
 	}
 }
 @media only screen and (min-width: 992px){
-	.content.about.founders section p img,
+	.content.about.directors section p img,
 	.content.about.editors section p img{
 		width: 25%;
 	}
