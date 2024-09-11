@@ -205,7 +205,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 }
 /* adds specific ratio to ratio box */
 /* commonly used ratios: 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-/* for founding devs. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
+/* for directors/advisors. and associate/assistant eds. images on the content pages, use 285/356 as ratio (= 80.01) */
 .content main .aspect-ratio-box::after {
   content: "";
   padding-bottom: 56.25%;
@@ -314,6 +314,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 /* subsection title */
 .content main h3{
 	font-size: 1.35rem;
+	line-height: 1.4em;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
@@ -428,7 +429,8 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 .content main .specs .specs-container a.mail:visited{
 	font-size: 1rem;
 	text-decoration: none;
-	padding: 0 3px;
+	white-space: nowrap;
+	padding: 0 0 0 3px;
 }
 /* container for "Contact" text (part of email hyperlink in "Production Details" section) */
 .content main .specs .specs-container a.mail span{
@@ -508,9 +510,9 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		margin: 1rem 0;
 	}
 }
-/* founding devs. and associate/assistant eds. images */
+/* directors/advisors. and associate/assistant eds. images */
 /* note: for these images use 285/356 as cropping ratio (= 80.01) */
-.content.about.founders section p img,
+.content.about.directors section p img,
 .content.about.editors section p img{
 	margin: .5rem .75rem 0 0;
 	width: 100%;
@@ -519,7 +521,7 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	display: inline-block;
 }
 @media only screen and (min-width: 480px){
-	.content.about.founders section p img,
+	.content.about.directors section p img,
 	.content.about.editors section p img{
 		width: 50%;
 		float: left;
@@ -527,13 +529,13 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	}	
 }
 @media only screen and (min-width: 768px){
-	.content.about.founders section p img,
+	.content.about.directors section p img,
 	.content.about.editors section p img{
 		width: 30%;
 	}
 }
 @media only screen and (min-width: 992px){
-	.content.about.founders section p img,
+	.content.about.directors section p img,
 	.content.about.editors section p img{
 		width: 25%;
 	}
@@ -549,12 +551,16 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 		padding-left: 1.4rem;
 	}	
 }
-/* margin for all list items */
+/* margin for all regular list items */
 .content li{
 	margin-bottom: .5rem;
 }
 .content li:last-of-type{
 	margin-bottom: 0;
+}
+/* margin for triple-nested list items */
+.content li li li{
+	margin-bottom: 1rem;
 }
 /* list of texts */
 ol.text-list,
@@ -596,7 +602,7 @@ ul.text-list{
 .content h5 + ol li{
 	margin: 0 0 .5rem 0;
 }
-/* annotations for list items (only found on lesson plan pages in the "africa" and "east_asia" clusters) */
+/* annotations for list items with short annotations */
 .content .annotation{
 	margin: .25rem 0 0 1.5rem;
 	display: block;
@@ -605,6 +611,11 @@ ul.text-list{
 .content ol.annotation{
 	margin: -.5rem 0 0 1.5rem;
 }
+/* paragraph spacing for annotations for items with longer annotations */
+/* also involves <dl> and <dt>; search for examples in files */
+.content dd p:first-child{
+	margin-top: 0;
+}
 /* sublists and sub-sublists on sitemap page */
 .content.sitemap ol li ol{
 	list-style: lower-alpha;
@@ -612,10 +623,15 @@ ul.text-list{
 }
 .content.sitemap ol li ol li ol{
 	list-style: lower-roman;
+	margin: .5rem 0 1rem;
 	padding-left: 1.2rem;
+}
+.content.sitemap ol li ol li:last-of-type ol{
+	margin: 1rem 0 .5rem;
 }
 @media only screen and (min-width: 768px){
 	.content.sitemap ol li ol{
+		margin: .5rem 0 0;
 		padding-left: revert;
 	}	
 }
