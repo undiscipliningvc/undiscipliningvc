@@ -47,7 +47,7 @@ Home/Links: #143D5D
 Zoomcasts: #6D3222
 Lesson Plans: #20518D
 Syllabi: #3C5D40
-Assessments: #60582F
+assignments: #60582F
 About: #637474
 
 first edition colors
@@ -67,7 +67,7 @@ About: #7|57575 */
 .content main h2,
 .content.lesson-plans main h2,
 .content.syllabi main h2,
-.content.assessments main h2,
+.content.assignments main h2,
 .content.about main h2 = 15
 .marker = 19
 nav#nav1, nav#fallback-nav = 20
@@ -96,7 +96,7 @@ nav#nav1 a #lesson_plans.current{
 nav#nav1 a #syllabi.current{
 	border-bottom: 3px solid #3C5D40;
 }
-nav#nav1 a #assessments.current{
+nav#nav1 a #assignments.current{
 	border-bottom: 3px solid #60582F;
 }
 nav#nav1 a #about.current{

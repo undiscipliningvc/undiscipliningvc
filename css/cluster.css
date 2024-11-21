@@ -1,6 +1,6 @@
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023). For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
-/* Cluster pages constitute the second level of the UVC site and consist of the gateway pages that provide access to individual Zoomcasts, lesson plans, syllabi, assessments, and various parts of the "About" section. At present, there are five such files: /html/about.html, /html/assessments.html, /html/lesson_plans.html, /html/syllabi.html, and /html/zoomcasts.html */
+/* Cluster pages constitute the second level of the UVC site and consist of the gateway pages that provide access to individual Zoomcasts, lesson plans, syllabi, assignments, and various parts of the "About" section. At present, there are five such files: /html/about.html, /html/assignments.html, /html/lesson_plans.html, /html/syllabi.html, and /html/zoomcasts.html */
 /* For further information about the UVC CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
 
 
@@ -32,11 +32,11 @@
 	color: white;
 	background: #3C5D40;
 }
-.assessments.cluster main section:first-child{
+.assignments.cluster main section:first-child{
 	background: linear-gradient(to left top, #fff 50%, #60582F 50%);
 }
-.assessments.cluster main section h2,
-.assessments.cluster main section h3{
+.assignments.cluster main section h2,
+.assignments.cluster main section h3{
 	color: white;
 	background: #60582F;
 }

@@ -5,9 +5,9 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 ## Levels
 * **Level 1:** The home page of UVC (/index.html)
 
-* **Level 2:** Cluster pages, i.e., pages for the main sections of the site, including /html/about.html, /html/assessments.html, /html/lesson_plans.html, /html/syllabi.html, /html/zoomcasts.html
+* **Level 2:** Cluster pages, i.e., pages for the main sections of the site, including /html/about.html, /html/assignments.html, /html/lesson_plans.html, /html/syllabi.html, /html/zoomcasts.html
 
-* **Level 3:** Content pages, i.e., pages that present the content of the site, in particular all files in the following subdirectories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, /html/zoomcasts; also includes two standalone files in the root directory: /404.html and /sitemap.html
+* **Level 3:** Content pages, i.e., pages that present the content of the site, in particular all files in the following subdirectories: /html/about, /html/assignments, /html/lesson_plans, /html/syllabi, /html/zoomcasts; also includes two standalone files in the root directory: /404.html and /sitemap.html
 
 * **Level 4:** Downloadable files, i.e., all the files that appear in /pdf
 
@@ -28,7 +28,7 @@ This is the main repository for the [Undisciplining the Victorian Classroom](htt
 
 * **js:** All the site's JS files. Each file is annotated for function and to indicate, as relevant, sources of code.
 
-* **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files. A subdirectory called "guidelines" includes checklists for contributors for preparing assessments, lesson plans, syllabi, and zoomcasts for publication plus the UVC house style guidelines. Also see the /0_dev directory for files used by developers in building the site.
+* **pdf:** All the site's publicly downloadable files. See level 4, above. These include .docx, .pdf, and .txt files. A subdirectory called "guidelines" includes checklists for contributors for preparing assignments, lesson plans, syllabi, and zoomcasts for publication plus the UVC house style guidelines. Also see the /0_dev directory for files used by developers in building the site.
 
 ## Loose Files in the Root Directory
 * **404.html:** Users are directed to this page when they try to access a page of the UVC site that doesn't exist.

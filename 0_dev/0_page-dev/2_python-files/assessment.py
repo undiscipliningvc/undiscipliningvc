@@ -10,21 +10,21 @@ import os
 
 # Define the names of the CSV files and their columns
 csv_filenames = {
-    'assessment-1': 'spreadsheet-assessment-1.csv',
-    # 'assessment-2': 'spreadsheet-assessment-2.csv',
-    # 'assessment-3': 'spreadsheet-assessment-3.csv',    
+    'assignment-1': 'spreadsheet-assignment-1.csv',
+    # 'assignment-2': 'spreadsheet-assignment-2.csv',
+    # 'assignment-3': 'spreadsheet-assignment-3.csv',    
 }
 csv_columns = ['placeholder', 'text']
 
 # Define the names of the HTML files to update
 html_filenames = {
-    'assessment-1': 'template-assessment-1.html',
-    # 'assessment-2': 'template-assessment-2.html',
-    # 'assessment-3': 'template-assessment-3.html',    
+    'assignment-1': 'template-assignment-1.html',
+    # 'assignment-2': 'template-assignment-2.html',
+    # 'assignment-3': 'template-assignment-3.html',    
 }
 
 # Loop over the CSV files and update their corresponding HTML files
-for assessment, csv_filename in csv_filenames.items():
+for assignment, csv_filename in csv_filenames.items():
     # Open the CSV file and read the data
     with open(csv_filename, 'r') as csvfile:
         # reader = csv.DictReader(csvfile, fieldnames=csv_columns, delimiter='\t')
@@ -35,14 +35,14 @@ for assessment, csv_filename in csv_filenames.items():
         data.pop(0)
 
         # Read the contents of the corresponding HTML file
-        html_filename = html_filenames[assessment]
+        html_filename = html_filenames[assignment]
         with open(html_filename, 'r') as f:
             html = f.read()
 
-        # Find the row with "assessment-file-name" in column 1 and get the corresponding value in column 2
-        assessment_file_name_row = next((row for row in data if row['placeholder'] == 'assessment-webpage-name'), None)
-        if assessment_file_name_row:
-            new_html_filename = os.path.splitext(assessment_file_name_row['text'])[0] + '.html'
+        # Find the row with "assignment-file-name" in column 1 and get the corresponding value in column 2
+        assignment_file_name_row = next((row for row in data if row['placeholder'] == 'assignment-webpage-name'), None)
+        if assignment_file_name_row:
+            new_html_filename = os.path.splitext(assignment_file_name_row['text'])[0] + '.html'
 
             # Replace the placeholders in the HTML file with the data from the CSV file
             for row in data:

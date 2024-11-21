@@ -1,6 +1,6 @@
 /* This CSS file has been created by Adrian S. Wisnicki (2020-2023). For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css */
 /* This CSS file, like the ones from which it is adapted, is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
-/* Content pages constitute the third level of the UVC site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assessments, various parts of the "About" section, the sitemap, and the 404 page. Except for the last two named files (which are located in the root directory), the files are found in the following directories: /html/about, /html/assessments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
+/* Content pages constitute the third level of the UVC site and consist of the generally text-heavy files that present individual Zoomcasts, lesson plans, syllabi, assignments, various parts of the "About" section, the sitemap, and the 404 page. Except for the last two named files (which are located in the root directory), the files are found in the following directories: /html/about, /html/assignments, /html/lesson_plans, /html/syllabi, and /html/zoomcasts */
 /* For further information about the UVC CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
 
 
@@ -27,11 +27,11 @@
 	background-color: #3C5D40;
 	border: 1px solid #3C5D40;
 }
-.assessments.content header,
-.assessments.content main section.menu-container h3{
+.assignments.content header,
+.assignments.content main section.menu-container h3{
 	background: #60582F;
 }
-.content a.calls.assessments-calls{
+.content a.calls.assignments-calls{
 	background-color: #60582F;
 	border: 1px solid #60582F;
 }
@@ -79,7 +79,7 @@
 /* the main container for specific types of content pages */
 .content.lesson-plans main,
 .content.syllabi main,
-.content.assessments main,
+.content.assignments main,
 .content.about main{
 	text-align: center;
 	margin: 0 auto;
@@ -91,7 +91,7 @@
 @media only screen and (min-width: 992px){
 	.content.lesson-plans main,
 	.content.syllabi main,
-	.content.assessments main,
+	.content.assignments main,
 	.content.about main{
 		width: 75%;
 		max-width: 900px;
