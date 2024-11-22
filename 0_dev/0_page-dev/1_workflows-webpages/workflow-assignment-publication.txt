@@ -29,7 +29,7 @@ Assignment
 5) Add alt text to any images in file.
 6) Go to "Review" ribbon and run accessibility check; fix all issues using guidance provided.
 7) Save as PDF, run another accessibility check, fix any errors, save.
-8) Add files to the "/pdf/assessmemnts" subdirectory. 
+8) Add files to the "/pdf/assignments" subdirectory. 
 9) Commit filest to GitHub.
 
 Closeout
