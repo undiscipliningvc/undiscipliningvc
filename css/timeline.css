@@ -3,7 +3,6 @@
 /* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
 /* This CSS file is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the present code, but be sure to attribute it properly and publicly on your site.  */
 /* Note: The timeline CSS is only used on pages that have a timeline, such as /html/lesson_plans/east_asia_timeline.html */
-/* For further information about the Undisciplining the Victorian Classroom (UVC) CSS files, see /css/style.css. For further information about UVC files in general, see https://github.com/undiscipliningvc/undiscipliningvc.  */
 
 
 /* 1.2.3.2. Timeline */
@@ -169,7 +168,7 @@ section section .timeline-block-left h4{
 /* See above for annotations of the relevant code below. */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
-/* Further developed from the original code created by One More Voice (https://github.com/livingstoneonline/onemorevoice/blob/master/css/style.css) */
+/* Further developed from the original code created by One More Voice (https://onemorevoice.org/) */
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
   .timeline-dates a{
     margin: 0 .25rem;
