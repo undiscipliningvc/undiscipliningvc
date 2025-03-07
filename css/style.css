@@ -353,14 +353,16 @@ footer p .site-detail a:visited span{
 }
 /* main container for nav and fallback nav */
 nav#nav1,
-nav#fallback-nav{
+nav#fallback-nav {
   background-color: #fff;
-	margin: 0 auto;
-	width: 100%;
-	height: 43px;
-	position: fixed;
-	top: 0;
-	z-index: 20;
+  width: 100%;
+  max-width: 1366px;
+  height: 43px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
 }
 @media only screen and (min-width: 480px){
 	nav#nav1,
@@ -389,9 +391,23 @@ nav#fallback-nav a:visited{
 	text-decoration: none;
 }
 /* divider line below nav and fallback nav */
-nav#nav1.borderBottom,
+/* nav#nav1.borderBottom,
 nav#fallback-nav.borderBottom{
 	border-bottom: 1px solid #858585;
+	width: 100%;
+	left: 0;
+	right: 0;
+} */
+nav#nav1.borderBottom::after,
+nav#fallback-nav.borderBottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw; /* full viewport width */
+  border-bottom: 1px solid #858585;
+  z-index: -1;
 }
 /* list of items in nav and fallback nav */
 nav#nav1 ul,
