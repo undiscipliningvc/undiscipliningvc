@@ -12,7 +12,10 @@ import os
 csv_filenames = {
     'lesson-plan-1': 'spreadsheet-lesson-plan-1.csv',
     # 'lesson-plan-2': 'spreadsheet-lesson-plan-2.csv',
-    # 'lesson-plan-3': 'spreadsheet-lesson-plan-3.csv',    
+    # 'lesson-plan-3': 'spreadsheet-lesson-plan-3.csv',
+    # 'lesson-plan-4': 'spreadsheet-lesson-plan-4.csv',
+    # 'lesson-plan-5': 'spreadsheet-lesson-plan-5.csv',
+    # 'lesson-plan-6': 'spreadsheet-lesson-plan-6.csv',
 }
 csv_columns = ['placeholder', 'text']
 
@@ -20,7 +23,10 @@ csv_columns = ['placeholder', 'text']
 html_filenames = {
     'lesson-plan-1': 'template-lesson-plan-1.html',
     # 'lesson-plan-2': 'template-lesson-plan-2.html',
-    # 'lesson-plan-3': 'template-lesson-plan-3.html',    
+    # 'lesson-plan-3': 'template-lesson-plan-3.html',
+    # 'lesson-plan-4': 'template-lesson-plan-4.html',
+    # 'lesson-plan-5': 'template-lesson-plan-5.html',
+    # 'lesson-plan-6': 'template-lesson-plan-6.html', 
 }
 
 # Loop over the CSV files and update their corresponding HTML files
