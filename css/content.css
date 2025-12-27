@@ -481,6 +481,9 @@ the .british-japanese class is used only for the following files: /html/lesson_p
 	padding-left: 1rem;
 }
 /* various kinds of lists */
+.content section ul.markers-questions{
+	margin-left: 1rem;
+}
 .content section ul#topic-list{
 	padding: 0 0 0 1.2rem;
 }
