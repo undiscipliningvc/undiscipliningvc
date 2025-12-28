@@ -6,11 +6,11 @@
 
 2. Add image to Zotero, first in own library, then in UVC group library.
 
-3. Copy raw JPEG image to local and Google Drive UVC folders; keep original file name.
+3. Copy raw JPEG image to local UVC folders; keep original file name.
 
-4. Convert JPEG image to TIFF using ImageMagick and copy to local and Google Drive UVC folders; keep original file name.
+4. Convert JPEG image to TIFF using ImageMagick and copy to local UVC folders; keep original file name.
 
-5. Crop TIFF image, rename, and copy to local and Google Drive UVC folders. Note: Crop only needed for extraneous matter (e.g., borders beyond image, etc.). Do not crop for ratio.
+5. Crop TIFF image, rename, and copy to local UVC folders. Note: Crop only needed for extraneous matter (e.g., borders beyond image, etc.). Do not crop for ratio.
 
 6. If two vertical images, merge cropped TIFF images into single TIFF file, but also keep cropped originals.
 
@@ -18,7 +18,9 @@
 
 8. Remove any generated images that exceed dimensions of original TIFF.
 
-9. Commit generated images to GitHub.
+9. Check images in page. Use style="object-position: 50% 50%;" on image tag and adjust percentages to position image (if needed). Use class="image-border" to add light gray border to image (if needed)
+
+10. Commit generated images to GitHub.
 
 
 ## Lesson Plan Webpage
