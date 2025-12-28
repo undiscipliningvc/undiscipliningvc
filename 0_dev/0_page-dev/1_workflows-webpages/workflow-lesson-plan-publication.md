@@ -1,4 +1,4 @@
-# Lesson Plan Publication
+# Lesson Plan Publication Workflow
 
 ## Images
 
