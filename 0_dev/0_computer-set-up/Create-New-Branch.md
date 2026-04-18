@@ -36,3 +36,18 @@ That's it. The new branch exists now and others can get it on their computers to
 4. Once you click the three dots to the right of "Changes", you will get a dropdown with a bunch of options. Click "Fetch". You will now have the new branch on your computer.
 
 5. Click on the branch name in the lower-left hand corner (e.g., dev). Look for the name of the new branch preceded by the word "origin/" (e.g., origin/dev-adrian) and click it. This automatically creates a local version on your computer and switches you to it. From now on, always ensure the lower-left corner shows the name without "origin" so you know you are working on your local copy.
+
+
+## To Delete a Branch
+
+1. Open terminal in Visual Studio Code.
+
+2. Use the following command to delete the local version of the branch (modify the branch name):
+
+git branch -d dev-adrian
+
+2. Use the following command to delete the online version of the branch (modify the branch name):
+
+git push origin --delete dev-adrian
+
+That's it. Don't delete a branch unless you're sure of what you're doing, as it's hard to recover a branch once deleted.
