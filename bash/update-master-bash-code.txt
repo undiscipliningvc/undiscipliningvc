@@ -1,11 +1,8 @@
-git fetch --all && \
-git checkout dev && \
-git pull && \
-git push && \
-git checkout stage && \
-git merge dev && \
-git push && \
-git checkout master && \
-git merge stage && \
-git push && \
-git checkout dev
+# for mac:
+
+git fetch --all && git checkout dev && git pull && git push && git checkout stage && git merge dev --no-edit && git push && git checkout master && git merge stage --no-edit && git push && git checkout dev  
+
+
+# for windows:
+
+git fetch --all; git checkout dev; git pull; git push; git checkout stage; git merge dev; git push; git checkout master; git merge stage; git push; git checkout dev
