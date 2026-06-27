@@ -1,17 +1,23 @@
-# copying latest changes from dev to your dev branch:
+# copying latest changes from dev to your unique dev branch:
 
 git fetch --all && git checkout dev && git pull && git push && git checkout dev-adrian && git merge dev --no-edit && git push
 
+---
+
 # push from your local branch to the live website
 
-# for mac (going from your unique dev branch)
+##3 for mac (going from your unique dev branch)
 
 git fetch --all && git checkout dev-adrian && git pull && git push && git checkout dev && git merge dev-adrian --no-edit && git push && git checkout stage && git merge dev --no-edit && git push && git checkout master && git merge stage --no-edit && git push && git checkout dev-adrian
 
-# for mac (going from dev):
+## for mac (going from dev):
 
 git fetch --all && git checkout dev && git pull && git push && git checkout stage && git merge dev --no-edit && git push && git checkout master && git merge stage --no-edit && git push && git checkout dev
 
-# for windows (going from dev):
+## for windows (going from your unique dev branch):
 
-git fetch --all; git checkout dev; git pull; git push; git checkout stage; git merge dev; git push; git checkout master; git merge stage; git push; git checkout dev
+git fetch --all; git checkout dev-adrian; git pull; git push; git checkout dev; git merge dev-adrian --no-edit; git push; git checkout stage; git merge dev --no-edit; git push; git checkout master; git merge stage --no-edit; git push; git checkout dev-adrian
+
+## for windows (going from dev):
+
+git fetch --all; git checkout dev; git pull; git push; git checkout stage; git merge dev --no-edit; git push; git checkout master; git merge stage --no-edit; git push; git checkout dev
