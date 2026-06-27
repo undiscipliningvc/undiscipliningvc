@@ -1,4 +1,4 @@
-# copying latest changes from dev to your dev branch:
+# copying latest changes from dev to your unique dev branch:
 
 git fetch --all && git checkout dev && git pull && git push && git checkout dev-adrian && git merge dev --no-edit && git push
 
