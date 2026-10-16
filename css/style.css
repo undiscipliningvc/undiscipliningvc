@@ -830,30 +830,24 @@ a.cite-link{
 	word-break: break-word;
 	-ms-word-break: break-all;
 }
-/* sets the position of same-page links */
-[id]:target{
-	margin-top: -43px;
-	border-top: 43px solid transparent;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	background-clip: padding-box;
+/* sets the position of same-page links; scroll-margin-top offsets anchor jumps
+   so that headings land below the sticky nav rather than underneath it */
+[id]{
+	scroll-margin-top: 43px;
 }
 @media only screen and (min-width: 480px){
-	[id]:target{
-		margin-top: -49px;
-		border-top: 49px solid transparent;
+	[id]{
+		scroll-margin-top: 49px;
 	}
 }
 @media only screen and (min-width: 768px){
-	[id]:target{
-		margin-top: -57px;
-		border-top: 57px solid transparent;
+	[id]{
+		scroll-margin-top: 57px;
 	}
 }
 @media only screen and (min-width: 992px){
-	[id]:target{
-		margin-top: -65px;
-		border-top: 65px solid transparent;
+	[id]{
+		scroll-margin-top: 65px;
 	}
 }
 
