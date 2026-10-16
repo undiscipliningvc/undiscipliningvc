@@ -202,3 +202,38 @@ function checkUrl () {
     document.getElementById("about").setAttribute("class","current");
   };
 };
+
+// Same-page anchor links: offset jumps by the height of the fixed nav
+// so that the target heading lands below the nav rather than underneath it
+// (covers browsers that do not support or do not apply CSS scroll-margin-top)
+$(document).on('click', 'a[href^="#"]', function (e) {
+	var hash = this.hash;
+	if (hash.length < 2) {
+		return;
+	};
+	var target = document.getElementById(hash.slice(1));
+	if (!target) {
+		return;
+	};
+	e.preventDefault();
+	var navHeight = $('#nav1, #fallback-nav').first().outerHeight() || 43;
+	var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+	var y = target.getBoundingClientRect().top + currentScroll - navHeight;
+	window.scrollTo(0, Math.max(y, 0));
+	if (history.pushState) {
+		history.pushState(null, '', hash);
+	};
+});
+
+// Applies the same offset when a page is opened with an anchor in the URL
+$(window).on('load', function () {
+	if (location.hash.length > 1) {
+		var target = document.getElementById(location.hash.slice(1));
+		if (target) {
+			var navHeight = $('#nav1, #fallback-nav').first().outerHeight() || 43;
+			var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+			var y = target.getBoundingClientRect().top + currentScroll - navHeight;
+			window.scrollTo(0, Math.max(y, 0));
+		};
+	};
+});
